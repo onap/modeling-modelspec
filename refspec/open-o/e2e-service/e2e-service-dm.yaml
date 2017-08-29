@@ -1,0 +1,132 @@
+========================================================================
+Copyright 2017 OPEN-O Corporation.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+=========================================================================
+tosca_definitions_version: tosca_simple_yaml_1_0
+
+# *****************************************************************************
+# Global Service type definitions
+# *****************************************************************************
+description: Global Service information model type definitions
+
+metadata:
+    version: 0.1
+    vendor: gso
+    template_author: Huawei
+
+# *****************************************************************************
+# macros definitions
+# *****************************************************************************   
+dsl_definitions:
+        
+# *****************************************************************************
+# data types
+# *****************************************************************************
+data_types:
+  gso.datatypes.service.basicInfo:
+    derived_from: tosca.datatypes.Root
+        properties:
+        createTime:
+                    type: string
+                    description: The creation time of the service
+            updateTime:
+                type: string
+                description: The update time of the service
+            creatorId:
+                type: string
+                description: The identification of the creator
+            location:
+                type: string
+                description: Location of the single domain
+
+# *****************************************************************************
+# interface_types
+# *****************************************************************************                
+interface_types:
+  gso.interfaces.lifecycle.Standard:
+    derived_from: tosca.interfaces.Root
+        create:
+            description: Standard lifecycle create operation.
+        update:
+            description: Standard lifecycle configure and update operation.
+        instantiate:
+            description: Standard lifecycle instantiate operation.
+        terminate:
+            description: Standard lifecycle terminate operation.
+        delete:
+            description: Standard lifecycle delete operation.
+        query:
+            description: Standard lifecycle query operation.
+    scalingIn:
+            description: Standard lifecycle scalingIn operation.
+    scalingOut:
+            description: Standard lifecycle query operation.
+# *****************************************************************************
+# capability types
+# *****************************************************************************                
+capability_types:
+    gso.capability.SingleDomainNs:
+            derived_from: tosca.capabilities.Root
+
+# *****************************************************************************
+# relationship types
+# *****************************************************************************
+relationship_types:
+  gso.relationship.DependOn:        
+        derived_from: tosca.relationships.Root
+    description: 
+        valid_target_types: [gso.capability.SingleDomainNs] 
+      
+# *****************************************************************************
+# node types
+# *****************************************************************************
+node_types:
+    gso.node.Root:
+        derived_from: tosca.nodes.Root
+        description: gso root type
+        properties:
+            id:
+               type: string               
+            name:
+               type: string               
+            description:
+                type: string
+                required: false
+    gso.node.NetworkService:
+        derived_from: gso.node.Root
+        description: basic network service            
+        properties:
+      baseServiceInfo: 
+                type:gso.datatypes.service.basicInfo
+      templateId:
+        type: string
+      serviceDefId:
+        type: string
+    interfaces:
+            standard:
+                type: gso.interfaces.lifecycle.Standard
+
+    gso.node.SingleDomainNetworkService:
+        derived_from: gso.node.NetworkService
+        description: single domain network service
+
+    gso.node.CrossDomainNetworkService:
+        derived_from: gso.node.NetworkService
+        description: cross domain network service                
+        requirements:
+            - realizes:
+                node: gso.node.SingleDomainNetworkService
+                capability: gso.capability.SingleDomainNs
+                relationship: gso.relationship.DependOn
+                occurrences: [2, UNBOUNDED]
