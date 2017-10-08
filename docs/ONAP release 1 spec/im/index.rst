@@ -3,12 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ONAP R1 Modeling Specifications
+ONAP Information Model Specifications
 ==============================================
 
 .. toctree::
    :titlesonly:
    
-   csar/index
-   im/index
-
+   service-im
