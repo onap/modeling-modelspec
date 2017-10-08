@@ -10,3 +10,4 @@ ONAP Information Model Specifications
    :titlesonly:
    
    service-im
+   ns-im
