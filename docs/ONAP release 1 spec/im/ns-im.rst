@@ -125,4 +125,100 @@ The following table specifies requirements to the templates for VNF Node instanc
 NSD Information Model Definitions
 ---------------------------------
 
+NSD
+^^^
+
+The NSD information element is a template whose instances are used by the NFVO for the lifecycle management of NSs.
+
++---------------+-----------+-------------+----------+--------------------------------------------+
+|   Attribute   | Qualifier | Cardinality |  Content |                 Description                |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|    id         |     M     |      1      |Identifier| Identifier of this NSD information element.|
+|               |           |             |          | It globally uniquely identifies an instance|
+|               |           |             |          | of the NSD.                                |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|   name        |     M     |      1      | String   | The name of the NSD.                       |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|  serviceType  |     M     |      1      | String   | Identifies the type of the SD.             |
+|               |           |             |          | enum:E2E Service, Network                  |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|controllerinfo |     M     |      1      | String   | Identifies controller(s) conmpatible with  |
+|               |           |             |          | the NS described in this version of the NSD|
+|               |     M     |             |          | default: VF-C.                             |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|      vnfd     |     M     |     0..N    |  VNFD    | VNFD information element(s) of this NSD. It|
+|               |           |             |          | It globally uniquely identifies an instance|
+|               |           |             |          | of the NSD.                                |
++---------------+-----------+-------------+----------+--------------------------------------------+
+|virtualLinkDesc|     M     |     0..N    |  VLD     | Speficies the constituent VLDs.            |
++---------------+-----------+-------------+----------+--------------------------------------------+
+
+VLD
+^^^
+
+The VL information element provides general information enabling the instantiation of virtual links.
+
++------------------+-----------+-------------+----------+--------------------------------------------+
+|      Attribute   | Qualifier | Cardinality |  Content |                 Description                |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|       id         |     M     |      1      |Identifier| Identifier of this VirtualLinkDesc informa-|
+|                  |           |             |          | tion element. It globally uniquely identif-|
+|                  |           |             |          | ies a VLD.                                 |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|       name       |     M     |      1      | String   | Specifies the name of the VLD.             |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|     description  |     M     |     0..1    | String   | Specifies human-readable information on the|
+|                  |           |             |          | purpose of the VL (e.g. control plane traf-|
+|                  |           |             |          | fic).                                      |
++------------------+-----------+-------------+----------+--------------------------------------------+
+| isExternalNetwork|     M     |      1      | Boolean  | Whether the VL is external network.        |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|    shared        |     O     |     0..1    | Boolean  | Whether the VL is shared.                  |
++------------------+-----------+-------------+----------+--------------------------------------------+
+| network_type     |     O     |     0..1    | String   | Network type of the VL.                    |
++------------------+-----------+-------------+----------+--------------------------------------------+
+| segmentation_id  |     O     |     0..1    | String   | Network segmentation id of the VL.         |
++------------------+-----------+-------------+----------+--------------------------------------------+
+| physical_network |     O     |     0..1    | String   | Physical network of the VL.                |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|      mtu         |     O     |     0..1    | Integer  | Network MTU of the VL.                     |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|      cidr        |     O     |     0..1    | String   | Subnetwork cidr of the VL.                 |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|    ip_version    |     O     |     0..1    | String   | Subnetwork IP protocol version of the VL.  |
++------------------+-----------+-------------+----------+--------------------------------------------+
+| enable_dhcp      |     O     |     0..1    | Boolean  | Whether or not th subnetwork enables DHCP. |
++------------------+-----------+-------------+----------+--------------------------------------------+
+|   gateway_ip     |     O     |     0..1    | String   | Subnetwork gateway IP address.             |
++------------------+-----------+-------------+----------+--------------------------------------------+
+
+VNFD
+^^^^
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|     Attribute   | Qualifier | Cardinality |  Content |                 Description                |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|      id         |     M     |      1      |Identifier|  Identifier of this VNF Descriptor.        |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|      name       |     M     |      1      | String   | Specifies the name of the VNFD.            |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|     description |     M     |     0..1    | String   | Specifies human-readable information on the|
+|                 |           |             |          | purpose of the VNF.                        |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|     vnfminfo    |     M     |     0..1    | String   | Identifies VNFM(s) compatible with the VNF |
+|                 |           |             |          | described in this version of the VNFD.     |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|   vnfExtCpd     |     M     |     0..N    | vnfExtCpd| VNF External Connection Points.            |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+
+
+vnfExtCpd
+^^^^^^^^^
+
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|     Attribute   | Qualifier | Cardinality |  Content |                 Description                |
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|      cpdid      |     M     |     1..N    |Identifier| Reference to the correspondent internal CPD|
++-----------------+-----------+-------------+----------+--------------------------------------------+
+|      vldid      |     M     |     1..N    |Identifier| Reference to the external VLD(s).(TBD)     |
++-----------------+-----------+-------------+----------+--------------------------------------------+
 
