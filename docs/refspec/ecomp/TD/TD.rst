@@ -1,9 +1,9 @@
 .. This work is licensed under a Creative Commons Attribution 4.0 International License.
 
 +-------------------------------------------------------------------------+
-| ECOMP Model (ONAP)                                                      |
+| ONAP Model                                                              |
 |                                                                         |
-| ECOMP Class Model                                                       |
+| ONAP Class Model                                                        |
 |                                                                         |
 | Version 1.0 ● Proposed                                                  |
 +=========================================================================+
@@ -24,31 +24,31 @@
 +-------------------------------------------------------------------------+
 
 
-ECOMP Class Model
-=================
+ONAP Class Model
+================
 
-*Package in package 'ECOMP Information Model (2017-08-21)'*
+*Package in package 'ONAP Information Model (2017-08-21)'*
 
-Following is a collection of ECOMP class diagrams. These diagrams
-contain the foundation of the ECOMP information model, including key
+Following is a collection of ONAP class diagrams. These diagrams
+contain the foundation of the ONAP information model, including key
 data entities, the relationships between these entities, as well as key
 attributes. This model should be a common basis for the various data
-models throughout ECOMP.
+models throughout ONAP.
 
-ECOMP Class Model
+ONAP Class Model
 
 Version 1.0 Phase 1.0 Proposed
 
 KS0567 created on 10/26/2015. Last modified 9/15/2016
 
-ECOMP Landscape diagram
------------------------
+ONAP Landscape diagram
+----------------------
 
-*Class diagram in package 'ECOMP Class Model'*
+*Class diagram in package 'ONAP Class Model'*
 
-The ECOMP Landscape touches on several key objects.
+The ONAP Landscape touches on several key objects.
 
-Given ECOMP is designed around a catalog based, model-driven
+Given ONAP is designed around a catalog based, model-driven
 architecture, CatalogItems, including OfferItems, ProductItems,
 ServiceItems, and ResourceItems can be seen depicted in figure 1. As
 explained in the ASDC White Paper, the composition of these CatalogItems
@@ -76,7 +76,7 @@ ResourceCatalogItems. ServiceCatalogItems CANNOT be made up of
 ServiceCatalogItems. ProductInstance, ServiceInstance, and
 ResourceInstance follow the same pattern.
 
-ECOMP Landscape
+ONAP Landscape
 
 Version 1.0
 
@@ -84,12 +84,12 @@ KS0567 created on 10/19/2016. Last modified 8/28/2017
 
 |image2|
 
-1. ECOMP Landscape
+1. ONAP Landscape
 
 Catalog
 -------
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Catalog
 
@@ -446,7 +446,7 @@ KS0567 created on 7/26/2016. Last modified 7/29/2016
 Common Business
 ---------------
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Common Business
 
@@ -1138,7 +1138,7 @@ KS0567 created on 4/25/2017. Last modified 6/27/2017
 +--------------------------------------------------------------------------------------+-----------------------------------------------------+
 | ASSOCIATIONS                                                                                                                               |
 +======================================================================================+=====================================================+
-| |image96| Association (direction: Unspecified) ConfigSpecReferences                  |                                                     |                  
+| |image96| Association (direction: Unspecified) ConfigSpecReferences                  |                                                     |
 +--------------------------------------------------------------------------------------+-----------------------------------------------------+
 | Source: Public (Class) ConfigurationSpecification                                    | Target: Public (Class) ConfigSpecRelationship       |
 |                                                                                      |                                                     |
@@ -2541,7 +2541,7 @@ PPPPSSBBEEE- Entity code: 3 alpha numeric
 
 \|\_Place code (city, town or borough), 4 AN or 3 AN with trailing space
 
-ECOMP/D2 platforms should not store composite addresses for service
+ONAP/D2 platforms should not store composite addresses for service
 instances or vNF's but LocID such as GLID or CLLI code which can be
 translated to a unique address.
 
@@ -3550,7 +3550,7 @@ KS0567 created on 2/15/2016. Last modified 8/1/2016
 |                                                                                    |
 | [ Name is PolicyActionInPolicyRule. Direction is 'Source -> Destination'. ]        |
 +------------------------------------------------------------------------------------+
-| |image309| Aggregation from ECOMP event to PolicyRule                              |
+| |image309| Aggregation from ONAP event to PolicyRule                               |
 |                                                                                    |
 | [ Name is isTriggeredBy. Direction is 'Source -> Destination'. ]                   |
 +------------------------------------------------------------------------------------+
@@ -4088,7 +4088,7 @@ Root
 
 *Package in package 'Common Business'*
 
-With the ECOMP information model, there are a collection of common
+With the ONAP information model, there are a collection of common
 entities that serve as an informational foundation. View these as the
 super classes (generalizations) that much of the rest of the model is
 built upon.
@@ -5524,7 +5524,7 @@ Extends ManagementMethodEntity
 Cloud
 -----
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Cloud
 
@@ -5991,7 +5991,7 @@ MM7817 created on 6/10/2016. Last modified 9/16/2016
 Customer ONAP
 -------------
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Customer ONAP
 
@@ -6017,7 +6017,7 @@ EH6351 created on 8/15/2017. Last modified 8/30/2017
 Party
 -----
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Reflecting on the Zachman fundamental five questions of who, where,
 when, why, and what, the party concept covers the who.
@@ -8041,7 +8041,7 @@ An owning entity (partyrole) can have one or more tenants (PartyRole)
 
 A platform may be technology oriented, such as:
 
-1. AIC / ECOMP
+1. AIC / ONAP
 
 2. USP Voice (Wireline)
 
@@ -8079,7 +8079,7 @@ program, or project.
 
 An **OwningEntity** may be technology oriented, such as:
 
-1. AIC / ECOMP
+1. AIC / ONAP
 
 2. USP Voice (Wireline)
 
@@ -8888,8 +8888,8 @@ KS0567 created on 5/10/2016. Last modified 5/10/2016
 | [ Direction is 'Source -> Destination'. ]                                     |
 +-------------------------------------------------------------------------------+
 
-PartyRole 
-~~~~~~~~~~
+PartyRole
+~~~~~~~~~
 
 *Class in package 'Party'*
 
@@ -10253,7 +10253,7 @@ Machine/BOT acting on behalf of Party. Automation with various
 capabilities and knowledge which acts on behalf of the user. (ISAAC, IP
 Service Assurance and Analyses of Connections) workflow.
 
-ECOMP portal acts as a user agent for ECOMP. Service Designers, Control
+ONAP portal acts as a user agent for ONAP. Service Designers, Control
 Loop, Operations.
 
 User Agent
@@ -10349,7 +10349,7 @@ Extends ContactMedium
 Resource
 --------
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Resource
 
@@ -10800,7 +10800,7 @@ Hypervisor managing VM, container running on the VM.
 A Virtual Machine/Container is the environment that a given virtual
 (network) function runs. VMs are managed by Infrastructure Controllers.
 
-For ECOMP purposes, 'ContainerInstance' currently refers to a deployed
+For ONAP purposes, 'ContainerInstance' currently refers to a deployed
 (usually on a VM) docker image.
 
 Docker or Linux ContainerInstance (Type 2)
@@ -11865,7 +11865,7 @@ Extends CatalogItem
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |image1128| ResourceUUID : String Private                                                                                                                                                                                                                                                                                                                            |
 |                                                                                                                                                                                                                                                                                                                                                                      |
-| This is a cross-ECOMP resource version identifier. UUID generated by algorithm. Will be different for every x.1 version of the resource It is not editable and cannot be changed.                                                                                                                                                                                    |
+| This is a cross-ONAP resource version identifier. UUID generated by algorithm. Will be different for every x.1 version of the resource It is not editable and cannot be changed.                                                                                                                                                                                    |
 |                                                                                                                                                                                                                                                                                                                                                                      |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                                                                                                                                                                                                                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -12738,7 +12738,7 @@ VF Deployment Group (aka VF Module)
 
 *Class in package 'Resource'*
 
-ECOMP supports the concept of VF Modularity. With this approach, a
+ONAP supports the concept of VF Modularity. With this approach, a
 single VF may be composed from one or more Heat templates, each of which
 represents some subset of the overall VF. These component parts are
 referred to as “VF Modules”. During orchestration, these modules may be
@@ -12748,8 +12748,8 @@ To accommodate shared resources across the entire VF (private networks,
 server groups, etc.), one module is designated as a “base” module. Any
 resources defined in the base module template can be exposed to all
 other modules by declaring their resource UUIDs as Heat outputs. Those
-outputs will be provided by ECOMP as input parameters to all other
-templates. This mechanism is analogous to ECOMP handling of persistent
+outputs will be provided by ONAP as input parameters to all other
+templates. This mechanism is analogous to ONAP handling of persistent
 Cinder volumes.
 
 VF modules contain the instructions needed to instantiate a VF instance.
@@ -12879,7 +12879,7 @@ VNF Module (Deployment Group)
 
 *Class in package 'Resource'*
 
-ECOMP supports the concept of VF Modularity. With this approach, a
+ONAP supports the concept of VF Modularity. With this approach, a
 single VF may be composed from one or more Heat templates, each of which
 represents some subset of the overall VF. These component parts are
 referred to as “VF Modules”. During orchestration, these modules may be
@@ -12889,8 +12889,8 @@ To accommodate shared resources across the entire VF (private networks,
 server groups, etc.), one module is designated as a “base” module. Any
 resources defined in the base module template can be exposed to all
 other modules by declaring their resource UUIDs as Heat outputs. Those
-outputs will be provided by ECOMP as input parameters to all other
-templates. This mechanism is analogous to ECOMP handling of persistent
+outputs will be provided by ONAP as input parameters to all other
+templates. This mechanism is analogous to ONAP handling of persistent
 Cinder volumes.
 
 VF modules contain the instructions needed to instantiate a VF instance.
@@ -13247,7 +13247,7 @@ Extends NetworkFunctionAtomic, ResourceInstance
 +=====================================================================================================================================================================+
 | |image1292| Homing Policy : Homing Policy ID Private                                                                                                                |
 |                                                                                                                                                                     |
-| Reference to VNF-level homing policy that ECOMP will use when VNF deployment target node is auto-selected                                                           |
+| Reference to VNF-level homing policy that ONAP will use when VNF deployment target node is auto-selected                                                            |
 |                                                                                                                                                                     |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -13261,7 +13261,7 @@ Extends NetworkFunctionAtomic, ResourceInstance
 |                                                                                                                                                                     |
 | "Y" indicates operator-supplied VNF instance target deployment node required. Present prompt to operator: "Enter target node for deployment of this VNF instance"   |
 |                                                                                                                                                                     |
-| "N" indicates that the target deployment node for this VNF instance will be auto-selected by ECOMP                                                                  |
+| "N" indicates that the target deployment node for this VNF instance will be auto-selected by ONAP                                                                   |
 |                                                                                                                                                                     |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -13273,7 +13273,7 @@ Extends NetworkFunctionAtomic, ResourceInstance
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |image1296| VLAN Range Plan : VLAN Range Plan ID Private                                                                                                            |
 |                                                                                                                                                                     |
-| Identifies the VNF-level VLAN Range Plan that must be used by ECOMP to assign VLAN tags to an instance of this VNF type                                             |
+| Identifies the VNF-level VLAN Range Plan that must be used by ONAP to assign VLAN tags to an instance of this VNF type                                              |
 |                                                                                                                                                                     |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -13293,13 +13293,13 @@ Extends NetworkFunctionAtomic, ResourceInstance
 |                                                                                                                                                                     |
 | "Y" indicates operator-supplied VNF name required. Present prompt to operator: "Enter the name for this VNF instance"                                               |
 |                                                                                                                                                                     |
-| "N" indicates that the name for the VNF instance will be auto-generated by ECOMP                                                                                    |
+| "N" indicates that the name for the VNF instance will be auto-generated by ONAP                                                                                     |
 |                                                                                                                                                                     |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |image1300| VNF Naming Policy : boolean Private                                                                                                                     |
 |                                                                                                                                                                     |
-| Reference to VNF-level naming policy that ECOMP will use when VNF-level name is auto-generated                                                                      |
+| Reference to VNF-level naming policy that ONAP will use when VNF-level name is auto-generated                                                                       |
 |                                                                                                                                                                     |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                  |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -13534,7 +13534,7 @@ mm7817 created on 6/8/2016. Last modified 6/8/2016
 Service
 -------
 
-*Package in package 'ECOMP Class Model'*
+*Package in package 'ONAP Class Model'*
 
 Service
 
@@ -14607,7 +14607,7 @@ Extends CatalogItem
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | |image1437| ServiceUUID : char Private                                                                                                                                                                                                                                                                                                                               |
 |                                                                                                                                                                                                                                                                                                                                                                      |
-| his is a cross-ECOMP service version identifier. UUID generated by algorithm. Will be different for every x.1 version of the service. It is not editable and cannot be changed.                                                                                                                                                                                      |
+| his is a cross-ONAP service version identifier. UUID generated by algorithm. Will be different for every x.1 version of the service. It is not editable and cannot be changed.                                                                                                                                                                                       |
 |                                                                                                                                                                                                                                                                                                                                                                      |
 | [ Is static False. Containment is Not Specified. ]                                                                                                                                                                                                                                                                                                                   |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
