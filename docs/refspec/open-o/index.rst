@@ -1,7 +1,7 @@
 .. This work is licensed under a Creative Commons Attribution 4.0 International License.
 
 
-Open-o Seed References
+OPEN-O Seed References
 ======================
 
 .. toctree::
