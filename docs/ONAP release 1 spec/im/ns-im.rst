@@ -2,6 +2,8 @@
 ONAP Network Service Descriptor Information Model Specification (Amsterdam)
 ===========================================================================
 
+
+
 Scope
 -----
 
