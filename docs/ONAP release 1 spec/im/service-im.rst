@@ -5,7 +5,7 @@ ONAP Service Descriptor Information Model Specification (Amsterdam)
 Scope
 -----
 
-The scope of the present document is to describe the SD Information Model Specification.
+The scope of the present document is to describe the Service Descriptor Information Model Specification.
 
 Terms, Definitions and Abbreviations
 ------------------------------------
@@ -15,16 +15,20 @@ For the purposes of the present document, the following abbreviations apply:
 +-----------------+---------------------------------------------------------------------+
 |  Abbreviation   |                      Definition                                     |
 +-----------------+---------------------------------------------------------------------+
-|      SO         | Service Orchestrator                                                |
+|      RD         | Resource Descriptor                                                 |
 +-----------------+---------------------------------------------------------------------+
 |      SD         | Service Descriptor                                                  |
 +-----------------+---------------------------------------------------------------------+
-|      RD         | Resource Descriptor                                                 |
+|      SO         | Service Orchestrator                                                |
 +-----------------+---------------------------------------------------------------------+
 |      VF         | Virtual Function                                                    |
 +-----------------+---------------------------------------------------------------------+
+|      VL         | Virtual Link                                                        |
++-----------------+---------------------------------------------------------------------+
 
-SD Infomration Model Overview
+
+
+SD Information Model Overview
 -----------------------------
 
 The Service Descriptor (SD) is a deployment template which consists of information used by the Service Orchestrator (SO) for life cycle management of a service.
@@ -41,7 +45,7 @@ The following table specifies requirements to the templates for SD instances.
 +------------------+-------------------------------------------------------+
 |   NST_SD001      | The SD shall reference the resource applicable to its |
 |                  | constituent services.                                 |
-+------------------+-------------------------------------------------------+       
++------------------+-------------------------------------------------------+
 
 SD Information Model Definitions
 --------------------------------
@@ -63,14 +67,14 @@ The SD information element is a template whose instances are used by the SO for 
 |description|     M     |      1      | String   | The description of the SD.                |
 +-----------+-----------+-------------+----------+-------------------------------------------+
 |  vendor   |     M     |      1      | String   | The vendor of the SD. (TBD)               |
-+-----------+-----------+-------------+----------+-------------------------------------------+    
++-----------+-----------+-------------+----------+-------------------------------------------+
 |    type   |     M     |      1      | String   | Value set to "Service".                   |
 +-----------+-----------+-------------+----------+-------------------------------------------+
 | category  |     M     |      1      | String   | Value set to either "E2E" or "NS".        |
 +-----------+-----------+-------------+----------+-------------------------------------------+
-|serviceType|     M     |      1      | String   | The ServiceType of the SD.                |
+|serviceType|     M     |      1      | String   | The service type of the SD.               |
 +-----------+-----------+-------------+----------+-------------------------------------------+
-|ServiceRole|     M     |      1      | String   | The ServiceRole of the SD.                |
+|ServiceRole|     M     |      1      | String   | The service role of the SD.               |
 +-----------+-----------+-------------+----------+-------------------------------------------+
 |  resource |     M     |    1..N     | RD       | The consituent RDs of the SD.             |
 |           |           |             |          | It could be VF/WAN Descriptor etc.        |

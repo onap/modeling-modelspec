@@ -6,5 +6,5 @@ ONAP CSAR Specification
 
 .. toctree::
    :titlesonly:
-   
+
    csar
