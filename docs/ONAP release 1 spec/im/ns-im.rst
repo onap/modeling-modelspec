@@ -28,14 +28,20 @@ For the purposes of the present document, the following abbreviations apply:
 +------------+--------------------------------------------+
 |     NCT    |       Network Connectivity Topology        |
 +------------+--------------------------------------------+
+|     NF     |       Network Function                     |
++------------+--------------------------------------------+
+|    NFVO    |       NFV Orchestrator                     |
++------------+--------------------------------------------+
 |     NSD    |       Network Service Descriptor           |
 +------------+--------------------------------------------+
 |     UML    |       Unified Modeling Language            |
 +------------+--------------------------------------------+
 |     VL     |       Virtual Link                         |
 +------------+--------------------------------------------+
+|     VNF    |       Virtual Network Function             |
++------------+--------------------------------------------+
 
-NSD Infomration Model Overview
+NSD Information Model Overview
 ------------------------------
 
 Network Service (NS) is a set of functions with unspecified connectivity between them or according to one or more forwarding graphs.
@@ -56,7 +62,7 @@ Functional Requirements
 The following table specifies requirements to the templates for NSD instances in R1.
 
 +-----------------+-----------------------------------------------------------------+
-|  Numbereing     |                  Requirement Description                        |
+|  Numbering      |                  Requirement Description                        |
 +-----------------+-----------------------------------------------------------------+
 |  NST_NSD001     | The NSD shall reference the VNF Node description of constituent |
 |                 | VNFs.                                                           |
@@ -73,7 +79,7 @@ The following table specifies requirements to the templates for NSD instances in
 |  NST_NSD005     | The NSD shall support the capability to include or reference NS |
 |                 | life cycle management scripts describing how to react upon spec-|
 |                 | ific life cycle events, fault detection, performance threshold  |
-|                 | crossing detection and other events.                            | 
+|                 | crossing detection and other events.                            |
 +-----------------+-----------------------------------------------------------------+
 |  NST_NSD006     | The NSD shall support the capability to provide monitoring para-|
 |                 | meters to be tracked during the lifetime of a NS instance.      |
@@ -83,7 +89,7 @@ The following table specifies requirements to the templates for NSD instances in
 The following table specifies requirements to the templates for VLD instances.
 
 +-----------------+-----------------------------------------------------------------+
-|  Numbereing     |                  Requirement Description                        |
+|  Numbering      |                  Requirement Description                        |
 +-----------------+-----------------------------------------------------------------+
 |  NST_VLD001     | A VLD shall enable specifying the type of connectivity provided |
 |                 | by the link between VNFs.                                       |

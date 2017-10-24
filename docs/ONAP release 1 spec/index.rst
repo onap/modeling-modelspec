@@ -8,7 +8,7 @@ ONAP R1 Modeling Specifications
 
 .. toctree::
    :titlesonly:
-   
+
    csar/index
    im/index
 

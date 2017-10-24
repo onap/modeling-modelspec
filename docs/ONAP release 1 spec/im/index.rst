@@ -8,6 +8,6 @@ ONAP Information Model Specifications
 
 .. toctree::
    :titlesonly:
-   
+
    service-im
    ns-im
