@@ -24,8 +24,6 @@ For the purposes of the present document, the following abbreviations apply:
 +------------+--------------------------------------------+
 |     CPD    |       Connection Point Description         |
 +------------+--------------------------------------------+
-|     DF     |       Depoyment Flavour                    |
-+------------+--------------------------------------------+
 |     DSL    |       Domain Specific Language             |
 +------------+--------------------------------------------+
 |     NCT    |       Network Connectivity Topology        |
@@ -100,7 +98,7 @@ NSD Information Model Definitions
 NSD
 ^^^
 
-The NSD information element is a template whose instances are used by the VF-C for the lifecycle management of NSs.
+The NSD information element is a template whose instances are used by the VF-C for the lifecycle management of NSs. Note that NSD is actually defined as a special type of service descriptor, whose serviceType is set to "Network". In the same time, NSD can be included into an End-to-End service descriptor, as a resource or in other words, nested service.
 
 +---------------+-----------+-------------+----------+--------------------------------------------+
 |   Attribute   | Qualifier | Cardinality |  Content |                 Description                |
@@ -111,12 +109,8 @@ The NSD information element is a template whose instances are used by the VF-C f
 +---------------+-----------+-------------+----------+--------------------------------------------+
 |   name        |     M     |      1      | String   | The name of the NSD.                       |
 +---------------+-----------+-------------+----------+--------------------------------------------+
-|  serviceType  |     M     |      1      | String   | Identifies the type of the SD.             |
-|               |           |             |          | enum:E2E Service, Network                  |
-+---------------+-----------+-------------+----------+--------------------------------------------+
-|controllerinfo |     M     |      1      | String   | Identifies controller(s) conmpatible with  |
-|               |           |             |          | the NS described in this version of the NSD|
-|               |     M     |             |          | default: VF-C.                             |
+|  serviceType  |     M     |      1      | String   | Identifies the type of the SD, which is set|
+|               |           |             |          | to "Network" for NSD.                      |
 +---------------+-----------+-------------+----------+--------------------------------------------+
 |     vnfd      |     M     |     0..N    |  VNF id  | Consituent VNF node information of this NSD|
 +---------------+-----------+-------------+----------+--------------------------------------------+
