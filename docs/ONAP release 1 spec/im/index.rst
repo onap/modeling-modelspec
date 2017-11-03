@@ -11,3 +11,4 @@ ONAP Information Model Specifications
 
    service-im
    ns-im
+   overlay-im
