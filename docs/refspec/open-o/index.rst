@@ -7,6 +7,9 @@ Open-o Seed References
 .. toctree::
    :maxdepth: 2
 
+   e2e-service/e2e-service-im.rst
+   vnf-package/NS&VNF Package Specification-v0.4.rst
+   
    nfv-nsd/nfv-nsd-dm-sample.rst
    nfv-nsd/nfv-nsd-im-sample.rst
    sdn-nsd/sdn-nsd-dm-sample.rst
