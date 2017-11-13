@@ -8,12 +8,13 @@ Open-o Seed References
    :maxdepth: 2
 
    e2e-service/e2e-service-im.rst
-   vnf-package/NS&VNF Package Specification-v0.4.rst
-   
+   nfv-nsd/nfv-nsd-template.rst
    nfv-nsd/nfv-nsd-dm-sample.rst
    nfv-nsd/nfv-nsd-im-sample.rst
    sdn-nsd/sdn-nsd-dm-sample.rst
    sdn-nsd/sdn-nsd-im-sample.rst
+   vnfd/vnfd-template.rst
    vnfd/vnf-dm-sample.rst
    vnfd/vnf-im-sample.rst
+   vnf-package/NS&VNF Package Specification-v0.4.rst
    vnf-package/vnf-package-sample.rst
