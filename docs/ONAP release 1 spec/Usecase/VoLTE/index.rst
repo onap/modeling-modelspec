@@ -9,4 +9,6 @@ ONAP R1 Modeling Example: VoLTE
 .. toctree::
    :titlesonly:
    
+   vnfs.rst
+   
 
