@@ -3,10 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ONAP R1 Modeling Example: vCPE
+ONAP R1 Modeling Example: VoLTE
 ==============================================
 
 .. toctree::
    :titlesonly:
+   
+   e2e.rst
    
 
