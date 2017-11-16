@@ -2,16 +2,16 @@
    :depth: 3
 ..
 
-1. NS&VNF Package Specification V0.4
+NS&VNF Package Specification V0.4
 =======================================
 
-1.1 Scope
+Scope
 -------------
 
 The scope of the present document is to describe the NS&VNF CSAR model
 specification for OPENO.
 
-1.2 Terms, Definitions and Abbreviations
+Terms, Definitions and Abbreviations
 ----------------------------------------------
 
 For the purposes of the present document, the following abbreviations
@@ -38,7 +38,7 @@ apply:
 |                                   | Descriptor                        |
 +-----------------------------------+-----------------------------------+
 
-1.3 NS&VNF CSAR Model Definitio
+NS&VNF CSAR Model Definitio
 ----------------------------------------
 
 In OPENO, TOSCA language is adopted to describe the NS/VNF Package. This
@@ -47,7 +47,7 @@ document refers to “TOSCA Simple Profile YAML v1.0” and
 specifications, these clauses below focus on extension and satisfy the
 open NS/VNF package requirements.
 
-1.3.1 CSAR Introduction
+CSAR Introduction
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 A CSAR is a zip file containing at least two directories, the
@@ -72,7 +72,7 @@ the Definitions documents in the Definitions directory MUST contain a
 Service Template definition that defines the structure and behavior of
 the cloud application.
 
-1.3.2 NS CSAR Model Structure
+NS CSAR Model Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------+----------------------+----------------------+
@@ -119,7 +119,7 @@ the cloud application.
 |                      |                      | etc.                 |
 +----------------------+----------------------+----------------------+
 
-1.3.3 VNF CSAR Model Structure
+VNF CSAR Model Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------+----------------------+----------------------+
@@ -186,7 +186,7 @@ the cloud application.
 |                      |                      | Test, etc.           |
 +----------------------+----------------------+----------------------+
 
-1.3.4 TOSCA Meta File Definition
+TOSCA Meta File Definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The TOSCA meta file includes metadata that allows interpreting the
@@ -262,7 +262,7 @@ csar_vfw.zip
 | Entry-Definitions: Definitions/tosca_vfw.yaml |
 +-----------------------------------------------+
 
-1.3.5 CSAR Meta File Definition
+CSAR Meta File Definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Describing the content of the CSAR, including type(GSAR/SSAR/NSAR/NFAR),
@@ -288,7 +288,7 @@ For an example:
 | Version: v1.0 |
 +---------------+
 
-1.3.6 Checksum File Definition
+Checksum File Definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 File Name: checksum.lst

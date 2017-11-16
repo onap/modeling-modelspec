@@ -27,13 +27,13 @@ limitations under the License.
 =========================================================================
 
 
-1. TOSCA template for e2e-service
+TOSCA template for e2e-service
 ===================================
 
-1.1 Data Types
+Data Types
 ------------------
 
-1.1.1 gso.datatypes.service.basicInfo
+gso.datatypes.service.basicInfo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Describe the basic information for the service
@@ -100,10 +100,10 @@ Definition
 |         description: Location of the single domain                    |
 +-----------------------------------------------------------------------+
 
-1.2 Interface Types
+Interface Types
 --------------------
 
-1.2.1 gso.interfaces.lifecycle.Standard
+gso.interfaces.lifecycle.Standard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is the lifecycle standard interface of the service.
@@ -168,10 +168,10 @@ Definition
 |       description: Standard lifecycle query operation.                      |
 +-----------------------------------------------------------------------------+
 
-1.3 Capability Types
+Capability Types
 ---------------------
 
-1.3.1 gso.capability.SingleDomainNs
+gso.capability.SingleDomainNs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is the depended capability of single domain network service.
@@ -194,10 +194,10 @@ Definition
 |     derived_from: tosca.capabilities.Root |
 +-------------------------------------------+
 
-1.4 Relationship Types
+Relationship Types
 --------------------------
 
-1.4.1 gso.relationship.DependOn
+gso.relationship.DependOn
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is the relationship of single domain network service and global
@@ -235,10 +235,10 @@ Definition
 |     valid_target_types: [gso.capability.SingleDomainNs]               |
 +-----------------------------------------------------------------------+
 
-1.5 Node Types
+Node Types
 ----------------
 
-1.5.1 gso.node.Root
+gso.node.Root
 ~~~~~~~~~~~~~~~~~~~
 
 Root is the super class of all the gs-o network service.
@@ -299,7 +299,7 @@ Definition
 |         required: false                                               |
 +-----------------------------------------------------------------------+
 
-1.5.2 gso.node.NetworkService
+gso.node.NetworkService
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Describe the information for the network service
@@ -361,7 +361,7 @@ Definition
 |       type: gso.interfaces.lifecycle.Standard |
 +-----------------------------------------------+
 
-1.5.3 gso.node.SingleDomainNetworkService
+gso.node.SingleDomainNetworkService
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Describe the information for the single domain network service
@@ -384,7 +384,7 @@ Definition
 |   description: single domain network service |
 +----------------------------------------------+
 
-1.5.4 gso.node.CrossDomainNetworkService
+gso.node.CrossDomainNetworkService
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Describe the basic information for cross domain network service
