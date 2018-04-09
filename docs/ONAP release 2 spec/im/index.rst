@@ -14,3 +14,5 @@ ONAP Information Model Specifications
 
    AddressData
    AffinityOrAntiAffinityGroup
+   Cpd
+   instantiationlevel
