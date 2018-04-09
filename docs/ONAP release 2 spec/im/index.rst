@@ -15,4 +15,6 @@ ONAP Information Model Specifications
    AddressData
    AffinityOrAntiAffinityGroup
    Cpd
-   instantiationlevel
+   InstantiationLevel
+   LinkBitrateRequirements
+   LogicalNodeData
