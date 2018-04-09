@@ -18,3 +18,5 @@ ONAP Information Model Specifications
    InstantiationLevel
    LinkBitrateRequirements
    LogicalNodeData
+   ScaleInfo
+   SwImageDesc
