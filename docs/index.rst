@@ -18,18 +18,3 @@ ONAP 1st release is mostly the merge of ECOMP and OPEN-O, the modeling specs are
    ONAP release 1 spec/index
 
    
-   
-We list the original ECOMP and OPEN-O as the reference which could help to understand how it comes from
-Below is ECOMP modeling spec:   
-
-.. toctree::
-   :maxdepth: 1
-   
-   refspec/ecomp/index
-
-Below is the reference spec for OPEN-O
-
-.. toctree::
-   :maxdepth: 1
-
-   refspec/open-o/index
