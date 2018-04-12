@@ -12,9 +12,9 @@ ONAP Data Model Specifications
 .. toctree::
    :titlesonly:
 
-   Artifact Types
-   Capabilities Types
-   Data Types
-   Interface Types
-   Node Types
-   Relationship Types
+   ArtifactTypes
+   CapabilitiesTypes
+   DataTypes
+   InterfaceTypes
+   NodeTypes
+   RelationshipTypes
