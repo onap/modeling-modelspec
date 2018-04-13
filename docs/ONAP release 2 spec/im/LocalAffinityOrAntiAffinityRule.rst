@@ -3,6 +3,7 @@
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
 Class: LocalAffinityOrAntiAffinityRule
+========================================
 
 +-------------+-------------+------------------+-----------------+----------------+
 | **Attribute | **Type**    | **Multiplicity** | **Description** | **Applied      |
