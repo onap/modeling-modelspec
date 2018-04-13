@@ -14,3 +14,23 @@ ONAP Information Model Specifications
 
    AddressData
    AffinityOrAntiAffinityGroup
+   cpd
+   instantiationlevel
+   linkbitraterequirements
+   logicalnodedata
+   ScaleInfo
+   SwImageDesc
+   vdu
+   vducpd
+   vduprofile
+   virtualcomputedesc
+   virtualcpudata
+   virtuallinkdescflavour
+   virtuallinkprofile
+   virtualmemorydata
+   virtualnetworkinterfacerequirements
+   virtualstoragedesc
+   vnfd
+   vnfdf
+   vnfextcpd
+   vnfvirtuallinkdesc
