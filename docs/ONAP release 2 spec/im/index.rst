@@ -14,23 +14,42 @@ ONAP Information Model Specifications
 
    AddressData
    AffinityOrAntiAffinityGroup
+   BaseConfigGroup
+   ConnectivityType
    cpd
+   CpProtocolData
+   DeploymentGroup
    instantiationlevel
+   L2AddressData
+   L3AddressData
+   LifecycleManagementScript
    linkbitraterequirements
+   LocalAffinityOrAntiAffinityRule
    logicalnodedata
+   MonitoringParameter
+   PlacementGroup
+   QoS
+   RequestedAdditionalCapabilityData
    ScaleInfo
    SwImageDesc
    vdu
    vducpd
+   VduLevel
    vduprofile
    virtualcomputedesc
    virtualcpudata
+   VirtualCpuPinningData
    virtuallinkdescflavour
    virtuallinkprofile
    virtualmemorydata
    virtualnetworkinterfacerequirements
    virtualstoragedesc
+   VnfcConfigurableProperties
+   VnfConfigurableProperties
    vnfd
+   VnfdElementGroup
    vnfdf
    vnfextcpd
+   VnfIndicator
+   VnfInfoModifiableAttributes
    vnfvirtuallinkdesc
