@@ -78,6 +78,8 @@ Data Types
 |       required: true
 |     network_interface_requirements:
 |       type: Map 
+|       entry_schema:
+|         type: string
 |       required: true
 |     nic_io_requirements:
 |       type: tosca.datatypes.nfv.LogicalNodeData
@@ -134,6 +136,8 @@ Data Types
 |         required: false
 |       vdu_memory_requirements:
 |         type: map
+|         entry_schema:
+|           type: string
 |         required: false
 |       numa_enabled:
 |         type: boolean
@@ -157,6 +161,8 @@ Data Types
 |       required: false
 |     vdu_cpu_requirements:
 |       type: map
+|       entry_schema:
+|         type: string
 |       required: false
 |     virtual_cpu_pinning:
 |       type: tosca.datatypes.nfv.VirtualCpuPinning
@@ -463,4 +469,6 @@ Data Types
 |     properties:
 |       logical_node_requirements:
 |         type: map # not defined in SOL001 v.6.0
+|         entry_schema:
+|           type: string
 |         required: false

@@ -90,6 +90,8 @@ Node Types
 |       required: true
 |     vdu_storage_requirements: 
 |       type: map
+|       entry_schema:
+|         type: string
 |       required: false
 |     rdma_enabled:
 |       type: boolean
