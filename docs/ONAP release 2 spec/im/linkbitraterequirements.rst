@@ -2,10 +2,6 @@
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
-.. contents::
-   :depth: 3
-..
-
 Class: LinkBitrateRequirements
 ==============================
 
@@ -33,11 +29,10 @@ Class: LinkBitrateRequirements
 |                    |             |                  | when            |                          |
 |                    |             |                  | applicable      |                          |
 |                    |             |                  | to the          |                          |
-|                    |             |                  | connectivit     |                          |
-|                    |             |                  | y               |                          |
+|                    |             |                  | connectivity    |                          |
 |                    |             |                  | type (e.g.      |                          |
 |                    |             |                  | for E-Tree      |                          |
-|                    |             |                  | and E?LAN       |                          |
+|                    |             |                  | and E-LAN       |                          |
 |                    |             |                  | branches).      |                          |
 |                    |             |                  |                 |                          |
 |                    |             |                  | NOTE: The       |                          |
@@ -49,8 +44,7 @@ Class: LinkBitrateRequirements
 |                    |             |                  | declare         |                          |
 |                    |             |                  | different       |                          |
 |                    |             |                  | bitrate         |                          |
-|                    |             |                  | requirement     |                          |
-|                    |             |                  | s               |                          |
+|                    |             |                  | requirements    |                          |
 |                    |             |                  | for leaf        |                          |
 |                    |             |                  | connections     |                          |
 |                    |             |                  | (e.g. E-LAN     |                          |

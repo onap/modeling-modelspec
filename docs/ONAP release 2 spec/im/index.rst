@@ -7,7 +7,7 @@
    contain the root `toctree` directive.
 
 ONAP Information Model Specifications
-==============================================
+=====================================
 
 .. toctree::
    :titlesonly:

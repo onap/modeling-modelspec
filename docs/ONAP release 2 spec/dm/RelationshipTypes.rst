@@ -1,9 +1,9 @@
-.. Copyright 2018 (ONAP)
+.. Copyright 2018 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
 Relationships Types
-==============================================
+===================
 
 | **tosca.relationships.nfv.VirtualBindsTo:**
 |   derived_from: tosca.relationships.DependsOn
