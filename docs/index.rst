@@ -17,4 +17,8 @@ ONAP 1st release is mostly the merge of ECOMP and OPEN-O, the modeling specs are
 
    ONAP release 1 spec/index
 
-   
+Release Notes
+
+.. toctree::
+   :maxdepth: 1
+   Release-notes/index
