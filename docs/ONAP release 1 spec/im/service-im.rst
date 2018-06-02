@@ -1,6 +1,7 @@
 .. Copyright 2017 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
+
 ===================================================================
 ONAP Service Descriptor Information Model Specification (Amsterdam)
 ===================================================================
@@ -56,8 +57,8 @@ The SD information element is a template whose instances are used by the SO for 
 |Attribute  | Qualifier | Cardinality |  Content |                 Description               |
 +-----------+-----------+-------------+----------+-------------------------------------------+
 |    id     |     M     |      1      |Identifier| Identifier of this SD information element.|
-|           |           |             |          |It globally uniquely identifies an instance|
-|           |           |             |          |of the SD.                                 |
+|           |           |             |          | It globally uniquely identifies an        |
+|           |           |             |          | instance of the SD.                       |
 +-----------+-----------+-------------+----------+-------------------------------------------+
 | designer  |     M     |      1      | String   | Designer of this SD.                      |
 +-----------+-----------+-------------+----------+-------------------------------------------+

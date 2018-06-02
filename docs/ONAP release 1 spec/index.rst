@@ -14,5 +14,5 @@ ONAP R1 Modeling Specifications
 
    csar/index
    im/index
-   Usecase/index
-
+   dm/index
+   Usecase/index 

@@ -4,3 +4,5 @@
 
 Class: DeploymentGroup (Experimental)
 =====================================
+
+This class is experimental and the detailed definition is for further discussion.
