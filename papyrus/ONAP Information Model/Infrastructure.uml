@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Onap_Profile="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2 Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25 OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA">
+  <uml:Package xmi:id="_tvikcDOHEei5Af8DcjrhIQ" name="Infrastructure">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDgGsDOHEei5Af8DcjrhIQ" name="Associations">
+      <packagedElement xmi:type="uml:Association" xmi:id="_HLSK4IUdEeim-78_quJkVw" name="PublicCloudRegionHasAvailabilityZones" memberEnd="_HLgNUIUdEeim-78_quJkVw _HLls4YUdEeim-78_quJkVw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HLeYIIUdEeim-78_quJkVw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HLe_MIUdEeim-78_quJkVw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_HLls4YUdEeim-78_quJkVw" name="_publlicCloudRegion" type="_WyajsIUQEeiLZbToO90xEA" association="_HLSK4IUdEeim-78_quJkVw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VhusAIUdEeim-78_quJkVw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VkNYQIUdEeim-78_quJkVw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_v2oWoIUyEeim-78_quJkVw" name="CloudRegionHasFlavours" memberEnd="_v2qL0YUyEeim-78_quJkVw _v2soEIUyEeim-78_quJkVw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v2pkwIUyEeim-78_quJkVw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v2qL0IUyEeim-78_quJkVw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_C0HUUIUzEeim-78_quJkVw" annotatedElement="_v2oWoIUyEeim-78_quJkVw">
+          <body>Public cloud providers may not provide all their flavours in all of their regions.</body>
+        </ownedComment>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_v2qL0YUyEeim-78_quJkVw" name="_publicCloudRegion" type="_WyajsIUQEeiLZbToO90xEA" association="_v2oWoIUyEeim-78_quJkVw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3lanQIUyEeim-78_quJkVw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ldqkIUyEeim-78_quJkVw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_v2soEIUyEeim-78_quJkVw" name="_virtualComputeFlavour" type="_OMYjMIUqEeim-78_quJkVw" association="_v2oWoIUyEeim-78_quJkVw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4VfZUIUyEeim-78_quJkVw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4VjDsIUyEeim-78_quJkVw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDgtwDOHEei5Af8DcjrhIQ" name="Diagrams">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DWvs0IUeEeim-78_quJkVw">
+        <body>REMINDER: This is an information model, which identifies all the key entities, relations and attributes in the (cloud) Infrastructure domain.  This is not a data model for implementation.</body>
+      </ownedComment>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oyIRkIUQEeiLZbToO90xEA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyjvYIUQEeiLZbToO90xEA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvYYUQEeiLZbToO90xEA" key="Version" value="0.2.13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvYoUQEeiLZbToO90xEA" key="Comment" value="ProfileLifecycle Profile v0.0.4 applied."/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvY4UQEeiLZbToO90xEA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvZIUQEeiLZbToO90xEA" key="Date" value="2017-08-16"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvZYUQEeiLZbToO90xEA" key="Author" value=""/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyKGwIUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oylkkIUQEeiLZbToO90xEA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyoA0IUQEeiLZbToO90xEA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyoA0YUQEeiLZbToO90xEA" key="Version" value="0.0.3"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyoA0oUQEeiLZbToO90xEA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyoA04UQEeiLZbToO90xEA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyoA1IUQEeiLZbToO90xEA" key="Date" value="2018-06-29"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyoA1YUQEeiLZbToO90xEA" key="Author" value=""/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oymLoIUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Onap_Profile.profile.uml#_a5YyYEMgEeisT-sjhttBCA"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDgtwTOHEei5Af8DcjrhIQ" name="Interfaces"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDhU0DOHEei5Af8DcjrhIQ" name="ObjectClasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_WyajsIUQEeiLZbToO90xEA" name="PublicCloudRegion">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9y7e8IUdEeim-78_quJkVw" annotatedElement="_WyajsIUQEeiLZbToO90xEA">
+          <body>PublicCloud Region is a public cloud provider's set of cloud data centers in a limited geography (e.g., a metropolitan area) and within a single jurisdictional boundary.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HLgNUIUdEeim-78_quJkVw" name="_publicCloudAvailabilityZone" type="_bLcZcIUQEeiLZbToO90xEA" aggregation="composite" association="_HLSK4IUdEeim-78_quJkVw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HLkewIUdEeim-78_quJkVw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HLls4IUdEeim-78_quJkVw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rYuwUIUkEeim-78_quJkVw" name="cloudProvider" type="_coI4kIUeEeim-78_quJkVw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_08h6cIUnEeim-78_quJkVw" name="cloudType" type="_mH7IkIUlEeim-78_quJkVw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ExqAEIUoEeim-78_quJkVw" annotatedElement="_08h6cIUnEeim-78_quJkVw">
+            <body>The variety of cloud orchestration.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HZSwsIUoEeim-78_quJkVw" name="regionName">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_UgBWYIUoEeim-78_quJkVw" annotatedElement="_HZSwsIUoEeim-78_quJkVw">
+            <body>The public cloud provider's name for the region.&#xD;
+Example, Microsoft Azure has regions &quot;East US&quot; and &quot;East US 2&quot;.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bLcZcIUQEeiLZbToO90xEA" name="PublicCloudAvailabilityZone">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_C1pnYIUdEeim-78_quJkVw" annotatedElement="_bLcZcIUQEeiLZbToO90xEA">
+          <body> A distinct location within a PublicCloudRegion that is insulated from failures in other Availability Zones, and provides inexpensive, low-latency network connectivity to other Availability Zones in the same region.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OZFX4IUpEeim-78_quJkVw" name="availabilityZoneName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OMYjMIUqEeim-78_quJkVw" name="VirtualComputeFlavour">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_t22w4IUqEeim-78_quJkVw" annotatedElement="_OMYjMIUqEeim-78_quJkVw">
+          <body>VirtualComputeFlavour represents the virtual machine sizes made available by the cloud provider (called vmSize in Azure, Instance Type in AWS, Machine Type in Google Cloud).</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1uNHoIUqEeim-78_quJkVw" name="flavourName">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZHphcIUrEeim-78_quJkVw" annotatedElement="_1uNHoIUqEeim-78_quJkVw">
+            <body>The name that the cloud provider uses for this flavour.&#xD;
+E.g., Azure has a Standard_H8m with specifications like 8 vCPU, 112 GiB memory, 1000 GiB SSD ephemeral storage and a maximum of 2 NICs.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JIwCgIUwEeim-78_quJkVw" name="description">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PkO4MIUwEeim-78_quJkVw" annotatedElement="_JIwCgIUwEeim-78_quJkVw">
+            <body>Human readable description of the flavour.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cCXz4IUwEeim-78_quJkVw" name="numVirtualCpu">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_p1N4sIUwEeim-78_quJkVw" annotatedElement="_cCXz4IUwEeim-78_quJkVw">
+            <body>Number of virtual CPUs. &#xD;
+(implicitly assumes a &quot;standard&quot; or normalized vCPU).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0JVM0IUwEeim-78_quJkVw" name="virtualMemSize">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6iZAoIUwEeim-78_quJkVw" annotatedElement="_0JVM0IUwEeim-78_quJkVw">
+            <body>Virtual memory size in some units (e.g., MB, GB, GiB).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WhXM8IUxEeim-78_quJkVw" name="rootDiskSize">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ufAR0IUxEeim-78_quJkVw" annotatedElement="_WhXM8IUxEeim-78_quJkVw">
+            <body>The maximum size, in some units, of the root disk allowed for this flavour.  If not specified, it may default to the size of the software image used in constructing the virtual machine.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zW2KgIUxEeim-78_quJkVw" name="additionalAttributes" type="_7UGU8IUxEeim-78_quJkVw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_feH3IIUyEeim-78_quJkVw" annotatedElement="_zW2KgIUxEeim-78_quJkVw">
+            <body>Name-value pairs for additional information about the flavour, typically specific to a cloud-provider. Some examples include:  swap disk size, maximum attachable disk count, maximum NICs, maximum cached throughput IOPs. </body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2agv0IUxEeim-78_quJkVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2aoroIUxEeim-78_quJkVw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hNtlcIUyEeim-78_quJkVw" name="hpaAttributes" type="_7UGU8IUxEeim-78_quJkVw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_rT1g4IUyEeim-78_quJkVw" annotatedElement="_hNtlcIUyEeim-78_quJkVw">
+            <body>Hardware Platform Awareness attributes available in this flavour.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lNChwIUyEeim-78_quJkVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lNIoYIUyEeim-78_quJkVw" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDhU0TOHEei5Af8DcjrhIQ" name="TypeDefinitions">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_coI4kIUeEeim-78_quJkVw" name="CloudProvider">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LKlAEIUfEeim-78_quJkVw" annotatedElement="_coI4kIUeEeim-78_quJkVw">
+          <body>The list of cloud providers that the ONAP instance is configured to use, including any owner-operated (private) clouds.  &#xD;
+ONAP should provide a default list, that the ONAP operator can customize.&#xD;
+</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_iRmbcIUeEeim-78_quJkVw" name="MICROSOFT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lcwI0IUeEeim-78_quJkVw" name="AMAZON"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qc8sQIUeEeim-78_quJkVw" name="..."/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_spk74IUeEeim-78_quJkVw" name="TELCO_X">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RoxLgIUfEeim-78_quJkVw" annotatedElement="_spk74IUeEeim-78_quJkVw">
+            <body>Element representing an owner-operated cloud.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_mH7IkIUlEeim-78_quJkVw" name="CloudType">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ZKy44IUnEeim-78_quJkVw" annotatedElement="_mH7IkIUlEeim-78_quJkVw">
+          <body>The major variety of cloud orchestration.  ONAP should have a default list that the ONAP operator can customizie.</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c75zAIUnEeim-78_quJkVw" name="AZURE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qB4KwIUnEeim-78_quJkVw" annotatedElement="_c75zAIUnEeim-78_quJkVw">
+            <body>Microsoft Azure</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jZ38AIUnEeim-78_quJkVw" name="EC2">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_r7gl4IUnEeim-78_quJkVw" annotatedElement="_jZ38AIUnEeim-78_quJkVw">
+            <body>Amazon Web Services EC2</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sxkEIIUnEeim-78_quJkVw" name="VIO">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_xBaIsIUnEeim-78_quJkVw" annotatedElement="_sxkEIIUnEeim-78_quJkVw">
+            <body>VMWare Integrated OpenStack</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6rZsUIUoEeim-78_quJkVw" name="..."/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7UGU8IUxEeim-78_quJkVw" name="NameValuePair"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jmkysIUQEeiLZbToO90xEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jrkncIUQEeiLZbToO90xEA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkncYUQEeiLZbToO90xEA" key="Version" value="0.2.13"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkncoUQEeiLZbToO90xEA" key="Comment" value="ProfileLifecycle Profile v0.0.4 applied."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrknc4UQEeiLZbToO90xEA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkndIUQEeiLZbToO90xEA" key="Date" value="2017-08-16"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkndYUQEeiLZbToO90xEA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jmmn4IUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jr1GIIUQEeiLZbToO90xEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jr3iYIUQEeiLZbToO90xEA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jr3iYYUQEeiLZbToO90xEA" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jr3iYoUQEeiLZbToO90xEA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jr3iY4UQEeiLZbToO90xEA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jr3iZIUQEeiLZbToO90xEA" key="Date" value="2018-06-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jr3iZYUQEeiLZbToO90xEA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jr1GIYUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="Onap_Profile.profile.uml#_a5YyYEMgEeisT-sjhttBCA"/>
+    </profileApplication>
+  </uml:Package>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jrjZUIUQEeiLZbToO90xEA" base_Class="_WyajsIUQEeiLZbToO90xEA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jrkAYIUQEeiLZbToO90xEA" base_Class="_bLcZcIUQEeiLZbToO90xEA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_jr27UIUQEeiLZbToO90xEA" base_Class="_WyajsIUQEeiLZbToO90xEA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_jr27UYUQEeiLZbToO90xEA" base_Class="_bLcZcIUQEeiLZbToO90xEA"/>
+  <OpenModel_Profile:Experimental xmi:id="_wgaL4IUQEeiLZbToO90xEA" base_Element="_WyajsIUQEeiLZbToO90xEA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_HLhbcIUdEeim-78_quJkVw" base_Property="_HLgNUIUdEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HLipkIUdEeim-78_quJkVw" base_StructuralFeature="_HLgNUIUdEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_HLmT8IUdEeim-78_quJkVw" base_Property="_HLls4YUdEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HLmT8YUdEeim-78_quJkVw" base_StructuralFeature="_HLls4YUdEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_rYv-cIUkEeim-78_quJkVw" base_Property="_rYuwUIUkEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rYv-cYUkEeim-78_quJkVw" base_StructuralFeature="_rYuwUIUkEeim-78_quJkVw" partOfObjectKey="1"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_08h6cYUnEeim-78_quJkVw" base_Property="_08h6cIUnEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_08ihgIUnEeim-78_quJkVw" base_StructuralFeature="_08h6cIUnEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_HZTXwIUoEeim-78_quJkVw" base_Property="_HZSwsIUoEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HZTXwYUoEeim-78_quJkVw" base_StructuralFeature="_HZSwsIUoEeim-78_quJkVw" partOfObjectKey="2"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_OZF-8IUpEeim-78_quJkVw" base_Property="_OZFX4IUpEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OZF-8YUpEeim-78_quJkVw" base_StructuralFeature="_OZFX4IUpEeim-78_quJkVw" partOfObjectKey="1"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_OMYjMYUqEeim-78_quJkVw" base_Class="_OMYjMIUqEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_OMZKQIUqEeim-78_quJkVw" base_Class="_OMYjMIUqEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_1uNusIUqEeim-78_quJkVw" base_Property="_1uNHoIUqEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1uNusYUqEeim-78_quJkVw" base_StructuralFeature="_1uNHoIUqEeim-78_quJkVw" partOfObjectKey="1"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_JIwCgYUwEeim-78_quJkVw" base_Property="_JIwCgIUwEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JIwpkIUwEeim-78_quJkVw" base_StructuralFeature="_JIwCgIUwEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_cCXz4YUwEeim-78_quJkVw" base_Property="_cCXz4IUwEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cCYa8IUwEeim-78_quJkVw" base_StructuralFeature="_cCXz4IUwEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_0JVM0YUwEeim-78_quJkVw" base_Property="_0JVM0IUwEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0JVz4IUwEeim-78_quJkVw" base_StructuralFeature="_0JVM0IUwEeim-78_quJkVw" unit="GB,MB,GiB,MiB"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_WhXM8YUxEeim-78_quJkVw" base_Property="_WhXM8IUxEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WhX0AIUxEeim-78_quJkVw" base_StructuralFeature="_WhXM8IUxEeim-78_quJkVw" unit="GB,GiB"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_zW2xkIUxEeim-78_quJkVw" base_Property="_zW2KgIUxEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zW2xkYUxEeim-78_quJkVw" base_StructuralFeature="_zW2KgIUxEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_hNtlcYUyEeim-78_quJkVw" base_Property="_hNtlcIUyEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hNtlcoUyEeim-78_quJkVw" base_StructuralFeature="_hNtlcIUyEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_v2qL0oUyEeim-78_quJkVw" base_Property="_v2qL0YUyEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_v2qy4IUyEeim-78_quJkVw" base_StructuralFeature="_v2qL0YUyEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_v2soEYUyEeim-78_quJkVw" base_Property="_v2soEIUyEeim-78_quJkVw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_v2tPIIUyEeim-78_quJkVw" base_StructuralFeature="_v2soEIUyEeim-78_quJkVw"/>
+  <OpenModel_Profile:Experimental xmi:id="_bN0GQIU3Eeim-78_quJkVw" base_Element="_bLcZcIUQEeiLZbToO90xEA"/>
+  <OpenModel_Profile:Experimental xmi:id="_dIxXEIU3Eeim-78_quJkVw" base_Element="_OMYjMIUqEeim-78_quJkVw"/>
+  <OpenModel_Profile:Experimental xmi:id="_f3jRgIU3Eeim-78_quJkVw" base_Element="_HLSK4IUdEeim-78_quJkVw"/>
+  <OpenModel_Profile:Experimental xmi:id="_hJk6EIU3Eeim-78_quJkVw" base_Element="_v2oWoIUyEeim-78_quJkVw"/>
+</xmi:XMI>
