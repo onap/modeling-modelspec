@@ -323,8 +323,69 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_AfWeQES6EeiVGPeZpaYNtQ" name="_pnf" type="_6GSVkDzFEeiWMf5FLWfdLA" association="_AeHIIES6EeiVGPeZpaYNtQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rUEhgIoAEeiOe-BKGdv_Yg" name="ServiceOrderComprisedOf" memberEnd="_rUHk0IoAEeiOe-BKGdv_Yg _rUIy8ooAEeiOe-BKGdv_Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rUGWsIoAEeiOe-BKGdv_Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rUGWsYoAEeiOe-BKGdv_Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rUIy8ooAEeiOe-BKGdv_Yg" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_rUEhgIoAEeiOe-BKGdv_Yg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CZQ7cIoBEeiOe-BKGdv_Yg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CZ2KQIoBEeiOe-BKGdv_Yg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LBuJkIoCEeiOe-BKGdv_Yg" name="ServiceOrderItemInvolvesServiceInstance" memberEnd="_LBvXsIoCEeiOe-BKGdv_Yg _LBv-wooCEeiOe-BKGdv_Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LBuwoIoCEeiOe-BKGdv_Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBuwoYoCEeiOe-BKGdv_Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LBv-wooCEeiOe-BKGdv_Yg" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_LBuJkIoCEeiOe-BKGdv_Yg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zt4DQI9YEeiT7tMsBl6xjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zt9i0I9YEeiT7tMsBl6xjA" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LBvXsIoCEeiOe-BKGdv_Yg" name="serviceinstance" type="_HFfXUD0QEeiWMf5FLWfdLA" association="_LBuJkIoCEeiOe-BKGdv_Yg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LBv-wIoCEeiOe-BKGdv_Yg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LBv-wYoCEeiOe-BKGdv_Yg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IdqxoI9WEeiT7tMsBl6xjA" name="ServiceOrderItemInvolvesServiceDescriptor" memberEnd="_IducAI9WEeiT7tMsBl6xjA _IdwRMI9WEeiT7tMsBl6xjA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Idsm0I9WEeiT7tMsBl6xjA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IdtN4I9WEeiT7tMsBl6xjA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IducAI9WEeiT7tMsBl6xjA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_IdqxoI9WEeiT7tMsBl6xjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FeYgkI9XEeiT7tMsBl6xjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FegcYI9XEeiT7tMsBl6xjA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IdwRMI9WEeiT7tMsBl6xjA" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_IdqxoI9WEeiT7tMsBl6xjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I6qaMI9XEeiT7tMsBl6xjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I6uroI9XEeiT7tMsBl6xjA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OR0wUI9QEeiT7tMsBl6xjA">
+        <body>Red items - need input from ExtAPI team.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_IpxtQI9REeiT7tMsBl6xjA">
+        <body>action - an enumeration?</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SLZ0gI9REeiT7tMsBl6xjA">
+        <body>Quantity an add from TMF Model</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hcacQI9YEeiT7tMsBl6xjA">
+        <body>Discuss ServiceOrderItem to ServiceDesc / Service Insance Multiplicity</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_efN6QI93EeiT7tMsBl6xjA" name="ServiceCatalog"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nrfckI93EeiT7tMsBl6xjA" name="Attachment"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lUWJkI94EeiT7tMsBl6xjA" name="ServiceCandidate (ServiceCatalogItem)"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Jdyc8I95EeiT7tMsBl6xjA" name="ServiceDescriptorMadeAvailableAsServiceCatalogItem" memberEnd="_JdzrEo95EeiT7tMsBl6xjA _Jd05MI95EeiT7tMsBl6xjA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JdzrEI95EeiT7tMsBl6xjA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JdzrEY95EeiT7tMsBl6xjA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Jd05MI95EeiT7tMsBl6xjA" name="servicecandidate (servicecatalogitem)" type="_lUWJkI94EeiT7tMsBl6xjA" association="_Jdyc8I95EeiT7tMsBl6xjA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JdzrEo95EeiT7tMsBl6xjA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" aggregation="shared" association="_Jdyc8I95EeiT7tMsBl6xjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ordkcI96EeiT7tMsBl6xjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_or8FkI96EeiT7tMsBl6xjA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXN0ADOHEei5Af8DcjrhIQ" name="ObjectClasses">
       <packagedElement xmi:type="uml:Class" xmi:id="_13KfMDzEEeiWMf5FLWfdLA" name="NetworkServiceDescriptor">
@@ -1480,6 +1541,121 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wPlqsD0cEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mrJV8In9EeiOe-BKGdv_Yg" name="ServiceOrder">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_u8BdMI9yEeiT7tMsBl6xjA" annotatedElement="_mrJV8In9EeiOe-BKGdv_Yg">
+          <body>A type of Request that represents a Customer Order's products decomposed into the services through which the products are realized.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q-9g4In-EeiOe-BKGdv_Yg" name="id">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_HDAXcIxWEeil1cj9avVx5g" annotatedElement="_Q-9g4In-EeiOe-BKGdv_Yg">
+            <body>Unique identifier for Interaction.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VaScsIn-EeiOe-BKGdv_Yg" name="href">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_W04LYIn-EeiOe-BKGdv_Yg" name="externalId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XqlEUIn-EeiOe-BKGdv_Yg" name="priority">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YPjZoIn-EeiOe-BKGdv_Yg" name="description">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_I8w48IxXEeil1cj9avVx5g" annotatedElement="_YPjZoIn-EeiOe-BKGdv_Yg">
+            <body>Narrative that explains the interaction and details about the interaction, such as why the interaction is taking place.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YvjIUIn-EeiOe-BKGdv_Yg" name="category">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZM2IUIn-EeiOe-BKGdv_Yg" name="orderState" type="_3a0cEI6OEeiLSKWGMeE9mQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PTmPEI6PEeiLSKWGMeE9mQ" annotatedElement="_ZM2IUIn-EeiOe-BKGdv_Yg">
+            <body>State of the order</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bNd8QIn-EeiOe-BKGdv_Yg" name="completionDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_NtzmEIxXEeil1cj9avVx5g" annotatedElement="_bNd8QIn-EeiOe-BKGdv_Yg">
+            <body>The date on which an interaction is closed or completed.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dOQ54In_EeiOe-BKGdv_Yg" name="requestedStartDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_x_JoII6PEeiLSKWGMeE9mQ" annotatedElement="_dOQ54In_EeiOe-BKGdv_Yg">
+            <body>The date that was requested to start processing the order.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eNHu0In_EeiOe-BKGdv_Yg" name="requestedCompletionDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_VkMVUI6NEeiLSKWGMeE9mQ" annotatedElement="_eNHu0In_EeiOe-BKGdv_Yg">
+            <body>The date on which an interaction is closed or completed.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eyBysIn_EeiOe-BKGdv_Yg" name="expectedCompletionDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZklBkI6NEeiLSKWGMeE9mQ" annotatedElement="_eyBysIn_EeiOe-BKGdv_Yg">
+            <body>The date on which an interaction is expected to be completed.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fTdEwIn_EeiOe-BKGdv_Yg" name="startDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_dZs5AI6NEeiLSKWGMeE9mQ" annotatedElement="_fTdEwIn_EeiOe-BKGdv_Yg">
+            <body>The date on which an interaction is started.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fvaA8In_EeiOe-BKGdv_Yg" name="notificationContact"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rUHk0IoAEeiOe-BKGdv_Yg" name="_serviceOrderItem" type="_wng4cIn9EeiOe-BKGdv_Yg" aggregation="composite" association="_rUEhgIoAEeiOe-BKGdv_Yg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rUIy8IoAEeiOe-BKGdv_Yg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rUIy8YoAEeiOe-BKGdv_Yg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uatGcI6OEeiLSKWGMeE9mQ" name="OrderDate">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_oM8uQI6PEeiLSKWGMeE9mQ" annotatedElement="_uatGcI6OEeiLSKWGMeE9mQ">
+            <body>The date the order was placed.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_nIvmkI9QEeiT7tMsBl6xjA" name="baseType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oNpZII9QEeiT7tMsBl6xjA" name="type">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_o4qFAI9QEeiT7tMsBl6xjA" name="schemaLocation">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wng4cIn9EeiOe-BKGdv_Yg" name="ServiceOrderItem">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ylEjII9UEeiT7tMsBl6xjA" annotatedElement="_wng4cIn9EeiOe-BKGdv_Yg">
+          <body>The purpose for the ServiceOrder expressed in terms of a ServiceSpecification or a Service.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tFrMkIoBEeiOe-BKGdv_Yg" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ttCHgIoBEeiOe-BKGdv_Yg" name="action">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_LsUUcI6REeiLSKWGMeE9mQ" annotatedElement="_ttCHgIoBEeiOe-BKGdv_Yg">
+            <body>The action to take for an InteractionItem, such as add, change, remove.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uN6nAIoBEeiOe-BKGdv_Yg" name="state">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_up_fAIoBEeiOe-BKGdv_Yg" name="Quantity">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ge_5MI6REeiLSKWGMeE9mQ" annotatedElement="_up_fAIoBEeiOe-BKGdv_Yg">
+            <body>Quantity of an interaction item involved in an interaction.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wUQocIoBEeiOe-BKGdv_Yg" name="type">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vltEcI9TEeiT7tMsBl6xjA" name="schemaLocation">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xbTUII9TEeiT7tMsBl6xjA" name="baseType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZBoTzEEeiWMf5FLWfdLA" name="VirtualLinkDf">
@@ -1659,6 +1835,17 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
             <body>Includes an NS LCM script (e.g., written in a DSL) triggered to react to one of the events listed in the event attribute.</body>
           </ownedComment>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_3a0cEI6OEeiLSKWGMeE9mQ" name="OrderState">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KgZ4I6OEeiLSKWGMeE9mQ" name="Acknowledged"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9e8hsI6OEeiLSKWGMeE9mQ" name="InProgress"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A5qVEI6PEeiLSKWGMeE9mQ" name="Pending"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CIzBsI6PEeiLSKWGMeE9mQ" name="Held"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ded0II6PEeiLSKWGMeE9mQ" name="Cancelled"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EoLOMI6PEeiLSKWGMeE9mQ" name="Completed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GBApYI6PEeiLSKWGMeE9mQ" name="Failed"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HE9ZsI6PEeiLSKWGMeE9mQ" name="Partial"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JHmm4I6PEeiLSKWGMeE9mQ" name="Rejected"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_WAgpYHu_EeiiR5bcbqvgpQ">
@@ -2151,4 +2338,78 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
   <Onap_Profile:OnapModelLifecycle xmi:id="_WGCpoHu_EeiiR5bcbqvgpQ" base_Property="_kEZo-zzEEeiWMf5FLWfdLA"/>
   <Onap_Profile:OnapModelLifecycle xmi:id="_WGD3wHu_EeiiR5bcbqvgpQ" base_Property="_kEaPWDzEEeiWMf5FLWfdLA"/>
   <Onap_Profile:OnapModelLifecycle xmi:id="_WGFF4Hu_EeiiR5bcbqvgpQ" base_Property="_kEaPXDzEEeiWMf5FLWfdLA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_mrLLIIn9EeiOe-BKGdv_Yg" base_Class="_mrJV8In9EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_mrLLIYn9EeiOe-BKGdv_Yg" base_Class="_mrJV8In9EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_wng4cYn9EeiOe-BKGdv_Yg" base_Class="_wng4cIn9EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_wnhfgIn9EeiOe-BKGdv_Yg" base_Class="_wng4cIn9EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_Q--H8In-EeiOe-BKGdv_Yg" base_Property="_Q-9g4In-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Q--H8Yn-EeiOe-BKGdv_Yg" base_StructuralFeature="_Q-9g4In-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_VaTDwIn-EeiOe-BKGdv_Yg" base_Property="_VaScsIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VaTDwYn-EeiOe-BKGdv_Yg" base_StructuralFeature="_VaScsIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_W04LYYn-EeiOe-BKGdv_Yg" base_Property="_W04LYIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_W04ycIn-EeiOe-BKGdv_Yg" base_StructuralFeature="_W04LYIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_XqlEUYn-EeiOe-BKGdv_Yg" base_Property="_XqlEUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XqlrYIn-EeiOe-BKGdv_Yg" base_StructuralFeature="_XqlEUIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_YPjZoYn-EeiOe-BKGdv_Yg" base_Property="_YPjZoIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YPkAsIn-EeiOe-BKGdv_Yg" base_StructuralFeature="_YPjZoIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_YvjvYIn-EeiOe-BKGdv_Yg" base_Property="_YvjIUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YvjvYYn-EeiOe-BKGdv_Yg" base_StructuralFeature="_YvjIUIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_ZM2IUYn-EeiOe-BKGdv_Yg" base_Property="_ZM2IUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZM2IUon-EeiOe-BKGdv_Yg" base_StructuralFeature="_ZM2IUIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_bNd8QYn-EeiOe-BKGdv_Yg" base_Property="_bNd8QIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bNd8Qon-EeiOe-BKGdv_Yg" base_StructuralFeature="_bNd8QIn-EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_dORg8In_EeiOe-BKGdv_Yg" base_Property="_dOQ54In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_dORg8Yn_EeiOe-BKGdv_Yg" base_StructuralFeature="_dOQ54In_EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_eNHu0Yn_EeiOe-BKGdv_Yg" base_Property="_eNHu0In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eNIV4In_EeiOe-BKGdv_Yg" base_StructuralFeature="_eNHu0In_EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_eyBysYn_EeiOe-BKGdv_Yg" base_Property="_eyBysIn_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eyByson_EeiOe-BKGdv_Yg" base_StructuralFeature="_eyBysIn_EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_fTdr0In_EeiOe-BKGdv_Yg" base_Property="_fTdEwIn_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_fTdr0Yn_EeiOe-BKGdv_Yg" base_StructuralFeature="_fTdEwIn_EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_fvaA8Yn_EeiOe-BKGdv_Yg" base_Property="_fvaA8In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_fvaA8on_EeiOe-BKGdv_Yg" base_StructuralFeature="_fvaA8In_EeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_rUIL4IoAEeiOe-BKGdv_Yg" base_Property="_rUHk0IoAEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rUIL4YoAEeiOe-BKGdv_Yg" base_StructuralFeature="_rUHk0IoAEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_rUIy84oAEeiOe-BKGdv_Yg" base_Property="_rUIy8ooAEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rUIy9IoAEeiOe-BKGdv_Yg" base_StructuralFeature="_rUIy8ooAEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_tFrMkYoBEeiOe-BKGdv_Yg" base_Property="_tFrMkIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tFrMkooBEeiOe-BKGdv_Yg" base_StructuralFeature="_tFrMkIoBEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_ttCHgYoBEeiOe-BKGdv_Yg" base_Property="_ttCHgIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ttCHgooBEeiOe-BKGdv_Yg" base_StructuralFeature="_ttCHgIoBEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_uN7OEIoBEeiOe-BKGdv_Yg" base_Property="_uN6nAIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uN7OEYoBEeiOe-BKGdv_Yg" base_StructuralFeature="_uN6nAIoBEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_up_fAYoBEeiOe-BKGdv_Yg" base_Property="_up_fAIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_up_fAooBEeiOe-BKGdv_Yg" base_StructuralFeature="_up_fAIoBEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_wUQocYoBEeiOe-BKGdv_Yg" base_Property="_wUQocIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wUQocooBEeiOe-BKGdv_Yg" base_StructuralFeature="_wUQocIoBEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_LBvXsYoCEeiOe-BKGdv_Yg" base_Property="_LBvXsIoCEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LBvXsooCEeiOe-BKGdv_Yg" base_StructuralFeature="_LBvXsIoCEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_LBv-w4oCEeiOe-BKGdv_Yg" base_Property="_LBv-wooCEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LBv-xIoCEeiOe-BKGdv_Yg" base_StructuralFeature="_LBv-wooCEeiOe-BKGdv_Yg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_uatGcY6OEeiLSKWGMeE9mQ" base_Property="_uatGcI6OEeiLSKWGMeE9mQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uattgI6OEeiLSKWGMeE9mQ" base_StructuralFeature="_uatGcI6OEeiLSKWGMeE9mQ"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_nIw0sI9QEeiT7tMsBl6xjA" base_Property="_nIvmkI9QEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nIyC0I9QEeiT7tMsBl6xjA" base_StructuralFeature="_nIvmkI9QEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_oNqAMI9QEeiT7tMsBl6xjA" base_Property="_oNpZII9QEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oNrOUI9QEeiT7tMsBl6xjA" base_StructuralFeature="_oNpZII9QEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_o4qsEI9QEeiT7tMsBl6xjA" base_Property="_o4qFAI9QEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_o4qsEY9QEeiT7tMsBl6xjA" base_StructuralFeature="_o4qFAI9QEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_vltrgI9TEeiT7tMsBl6xjA" base_Property="_vltEcI9TEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vltrgY9TEeiT7tMsBl6xjA" base_StructuralFeature="_vltEcI9TEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_xbT7MI9TEeiT7tMsBl6xjA" base_Property="_xbTUII9TEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xbT7MY9TEeiT7tMsBl6xjA" base_StructuralFeature="_xbTUII9TEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_IducAY9WEeiT7tMsBl6xjA" base_Property="_IducAI9WEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IdvDEI9WEeiT7tMsBl6xjA" base_StructuralFeature="_IducAI9WEeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_IdwRMY9WEeiT7tMsBl6xjA" base_Property="_IdwRMI9WEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IdwRMo9WEeiT7tMsBl6xjA" base_StructuralFeature="_IdwRMI9WEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_efN6QY93EeiT7tMsBl6xjA" base_Class="_efN6QI93EeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_efOhUI93EeiT7tMsBl6xjA" base_Class="_efN6QI93EeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_nrfckY93EeiT7tMsBl6xjA" base_Class="_nrfckI93EeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_nrgDoI93EeiT7tMsBl6xjA" base_Class="_nrfckI93EeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_lUWJkY94EeiT7tMsBl6xjA" base_Class="_lUWJkI94EeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_lUWwoI94EeiT7tMsBl6xjA" base_Class="_lUWJkI94EeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_JdzrE495EeiT7tMsBl6xjA" base_Property="_JdzrEo95EeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Jd0SII95EeiT7tMsBl6xjA" base_StructuralFeature="_JdzrEo95EeiT7tMsBl6xjA"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_Jd05MY95EeiT7tMsBl6xjA" base_Property="_Jd05MI95EeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Jd05Mo95EeiT7tMsBl6xjA" base_StructuralFeature="_Jd05MI95EeiT7tMsBl6xjA"/>
 </xmi:XMI>
