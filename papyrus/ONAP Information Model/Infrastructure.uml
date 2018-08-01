@@ -82,6 +82,17 @@ Example, Microsoft Azure has regions &quot;East US&quot; and &quot;East US 2&quo
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vp0JcJXXEeiLaKYqBZrH_A" name="location">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_5qVzMJXXEeiLaKYqBZrH_A" annotatedElement="_vp0JcJXXEeiLaKYqBZrH_A">
+            <body>The city, and/or state or province, and country where the PublicCloudRegion is.  Note that the public cloud providers typically at best provide a city name for where the PublicCloudRegion and its availability zones are located.&#xD;
+&#xD;
+E.g., Amazon AWS &quot;US West&quot; is in Northern California; &quot;EU-West-2&quot; is in London, &quot;EU-West-3&quot; is in Paris.&#xD;
+E.g., Microsoft Azure &quot;US Central&quot; is in Iowa; &quot;US East 2&quot; is in Virginia; one has to search through non-Microsoft public records to find out that &quot;US East 2&quot; may be in Boydton, Virginia.&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bLcZcIUQEeiLZbToO90xEA" name="PublicCloudAvailabilityZone">
         <ownedComment xmi:type="uml:Comment" xmi:id="_C1pnYIUdEeim-78_quJkVw" annotatedElement="_bLcZcIUQEeiLZbToO90xEA">
@@ -251,4 +262,6 @@ ONAP should provide a default list, that the ONAP operator can customize.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_dIxXEIU3Eeim-78_quJkVw" base_Element="_OMYjMIUqEeim-78_quJkVw"/>
   <OpenModel_Profile:Experimental xmi:id="_f3jRgIU3Eeim-78_quJkVw" base_Element="_HLSK4IUdEeim-78_quJkVw"/>
   <OpenModel_Profile:Experimental xmi:id="_hJk6EIU3Eeim-78_quJkVw" base_Element="_v2oWoIUyEeim-78_quJkVw"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_vs9kEJXXEeiLaKYqBZrH_A" base_Property="_vp0JcJXXEeiLaKYqBZrH_A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vs_ZQJXXEeiLaKYqBZrH_A" base_StructuralFeature="_vp0JcJXXEeiLaKYqBZrH_A"/>
 </xmi:XMI>
