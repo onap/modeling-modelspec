@@ -468,6 +468,26 @@ If null, then represents to the end of time&#xD;
           <type xmi:type="uml:Class" href="Resource.uml#_13gdcDzEEeiWMf5FLWfdLA"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_H25ikJv5Eei6BMOyKeUm6w" name="VnfHasVnfExtCp">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_H3IMEJv5Eei6BMOyKeUm6w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_H3IzIJv5Eei6BMOyKeUm6w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <memberEnd xmi:type="uml:Property" href="Vnf.uml#_H3LPYJv5Eei6BMOyKeUm6w"/>
+        <memberEnd xmi:type="uml:Property" href="#_H3O5wZv5Eei6BMOyKeUm6w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_H3O5wZv5Eei6BMOyKeUm6w" name="vnf" association="_H25ikJv5Eei6BMOyKeUm6w">
+          <type xmi:type="uml:Class" href="Vnf.uml#_Io3nQESzEeiVGPeZpaYNtQ"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bvxxgJv5Eei6BMOyKeUm6w" name="PnfHasPnfExtCp">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bvzmsJv5Eei6BMOyKeUm6w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bv0NwJv5Eei6BMOyKeUm6w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <memberEnd xmi:type="uml:Property" href="Resource.uml#_bv0NwZv5Eei6BMOyKeUm6w"/>
+        <memberEnd xmi:type="uml:Property" href="#_bv2qAZv5Eei6BMOyKeUm6w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bv2qAZv5Eei6BMOyKeUm6w" name="pnf" association="_bvxxgJv5Eei6BMOyKeUm6w">
+          <type xmi:type="uml:Class" href="Resource.uml#_6GSVkDzFEeiWMf5FLWfdLA"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXN0ADOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -2521,4 +2541,8 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
   <OpenModel_Profile:Experimental xmi:id="_mLVEMJmlEeiSm9XNElOsxQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFaTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_H3Pg0Jv5Eei6BMOyKeUm6w" base_StructuralFeature="_H3O5wZv5Eei6BMOyKeUm6w"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_H3Qu8Jv5Eei6BMOyKeUm6w" base_Property="_H3O5wZv5Eei6BMOyKeUm6w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bv3REJv5Eei6BMOyKeUm6w" base_StructuralFeature="_bv2qAZv5Eei6BMOyKeUm6w"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_bv34IJv5Eei6BMOyKeUm6w" base_Property="_bv2qAZv5Eei6BMOyKeUm6w"/>
 </xmi:XMI>
