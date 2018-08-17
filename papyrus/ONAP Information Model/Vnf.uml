@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Onap_Profile="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2 Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25 OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA">
   <uml:Package xmi:id="_xXjM8DOHEei5Af8DcjrhIQ" name="Vnf">
-    <packagedElement xmi:type="uml:Association" xmi:id="_PazUoJzEEeiLvPKMh61-Bg" name="ServiceDescComposisteComprisedOfServiceDescriptor" memberEnd="_Pa3mEJzEEeiLvPKMh61-Bg _Pa6pYJzEEeiLvPKMh61-Bg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pa2X8JzEEeiLvPKMh61-Bg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pa2_AJzEEeiLvPKMh61-Bg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Pa6pYJzEEeiLvPKMh61-Bg" name="servicedesccomposite" type="_BQaDwJpZEeidy9iGT_F5-w" association="_PazUoJzEEeiLvPKMh61-Bg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_juTDAJzEEeiLvPKMh61-Bg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jukIwJzEEeiLvPKMh61-Bg" value="1"/>
-      </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Pa3mEJzEEeiLvPKMh61-Bg" name="servicedescriptor" aggregation="shared" association="_PazUoJzEEeiLvPKMh61-Bg">
-        <type xmi:type="uml:Class" href="Service.uml#_Jvy-QD0MEeiWMf5FLWfdLA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rFeE4JzEEeiLvPKMh61-Bg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rGvQMJzEEeiLvPKMh61-Bg" value="*"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPNSIDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_u3e7kDOVEeiHat9KcP8uWA" name="VnfdUsesVCDesc" memberEnd="_u3gwwDOVEeiHat9KcP8uWA _u3j0EDOVEeiHat9KcP8uWA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u3gJsDOVEeiHat9KcP8uWA" source="org.eclipse.papyrus">
@@ -529,6 +515,8 @@ A Cp is not a resource</body>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t91lgKFsEeinsNXClcPPiQ" name="ServiceDescriptor (Copy)"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RSljMKGGEeinsNXClcPPiQ" name="PrimitiveType17"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MjOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -1449,17 +1437,19 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LAkPIDgVEeiOYfGHew0BGg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LArj4DgVEeiOYfGHew0BGg" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_2-_hwDgVEeiOYfGHew0BGg" name="maxBitRateRequirements" type="_LsX6UDgXEeiOYfGHew0BGg">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2-_hwDgVEeiOYfGHew0BGg" name="maxBitRateRequirements">
           <ownedComment xmi:type="uml:Comment" xmi:id="_n6_2wDgYEeiOYfGHew0BGg" annotatedElement="_2-_hwDgVEeiOYfGHew0BGg">
             <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
 </body>
           </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_s7WyQDgYEeiOYfGHew0BGg" name="minBitRateRequirements" type="_LsX6UDgXEeiOYfGHew0BGg">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s7WyQDgYEeiOYfGHew0BGg" name="minBitRateRequirements">
           <ownedComment xmi:type="uml:Comment" xmi:id="_0SpI4DgYEeiOYfGHew0BGg" annotatedElement="_s7WyQDgYEeiOYfGHew0BGg">
             <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
 </body>
           </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-SutwDgYEeiOYfGHew0BGg" name="initiationParameters">
           <ownedComment xmi:type="uml:Comment" xmi:id="_VxkhUDgaEeiOYfGHew0BGg" annotatedElement="_-SutwDgYEeiOYfGHew0BGg">
@@ -2058,14 +2048,10 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_iQkugJpYEeidy9iGT_F5-w" name="ServiceDescAtomic">
-        <generalization xmi:type="uml:Generalization" xmi:id="_5lowcJpYEeidy9iGT_F5-w">
-          <general xmi:type="uml:Class" href="Service.uml#_Jvy-QD0MEeiWMf5FLWfdLA"/>
-        </generalization>
+        <generalization xmi:type="uml:Generalization" xmi:id="_5lowcJpYEeidy9iGT_F5-w" general="_t91lgKFsEeinsNXClcPPiQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_BQaDwJpZEeidy9iGT_F5-w" name="ServiceDescComposite">
-        <generalization xmi:type="uml:Generalization" xmi:id="_LfWkAJpZEeidy9iGT_F5-w">
-          <general xmi:type="uml:Class" href="Service.uml#_Jvy-QD0MEeiWMf5FLWfdLA"/>
-        </generalization>
+        <generalization xmi:type="uml:Generalization" xmi:id="_LfWkAJpZEeidy9iGT_F5-w" general="_t91lgKFsEeinsNXClcPPiQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RiB5QJs3EeiPBvbfaqSLYg" name="Pnfd">
         <generalization xmi:type="uml:Generalization" xmi:id="_dSlWMJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
@@ -2379,29 +2365,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
           <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z7MFgDd_EeiIfPeSAqyGdQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z7WdkDd_EeiIfPeSAqyGdQ" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_LsX6UDgXEeiOYfGHew0BGg" name="LinkBitrateRequirements">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_TNBy4DgYEeiOYfGHew0BGg" annotatedElement="_LsX6UDgXEeiOYfGHew0BGg">
-          <body>The LinkBitrateRequirements information element describes the requirements in terms of bitrate for a VL.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_TsnHUDgXEeiOYfGHew0BGg" name="root">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_m5ImkDgXEeiOYfGHew0BGg" annotatedElement="_TsnHUDgXEeiOYfGHew0BGg">
-            <body>Throughput requirement of the link (e.g. bitrate of E-Line, root bitrate of E-Tree, aggregate capacity of E-LAN).&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_W5c2wDgXEeiOYfGHew0BGg" name="leaf">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_MagWMDgYEeiOYfGHew0BGg" annotatedElement="_W5c2wDgXEeiOYfGHew0BGg">
-            <body>Throughput requirement of leaf connections to the link when applicable to the connectivity type (e.g. for E-Tree and E?LAN branches).&#xD;
-&#xD;
-NOTE: The present document does not specify the means to declare different bitrate requirements for leaf connections (e.g. E-LAN leaves).&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GlJsYDgYEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GlNWwDgYEeiOYfGHew0BGg" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_ZqQQ8DkIEeiWMf5FLWfdLA" name="VnfConfigurableProperties">
@@ -2961,8 +2924,12 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_O2zgIDeBEeiIfPeSAqyGdQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_O2y5EDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_TsnHUTgXEeiOYfGHew0BGg" base_StructuralFeature="_TsnHUDgXEeiOYfGHew0BGg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_W5dd0DgXEeiOYfGHew0BGg" base_StructuralFeature="_W5c2wDgXEeiOYfGHew0BGg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_TsnHUTgXEeiOYfGHew0BGg">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_TsnHUDgXEeiOYfGHew0BGg"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_W5dd0DgXEeiOYfGHew0BGg">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pswrQDkIEeiWMf5FLWfdLA" base_StructuralFeature="_pslFEDkIEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pxWQUDkIEeiWMf5FLWfdLA" base_StructuralFeature="_pxVpQDkIEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pxdlEzkIEeiWMf5FLWfdLA" base_StructuralFeature="_pxdlEDkIEeiWMf5FLWfdLA"/>
@@ -3357,8 +3324,12 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf4Hu_EeiiR5bcbqvgpQ">
     <base_Property xmi:type="uml:Property" href="Common.uml#_O2y5EDeBEeiIfPeSAqyGdQ"/>
   </Onap_Profile:OnapModelLifecycle>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf4Xu_EeiiR5bcbqvgpQ" base_Property="_TsnHUDgXEeiOYfGHew0BGg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf4nu_EeiiR5bcbqvgpQ" base_Property="_W5c2wDgXEeiOYfGHew0BGg"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf4Xu_EeiiR5bcbqvgpQ">
+    <base_Property xmi:type="uml:Property" href="Common.uml#_TsnHUDgXEeiOYfGHew0BGg"/>
+  </Onap_Profile:OnapModelLifecycle>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf4nu_EeiiR5bcbqvgpQ">
+    <base_Property xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
+  </Onap_Profile:OnapModelLifecycle>
   <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf43u_EeiiR5bcbqvgpQ" base_Property="_pslFEDkIEeiWMf5FLWfdLA"/>
   <Onap_Profile:OnapModelLifecycle xmi:id="_bkuf5Hu_EeiiR5bcbqvgpQ" base_Property="_pxVpQDkIEeiWMf5FLWfdLA"/>
   <Onap_Profile:OnapModelLifecycle xmi:id="_bkvG8Hu_EeiiR5bcbqvgpQ" base_Property="_pxdlEDkIEeiWMf5FLWfdLA"/>
@@ -3580,9 +3551,15 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Preliminary xmi:id="_-EU-MJUGEeiYXO5wr78TUw" base_Element="_95b1UDnLEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_-8rigJUGEeiYXO5wr78TUw" base_Element="__bv8oDnLEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_AP5d4JUHEeiYXO5wr78TUw" base_Element="_nJzw0DnNEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_CPNDMJUHEeiYXO5wr78TUw" base_Element="_LsX6UDgXEeiOYfGHew0BGg"/>
-  <OpenModel_Profile:Preliminary xmi:id="_DLly8JUHEeiYXO5wr78TUw" base_Element="_TsnHUDgXEeiOYfGHew0BGg"/>
-  <OpenModel_Profile:Preliminary xmi:id="_EGet4JUHEeiYXO5wr78TUw" base_Element="_W5c2wDgXEeiOYfGHew0BGg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_CPNDMJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_DLly8JUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_TsnHUDgXEeiOYfGHew0BGg"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_EGet4JUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_LCFOEJUHEeiYXO5wr78TUw" base_Element="_7hn1IDd1EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_L1qAEJUHEeiYXO5wr78TUw" base_Element="_EjJgADd2EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_Mjc6MJUHEeiYXO5wr78TUw" base_Element="_F5b9gDd2EeiIfPeSAqyGdQ"/>
@@ -3726,6 +3703,7 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_x5OR4JwaEeiPD5fN_oRNAg" base_Element="_HAitoF-FEeiaLPXj8My4aQ"/>
   <OpenModel_Profile:Experimental xmi:id="_zAqbEJwaEeiPD5fN_oRNAg" base_Element="_PG3MwGkCEeip9umi7zNprw"/>
   <OpenModel_Profile:Experimental xmi:id="_0gpnIJwaEeiPD5fN_oRNAg" base_Element="_inPiUH7eEei4v5WRHqfM1Q"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Pa4NIJzEEeiLvPKMh61-Bg" base_Property="_Pa3mEJzEEeiLvPKMh61-Bg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Pa6CUJzEEeiLvPKMh61-Bg" base_StructuralFeature="_Pa3mEJzEEeiLvPKMh61-Bg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tJ3AUKFrEeinsNXClcPPiQ"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_t92MkKFsEeinsNXClcPPiQ" base_Class="_t91lgKFsEeinsNXClcPPiQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_t92MkaFsEeinsNXClcPPiQ" base_Class="_t91lgKFsEeinsNXClcPPiQ"/>
 </xmi:XMI>

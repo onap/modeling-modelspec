@@ -105,17 +105,15 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_fvq58IUNEeiRGZJrXkgR0w" name="minBitRateRequirements">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fvq58IUNEeiRGZJrXkgR0w" name="minBitRateRequirements" type="_LsX6UDgXEeiOYfGHew0BGg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Jw1XcJWdEeiBQt0DCQoFTw" annotatedElement="_fvq58IUNEeiRGZJrXkgR0w">
             <body>Specifies the minimum bitrate requirements for the virtual link</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="Vnf.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_lXNxQIUNEeiRGZJrXkgR0w" name="maxBitRateRequirements">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lXNxQIUNEeiRGZJrXkgR0w" name="maxBitRateRequirements" type="_LsX6UDgXEeiOYfGHew0BGg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_MYlc0JWdEeiBQt0DCQoFTw" annotatedElement="_lXNxQIUNEeiRGZJrXkgR0w">
             <body>Specifies the maximum bitrate requirements for the virtual link</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="Vnf.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mgbcEIUNEeiRGZJrXkgR0w" name="dhcpEnabled">
           <ownedComment xmi:type="uml:Comment" xmi:id="_PU6EAJWdEeiBQt0DCQoFTw" annotatedElement="_mgbcEIUNEeiRGZJrXkgR0w">
@@ -350,6 +348,27 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_LsX6UDgXEeiOYfGHew0BGg" name="LinkBitrateRequirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_TNBy4DgYEeiOYfGHew0BGg" annotatedElement="_LsX6UDgXEeiOYfGHew0BGg">
+        <body>The LinkBitrateRequirements information element describes the requirements in terms of bitrate for a VL.</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TsnHUDgXEeiOYfGHew0BGg" name="root" type="_p3EKoDm0EeiWMf5FLWfdLA">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m5ImkDgXEeiOYfGHew0BGg" annotatedElement="_TsnHUDgXEeiOYfGHew0BGg">
+          <body>Throughput requirement of the link (e.g. bitrate of E-Line, root bitrate of E-Tree, aggregate capacity of E-LAN).&#xD;
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W5c2wDgXEeiOYfGHew0BGg" name="leaf" type="_p3EKoDm0EeiWMf5FLWfdLA">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_MagWMDgYEeiOYfGHew0BGg" annotatedElement="_W5c2wDgXEeiOYfGHew0BGg">
+          <body>Throughput requirement of leaf connections to the link when applicable to the connectivity type (e.g. for E-Tree and E?LAN branches).&#xD;
+&#xD;
+NOTE: The present document does not specify the means to declare different bitrate requirements for leaf connections (e.g. E-LAN leaves).&#xD;
+</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GlJsYDgYEeiOYfGHew0BGg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GlNWwDgYEeiOYfGHew0BGg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_AuYtcDkBEeiWMf5FLWfdLA" name="Identifier"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_vxJ9ADafEei23_xWdimG9w" name="KeyValuePair "/>
