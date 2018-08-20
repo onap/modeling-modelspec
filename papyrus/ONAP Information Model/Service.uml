@@ -319,6 +319,33 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_or8FkI96EeiT7tMsBl6xjA" value="1"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NBgx4JsrEeiPBvbfaqSLYg" name="ServiceDescCompositeComprisedOfResourceDesc" memberEnd="_NBiAApsrEeiPBvbfaqSLYg _NBj1MJsrEeiPBvbfaqSLYg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NBiAAJsrEeiPBvbfaqSLYg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NBiAAZsrEeiPBvbfaqSLYg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NBiAApsrEeiPBvbfaqSLYg" name="resourcedesc (resourcespecification)" aggregation="shared" association="_NBgx4JsrEeiPBvbfaqSLYg">
+          <type xmi:type="uml:Class" href="Vnf.uml#_DAQisJpXEeidy9iGT_F5-w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z5IkkJsrEeiPBvbfaqSLYg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z5ZDQJsrEeiPBvbfaqSLYg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NBj1MJsrEeiPBvbfaqSLYg" name="servicedesccomposite" type="_BQaDwJpZEeidy9iGT_F5-w" association="_NBgx4JsrEeiPBvbfaqSLYg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_awpbYJsrEeiPBvbfaqSLYg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_axaQYJsrEeiPBvbfaqSLYg" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_y6W3oKLREeiz_K9hWIugxQ" name="ServiceDescCompositeComprisedOfServiceDescriptor" memberEnd="_y6aiAKLREeiz_K9hWIugxQ _y6bwIKLREeiz_K9hWIugxQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y6ZT4KLREeiz_K9hWIugxQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y6ZT4aLREeiz_K9hWIugxQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_y6aiAKLREeiz_K9hWIugxQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" aggregation="shared" association="_y6W3oKLREeiz_K9hWIugxQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BTp4cKLSEeiz_K9hWIugxQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BTybUKLSEeiz_K9hWIugxQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_y6bwIKLREeiz_K9hWIugxQ" name="servicedesccomposite" type="_BQaDwJpZEeidy9iGT_F5-w" association="_y6W3oKLREeiz_K9hWIugxQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N4hHMKLSEeiz_K9hWIugxQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N4kxkKLSEeiz_K9hWIugxQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_OR0wUI9QEeiT7tMsBl6xjA">
@@ -1328,6 +1355,12 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
         <ownedAttribute xmi:type="uml:Property" xmi:id="_xbTUII9TEeiT7tMsBl6xjA" name="baseType">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iQkugJpYEeidy9iGT_F5-w" name="ServiceDescAtomic">
+        <generalization xmi:type="uml:Generalization" xmi:id="_5lowcJpYEeidy9iGT_F5-w" general="_Jvy-QD0MEeiWMf5FLWfdLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BQaDwJpZEeidy9iGT_F5-w" name="ServiceDescComposite">
+        <generalization xmi:type="uml:Generalization" xmi:id="_LfWkAJpZEeidy9iGT_F5-w" general="_Jvy-QD0MEeiWMf5FLWfdLA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -2521,4 +2554,8 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
   <OpenModel_Profile:Experimental xmi:id="_mLVEMJmlEeiSm9XNElOsxQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFaTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_y6aiAaLREeiz_K9hWIugxQ" base_Property="_y6aiAKLREeiz_K9hWIugxQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_y6aiAqLREeiz_K9hWIugxQ" base_StructuralFeature="_y6aiAKLREeiz_K9hWIugxQ"/>
+  <Onap_Profile:OnapModelLifecycle xmi:id="_y6bwIaLREeiz_K9hWIugxQ" base_Property="_y6bwIKLREeiz_K9hWIugxQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_y6bwIqLREeiz_K9hWIugxQ" base_StructuralFeature="_y6bwIKLREeiz_K9hWIugxQ"/>
 </xmi:XMI>
