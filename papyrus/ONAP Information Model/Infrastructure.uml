@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Onap_Profile="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2 Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25 OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Onap_Profile="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2 Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_tvikcDOHEei5Af8DcjrhIQ" name="Infrastructure">
     <packagedElement xmi:type="uml:Package" xmi:id="_vDgGsDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_HLSK4IUdEeim-78_quJkVw" name="PublicCloudRegionHasAvailabilityZones" memberEnd="_HLgNUIUdEeim-78_quJkVw _HLls4YUdEeim-78_quJkVw">
@@ -33,15 +33,15 @@
         <body>REMINDER: This is an information model, which identifies all the key entities, relations and attributes in the (cloud) Infrastructure domain.  This is not a data model for implementation.</body>
       </ownedComment>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oyIRkIUQEeiLZbToO90xEA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyjvYIUQEeiLZbToO90xEA" source="PapyrusVersion">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvYYUQEeiLZbToO90xEA" key="Version" value="0.2.13"/>
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvYoUQEeiLZbToO90xEA" key="Comment" value="ProfileLifecycle Profile v0.0.4 applied."/>
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvY4UQEeiLZbToO90xEA" key="Copyright" value=""/>
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvZIUQEeiLZbToO90xEA" key="Date" value="2017-08-16"/>
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyjvZYUQEeiLZbToO90xEA" key="Author" value=""/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8i1pcKVxEeikF6xsfT18UA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8i1pcaVxEeikF6xsfT18UA" key="Version" value="0.2.14"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8i1pcqVxEeikF6xsfT18UA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8i1pc6VxEeikF6xsfT18UA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8i1pdKVxEeikF6xsfT18UA" key="Date" value="2018-08-21"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8i1pdaVxEeikF6xsfT18UA" key="Author" value="J. Jewitt"/>
         </eAnnotations>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyKGwIUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA"/>
+          <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
         </eAnnotations>
         <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
       </profileApplication>
@@ -184,15 +184,15 @@ ONAP should provide a default list, that the ONAP operator can customize.&#xD;
       <packagedElement xmi:type="uml:DataType" xmi:id="_7UGU8IUxEeim-78_quJkVw" name="NameValuePair"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jmkysIUQEeiLZbToO90xEA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jrkncIUQEeiLZbToO90xEA" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkncYUQEeiLZbToO90xEA" key="Version" value="0.2.13"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkncoUQEeiLZbToO90xEA" key="Comment" value="ProfileLifecycle Profile v0.0.4 applied."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrknc4UQEeiLZbToO90xEA" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkndIUQEeiLZbToO90xEA" key="Date" value="2017-08-16"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jrkndYUQEeiLZbToO90xEA" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8ivi0KVxEeikF6xsfT18UA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ivi0aVxEeikF6xsfT18UA" key="Version" value="0.2.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ivi0qVxEeikF6xsfT18UA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ivi06VxEeikF6xsfT18UA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ivi1KVxEeikF6xsfT18UA" key="Date" value="2018-08-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ivi1aVxEeikF6xsfT18UA" key="Author" value="J. Jewitt"/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jmmn4IUQEeiLZbToO90xEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA"/>
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
     </profileApplication>

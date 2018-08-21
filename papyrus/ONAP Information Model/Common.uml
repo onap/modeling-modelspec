@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Onap_Profile="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2 Onap_Profile.profile.uml#_O8WqIHu_EeiiR5bcbqvgpQ http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25 OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_L6FF4DOHEei5Af8DcjrhIQ" name="Common">
     <packagedElement xmi:type="uml:Package" xmi:id="_OFje8DOHEei5Af8DcjrhIQ" name="ObjectClasses">
       <packagedElement xmi:type="uml:Class" xmi:id="_Tw79sD2pEeiu6I5JfRTxxQ" name="VirtualLinkDesc" isAbstract="true">
@@ -347,13 +347,13 @@ NOTE: Cardinality of 0 corresponds to the case where the certificate is provided
             <body>Specifies whether the rule is an affinity rule or an anti-affinity rule.&#xD;
 </body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="model.uml#_tMoywDnJEeiWMf5FLWfdLA"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_RVZi0z2-Eeiu6I5JfRTxxQ" name="scope">
           <ownedComment xmi:type="uml:Comment" xmi:id="_RVZi1D2-Eeiu6I5JfRTxxQ" annotatedElement="_RVZi0z2-Eeiu6I5JfRTxxQ">
             <body>Specifies the scope of the rule.</body>
           </ownedComment>
-          <type xmi:type="uml:Enumeration" href="model.uml#_B3kJsDnKEeiWMf5FLWfdLA"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_nPNHsD2-Eeiu6I5JfRTxxQ" name="LinkBitrateRequirements">
@@ -364,14 +364,14 @@ NOTE: Cardinality of 0 corresponds to the case where the certificate is provided
           <ownedComment xmi:type="uml:Comment" xmi:id="_nPNHsz2-Eeiu6I5JfRTxxQ" annotatedElement="_nPNHsj2-Eeiu6I5JfRTxxQ">
             <body>Specifies the throughput requirement of the link (e.g. bitrate of E-Line, root bitrate of E-Tree, aggregate capacity of E-LAN).</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_b2-3IG3HEeWFtNW2-lnElQ"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_nPNHtD2-Eeiu6I5JfRTxxQ" name="leaf">
           <ownedComment xmi:type="uml:Comment" xmi:id="_nPNHtT2-Eeiu6I5JfRTxxQ" annotatedElement="_nPNHtD2-Eeiu6I5JfRTxxQ">
             <body>Specifies the throughput requirement of leaf connections to the link when applicable to the connectivity type (e.g. for E-Tree and E-LAN branches).&#xD;
 NOTE:	The present document does not specify the means to declare different bitrate requirements for leaf connections (e.g. E-LAN leaves).</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_b2-3IG3HEeWFtNW2-lnElQ"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nPNHtj2-Eeiu6I5JfRTxxQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nPNHtz2-Eeiu6I5JfRTxxQ" value="1"/>
         </ownedAttribute>
@@ -2755,6 +2755,19 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
         </packagedElement>
       </packagedElement>
     </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YPRQKVxEeikF6xsfT18UA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRQaVxEeikF6xsfT18UA" key="Version" value="0.2.14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRQqVxEeikF6xsfT18UA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRQ6VxEeikF6xsfT18UA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRRKVxEeikF6xsfT18UA" key="Date" value="2018-08-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRRaVxEeikF6xsfT18UA" key="Author" value="J. Jewitt"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HyRdsKVvEeikF6xsfT18UA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
   </uml:Package>
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw8kwD2pEeiu6I5JfRTxxQ" base_Class="_Tw79sD2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw9y4D2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79sj2pEeiu6I5JfRTxxQ"/>
@@ -2769,9 +2782,6 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNHuD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHsj2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNuwD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHtD2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_Vt-RwESyEeiVGPeZpaYNtQ" base_Class="_VtzSoESyEeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_Io3nQUSzEeiVGPeZpaYNtQ">
-    <base_Class xmi:type="uml:Class" href="Vnf.uml#_Io3nQESzEeiVGPeZpaYNtQ"/>
-  </OpenModel_Profile:OpenModelClass>
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw52MES0EeiVGPeZpaYNtQ" base_Class="_Tw5PIES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_il0cAUS0EeiVGPeZpaYNtQ" base_Class="_il0cAES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vV3AAES0EeiVGPeZpaYNtQ" base_StructuralFeature="_vV1x4kS0EeiVGPeZpaYNtQ"/>
@@ -2779,692 +2789,342 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:OpenModelClass xmi:id="_8na8sES0EeiVGPeZpaYNtQ" base_Class="_8naVoES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H861UES1EeiVGPeZpaYNtQ" base_StructuralFeature="_H85nMkS1EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H9A78US1EeiVGPeZpaYNtQ" base_StructuralFeature="_H9AU4US1EeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_fMPpYES6EeiVGPeZpaYNtQ">
-    <base_Class xmi:type="uml:Class" href="Vnf.uml#_fMPCUES6EeiVGPeZpaYNtQ"/>
-  </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8c11oES6EeiVGPeZpaYNtQ">
-    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_8c1OkES6EeiVGPeZpaYNtQ"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjqv8Hu_EeiiR5bcbqvgpQ" base_Class="_Tw79sD2pEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjslIHu_EeiiR5bcbqvgpQ" base_Property="_Tw79sj2pEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjtMMHu_EeiiR5bcbqvgpQ" base_Property="_Tw79tD2pEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjtMMXu_EeiiR5bcbqvgpQ" base_Property="_Tw79tj2pEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjtzQHu_EeiiR5bcbqvgpQ" base_Property="_Tw79uj2pEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjtzQXu_EeiiR5bcbqvgpQ" base_Class="_VtzSoESyEeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjtzQnu_EeiiR5bcbqvgpQ" base_Class="_Tw5PIES0EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjuaUHu_EeiiR5bcbqvgpQ" base_Property="_vV1x4kS0EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjuaUXu_EeiiR5bcbqvgpQ" base_Class="_il0cAES0EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjuaUnu_EeiiR5bcbqvgpQ" base_Property="_H85nMkS1EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvBYHu_EeiiR5bcbqvgpQ" base_Class="_8naVoES0EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvBYXu_EeiiR5bcbqvgpQ" base_Property="_vWZykES0EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvBYnu_EeiiR5bcbqvgpQ" base_Property="_H9AU4US1EeiVGPeZpaYNtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvocHu_EeiiR5bcbqvgpQ" base_Property="_P-qXMj2vEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvocXu_EeiiR5bcbqvgpQ" base_Property="_P-qXND2vEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvocnu_EeiiR5bcbqvgpQ" base_Property="_P-qXNj2vEeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjvoc3u_EeiiR5bcbqvgpQ" base_Property="_RVZi0T2-Eeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjwPgHu_EeiiR5bcbqvgpQ" base_Property="_RVZi0z2-Eeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjwPgXu_EeiiR5bcbqvgpQ" base_Property="_nPNHsj2-Eeiu6I5JfRTxxQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bjwPgnu_EeiiR5bcbqvgpQ" base_Property="_nPNHtD2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_PmI1oH7uEeifJIHxnlj6Cg" base_Class="_PmIOkH7uEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_PmJcsH7uEeifJIHxnlj6Cg" base_Class="_PmIOkH7uEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_VhJbgH7uEeifJIHxnlj6Cg" base_Property="_VhI0cH7uEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VhJbgX7uEeifJIHxnlj6Cg" base_StructuralFeature="_VhI0cH7uEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YlvN4H7uEeifJIHxnlj6Cg" base_Property="_Ylum0H7uEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YlvN4X7uEeifJIHxnlj6Cg" base_StructuralFeature="_Ylum0H7uEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_g60FoX7yEeifJIHxnlj6Cg" base_Property="_g60FoH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_g60Fon7yEeifJIHxnlj6Cg" base_StructuralFeature="_g60FoH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_iviyoX7yEeifJIHxnlj6Cg" base_Property="_iviyoH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ivjZsH7yEeifJIHxnlj6Cg" base_StructuralFeature="_iviyoH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_jaKc8H7yEeifJIHxnlj6Cg" base_Property="_jaJ14H7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jaKc8X7yEeifJIHxnlj6Cg" base_StructuralFeature="_jaJ14H7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_j9YewH7yEeifJIHxnlj6Cg" base_Property="_j9X3sH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j9YewX7yEeifJIHxnlj6Cg" base_StructuralFeature="_j9X3sH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_kefnwX7yEeifJIHxnlj6Cg" base_Property="_kefnwH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kegO0H7yEeifJIHxnlj6Cg" base_StructuralFeature="_kefnwH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_k8PTsX7yEeifJIHxnlj6Cg" base_Property="_k8PTsH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_k8P6wH7yEeifJIHxnlj6Cg" base_StructuralFeature="_k8PTsH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lYxesX7yEeifJIHxnlj6Cg" base_Property="_lYxesH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lYxesn7yEeifJIHxnlj6Cg" base_StructuralFeature="_lYxesH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_l1blgH7yEeifJIHxnlj6Cg" base_Property="_l1a-cH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_l1blgX7yEeifJIHxnlj6Cg" base_StructuralFeature="_l1a-cH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mOxSkX7yEeifJIHxnlj6Cg" base_Property="_mOxSkH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mOxSkn7yEeifJIHxnlj6Cg" base_StructuralFeature="_mOxSkH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mqtnsH7yEeifJIHxnlj6Cg" base_Property="_mqtAoH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mqtnsX7yEeifJIHxnlj6Cg" base_StructuralFeature="_mqtAoH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_oLQ0cX7yEeifJIHxnlj6Cg" base_Property="_oLQ0cH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oLRbgH7yEeifJIHxnlj6Cg" base_StructuralFeature="_oLQ0cH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_otVmwX7yEeifJIHxnlj6Cg" base_Property="_otVmwH7yEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_otVmwn7yEeifJIHxnlj6Cg" base_StructuralFeature="_otVmwH7yEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_DLbYsX7_EeifJIHxnlj6Cg" base_Property="_DLbYsH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DLbYsn7_EeifJIHxnlj6Cg" base_StructuralFeature="_DLbYsH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_DkIzoX7_EeifJIHxnlj6Cg" base_Property="_DkIzoH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DkIzon7_EeifJIHxnlj6Cg" base_StructuralFeature="_DkIzoH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_D9KXoH7_EeifJIHxnlj6Cg" base_Property="_D9JwkH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_D9KXoX7_EeifJIHxnlj6Cg" base_StructuralFeature="_D9JwkH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_EU9zoX7_EeifJIHxnlj6Cg" base_Property="_EU9zoH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EU9zon7_EeifJIHxnlj6Cg" base_StructuralFeature="_EU9zoH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_E-nNkX7_EeifJIHxnlj6Cg" base_Property="_E-nNkH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E-nNkn7_EeifJIHxnlj6Cg" base_StructuralFeature="_E-nNkH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FVmxQH7_EeifJIHxnlj6Cg" base_Property="_FVmKMH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FVmxQX7_EeifJIHxnlj6Cg" base_StructuralFeature="_FVmKMH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_GtETcH7_EeifJIHxnlj6Cg" base_Property="_GtDsYH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GtETcX7_EeifJIHxnlj6Cg" base_StructuralFeature="_GtDsYH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_HT7fIX7_EeifJIHxnlj6Cg" base_Property="_HT7fIH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HT8GMH7_EeifJIHxnlj6Cg" base_StructuralFeature="_HT7fIH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_H15jwX7_EeifJIHxnlj6Cg" base_Property="_H15jwH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H15jwn7_EeifJIHxnlj6Cg" base_StructuralFeature="_H15jwH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_IPK_YX7_EeifJIHxnlj6Cg" base_Property="_IPK_YH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IPK_Yn7_EeifJIHxnlj6Cg" base_StructuralFeature="_IPK_YH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Inn7oX7_EeifJIHxnlj6Cg" base_Property="_Inn7oH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Inn7on7_EeifJIHxnlj6Cg" base_StructuralFeature="_Inn7oH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JDjCoX7_EeifJIHxnlj6Cg" base_Property="_JDjCoH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JDjCon7_EeifJIHxnlj6Cg" base_StructuralFeature="_JDjCoH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JfMc0X7_EeifJIHxnlj6Cg" base_Property="_JfMc0H7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JfMc0n7_EeifJIHxnlj6Cg" base_StructuralFeature="_JfMc0H7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_J8PlMX7_EeifJIHxnlj6Cg" base_Property="_J8PlMH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J8PlMn7_EeifJIHxnlj6Cg" base_StructuralFeature="_J8PlMH7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_KV_h8X7_EeifJIHxnlj6Cg" base_Property="_KV_h8H7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KV_h8n7_EeifJIHxnlj6Cg" base_StructuralFeature="_KV_h8H7_EeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_PAciEX8DEeifJIHxnlj6Cg" base_Property="_PAciEH8DEeifJIHxnlj6Cg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PAdJIH8DEeifJIHxnlj6Cg" base_StructuralFeature="_PAciEH8DEeifJIHxnlj6Cg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_U99T4IEoEeieQ4zKGFzYtQ" base_Property="_U98FwIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_U-BlUIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_U98FwIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YE5PoIEoEeieQ4zKGFzYtQ" base_Property="_YE4okIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YE52sIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_YE4okIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YnPHsYEoEeieQ4zKGFzYtQ" base_Property="_YnPHsIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YnPuwIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_YnPHsIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bAe3AYEoEeieQ4zKGFzYtQ" base_Property="_bAe3AIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bAfeEIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_bAe3AIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_dJJMoIEoEeieQ4zKGFzYtQ" base_Property="_dJIlkIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dJJMoYEoEeieQ4zKGFzYtQ" base_StructuralFeature="_dJIlkIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fs6w8YEoEeieQ4zKGFzYtQ" base_Property="_fs6w8IEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fs6w8oEoEeieQ4zKGFzYtQ" base_StructuralFeature="_fs6w8IEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gW0pkYEoEeieQ4zKGFzYtQ" base_Property="_gW0pkIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gW1QoIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_gW0pkIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_h9bbAYEoEeieQ4zKGFzYtQ" base_Property="_h9bbAIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_h9cCEIEoEeieQ4zKGFzYtQ" base_StructuralFeature="_h9bbAIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_jH-ikIEoEeieQ4zKGFzYtQ" base_Property="_jH97gIEoEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jH-ikYEoEeieQ4zKGFzYtQ" base_StructuralFeature="_jH97gIEoEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_k1NrAIEpEeieQ4zKGFzYtQ" base_Property="_k1ND8IEpEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_k1NrAYEpEeieQ4zKGFzYtQ" base_StructuralFeature="_k1ND8IEpEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_rEkJMYEpEeieQ4zKGFzYtQ" base_Property="_rEkJMIEpEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rEkwQIEpEeieQ4zKGFzYtQ" base_StructuralFeature="_rEkJMIEpEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fTh9kYFJEeieQ4zKGFzYtQ" base_Property="_fTh9kIFJEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fTikoIFJEeieQ4zKGFzYtQ" base_StructuralFeature="_fTh9kIFJEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gAXOYIFJEeieQ4zKGFzYtQ" base_Property="_gAWnUIFJEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gAXOYYFJEeieQ4zKGFzYtQ" base_StructuralFeature="_gAWnUIFJEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hCTMgIFJEeieQ4zKGFzYtQ" base_Property="_hCSlcIFJEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hCTMgYFJEeieQ4zKGFzYtQ" base_StructuralFeature="_hCSlcIFJEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_MIUQcYFKEeieQ4zKGFzYtQ" base_Property="_MIUQcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MIUQcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_MIUQcIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_NyvK4IFKEeieQ4zKGFzYtQ" base_Property="_Nyuj0IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NyvK4YFKEeieQ4zKGFzYtQ" base_StructuralFeature="_Nyuj0IFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ahVkcYFKEeieQ4zKGFzYtQ" base_Property="_ahVkcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ahVkcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_ahVkcIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_br89cYFKEeieQ4zKGFzYtQ" base_Property="_br89cIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_br89coFKEeieQ4zKGFzYtQ" base_StructuralFeature="_br89cIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_cvnZ4YFKEeieQ4zKGFzYtQ" base_Property="_cvnZ4IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_cvnZ4oFKEeieQ4zKGFzYtQ" base_StructuralFeature="_cvnZ4IFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_daMn8YFKEeieQ4zKGFzYtQ" base_Property="_daMn8IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_daMn8oFKEeieQ4zKGFzYtQ" base_StructuralFeature="_daMn8IFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_eBMWgYFKEeieQ4zKGFzYtQ" base_Property="_eBMWgIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_eBM9kIFKEeieQ4zKGFzYtQ" base_StructuralFeature="_eBMWgIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_esG7wYFKEeieQ4zKGFzYtQ" base_Property="_esG7wIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_esHi0IFKEeieQ4zKGFzYtQ" base_StructuralFeature="_esG7wIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fOZJcYFKEeieQ4zKGFzYtQ" base_Property="_fOZJcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fOZJcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_fOZJcIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fzeMcYFKEeieQ4zKGFzYtQ" base_Property="_fzeMcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fzeMcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_fzeMcIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gWrAIYFKEeieQ4zKGFzYtQ" base_Property="_gWrAIIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gWrAIoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_gWrAIIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_g58sUYFKEeieQ4zKGFzYtQ" base_Property="_g58sUIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_g58sUoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_g58sUIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hlIXUIFKEeieQ4zKGFzYtQ" base_Property="_hlHwQIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hlIXUYFKEeieQ4zKGFzYtQ" base_StructuralFeature="_hlHwQIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_i9VgYYFKEeieQ4zKGFzYtQ" base_Property="_i9VgYIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_i9VgYoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_i9VgYIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_oGLCcYFKEeieQ4zKGFzYtQ" base_Property="_oGLCcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oGLCcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_oGLCcIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_pW31UYFKEeieQ4zKGFzYtQ" base_Property="_pW31UIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pW31UoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_pW31UIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_sw_LwYFKEeieQ4zKGFzYtQ" base_Property="_sw_LwIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sw_LwoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_sw_LwIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_uh6W0YFKEeieQ4zKGFzYtQ" base_Property="_uh6W0IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uh694IFKEeieQ4zKGFzYtQ" base_StructuralFeature="_uh6W0IFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_xB0u0IFKEeieQ4zKGFzYtQ" base_Property="_xB0HwIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xB0u0YFKEeieQ4zKGFzYtQ" base_StructuralFeature="_xB0HwIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_xj0ooYFKEeieQ4zKGFzYtQ" base_Property="_xj0ooIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xj1PsIFKEeieQ4zKGFzYtQ" base_StructuralFeature="_xj0ooIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_zM3qEYFKEeieQ4zKGFzYtQ" base_Property="_zM3qEIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zM4RIIFKEeieQ4zKGFzYtQ" base_StructuralFeature="_zM3qEIFKEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_rPjG0YFNEeieQ4zKGFzYtQ" base_Property="_rPjG0IFNEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rPjt4IFNEeieQ4zKGFzYtQ" base_StructuralFeature="_rPjG0IFNEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_r7owwYFNEeieQ4zKGFzYtQ" base_Property="_r7owwIFNEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_r7owwoFNEeieQ4zKGFzYtQ" base_StructuralFeature="_r7owwIFNEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_0AyfsYFdEeieQ4zKGFzYtQ" base_Property="_0AyfsIFdEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0AyfsoFdEeieQ4zKGFzYtQ" base_StructuralFeature="_0AyfsIFdEeieQ4zKGFzYtQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_0tIBQYFdEeieQ4zKGFzYtQ" base_Property="_0tIBQIFdEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0tIBQoFdEeieQ4zKGFzYtQ" base_StructuralFeature="_0tIBQIFdEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CITLkIOQEeivtfz_CvwDeA" base_StructuralFeature="_CISkgIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_CITyoIOQEeivtfz_CvwDeA" base_Property="_CISkgIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DYK4AYOQEeivtfz_CvwDeA" base_StructuralFeature="_DYK4AIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_DYK4AoOQEeivtfz_CvwDeA" base_Property="_DYK4AIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ECr0oYOQEeivtfz_CvwDeA" base_StructuralFeature="_ECr0oIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ECsbsIOQEeivtfz_CvwDeA" base_Property="_ECr0oIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Fpc-IYOQEeivtfz_CvwDeA" base_StructuralFeature="_Fpc-IIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Fpc-IoOQEeivtfz_CvwDeA" base_Property="_Fpc-IIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KS51gYOQEeivtfz_CvwDeA" base_StructuralFeature="_KS51gIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_KS6ckIOQEeivtfz_CvwDeA" base_Property="_KS51gIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LMkBYYOQEeivtfz_CvwDeA" base_StructuralFeature="_LMkBYIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_LMkocIOQEeivtfz_CvwDeA" base_Property="_LMkBYIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LuBIoIOQEeivtfz_CvwDeA" base_StructuralFeature="_LuAhkIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_LuBIoYOQEeivtfz_CvwDeA" base_Property="_LuAhkIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NRP18YOQEeivtfz_CvwDeA" base_StructuralFeature="_NRP18IOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_NRP18oOQEeivtfz_CvwDeA" base_Property="_NRP18IOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OGol0IOQEeivtfz_CvwDeA" base_StructuralFeature="_OGn-wIOQEeivtfz_CvwDeA"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_OGol0YOQEeivtfz_CvwDeA" base_Property="_OGn-wIOQEeivtfz_CvwDeA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fvsIEIUNEeiRGZJrXkgR0w" base_StructuralFeature="_fvq58IUNEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fvt9QIUNEeiRGZJrXkgR0w" base_Property="_fvq58IUNEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lXOYUIUNEeiRGZJrXkgR0w" base_StructuralFeature="_lXNxQIUNEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lXO_YIUNEeiRGZJrXkgR0w" base_Property="_lXNxQIUNEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mgbcEYUNEeiRGZJrXkgR0w" base_StructuralFeature="_mgbcEIUNEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mgcDIIUNEeiRGZJrXkgR0w" base_Property="_mgbcEIUNEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H6eUgIUPEeiRGZJrXkgR0w" base_StructuralFeature="_H6dtcIUPEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_H6e7kIUPEeiRGZJrXkgR0w" base_Property="_H6dtcIUPEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IZd9oIUPEeiRGZJrXkgR0w" base_StructuralFeature="_IZdWkIUPEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_IZeksIUPEeiRGZJrXkgR0w" base_Property="_IZdWkIUPEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_I4dmwIUPEeiRGZJrXkgR0w" base_StructuralFeature="_I4c_sIUPEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_I4dmwYUPEeiRGZJrXkgR0w" base_Property="_I4c_sIUPEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JZP_oIUPEeiRGZJrXkgR0w" base_StructuralFeature="_JZPYkIUPEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JZP_oYUPEeiRGZJrXkgR0w" base_Property="_JZPYkIUPEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gQaSsYUREeiRGZJrXkgR0w" base_StructuralFeature="_gQaSsIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gQa5wIUREeiRGZJrXkgR0w" base_Property="_gQaSsIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_g3C04YUREeiRGZJrXkgR0w" base_StructuralFeature="_g3C04IUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_g3Db8IUREeiRGZJrXkgR0w" base_Property="_g3C04IUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_haSE0YUREeiRGZJrXkgR0w" base_StructuralFeature="_haSE0IUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_haSE0oUREeiRGZJrXkgR0w" base_Property="_haSE0IUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_h5E5oIUREeiRGZJrXkgR0w" base_StructuralFeature="_h5ESkIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_h5E5oYUREeiRGZJrXkgR0w" base_Property="_h5ESkIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_idmjAYUREeiRGZJrXkgR0w" base_StructuralFeature="_idmjAIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_idmjAoUREeiRGZJrXkgR0w" base_Property="_idmjAIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_i5ktUIUREeiRGZJrXkgR0w" base_StructuralFeature="_i5kGQIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_i5ktUYUREeiRGZJrXkgR0w" base_Property="_i5kGQIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jazyIYUREeiRGZJrXkgR0w" base_StructuralFeature="_jazyIIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_jazyIoUREeiRGZJrXkgR0w" base_Property="_jazyIIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j7onQYUREeiRGZJrXkgR0w" base_StructuralFeature="_j7onQIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_j7onQoUREeiRGZJrXkgR0w" base_Property="_j7onQIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ljD4EYUREeiRGZJrXkgR0w" base_StructuralFeature="_ljD4EIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ljEfIIUREeiRGZJrXkgR0w" base_Property="_ljD4EIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_l-B80YUREeiRGZJrXkgR0w" base_StructuralFeature="_l-B80IUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_l-B80oUREeiRGZJrXkgR0w" base_Property="_l-B80IUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mYlK0YUREeiRGZJrXkgR0w" base_StructuralFeature="_mYlK0IUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mYlK0oUREeiRGZJrXkgR0w" base_Property="_mYlK0IUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mw0rsYUREeiRGZJrXkgR0w" base_StructuralFeature="_mw0rsIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mw1SwIUREeiRGZJrXkgR0w" base_Property="_mw0rsIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nJ1ooIUREeiRGZJrXkgR0w" base_StructuralFeature="_nJ1BkIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_nJ1ooYUREeiRGZJrXkgR0w" base_Property="_nJ1BkIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n42DsIUREeiRGZJrXkgR0w" base_StructuralFeature="_n41coIUREeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_n42DsYUREeiRGZJrXkgR0w" base_Property="_n41coIUREeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fFI88YUSEeiRGZJrXkgR0w" base_StructuralFeature="_fFI88IUSEeiRGZJrXkgR0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fFJkAIUSEeiRGZJrXkgR0w" base_Property="_fFI88IUSEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MAG38IbiEei-x_BD9U-ssQ" base_StructuralFeature="_MAGQ4IbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_MAHfAIbiEei-x_BD9U-ssQ" base_Property="_MAGQ4IbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NvX2IYbiEei-x_BD9U-ssQ" base_StructuralFeature="_NvX2IIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_NvYdMIbiEei-x_BD9U-ssQ" base_Property="_NvX2IIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OUhKkIbiEei-x_BD9U-ssQ" base_StructuralFeature="_OUgjgIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_OUhKkYbiEei-x_BD9U-ssQ" base_Property="_OUgjgIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QoSkAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_QoSkAIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_QoTLEIbiEei-x_BD9U-ssQ" base_Property="_QoSkAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_S7iZAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_S7iZAIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_S7iZAobiEei-x_BD9U-ssQ" base_Property="_S7iZAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TdtR8YbiEei-x_BD9U-ssQ" base_StructuralFeature="_TdtR8IbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Tdt5AIbiEei-x_BD9U-ssQ" base_Property="_TdtR8IbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UCG_gIbiEei-x_BD9U-ssQ" base_StructuralFeature="_UCGYcIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_UCG_gYbiEei-x_BD9U-ssQ" base_Property="_UCGYcIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UgasIIbiEei-x_BD9U-ssQ" base_StructuralFeature="_UgaFEIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_UgasIYbiEei-x_BD9U-ssQ" base_Property="_UgaFEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VASfAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_VASfAIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_VASfAobiEei-x_BD9U-ssQ" base_Property="_VASfAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ViLEEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_ViLEEIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ViLrIIbiEei-x_BD9U-ssQ" base_Property="_ViLEEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WBJfEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_WBJfEIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_WBJfEobiEei-x_BD9U-ssQ" base_Property="_WBJfEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WZyBgYbiEei-x_BD9U-ssQ" base_StructuralFeature="_WZyBgIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_WZyBgobiEei-x_BD9U-ssQ" base_Property="_WZyBgIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W5dAEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_W5dAEIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_W5dAEobiEei-x_BD9U-ssQ" base_Property="_W5dAEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XgoU0IbiEei-x_BD9U-ssQ" base_StructuralFeature="_XgntwIbiEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_XgoU0YbiEei-x_BD9U-ssQ" base_Property="_XgntwIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ku_sMYblEei-x_BD9U-ssQ" base_StructuralFeature="_ku_sMIblEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ku_sMoblEei-x_BD9U-ssQ" base_Property="_ku_sMIblEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_levuIIblEei-x_BD9U-ssQ" base_StructuralFeature="_levHEIblEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_levuIYblEei-x_BD9U-ssQ" base_Property="_levHEIblEei-x_BD9U-ssQ"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ppPtYIkOEeiddpojVtQ0Hg" base_Property="_ppPGUIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ppQ7gIkOEeiddpojVtQ0Hg" base_StructuralFeature="_ppPGUIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_qoYPIIkOEeiddpojVtQ0Hg" base_Property="_qoXoEIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qoYPIYkOEeiddpojVtQ0Hg" base_StructuralFeature="_qoXoEIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_wNHqEIkOEeiddpojVtQ0Hg" base_Property="_wNHDAIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wNHqEYkOEeiddpojVtQ0Hg" base_StructuralFeature="_wNHDAIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_w4cfAIkOEeiddpojVtQ0Hg" base_Property="_w4b38IkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_w4cfAYkOEeiddpojVtQ0Hg" base_StructuralFeature="_w4b38IkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_yfCpYIkOEeiddpojVtQ0Hg" base_Property="_yfCCUIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yfCpYYkOEeiddpojVtQ0Hg" base_StructuralFeature="_yfCCUIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_1Lm9UYkOEeiddpojVtQ0Hg" base_Property="_1Lm9UIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1LnkYIkOEeiddpojVtQ0Hg" base_StructuralFeature="_1Lm9UIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_2RzwYYkOEeiddpojVtQ0Hg" base_Property="_2RzwYIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2RzwYokOEeiddpojVtQ0Hg" base_StructuralFeature="_2RzwYIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_3Y4GIYkOEeiddpojVtQ0Hg" base_Property="_3Y4GIIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3Y4GIokOEeiddpojVtQ0Hg" base_StructuralFeature="_3Y4GIIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_4OwlQYkOEeiddpojVtQ0Hg" base_Property="_4OwlQIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4OwlQokOEeiddpojVtQ0Hg" base_StructuralFeature="_4OwlQIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_5DemwIkOEeiddpojVtQ0Hg" base_Property="_5Dd_sIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5DemwYkOEeiddpojVtQ0Hg" base_StructuralFeature="_5Dd_sIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_7AlzsYkOEeiddpojVtQ0Hg" base_Property="_7AlzsIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7AlzsokOEeiddpojVtQ0Hg" base_StructuralFeature="_7AlzsIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_8ZLXQYkOEeiddpojVtQ0Hg" base_Property="_8ZLXQIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8ZL-UIkOEeiddpojVtQ0Hg" base_StructuralFeature="_8ZLXQIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9A--IYkOEeiddpojVtQ0Hg" base_Property="_9A--IIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9A--IokOEeiddpojVtQ0Hg" base_StructuralFeature="_9A--IIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9tdpoIkOEeiddpojVtQ0Hg" base_Property="_9tdCkIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9tdpoYkOEeiddpojVtQ0Hg" base_StructuralFeature="_9tdCkIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-TDqAIkOEeiddpojVtQ0Hg" base_Property="_-TDC8IkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-TDqAYkOEeiddpojVtQ0Hg" base_StructuralFeature="_-TDC8IkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="__B-lgYkOEeiddpojVtQ0Hg" base_Property="__B-lgIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__B-lgokOEeiddpojVtQ0Hg" base_StructuralFeature="__B-lgIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="__zaCcIkOEeiddpojVtQ0Hg" base_Property="__zZbYIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__zaCcYkOEeiddpojVtQ0Hg" base_StructuralFeature="__zZbYIkOEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_EC_oUIkPEeiddpojVtQ0Hg" base_Property="_EC_BQIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EC_oUYkPEeiddpojVtQ0Hg" base_StructuralFeature="_EC_BQIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FCgkkYkPEeiddpojVtQ0Hg" base_Property="_FCgkkIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FCgkkokPEeiddpojVtQ0Hg" base_StructuralFeature="_FCgkkIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FwTesYkPEeiddpojVtQ0Hg" base_Property="_FwTesIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FwUFwIkPEeiddpojVtQ0Hg" base_StructuralFeature="_FwTesIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_GinscYkPEeiddpojVtQ0Hg" base_Property="_GinscIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GioTgIkPEeiddpojVtQ0Hg" base_StructuralFeature="_GinscIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_IbFp8IkPEeiddpojVtQ0Hg" base_Property="_IbFC4IkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IbFp8YkPEeiddpojVtQ0Hg" base_StructuralFeature="_IbFC4IkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JLOtcYkPEeiddpojVtQ0Hg" base_Property="_JLOtcIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JLOtcokPEeiddpojVtQ0Hg" base_StructuralFeature="_JLOtcIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Jxv64YkPEeiddpojVtQ0Hg" base_Property="_Jxv64IkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Jxwh8IkPEeiddpojVtQ0Hg" base_StructuralFeature="_Jxv64IkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_KVHGoYkPEeiddpojVtQ0Hg" base_Property="_KVHGoIkPEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KVHGookPEeiddpojVtQ0Hg" base_StructuralFeature="_KVHGoIkPEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Dy0FAYkUEeiddpojVtQ0Hg" base_Property="_Dy0FAIkUEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Dy0FAokUEeiddpojVtQ0Hg" base_StructuralFeature="_Dy0FAIkUEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9Ry9IYkVEeiddpojVtQ0Hg" base_Property="_9Ry9IIkVEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9RzkMIkVEeiddpojVtQ0Hg" base_StructuralFeature="_9Ry9IIkVEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-CmH8YkVEeiddpojVtQ0Hg" base_Property="_-CmH8IkVEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-CmH8okVEeiddpojVtQ0Hg" base_StructuralFeature="_-CmH8IkVEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-u8QkYkVEeiddpojVtQ0Hg" base_Property="_-u8QkIkVEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-u83oIkVEeiddpojVtQ0Hg" base_StructuralFeature="_-u8QkIkVEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="__9iKoIkVEeiddpojVtQ0Hg" base_Property="__9hjkIkVEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__9iKoYkVEeiddpojVtQ0Hg" base_StructuralFeature="__9hjkIkVEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_AkUd0IkWEeiddpojVtQ0Hg" base_Property="_AkT2wIkWEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AkUd0YkWEeiddpojVtQ0Hg" base_StructuralFeature="_AkT2wIkWEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Bt4t8YkWEeiddpojVtQ0Hg" base_Property="_Bt4t8IkWEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Bt4t8okWEeiddpojVtQ0Hg" base_StructuralFeature="_Bt4t8IkWEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_CafVQYkWEeiddpojVtQ0Hg" base_Property="_CafVQIkWEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Caf8UIkWEeiddpojVtQ0Hg" base_StructuralFeature="_CafVQIkWEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_DCfJYYkWEeiddpojVtQ0Hg" base_Property="_DCfJYIkWEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DCfJYokWEeiddpojVtQ0Hg" base_StructuralFeature="_DCfJYIkWEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_zlPGUYkXEeiddpojVtQ0Hg" base_Property="_zlPGUIkXEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zlPtYIkXEeiddpojVtQ0Hg" base_StructuralFeature="_zlPGUIkXEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_0yvbQYkXEeiddpojVtQ0Hg" base_Property="_0yvbQIkXEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0ywCUIkXEeiddpojVtQ0Hg" base_StructuralFeature="_0yvbQIkXEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_1kwHAIkXEeiddpojVtQ0Hg" base_Property="_1kvf8IkXEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1kwHAYkXEeiddpojVtQ0Hg" base_StructuralFeature="_1kvf8IkXEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_579X0YkXEeiddpojVtQ0Hg" base_Property="_579X0IkXEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_579-4IkXEeiddpojVtQ0Hg" base_StructuralFeature="_579X0IkXEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_W66acIkYEeiddpojVtQ0Hg" base_Property="_W65zYIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W66acYkYEeiddpojVtQ0Hg" base_StructuralFeature="_W65zYIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YYWo0YkYEeiddpojVtQ0Hg" base_Property="_YYWo0IkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YYWo0okYEeiddpojVtQ0Hg" base_StructuralFeature="_YYWo0IkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ZJNeAYkYEeiddpojVtQ0Hg" base_Property="_ZJNeAIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ZJNeAokYEeiddpojVtQ0Hg" base_StructuralFeature="_ZJNeAIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_aSI08YkYEeiddpojVtQ0Hg" base_Property="_aSI08IkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aSI08okYEeiddpojVtQ0Hg" base_StructuralFeature="_aSI08IkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gsTcAYkYEeiddpojVtQ0Hg" base_Property="_gsTcAIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gsTcAokYEeiddpojVtQ0Hg" base_StructuralFeature="_gsTcAIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hUHp8IkYEeiddpojVtQ0Hg" base_Property="_hUHC4IkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hUHp8YkYEeiddpojVtQ0Hg" base_StructuralFeature="_hUHC4IkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_h2ohIIkYEeiddpojVtQ0Hg" base_Property="_h2n6EIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_h2ohIYkYEeiddpojVtQ0Hg" base_StructuralFeature="_h2n6EIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_i0fQgYkYEeiddpojVtQ0Hg" base_Property="_i0fQgIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_i0f3kIkYEeiddpojVtQ0Hg" base_StructuralFeature="_i0fQgIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_jXfP4YkYEeiddpojVtQ0Hg" base_Property="_jXfP4IkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jXf28IkYEeiddpojVtQ0Hg" base_StructuralFeature="_jXfP4IkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_j36cYYkYEeiddpojVtQ0Hg" base_Property="_j36cYIkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j37DcIkYEeiddpojVtQ0Hg" base_StructuralFeature="_j36cYIkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_kYzi8YkYEeiddpojVtQ0Hg" base_Property="_kYzi8IkYEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kYzi8okYEeiddpojVtQ0Hg" base_StructuralFeature="_kYzi8IkYEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_tfINQIkjEeiddpojVtQ0Hg" base_Property="_tfHmMIkjEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tfINQYkjEeiddpojVtQ0Hg" base_StructuralFeature="_tfHmMIkjEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_uaMHUYkjEeiddpojVtQ0Hg" base_Property="_uaMHUIkjEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uaMHUokjEeiddpojVtQ0Hg" base_StructuralFeature="_uaMHUIkjEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_pTjSwYklEeiddpojVtQ0Hg" base_Property="_pTjSwIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pTjSwoklEeiddpojVtQ0Hg" base_StructuralFeature="_pTjSwIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_qCL6YYklEeiddpojVtQ0Hg" base_Property="_qCL6YIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qCL6YoklEeiddpojVtQ0Hg" base_StructuralFeature="_qCL6YIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_qub8YYklEeiddpojVtQ0Hg" base_Property="_qub8YIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qucjcIklEeiddpojVtQ0Hg" base_StructuralFeature="_qub8YIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ra5ZwYklEeiddpojVtQ0Hg" base_Property="_ra5ZwIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ra5ZwoklEeiddpojVtQ0Hg" base_StructuralFeature="_ra5ZwIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_sFP-UYklEeiddpojVtQ0Hg" base_Property="_sFP-UIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sFP-UoklEeiddpojVtQ0Hg" base_StructuralFeature="_sFP-UIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_uF_uEYklEeiddpojVtQ0Hg" base_Property="_uF_uEIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uF_uEoklEeiddpojVtQ0Hg" base_StructuralFeature="_uF_uEIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_u2AOsIklEeiddpojVtQ0Hg" base_Property="_u1_noIklEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_u2AOsYklEeiddpojVtQ0Hg" base_StructuralFeature="_u1_noIklEeiddpojVtQ0Hg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_5wjnkYmwEeiOe-BKGdv_Yg" base_Property="_5wjnkImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5wlcwImwEeiOe-BKGdv_Yg" base_StructuralFeature="_5wjnkImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_7sPRIImwEeiOe-BKGdv_Yg" base_Property="_7sOqEImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7sPRIYmwEeiOe-BKGdv_Yg" base_StructuralFeature="_7sOqEImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_8fCnEYmwEeiOe-BKGdv_Yg" base_Property="_8fCnEImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8fDOIImwEeiOe-BKGdv_Yg" base_StructuralFeature="_8fCnEImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9NclMYmwEeiOe-BKGdv_Yg" base_Property="_9NclMImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9NdMQImwEeiOe-BKGdv_Yg" base_StructuralFeature="_9NclMImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-Wc0oYmwEeiOe-BKGdv_Yg" base_Property="_-Wc0oImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-Wc0oomwEeiOe-BKGdv_Yg" base_StructuralFeature="_-Wc0oImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="__92QQYmwEeiOe-BKGdv_Yg" base_Property="__92QQImwEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__923UImwEeiOe-BKGdv_Yg" base_StructuralFeature="__92QQImwEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_AqOOEYmxEeiOe-BKGdv_Yg" base_Property="_AqOOEImxEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AqOOEomxEeiOe-BKGdv_Yg" base_StructuralFeature="_AqOOEImxEeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_dRMcQIm2EeiOe-BKGdv_Yg" base_Property="_dRL1MIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dRMcQYm2EeiOe-BKGdv_Yg" base_StructuralFeature="_dRL1MIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_etCvMYm2EeiOe-BKGdv_Yg" base_Property="_etCvMIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etDWQIm2EeiOe-BKGdv_Yg" base_StructuralFeature="_etCvMIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fceBAYm2EeiOe-BKGdv_Yg" base_Property="_fceBAIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fceBAom2EeiOe-BKGdv_Yg" base_StructuralFeature="_fceBAIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_g6Q0sIm2EeiOe-BKGdv_Yg" base_Property="_g6QNoIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_g6Q0sYm2EeiOe-BKGdv_Yg" base_StructuralFeature="_g6QNoIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hj_HIYm2EeiOe-BKGdv_Yg" base_Property="_hj_HIIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hj_HIom2EeiOe-BKGdv_Yg" base_StructuralFeature="_hj_HIIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_iyBnkYm2EeiOe-BKGdv_Yg" base_Property="_iyBnkIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_iyBnkom2EeiOe-BKGdv_Yg" base_StructuralFeature="_iyBnkIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_j-UbkYm2EeiOe-BKGdv_Yg" base_Property="_j-UbkIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j-VCoIm2EeiOe-BKGdv_Yg" base_StructuralFeature="_j-UbkIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lAj7sYm2EeiOe-BKGdv_Yg" base_Property="_lAj7sIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lAj7som2EeiOe-BKGdv_Yg" base_StructuralFeature="_lAj7sIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lzrasYm2EeiOe-BKGdv_Yg" base_Property="_lzrasIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lzsBwIm2EeiOe-BKGdv_Yg" base_StructuralFeature="_lzrasIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mihdsIm2EeiOe-BKGdv_Yg" base_Property="_mig2oIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mihdsYm2EeiOe-BKGdv_Yg" base_StructuralFeature="_mig2oIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_n7IPYYm2EeiOe-BKGdv_Yg" base_Property="_n7IPYIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n7IPYom2EeiOe-BKGdv_Yg" base_StructuralFeature="_n7IPYIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_okqUkYm2EeiOe-BKGdv_Yg" base_Property="_okqUkIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_okqUkom2EeiOe-BKGdv_Yg" base_StructuralFeature="_okqUkIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_pOy2sYm2EeiOe-BKGdv_Yg" base_Property="_pOy2sIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pOy2som2EeiOe-BKGdv_Yg" base_StructuralFeature="_pOy2sIm2EeiOe-BKGdv_Yg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bqoiUJGyEeiUeLUnFxb3Bg" base_Property="_bqn7QJGyEeiUeLUnFxb3Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bqoiUZGyEeiUeLUnFxb3Bg" base_StructuralFeature="_bqn7QJGyEeiUeLUnFxb3Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ciU_UZGyEeiUeLUnFxb3Bg" base_Property="_ciU_UJGyEeiUeLUnFxb3Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ciU_UpGyEeiUeLUnFxb3Bg" base_StructuralFeature="_ciU_UJGyEeiUeLUnFxb3Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_dGL6UZGyEeiUeLUnFxb3Bg" base_Property="_dGL6UJGyEeiUeLUnFxb3Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dGL6UpGyEeiUeLUnFxb3Bg" base_StructuralFeature="_dGL6UJGyEeiUeLUnFxb3Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_69EOAJQkEei6kI-JPNdeuw" base_Property="_69Dm8JQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_69GDMJQkEei6kI-JPNdeuw" base_StructuralFeature="_69Dm8JQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_8IT5IZQkEei6kI-JPNdeuw" base_Property="_8IT5IJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8IUgMJQkEei6kI-JPNdeuw" base_StructuralFeature="_8IT5IJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_8qkRoJQkEei6kI-JPNdeuw" base_Property="_8qjqkJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8qkRoZQkEei6kI-JPNdeuw" base_StructuralFeature="_8qjqkJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9J8VQZQkEei6kI-JPNdeuw" base_Property="_9J8VQJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9J88UJQkEei6kI-JPNdeuw" base_StructuralFeature="_9J8VQJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_9pZ4cZQkEei6kI-JPNdeuw" base_Property="_9pZ4cJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9pafgJQkEei6kI-JPNdeuw" base_StructuralFeature="_9pZ4cJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-GrDQZQkEei6kI-JPNdeuw" base_Property="_-GrDQJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-GrDQpQkEei6kI-JPNdeuw" base_StructuralFeature="_-GrDQJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_-qdFwZQkEei6kI-JPNdeuw" base_Property="_-qdFwJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-qdFwpQkEei6kI-JPNdeuw" base_StructuralFeature="_-qdFwJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="__NT7MZQkEei6kI-JPNdeuw" base_Property="__NT7MJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__NVwYJQkEei6kI-JPNdeuw" base_StructuralFeature="__NT7MJQkEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_AK9PMZQlEei6kI-JPNdeuw" base_Property="_AK9PMJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AK92QJQlEei6kI-JPNdeuw" base_StructuralFeature="_AK9PMJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Bs7_UZQlEei6kI-JPNdeuw" base_Property="_Bs7_UJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Bs8mYJQlEei6kI-JPNdeuw" base_StructuralFeature="_Bs7_UJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_EzzpoZQlEei6kI-JPNdeuw" base_Property="_EzzpoJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Ez0QsJQlEei6kI-JPNdeuw" base_StructuralFeature="_EzzpoJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FUQEQJQlEei6kI-JPNdeuw" base_Property="_FUPdMJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FUQEQZQlEei6kI-JPNdeuw" base_StructuralFeature="_FUPdMJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FySrIZQlEei6kI-JPNdeuw" base_Property="_FySrIJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FyTSMJQlEei6kI-JPNdeuw" base_StructuralFeature="_FySrIJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_GRRGIJQlEei6kI-JPNdeuw" base_Property="_GRQfEJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GRRGIZQlEei6kI-JPNdeuw" base_StructuralFeature="_GRQfEJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_HiJfMJQlEei6kI-JPNdeuw" base_Property="_HiI4IJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HiJfMZQlEei6kI-JPNdeuw" base_StructuralFeature="_HiI4IJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_IBHTIZQlEei6kI-JPNdeuw" base_Property="_IBHTIJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IBHTIpQlEei6kI-JPNdeuw" base_StructuralFeature="_IBHTIJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_IdCaIZQlEei6kI-JPNdeuw" base_Property="_IdCaIJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IdCaIpQlEei6kI-JPNdeuw" base_StructuralFeature="_IdCaIJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_I9VDwZQlEei6kI-JPNdeuw" base_Property="_I9VDwJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_I9VDwpQlEei6kI-JPNdeuw" base_StructuralFeature="_I9VDwJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JZFLoZQlEei6kI-JPNdeuw" base_Property="_JZFLoJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JZFysJQlEei6kI-JPNdeuw" base_StructuralFeature="_JZFLoJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_J1YGEZQlEei6kI-JPNdeuw" base_Property="_J1YGEJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J1YGEpQlEei6kI-JPNdeuw" base_StructuralFeature="_J1YGEJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_KsYmkZQlEei6kI-JPNdeuw" base_Property="_KsYmkJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KsYmkpQlEei6kI-JPNdeuw" base_StructuralFeature="_KsYmkJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_L2fCMJQlEei6kI-JPNdeuw" base_Property="_L2ebIJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_L2fCMZQlEei6kI-JPNdeuw" base_StructuralFeature="_L2ebIJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Nh-ToZQlEei6kI-JPNdeuw" base_Property="_Nh-ToJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Nh-TopQlEei6kI-JPNdeuw" base_StructuralFeature="_Nh-ToJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ORvjsJQlEei6kI-JPNdeuw" base_Property="_ORu8oJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ORvjsZQlEei6kI-JPNdeuw" base_StructuralFeature="_ORu8oJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_PJkjkZQlEei6kI-JPNdeuw" base_Property="_PJkjkJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PJkjkpQlEei6kI-JPNdeuw" base_StructuralFeature="_PJkjkJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_PwKpgJQlEei6kI-JPNdeuw" base_Property="_PwKCcJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PwKpgZQlEei6kI-JPNdeuw" base_StructuralFeature="_PwKCcJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Qpe3IJQlEei6kI-JPNdeuw" base_Property="_QpeQEJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Qpe3IZQlEei6kI-JPNdeuw" base_StructuralFeature="_QpeQEJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_S66HMJQlEei6kI-JPNdeuw" base_Property="_S65gIJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_S66HMZQlEei6kI-JPNdeuw" base_StructuralFeature="_S65gIJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Tbx_oZQlEei6kI-JPNdeuw" base_Property="_Tbx_oJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tbx_opQlEei6kI-JPNdeuw" base_StructuralFeature="_Tbx_oJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_UQxG4ZQlEei6kI-JPNdeuw" base_Property="_UQxG4JQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UQxG4pQlEei6kI-JPNdeuw" base_StructuralFeature="_UQxG4JQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_UsgAoJQlEei6kI-JPNdeuw" base_Property="_UsfZkJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UsgAoZQlEei6kI-JPNdeuw" base_StructuralFeature="_UsfZkJQlEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_5dITAZQpEei6kI-JPNdeuw" base_Property="_5dITAJQpEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5dI6EJQpEei6kI-JPNdeuw" base_StructuralFeature="_5dITAJQpEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_6EHagJQpEei6kI-JPNdeuw" base_Property="_6EGzcJQpEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6EHagZQpEei6kI-JPNdeuw" base_StructuralFeature="_6EGzcJQpEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_sl3TYZQuEei6kI-JPNdeuw" base_Property="_sl3TYJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sl3TYpQuEei6kI-JPNdeuw" base_StructuralFeature="_sl3TYJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_tnGG4ZQuEei6kI-JPNdeuw" base_Property="_tnGG4JQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tnGG4pQuEei6kI-JPNdeuw" base_StructuralFeature="_tnGG4JQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_vThMcZQuEei6kI-JPNdeuw" base_Property="_vThMcJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vThMcpQuEei6kI-JPNdeuw" base_StructuralFeature="_vThMcJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_vxL_4ZQuEei6kI-JPNdeuw" base_Property="_vxL_4JQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vxMm8JQuEei6kI-JPNdeuw" base_StructuralFeature="_vxL_4JQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_wyu8cZQuEei6kI-JPNdeuw" base_Property="_wyu8cJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wyu8cpQuEei6kI-JPNdeuw" base_StructuralFeature="_wyu8cJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_xhv-kZQuEei6kI-JPNdeuw" base_Property="_xhv-kJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xhv-kpQuEei6kI-JPNdeuw" base_StructuralFeature="_xhv-kJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_yW6sAZQuEei6kI-JPNdeuw" base_Property="_yW6sAJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yW7TEJQuEei6kI-JPNdeuw" base_StructuralFeature="_yW6sAJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_y4u_oZQuEei6kI-JPNdeuw" base_Property="_y4u_oJQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_y4u_opQuEei6kI-JPNdeuw" base_StructuralFeature="_y4u_oJQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_zZIW8ZQuEei6kI-JPNdeuw" base_Property="_zZIW8JQuEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zZIW8pQuEei6kI-JPNdeuw" base_StructuralFeature="_zZIW8JQuEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_NyescZQzEei6kI-JPNdeuw" base_Property="_NyescJQzEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NyfTgJQzEei6kI-JPNdeuw" base_StructuralFeature="_NyescJQzEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_OcpDwZQzEei6kI-JPNdeuw" base_Property="_OcpDwJQzEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OcpDwpQzEei6kI-JPNdeuw" base_StructuralFeature="_OcpDwJQzEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_V7c6gZQ6Eei6kI-JPNdeuw" base_Property="_V7c6gJQ6Eei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_V7c6gpQ6Eei6kI-JPNdeuw" base_StructuralFeature="_V7c6gJQ6Eei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_WgYMgJQ6Eei6kI-JPNdeuw" base_Property="_WgXlcJQ6Eei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WgYMgZQ6Eei6kI-JPNdeuw" base_StructuralFeature="_WgXlcJQ6Eei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_XKReEJQ6Eei6kI-JPNdeuw" base_Property="_XKQ3AJQ6Eei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XKReEZQ6Eei6kI-JPNdeuw" base_StructuralFeature="_XKQ3AJQ6Eei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_XxkHkZQ6Eei6kI-JPNdeuw" base_Property="_XxkHkJQ6Eei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XxkHkpQ6Eei6kI-JPNdeuw" base_StructuralFeature="_XxkHkJQ6Eei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_w1-f4ZQ9Eei6kI-JPNdeuw" base_Property="_w1-f4JQ9Eei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_w1_G8JQ9Eei6kI-JPNdeuw" base_StructuralFeature="_w1-f4JQ9Eei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_D0oa4ZRBEei6kI-JPNdeuw" base_Property="_D0oa4JRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_D0pB8JRBEei6kI-JPNdeuw" base_StructuralFeature="_D0oa4JRBEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ErzTcZRBEei6kI-JPNdeuw" base_Property="_ErzTcJRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ErzTcpRBEei6kI-JPNdeuw" base_StructuralFeature="_ErzTcJRBEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_FY300ZRBEei6kI-JPNdeuw" base_Property="_FY300JRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FY300pRBEei6kI-JPNdeuw" base_StructuralFeature="_FY300JRBEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_GLY24ZRBEei6kI-JPNdeuw" base_Property="_GLY24JRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GLY24pRBEei6kI-JPNdeuw" base_StructuralFeature="_GLY24JRBEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hv24gJRBEei6kI-JPNdeuw" base_Property="_hv2RcJRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hv24gZRBEei6kI-JPNdeuw" base_StructuralFeature="_hv2RcJRBEei6kI-JPNdeuw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ikuD8JRBEei6kI-JPNdeuw" base_Property="_iktc4JRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ikuD8ZRBEei6kI-JPNdeuw" base_StructuralFeature="_iktc4JRBEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LZpyoJTdEeiYXO5wr78TUw" base_StructuralFeature="_LZpLkJTdEeiYXO5wr78TUw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_LZpyoZTdEeiYXO5wr78TUw" base_Property="_LZpLkJTdEeiYXO5wr78TUw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Ffin4JaOEeiGg_moIHe9Sw" base_Property="_FfgysJaOEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FfjO8JaOEeiGg_moIHe9Sw" base_StructuralFeature="_FfgysJaOEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_HGZ4AZaOEeiGg_moIHe9Sw" base_Property="_HGZ4AJaOEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HGafEJaOEeiGg_moIHe9Sw" base_StructuralFeature="_HGZ4AJaOEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_H1fLkJaOEeiGg_moIHe9Sw" base_Property="_H1ekgJaOEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H1fLkZaOEeiGg_moIHe9Sw" base_StructuralFeature="_H1ekgJaOEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JL16gZaOEeiGg_moIHe9Sw" base_Property="_JL16gJaOEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JL2hkJaOEeiGg_moIHe9Sw" base_StructuralFeature="_JL16gJaOEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_xzK_YJaXEeiGg_moIHe9Sw" base_Property="_xzKYUJaXEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xzK_YZaXEeiGg_moIHe9Sw" base_StructuralFeature="_xzKYUJaXEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_HR738ZahEeiGg_moIHe9Sw" base_Property="_HR738JahEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HR8fAJahEeiGg_moIHe9Sw" base_StructuralFeature="_HR738JahEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_J6eAcZahEeiGg_moIHe9Sw" base_Property="_J6eAcJahEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J6eAcpahEeiGg_moIHe9Sw" base_StructuralFeature="_J6eAcJahEeiGg_moIHe9Sw"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_KplJMJahEeiGg_moIHe9Sw" base_Property="_KpkiIJahEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KplJMZahEeiGg_moIHe9Sw" base_StructuralFeature="_KpkiIJahEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wTZ74Zc-Eeis0eUbsDSw0w" base_StructuralFeature="_wTZ74Jc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_wTai8Jc-Eeis0eUbsDSw0w" base_Property="_wTZ74Jc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_w5-zsJc-Eeis0eUbsDSw0w" base_StructuralFeature="_w5-MoJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_w5-zsZc-Eeis0eUbsDSw0w" base_Property="_w5-MoJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xjhf8Jc-Eeis0eUbsDSw0w" base_StructuralFeature="_xjg44Jc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_xjhf8Zc-Eeis0eUbsDSw0w" base_Property="_xjg44Jc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yI8hMJc-Eeis0eUbsDSw0w" base_StructuralFeature="_yI76IJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_yI8hMZc-Eeis0eUbsDSw0w" base_Property="_yI76IJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1YuP4Zc-Eeis0eUbsDSw0w" base_StructuralFeature="_1YuP4Jc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_1YuP4pc-Eeis0eUbsDSw0w" base_Property="_1YuP4Jc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_19gX8Zc-Eeis0eUbsDSw0w" base_StructuralFeature="_19gX8Jc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_19gX8pc-Eeis0eUbsDSw0w" base_Property="_19gX8Jc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2ocyYJc-Eeis0eUbsDSw0w" base_StructuralFeature="_2ocLUJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_2odZcJc-Eeis0eUbsDSw0w" base_Property="_2ocLUJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3mxb0Zc-Eeis0eUbsDSw0w" base_StructuralFeature="_3mxb0Jc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_3myC4Jc-Eeis0eUbsDSw0w" base_Property="_3mxb0Jc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4D4OkZc-Eeis0eUbsDSw0w" base_StructuralFeature="_4D4OkJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_4D4Okpc-Eeis0eUbsDSw0w" base_Property="_4D4OkJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4lixMZc-Eeis0eUbsDSw0w" base_StructuralFeature="_4lixMJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_4ljYQJc-Eeis0eUbsDSw0w" base_Property="_4lixMJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5BEPkZc-Eeis0eUbsDSw0w" base_StructuralFeature="_5BEPkJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_5BE2oJc-Eeis0eUbsDSw0w" base_Property="_5BEPkJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7YTzwZc-Eeis0eUbsDSw0w" base_StructuralFeature="_7YTzwJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_7YTzwpc-Eeis0eUbsDSw0w" base_Property="_7YTzwJc-Eeis0eUbsDSw0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7_pgkJc-Eeis0eUbsDSw0w" base_StructuralFeature="_7_o5gJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_7_pgkZc-Eeis0eUbsDSw0w" base_Property="_7_o5gJc-Eeis0eUbsDSw0w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_PV_doJdUEei-sOl6ywWHlg" base_Property="_PV-2kJdUEei-sOl6ywWHlg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PWBS0JdUEei-sOl6ywWHlg" base_StructuralFeature="_PV-2kJdUEei-sOl6ywWHlg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_VL2WIZpnEeidy9iGT_F5-w" base_Property="_VL2WIJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VL2WIppnEeidy9iGT_F5-w" base_StructuralFeature="_VL2WIJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_VsHKkJpnEeidy9iGT_F5-w" base_Property="_VsGjgJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VsHKkZpnEeidy9iGT_F5-w" base_StructuralFeature="_VsGjgJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_WIHKEJpnEeidy9iGT_F5-w" base_Property="_WIGjAJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WIHKEZpnEeidy9iGT_F5-w" base_StructuralFeature="_WIGjAJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Wj_NwJpnEeidy9iGT_F5-w" base_Property="_Wj-msJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Wj_NwZpnEeidy9iGT_F5-w" base_StructuralFeature="_Wj-msJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_W-exYZpnEeidy9iGT_F5-w" base_Property="_W-exYJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W-fYcJpnEeidy9iGT_F5-w" base_StructuralFeature="_W-exYJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_XXg8cZpnEeidy9iGT_F5-w" base_Property="_XXg8cJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XXhjgJpnEeidy9iGT_F5-w" base_StructuralFeature="_XXg8cJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YrKVoZpnEeidy9iGT_F5-w" base_Property="_YrKVoJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YrKVoppnEeidy9iGT_F5-w" base_StructuralFeature="_YrKVoJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ZW72gJpnEeidy9iGT_F5-w" base_Property="_ZW7PcJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ZW72gZpnEeidy9iGT_F5-w" base_StructuralFeature="_ZW7PcJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Zzi6AZpnEeidy9iGT_F5-w" base_Property="_Zzi6AJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ZzjhEJpnEeidy9iGT_F5-w" base_StructuralFeature="_Zzi6AJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_bU1GkZpnEeidy9iGT_F5-w" base_Property="_bU1GkJpnEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bU1GkppnEeidy9iGT_F5-w" base_StructuralFeature="_bU1GkJpnEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_L71b8ZpqEeidy9iGT_F5-w" base_Property="_L71b8JpqEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_L72DAJpqEeidy9iGT_F5-w" base_StructuralFeature="_L71b8JpqEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_M9AlEZpqEeidy9iGT_F5-w" base_Property="_M9AlEJpqEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_M9BMIJpqEeidy9iGT_F5-w" base_StructuralFeature="_M9AlEJpqEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_OD8_AZpqEeidy9iGT_F5-w" base_Property="_OD8_AJpqEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OD8_AppqEeidy9iGT_F5-w" base_StructuralFeature="_OD8_AJpqEeidy9iGT_F5-w"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_AjXg8JyxEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_JYZaYJzREeiLvPKMh61-Bg" base_Property="_JYYzUJzREeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JYaBcJzREeiLvPKMh61-Bg" base_StructuralFeature="_JYYzUJzREeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Knu7UJzREeiLvPKMh61-Bg" base_Property="_KnuUQJzREeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Knu7UZzREeiLvPKMh61-Bg" base_StructuralFeature="_KnuUQJzREeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Lbc3QJzREeiLvPKMh61-Bg" base_Property="_LbcQMJzREeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Lbc3QZzREeiLvPKMh61-Bg" base_StructuralFeature="_LbcQMJzREeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_MP9dYZzREeiLvPKMh61-Bg" base_Property="_MP9dYJzREeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MP-EcJzREeiLvPKMh61-Bg" base_StructuralFeature="_MP9dYJzREeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_NBnj0ZzREeiLvPKMh61-Bg" base_Property="_NBnj0JzREeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NBoK4JzREeiLvPKMh61-Bg" base_StructuralFeature="_NBnj0JzREeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fX2CUJzTEeiLvPKMh61-Bg" base_Property="_fX1bQJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fX2CUZzTEeiLvPKMh61-Bg" base_StructuralFeature="_fX1bQJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_f54_cZzTEeiLvPKMh61-Bg" base_Property="_f54_cJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_f54_cpzTEeiLvPKMh61-Bg" base_StructuralFeature="_f54_cJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_gaDGMZzTEeiLvPKMh61-Bg" base_Property="_gaDGMJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gaDtQJzTEeiLvPKMh61-Bg" base_StructuralFeature="_gaDGMJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_hwG6MZzTEeiLvPKMh61-Bg" base_Property="_hwG6MJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hwG6MpzTEeiLvPKMh61-Bg" base_StructuralFeature="_hwG6MJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_iWVzwZzTEeiLvPKMh61-Bg" base_Property="_iWVzwJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_iWVzwpzTEeiLvPKMh61-Bg" base_StructuralFeature="_iWVzwJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_jV7BcZzTEeiLvPKMh61-Bg" base_Property="_jV7BcJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jV7ogJzTEeiLvPKMh61-Bg" base_StructuralFeature="_jV7BcJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_kgWNMZzTEeiLvPKMh61-Bg" base_Property="_kgWNMJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kgWNMpzTEeiLvPKMh61-Bg" base_StructuralFeature="_kgWNMJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lKBcUZzTEeiLvPKMh61-Bg" base_Property="_lKBcUJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lKBcUpzTEeiLvPKMh61-Bg" base_StructuralFeature="_lKBcUJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_lxd20JzTEeiLvPKMh61-Bg" base_Property="_lxdPwJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lxd20ZzTEeiLvPKMh61-Bg" base_StructuralFeature="_lxdPwJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_mYnWYZzTEeiLvPKMh61-Bg" base_Property="_mYnWYJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mYn9cJzTEeiLvPKMh61-Bg" base_StructuralFeature="_mYnWYJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_nBD2cJzTEeiLvPKMh61-Bg" base_Property="_nBDPYJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nBD2cZzTEeiLvPKMh61-Bg" base_StructuralFeature="_nBDPYJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_nhhfMZzTEeiLvPKMh61-Bg" base_Property="_nhhfMJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nhiGQJzTEeiLvPKMh61-Bg" base_StructuralFeature="_nhhfMJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_oCtgsZzTEeiLvPKMh61-Bg" base_Property="_oCtgsJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oCtgspzTEeiLvPKMh61-Bg" base_StructuralFeature="_oCtgsJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_oiiQQZzTEeiLvPKMh61-Bg" base_Property="_oiiQQJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oii3UJzTEeiLvPKMh61-Bg" base_StructuralFeature="_oiiQQJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_pFelQZzTEeiLvPKMh61-Bg" base_Property="_pFelQJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pFelQpzTEeiLvPKMh61-Bg" base_StructuralFeature="_pFelQJzTEeiLvPKMh61-Bg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_pucpwZzTEeiLvPKMh61-Bg" base_Property="_pucpwJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pucpwpzTEeiLvPKMh61-Bg" base_StructuralFeature="_pucpwJzTEeiLvPKMh61-Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RRrjMKJVEeibfLkXoC-lBg" base_StructuralFeature="_RRq8IKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_RRsxUKJVEeibfLkXoC-lBg" base_Property="_RRq8IKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TGCcwKJVEeibfLkXoC-lBg" base_StructuralFeature="_TGB1sKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_TGCcwaJVEeibfLkXoC-lBg" base_Property="_TGB1sKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Trf6QaJVEeibfLkXoC-lBg" base_StructuralFeature="_Trf6QKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_TrghUKJVEeibfLkXoC-lBg" base_Property="_Trf6QKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UekV8aJVEeibfLkXoC-lBg" base_StructuralFeature="_UekV8KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Uek9AKJVEeibfLkXoC-lBg" base_Property="_UekV8KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VXKx4aJVEeibfLkXoC-lBg" base_StructuralFeature="_VXKx4KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_VXKx4qJVEeibfLkXoC-lBg" base_Property="_VXKx4KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W9q1oaJVEeibfLkXoC-lBg" base_StructuralFeature="_W9q1oKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_W9rcsKJVEeibfLkXoC-lBg" base_Property="_W9q1oKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YAFU4KJVEeibfLkXoC-lBg" base_StructuralFeature="_YAEt0KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_YAFU4aJVEeibfLkXoC-lBg" base_Property="_YAEt0KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Yr9jcaJVEeibfLkXoC-lBg" base_StructuralFeature="_Yr9jcKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_Yr9jcqJVEeibfLkXoC-lBg" base_Property="_Yr9jcKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ZXlTUaJVEeibfLkXoC-lBg" base_StructuralFeature="_ZXlTUKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_ZXl6YKJVEeibfLkXoC-lBg" base_Property="_ZXlTUKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aM6_4KJVEeibfLkXoC-lBg" base_StructuralFeature="_aM6Y0KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_aM6_4aJVEeibfLkXoC-lBg" base_Property="_aM6Y0KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_a-5PYaJVEeibfLkXoC-lBg" base_StructuralFeature="_a-5PYKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_a-5PYqJVEeibfLkXoC-lBg" base_Property="_a-5PYKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_cMRogaJVEeibfLkXoC-lBg" base_StructuralFeature="_cMRogKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_cMRogqJVEeibfLkXoC-lBg" base_Property="_cMRogKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dDI_EaJVEeibfLkXoC-lBg" base_StructuralFeature="_dDI_EKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_dDI_EqJVEeibfLkXoC-lBg" base_Property="_dDI_EKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dwvr8aJVEeibfLkXoC-lBg" base_StructuralFeature="_dwvr8KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_dwvr8qJVEeibfLkXoC-lBg" base_Property="_dwvr8KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_en-O4aJVEeibfLkXoC-lBg" base_StructuralFeature="_en-O4KJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_en-O4qJVEeibfLkXoC-lBg" base_Property="_en-O4KJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fZgZgaJVEeibfLkXoC-lBg" base_StructuralFeature="_fZgZgKJVEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_fZgZgqJVEeibfLkXoC-lBg" base_Property="_fZgZgKJVEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4wuD8aJWEeibfLkXoC-lBg" base_StructuralFeature="_4wuD8KJWEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_4wuD8qJWEeibfLkXoC-lBg" base_Property="_4wuD8KJWEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5x4mAaJWEeibfLkXoC-lBg" base_StructuralFeature="_5x4mAKJWEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_5x5NEKJWEeibfLkXoC-lBg" base_Property="_5x4mAKJWEeibfLkXoC-lBg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_61QHgaJWEeibfLkXoC-lBg" base_StructuralFeature="_61QHgKJWEeibfLkXoC-lBg"/>
-  <Onap_Profile:OnapModelLifecycle xmi:id="_61QHgqJWEeibfLkXoC-lBg" base_Property="_61QHgKJWEeibfLkXoC-lBg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_PzIvUKJaEeibfLkXoC-lBg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sG__YKLPEeiz_K9hWIugxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_J2T8YKLaEeimWJT-j4TvOA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IamB8KVvEeikF6xsfT18UA" base_StructuralFeature="_N61nIDeBEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IanQEKVvEeikF6xsfT18UA" base_StructuralFeature="_O2y5EDeBEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IaoeMKVvEeikF6xsfT18UA" base_StructuralFeature="_-b8GcDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IapsUKVvEeikF6xsfT18UA" base_StructuralFeature="__BqCoDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Iaq6cKVvEeikF6xsfT18UA" base_StructuralFeature="__o0JQDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IasIkKVvEeikF6xsfT18UA" base_StructuralFeature="_Ag8rIDdQEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IasvoKVvEeikF6xsfT18UA" base_StructuralFeature="_ifaxMDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Iauk0KVvEeikF6xsfT18UA" base_StructuralFeature="_TsnHUDgXEeiOYfGHew0BGg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Iavy8KVvEeikF6xsfT18UA" base_StructuralFeature="_W5c2wDgXEeiOYfGHew0BGg"/>
 </xmi:XMI>
