@@ -288,6 +288,62 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
       <ownedComment xmi:type="uml:Comment" xmi:id="_L3adsJzVEeiLvPKMh61-Bg">
         <body>Fill in attribute defs and check attribute multiplicity</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Vb-k0KZEEeily5uFlujj3Q">
+        <body>Discuss spec event data type (no class)</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_thIKYKcJEeiFp-jDq2Hw-A">
+        <body>multiplicity (0..1 or 0..*) for highend and lowend of latency bucket</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zD-Z0KcHEeiFp-jDq2Hw-A" name="LatencyBucketMeasure">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_a_bM8KcNEeiFp-jDq2Hw-A" annotatedElement="_zD-Z0KcHEeiFp-jDq2Hw-A">
+          <body>The latencyBucketMeasure datatype consists of the following fields which describe the number of counts falling within a defined latency bucket</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7S8mYKcHEeiFp-jDq2Hw-A" name="countsInTheBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_lgTHgKcJEeiFp-jDq2Hw-A" annotatedElement="_7S8mYKcHEeiFp-jDq2Hw-A">
+            <body>Number of counts falling within a defined latency bucket</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_76OBwKcHEeiFp-jDq2Hw-A" name="highEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_naHv4KcJEeiFp-jDq2Hw-A" annotatedElement="_76OBwKcHEeiFp-jDq2Hw-A">
+            <body>High end of bucket range (typically in ms)</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qdcW8KcJEeiFp-jDq2Hw-A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qdjrsKcJEeiFp-jDq2Hw-A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8cpZYKcHEeiFp-jDq2Hw-A" name="lowEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_pOiT0KcJEeiFp-jDq2Hw-A" annotatedElement="_8cpZYKcHEeiFp-jDq2Hw-A">
+            <body>Low end of bucket range (typically in ms)</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYsisKcJEeiFp-jDq2Hw-A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sY2TsKcJEeiFp-jDq2Hw-A" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_-7CVIKcMEeiFp-jDq2Hw-A" name="Load">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Y3U4AKcNEeiFp-jDq2Hw-A" annotatedElement="_-7CVIKcMEeiFp-jDq2Hw-A">
+          <body>The load datatype provides metrics on system cpu and io utilization obtained using /proc/loadavg</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_E2dKsKcNEeiFp-jDq2Hw-A" name="longTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TOSL4KcNEeiFp-jDq2Hw-A" annotatedElement="_E2dKsKcNEeiFp-jDq2Hw-A">
+            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 15 minutes using /proc/loadavg</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dBRv8KcNEeiFp-jDq2Hw-A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dBX2kKcNEeiFp-jDq2Hw-A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FgDhUKcNEeiFp-jDq2Hw-A" name="midTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_U_m_kKcNEeiFp-jDq2Hw-A" annotatedElement="_FgDhUKcNEeiFp-jDq2Hw-A">
+            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 5 minutes using /proc/loadavg</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eijVcKcNEeiFp-jDq2Hw-A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eioN8KcNEeiFp-jDq2Hw-A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GHjmMKcNEeiFp-jDq2Hw-A" name="shortTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WhlIoKcNEeiFp-jDq2Hw-A" annotatedElement="_GHjmMKcNEeiFp-jDq2Hw-A">
+            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 1 minute using /proc/loadavg</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gXyYwKcNEeiFp-jDq2Hw-A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gYAbMKcNEeiFp-jDq2Hw-A" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -602,21 +658,13 @@ ONAP event messages are serialized as a unicode ASCII character string which may
             <body>commonEventHeader - Fields common to all events.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_DLbYsH7_EeifJIHxnlj6Cg" name="domain" type="_IInt8IngEeiOe-BKGdv_Yg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_a1gigInuEeiOe-BKGdv_Yg" annotatedElement="_DLbYsH7_EeifJIHxnlj6Cg">
-              <body>domain - Event domain enumeration: &#xD;
-&#xD;
-‘fault’, ‘heartbeat’, ‘measurementsForVfScaling’, ‘mobileFlow’, ‘other’, ‘sipSignaling’, ‘stateChange’, ‘syslog’, ‘thresholdCrossingAlert’, ‘voiceQuality’&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mw2YMKY_Eeily5uFlujj3Q" annotatedElement="_DLbYsH7_EeifJIHxnlj6Cg">
+              <body>Event domain enumeration: ‘fault’, ‘heartbeat’, ‘measurement’, ‘mobileFlow’, ‘notification’, ‘other’, ‘pnfRegistration’, ‘sipSignaling’, ‘stateChange’, ‘syslog’, ‘thresholdCrossingAlert’, ‘voiceQuality’</body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_DkIzoH7_EeifJIHxnlj6Cg" name="eventId">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_dlPfMInuEeiOe-BKGdv_Yg" annotatedElement="_DkIzoH7_EeifJIHxnlj6Cg">
-              <body>eventId -Event key that is unique to the event source.&#xD;
-&#xD;
-The key must be unique within notification life cycle similar to EventId from 3GPP. It could be a sequential number, or a composite key formed from the event fields, such as domain_sequence.  &#xD;
-&#xD;
-The eventId should not include whitespaces.  For fault events, eventId is the eventId of the initial alarm; if the same alarm is raised again for changed, acknowledged or cleared cases, eventId must be the same as the initial alarm (along with the same startEpochMicrosec but with a different sequence number).&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qauo8KY_Eeily5uFlujj3Q" annotatedElement="_DkIzoH7_EeifJIHxnlj6Cg">
+              <body>Event key that is unique to the event source. The key must be unique within notification life cycle similar to EventID from 3GPP. It could be a sequential number, or a composite key formed from the event fields, such as domain_sequence. The eventId should not include whitespace.  For fault events, eventId is the eventId of the initial alarm; if the same alarm is raised again for changed, acknowledged or cleared cases, eventId must be the same as the initial alarm (along with the same startEpochMicrosec but with a different sequence number). Note: see section 1.3 for eventId use case examples.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -642,146 +690,137 @@ Domain abbreviations are derived from the ‘domain’ field in the commonEventH
 ‘VoiceQuality’ for the voiceQuality domain&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_z0plsKY_Eeily5uFlujj3Q" annotatedElement="_D9JwkH7_EeifJIHxnlj6Cg">
+              <body>Unique event name </body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_EU9zoH7_EeifJIHxnlj6Cg" name="eventType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_jhCvQInuEeiOe-BKGdv_Yg" annotatedElement="_EU9zoH7_EeifJIHxnlj6Cg">
-              <body>eventType - Needs to determine the source generating the event. The valid values are: ‘applicationVnf’, ‘guestOS’, ‘hostOS’, ‘platform’ &#xD;
-&#xD;
-applicationVNF:  When the event is related to the VNF application.&#xD;
-&#xD;
-guestOS:  When the event is related to the Operating System of the VM where the VNF is running on. &#xD;
-&#xD;
-platform:  When the event is related to the platform, hardware of where a VNF might be running on (including Jericho Cisco NCS Switch)&#xD;
-&#xD;
-hostOS:  When the event is related to the operating system of the hardware&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Wlz3gKZAEeily5uFlujj3Q" annotatedElement="_EU9zoH7_EeifJIHxnlj6Cg">
+              <body>For example: ‘applicationNf’, ‘guestOS’, ‘hostOS’, ‘platform’ </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5DzSUH8HEeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5D4K0H8HEeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_E-nNkH7_EeifJIHxnlj6Cg" name="lastEpochMicrosec" type="_s_Ka4JESEei9Vqs7Ti8Wxg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_iN6e0JESEei9Vqs7Ti8Wxg" annotatedElement="_E-nNkH7_EeifJIHxnlj6Cg">
-              <body>lastEpochMicrosec - the latest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E-nNkH7_EeifJIHxnlj6Cg" name="lastEpochMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5Ri2wKZAEeily5uFlujj3Q" annotatedElement="_E-nNkH7_EeifJIHxnlj6Cg">
+              <body>the latest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds</body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FVmKMH7_EeifJIHxnlj6Cg" name="nfcNamingCode">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_oFBQwInuEeiOe-BKGdv_Yg" annotatedElement="_FVmKMH7_EeifJIHxnlj6Cg">
-              <body>nfcNamingCode - Network function component type: 3 characters (aligned with vfc naming standards)&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_L4j1MKZBEeily5uFlujj3Q" annotatedElement="_FVmKMH7_EeifJIHxnlj6Cg">
+              <body>Network function component type: 3 characters (aligned with vfc naming standards)</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GYnasKZBEeily5uFlujj3Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GYv9kKZBEeily5uFlujj3Q" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_GtDsYH7_EeifJIHxnlj6Cg" name="nfNamingCode">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_qhTtAInuEeiOe-BKGdv_Yg" annotatedElement="_GtDsYH7_EeifJIHxnlj6Cg">
-              <body>nfNamingCode - Network function type: 4 characters (aligned with Vnf naming standards).&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_V1O5sKZBEeily5uFlujj3Q" annotatedElement="_GtDsYH7_EeifJIHxnlj6Cg">
+              <body>Network function type: 4 characters (aligned with vnf and pnf naming standards)</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RAW1cKZBEeily5uFlujj3Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RAf_YKZBEeily5uFlujj3Q" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_HT7fIH7_EeifJIHxnlj6Cg" name="priority" type="_2x4t0InuEeiOe-BKGdv_Yg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_sy-NoInuEeiOe-BKGdv_Yg" annotatedElement="_HT7fIH7_EeifJIHxnlj6Cg">
-              <body>priority - Processing priority enumeration: ‘High’, ‘Medium’, ‘Normal’, ‘Low’&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_f5WqAKZBEeily5uFlujj3Q" annotatedElement="_HT7fIH7_EeifJIHxnlj6Cg">
+              <body>Processing priority enumeration: ‘High’, ‘Medium’, ‘Normal’, ‘Low’</body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_H15jwH7_EeifJIHxnlj6Cg" name="reportingEntityId">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_TlSyUInwEeiOe-BKGdv_Yg" annotatedElement="_H15jwH7_EeifJIHxnlj6Cg">
-              <body>reportingEntityId - UUID identifying the entity reporting the event or detecting a problem in another xnf/vm or pnf which is experiencing the problem. &#xD;
-&#xD;
-Note: the AT&amp;T internal enrichment process shall ensure that this field is populated. The reportingEntityId is an id for the reportingEntityName. See reportingEntityName for more information.&#xD;
-</body>
-            </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_31NVkIn6EeiOe-BKGdv_Yg">
               <body>reportingEntityId - UUID identifying the entity reporting the event or detecting a problem in another xnf/vm or pnf which is experiencing the problem. &#xD;
 &#xD;
 Note: the AT&amp;T internal enrichment process shall ensure that this field is populated. The reportingEntityId is an id for the reportingEntityName. See reportingEntityName for more information.&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ffF6cKZCEeily5uFlujj3Q" annotatedElement="_H15jwH7_EeifJIHxnlj6Cg">
+              <body>UUID identifying the entity reporting the event or detecting a problem in another vnf/vm or pnf which is experiencing the problem. (Note: the AT&amp;T internal enrichment process shall ensure that this field is populated). The reportingEntityId is an id for the reportingEntityName. See ‘reportingEntityName’ for more information.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FVKrYH8KEeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FVOVwH8KEeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IPK_YH7_EeifJIHxnlj6Cg" name="reportingEntityName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Vrx9sInwEeiOe-BKGdv_Yg" annotatedElement="_IPK_YH7_EeifJIHxnlj6Cg">
-              <body>reportingEntityName - Name of the entity reporting the event or detecting a problem in another xnf/vm or pnf which is experiencing the problem. May be the same as the sourceName. For synthetic events generated by DCAE, it is the name of the app generating the event.&#xD;
-</body>
-            </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_5_YuIIn6EeiOe-BKGdv_Yg">
               <body>reportingEntityName - Name of the entity reporting the event or detecting a problem in another xnf/vm or pnf which is experiencing the problem. May be the same as the sourceName. For synthetic events generated by DCAE, it is the name of the app generating the event.&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_nWFE0KZCEeily5uFlujj3Q" annotatedElement="_IPK_YH7_EeifJIHxnlj6Cg">
+              <body>Name of the entity reporting the event or detecting a problem in another vnf/vm or pnf which is experiencing the problem. May be the same as the sourceName. For synthetic events generated by DCAE, it is the name of the app generating the event.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Inn7oH7_EeifJIHxnlj6Cg" name="sequence">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_XtAOkInwEeiOe-BKGdv_Yg" annotatedElement="_Inn7oH7_EeifJIHxnlj6Cg">
-              <body>sequence - Ordering of events communicated by an event source instance (or 0 if not needed)&#xD;
-</body>
-            </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_8N9egIn6EeiOe-BKGdv_Yg">
               <body>sequence - Ordering of events communicated by an event source instance (or 0 if not needed)&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uDh0QKZCEeily5uFlujj3Q" annotatedElement="_Inn7oH7_EeifJIHxnlj6Cg">
+              <body>Ordering of events communicated by an event source instance (or 0 if not needed)</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JDjCoH7_EeifJIHxnlj6Cg" name="sourceId">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ZfzB4InwEeiOe-BKGdv_Yg" annotatedElement="_JDjCoH7_EeifJIHxnlj6Cg">
-              <body>sourceId - UUID identifying the entity experiencing the event issue, which may be detected and reported by a separate reporting entity &#xD;
-&#xD;
-Note: the AT&amp;T internal enrichment process shall ensure that this field is populate). The sourceId is an id for the sourceName. See sourceName for more information.&#xD;
-</body>
-            </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_-wDAwIn6EeiOe-BKGdv_Yg">
               <body>sourceId - UUID identifying the entity experiencing the event issue, which may be detected and reported by a separate reporting entity &#xD;
 &#xD;
 Note: the AT&amp;T internal enrichment process shall ensure that this field is populate). The sourceId is an id for the sourceName. See sourceName for more information.&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0ivTYKZCEeily5uFlujj3Q" annotatedElement="_JDjCoH7_EeifJIHxnlj6Cg">
+              <body>UUID identifying the entity experiencing the event issue, which may be detected and reported by a separate reporting entity (note: the AT&amp;T internal enrichment process shall ensure that this field is populated). The sourceId is an id for the sourceName. See ‘sourceName’ for more information.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J7LNMH8KEeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J7R64H8KEeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JfMc0H7_EeifJIHxnlj6Cg" name="sourceName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_bOiboInwEeiOe-BKGdv_Yg" annotatedElement="_JfMc0H7_EeifJIHxnlj6Cg">
-              <body>sourceName - Name of the entity experiencing the event issue, which may be detected and reported by a separate reporting entity. The sourceName identifies the device for which data is collected. A valid sourceName must be inventoried in A&amp;AI. If sourceName is a xNFC or VM, then the event must be reporting data for that particular xNFC or VM. If the sourceName is a xNF, comprised of multiple xNFCs, the data must be reported/aggregated at the xNF leveI. Data for individual xNFC must not be included in the xNF sourceName event.&#xD;
-</body>
-            </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_Aw6FQIn7EeiOe-BKGdv_Yg">
               <body>sourceName - Name of the entity experiencing the event issue, which may be detected and reported by a separate reporting entity. The sourceName identifies the device for which data is collected. A valid sourceName must be inventoried in A&amp;AI. If sourceName is a xNFC or VM, then the event must be reporting data for that particular xNFC or VM. If the sourceName is a xNF, comprised of multiple xNFCs, the data must be reported/aggregated at the xNF leveI. Data for individual xNFC must not be included in the xNF sourceName event.&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_51-HkKZCEeily5uFlujj3Q" annotatedElement="_JfMc0H7_EeifJIHxnlj6Cg">
+              <body>Name of the entity experiencing the event issue, which may be detected and reported by a separate reporting entity. The sourceName identifies the device for which data is collected. A valid sourceName must be inventoried in A&amp;AI. If sourceName is a xNFC or VM, then the event must be reporting data for that particular xNFC or VM. If the sourceName is a xNF, comprised of multiple xNFCs, the data must be reported/aggregated at the xNF leveI.  Data for individual xNFC must not be included in the xNF sourceName event.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_J8PlMH7_EeifJIHxnlj6Cg" name="startingEpochMicrosec" type="_s_Ka4JESEei9Vqs7Ti8Wxg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_dQnBEInwEeiOe-BKGdv_Yg" annotatedElement="_J8PlMH7_EeifJIHxnlj6Cg">
-              <body>startEpochMicrosec - the earliest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds. For measurements and heartbeats, where events are collected over predefined intervals, startEpochMicrosec shall be rounded to the nearest interval boundary (e.g., the epoch equivalent of 3:00PM, 3:10PM, 3:20PM, etc…). &#xD;
-&#xD;
-For fault events, startEpochMicrosec is the timestamp of the initial alarm; if the same alarm is raised again for changed, acknowledged or cleared cases, startEpochMicrosec must be the same as the initial alarm (along with the same eventId and an incremental sequence number). For devices with no timing source (clock), the default value will be 0 and DCAE collector will replace it with Collector time stamp (when event is received).&#xD;
-</body>
-            </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J8PlMH7_EeifJIHxnlj6Cg" name="startingEpochMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_CrF6AIn7EeiOe-BKGdv_Yg">
               <body>startEpochMicrosec - the earliest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds. For measurements and heartbeats, where events are collected over predefined intervals, startEpochMicrosec shall be rounded to the nearest interval boundary (e.g., the epoch equivalent of 3:00PM, 3:10PM, 3:20PM, etc…). &#xD;
 &#xD;
 For fault events, startEpochMicrosec is the timestamp of the initial alarm; if the same alarm is raised again for changed, acknowledged or cleared cases, startEpochMicrosec must be the same as the initial alarm (along with the same eventId and an incremental sequence number). For devices with no timing source (clock), the default value will be 0 and DCAE collector will replace it with Collector time stamp (when event is received).&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_G-33gKZDEeily5uFlujj3Q" annotatedElement="_J8PlMH7_EeifJIHxnlj6Cg">
+              <body>the earliest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds. For measurements and heartbeats, where events are collected over predefined intervals, startEpochMicrosec shall be rounded to the nearest interval boundary (e.g., the epoch equivalent of 3:00PM, 3:10PM, 3:20PM, etc…). For fault events, startEpochMicrosec is the timestamp of the initial alarm; if the same alarm is raised again for changed, acknowledged or cleared cases, startEpoch Microsec must be the same as the initial alarm (along with the same eventId and an incremental sequence number). For devices with no timing source (clock), the default value will be 0 and the VES collector will replace it with Collector time stamp (when the event is received)</body>
+            </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KV_h8H7_EeifJIHxnlj6Cg" name="timeZoneOffset">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_5VV38JETEei9Vqs7Ti8Wxg" annotatedElement="_KV_h8H7_EeifJIHxnlj6Cg">
-              <body>timeZoneOffset - offset to/from GMT to indicate local timezone for device.&#xD;
-&#xD;
-Example:  +4, -5&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TwKYsKZDEeily5uFlujj3Q" annotatedElement="_KV_h8H7_EeifJIHxnlj6Cg">
+              <body>Offset to GMT to indicate local time zone for device formatted as ‘UTC+/-hh.mm’; see https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations for UTC offset examples</body>
             </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OydIkKZDEeily5uFlujj3Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oym5kKZDEeily5uFlujj3Q" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_PAciEH8DEeifJIHxnlj6Cg" name="version" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_-SFewJETEei9Vqs7Ti8Wxg" annotatedElement="_PAciEH8DEeifJIHxnlj6Cg">
-              <body>version - Version of the event header </body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PAciEH8DEeifJIHxnlj6Cg" name="version">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_eK218KZDEeily5uFlujj3Q" annotatedElement="_PAciEH8DEeifJIHxnlj6Cg">
+              <body>Version of the event header as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_LZpLkJTdEeiYXO5wr78TUw" name="Kevin"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LZpLkJTdEeiYXO5wr78TUw" name="vesEventListenerVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_o3kQQKZDEeily5uFlujj3Q" annotatedElement="_LZpLkJTdEeiYXO5wr78TUw">
+              <body>Version of the ves event listener api spec that this event is compliant with (as “#” or “#.#” or “#.#.#” where # is a digit; see section 1 for the correct digits to use).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lbyX0KZBEeily5uFlujj3Q" name="nfVendorName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_h_gkMH7vEeifJIHxnlj6Cg" name="Event">
           <ownedComment xmi:type="uml:Comment" xmi:id="_YogkoIncEeiOe-BKGdv_Yg" annotatedElement="_h_gkMH7vEeifJIHxnlj6Cg">
@@ -802,7 +841,7 @@ Example:  +4, -5&#xD;
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_g60FoH7yEeifJIHxnlj6Cg" name="faultFields" type="_r_TYsH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_MvKMUJEUEei9Vqs7Ti8Wxg" annotatedElement="_g60FoH7yEeifJIHxnlj6Cg">
-              <body>faultFields - Fields specific to fault events.</body>
+              <body>Fields specific to fault events.</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__LaKwH78EeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__LgRYH78EeifJIHxnlj6Cg" value="1"/>
@@ -816,7 +855,7 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jaJ14H7yEeifJIHxnlj6Cg" name="measurementsFields" type="_tW6E0H7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_9s878JEUEei9Vqs7Ti8Wxg" annotatedElement="_jaJ14H7yEeifJIHxnlj6Cg">
-              <body>measurementsFields - Fields specific to measurement events.&#xD;
+              <body>Fields specific to measurement events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9Pq4H79EeifJIHxnlj6Cg"/>
@@ -824,7 +863,7 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_j9X3sH7yEeifJIHxnlj6Cg" name="mobileFlowFields" type="_xzOfIH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_AO7JcJEVEei9Vqs7Ti8Wxg" annotatedElement="_j9X3sH7yEeifJIHxnlj6Cg">
-              <body>mobileFlowFields - Fields specific to mobilityFlow events.&#xD;
+              <body>Fields specific to mobilityFlow events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IbcWQH7-EeifJIHxnlj6Cg"/>
@@ -832,7 +871,7 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_kefnwH7yEeifJIHxnlj6Cg" name="notificationFields" type="_yKtyEH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Cz4ZgJEVEei9Vqs7Ti8Wxg" annotatedElement="_kefnwH7yEeifJIHxnlj6Cg">
-              <body>notificationFields - Fields specific to notification events.&#xD;
+              <body>Fields specific to notification events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KDt7oH7-EeifJIHxnlj6Cg"/>
@@ -863,7 +902,7 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_mOxSkH7yEeifJIHxnlj6Cg" name="stateChangeFields" type="_2XJ9UH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NqLNoJEVEei9Vqs7Ti8Wxg" annotatedElement="_mOxSkH7yEeifJIHxnlj6Cg">
-              <body>stateChangeFields - Fields specific to state change events.&#xD;
+              <body>Fields specific to state change events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OM9o8H7-EeifJIHxnlj6Cg"/>
@@ -871,7 +910,7 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_mqtAoH7yEeifJIHxnlj6Cg" name="syslogFields" type="_7F_D8H7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_PpwfwJEVEei9Vqs7Ti8Wxg" annotatedElement="_mqtAoH7yEeifJIHxnlj6Cg">
-              <body>syslogFields - Fields specific to syslog events.&#xD;
+              <body>Fields specific to syslog events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PBDYUH7-EeifJIHxnlj6Cg"/>
@@ -879,21 +918,21 @@ Example:  +4, -5&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oLQ0cH7yEeifJIHxnlj6Cg" name="thresholdCrossingAlertFields" type="_8IBvwH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Rx4p4JEVEei9Vqs7Ti8Wxg" annotatedElement="_oLQ0cH7yEeifJIHxnlj6Cg">
-              <body>thresholdCrossingAlertFields - Fields specific to thresholdCrossingAlert events.</body>
+              <body>Fields specific to thresholdCrossingAlert events.</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P9-TkH7-EeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P-EaMH7-EeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_otVmwH7yEeifJIHxnlj6Cg" name="voiceQualifyFields" type="_82OSgH7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_T2rzMJEVEei9Vqs7Ti8Wxg" annotatedElement="_otVmwH7yEeifJIHxnlj6Cg">
-              <body>voiceQualityFields - Fields specific to voiceQuality events.&#xD;
+              <body>Fields specific to voiceQuality events.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5_P4H7-EeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q6EvcH7-EeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_wrtaQIFdEeieQ4zKGFzYtQ" name="CcodecsInUse">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_wrtaQIFdEeieQ4zKGFzYtQ" name="CodecsInUse">
           <ownedComment xmi:type="uml:Comment" xmi:id="_EKuXsIFeEeieQ4zKGFzYtQ" annotatedElement="_wrtaQIFdEeieQ4zKGFzYtQ">
             <body>codecsInUse - the codecsInUse datatype consists of the following fields describing the number of times an identified codec was used over the measurementInterval&#xD;
 </body>
@@ -914,101 +953,68 @@ Example:  +4, -5&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_r_TYsH7wEeifJIHxnlj6Cg" name="FaultFields">
           <ownedComment xmi:type="uml:Comment" xmi:id="_oDfesIFGEeieQ4zKGFzYtQ" annotatedElement="_r_TYsH7wEeifJIHxnlj6Cg">
-            <body>faultFields - Fields specific to fault events&#xD;
+            <body>Fields specific to fault events&#xD;
 </body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_U98FwIEoEeieQ4zKGFzYtQ" name="alarmAdditionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_twbzYIFGEeieQ4zKGFzYtQ" annotatedElement="_U98FwIEoEeieQ4zKGFzYtQ">
-              <body>alarmAdditionalInformation - additional Information related to Alarm, such as Repair Action, Remedy code.&#xD;
-&#xD;
-May by serialized alarm payload: varbind list, original syslog message, notification parameters, etc. when event is generated via other means, should provide raw detail out of element.&#xD;
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1yYHkKZIEeily5uFlujj3Q" annotatedElement="_U98FwIEoEeieQ4zKGFzYtQ">
+              <body>Additional alarm information. &#xD;
+•	Note1: for SNMP mapping to VES, for hash key use OID of varbind, for value use incoming data for that varbind). &#xD;
+•	Note2: Alarm ID for 3GPP should be included (if applicable) in alarmAdditonalInformation as ‘alarmId’:’alarmIdValue’. &#xD;
+Could contain managed object instance as separate key:value; could add probable cause as separate key:value.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-bfFIIEqEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-bynIIEqEeieQ4zKGFzYtQ" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YE4okIEoEeieQ4zKGFzYtQ" name="alarmCondition">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_v4PNYIFGEeieQ4zKGFzYtQ" annotatedElement="_YE4okIEoEeieQ4zKGFzYtQ">
-              <body>alarmCondition - Short name of the alarm/problem, like trap name. Could be of SPECIFIC_PROBLEM list:&#xD;
-(x733_SpecificProblems). &#xD;
-&#xD;
-Should be string to avoid duplicate dictionary translation. This should be a one word.&#xD;
-&#xD;
-Indicates the Alarm Condition as reported by the device.  Should be string to avoid duplicate dictionary translation. This would be a alarm description.&#xD;
-&#xD;
-Data from probableCause (3GPP and MTOSI) would be an alarm summary.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4tl7gKZIEeily5uFlujj3Q" annotatedElement="_YE4okIEoEeieQ4zKGFzYtQ">
+              <body>Short name of the alarm condition/problem, such as a trap name.  Should not have white space (e.g., tpLgCgiNotInConfig, BfdSessionDown, linkDown, etc…)</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YnPHsIEoEeieQ4zKGFzYtQ" name="alarmInterfaceA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_yA478IFGEeieQ4zKGFzYtQ" annotatedElement="_YnPHsIEoEeieQ4zKGFzYtQ">
-              <body>alarmInterfaceA - Provide port or channel or interface information when alarm is related with interface faults. Could be card/port, or channel, or interface name.&#xD;
-&#xD;
-Would represent the interface number the event on the sourceName is reported against, so alarm generated on the device interface could be identified against the far side (alarmInterfaceZ) based on logical or physical topology rather than having the information embedded somewhere else requiring regular expression extract.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_8F4tAKZIEeily5uFlujj3Q" annotatedElement="_YnPHsIEoEeieQ4zKGFzYtQ">
+              <body>Card, port, channel or interface name of the device generating the alarm.  This could reflect managed object.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JleRUIErEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jljw4IErEeieQ4zKGFzYtQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_bAe3AIEoEeieQ4zKGFzYtQ" name="eventCatagory">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_zxIxkIFGEeieQ4zKGFzYtQ" annotatedElement="_bAe3AIEoEeieQ4zKGFzYtQ">
-              <body>eventCategory - Event category.&#xD;
-&#xD;
-For example: ‘license’, ‘link’, ‘routing’, ‘security’, ‘signaling’ &#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="__zve0KZIEeily5uFlujj3Q" annotatedElement="_bAe3AIEoEeieQ4zKGFzYtQ">
+              <body>Event category, for example: ‘license’, ‘link’, ‘routing’, ‘security’, ‘signaling’ </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OHqDEIErEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OHtGYIErEeieQ4zKGFzYtQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dJIlkIEoEeieQ4zKGFzYtQ" name="eventSeverity" type="_NcX08IEsEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_-1wqsIFIEeieQ4zKGFzYtQ" annotatedElement="_dJIlkIEoEeieQ4zKGFzYtQ">
-              <body>eventSeverity - Event severity enumeration.&#xD;
-&#xD;
-severity enumeration: &#xD;
-‘CRITICAL’, ‘MAJOR’, ‘MINOR’, ‘WARNING’, ‘NORMAL’&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CajJAKZJEeily5uFlujj3Q" annotatedElement="_dJIlkIEoEeieQ4zKGFzYtQ">
+              <body>Event severity enumeration: ‘CRITICAL’, ‘MAJOR’, ‘MINOR’, ‘WARNING’, ‘NORMAL’. NORMAL is used to represent clear.</body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fs6w8IEoEeieQ4zKGFzYtQ" name="eventSourceType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ArNwcIFJEeieQ4zKGFzYtQ" annotatedElement="_fs6w8IEoEeieQ4zKGFzYtQ">
-              <body>eventSourceType - Provide the type of element the Source might be. This can be network function specific, or application specific.&#xD;
-&#xD;
-Examples: other, router, switch, host, card, port, slotThreshold, portThreshold, virtual machine, etc…&#xD;
-&#xD;
-Could also be PCRF, MMSC, NEM, MME, ENB, etc...&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Fdri0KZJEeily5uFlujj3Q" annotatedElement="_fs6w8IEoEeieQ4zKGFzYtQ">
+              <body>Examples: ‘card’, ‘host’, ‘other’, ‘port’, ‘portThreshold’, ‘router’, ‘slotThreshold’, ‘switch’, ‘virtualMachine’, ‘virtualNetworkFunction’. This could be managed object class.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gW0pkIEoEeieQ4zKGFzYtQ" name="faultFieldsVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_CratoIFJEeieQ4zKGFzYtQ" annotatedElement="_gW0pkIEoEeieQ4zKGFzYtQ">
-              <body>faultFieldsVersion - version of the faultFields block.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JRDGwKZJEeily5uFlujj3Q" annotatedElement="_gW0pkIEoEeieQ4zKGFzYtQ">
+              <body>Version of the faultFields block as “#.#” where # is a digit; see section 1 for the correct digits to use. </body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_h9bbAIEoEeieQ4zKGFzYtQ" name="specificProblem">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ETkXMIFJEeieQ4zKGFzYtQ" annotatedElement="_h9bbAIEoEeieQ4zKGFzYtQ">
-              <body>specificProblem - short name of the alarm/problem, like trap name. Could be of SPECIFIC_PROBLEM list: (x733_SpecificProblems). Should be string to avoid duplicate dictionary translation. This should be a one word.&#xD;
-&#xD;
-Example: LinkDown, BFDSessionDown, etc….  SpecificProblem (3GPP) or X733_SpecificProblem (MTOSI)&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MgZXoKZJEeily5uFlujj3Q" annotatedElement="_h9bbAIEoEeieQ4zKGFzYtQ">
+              <body>Description of the alarm or problem (e.g., ‘eNodeB 155197 in PLMN 310-410 with eNodeB name KYL05197 is lost’). 3GPP probable cause would be included in this field.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jH97gIEoEeieQ4zKGFzYtQ" name="vfStatus" type="_H0pqkIFEEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Ga4pAIFJEeieQ4zKGFzYtQ" annotatedElement="_jH97gIEoEeieQ4zKGFzYtQ">
-              <body>vfStatus - Used to report on VF status, both to indicate success/failure of start/stop/prepare to terminate events, but also to allow VF to request termination after unrecoverable errors.&#xD;
-&#xD;
-Enumeration; valid values are&#xD;
-- Idle&#xD;
-- Active&#xD;
-- Preparing to terminate&#xD;
-- Ready to terminate&#xD;
-- Requesting termination&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PeijwKZJEeily5uFlujj3Q" annotatedElement="_jH97gIEoEeieQ4zKGFzYtQ">
+              <body>Virtual function status enumeration: ‘Active’, ‘Idle’, ‘Preparing to terminate’, ‘Ready to terminate’, ‘Requesting Termination’</body>
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
@@ -1019,27 +1025,26 @@ Enumeration; valid values are&#xD;
           <ownedAttribute xmi:type="uml:Property" xmi:id="_rEkJMIEpEeieQ4zKGFzYtQ" name="arrayOfFields" type="_yPR44IEoEeieQ4zKGFzYtQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_suey4H7wEeifJIHxnlj6Cg" name="HeartbeatFields">
-          <ownedComment xmi:type="uml:Comment" xmi:id="__y06cIFJEeieQ4zKGFzYtQ" annotatedElement="_suey4H7wEeifJIHxnlj6Cg">
-            <body>additionalFields - Additional expansion fields if needed.&#xD;
-</body>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_LIK5EKZMEeily5uFlujj3Q" annotatedElement="_suey4H7wEeifJIHxnlj6Cg">
+            <body>The heartbeatFields datatype is an optional field block for fields specific to heartbeat events.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fTh9kIFJEeieQ4zKGFzYtQ" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_1FAF0IFJEeieQ4zKGFzYtQ" annotatedElement="_fTh9kIFJEeieQ4zKGFzYtQ">
-              <body>additionalFields - Additional expansion fields if needed.&#xD;
+              <body>Additional expansion fields if needed.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2odcoIFJEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ohuEIFJEeieQ4zKGFzYtQ" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gAWnUIFJEeieQ4zKGFzYtQ" name="heartbeatFieldVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_5mn24IFJEeieQ4zKGFzYtQ" annotatedElement="_gAWnUIFJEeieQ4zKGFzYtQ">
-              <body>heartbeatFieldVersion - version of the heartbeatFields block.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_RdHo8KZMEeily5uFlujj3Q" annotatedElement="_gAWnUIFJEeieQ4zKGFzYtQ">
+              <body>Version of the heartbeatFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_hCSlcIFJEeieQ4zKGFzYtQ" name="heartbeatInterval">
             <ownedComment xmi:type="uml:Comment" xmi:id="_9gENoIFJEeieQ4zKGFzYtQ" annotatedElement="_hCSlcIFJEeieQ4zKGFzYtQ">
-              <body>heartbeatInterval - current heartbeatInterval in seconds.&#xD;
+              <body>Current heartbeatInterval in seconds.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -1052,24 +1057,24 @@ Enumeration; valid values are&#xD;
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_MIUQcIFKEeieQ4zKGFzYtQ" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_MqDuwIFOEeieQ4zKGFzYtQ" annotatedElement="_MIUQcIFKEeieQ4zKGFzYtQ">
-              <body>additionalFields - Additional measurement fields if needed.&#xD;
+              <body>Additional measurement fields if needed.&#xD;
 &#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fiIvYIFLEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fiOO8IFLEeieQ4zKGFzYtQ" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Nyuj0IFKEeieQ4zKGFzYtQ" name="additonalMeasurements" type="_mJP7YIFNEeieQ4zKGFzYtQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Nyuj0IFKEeieQ4zKGFzYtQ" name="additonalMeasurements" type="_sOvPAJQ9Eei6kI-JPNdeuw">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ObQmoIFOEeieQ4zKGFzYtQ" annotatedElement="_Nyuj0IFKEeieQ4zKGFzYtQ">
-              <body>additionalMeasurements - Array of named hashMap if needed.&#xD;
+              <body>Array of named hashMap if needed.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FtygMIFOEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ft2xoIFOEeieQ4zKGFzYtQ" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ahVkcIFKEeieQ4zKGFzYtQ" name="additionalObjects">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ahVkcIFKEeieQ4zKGFzYtQ" name="additionalObjects" type="__ENUcJaTEeiGg_moIHe9Sw">
             <ownedComment xmi:type="uml:Comment" xmi:id="_QW8QMIFOEeieQ4zKGFzYtQ" annotatedElement="_ahVkcIFKEeieQ4zKGFzYtQ">
-              <body>additionalObjects - Array of JSON objects described by name, schema and other meta-information, if needed.&#xD;
+              <body>Array of JSON objects described by name, schema and other meta-information, if needed.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oBfnsIFTEeieQ4zKGFzYtQ"/>
@@ -1077,7 +1082,7 @@ Enumeration; valid values are&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_br89cIFKEeieQ4zKGFzYtQ" name="codecUsageArray" type="_wrtaQIFdEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_T8FVwImwEeiOe-BKGdv_Yg" annotatedElement="_br89cIFKEeieQ4zKGFzYtQ">
-              <body>codecUsageArray - array of codecs in use.&#xD;
+              <body>Array of codecs in use.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kWIwQIFTEeieQ4zKGFzYtQ"/>
@@ -1085,14 +1090,16 @@ Enumeration; valid values are&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_cvnZ4IFKEeieQ4zKGFzYtQ" name="concurrentSessions">
             <ownedComment xmi:type="uml:Comment" xmi:id="_V2iQQImwEeiOe-BKGdv_Yg" annotatedElement="_cvnZ4IFKEeieQ4zKGFzYtQ">
-              <body>concurrentSessions - Peak concurrent sessions for the VM or VNF (depending on the context) over the measurementInterval.&#xD;
+              <body>Peak concurrent sessions for the VM or VNF (depending on the context) over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-PMccKcEEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-RRgEKcEEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_daMn8IFKEeieQ4zKGFzYtQ" name="configuredEntities">
             <ownedComment xmi:type="uml:Comment" xmi:id="_qe388IbhEei-x_BD9U-ssQ" annotatedElement="_daMn8IFKEeieQ4zKGFzYtQ">
-              <body>configuredEntities - Depending on the context over the measurementInterval: peak total number of users, subscribers, devices, adjacencies, etc., for the VM, or peak total number of subscribers, devices, etc., for the VNF &#xD;
+              <body>Depending on the context over the measurementInterval: peak total number of users, subscribers, devices, adjacencies, etc., for the VM, or peak total number of subscribers, devices, etc., for the VNF &#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -1101,7 +1108,7 @@ Enumeration; valid values are&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_eBMWgIFKEeieQ4zKGFzYtQ" name="cpuUsageArray" type="_BTMpUIbiEei-x_BD9U-ssQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_YOatoImwEeiOe-BKGdv_Yg" annotatedElement="_eBMWgIFKEeieQ4zKGFzYtQ">
-              <body>cpuUsageArray - Usage of an array of CPUs&#xD;
+              <body>Usage of an array of CPUs&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x3wPAIbhEei-x_BD9U-ssQ"/>
@@ -1109,7 +1116,7 @@ Enumeration; valid values are&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_esG7wIFKEeieQ4zKGFzYtQ" name="diskUsageArray" type="_kokBwIkOEeiddpojVtQ0Hg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Z5nrMImwEeiOe-BKGdv_Yg" annotatedElement="_esG7wIFKEeieQ4zKGFzYtQ">
-              <body>diskUsageArray - Usage of an array of disks.&#xD;
+              <body>Usage of an array of disks.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e2KlUIkOEeiddpojVtQ0Hg"/>
@@ -1117,41 +1124,51 @@ Enumeration; valid values are&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fOZJcIFKEeieQ4zKGFzYtQ" name="featureUsageArray" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_e0qB0ImwEeiOe-BKGdv_Yg" annotatedElement="_fOZJcIFKEeieQ4zKGFzYtQ">
-              <body>featureUsageArray - The hashMap key should identify the feature, while the value defines the number of times the identified feature was used.&#xD;
+              <body>The hashMap key should identify the feature, while the value defines the number of times the identified feature was used.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D8LX8KcGEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D8Q3gKcGEeiFp-jDq2Hw-A" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fzeMcIFKEeieQ4zKGFzYtQ" name="filesystemUsageArray" type="_i-TA4IklEeiddpojVtQ0Hg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hN0RkImwEeiOe-BKGdv_Yg" annotatedElement="_fzeMcIFKEeieQ4zKGFzYtQ">
-              <body>filesystemUsageArray - Filesystem usage of the VM on which the VNFC reporting the event is running.&#xD;
+              <body>Filesystem usage of the VM on which the VNFC reporting the event is running.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JpttEKcHEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JpzzsKcHEeiFp-jDq2Hw-A" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gWrAIIFKEeieQ4zKGFzYtQ" name="hugePagesArray" type="_zCl6wImwEeiOe-BKGdv_Yg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_p3VFEImwEeiOe-BKGdv_Yg" annotatedElement="_gWrAIIFKEeieQ4zKGFzYtQ">
-              <body>hugePagesArray - Array of metrics on hugePages&#xD;
+              <body>Array of metrics on hugePages&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBuJ4ImwEeiOe-BKGdv_Yg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nCbUgImwEeiOe-BKGdv_Yg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g58sUIFKEeieQ4zKGFzYtQ" name="ipmiArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_g58sUIFKEeieQ4zKGFzYtQ" name="ipmiArray" type="_YT8fIIm2EeiOe-BKGdv_Yg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_HEH9IIm2EeiOe-BKGdv_Yg" annotatedElement="_g58sUIFKEeieQ4zKGFzYtQ">
-              <body>ipmiArray - Array of intelligent platform management interface metrics.&#xD;
+              <body>Array of intelligent platform management interface metrics.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHdw8KcHEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHj3kKcHEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_hlHwQIFKEeieQ4zKGFzYtQ" name="latencyDistribution">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hlHwQIFKEeieQ4zKGFzYtQ" name="latencyDistribution" type="_zD-Z0KcHEeiFp-jDq2Hw-A">
             <ownedComment xmi:type="uml:Comment" xmi:id="_vY6q0JGyEeiUeLUnFxb3Bg" annotatedElement="_hlHwQIFKEeieQ4zKGFzYtQ">
-              <body>latencyDistribution - Array of integers representing counts of requests whose latency in milliseconds falls within per-VNF configured ranges; where latency is the duration between a service request and its fulfillment.&#xD;
+              <body>Array of integers representing counts of requests whose latency in milliseconds falls within per-VNF configured ranges; where latency is the duration between a service request and its fulfillment.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1nyoIKcMEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1n584KcMEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_i9VgYIFKEeieQ4zKGFzYtQ" name="loadArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_i9VgYIFKEeieQ4zKGFzYtQ" name="loadArray" type="_-7CVIKcMEeiFp-jDq2Hw-A">
             <ownedComment xmi:type="uml:Comment" xmi:id="_w2xv8JGyEeiUeLUnFxb3Bg" annotatedElement="_i9VgYIFKEeieQ4zKGFzYtQ">
               <body>loadArray - Array of system load metrics&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p8Y7gKcNEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p8lv0KcNEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oGLCcIFKEeieQ4zKGFzYtQ" name="machineCheckExceptionArray">
             <ownedComment xmi:type="uml:Comment" xmi:id="_zDuIoJGyEeiUeLUnFxb3Bg" annotatedElement="_oGLCcIFKEeieQ4zKGFzYtQ">
@@ -1514,7 +1531,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hd1_QJQrEei6kI-JPNdeuw" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_mJP7YIFNEeieQ4zKGFzYtQ" name="NamedHashMap">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mJP7YIFNEeieQ4zKGFzYtQ" name="DDDuplicateNamedHashMap">
           <ownedComment xmi:type="uml:Comment" xmi:id="_xg-BkIFNEeieQ4zKGFzYtQ" annotatedElement="_mJP7YIFNEeieQ4zKGFzYtQ">
             <body>namedHashMap [ ] - The namedHashmap datatype is a hashMap which is associated with and described by a name. &#xD;
 </body>
@@ -1682,7 +1699,10 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_NcX08IEsEeieQ4zKGFzYtQ" name="Severity">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_NcX08IEsEeieQ4zKGFzYtQ" name="EventSeverity">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iaLuYKZJEeily5uFlujj3Q" annotatedElement="_NcX08IEsEeieQ4zKGFzYtQ">
+            <body>Event severity enumeration: ‘CRITICAL’, ‘MAJOR’, ‘MINOR’, ‘WARNING’, ‘NORMAL’. NORMAL is used to represent clear.</body>
+          </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RWqgQIEsEeieQ4zKGFzYtQ" name="CRITICAL"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Tl-3gIEsEeieQ4zKGFzYtQ" name="MAJOR"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Uyg8EIEsEeieQ4zKGFzYtQ" name="MINOR"/>
@@ -1899,11 +1919,14 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fZgZgKJVEeibfLkXoC-lBg" name="thresholdCrossingFieldsVersion" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_H0pqkIFEEeieQ4zKGFzYtQ" name="VfStatus">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lr2loIFEEeieQ4zKGFzYtQ" name="Active"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Mv6DoIFEEeieQ4zKGFzYtQ" name="Idle"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PEkN4IFEEeieQ4zKGFzYtQ" name="Preparing to terminate"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SKHpkIFEEeieQ4zKGFzYtQ" name="Requesting termination"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_R38pkIFGEeieQ4zKGFzYtQ" name="Ready to terminate"/>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Vyrl4KZKEeily5uFlujj3Q" annotatedElement="_H0pqkIFEEeieQ4zKGFzYtQ">
+            <body>Virtual function status enumeration: ‘Active’, ‘Idle’, ‘Preparing to terminate’, ‘Ready to terminate’, ‘Requesting Termination’</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lr2loIFEEeieQ4zKGFzYtQ" name="ACTIVE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Mv6DoIFEEeieQ4zKGFzYtQ" name="IDLE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PEkN4IFEEeieQ4zKGFzYtQ" name="PREPARING_TO_TERMINATE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SKHpkIFEEeieQ4zKGFzYtQ" name="READY_TO_TERMINATE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_R38pkIFGEeieQ4zKGFzYtQ" name="REQUESTING_TERMINATION"/>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_82OSgH7wEeifJIHxnlj6Cg" name="VoiceQualityFields"/>
         <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_s_Ka4JESEei9Vqs7Ti8Wxg" name="UnixEpoch">
@@ -2674,7 +2697,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_IInt8IngEeiOe-BKGdv_Yg" name="NOTIFICATION">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_IInt8IngEeiOe-BKGdv_Yg" name="Domain">
           <ownedComment xmi:type="uml:Comment" xmi:id="_OkCSMIngEeiOe-BKGdv_Yg" annotatedElement="_IInt8IngEeiOe-BKGdv_Yg">
             <body>domain - Event domain enumeration: &#xD;
 &#xD;
@@ -3127,4 +3150,16 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IasvoKVvEeikF6xsfT18UA" base_StructuralFeature="_ifaxMDdPEeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Iauk0KVvEeikF6xsfT18UA" base_StructuralFeature="_TsnHUDgXEeiOYfGHew0BGg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Iavy8KVvEeikF6xsfT18UA" base_StructuralFeature="_W5c2wDgXEeiOYfGHew0BGg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lby-4KZBEeily5uFlujj3Q" base_StructuralFeature="_lbyX0KZBEeily5uFlujj3Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_RXHEYKZIEeily5uFlujj3Q" base_Element="_Tw79sD2pEeiu6I5JfRTxxQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_WB-RAKZIEeily5uFlujj3Q" base_Element="_Tw79tD2pEeiu6I5JfRTxxQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_YPresKZIEeily5uFlujj3Q" base_Element="_Tw79uj2pEeiu6I5JfRTxxQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ZnJA4KZIEeily5uFlujj3Q" base_Element="_Tw79tj2pEeiu6I5JfRTxxQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_bOWPQKZIEeily5uFlujj3Q" base_Element="_Tw79sj2pEeiu6I5JfRTxxQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7S8mYacHEeiFp-jDq2Hw-A" base_StructuralFeature="_7S8mYKcHEeiFp-jDq2Hw-A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_76Oo0KcHEeiFp-jDq2Hw-A" base_StructuralFeature="_76OBwKcHEeiFp-jDq2Hw-A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8cpZYacHEeiFp-jDq2Hw-A" base_StructuralFeature="_8cpZYKcHEeiFp-jDq2Hw-A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E2dKsacNEeiFp-jDq2Hw-A" base_StructuralFeature="_E2dKsKcNEeiFp-jDq2Hw-A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_FgDhUacNEeiFp-jDq2Hw-A" base_StructuralFeature="_FgDhUKcNEeiFp-jDq2Hw-A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GHjmMacNEeiFp-jDq2Hw-A" base_StructuralFeature="_GHjmMKcNEeiFp-jDq2Hw-A"/>
 </xmi:XMI>

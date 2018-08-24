@@ -2029,8 +2029,8 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
         </generalization>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nQZJYJpWEeidy9iGT_F5-w" name="AllottedResourceDesc">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_OWVGQJpbEeidy9iGT_F5-w" annotatedElement="_nQZJYJpWEeidy9iGT_F5-w">
-          <body>A Service instance can generate virtual Network Function instances, acting as a &quot;Network Function Provider&quot; of sorts. These Network Functions are different from the Network Functions that comprise the &quot;Provider Service&quot; itself. (E.g., a virtual PE Service comprised of a &quot;vPERouter&quot; and a &quot;vPEForwarder&quot; VNF can collectively provide a &quot;VRF&quot; Network Function, which includes both routing and forwarding functionality.) We distinguish the Network Functions that are provided by a Service instance from the Network Functions that comprise a Service Instance by using the term &quot;Allotted Resource&quot; for the former. </body>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_z6cv4KY4Eeily5uFlujj3Q" annotatedElement="_nQZJYJpWEeidy9iGT_F5-w">
+          <body>An Allotted Resource is a generic resource which could never be considered a network function and thus is not derived from the network function class.  This “non-network function” based resource is provided (or allotted) by some service to be used or consumed by some other service.   The consuming service does not need to know that the resource is “allotted”.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_W1tqMJpXEeidy9iGT_F5-w" general="_DAQisJpXEeidy9iGT_F5-w"/>
       </packagedElement>
@@ -2039,9 +2039,15 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
         <generalization xmi:type="uml:Generalization" xmi:id="_dSlWMJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xVaLUJs3EeiPBvbfaqSLYg" name="Anfd">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2qM6sKY4Eeily5uFlujj3Q" annotatedElement="_xVaLUJs3EeiPBvbfaqSLYg">
+          <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.   The consuming service does not need to know that the resource is “allotted”.</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_7DhPYJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_O385oJssEeiPBvbfaqSLYg" name="NetworkFunctionDesc">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vrMhMKY4Eeily5uFlujj3Q" annotatedElement="_O385oJssEeiPBvbfaqSLYg">
+          <body>A NetworkFunction is a functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour.</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_ujjIsJssEeiPBvbfaqSLYg" general="_DAQisJpXEeidy9iGT_F5-w"/>
       </packagedElement>
     </packagedElement>
@@ -3229,91 +3235,94 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelClass xmi:id="_p_Z_8KVwEeikF6xsfT18UA" base_Class="_fMPCUES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_p_bOEKVwEeikF6xsfT18UA" base_Class="_Io3nQESzEeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_p_ccMKVwEeikF6xsfT18UA" base_StructuralFeature="_8c1OkES6EeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_Sui2oKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_ZE9UIKY4Eeily5uFlujj3Q">
     <base_Class xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelClass xmi:id="_Sul58KVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_ZE9UIaY4Eeily5uFlujj3Q">
     <base_Class xmi:type="uml:Class" href="Service.uml#_BQaDwJpZEeidy9iGT_F5-w"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SnrZoKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEidYqY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_NBiAApsrEeiPBvbfaqSLYg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SnwSIKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEjrgKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_NBj1MJsrEeiPBvbfaqSLYg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SV_MsaVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbTTIKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_ifaxMDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SVuG8KVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbQP0qY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_-b8GcDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SV00oKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbQ24aY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#__BqCoDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SV6UMKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbRd8KY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#__o0JQDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SV9-kaVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbSFAKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_Ag8rIDdQEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SVe2YKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbPBsKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_N61nIDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SVlkEKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbPowKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_O2y5EDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SWBB4aVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbUhQaY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_TsnHUDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SWBo8aVyEeikF6xsfT18UA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YbVIUKY4Eeily5uFlujj3Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Preliminary xmi:id="_SVYIsKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbNzkKY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:DataType" href="Common.uml#_ImxsgDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SVhSoKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbPBsaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Property" href="Common.uml#_N61nIDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SVpOcKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbPowaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Property" href="Common.uml#_O2y5EDeBEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SV-loKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbSFAaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:DataType" href="Common.uml#_X9TdUDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SV_MsqVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbTTIaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Property" href="Common.uml#_ifaxMDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SVrDoKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbQP0KY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:DataType" href="Common.uml#_4oResDdPEeiIfPeSAqyGdQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWCQAaVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVvYKY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Enumeration" href="Common.uml#_tFQGcDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWC3EKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVvYaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_0VFxQDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWC3EaVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVvYqY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_2M_uEDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWC3EqVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVvY6Y4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_46OwYDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWDeIKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVvZKY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_6gEFwDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWDeIaVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbWWcKY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_95b1UDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWFTUKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbWWcaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#__bv8oDnLEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWAa0aVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbT6MqY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWBB4qVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbUhQqY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Property" href="Common.uml#_TsnHUDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_SWCQAKVyEeikF6xsfT18UA">
+  <OpenModel_Profile:Preliminary xmi:id="_YbVIUaY4Eeily5uFlujj3Q">
     <base_Element xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Experimental xmi:id="_B0g3AKY5Eeily5uFlujj3Q" base_Element="_xVaLUJs3EeiPBvbfaqSLYg"/>
+  <OpenModel_Profile:Experimental xmi:id="_DvCqAKY5Eeily5uFlujj3Q" base_Element="_nQZJYJpWEeidy9iGT_F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
 </xmi:XMI>
