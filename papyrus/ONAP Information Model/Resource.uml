@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_jh99MDOHEei5Af8DcjrhIQ" name="Resource">
     <packagedElement xmi:type="uml:Package" xmi:id="_lK97UDOHEei5Af8DcjrhIQ" name="Associations"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_lK-iYDOHEei5Af8DcjrhIQ" name="Diagrams"/>
@@ -214,7 +214,7 @@ NOTE: Every VNF, VL and nested NS whose descriptor is referenced by the NS DF sh
           <ownedComment xmi:type="uml:Comment" xmi:id="_cByPsEPiEeiVGPeZpaYNtQ" annotatedElement="_actGkj2zEeiu6I5JfRTxxQ">
             <body>Specifies affinity or anti-affinity relationship applicable between the VNF instances created using different VNFDs, the Virtual Link instances created using different NsVirtualLinkDescs or the nested NS instances created using different NSDs in the same affinity or anti-affinity group.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Vnf.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+          <type xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_acvi0D2zEeiu6I5JfRTxxQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_acwJ4D2zEeiu6I5JfRTxxQ" value="*"/>
           <association xmi:type="uml:Association" href="Service.uml#_acr4cD2zEeiu6I5JfRTxxQ"/>
@@ -337,7 +337,7 @@ NOTE 2: The presence of a VNFD or PNFD identifier in a VNFFGD does not imply tha
           <body>The SAPD class specifies the information used to instantiate the service access points of an NS. A Sapd inherits from the Cpd class. All attributes of the Cpd are also attributes of the Sapd.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_TsplgD2nEeiu6I5JfRTxxQ">
-          <general xmi:type="uml:Class" href="Vnf.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+          <general xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
         </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_45TagzzEEeiWMf5FLWfdLA" name="sapAddressAssignment">
           <ownedComment xmi:type="uml:Comment" xmi:id="_45TahDzEEeiWMf5FLWfdLA" annotatedElement="_45TagzzEEeiWMf5FLWfdLA">
@@ -350,7 +350,7 @@ If it is set to True, management and orchestration functions are responsible for
           <ownedComment xmi:type="uml:Comment" xmi:id="_45TahjzEEeiWMf5FLWfdLA" annotatedElement="_45TahTzEEeiWMf5FLWfdLA">
             <body>References the descriptor of VNF or PNF external connection points the SAPs instantiated from this SAPD are mapped to. </body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Vnf.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+          <type xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45TahzzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45TaiDzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
@@ -366,11 +366,14 @@ If it is set to True, management and orchestration functions are responsible for
         <ownedComment xmi:type="uml:Comment" xmi:id="_13TCETzEEeiWMf5FLWfdLA" annotatedElement="_13TCEDzEEeiWMf5FLWfdLA">
           <body>The Pnfd class is a deployment template enabling on-boarding PNFs and referencing them from an NSD. It focuses on connectivity aspects only.</body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_lh0B0Ke2Eeixw5Ke5QD1pQ">
+          <general xmi:type="uml:Class" href="Vnf.uml#_O385oJssEeiPBvbfaqSLYg"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCEjzEEeiWMf5FLWfdLA" name="pnfdId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13TCEzzEEeiWMf5FLWfdLA" annotatedElement="_13TCEjzEEeiWMf5FLWfdLA">
             <body>Identifier of this Pnfd class. It uniquely identifies the PNFD.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_ijP2UEDOEeW6nNR00wt2vw"/>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCFDzEEeiWMf5FLWfdLA" name="provider">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13TCFTzEEeiWMf5FLWfdLA" annotatedElement="_13TCFDzEEeiWMf5FLWfdLA">
@@ -383,24 +386,32 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
           <ownedComment xmi:type="uml:Comment" xmi:id="_13TCFzzEEeiWMf5FLWfdLA" annotatedElement="_13TCFjzEEeiWMf5FLWfdLA">
             <body>Identifies the version of the PNFD</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_J90d8Jy-EeWdBv9DVHQu3Q"/>
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_oXexoD2uEeiu6I5JfRTxxQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCGDzEEeiWMf5FLWfdLA" name="security">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13TCGTzEEeiWMf5FLWfdLA" annotatedElement="_13TCGDzEEeiWMf5FLWfdLA">
             <body>Provides a signature to prevent tampering.</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="../NfvInformationModel/NfvModel.uml#_yS45sJy9EeWdBv9DVHQu3Q"/>
+          <type xmi:type="uml:DataType" href="Common.uml#_P-qXMD2vEeiu6I5JfRTxxQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13TCGjzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13TCGzzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCHDzEEeiWMf5FLWfdLA" name="pnfExtCpd " aggregation="composite">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCHDzEEeiWMf5FLWfdLA" name="pnfExtCpd " type="_bd53ADzFEeiWMf5FLWfdLA" aggregation="composite">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13TCHTzEEeiWMf5FLWfdLA" annotatedElement="_13TCHDzEEeiWMf5FLWfdLA">
             <body>Specifies the characteristics of one or more connection points where to connect the PNF to a VL.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Service.uml#_bd53ADzFEeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13TCHjzEEeiWMf5FLWfdLA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13TCHzzEEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bd53ATzFEeiWMf5FLWfdLA" annotatedElement="_bd53ADzFEeiWMf5FLWfdLA">
+          <body>A PnfExtCpd is a type of Cpd and describes the characteristics of an external interface, a.k.a external CP, where to connect the PNF to a VL. &#xD;
+A PnfExtCpd inherits from the Cpd Class.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_wyByMEPnEeiVGPeZpaYNtQ">
+          <general xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+        </generalization>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lK_JcTOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -505,6 +516,12 @@ One and only one of the attributes shall be included (i.e. there is a XOR relati
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nRfaQKe3Eeixw5Ke5QD1pQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nSCM0Ke3Eeixw5Ke5QD1pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
   </uml:Package>
   <OpenModel_Profile:Preliminary xmi:id="_B4awgKZCEeixw5Ke5QD1pQ" base_Element="_CE1gEKY7Eeixw5Ke5QD1pQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_PnCKsKZEEeixw5Ke5QD1pQ" base_Element="_JDB-oj2rEeiu6I5JfRTxxQ"/>

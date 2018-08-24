@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:OpenModel_Profile_1="http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA http:///schemas/OpenModel_Profile/_JpOasIJYEee3epvelL_xvA/25 OpenModel_Profile.profile.uml#_JpVIYIJYEee3epvelL_xvA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service">
     <packagedElement xmi:type="uml:Package" xmi:id="_fXMl4DOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_qK6eYD0PEeiWMf5FLWfdLA" name="ServiceComprisedOf" memberEnd="_qK86oD0PEeiWMf5FLWfdLA _qK_W4D0PEeiWMf5FLWfdLA">
@@ -602,7 +602,6 @@ If null, then represents to the end of time&#xD;
           <ownedComment xmi:type="uml:Comment" xmi:id="_13eBMzzEEeiWMf5FLWfdLA" annotatedElement="_13eBMjzEEeiWMf5FLWfdLA">
             <body>Identifies this nfpd class within a VNFFGD.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_ijP2UEDOEeW6nNR00wt2vw"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13eBNDzEEeiWMf5FLWfdLA" name="nfpRule">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13eBNTzEEeiWMf5FLWfdLA" annotatedElement="_13eBNDzEEeiWMf5FLWfdLA">
@@ -610,18 +609,12 @@ If null, then represents to the end of time&#xD;
 The rule may be expressed as a criteria constructed out of atomic assertions linked by Boolean operators AND, OR and NOT. &#xD;
 NOTE: 	Examples of atomic assertions are assertions on packet header fields’ values, date and time ranges, etc.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_X0O7MEY6EeWVsKu18RjDQg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13eBNjzEEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13eBNzzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13eBODzEEeiWMf5FLWfdLA" name="cpd">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13eBOTzEEeiWMf5FLWfdLA" annotatedElement="_13eBODzEEeiWMf5FLWfdLA">
             <body>References the descriptor of a connection point to be traversed by the traffic flows matching the criteria. This shall be a connection point attached to one of the constituent VNFs and PNFs of the parent VNFFG, or a SAP of one of the constituent nested NSs of the parent VNFFG.&#xD;
 NOTE: 	When multiple values are provided, the order is significant and specifies the sequence of connection points to be traversed.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_RzYd-pHCEeWkU9xzYCztUg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13eBOjzEEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13eBOzzEEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_45XE4DzEEeiWMf5FLWfdLA" name="VnfProfile">
@@ -669,9 +662,6 @@ If not present, the default instantiation level as declared in the VNFD shall be
             <body>Identifier(s) of the affinity or anti-affinity group(s) the VnfProfile belongs to. &#xD;
 NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationships between the VNF instance(s) created using this VnfProfile and the VNF instance(s) created using other VnfProfile(s) in the same group.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_cUN-oATWEea-RJOoE5lL-w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45XE-TzEEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45XE-jzEEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_45XE-zzEEeiWMf5FLWfdLA" name="nsVirtualLinkConnectivity" type="_kEZorTzEEeiWMf5FLWfdLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_45XE_DzEEeiWMf5FLWfdLA" annotatedElement="_45XE-zzEEeiWMf5FLWfdLA">
@@ -726,7 +716,7 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
             <body>Identifies an affinity or anti-affinity group the VLs instantiated according to the VlProfile belong to. &#xD;
 NOTE : 	Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationship between the VL(s) using this VirtualLinkProfile and the VL(s) using other VirtualLinkProfile(s) in the same group.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Vnf.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+          <type xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45bWXDzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45bWXTzEEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
@@ -869,7 +859,7 @@ NS levels may be used in the context of NS scaling and in this case they are ref
           <ownedComment xmi:type="uml:Comment" xmi:id="_GY8PfjzFEeiWMf5FLWfdLA" annotatedElement="_GY8PfTzFEeiWMf5FLWfdLA">
             <body>Identifies an affinity or anti-affinity group the NSs created according to this NsProfile belong to. </body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="Vnf.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+          <type xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GY8PfzzFEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GY8PgDzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
@@ -1006,15 +996,11 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <ownedComment xmi:type="uml:Comment" xmi:id="_1WdwczzFEeiWMf5FLWfdLA" annotatedElement="_1WdwcjzFEeiWMf5FLWfdLA">
             <body>Identier of this Vnffg class.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="../NfvInformationModel/NfvModel.uml#_ijP2UEDOEeW6nNR00wt2vw"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_1WdwdDzFEeiWMf5FLWfdLA" name="nfId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1WdwdTzFEeiWMf5FLWfdLA" annotatedElement="_1WdwdDzFEeiWMf5FLWfdLA">
             <body>Identifier of the constituent NFs of the VNFFG</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_ab2ZVIPEEeWwYYWsl-GrVw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WdwdjzFEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1WdwdzzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_1WdweDzFEeiWMf5FLWfdLA" name="virtualLinkId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1WdweTzFEeiWMf5FLWfdLA" annotatedElement="_1WdweDzFEeiWMf5FLWfdLA">
@@ -1028,17 +1014,11 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
             <body>Identifiers of the CP instances attached to the constituent VNFs and PNFs or the sap instances of the VNFFG.&#xD;
 NOTE: It indicates an exhaustive list of all the CP instances and SAP instances of the VNFFG.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_2T5FQIkaEeW19aRC6Vd4Hg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WeXgzzFEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1WeXhDzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_1WeXhTzFEeiWMf5FLWfdLA" name="nfp" aggregation="composite">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1WeXhjzFEeiWMf5FLWfdLA" annotatedElement="_1WeXhTzFEeiWMf5FLWfdLA">
             <body>Information on the NFPs of this VNFFG. </body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_fyAisEsfEeWcHrzD5qesGA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WeXhzzFEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1WeXiDzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_6GPSQDzFEeiWMf5FLWfdLA" name="NsVirtualLink">
@@ -1052,18 +1032,12 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           <ownedComment xmi:type="uml:Comment" xmi:id="_6GPSRDzFEeiWMf5FLWfdLA" annotatedElement="_6GPSQzzFEeiWMf5FLWfdLA">
             <body>Virtualised network resource(s) realizing this VL.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_eagakGUFEeWlAMAFzEXAIw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6GPSRTzFEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6GPSRjzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_BJMXoDzGEeiWMf5FLWfdLA" name="NsLinkPort">
         <ownedComment xmi:type="uml:Comment" xmi:id="_BJMXoTzGEeiWMf5FLWfdLA" annotatedElement="_BJMXoDzGEeiWMf5FLWfdLA">
           <body>Respresents the port of a NS VL. </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_BJMXojzGEeiWMf5FLWfdLA">
-          <general xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_vA-lYBbBEeazLP0woFFIFw"/>
-        </generalization>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Jvy-QD0MEeiWMf5FLWfdLA" name="ServiceDescriptor">
         <ownedComment xmi:type="uml:Comment" xmi:id="_R35GwD0MEeiWMf5FLWfdLA" annotatedElement="_Jvy-QD0MEeiWMf5FLWfdLA">
@@ -1485,7 +1459,6 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           <ownedComment xmi:type="uml:Comment" xmi:id="_6GUx1DzFEeiWMf5FLWfdLA" annotatedElement="_6GUx0zzFEeiWMf5FLWfdLA">
             <body>Cpd used to deploy this PNF CP.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_RzYd-pHCEeWkU9xzYCztUg"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_GYYOwDzFEeiWMf5FLWfdLA" name="PnfProfile">
@@ -1507,15 +1480,6 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GYYOxzzFEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_bd53ATzFEeiWMf5FLWfdLA" annotatedElement="_bd53ADzFEeiWMf5FLWfdLA">
-          <body>A PnfExtCpd is a type of Cpd and describes the characteristics of an external interface, a.k.a external CP, where to connect the PNF to a VL. &#xD;
-A PnfExtCpd inherits from the Cpd Class.</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_wyByMEPnEeiVGPeZpaYNtQ">
-          <general xmi:type="uml:Class" href="Vnf.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
-        </generalization>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoUjzEEeiWMf5FLWfdLA" name="VnfIndicatorData">
@@ -1526,13 +1490,11 @@ A PnfExtCpd inherits from the Cpd Class.</body>
           <ownedComment xmi:type="uml:Comment" xmi:id="_kEZoVTzEEeiWMf5FLWfdLA" annotatedElement="_kEZoVDzEEeiWMf5FLWfdLA">
             <body>Identifies a VNFD.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_acIs8YPEEeWwYYWsl-GrVw"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZoVjzEEeiWMf5FLWfdLA" name="vnfIndicator">
           <ownedComment xmi:type="uml:Comment" xmi:id="_kEZoVzzEEeiWMf5FLWfdLA" annotatedElement="_kEZoVjzEEeiWMf5FLWfdLA">
             <body>Identifies a VNF indicator within the VNFD.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_3b-mMATCEea-RJOoE5lL-w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZorTzEEeiWMf5FLWfdLA" name="NsVirtualLinkConnectivity">
@@ -1548,9 +1510,6 @@ A PnfExtCpd inherits from the Cpd Class.</body>
           <ownedComment xmi:type="uml:Comment" xmi:id="_kEZosjzEEeiWMf5FLWfdLA" annotatedElement="_kEZosTzEEeiWMf5FLWfdLA">
             <body>References the descriptor of a connection point on a VNF/PNF or a SAP which connects to virtual links instantiated from the profile identified in the virtualLinkProfileId attribute.</body>
           </ownedComment>
-          <type xmi:type="uml:Class" href="../NfvInformationModel/NfvModel.uml#_RzYd-pHCEeWkU9xzYCztUg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEZoszzEEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEZotDzEEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZowTzEEeiWMf5FLWfdLA" name="VnfToLevelMapping">
@@ -1586,7 +1545,6 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
             <body>Specifies the bit rate requirements for the NS level.&#xD;
 NOTE: 	It shall be in the range of minBitrateRequirements - maxBitrateRequirements, as specified in the referenced VirtualLinkProfile.</body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="../NfvInformationModel/NfvModel.uml#_KdoUYATSEea-RJOoE5lL-w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZozTzEEeiWMf5FLWfdLA" name="NsToLevelMapping">
@@ -1628,21 +1586,21 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
       <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
     </profileApplication>
   </uml:Package>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evD4gKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0q_0Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZBozzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evEfkKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0wfYKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZBpTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evFGoKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n01X4Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZBqTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_kFsosTzEEeiWMf5FLWfdLA" base_Class="_kEZB9jzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kFsosjzEEeiWMf5FLWfdLA" base_StructuralFeature="_kEZB-DzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evG70KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n1A-EKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZoSjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evHi4KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n1F2kKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZoTjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kFvsADzEEeiWMf5FLWfdLA" base_StructuralFeature="_kEZoVDzEEeiWMf5FLWfdLA"/>
@@ -1655,107 +1613,107 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kGTssjzEEeiWMf5FLWfdLA" base_StructuralFeature="_kEZoyzzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kGTsszzEEeiWMf5FLWfdLA" base_StructuralFeature="_kEZozzzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kGUTwDzEEeiWMf5FLWfdLA" base_StructuralFeature="_kEZo0TzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evFtsabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n063cKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEZo-zzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evCDUKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0jrEKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEaPWDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evCqYKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0nVcKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kEaPXDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_eunMkKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelClass xmi:id="_nSCz4Ke3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_13KfMDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eupo0KbuEeixw5Ke5QD1pQ" isInvariant="true">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ntW24Ke3Eeixw5Ke5QD1pQ" isInvariant="true">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13KfMjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_euqP4abuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nuTSEKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13KfNDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eureAKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nue4QKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13KfNjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eusFEKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nurskKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13LGQDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eutTMKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nu5vAKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13LGQjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eut6QabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvEHEKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13LGYDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_euvvcKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvVz4Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13LGZDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_euxkoKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvXCAKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13LGbDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_13TpIDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_n0I0UKe3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_13TCEDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13TpITzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0PiAKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13TCEjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13TpIjzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0UagKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13TCFDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13TpIzzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0YE4Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13TCFjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13TpJDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0bIMKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13TCGDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13TpJTzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0fZoKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13TCHDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_eu9K0KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelClass xmi:id="_nve90ae3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_13WFYDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu-Y8KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvgL8Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13WFYzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu_AAabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvhaEKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13WFZzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evAOIKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvtAQKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13WFaTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_evBcQKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nwecUKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13WFbTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_13ZIyDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_nzG5kKe3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_13ZIsDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13ZvwTzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzYmYKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13ZItDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13ZvxDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzde4Ke3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13ZIwDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13ZvxTzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzhwUKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13ZIxDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_13eBPDzEEeiWMf5FLWfdLA" base_Class="_13eBMDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_13eoQDzEEeiWMf5FLWfdLA" base_StructuralFeature="_13eBMjzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_13eoQTzEEeiWMf5FLWfdLA" base_StructuralFeature="_13eBNDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_13eoQjzEEeiWMf5FLWfdLA" base_StructuralFeature="_13eBODzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_13hrkDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_nwm_MKe3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_13gdcDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13hrkTzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nwviEKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13gdcjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_13iSoDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nw9kgKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_13gddDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_45UBkDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelClass xmi:id="_nzt9kKe3Eeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Resource.uml#_45TagDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_45VPsDzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzyPAKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_45TagzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_45VPsTzEEeiWMf5FLWfdLA">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nz3ukKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_45TahTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_45Xr8DzEEeiWMf5FLWfdLA" base_Class="_45XE4DzEEeiWMf5FLWfdLA"/>
@@ -1791,7 +1749,9 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GY-rsTzFEeiWMf5FLWfdLA" base_StructuralFeature="_GY8PeTzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GY-rsjzFEeiWMf5FLWfdLA" base_StructuralFeature="_GY8PezzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GY-rszzFEeiWMf5FLWfdLA" base_StructuralFeature="_GY8PfTzFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_bd6eEDzFEeiWMf5FLWfdLA" base_Class="_bd53ADzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_bd6eEDzFEeiWMf5FLWfdLA">
+    <base_Class xmi:type="uml:Class" href="Resource.uml#_bd53ADzFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelClass>
   <OpenModel_Profile:OpenModelClass xmi:id="_beAksDzFEeiWMf5FLWfdLA" base_Class="_bd_WkDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_beGEQDzFEeiWMf5FLWfdLA" base_Class="_beE2IDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_1WXCxDzFEeiWMf5FLWfdLA" base_Class="_1WWbsDzFEeiWMf5FLWfdLA"/>
@@ -1866,59 +1826,59 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_SyQqAT0cEeiWMf5FLWfdLA" base_StructuralFeature="_SyQqAD0cEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wPinYz0cEeiWMf5FLWfdLA" base_StructuralFeature="_wPinYj0cEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wPlqsj0cEeiWMf5FLWfdLA" base_StructuralFeature="_wPlqsT0cEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_euyywKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvYQIae3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_jBZXYD2mEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jBeP4T2mEeiu6I5JfRTxxQ" base_StructuralFeature="_jBeP4D2mEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu0A4KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvZeQKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_qMMUsD2nEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qMPYAT2nEeiu6I5JfRTxxQ" base_StructuralFeature="_qMPYAD2nEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu1PAKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvaFUKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_Wi5kcj2oEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Wi8Asj2oEeiu6I5JfRTxxQ" base_StructuralFeature="_Wi8AsT2oEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0Py1sD2pEeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzmBwKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_0PyOoT2pEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0P0q4T2pEeiu6I5JfRTxxQ" base_StructuralFeature="_0P0q4D2pEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu3EMabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvasYKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_YX8Ikj2qEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YX-k0T2qEeiu6I5JfRTxxQ" base_StructuralFeature="_YX-k0D2qEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu4SUabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvbTcae3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_JDB-oj2rEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JDEa4T2rEeiu6I5JfRTxxQ" base_StructuralFeature="_JDEa4D2rEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu6HgKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvchkae3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_wdAOoD2rEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wdCq4T2rEeiu6I5JfRTxxQ" base_StructuralFeature="_wdCq4D2rEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_DTJ1Qj2sEeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzqTMKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_DTJ1QT2sEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DTLqcD2sEeiu6I5JfRTxxQ" base_StructuralFeature="_DTLDYj2sEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eu78sKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nveWwKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_yX0DkD2tEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yX3G4D2tEeiu6I5JfRTxxQ" base_StructuralFeature="_yX2f0D2tEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_-84UYD2yEeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nxa3gKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_-83tUj2yEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-85igj2yEeiu6I5JfRTxxQ" base_StructuralFeature="_-85igT2yEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_acttoD2zEeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nxz5EKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_actGkj2zEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_acww8D2zEeiu6I5JfRTxxQ" base_StructuralFeature="_acwJ4T2zEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="__KZ9kT2zEeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nx-4MKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#__KZ9kD2zEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__Kbywj2zEeiu6I5JfRTxxQ" base_StructuralFeature="__KbywT2zEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_hPo9gT20Eeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nyJ3UKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_hPo9gD20Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hQ6I0T20Eeiu6I5JfRTxxQ" base_StructuralFeature="_hQ6I0D20Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_VJiR4D21Eeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nyU2cKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_VJhq0j21Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VJkuID21Eeiu6I5JfRTxxQ" base_StructuralFeature="_VJkHET21Eeiu6I5JfRTxxQ"/>
@@ -1926,14 +1886,14 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_r-78UD21Eeiu6I5JfRTxxQ" base_StructuralFeature="_r-7VQD21Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LJFrMD22Eeiu6I5JfRTxxQ" base_StructuralFeature="_LJFEIj22Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LJdeoT22Eeiu6I5JfRTxxQ" base_StructuralFeature="_LJdeoD22Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0f4NMD22Eeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nyfOgKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_0f3mIj22Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0f6CYz22Eeiu6I5JfRTxxQ" base_StructuralFeature="_0f6CYj22Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DquKQT24Eeiu6I5JfRTxxQ" base_StructuralFeature="_DquKQD24Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Dqv_cj24Eeiu6I5JfRTxxQ" base_StructuralFeature="_Dqv_cT24Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kyxJMz24Eeiu6I5JfRTxxQ" base_StructuralFeature="_kyxJMj24Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_kzQ4cT24Eeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nypmkKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_kzQ4cD24Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IhnyUj25Eeiu6I5JfRTxxQ" base_StructuralFeature="_IhnyUT25Eeiu6I5JfRTxxQ"/>
@@ -1942,7 +1902,7 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_g9coAj25Eeiu6I5JfRTxxQ" base_StructuralFeature="_g9coAT25Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PKjYsD26Eeiu6I5JfRTxxQ" base_StructuralFeature="_PKixoj26Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PK26sj26Eeiu6I5JfRTxxQ" base_StructuralFeature="_PK26sT26Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_nO2fMD26Eeiu6I5JfRTxxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ny43IKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_nO14IT26Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nO4UYj26Eeiu6I5JfRTxxQ" base_StructuralFeature="_nO4UYT26Eeiu6I5JfRTxxQ"/>
@@ -1964,9 +1924,6 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bnHAokS4EeiVGPeZpaYNtQ" base_StructuralFeature="_bnHAoES4EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AeuMIES6EeiVGPeZpaYNtQ" base_StructuralFeature="_Aes-AUS6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AfWeQkS6EeiVGPeZpaYNtQ" base_StructuralFeature="_AfWeQES6EeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile_1:OpenModelAttribute xmi:id="_8diZMES6EeiVGPeZpaYNtQ">
-    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_8dhyIES6EeiVGPeZpaYNtQ"/>
-  </OpenModel_Profile_1:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_mrLLIYn9EeiOe-BKGdv_Yg" base_Class="_mrJV8In9EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_wnhfgIn9EeiOe-BKGdv_Yg" base_Class="_wng4cIn9EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Q--H8Yn-EeiOe-BKGdv_Yg" base_StructuralFeature="_Q-9g4In-EeiOe-BKGdv_Yg"/>
@@ -2023,113 +1980,113 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="__dJeUZEAEei9Vqs7Ti8Wxg" base_StructuralFeature="__dI3QJEAEei9Vqs7Ti8Wxg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_BD-5QZEBEei9Vqs7Ti8Wxg" base_StructuralFeature="_BD-SMJEBEei9Vqs7Ti8Wxg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9p9M8pEBEei9Vqs7Ti8Wxg" base_StructuralFeature="_9p9M8JEBEei9Vqs7Ti8Wxg"/>
-  <OpenModel_Profile:Experimental xmi:id="_euq28KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nubN4Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13KfNDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_eureAabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nuopQKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13KfNjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_eussIKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nu02gKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13LGQDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_eut6QKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nvAcsKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13LGQjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:PassedByReference xmi:id="_eu5gcKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:PassedByReference xmi:id="_nvb6gKe3Eeixw5Ke5QD1pQ">
     <base_Property xmi:type="uml:Property" href="Resource.uml#_JDB-oj2rEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:PassedByReference>
-  <OpenModel_Profile:Experimental xmi:id="_eu6ukKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nvdIoKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_wdAOoD2rEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:PassedByReference xmi:id="_eu7VoKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:PassedByReference xmi:id="_nvdvsKe3Eeixw5Ke5QD1pQ">
     <base_Property xmi:type="uml:Property" href="Resource.uml#_wdAOoD2rEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:PassedByReference>
-  <OpenModel_Profile:Experimental xmi:id="_eu0n8KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nvZeQae3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_qMMUsD2nEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_eu12EKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nvaFUae3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_Wi5kcj2oEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_euzZ0KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Experimental xmi:id="_nvY3MKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_jBZXYD2mEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_pjjIwJmbEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nzwZ0Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_45TagDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_sLwhIJmbEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nz15YKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_45TagzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_0PYZUJmbEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nz8AAKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_45TahTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:PassedByReference xmi:id="_5aPUoJmbEeiSm9XNElOsxQ">
+  <OpenModel_Profile:PassedByReference xmi:id="_nz91MKe3Eeixw5Ke5QD1pQ">
     <base_Property xmi:type="uml:Property" href="Resource.uml#_45TahTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:PassedByReference>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_KDzu8JmcEeiSm9XNElOsxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0ARcKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_KDyg0JmcEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Experimental xmi:id="_Yk-SUJmcEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_n0D70Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_KDyg0JmcEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:PassedByReference xmi:id="_YlugQJmcEeiSm9XNElOsxQ">
+  <OpenModel_Profile:PassedByReference xmi:id="_n0FxAKe3Eeixw5Ke5QD1pQ">
     <base_Property xmi:type="uml:Property" href="Resource.uml#_KDyg0JmcEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:PassedByReference>
-  <OpenModel_Profile:Experimental xmi:id="_G79XwJmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nwrQoKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_13gdcDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_N0R6cJmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nw5TEKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13gdcjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_Q5bGcJmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nxH8kKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13gddDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_i3SaMJmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nxlPkKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_-83tUj2yEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_zEzxsJmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nx7N0Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_actGkj2zEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_6QSg8JmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nyFl4Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#__KZ9kD2zEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_9zx10JmdEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nyRMEKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_hPo9gD20Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_CvGgUJmeEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nybkIKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_VJhq0j21Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_HzNTYJmeEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nyl8MKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_0f3mIj22Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_MgxOsJmeEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nyyJcKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_kzQ4cD24Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_RBirMJmeEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nzCBEKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_nO14IT26Eeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_CtTpMJmhEeiSm9XNElOsxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nxphAKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_CtSbEJmhEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CtWFcJmhEeiSm9XNElOsxQ" base_StructuralFeature="_CtVeYJmhEeiSm9XNElOsxQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_doePIJmhEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nxxc0Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_CtSbEJmhEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_OGG4AJmiEeiSm9XNElOsxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nxM1EKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_OGFC0JmiEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Experimental xmi:id="_fzEB8JmiEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nxWmEKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_OGFC0JmiEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_Ebf-cJmjEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nzLyEKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_13ZIsDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0xThAZmjEeiSm9XNElOsxQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nzO1YKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_0xS58JmjEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Experimental xmi:id="_GKA5QJmkEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_nzU8AKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_0xS58JmjEeiSm9XNElOsxQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_aWuqMJmkEeiSm9XNElOsxQ">
+  <OpenModel_Profile:Experimental xmi:id="_n0MesKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_13TCEDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Experimental>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_y6aiAqLREeiz_K9hWIugxQ" base_StructuralFeature="_y6aiAKLREeiz_K9hWIugxQ"/>
@@ -2144,42 +2101,62 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
     <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_51TjIEJ_EeiwbqJBYHKltg"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:Future xmi:id="_WmuCEKVyEeikF6xsfT18UA" base_Element="_13eBMDzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_lV590KY3Eeixw5Ke5QD1pQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_euvIYabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nvPGMKe3Eeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Resource.uml#_CE1gEKY7Eeixw5Ke5QD1pQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Preliminary xmi:id="_eupBwKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_ntTzkKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_13KfMDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_euqP4KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nuPAoKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13KfMjzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_euuhUKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvLb0Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13LGYDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_euwWgKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvWa8Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13LGZDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_euyLsKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvYQIKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13LGbDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_eu8jwKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nve90Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_yX0DkD2tEeiu6I5JfRTxxQ"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_eu9x4KbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvfk4Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Class" href="Resource.uml#_13WFYDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_eu_AAKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvgzAKe3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFYzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_eu_nEKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvou0Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFZzzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_evBcQabuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nwki8Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFbTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:Preliminary xmi:id="_evA1MKbuEeixw5Ke5QD1pQ">
+  <OpenModel_Profile:Preliminary xmi:id="_nvzt8Ke3Eeixw5Ke5QD1pQ">
     <base_Element xmi:type="uml:Property" href="Resource.uml#_13WFaTzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Preliminary>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_SgN9EKbuEeixw5Ke5QD1pQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8diZMES6EeiVGPeZpaYNtQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_8dhyIES6EeiVGPeZpaYNtQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Future xmi:id="_DhzH0KewEeixw5Ke5QD1pQ" base_Element="_45XE4DzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_IofU0KewEeixw5Ke5QD1pQ" base_Element="_45bWUDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_NTGp0KewEeixw5Ke5QD1pQ" base_Element="_kEZB9jzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_PPHDgKewEeixw5Ke5QD1pQ" base_Element="_GYmRMDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_QvlXwKewEeixw5Ke5QD1pQ" base_Element="_GYs-4DzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_S1488KewEeixw5Ke5QD1pQ" base_Element="_GY8PcDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_U0fXoKewEeixw5Ke5QD1pQ" base_Element="_bd_WkDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_Wk-d0KewEeixw5Ke5QD1pQ" base_Element="_beE2IDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_YWbNUKewEeixw5Ke5QD1pQ" base_Element="_1WWbsDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_aRpj4KewEeixw5Ke5QD1pQ" base_Element="_1Wb7QDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_caI6YKewEeixw5Ke5QD1pQ" base_Element="_1WdwcDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_d5BTMKewEeixw5Ke5QD1pQ" base_Element="_6GPSQDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_fug1MKewEeixw5Ke5QD1pQ" base_Element="_BJMXoDzGEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_kt0AwKewEeixw5Ke5QD1pQ" base_Element="_6GSVkDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_mbit4KewEeixw5Ke5QD1pQ" base_Element="_6GUx0DzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_oXoAEKewEeixw5Ke5QD1pQ" base_Element="_GYYOwDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_p-yLIKewEeixw5Ke5QD1pQ">
+    <base_Element xmi:type="uml:Class" href="Resource.uml#_bd53ADzFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Future>
 </xmi:XMI>

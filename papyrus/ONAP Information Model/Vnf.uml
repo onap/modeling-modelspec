@@ -336,7 +336,9 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mcfPwFqmEeiTzriVSbKglg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mcfPwVqmEeiTzriVSbKglg" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_mcgd4FqmEeiTzriVSbKglg" name="affinityorantiaffinitygroup" type="_0AbUYDnBEeiWMf5FLWfdLA" association="_mcaXQFqmEeiTzriVSbKglg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mcgd4FqmEeiTzriVSbKglg" name="affinityorantiaffinitygroup" association="_mcaXQFqmEeiTzriVSbKglg">
+          <type xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+        </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_mciTEFqmEeiTzriVSbKglg" name="virtuallinkprofile" type="_0lvvQDgREeiOYfGHew0BGg" association="_mcaXQFqmEeiTzriVSbKglg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KOPAwEJ9EeiwbqJBYHKltg" memberEnd="_KOSEEEJ9EeiwbqJBYHKltg _KOYxwEJ9EeiwbqJBYHKltg">
@@ -917,11 +919,12 @@ ETSI GS NFV-IFA 011 V2.1.3&#xD;
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_dFetsDdzEeiIfPeSAqyGdQ" name="localAffinityOrAntiAffinityRule" type="_7hn1IDd1EeiIfPeSAqyGdQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dFetsDdzEeiIfPeSAqyGdQ" name="localAffinityOrAntiAffinityRule">
           <ownedComment xmi:type="uml:Comment" xmi:id="_2Ur2MDd1EeiIfPeSAqyGdQ" annotatedElement="_dFetsDdzEeiIfPeSAqyGdQ">
             <body>Specifies affinity or anti-affinity rules applicable between the virtualisation containers (e.g. virtual machines) to be created based on this VDU.&#xD;
 </body>
           </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_7hn1IDd1EeiIfPeSAqyGdQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hw0hYJmdEeibE8EgApNciA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hw6oAJmdEeibE8EgApNciA" value="*"/>
         </ownedAttribute>
@@ -1098,7 +1101,9 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
         <ownedComment xmi:type="uml:Comment" xmi:id="_-4XYgFqVEeiTzriVSbKglg" annotatedElement="_zOfv8DQVEeixv_sLOod4lQ">
           <body>A VduCpd information element is a type of Cpd and describes network connectivity between a VNFC instance (based on this VDU) and an internal VL.</body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_W3y74DdREeiIfPeSAqyGdQ" general="_7pUNEDa7EeivvI-m1BaAbA"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="_W3y74DdREeiIfPeSAqyGdQ">
+          <general xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_7nJYsDdREeiIfPeSAqyGdQ" name="bitrateRequirement">
           <ownedComment xmi:type="uml:Comment" xmi:id="_B1YckDdSEeiIfPeSAqyGdQ" annotatedElement="_7nJYsDdREeiIfPeSAqyGdQ">
             <body>Bitrate requirement on this CP.&#xD;
@@ -1183,13 +1188,14 @@ If there is only one &quot;instantiationLevel&quot; entry, it shall be treated a
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OCe9gDnBEeiWMf5FLWfdLA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OCfkkDnBEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7jjYTnCEeiWMf5FLWfdLA" name="_affinityOrAntiAffinityGroup" type="_0AbUYDnBEeiWMf5FLWfdLA" aggregation="shared" association="_Y7f5ADnCEeiWMf5FLWfdLA">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Y7jjYTnCEeiWMf5FLWfdLA" name="_affinityOrAntiAffinityGroup" aggregation="shared" association="_Y7f5ADnCEeiWMf5FLWfdLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_UIlpAGNWEeio9amveq0yWQ" annotatedElement="_Y7jjYTnCEeiWMf5FLWfdLA">
             <body>Specifies affinity or anti-affinity relationship applicable between the virtualisation containers (e.g. virtual machines) to be created using different VDUs or internal VLs to be created using different VnfVirtualLinkDesc(s) in the same affinity or anti-affinity group.&#xD;
 &#xD;
 NOTE: In the present specification, including either VDU(s) or VnfVirtualLinkDesc(s) into the same affinity or anti-affinity group is supported. Extension to support including both VDU(s) and VnfVirtualLinkDesc(s) into the same affinity or anti-affinity group is left for future specification.&#xD;
 </body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y8ia0DnCEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y8ia0TnCEeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
@@ -1322,64 +1328,6 @@ A given element can belong to multiple groups.</body>
           </ownedComment>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7pUNEDa7EeivvI-m1BaAbA" name="Cpd " isAbstract="true">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_R0MsAEbwEei7eo5RdnNiBQ" annotatedElement="_7pUNEDa7EeivvI-m1BaAbA">
-          <body>A Cpd information element describes network connectivity to a compute resource or a VL. This is an abstract class used&#xD;
-as parent for the various Cpd classes.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_knSmcDa8EeivvI-m1BaAbA" name="cpdId">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_XFxTUEbwEei7eo5RdnNiBQ" annotatedElement="_knSmcDa8EeivvI-m1BaAbA">
-            <body>Identifier of this Cpd information element.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_lRLQ8Da8EeivvI-m1BaAbA" name="cpRole">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Zs7i0EbwEei7eo5RdnNiBQ" annotatedElement="_lRLQ8Da8EeivvI-m1BaAbA">
-            <body>Identifies the role of the port in the context of the traffic flow patterns in the VNF or parent NS.&#xD;
-&#xD;
-For example a VNF with a tree flow pattern within the VNF will have legal cpRoles of ROOT and LEAF.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9HlFYDa8EeivvI-m1BaAbA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9HrMADa8EeivvI-m1BaAbA" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_luvWsDa8EeivvI-m1BaAbA" name="description">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_cEl9wEbwEei7eo5RdnNiBQ" annotatedElement="_luvWsDa8EeivvI-m1BaAbA">
-            <body>Provides human-readable information on the purpose of the CP (e.g. CP for control plane traffic).&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-jjUIDa8EeivvI-m1BaAbA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-jozsDa8EeivvI-m1BaAbA" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_oWHBkDa8EeivvI-m1BaAbA" name="cpProtocol" type="_PjIasDa9EeivvI-m1BaAbA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_eZqXsEbwEei7eo5RdnNiBQ" annotatedElement="_oWHBkDa8EeivvI-m1BaAbA">
-            <body>Identifies the protocol layering information the CP uses for connectivity purposes and associated information. There shall be one cpProtocol for each layer protocol as indicated by the attribute layerProtocol.&#xD;
-&#xD;
-Editor's note: the attribute &quot;layerProtocol&quot; still needs further discussion and not included in this table.&#xD;
-</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DooXkDa9EeivvI-m1BaAbA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DospADa9EeivvI-m1BaAbA" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pJTZEDa8EeivvI-m1BaAbA" name="trunkMode">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_gaoJ4EbwEei7eo5RdnNiBQ" annotatedElement="_pJTZEDa8EeivvI-m1BaAbA">
-            <body>Information about whether the CP instantiated from this CPD is in Trunk mode (802.1Q or other).&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_p8meQDa8EeivvI-m1BaAbA" name="allowedAddressData" type="_2aIggDa9EeivvI-m1BaAbA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_kI39QEbwEei7eo5RdnNiBQ" annotatedElement="_p8meQDa8EeivvI-m1BaAbA">
-            <body>For specifying floating IP(s) to be shared among Cpds, which are reserved for vnfReservedCpd described in the VNFD.&#xD;
-</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H0-cMDa9EeivvI-m1BaAbA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H1CtoDa9EeivvI-m1BaAbA" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_oFQM8Dd-EeiIfPeSAqyGdQ" name="VirtualLinkDescFlavour">
         <ownedComment xmi:type="uml:Comment" xmi:id="_dcvukFqbEeiTzriVSbKglg" annotatedElement="_oFQM8Dd-EeiIfPeSAqyGdQ">
           <body>The VirtualLinkDescFlavour describes additional instantiation data for a given internal VL used in a DF.</body>
@@ -1398,87 +1346,6 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
 </body>
           </ownedComment>
           <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_0lvvQDgREeiOYfGHew0BGg" name="VirtualLinkProfile">
-        <ownedComment xmi:type="uml:Comment" xmi:id="__mm0oDgREeiOYfGHew0BGg" annotatedElement="_0lvvQDgREeiOYfGHew0BGg">
-          <body>The VirtualLinkProfile describes additional instantiation data for a given VL used in a DF.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uA9FMDgUEeiOYfGHew0BGg" name="localAffinityOrAntiAffinityRule" type="_7hn1IDd1EeiIfPeSAqyGdQ">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_3SRfkDgUEeiOYfGHew0BGg" annotatedElement="_uA9FMDgUEeiOYfGHew0BGg">
-            <body>Specifies affinity or anti-affinity rules applicable between the VLs based on this VnfVirtualLinkDesc.&#xD;
-&#xD;
-When the cardinality is greater than 1, both affinity rule(s) and anti-affinity rule(s) with different scopes are applicable to the VLs based on this VnfVirtualLinkDesc.&#xD;
-</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ph7sDgUEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0puwADgUEeiOYfGHew0BGg" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_DgtLUDgVEeiOYfGHew0BGg" name="affinityOrAntiAffinityGroupId">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_0UUEMDgVEeiOYfGHew0BGg" annotatedElement="_DgtLUDgVEeiOYfGHew0BGg">
-            <body>Identifier(s) of the affinity or anti-affinity group(s) the VnfVirtualLinkDesc belongs to.&#xD;
-&#xD;
-NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationship between the VL(s) using this VnfVirtualLinkDesc and the VL(s) using other VnfVirtualLinkDesc(s) in the same group.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LAkPIDgVEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LArj4DgVEeiOYfGHew0BGg" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_2-_hwDgVEeiOYfGHew0BGg" name="maxBitRateRequirements">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_n6_2wDgYEeiOYfGHew0BGg" annotatedElement="_2-_hwDgVEeiOYfGHew0BGg">
-            <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_s7WyQDgYEeiOYfGHew0BGg" name="minBitRateRequirements">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_0SpI4DgYEeiOYfGHew0BGg" annotatedElement="_s7WyQDgYEeiOYfGHew0BGg">
-            <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_-SutwDgYEeiOYfGHew0BGg" name="initiationParameters">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_VxkhUDgaEeiOYfGHew0BGg" annotatedElement="_-SutwDgYEeiOYfGHew0BGg">
-            <body>Specifies initiation parameters for the virtual link.</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XeSh0DgaEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XeWzQDgaEeiOYfGHew0BGg" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="__S0RwDgYEeiOYfGHew0BGg" name="networkType" type="_Qmf1kDnFEeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_2Dl3MDgaEeiOYfGHew0BGg" annotatedElement="__S0RwDgYEeiOYfGHew0BGg">
-            <body>Type of the network</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z0F5wDgaEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z0JkIDgaEeiOYfGHew0BGg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_AApoIDgZEeiOYfGHew0BGg" name="dhcpEnabled">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Sprt4DgbEeiOYfGHew0BGg" annotatedElement="_AApoIDgZEeiOYfGHew0BGg">
-            <body>Indicating whether DHCP is enabled. Default is &quot;FALSE&quot; if not specified otherwise.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QRrUsDgbEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QRvmIDgbEeiOYfGHew0BGg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_BYBDsDgZEeiOYfGHew0BGg" name="vlanTransparent">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_ZG8FMDgbEeiOYfGHew0BGg" annotatedElement="_BYBDsDgZEeiOYfGHew0BGg">
-            <body>Indicating whether &quot;VLAN Transparent Mode&quot; is supported. Default is &quot;FALSE&quot; if not specified otherwise.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCkZsDgbEeiOYfGHew0BGg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCndADgbEeiOYfGHew0BGg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uohQ8jgTEeiOYfGHew0BGg" name="_virtualLinkDescFlavour" type="_oFQM8Dd-EeiIfPeSAqyGdQ" aggregation="shared" association="_uogp4DgTEeiOYfGHew0BGg">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Nj634FqfEeiTzriVSbKglg" annotatedElement="_uohQ8jgTEeiOYfGHew0BGg">
-            <body>Identifies a flavour within the VnfVirtualLinkDesc.</body>
-          </ownedComment>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_e_qiMDgSEeiOYfGHew0BGg" name="_virtualLinkDesc" type="_AC2eIDQUEeixv_sLOod4lQ" aggregation="shared" association="_e_oF8DgSEeiOYfGHew0BGg">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_mb4voFqiEeiTzriVSbKglg" annotatedElement="_e_qiMDgSEeiOYfGHew0BGg">
-            <body>Uniquely identifies a Vnf VLD.</body>
-          </ownedComment>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_8BUXwDm4EeiWMf5FLWfdLA" name="VirtualNetworkInterfaceRequirements">
@@ -1571,33 +1438,6 @@ NOTE: If not present, it is assumed that the bitrate requirements can be derived
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5CrQkJmYEeibE8EgApNciA" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_0AbUYDnBEeiWMf5FLWfdLA" name="AffinityOrAntiAffinityGroup">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_L_HiIDnCEeiWMf5FLWfdLA" annotatedElement="_0AbUYDnBEeiWMf5FLWfdLA">
-          <body>The AffinityOrAntiAffinityGroup class describes the affinity or anti-affinity relationship.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_6g1tYDnBEeiWMf5FLWfdLA" name="groupId">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_6g1tYTnBEeiWMf5FLWfdLA" annotatedElement="_6g1tYDnBEeiWMf5FLWfdLA">
-            <body>Identifies an affinity or anti-affinity group to which the affinity or anti-affinity rule applies.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_6g3ikDnBEeiWMf5FLWfdLA" name="type" type="_tMoywDnJEeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_6g3ikTnBEeiWMf5FLWfdLA" annotatedElement="_6g3ikDnBEeiWMf5FLWfdLA">
-            <body>Specifies whether the rule is an affinity rule or an anti-affinity rule.</body>
-          </ownedComment>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_6g4wsDnBEeiWMf5FLWfdLA" name="scope" type="_B3kJsDnKEeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_6g4wsTnBEeiWMf5FLWfdLA" annotatedElement="_6g4wsDnBEeiWMf5FLWfdLA">
-            <body>Specifies the scope of the rule.</body>
-          </ownedComment>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_DlOpkDnDEeiWMf5FLWfdLA" name="ScalingAspect">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_PNdQ8DnDEeiWMf5FLWfdLA" annotatedElement="_DlOpkDnDEeiWMf5FLWfdLA">
-          <body>The ScalingAspect class describes the details of an aspect used for horizontal scaling.</body>
-        </ownedComment>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DZsyMDnHEeiWMf5FLWfdLA" name="VduLevel">
         <ownedComment xmi:type="uml:Comment" xmi:id="_t2W2wFqaEeiTzriVSbKglg" annotatedElement="_DZsyMDnHEeiWMf5FLWfdLA">
           <body>The VduLevel information element indicates for a given VDU in a given level the number of instances to deploy.</body>
@@ -1666,15 +1506,6 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
         <generalization xmi:type="uml:Generalization" xmi:id="_707-MD0REeiuk5pWzMOpfA" general="_X3eqgDTQEeiwQ6KPLHcy4g"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_O0DAID5dEeijbdkIlrq2uQ" name="placementStrategy" type="_AeSbgD5dEeijbdkIlrq2uQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_o4b5oD5eEeijbdkIlrq2uQ" name="strategScope"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_M45q8D0REeiuk5pWzMOpfA" name="ScalingGroup">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_2o0Y8D5hEeijbdkIlrq2uQ" annotatedElement="_M45q8D0REeiuk5pWzMOpfA">
-          <body>A ScalingGroup determines which VNFC's (VDU's) are scaled together based on demand.&#xD;
-&#xD;
-&#xD;
-</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_-kSgYD0REeiuk5pWzMOpfA" general="_X3eqgDTQEeiwQ6KPLHcy4g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_fMPCUES6EeiVGPeZpaYNtQ" name="VnfExtCp">
         <ownedComment xmi:type="uml:Comment" xmi:id="_sxbFoES6EeiVGPeZpaYNtQ" annotatedElement="_fMPCUES6EeiVGPeZpaYNtQ">
@@ -2035,9 +1866,6 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
         <generalization xmi:type="uml:Generalization" xmi:id="_W1tqMJpXEeidy9iGT_F5-w" general="_DAQisJpXEeidy9iGT_F5-w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_RiB5QJs3EeiPBvbfaqSLYg" name="Pnfd">
-        <generalization xmi:type="uml:Generalization" xmi:id="_dSlWMJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xVaLUJs3EeiPBvbfaqSLYg" name="Anfd">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2qM6sKY4Eeily5uFlujj3Q" annotatedElement="_xVaLUJs3EeiPBvbfaqSLYg">
           <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.   The consuming service does not need to know that the resource is “allotted”.</body>
@@ -2049,6 +1877,103 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
           <body>A NetworkFunction is a functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_ujjIsJssEeiPBvbfaqSLYg" general="_DAQisJpXEeidy9iGT_F5-w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0lvvQDgREeiOYfGHew0BGg" name="VirtualLinkProfile">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__mm0oDgREeiOYfGHew0BGg" annotatedElement="_0lvvQDgREeiOYfGHew0BGg">
+          <body>The VirtualLinkProfile describes additional instantiation data for a given VL used in a DF.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uA9FMDgUEeiOYfGHew0BGg" name="localAffinityOrAntiAffinityRule">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3SRfkDgUEeiOYfGHew0BGg" annotatedElement="_uA9FMDgUEeiOYfGHew0BGg">
+            <body>Specifies affinity or anti-affinity rules applicable between the VLs based on this VnfVirtualLinkDesc.&#xD;
+&#xD;
+When the cardinality is greater than 1, both affinity rule(s) and anti-affinity rule(s) with different scopes are applicable to the VLs based on this VnfVirtualLinkDesc.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_7hn1IDd1EeiIfPeSAqyGdQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ph7sDgUEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0puwADgUEeiOYfGHew0BGg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DgtLUDgVEeiOYfGHew0BGg" name="affinityOrAntiAffinityGroupId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0UUEMDgVEeiOYfGHew0BGg" annotatedElement="_DgtLUDgVEeiOYfGHew0BGg">
+            <body>Identifier(s) of the affinity or anti-affinity group(s) the VnfVirtualLinkDesc belongs to.&#xD;
+&#xD;
+NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationship between the VL(s) using this VnfVirtualLinkDesc and the VL(s) using other VnfVirtualLinkDesc(s) in the same group.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LAkPIDgVEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LArj4DgVEeiOYfGHew0BGg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2-_hwDgVEeiOYfGHew0BGg" name="maxBitRateRequirements">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_n6_2wDgYEeiOYfGHew0BGg" annotatedElement="_2-_hwDgVEeiOYfGHew0BGg">
+            <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s7WyQDgYEeiOYfGHew0BGg" name="minBitRateRequirements">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0SpI4DgYEeiOYfGHew0BGg" annotatedElement="_s7WyQDgYEeiOYfGHew0BGg">
+            <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_LsX6UDgXEeiOYfGHew0BGg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-SutwDgYEeiOYfGHew0BGg" name="initiationParameters">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_VxkhUDgaEeiOYfGHew0BGg" annotatedElement="_-SutwDgYEeiOYfGHew0BGg">
+            <body>Specifies initiation parameters for the virtual link.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XeSh0DgaEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XeWzQDgaEeiOYfGHew0BGg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__S0RwDgYEeiOYfGHew0BGg" name="networkType">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_2Dl3MDgaEeiOYfGHew0BGg" annotatedElement="__S0RwDgYEeiOYfGHew0BGg">
+            <body>Type of the network</body>
+          </ownedComment>
+          <type xmi:type="uml:Enumeration" href="Common.uml#_Qmf1kDnFEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z0F5wDgaEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z0JkIDgaEeiOYfGHew0BGg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AApoIDgZEeiOYfGHew0BGg" name="dhcpEnabled">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Sprt4DgbEeiOYfGHew0BGg" annotatedElement="_AApoIDgZEeiOYfGHew0BGg">
+            <body>Indicating whether DHCP is enabled. Default is &quot;FALSE&quot; if not specified otherwise.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QRrUsDgbEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QRvmIDgbEeiOYfGHew0BGg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_BYBDsDgZEeiOYfGHew0BGg" name="vlanTransparent">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZG8FMDgbEeiOYfGHew0BGg" annotatedElement="_BYBDsDgZEeiOYfGHew0BGg">
+            <body>Indicating whether &quot;VLAN Transparent Mode&quot; is supported. Default is &quot;FALSE&quot; if not specified otherwise.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCkZsDgbEeiOYfGHew0BGg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCndADgbEeiOYfGHew0BGg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uohQ8jgTEeiOYfGHew0BGg" name="_virtualLinkDescFlavour" type="_oFQM8Dd-EeiIfPeSAqyGdQ" aggregation="shared" association="_uogp4DgTEeiOYfGHew0BGg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Nj634FqfEeiTzriVSbKglg" annotatedElement="_uohQ8jgTEeiOYfGHew0BGg">
+            <body>Identifies a flavour within the VnfVirtualLinkDesc.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_e_qiMDgSEeiOYfGHew0BGg" name="_virtualLinkDesc" type="_AC2eIDQUEeixv_sLOod4lQ" aggregation="shared" association="_e_oF8DgSEeiOYfGHew0BGg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_mb4voFqiEeiTzriVSbKglg" annotatedElement="_e_qiMDgSEeiOYfGHew0BGg">
+            <body>Uniquely identifies a Vnf VLD.</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DlOpkDnDEeiWMf5FLWfdLA" name="ScalingAspect">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PNdQ8DnDEeiWMf5FLWfdLA" annotatedElement="_DlOpkDnDEeiWMf5FLWfdLA">
+          <body>The ScalingAspect class describes the details of an aspect used for horizontal scaling.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_M45q8D0REeiuk5pWzMOpfA" name="ScalingGroup">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2o0Y8D5hEeijbdkIlrq2uQ" annotatedElement="_M45q8D0REeiuk5pWzMOpfA">
+          <body>A ScalingGroup determines which VNFC's (VDU's) are scaled together based on demand.&#xD;
+&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_-kSgYD0REeiuk5pWzMOpfA" general="_X3eqgDTQEeiwQ6KPLHcy4g"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MzOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -2211,73 +2136,6 @@ This could include the number of CPU cores on this logical node, a memory config
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ga6gDa6EeivvI-m1BaAbA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3gek4Da6EeivvI-m1BaAbA" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_2aIggDa9EeivvI-m1BaAbA" name="AddressData">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_Wv89wGNfEeio9amveq0yWQ" annotatedElement="_2aIggDa9EeivvI-m1BaAbA">
-          <body>The AddressData information element supports providing information about the addressing scheme and parameters applicable to a CP. </body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_A8dPwDa-EeivvI-m1BaAbA" name="addressType">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_dD2YQDa-EeivvI-m1BaAbA" annotatedElement="_A8dPwDa-EeivvI-m1BaAbA">
-            <body>Describes the type of the address to be assigned to the CP instantiated from the parent CPD. The content type shall be aligned with the address type supported by the layerProtocol attribute of the parent CPD.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_BxokQDa-EeivvI-m1BaAbA" name="l2AddressData">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_O8qjQDdPEeiIfPeSAqyGdQ" annotatedElement="_BxokQDa-EeivvI-m1BaAbA">
-            <body>Provides the information on the MAC addresses to be assigned to the CP(s) instantiated from the parent CPD.&#xD;
-Shall be present when the addressType is MAC address.</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_X9TdUDdPEeiIfPeSAqyGdQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L3I8wDdPEeiIfPeSAqyGdQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L3NOMDdPEeiIfPeSAqyGdQ" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_CUeLkDa-EeivvI-m1BaAbA" name="l3AddressData">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_UN-r4DdPEeiIfPeSAqyGdQ" annotatedElement="_CUeLkDa-EeivvI-m1BaAbA">
-            <body>Provides the information on the IP addresses to be assigned to the CP instantiated from the parent CPD.&#xD;
-Shall be present when the addressType is IP address.</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_4oResDdPEeiIfPeSAqyGdQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SKejEDdPEeiIfPeSAqyGdQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SKiNcDdPEeiIfPeSAqyGdQ" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_PjIasDa9EeivvI-m1BaAbA" name="CpProtocolData">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_kSumQGNfEeio9amveq0yWQ" annotatedElement="_PjIasDa9EeivvI-m1BaAbA">
-          <body>A CpProtocolData information element describes and associates the protocol layer that a CP uses together with other protocol and connection point information.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_oa2iMDa9EeivvI-m1BaAbA" name="associatedLayerProtocol">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_zWCdYDa9EeivvI-m1BaAbA" annotatedElement="_oa2iMDa9EeivvI-m1BaAbA">
-            <body>One of the values of the attribute layerProtocol of the Cpd IE.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:Enumeration" href="Common.uml#_tFQGcDnLEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pMKqYDa9EeivvI-m1BaAbA" name="addressData" type="_2aIggDa9EeivvI-m1BaAbA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_06IGUDa9EeivvI-m1BaAbA" annotatedElement="_pMKqYDa9EeivvI-m1BaAbA">
-            <body>Provides information on the addresses to be assigned to the CP(s) instantiated from the CPD.</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xOJj0Da9EeivvI-m1BaAbA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xORfoDa9EeivvI-m1BaAbA" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_7hn1IDd1EeiIfPeSAqyGdQ" name="LocalAffinityOrAntiAffinityRule">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_20J6EGNfEeio9amveq0yWQ" annotatedElement="_7hn1IDd1EeiIfPeSAqyGdQ">
-          <body>The LocalAffinityOrAntiAffinityRule describes the affinity or anti-affinity rule applicable between the virtualization containers to be created based on a particular VDU, or between internal VLs to be created based on a particular VnfVirtualLinkDesc. &#xD;
-Per VNF, the affinity/anti-affinity rules defined using this information element, using the AffinityOrAntiAffinityGroup information element, and using the placement constraints in the GrantLifecycleOperation as defined in ETSI GS NFV IFA 007 [i.3] should be conflict-free. In case of conflicts, the placement constraints in the GrantLifecycleOperation shall take precedence. &#xD;
-</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_EjJgADd2EeiIfPeSAqyGdQ" name="type" type="_tMoywDnJEeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_uoCBoDd3EeiIfPeSAqyGdQ" annotatedElement="_EjJgADd2EeiIfPeSAqyGdQ">
-            <body>Specifies whether the rule is an affinity rule or an anti-affinity rule.&#xD;
-</body>
-          </ownedComment>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_F5b9gDd2EeiIfPeSAqyGdQ" name="scope" type="_B3kJsDnKEeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_yop-cDd3EeiIfPeSAqyGdQ" annotatedElement="_F5b9gDd2EeiIfPeSAqyGdQ">
-            <body>Specifies the scope of the rule.</body>
-          </ownedComment>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_B1G2UDd_EeiIfPeSAqyGdQ" name="QoS">
@@ -2462,13 +2320,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bbN9YDm6EeiWMf5FLWfdLA" name="DIRECT_PHYSICAL"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fCLdADm6EeiWMf5FLWfdLA" name="VIRTIO_FORWARDER"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qmf1kDnFEeiWMf5FLWfdLA" name="NetworkType">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_VN9I4DnFEeiWMf5FLWfdLA" annotatedElement="_Qmf1kDnFEeiWMf5FLWfdLA">
-          <body>Type of network supported.</body>
-        </ownedComment>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_W5tgEDnFEeiWMf5FLWfdLA" name="VLAN"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Z6H9EDnFEeiWMf5FLWfdLA" name="VXLAN"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_EYaAsDnIEeiWMf5FLWfdLA" name="ScaleInfo">
         <ownedComment xmi:type="uml:Comment" xmi:id="_G0jmIGNhEeio9amveq0yWQ" annotatedElement="_EYaAsDnIEeiWMf5FLWfdLA">
           <body>The ScaleInfo information element represents a scale level for a particular scaling aspect. </body>
@@ -2485,22 +2336,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_tMoywDnJEeiWMf5FLWfdLA" name="RuleType">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_xofTADnJEeiWMf5FLWfdLA" annotatedElement="_tMoywDnJEeiWMf5FLWfdLA">
-          <body>Specifies the type of rule.</body>
-        </ownedComment>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zZIKMDnJEeiWMf5FLWfdLA" name="AFFINITY"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1qskMDnJEeiWMf5FLWfdLA" name="ANTI_AFFINITY"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_B3kJsDnKEeiWMf5FLWfdLA" name="RuleScope">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_F2zmcDnKEeiWMf5FLWfdLA" annotatedElement="_B3kJsDnKEeiWMf5FLWfdLA">
-          <body>Defines the scope of the rule.</body>
-        </ownedComment>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_IJCHwDnKEeiWMf5FLWfdLA" name="NFVI_POP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LgsnIDnKEeiWMf5FLWfdLA" name="ZONE"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ON-FsDnKEeiWMf5FLWfdLA" name="ZONE_GROUP"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RUyssDnKEeiWMf5FLWfdLA" name="NFVI_NODE"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_V9WhUDnMEeiWMf5FLWfdLA" name="PinningPolicy">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Z4_QcDnMEeiWMf5FLWfdLA" annotatedElement="_V9WhUDnMEeiWMf5FLWfdLA">
@@ -2755,13 +2590,27 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_btdnQDg2EeiOYfGHew0BGg" base_StructuralFeature="_btdAMDg2EeiOYfGHew0BGg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_cggNwTg2EeiOYfGHew0BGg" base_StructuralFeature="_cggNwDg2EeiOYfGHew0BGg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dP31MTg2EeiOYfGHew0BGg" base_StructuralFeature="_dP31MDg2EeiOYfGHew0BGg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_7pU0IDa7EeivvI-m1BaAbA" base_Class="_7pUNEDa7EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_knSmcTa8EeivvI-m1BaAbA" base_StructuralFeature="_knSmcDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_lRLQ8Ta8EeivvI-m1BaAbA" base_StructuralFeature="_lRLQ8Da8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_luv9wDa8EeivvI-m1BaAbA" base_StructuralFeature="_luvWsDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_oWHBkTa8EeivvI-m1BaAbA" base_StructuralFeature="_oWHBkDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_pJTZETa8EeivvI-m1BaAbA" base_StructuralFeature="_pJTZEDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_p8meQTa8EeivvI-m1BaAbA" base_StructuralFeature="_p8meQDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_7pU0IDa7EeivvI-m1BaAbA">
+    <base_Class xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelClass>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_knSmcTa8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_knSmcDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lRLQ8Ta8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_lRLQ8Da8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_luv9wDa8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_luvWsDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oWHBkTa8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_oWHBkDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pJTZETa8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_pJTZEDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_p8meQTa8EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_p8meQDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_oFQM8Td-EeiIfPeSAqyGdQ" base_Class="_oFQM8Dd-EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_v0nsYTd-EeiIfPeSAqyGdQ" base_StructuralFeature="_v0nsYDd-EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uXG-oDnFEeiWMf5FLWfdLA" base_StructuralFeature="_uXGXkDnFEeiWMf5FLWfdLA"/>
@@ -2785,10 +2634,18 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jVi5MDnGEeiWMf5FLWfdLA" base_StructuralFeature="_jViSIDnGEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_f1tqYDnIEeiWMf5FLWfdLA" base_StructuralFeature="_f1tDUDnIEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PJlgwDnHEeiWMf5FLWfdLA" base_StructuralFeature="_PJk5sjnHEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_0Ab7cDnBEeiWMf5FLWfdLA" base_Class="_0AbUYDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g1tYjnBEeiWMf5FLWfdLA" base_StructuralFeature="_6g1tYDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g3ikjnBEeiWMf5FLWfdLA" base_StructuralFeature="_6g3ikDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g5XwDnBEeiWMf5FLWfdLA" base_StructuralFeature="_6g4wsDnBEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_0Ab7cDnBEeiWMf5FLWfdLA">
+    <base_Class xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelClass>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g1tYjnBEeiWMf5FLWfdLA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_6g1tYDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g3ikjnBEeiWMf5FLWfdLA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_6g3ikDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6g5XwDnBEeiWMf5FLWfdLA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_6g4wsDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_DlPQoDnDEeiWMf5FLWfdLA" base_Class="_DlOpkDnDEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_DZsyMTnHEeiWMf5FLWfdLA" base_Class="_DZsyMDnHEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7vM5wDnIEeiWMf5FLWfdLA" base_StructuralFeature="_7vMSsDnIEeiWMf5FLWfdLA"/>
@@ -2825,13 +2682,27 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3WVcUDa4EeivvI-m1BaAbA" base_StructuralFeature="_3WU1QDa4EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gv2iMTa5EeivvI-m1BaAbA" base_StructuralFeature="_gv2iMDa5EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_heqI8Ta5EeivvI-m1BaAbA" base_StructuralFeature="_heqI8Da5EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_A8dPwTa-EeivvI-m1BaAbA" base_StructuralFeature="_A8dPwDa-EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_BxpLUDa-EeivvI-m1BaAbA" base_StructuralFeature="_BxokQDa-EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_CUeLkTa-EeivvI-m1BaAbA" base_StructuralFeature="_CUeLkDa-EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_oa3JQDa9EeivvI-m1BaAbA" base_StructuralFeature="_oa2iMDa9EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_pMLRcDa9EeivvI-m1BaAbA" base_StructuralFeature="_pMKqYDa9EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_EjKHEDd2EeiIfPeSAqyGdQ" base_StructuralFeature="_EjJgADd2EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_F5b9gTd2EeiIfPeSAqyGdQ" base_StructuralFeature="_F5b9gDd2EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_A8dPwTa-EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_A8dPwDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BxpLUDa-EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_BxokQDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_CUeLkTa-EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_CUeLkDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oa3JQDa9EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_oa2iMDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pMLRcDa9EeivvI-m1BaAbA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_pMKqYDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EjKHEDd2EeiIfPeSAqyGdQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_EjJgADd2EeiIfPeSAqyGdQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_F5b9gTd2EeiIfPeSAqyGdQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_F5b9gDd2EeiIfPeSAqyGdQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GA6IYTd_EeiIfPeSAqyGdQ" base_StructuralFeature="_GA6IYDd_EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_G-M3EDd_EeiIfPeSAqyGdQ" base_StructuralFeature="_G-MQADd_EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Hy64kTd_EeiIfPeSAqyGdQ" base_StructuralFeature="_Hy64kDd_EeiIfPeSAqyGdQ"/>
@@ -2951,13 +2822,27 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Preliminary xmi:id="_QcLkcJT1EeiYXO5wr78TUw" base_Element="_H9SagDm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_Rf98sJT1EeiYXO5wr78TUw" base_Element="_H9Vd0Dm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_TCrFkJT1EeiYXO5wr78TUw" base_Element="_H9TooDm5EeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_YMEoUJT1EeiYXO5wr78TUw" base_Element="_7pUNEDa7EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_glKaMJT1EeiYXO5wr78TUw" base_Element="_knSmcDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_hvUgMJT1EeiYXO5wr78TUw" base_Element="_lRLQ8Da8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_i388MJT1EeiYXO5wr78TUw" base_Element="_luvWsDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_kDQ4wJT1EeiYXO5wr78TUw" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_lmmTwJT1EeiYXO5wr78TUw" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_mm4FAJT1EeiYXO5wr78TUw" base_Element="_p8meQDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_YMEoUJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Class" href="Common.uml#_7pUNEDa7EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_glKaMJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_knSmcDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_hvUgMJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_lRLQ8Da8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_i388MJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_luvWsDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_kDQ4wJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_oWHBkDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_lmmTwJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_pJTZEDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_mm4FAJT1EeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_p8meQDa8EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_VFbyEJT2EeiYXO5wr78TUw" base_Element="_zOfv8DQVEeixv_sLOod4lQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_WExIIJT2EeiYXO5wr78TUw" base_Element="_7nJYsDdREeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_XG894JT2EeiYXO5wr78TUw" base_Element="_8R7loDdSEeiIfPeSAqyGdQ"/>
@@ -3044,10 +2929,18 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Preliminary xmi:id="_zQKAEJT9EeiYXO5wr78TUw" base_Element="_8OQgMDdKEeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_0PJX4JT9EeiYXO5wr78TUw" base_Element="_9jZuMDdKEeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Experimental xmi:id="_Ta13gJUBEeiYXO5wr78TUw" base_Element="_DlOpkDnDEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_XkYfwJUBEeiYXO5wr78TUw" base_Element="_0AbUYDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_YpUHgJUBEeiYXO5wr78TUw" base_Element="_6g1tYDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_ZkJ_IJUBEeiYXO5wr78TUw" base_Element="_6g3ikDnBEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_awZv0JUBEeiYXO5wr78TUw" base_Element="_6g4wsDnBEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_XkYfwJUBEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Class" href="Common.uml#_0AbUYDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_YpUHgJUBEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_6g1tYDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_ZkJ_IJUBEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_6g3ikDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_awZv0JUBEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_6g4wsDnBEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_dvFHcJUBEeiYXO5wr78TUw" base_Element="_ISONYDOSEeiHat9KcP8uWA"/>
   <OpenModel_Profile:Preliminary xmi:id="_eoLSoJUBEeiYXO5wr78TUw" base_Element="_aikFADdzEeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_fhlm4JUBEeiYXO5wr78TUw" base_Element="_bEqsgDdzEeiIfPeSAqyGdQ"/>
@@ -3094,24 +2987,44 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_Arg4UJUGEeiYXO5wr78TUw" base_Element="_JqA_UHPTEeiuFfjlON-CuQ"/>
   <OpenModel_Profile:Experimental xmi:id="_CRvPQJUGEeiYXO5wr78TUw" base_Element="_QPdCQHPTEeiuFfjlON-CuQ"/>
   <OpenModel_Profile:Experimental xmi:id="_DlFtgJUGEeiYXO5wr78TUw" base_Element="_TkXIkHPTEeiuFfjlON-CuQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_U3UDQJUGEeiYXO5wr78TUw" base_Element="_A8dPwDa-EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_W2o2sJUGEeiYXO5wr78TUw" base_Element="_2aIggDa9EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_XpOxQJUGEeiYXO5wr78TUw" base_Element="_BxokQDa-EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_Yhnx0JUGEeiYXO5wr78TUw" base_Element="_CUeLkDa-EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_U3UDQJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_A8dPwDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_W2o2sJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:DataType" href="Common.uml#_2aIggDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_XpOxQJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_BxokQDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_Yhnx0JUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_CUeLkDa-EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_cBQhcJUGEeiYXO5wr78TUw" base_Element="_DK1hoGjsEeip9umi7zNprw"/>
   <OpenModel_Profile:Preliminary xmi:id="_c7EeUJUGEeiYXO5wr78TUw" base_Element="_J4maIGjsEeip9umi7zNprw"/>
   <OpenModel_Profile:Preliminary xmi:id="_dyG0AJUGEeiYXO5wr78TUw" base_Element="_L1m5YGjsEeip9umi7zNprw"/>
   <OpenModel_Profile:Preliminary xmi:id="_gDtDMJUGEeiYXO5wr78TUw" base_Element="_pRh10DnOEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_lkekIJUGEeiYXO5wr78TUw" base_Element="_PjIasDa9EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_qg2XgJUGEeiYXO5wr78TUw" base_Element="_oa2iMDa9EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_rbHnYJUGEeiYXO5wr78TUw" base_Element="_pMKqYDa9EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_lkekIJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:DataType" href="Common.uml#_PjIasDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_qg2XgJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_oa2iMDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_rbHnYJUGEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_pMKqYDa9EeivvI-m1BaAbA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_tzIAkJUGEeiYXO5wr78TUw" base_Element="_zR55wD5cEeijbdkIlrq2uQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_ugpN4JUGEeiYXO5wr78TUw" base_Element="_1euWoD5cEeijbdkIlrq2uQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_25PQgJUGEeiYXO5wr78TUw" base_Element="_c8RX8D3BEeiFiY3bcpqGkg"/>
   <OpenModel_Profile:Preliminary xmi:id="_AP5d4JUHEeiYXO5wr78TUw" base_Element="_nJzw0DnNEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_LCFOEJUHEeiYXO5wr78TUw" base_Element="_7hn1IDd1EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_L1qAEJUHEeiYXO5wr78TUw" base_Element="_EjJgADd2EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_Mjc6MJUHEeiYXO5wr78TUw" base_Element="_F5b9gDd2EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_LCFOEJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:DataType" href="Common.uml#_7hn1IDd1EeiIfPeSAqyGdQ"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_L1qAEJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_EjJgADd2EeiIfPeSAqyGdQ"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_Mjc6MJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_F5b9gDd2EeiIfPeSAqyGdQ"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_Ok7pwJUHEeiYXO5wr78TUw" base_Element="_lp6e4DatEei23_xWdimG9w"/>
   <OpenModel_Profile:Preliminary xmi:id="_PanUkJUHEeiYXO5wr78TUw" base_Element="_vXCEcDatEei23_xWdimG9w"/>
   <OpenModel_Profile:Preliminary xmi:id="_Q-gwQJUHEeiYXO5wr78TUw" base_Element="_HlF2kDmxEeiWMf5FLWfdLA"/>
@@ -3119,9 +3032,15 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Preliminary xmi:id="_SYVC4JUHEeiYXO5wr78TUw" base_Element="_ZcmqsDmxEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_TEXpgJUHEeiYXO5wr78TUw" base_Element="_Zcn40DmxEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_T1j14JUHEeiYXO5wr78TUw" base_Element="_ZcpG8DmxEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_tn5ykJUHEeiYXO5wr78TUw" base_Element="_Qmf1kDnFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_ugdLMJUHEeiYXO5wr78TUw" base_Element="_W5tgEDnFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_vUP_oJUHEeiYXO5wr78TUw" base_Element="_Z6H9EDnFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_tn5ykJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Enumeration" href="Common.uml#_Qmf1kDnFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_ugdLMJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_W5tgEDnFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_vUP_oJUHEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_Z6H9EDnFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_yAT9QJUHEeiYXO5wr78TUw" base_Element="_V9WhUDnMEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_y6SSMJUHEeiYXO5wr78TUw" base_Element="_a2rnwDnMEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_z0URgJUHEeiYXO5wr78TUw" base_Element="_cc-3MDnMEeiWMf5FLWfdLA"/>
@@ -3133,14 +3052,30 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Preliminary xmi:id="_9Ult4JUHEeiYXO5wr78TUw" base_Element="_GA6IYDd_EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_-NoOsJUHEeiYXO5wr78TUw" base_Element="_G-MQADd_EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="__AwUwJUHEeiYXO5wr78TUw" base_Element="_Hy64kDd_EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_ONrx8JUIEeiYXO5wr78TUw" base_Element="_B3kJsDnKEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_O-PFIJUIEeiYXO5wr78TUw" base_Element="_IJCHwDnKEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_PrZtIJUIEeiYXO5wr78TUw" base_Element="_LgsnIDnKEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_Qh8TkJUIEeiYXO5wr78TUw" base_Element="_ON-FsDnKEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_RUXPAJUIEeiYXO5wr78TUw" base_Element="_RUyssDnKEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_SxwaEJUIEeiYXO5wr78TUw" base_Element="_tMoywDnJEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_Tg3i0JUIEeiYXO5wr78TUw" base_Element="_zZIKMDnJEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_UQqoEJUIEeiYXO5wr78TUw" base_Element="_1qskMDnJEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ONrx8JUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Enumeration" href="Common.uml#_B3kJsDnKEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_O-PFIJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_IJCHwDnKEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_PrZtIJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_LgsnIDnKEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_Qh8TkJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_ON-FsDnKEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_RUXPAJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_RUyssDnKEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_SxwaEJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:Enumeration" href="Common.uml#_tMoywDnJEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_Tg3i0JUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_zZIKMDnJEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
+  <OpenModel_Profile:Preliminary xmi:id="_UQqoEJUIEeiYXO5wr78TUw">
+    <base_Element xmi:type="uml:EnumerationLiteral" href="Common.uml#_1qskMDnJEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_Wp030JUIEeiYXO5wr78TUw" base_Element="_EYaAsDnIEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_Xb5N8JUIEeiYXO5wr78TUw" base_Element="_KFKIIDnIEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_YKO6oJUIEeiYXO5wr78TUw" base_Element="_SHb8gDnIEeiWMf5FLWfdLA"/>
@@ -3193,7 +3128,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oiVLAZpZEeidy9iGT_F5-w" base_StructuralFeature="_oiUj8ppZEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oiY1YppZEeidy9iGT_F5-w" base_StructuralFeature="_oiY1YJpZEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_O385opssEeiPBvbfaqSLYg" base_Class="_O385oJssEeiPBvbfaqSLYg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_RiB5Qps3EeiPBvbfaqSLYg" base_Class="_RiB5QJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xVayYZs3EeiPBvbfaqSLYg" base_Class="_xVaLUJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etjC4Zs4EeiPBvbfaqSLYg" base_StructuralFeature="_etjC4Js4EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etn7YJs4EeiPBvbfaqSLYg" base_StructuralFeature="_etnUUJs4EeiPBvbfaqSLYg"/>
@@ -3235,16 +3169,16 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelClass xmi:id="_p_Z_8KVwEeikF6xsfT18UA" base_Class="_fMPCUES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_p_bOEKVwEeikF6xsfT18UA" base_Class="_Io3nQESzEeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_p_ccMKVwEeikF6xsfT18UA" base_StructuralFeature="_8c1OkES6EeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_ZE9UIKY4Eeily5uFlujj3Q">
+  <OpenModel_Profile:OpenModelClass xmi:id="_f72YgKeuEeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelClass xmi:id="_ZE9UIaY4Eeily5uFlujj3Q">
+  <OpenModel_Profile:OpenModelClass xmi:id="_f76p8KeuEeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Service.uml#_BQaDwJpZEeidy9iGT_F5-w"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEidYqY4Eeily5uFlujj3Q">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_erHJYKeuEeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_NBiAApsrEeiPBvbfaqSLYg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEjrgKY4Eeily5uFlujj3Q">
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ftBSUKeuEeixw5Ke5QD1pQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_NBj1MJsrEeiPBvbfaqSLYg"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YbTTIKY4Eeily5uFlujj3Q">
