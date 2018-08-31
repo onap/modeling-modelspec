@@ -19,14 +19,6 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
             <body>Specifies the protocol exposed by a VL and the flow pattern supported by the VL.</body>
           </ownedComment>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw79tj2pEeiu6I5JfRTxxQ" name="testAccess">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79tz2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79tj2pEeiu6I5JfRTxxQ">
-            <body>Specifies test access facilities expected on the VL (e.g. none, passive monitoring, or active (intrusive) loopbacks at endpoints.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tw79uD2pEeiu6I5JfRTxxQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tw79uT2pEeiu6I5JfRTxxQ" value="*"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw79uj2pEeiu6I5JfRTxxQ" name="description">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79uz2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79uj2pEeiu6I5JfRTxxQ">
             <body>Provides human-readable information on the purpose of the VL (e.g. control plane traffic).</body>
@@ -570,6 +562,9 @@ In the value set and its semantics, this type is equivalent to the Uri SMIv2 tex
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_H65nwInwEeiOe-BKGdv_Yg" name="LOW"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_ImxsgDeBEeiIfPeSAqyGdQ" name="ConnectivityType">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8qt_MK0pEeiQr7XQ2okIrA" annotatedElement="_ImxsgDeBEeiIfPeSAqyGdQ">
+          <body>The ConnectivityType datatype specifies the protocol exposed by a VL and the flow pattern supported by the VL.</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_N61nIDeBEeiIfPeSAqyGdQ" name="layerProtocol" type="_tFQGcDnLEeiWMf5FLWfdLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_XlK-cDeBEeiIfPeSAqyGdQ" annotatedElement="_N61nIDeBEeiIfPeSAqyGdQ">
             <body>Identifies the protocol this VL gives access to (Ethernet, MPLS, ODU2, IPV4, IPV6, Pseudo-Wire).&#xD;
@@ -2959,7 +2954,6 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw8kwD2pEeiu6I5JfRTxxQ" base_Class="_Tw79sD2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw9y4D2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79sj2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw-Z8D2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79tD2pEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw-Z8T2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79tj2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw-Z8j2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79uj2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_P-rlUD2vEeiu6I5JfRTxxQ" base_StructuralFeature="_P-qXMj2vEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_P-szcD2vEeiu6I5JfRTxxQ" base_StructuralFeature="_P-qXND2vEeiu6I5JfRTxxQ"/>
@@ -3318,7 +3312,6 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:Preliminary xmi:id="_RXHEYKZIEeily5uFlujj3Q" base_Element="_Tw79sD2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_WB-RAKZIEeily5uFlujj3Q" base_Element="_Tw79tD2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_YPresKZIEeily5uFlujj3Q" base_Element="_Tw79uj2pEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_ZnJA4KZIEeily5uFlujj3Q" base_Element="_Tw79tj2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_bOWPQKZIEeily5uFlujj3Q" base_Element="_Tw79sj2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7S8mYacHEeiFp-jDq2Hw-A" base_StructuralFeature="_7S8mYKcHEeiFp-jDq2Hw-A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_76Oo0KcHEeiFp-jDq2Hw-A" base_StructuralFeature="_76OBwKcHEeiFp-jDq2Hw-A"/>
