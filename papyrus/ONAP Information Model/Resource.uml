@@ -149,10 +149,10 @@ For all attributes in this class the Producer is SDC and the Consumer is SDC/UUI
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_13WFaTzEEeiWMf5FLWfdLA" name="virtualLinkDf" type="_kEZBoTzEEeiWMf5FLWfdLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_13WFajzEEeiWMf5FLWfdLA" annotatedElement="_13WFaTzEEeiWMf5FLWfdLA">
-            <body>Specifies properties for instantiating a VL according to a specific flavour.</body>
+            <body>Specifies properties for instantiating a VL according to a specific flavour.  </body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13WFazzEEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13WFbDzEEeiWMf5FLWfdLA" value="*"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13WFbDzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_13gdcDzEEeiWMf5FLWfdLA" name="NsDf">
@@ -471,24 +471,6 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
         <ownedComment xmi:type="uml:Comment" xmi:id="_kEZoSTzEEeiWMf5FLWfdLA" annotatedElement="_kEZoSDzEEeiWMf5FLWfdLA">
           <body>The MonitoredData datatype identifies information to be monitored during the lifetime of a network service instance.</body>
         </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZoSjzEEeiWMf5FLWfdLA" name="vnfIndicatorInfo">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_kEZoSzzEEeiWMf5FLWfdLA" annotatedElement="_kEZoSjzEEeiWMf5FLWfdLA">
-            <body>Uniquely identifies the VNF Indicator class.&#xD;
-One and only one of the attributes shall be included (i.e. there is a XOR relationship between the attributes).</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Service.uml#_kEZoUjzEEeiWMf5FLWfdLA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEZoTDzEEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEZoTTzEEeiWMf5FLWfdLA" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZoTjzEEeiWMf5FLWfdLA" name="monitoringParameter">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_kEZoTzzEEeiWMf5FLWfdLA" annotatedElement="_kEZoTjzEEeiWMf5FLWfdLA">
-            <body>Specifies the virtualised resource related performance metric to be monitored on an NS level or VNF level.&#xD;
-One and only one of the attributes shall be included (i.e. there is a XOR relationship between the attributes).</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="../NfvInformationModel/NfvModel.uml#_cSwAAATLEea-RJOoE5lL-w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEZoUDzEEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEZoUTzEEeiWMf5FLWfdLA" value="1"/>
-        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nRfaQKe3Eeixw5Ke5QD1pQ">
@@ -509,4 +491,7 @@ One and only one of the attributes shall be included (i.e. there is a XOR relati
   <OpenModel_Profile:Preliminary xmi:id="_xlOWoK0XEeirrO9guYUuGw" base_Element="_13KfNjzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_1I1nUK0XEeirrO9guYUuGw" base_Element="_13LGQDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_4TtA0K0XEeirrO9guYUuGw" base_Element="_13LGQjzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_izpdoLAVEei3l9EE3oQfMw">
+    <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_izo2krAVEei3l9EE3oQfMw"/>
+  </OpenModel_Profile:OpenModelAttribute>
 </xmi:XMI>
