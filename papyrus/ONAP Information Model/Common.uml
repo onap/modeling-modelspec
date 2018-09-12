@@ -364,56 +364,9 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
       <ownedComment xmi:type="uml:Comment" xmi:id="_thIKYKcJEeiFp-jDq2Hw-A">
         <body>multiplicity (0..1 or 0..*) for highend and lowend of latency bucket</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_zD-Z0KcHEeiFp-jDq2Hw-A" name="LatencyBucketMeasure">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_a_bM8KcNEeiFp-jDq2Hw-A" annotatedElement="_zD-Z0KcHEeiFp-jDq2Hw-A">
-          <body>The latencyBucketMeasure datatype consists of the following fields which describe the number of counts falling within a defined latency bucket</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_7S8mYKcHEeiFp-jDq2Hw-A" name="countsInTheBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_lgTHgKcJEeiFp-jDq2Hw-A" annotatedElement="_7S8mYKcHEeiFp-jDq2Hw-A">
-            <body>Number of counts falling within a defined latency bucket</body>
-          </ownedComment>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_76OBwKcHEeiFp-jDq2Hw-A" name="highEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_naHv4KcJEeiFp-jDq2Hw-A" annotatedElement="_76OBwKcHEeiFp-jDq2Hw-A">
-            <body>High end of bucket range (typically in ms)</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qdcW8KcJEeiFp-jDq2Hw-A"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qdjrsKcJEeiFp-jDq2Hw-A" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_8cpZYKcHEeiFp-jDq2Hw-A" name="lowEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_pOiT0KcJEeiFp-jDq2Hw-A" annotatedElement="_8cpZYKcHEeiFp-jDq2Hw-A">
-            <body>Low end of bucket range (typically in ms)</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYsisKcJEeiFp-jDq2Hw-A"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sY2TsKcJEeiFp-jDq2Hw-A" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_-7CVIKcMEeiFp-jDq2Hw-A" name="Load">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_Y3U4AKcNEeiFp-jDq2Hw-A" annotatedElement="_-7CVIKcMEeiFp-jDq2Hw-A">
-          <body>The load datatype provides metrics on system cpu and io utilization obtained using /proc/loadavg</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_E2dKsKcNEeiFp-jDq2Hw-A" name="longTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_TOSL4KcNEeiFp-jDq2Hw-A" annotatedElement="_E2dKsKcNEeiFp-jDq2Hw-A">
-            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 15 minutes using /proc/loadavg</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dBRv8KcNEeiFp-jDq2Hw-A"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dBX2kKcNEeiFp-jDq2Hw-A" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_FgDhUKcNEeiFp-jDq2Hw-A" name="midTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_U_m_kKcNEeiFp-jDq2Hw-A" annotatedElement="_FgDhUKcNEeiFp-jDq2Hw-A">
-            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 5 minutes using /proc/loadavg</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eijVcKcNEeiFp-jDq2Hw-A"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eioN8KcNEeiFp-jDq2Hw-A" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GHjmMKcNEeiFp-jDq2Hw-A" name="shortTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_WhlIoKcNEeiFp-jDq2Hw-A" annotatedElement="_GHjmMKcNEeiFp-jDq2Hw-A">
-            <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 1 minute using /proc/loadavg</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gXyYwKcNEeiFp-jDq2Hw-A"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gYAbMKcNEeiFp-jDq2Hw-A" value="1"/>
-        </ownedAttribute>
-      </packagedElement>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_BTKPcLCXEeix4eA61SHRMQ">
+        <body>Why not boolean in spec?</body>
+      </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -1093,21 +1046,22 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_wrtaQIFdEeieQ4zKGFzYtQ" name="CodecsInUse">
           <ownedComment xmi:type="uml:Comment" xmi:id="_EKuXsIFeEeieQ4zKGFzYtQ" annotatedElement="_wrtaQIFdEeieQ4zKGFzYtQ">
-            <body>codecsInUse - the codecsInUse datatype consists of the following fields describing the number of times an identified codec was used over the measurementInterval&#xD;
+            <body>The codecsInUse datatype consists of the following fields describing the number of times an identified codec was used over the measurementInterval&#xD;
 </body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0AyfsIFdEeieQ4zKGFzYtQ" name="codecIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_G4ygcIFeEeieQ4zKGFzYtQ" annotatedElement="_0AyfsIFdEeieQ4zKGFzYtQ">
-              <body>codecIdentifer - Description of the codec.&#xD;
+              <body>Description of the codec.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0tIBQIFdEeieQ4zKGFzYtQ" name="numberInUse">
             <ownedComment xmi:type="uml:Comment" xmi:id="_JG3hkIFeEeieQ4zKGFzYtQ" annotatedElement="_0tIBQIFdEeieQ4zKGFzYtQ">
-              <body>numberInUse - Number of such codecs in use.&#xD;
+              <body>Number of such codecs in use.&#xD;
 </body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_r_TYsH7wEeifJIHxnlj6Cg" name="FaultFields">
@@ -1323,69 +1277,80 @@ Could contain managed object instance as separate key:value; could add probable 
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_i9VgYIFKEeieQ4zKGFzYtQ" name="loadArray" type="_-7CVIKcMEeiFp-jDq2Hw-A">
             <ownedComment xmi:type="uml:Comment" xmi:id="_w2xv8JGyEeiUeLUnFxb3Bg" annotatedElement="_i9VgYIFKEeieQ4zKGFzYtQ">
-              <body>loadArray - Array of system load metrics&#xD;
+              <body>Array of system load metrics&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p8Y7gKcNEeiFp-jDq2Hw-A"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p8lv0KcNEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oGLCcIFKEeieQ4zKGFzYtQ" name="machineCheckExceptionArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oGLCcIFKEeieQ4zKGFzYtQ" name="machineCheckExceptionArray" type="_qlX8oLBZEeix4eA61SHRMQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_zDuIoJGyEeiUeLUnFxb3Bg" annotatedElement="_oGLCcIFKEeieQ4zKGFzYtQ">
-              <body>machineCheckExceptionArray - Array of machine check exceptions.&#xD;
+              <body>Array of machine check exceptions&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iqy7QLBeEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iq63ELBeEeix4eA61SHRMQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pW31UIFKEeieQ4zKGFzYtQ" name="meanRequestLatency">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pW31UIFKEeieQ4zKGFzYtQ" name="meanRequestLatency" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_0kuoYJGyEeiUeLUnFxb3Bg" annotatedElement="_pW31UIFKEeieQ4zKGFzYtQ">
-              <body>meanRequestLatency - Mean seconds required to respond to each request for the VM on which the VNFC reporting the event is running.&#xD;
+              <body>Mean seconds required to respond to each request for the VM on which the VNFC reporting the event is running.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lFEjgLBeEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lFKqILBeEeix4eA61SHRMQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sw_LwIFKEeieQ4zKGFzYtQ" name="measurementFieldsVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_2X4oEJGyEeiUeLUnFxb3Bg" annotatedElement="_sw_LwIFKEeieQ4zKGFzYtQ">
-              <body>measurementFieldsVersion - version of the measurementFields block.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4R6L0LBeEeix4eA61SHRMQ" annotatedElement="_sw_LwIFKEeieQ4zKGFzYtQ">
+              <body>Version of the measurementFields block as “#.#” where # is a digit; see section 1 for the correct digits to use. </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uh6W0IFKEeieQ4zKGFzYtQ" name="measurementInterval" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_HcPoALBfEeix4eA61SHRMQ" annotatedElement="_uh6W0IFKEeieQ4zKGFzYtQ">
+              <body>Interval over which measurements are being reported in seconds</body>
             </ownedComment>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_uh6W0IFKEeieQ4zKGFzYtQ" name="measurementInterval">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_35C40JGyEeiUeLUnFxb3Bg" annotatedElement="_uh6W0IFKEeieQ4zKGFzYtQ">
-              <body>measurementInterval - Interval over which the usage measures are being reported. The allowed intervals to be integral number of minutes that evenly divide 60 minutes.  So, allowed intervals would be 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, and 60 minutes or the parameter to be specified in seconds (e.g., 60, 120, 180, 240, 300, 360, 600, 720, 900, 1200, 1800, and 3600 seconds). &#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_xB0HwIFKEeieQ4zKGFzYtQ" name="memoryUsageArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xB0HwIFKEeieQ4zKGFzYtQ" name="memoryUsageArray" type="_bco-wLBgEeix4eA61SHRMQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_bLy0wJGzEeiUeLUnFxb3Bg" annotatedElement="_xB0HwIFKEeieQ4zKGFzYtQ">
-              <body>memoryUsageArray - Memory usage of an array of VMs&#xD;
+              <body>Memory usage of an array of VMs&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4b7QMLBuEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4cAvwLBuEeix4eA61SHRMQ" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_xj0ooIFKEeieQ4zKGFzYtQ" name="nfcScalingMetric">
             <ownedComment xmi:type="uml:Comment" xmi:id="_d3kegJGzEeiUeLUnFxb3Bg" annotatedElement="_xj0ooIFKEeieQ4zKGFzYtQ">
-              <body>nfcScalingMetric - Represents busy-ness of the network function from 0 to 100 as reported by the nfc.&#xD;
+              <body>Represents busy-ness of the network function from 0 to 100 as reported by the nfc.&#xD;
 </body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A1XAULBvEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A1fjMLBvEeix4eA61SHRMQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zM3qEIFKEeieQ4zKGFzYtQ" name="nicPerformanceArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zM3qEIFKEeieQ4zKGFzYtQ" name="nicPerformanceArray" type="_cp9IoLBvEeix4eA61SHRMQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_i0u8EJGzEeiUeLUnFxb3Bg" annotatedElement="_zM3qEIFKEeieQ4zKGFzYtQ">
-              <body>nicPerformanceArray - Performance metrics of an array of network interface cards.&#xD;
+              <body>Performance metrics of an array of network interface cards.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_bqn7QJGyEeiUeLUnFxb3Bg" name="numberOfMediaPortsInUse">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hFwRwJGzEeiUeLUnFxb3Bg" annotatedElement="_bqn7QJGyEeiUeLUnFxb3Bg">
-              <body>numberOfMediaPortsInUse - Number of media ports in use.&#xD;
+              <body>Number of media ports in use.&#xD;
 </body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ciU_UJGyEeiUeLUnFxb3Bg" name="processStatsArray">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ciU_UJGyEeiUeLUnFxb3Bg" name="processStatsArray" type="_9xbHMLHMEeid-vjMcczUWA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_npjV8JGzEeiUeLUnFxb3Bg" annotatedElement="_ciU_UJGyEeiUeLUnFxb3Bg">
-              <body>processStatsArray - Array of metrics on system processes&#xD;
+              <body>Array of metrics on system processes&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPOAELHOEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPTfoLHOEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dGL6UJGyEeiUeLUnFxb3Bg" name="requestRate">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dGL6UJGyEeiUeLUnFxb3Bg" name="requestRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_pb75kJGzEeiUeLUnFxb3Bg" annotatedElement="_dGL6UJGyEeiUeLUnFxb3Bg">
-              <body>requestRate - Peak request rate per second, for the VM over the measurementInterval&#xD;
+              <body>Peak request rate per second, for the VM over the measurementInterval&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
@@ -1719,7 +1684,7 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sl3TYJQuEei6kI-JPNdeuw" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="__TMVMJQuEei6kI-JPNdeuw" annotatedElement="_sl3TYJQuEei6kI-JPNdeuw">
-              <body>additionalFields - Additional notification fields if needed.&#xD;
+              <body>Additional notification fields if needed.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZRQ0JQ5Eei6kI-JPNdeuw"/>
@@ -1735,7 +1700,7 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vThMcJQuEei6kI-JPNdeuw" name="changeContact">
             <ownedComment xmi:type="uml:Comment" xmi:id="_PJb1IJQvEei6kI-JPNdeuw" annotatedElement="_vThMcJQuEei6kI-JPNdeuw">
-              <body>changeContact - Identifier for a contact related to the change.&#xD;
+              <body>Identifier for a contact related to the change.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1744,65 +1709,64 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vxL_4JQuEei6kI-JPNdeuw" name="changeIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_3pfjcJQvEei6kI-JPNdeuw" annotatedElement="_vxL_4JQuEei6kI-JPNdeuw">
-              <body>changeIdentifier - System or session identifier associated with the change.&#xD;
+              <body>System or session identifier associated with the change.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_wyu8cJQuEei6kI-JPNdeuw" name="chnageType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_549EoJQvEei6kI-JPNdeuw" annotatedElement="_wyu8cJQuEei6kI-JPNdeuw">
-              <body>changeType - Identifies what has changed for entity. &#xD;
-e.g., auto discovery. configuration changed, capability added, capability removed, capability changed, etc.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_grAmMLX0EeiFDLhMCq9-Iw" annotatedElement="_wyu8cJQuEei6kI-JPNdeuw">
+              <body>Describes what has changed for the entity, for example: configuration changed, capability added, capability removed…</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_xhv-kJQuEei6kI-JPNdeuw" name="newState" type="_VZxGkJQ2Eei6kI-JPNdeuw">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_9k38wJQvEei6kI-JPNdeuw" annotatedElement="_xhv-kJQuEei6kI-JPNdeuw">
-              <body>newState - new state of the entity, for Configuration it could be if change was complete or partial etc.&#xD;
-&#xD;
-For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&quot;, &quot;completed&quot;, &quot;partial&quot; (for configuration changes)&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mLEVcLX0EeiFDLhMCq9-Iw" annotatedElement="_xhv-kJQuEei6kI-JPNdeuw">
+              <body>New state of the entity, for example: ‘inService’, ‘maintenance’, ‘outOfService’</body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d2lE0LX2EeiFDLhMCq9-Iw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d2ovMLX2EeiFDLhMCq9-Iw" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yW6sAJQuEei6kI-JPNdeuw" name="notificationFieldsVersion" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_AGSwoJQwEei6kI-JPNdeuw" annotatedElement="_yW6sAJQuEei6kI-JPNdeuw">
-              <body>notificationFieldsVersion - Version of the notificationFields block.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pXyJELX0EeiFDLhMCq9-Iw" annotatedElement="_yW6sAJQuEei6kI-JPNdeuw">
+              <body>Version of the notificationFields block as “#.#” where # is a digit; see section 1 for the correct digits to use. </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_y4u_oJQuEei6kI-JPNdeuw" name="oldState" type="_VZxGkJQ2Eei6kI-JPNdeuw">
             <ownedComment xmi:type="uml:Comment" xmi:id="_m_mjkJQwEei6kI-JPNdeuw" annotatedElement="_y4u_oJQuEei6kI-JPNdeuw">
-              <body>oldState - Previous state of the entity.&#xD;
+              <body>Previous state of the entity.&#xD;
 &#xD;
 For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&quot;&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ay9i0LX2EeiFDLhMCq9-Iw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_azCbULX2EeiFDLhMCq9-Iw" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_zZIW8JQuEei6kI-JPNdeuw" name="stateInterface">
             <ownedComment xmi:type="uml:Comment" xmi:id="_omCV4JQwEei6kI-JPNdeuw" annotatedElement="_zZIW8JQuEei6kI-JPNdeuw">
-              <body>stateInterface - Card or port name of the entity that changed state.&#xD;
+              <body>Card or port name of the entity that changed state.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XwepQLX2EeiFDLhMCq9-Iw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XwsrsLX2EeiFDLhMCq9-Iw" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_0fwW0H7wEeifJIHxnlj6Cg" name="OtherFields">
           <ownedComment xmi:type="uml:Comment" xmi:id="_cIx1oJc-Eeis0eUbsDSw0w" annotatedElement="_0fwW0H7wEeifJIHxnlj6Cg">
-            <body>otherFields - The otherFields datatype defines fields for events belonging to the 'other' domain of the commonEventHeader domain enumeration.&#xD;
+            <body>The otherFields datatype defines fields for events belonging to the 'other' domain of the commonEventHeader domain enumeration.&#xD;
 </body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_V7c6gJQ6Eei6kI-JPNdeuw" name="arrayofNamedHashMap" type="_sOvPAJQ9Eei6kI-JPNdeuw">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_d6C-8Jc-Eeis0eUbsDSw0w" annotatedElement="_V7c6gJQ6Eei6kI-JPNdeuw">
-              <body>arrayOfNamedHashMap - Array of named name-value-pair arrays.&#xD;
-</body>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_R9EqwLX3EeiFDLhMCq9-Iw" annotatedElement="_V7c6gJQ6Eei6kI-JPNdeuw">
+              <body>Array of named hashMaps</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w8QRkJQ-Eei6kI-JPNdeuw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w8XmUJQ-Eei6kI-JPNdeuw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_WgXlcJQ6Eei6kI-JPNdeuw" name="hashMap" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_fo6UgJc-Eeis0eUbsDSw0w" annotatedElement="_WgXlcJQ6Eei6kI-JPNdeuw">
-              <body>hashMap - Array of name-value pairs.&#xD;
+              <body>Array of name-value pairs.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7awQwJQ-Eei6kI-JPNdeuw"/>
@@ -1810,15 +1774,15 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_XKQ3AJQ6Eei6kI-JPNdeuw" name="jsonObjects" type="__ENUcJaTEeiGg_moIHe9Sw">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hjIlgJc-Eeis0eUbsDSw0w" annotatedElement="_XKQ3AJQ6Eei6kI-JPNdeuw">
-              <body>jsonObjects - Array of JSON objects described by name, schema and other meta-information.&#xD;
+              <body>Array of JSON objects described by name, schema and other meta-information.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_XxkHkJQ6Eei6kI-JPNdeuw" name="otherFieldsVersion" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_jM1HMJc-Eeis0eUbsDSw0w" annotatedElement="_XxkHkJQ6Eei6kI-JPNdeuw">
-              <body>otherFieldsVersion - Version of the otherFields block.&#xD;
-</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XxkHkJQ6Eei6kI-JPNdeuw" name="otherFieldsVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_X-h24LX3EeiFDLhMCq9-Iw" annotatedElement="_XxkHkJQ6Eei6kI-JPNdeuw">
+              <body>Version of the otherFields block as “#.#” where # is a digit; see section 1 for the correct digits to use. </body>
             </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_1spnwH7wEeifJIHxnlj6Cg" name="PnfRegistration">
@@ -2114,73 +2078,56 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_BTMpUIbiEei-x_BD9U-ssQ" name="CpuUsage">
           <ownedComment xmi:type="uml:Comment" xmi:id="_HrCVIIbiEei-x_BD9U-ssQ" annotatedElement="_BTMpUIbiEei-x_BD9U-ssQ">
-            <body>cpuUsage - The cpuUsage datatype defines the usage of an identifier CPU.&#xD;
+            <body>The cpuUsage datatype defines the usage of an identifier CPU and consists of the following fields:&#xD;
 </body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_MAGQ4IbiEei-x_BD9U-ssQ" name="cpuUsageNice" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MAGQ4IbiEei-x_BD9U-ssQ" name="cpuCapacityContention" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_TJHuMIj0EeiddpojVtQ0Hg" annotatedElement="_MAGQ4IbiEei-x_BD9U-ssQ">
-              <body>cpuUsageNice - Percentage of time spent running user space processes that have been &quot;niced&quot;.&#xD;
+              <body>The amount of time the CPU cannot run due to contention, in milliseconds over the measurementInterval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9DZEMIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9DdVoIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_NvX2IIbiEei-x_BD9U-ssQ" name="cpuWaitTime" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NvX2IIbiEei-x_BD9U-ssQ" name="cpuDemandAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_QPl8UIj0EeiddpojVtQ0Hg" annotatedElement="_NvX2IIbiEei-x_BD9U-ssQ">
-              <body>cpuSwapWaitTime - Swap wait time, in milliseconds over the measurementInterval.&#xD;
+              <body>The total CPU time that the NF/NFC/VM could use if there was no contention, in milliseconds over the measurementInterval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8TwXAIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8T1PgIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OUgjgIbiEei-x_BD9U-ssQ" name="cpuOverheadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_OQbg8Ij0EeiddpojVtQ0Hg" annotatedElement="_OUgjgIbiEei-x_BD9U-ssQ">
-              <body>cpuOverheadAvg - The overhead demand above available allocations and reservations, in milliseconds over the measurementInterval.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7hLqkIblEei-x_BD9U-ssQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7hPU8IblEei-x_BD9U-ssQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_QoSkAIbiEei-x_BD9U-ssQ" name="cpuLatencyAverage" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QoSkAIbiEei-x_BD9U-ssQ" name="cpuDemandMhz" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_MQwvQIj0EeiddpojVtQ0Hg" annotatedElement="_QoSkAIbiEei-x_BD9U-ssQ">
-              <body>cpuLatencyAverage - Percentage of time the VM is unable to run because it is contending for access to the physical CPUs.&#xD;
+              <body>CPU demand in MHz&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5CgBoIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5CjsAIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_S7iZAIbiEei-x_BD9U-ssQ" name="cpuIdle" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_S7iZAIbiEei-x_BD9U-ssQ" name="cpuDemandPct" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ScrUYIjzEeiddpojVtQ0Hg" annotatedElement="_S7iZAIbiEei-x_BD9U-ssQ">
-              <body>cpuIdle - Percentage of CPU time spent in the idle task.&#xD;
-</body>
+              <body>CPU demand as a percentage of the provisioned capacity</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4HfK4IblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4HlRgIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TdtR8IbiEei-x_BD9U-ssQ" name="cpuIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_OA8I4IjzEeiddpojVtQ0Hg" annotatedElement="_TdtR8IbiEei-x_BD9U-ssQ">
-              <body>cpuIdentifier - CPU Identifier&#xD;
+              <body>CPU Identifier&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UCGYcIbiEei-x_BD9U-ssQ" name="cpuDemandPct" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UCGYcIbiEei-x_BD9U-ssQ" name="cpuIdle" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LApAoIjzEeiddpojVtQ0Hg" annotatedElement="_UCGYcIbiEei-x_BD9U-ssQ">
-              <body>cpuDemandPct - CPU demand as a percentage of the provisioned capacity.&#xD;
+              <body>Percentage of CPU time spent in the idle task&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19NEoIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19RWEIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UgaFEIbiEei-x_BD9U-ssQ" name="cpuDemandMhz" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_IxPw4IjzEeiddpojVtQ0Hg" annotatedElement="_UgaFEIbiEei-x_BD9U-ssQ">
-              <body>cpuDemandMhz - CPU demand in megahertz (MHz). For comparison in computing powers, processors of &quot;x Core CPU @ y GHz&quot; (like 6 Core CPU @ 2 GHz) are commonly converted into scalar values in MHz. With CPU demand in MHz, choosing an adequate processor to add becomes easy.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zR-0gIblEei-x_BD9U-ssQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zSDtAIblEei-x_BD9U-ssQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VASfAIbiEei-x_BD9U-ssQ" name="cpuDemandingAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VASfAIbiEei-x_BD9U-ssQ" name="cpuLatencyAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_F6JA4IjzEeiddpojVtQ0Hg" annotatedElement="_VASfAIbiEei-x_BD9U-ssQ">
               <body>cpuDemandAvg - The total CPU time that the VNF/VNFC/VM could use if there is no contention, in milliseconds.&#xD;
 </body>
@@ -2188,69 +2135,90 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4J0YEIbjEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4J7s0IbjEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ViLEEIbiEei-x_BD9U-ssQ" name="cpuCapacityContention" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ViLEEIbiEei-x_BD9U-ssQ" name="cpuOverheadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Bp7v8IjzEeiddpojVtQ0Hg" annotatedElement="_ViLEEIbiEei-x_BD9U-ssQ">
-              <body>cpuCapacityContention - The amount of time the CPU cannot run due to centention, in milliseconds.&#xD;
+              <body>The overhead demand above available allocations and reservations, in milliseconds over the measurementInterval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5uEZEIbjEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5uJ4oIbjEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WBJfEIbiEei-x_BD9U-ssQ" name="cpuUsgeSoftIrq" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WBJfEIbiEei-x_BD9U-ssQ" name="cpuSwapWaitTime" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_PbCbcIkLEeiddpojVtQ0Hg" annotatedElement="_WBJfEIbiEei-x_BD9U-ssQ">
-              <body>cpuUsageSoftIrq - Percentage of time spent handling soft irq interrupts.&#xD;
+              <body>Swap wait time, in milliseconds over the measurementInterval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_93PjAIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_93UbgIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WZyBgIbiEei-x_BD9U-ssQ" name="cpuUsageSteal" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WZyBgIbiEei-x_BD9U-ssQ" name="cpuUsageInterrupt" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_RjJ-gIkLEeiddpojVtQ0Hg" annotatedElement="_WZyBgIbiEei-x_BD9U-ssQ">
-              <body>cpuUsageSteal - Percentage of time spent in involuntary wait which is neither user, system or idle time and is effectively time that went missing.&#xD;
+              <body>Percentage of time spent servicing interrupts&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-khfwIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-km_UIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_W5dAEIbiEei-x_BD9U-ssQ" name="cpuUsageSystem" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W5dAEIbiEei-x_BD9U-ssQ" name="cpuUsageNice" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Ty7BsIkLEeiddpojVtQ0Hg" annotatedElement="_W5dAEIbiEei-x_BD9U-ssQ">
-              <body>cpuUsageSystem - Percentage of time spent on system tasks running the kernel.&#xD;
+              <body>Percentage of time spent running user space processes that have been niced&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__SvQoIblEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Sy7AIblEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_XgntwIbiEei-x_BD9U-ssQ" name="cpuUsageUser" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XgntwIbiEei-x_BD9U-ssQ" name="cpuUsageSoftIrq" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Vuc6QIkLEeiddpojVtQ0Hg" annotatedElement="_XgntwIbiEei-x_BD9U-ssQ">
-              <body>cpuUsageUser - Percentage of time spent running un-niced user space processes.&#xD;
-</body>
+              <body>&#xD;
+Percentage of time spent handling soft irq interrupts</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AGb-cIbmEei-x_BD9U-ssQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AGgP4IbmEei-x_BD9U-ssQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ku_sMIblEei-x_BD9U-ssQ" name="cpuWait" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Xj4K0IkLEeiddpojVtQ0Hg" annotatedElement="_ku_sMIblEei-x_BD9U-ssQ">
-              <body>cpuWait - Percentage of CPU time spent waiting for I/O operations to complete.&#xD;
-</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6cpsULHjEeid-vjMcczUWA" name="cpuUsageSteal" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NoOT4LHlEeid-vjMcczUWA" annotatedElement="_6cpsULHjEeid-vjMcczUWA">
+              <body>Percentage of time spent in involuntary wait which is neither user, system or idle time and is effectively time that went missing</body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B4TksIbmEei-x_BD9U-ssQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B4XPEIbmEei-x_BD9U-ssQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hxw20LHlEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hx1IQLHlEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_levHEIblEei-x_BD9U-ssQ" name="percentUsage" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ZgiEwIkLEeiddpojVtQ0Hg" annotatedElement="_levHEIblEei-x_BD9U-ssQ">
-              <body>percentUsage - Aggregate CPU usage of the virtual machine on which the VNFC reporting the event is running.&#xD;
-</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_91w9MLHjEeid-vjMcczUWA" name="cpuUsageSystem" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PYkQILHlEeid-vjMcczUWA" annotatedElement="_91w9MLHjEeid-vjMcczUWA">
+              <body>Percentage of time spent on system tasks running the kernel</body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hx5ZsLHlEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hx8dALHlEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-hWQ0LHjEeid-vjMcczUWA" name="cpuUsageUser" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_REj34LHlEeid-vjMcczUWA" annotatedElement="_-hWQ0LHjEeid-vjMcczUWA">
+              <body>Percentage of time spent running un-niced user space processes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hx-5QLHlEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HyBVgLHlEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_A67XULHkEeid-vjMcczUWA" name="cpuWait" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TPPmwLHlEeid-vjMcczUWA" annotatedElement="_A67XULHkEeid-vjMcczUWA">
+              <body>Percentage of CPU time spent waiting for I/O operations to complete</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HyEY0LHlEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HyG1ELHlEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BhkgkLHkEeid-vjMcczUWA" name="percentUsage" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_U0wzELHlEeid-vjMcczUWA" annotatedElement="_BhkgkLHkEeid-vjMcczUWA">
+              <body>Aggregate cpu usage of the virtual machine on which the xNFC reporting the event is running</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HyJRULHlEeid-vjMcczUWA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HyMUoLHlEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_kokBwIkOEeiddpojVtQ0Hg" name="DiskUsage">
           <ownedComment xmi:type="uml:Comment" xmi:id="_7TG1IIkQEeiddpojVtQ0Hg" annotatedElement="_kokBwIkOEeiddpojVtQ0Hg">
-            <body>diskUsage - The diskUsage datatype defines the usage of a disk device.&#xD;
+            <body>The diskUsage datatype defines the usage of a disk device.&#xD;
 </body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ppPGUIkOEeiddpojVtQ0Hg" name="diskBusResets" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_9SlZkIkQEeiddpojVtQ0Hg" annotatedElement="_ppPGUIkOEeiddpojVtQ0Hg">
-              <body>diskBusResets - The number of bus resets in the performance interval.&#xD;
+              <body>The number of bus resets in the performance interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kn6FAIkPEeiddpojVtQ0Hg"/>
@@ -2258,7 +2226,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_qoXoEIkOEeiddpojVtQ0Hg" name="diskCommandsAborted" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="__ucYAIkQEeiddpojVtQ0Hg" annotatedElement="_qoXoEIkOEeiddpojVtQ0Hg">
-              <body>diskCommandsAborted - Number of disk commands aborted over the measurementInterval.&#xD;
+              <body>Number of disk commands aborted over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sb388IkQEeiddpojVtQ0Hg"/>
@@ -2266,7 +2234,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_wNHDAIkOEeiddpojVtQ0Hg" name="diskCommandsAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_BmPAEIkREeiddpojVtQ0Hg" annotatedElement="_wNHDAIkOEeiddpojVtQ0Hg">
-              <body>diskCommandsAvg - Average number of commands per second over the measurementInterval.&#xD;
+              <body>Average number of commands per second over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TvHtgIkQEeiddpojVtQ0Hg"/>
@@ -2274,7 +2242,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_w4b38IkOEeiddpojVtQ0Hg" name="diskFlushRequests" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Dj94EIkREeiddpojVtQ0Hg" annotatedElement="_w4b38IkOEeiddpojVtQ0Hg">
-              <body>diskFlushRequests - Total flush requests of the disk cache over the measurementInterval.&#xD;
+              <body>Total flush requests of the disk cache over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uxo6cIkQEeiddpojVtQ0Hg"/>
@@ -2282,7 +2250,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yfCCUIkOEeiddpojVtQ0Hg" name="diskFlushTime" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_IYog8IkREeiddpojVtQ0Hg" annotatedElement="_yfCCUIkOEeiddpojVtQ0Hg">
-              <body>diskFlushTime - Milliseconds spent on disk cache flushing over the measurementInterval.&#xD;
+              <body>Milliseconds spent on disk cache flushing over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V1NQQIkQEeiddpojVtQ0Hg"/>
@@ -2290,27 +2258,34 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1Lm9UIkOEeiddpojVtQ0Hg" name="diskIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_KSovgIkREeiddpojVtQ0Hg" annotatedElement="_1Lm9UIkOEeiddpojVtQ0Hg">
-              <body>diskIdentifier - Disk Identifier.&#xD;
+              <body>Disk Identifier.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_2RzwYIkOEeiddpojVtQ0Hg" name="diskIoTimeAvg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2RzwYIkOEeiddpojVtQ0Hg" name="diskIoTimeAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Ov-IoLHxEeid-vjMcczUWA" annotatedElement="_2RzwYIkOEeiddpojVtQ0Hg">
+              <body>Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms  matches 100% load; provide the average over the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3Y4GIIkOEeiddpojVtQ0Hg" name="diskIoTimeLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_1yOCoIkUEeiddpojVtQ0Hg" annotatedElement="_3Y4GIIkOEeiddpojVtQ0Hg">
-              <body>diskIoTimeLast - Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms matches 100% load; provide the last value measurement within the measurement interval.&#xD;
+              <body>Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms matches 100% load; provide the last value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1-QcIkUEeiddpojVtQ0Hg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O2IBcIkUEeiddpojVtQ0Hg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4OwlQIkOEeiddpojVtQ0Hg" name="diskIoTimeMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7Tou8LH0Eeid-vjMcczUWA" annotatedElement="_4OwlQIkOEeiddpojVtQ0Hg">
+              <body>Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms  matches 100% load; provide the maximum value measurement within the measurement interval</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O2PWMIkUEeiddpojVtQ0Hg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O2WD4IkUEeiddpojVtQ0Hg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5Dd_sIkOEeiddpojVtQ0Hg" name="diskIoTimeMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_7VjvYIkUEeiddpojVtQ0Hg" annotatedElement="_5Dd_sIkOEeiddpojVtQ0Hg">
-              <body>diskIoTimeMin - Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms  matches 100% load; provide the minimum value measurement within the measurement interval.&#xD;
+              <body>Milliseconds spent doing input/output operations over 1 sec; treat this metric as a device load percentage where 1000ms  matches 100% load; provide the minimum value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O2a8YIkUEeiddpojVtQ0Hg"/>
@@ -2318,7 +2293,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_7AlzsIkOEeiddpojVtQ0Hg" name="diskMergedReadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_9pbPcIkUEeiddpojVtQ0Hg" annotatedElement="_7AlzsIkOEeiddpojVtQ0Hg">
-              <body>diskMergedReadAvg - Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the average measurement within the measurement interval.&#xD;
+              <body>Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O2ktYIkUEeiddpojVtQ0Hg"/>
@@ -2326,7 +2301,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8ZLXQIkOEeiddpojVtQ0Hg" name="diskMergedReadLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_BygksIkVEeiddpojVtQ0Hg" annotatedElement="_8ZLXQIkOEeiddpojVtQ0Hg">
-              <body>diskMergedReadLast - Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the last value measurement within the measurement interval.&#xD;
+              <body>Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the last value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O2ueYIkUEeiddpojVtQ0Hg"/>
@@ -2334,7 +2309,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9A--IIkOEeiddpojVtQ0Hg" name="diskMergedReadMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_D1QfkIkVEeiddpojVtQ0Hg" annotatedElement="_9A--IIkOEeiddpojVtQ0Hg">
-              <body>diskMergedReadMax - Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the maximum value measurement within the measurement interval.&#xD;
+              <body>Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the maximum value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O23oUIkUEeiddpojVtQ0Hg"/>
@@ -2342,7 +2317,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9tdCkIkOEeiddpojVtQ0Hg" name="diskMergedReadMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_FqYOIIkVEeiddpojVtQ0Hg" annotatedElement="_9tdCkIkOEeiddpojVtQ0Hg">
-              <body>diskMergedReadMin - Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the minimum value measurement within the measurement interval.&#xD;
+              <body>Number of logical read operations that were merged into physical read operations, e.g., two logical reads were served by one physical disk access; provide the minimum value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQwQ0IkUEeiddpojVtQ0Hg"/>
@@ -2350,7 +2325,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-TDC8IkOEeiddpojVtQ0Hg" name="diskMergedWriteAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hLy7wIkVEeiddpojVtQ0Hg" annotatedElement="_-TDC8IkOEeiddpojVtQ0Hg">
-              <body>diskMergedWriteAvg - Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the average measurement within the measurement interval&#xD;
+              <body>Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the average measurement within the measurement interval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RRCksIkUEeiddpojVtQ0Hg"/>
@@ -2358,7 +2333,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__B-lgIkOEeiddpojVtQ0Hg" name="diskMergedWriteLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_iz3FwIkVEeiddpojVtQ0Hg" annotatedElement="__B-lgIkOEeiddpojVtQ0Hg">
-              <body>diskMergedWriteLast - Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the last value measurement within the measurement interval.&#xD;
+              <body>Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the last value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RRTqcIkUEeiddpojVtQ0Hg"/>
@@ -2366,7 +2341,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__zZbYIkOEeiddpojVtQ0Hg" name="diskMergedWriteMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_kexIYIkVEeiddpojVtQ0Hg" annotatedElement="__zZbYIkOEeiddpojVtQ0Hg">
-              <body>diskMergedWriteMax - Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the maximum value measurement within the measurement interval.&#xD;
+              <body>Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the maximum value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RRt6IIkUEeiddpojVtQ0Hg"/>
@@ -2374,7 +2349,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_EC_BQIkPEeiddpojVtQ0Hg" name="diskMergedWriteMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_mZo5oIkVEeiddpojVtQ0Hg" annotatedElement="_EC_BQIkPEeiddpojVtQ0Hg">
-              <body>diskMergedWriteMin - Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the minimum value measurement within the measurement interval.&#xD;
+              <body>Number of logical write operations that were merged into physical write operations, e.g., two logical writes were served by one physical disk access; provide the minimum value measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RSAOAIkUEeiddpojVtQ0Hg"/>
@@ -2382,7 +2357,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FCgkkIkPEeiddpojVtQ0Hg" name="diskOctetsReadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_pOOhIIkVEeiddpojVtQ0Hg" annotatedElement="_FCgkkIkPEeiddpojVtQ0Hg">
-              <body>diskOctetsReadAvg - Number of octets per second read from a disk or partition; provide the average measurement within the measurement interval.&#xD;
+              <body>Number of octets per second read from a disk or partition; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RSRTwIkUEeiddpojVtQ0Hg"/>
@@ -2390,7 +2365,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FwTesIkPEeiddpojVtQ0Hg" name="diskOctetsReadLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_q6AtgIkVEeiddpojVtQ0Hg" annotatedElement="_FwTesIkPEeiddpojVtQ0Hg">
-              <body>diskOctetsReadLast - Number of octets per second read from a disk or partition; provide the last measurement within the measurement interval&#xD;
+              <body>Number of octets per second read from a disk or partition; provide the last measurement within the measurement interval&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RSiZgIkUEeiddpojVtQ0Hg"/>
@@ -2398,7 +2373,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_GinscIkPEeiddpojVtQ0Hg" name="diskOctetsReadMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_slibMIkVEeiddpojVtQ0Hg" annotatedElement="_GinscIkPEeiddpojVtQ0Hg">
-              <body>diskOctetsReadMax - Number of octets per second read from a disk or partition; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Number of octets per second read from a disk or partition; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RSyRIIkUEeiddpojVtQ0Hg"/>
@@ -2406,7 +2381,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IbFC4IkPEeiddpojVtQ0Hg" name="diskOctetsReadMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_uUXUgIkVEeiddpojVtQ0Hg" annotatedElement="_IbFC4IkPEeiddpojVtQ0Hg">
-              <body>diskOctetsReadMin - Number of octets per second read from a disk or partition; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Number of octets per second read from a disk or partition; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTDW4IkUEeiddpojVtQ0Hg"/>
@@ -2414,7 +2389,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JLOtcIkPEeiddpojVtQ0Hg" name="diskOctetsWriteAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_xFL2UIkVEeiddpojVtQ0Hg" annotatedElement="_JLOtcIkPEeiddpojVtQ0Hg">
-              <body>diskOctetsWriteAvg - Number of octets per second written to a disk or partition; provide the average measurement within the measurement interval.&#xD;
+              <body>Number of octets per second written to a disk or partition; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTUcoIkUEeiddpojVtQ0Hg"/>
@@ -2422,7 +2397,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Jxv64IkPEeiddpojVtQ0Hg" name="diskOctetsWriteLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_yrRDUIkVEeiddpojVtQ0Hg" annotatedElement="_Jxv64IkPEeiddpojVtQ0Hg">
-              <body>diskOctetsWriteLast - Number of octets per second written to a disk or partition; provide the last measurement within the measurement interval.&#xD;
+              <body>Number of octets per second written to a disk or partition; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTk7UIkUEeiddpojVtQ0Hg"/>
@@ -2430,7 +2405,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KVHGoIkPEeiddpojVtQ0Hg" name="diskOctetsWriteMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_0NzNEIkVEeiddpojVtQ0Hg" annotatedElement="_KVHGoIkPEeiddpojVtQ0Hg">
-              <body>diskOctetsWriteMax - Number of octets per second written to a disk or partition; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Number of octets per second written to a disk or partition; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RT32QIkUEeiddpojVtQ0Hg"/>
@@ -2438,7 +2413,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Dy0FAIkUEeiddpojVtQ0Hg" name="diskOctetsWriteMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_1__jcIkVEeiddpojVtQ0Hg" annotatedElement="_Dy0FAIkUEeiddpojVtQ0Hg">
-              <body>diskOctetsWriteMin - Number of octets per second written to a disk or partition; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Number of octets per second written to a disk or partition; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RUIU8IkUEeiddpojVtQ0Hg"/>
@@ -2446,7 +2421,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9Ry9IIkVEeiddpojVtQ0Hg" name="diskOpsReadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_EHB6IIkXEeiddpojVtQ0Hg" annotatedElement="_9Ry9IIkVEeiddpojVtQ0Hg">
-              <body>diskOpsReadAvg - Number of read operations per second issued to the disk; provide the average measurement within the measurement interval.&#xD;
+              <body>Number of read operations per second issued to the disk; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bWdqoIkWEeiddpojVtQ0Hg"/>
@@ -2454,7 +2429,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-CmH8IkVEeiddpojVtQ0Hg" name="diskOpsReadLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_GMQhQIkXEeiddpojVtQ0Hg" annotatedElement="_-CmH8IkVEeiddpojVtQ0Hg">
-              <body>diskOpsReadLast - Number of read operations per second issued to the disk; provide the last measurement within the measurement interval.&#xD;
+              <body>Number of read operations per second issued to the disk; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bWp34IkWEeiddpojVtQ0Hg"/>
@@ -2462,7 +2437,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-u8QkIkVEeiddpojVtQ0Hg" name="diskOpsReadMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_H463YIkXEeiddpojVtQ0Hg" annotatedElement="_-u8QkIkVEeiddpojVtQ0Hg">
-              <body>diskOpsReadMax - Number of read operations per second issued to the disk; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Number of read operations per second issued to the disk; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bW03AIkWEeiddpojVtQ0Hg"/>
@@ -2470,7 +2445,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__9hjkIkVEeiddpojVtQ0Hg" name="diskOpsReadMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Jm6qQIkXEeiddpojVtQ0Hg" annotatedElement="__9hjkIkVEeiddpojVtQ0Hg">
-              <body>diskOpsReadMin - Number of read operations per second issued to the disk; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Number of read operations per second issued to the disk; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bW_PEIkWEeiddpojVtQ0Hg"/>
@@ -2478,7 +2453,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_AkT2wIkWEeiddpojVtQ0Hg" name="diskOpsWriteAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LcwxkIkXEeiddpojVtQ0Hg" annotatedElement="_AkT2wIkWEeiddpojVtQ0Hg">
-              <body>diskOpsWriteAvg - Number of write operations per second issued to the disk; provide the average measurement within the measurement interval.&#xD;
+              <body>Number of write operations per second issued to the disk; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bXK1QIkWEeiddpojVtQ0Hg"/>
@@ -2486,7 +2461,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Bt4t8IkWEeiddpojVtQ0Hg" name="diskOpsWriteLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NFWgAIkXEeiddpojVtQ0Hg" annotatedElement="_Bt4t8IkWEeiddpojVtQ0Hg">
-              <body>diskOpsWriteLast - Number of write operations per second issued to the disk; provide the last measurement within the measurement interval.&#xD;
+              <body>Number of write operations per second issued to the disk; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bXVNUIkWEeiddpojVtQ0Hg"/>
@@ -2494,7 +2469,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_CafVQIkWEeiddpojVtQ0Hg" name="diskOpsWriteMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Opo9QIkXEeiddpojVtQ0Hg" annotatedElement="_CafVQIkWEeiddpojVtQ0Hg">
-              <body>diskOpsWriteMax - Number of write operations per second issued to the disk; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Number of write operations per second issued to the disk; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bXflYIkWEeiddpojVtQ0Hg"/>
@@ -2502,7 +2477,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_DCfJYIkWEeiddpojVtQ0Hg" name="diskOpsWriteMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_QVR_sIkXEeiddpojVtQ0Hg" annotatedElement="_DCfJYIkWEeiddpojVtQ0Hg">
-              <body>diskOpsWriteMin - Number of write operations per second issued to the disk; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Number of write operations per second issued to the disk; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bXrLkIkWEeiddpojVtQ0Hg"/>
@@ -2510,7 +2485,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_zlPGUIkXEeiddpojVtQ0Hg" name="diskPendingOperationsAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LxM7EIkYEeiddpojVtQ0Hg" annotatedElement="_zlPGUIkXEeiddpojVtQ0Hg">
-              <body>diskPendingOperationsAvg - Queue size of pending I/O operations per second; provide the average measurement within the measurement interval.&#xD;
+              <body>Queue size of pending I/O operations per second; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IN-r8IkYEeiddpojVtQ0Hg"/>
@@ -2518,7 +2493,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0yvbQIkXEeiddpojVtQ0Hg" name="diskPendingOperationsLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NoudYIkYEeiddpojVtQ0Hg" annotatedElement="_0yvbQIkXEeiddpojVtQ0Hg">
-              <body>diskPendingOperationsLast - Queue size of pending I/O operations per second; provide the last measurement within the measurement interval.&#xD;
+              <body>Queue size of pending I/O operations per second; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IOHO0IkYEeiddpojVtQ0Hg"/>
@@ -2526,7 +2501,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1kvf8IkXEeiddpojVtQ0Hg" name="diskPendingOperationsMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_POUiMIkYEeiddpojVtQ0Hg" annotatedElement="_1kvf8IkXEeiddpojVtQ0Hg">
-              <body>diskPendingOperationsMax - Queue size of pending I/O operations per second; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Queue size of pending I/O operations per second; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IOOjkIkYEeiddpojVtQ0Hg"/>
@@ -2542,7 +2517,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_W65zYIkYEeiddpojVtQ0Hg" name="diskReadCommandsAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_IQiaQIkkEeiddpojVtQ0Hg" annotatedElement="_W65zYIkYEeiddpojVtQ0Hg">
-              <body>diskReadCommandsAvg -Average number of read commands issued per second to the disk over the measurementInterval.&#xD;
+              <body>Average number of read commands issued per second to the disk over the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A4XS0IkkEeiddpojVtQ0Hg"/>
@@ -2550,7 +2525,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YYWo0IkYEeiddpojVtQ0Hg" name="diskTime" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_KyjrEIkkEeiddpojVtQ0Hg" annotatedElement="_YYWo0IkYEeiddpojVtQ0Hg">
-              <body>diskTime - Nanoseconds spent on disk cache reads/writes within the measurementInterval.&#xD;
+              <body>Nanoseconds spent on disk cache reads/writes within the measurementInterval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A4o_oIkkEeiddpojVtQ0Hg"/>
@@ -2558,14 +2533,14 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZJNeAIkYEeiddpojVtQ0Hg" name="diskTimeReadAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NsdQYIkkEeiddpojVtQ0Hg" annotatedElement="_ZJNeAIkYEeiddpojVtQ0Hg">
-              <body>diskTimeReadAvg - Milliseconds a read operation took to complete; provide the average measurement within the measurement interval.</body>
+              <body>Milliseconds a read operation took to complete; provide the average measurement within the measurement interval.</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A45eUIkkEeiddpojVtQ0Hg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A5BaIIkkEeiddpojVtQ0Hg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_aSI08IkYEeiddpojVtQ0Hg" name="diskTimeReadLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Qy1ygIkkEeiddpojVtQ0Hg" annotatedElement="_aSI08IkYEeiddpojVtQ0Hg">
-              <body>diskTimeReadLast - Milliseconds a read operation took to complete; provide the last measurement within the measurement interval.&#xD;
+              <body>Milliseconds a read operation took to complete; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5J9AIkkEeiddpojVtQ0Hg"/>
@@ -2573,7 +2548,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gsTcAIkYEeiddpojVtQ0Hg" name="diskTimeReadMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_StF4sIkkEeiddpojVtQ0Hg" annotatedElement="_gsTcAIkYEeiddpojVtQ0Hg">
-              <body>diskTimeReadMax - Milliseconds a read operation took to complete; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Milliseconds a read operation took to complete; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5cQ4IkkEeiddpojVtQ0Hg"/>
@@ -2581,7 +2556,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_hUHC4IkYEeiddpojVtQ0Hg" name="diskTimeReadMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_UoMTcIkkEeiddpojVtQ0Hg" annotatedElement="_hUHC4IkYEeiddpojVtQ0Hg">
-              <body>diskTimeReadMin - Milliseconds a read operation took to complete; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Milliseconds a read operation took to complete; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5tWoIkkEeiddpojVtQ0Hg"/>
@@ -2589,7 +2564,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_h2n6EIkYEeiddpojVtQ0Hg" name="diskTimeWriteAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_XeNeUIkkEeiddpojVtQ0Hg" annotatedElement="_h2n6EIkYEeiddpojVtQ0Hg">
-              <body>diskTimeWriteAvg - Milliseconds a write operation took to complete; provide the average measurement within the measurement interval.&#xD;
+              <body>Milliseconds a write operation took to complete; provide the average measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5_qgIkkEeiddpojVtQ0Hg"/>
@@ -2597,7 +2572,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_i0fQgIkYEeiddpojVtQ0Hg" name="diskTimeWriteLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ZT9fAIkkEeiddpojVtQ0Hg" annotatedElement="_i0fQgIkYEeiddpojVtQ0Hg">
-              <body>diskTimeWriteLast - Milliseconds a write operation took to complete; provide the last measurement within the measurement interval.&#xD;
+              <body>Milliseconds a write operation took to complete; provide the last measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6RXUIkkEeiddpojVtQ0Hg"/>
@@ -2605,7 +2580,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jXfP4IkYEeiddpojVtQ0Hg" name="diskTimeWriteMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_bANlcIkkEeiddpojVtQ0Hg" annotatedElement="_jXfP4IkYEeiddpojVtQ0Hg">
-              <body>diskTimeWriteMax - Milliseconds a write operation took to complete; provide the maximum measurement within the measurement interval.&#xD;
+              <body>Milliseconds a write operation took to complete; provide the maximum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6idEIkkEeiddpojVtQ0Hg"/>
@@ -2613,7 +2588,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_j36cYIkYEeiddpojVtQ0Hg" name="diskTimeWriteMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_c5fbQIkkEeiddpojVtQ0Hg" annotatedElement="_j36cYIkYEeiddpojVtQ0Hg">
-              <body>diskTimeWriteMin - Milliseconds a write operation took to complete; provide the minimum measurement within the measurement interval.&#xD;
+              <body>Milliseconds a write operation took to complete; provide the minimum measurement within the measurement interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A6y7wIkkEeiddpojVtQ0Hg"/>
@@ -2621,7 +2596,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_kYzi8IkYEeiddpojVtQ0Hg" name="diskTotalReadLatencyAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ebO60IkkEeiddpojVtQ0Hg" annotatedElement="_kYzi8IkYEeiddpojVtQ0Hg">
-              <body>diskTotalReadLatencyAvg - The average amount of time taken for a read from the perspective of a Guest OS. This is the sum of Kernel Read Latency and Physical Device Read Latency in milliseconds over the measurement interval. &#xD;
+              <body>The average amount of time taken for a read from the perspective of a Guest OS. This is the sum of Kernel Read Latency and Physical Device Read Latency in milliseconds over the measurement interval. &#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7EBgIkkEeiddpojVtQ0Hg"/>
@@ -2629,7 +2604,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_tfHmMIkjEeiddpojVtQ0Hg" name="diskTotalWriteLatencyAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_gr1rgIkkEeiddpojVtQ0Hg" annotatedElement="_tfHmMIkjEeiddpojVtQ0Hg">
-              <body>diskTotalWriteLatencyAvg - The average amount of time taken for a write from the perspective of a Guest OS. This is the sum of Kernel Write Latency and Physical Device Write Latency in milliseconds over the measurement interval. &#xD;
+              <body>The average amount of time taken for a write from the perspective of a Guest OS. This is the sum of Kernel Write Latency and Physical Device Write Latency in milliseconds over the measurement interval. &#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7VuUIkkEeiddpojVtQ0Hg"/>
@@ -2637,72 +2612,191 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_uaMHUIkjEeiddpojVtQ0Hg" name="diskWriteCommandsAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_iLrGkIkkEeiddpojVtQ0Hg" annotatedElement="_uaMHUIkjEeiddpojVtQ0Hg">
-              <body>diskWriteCommandsAvg - Average number of write commands issued per second to the disk during the collection interval.&#xD;
+              <body>Average number of write commands issued per second to the disk during the collection interval.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7mNAIkkEeiddpojVtQ0Hg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A7uv4IkkEeiddpojVtQ0Hg" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MFvaMLH1Eeid-vjMcczUWA" name="diskWeightedIoTimeAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mkJLoLH1Eeid-vjMcczUWA" annotatedElement="_MFvaMLH1Eeid-vjMcczUWA">
+              <body>Measure in ms over 1 sec of both I/O completion time and the backlog that may be accumulating. Value is the average within the collection interval.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rytgLH1Eeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4r4NELH1Eeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Nrny4LH1Eeid-vjMcczUWA" name="diskWeightedIoTimeLast" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_q9RvELH1Eeid-vjMcczUWA" annotatedElement="_Nrny4LH1Eeid-vjMcczUWA">
+              <body>Measure in ms over 1 sec of both I/O completion time and the backlog that may be accumulating. Value is the last within the collection interval.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4r73cLH1Eeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4r-TsLH1Eeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PTyqkLH1Eeid-vjMcczUWA" name="diskWeightedIoTimeMax" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_srdIILH1Eeid-vjMcczUWA" annotatedElement="_PTyqkLH1Eeid-vjMcczUWA">
+              <body>Measure in ms over 1 sec of both I/O completion time and the backlog that may be accumulating. Value is the maximum within the collection interval.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4sBXALH1Eeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4sFBYLH1Eeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_P7HJQLH1Eeid-vjMcczUWA" name="diskWeightedIoTimeMin" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_w4LnQLH1Eeid-vjMcczUWA" annotatedElement="_P7HJQLH1Eeid-vjMcczUWA">
+              <body>Measure in ms over 1 sec of both I/O completion time and the backlog that may be accumulating. Value is the minimum within the collection interval.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4sIEsLH1Eeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4sLvELH1Eeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QpWvULH1Eeid-vjMcczUWA" name="diskWriteCommandsAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1XZkkLH1Eeid-vjMcczUWA" annotatedElement="_QpWvULH1Eeid-vjMcczUWA">
+              <body>Average number of write commands issued per second to the disk over the measurementInterval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4sOyYLH1Eeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4sR1sLH1Eeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_i-TA4IklEeiddpojVtQ0Hg" name="FilesystemUsage">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ApMB4LH2Eeid-vjMcczUWA" annotatedElement="_i-TA4IklEeiddpojVtQ0Hg">
+            <body>The filesystemUsage datatype consists of the following fields:</body>
+          </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pTjSwIklEeiddpojVtQ0Hg" name="ephemeralConfigured" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_44GJQIkmEeiddpojVtQ0Hg" annotatedElement="_pTjSwIklEeiddpojVtQ0Hg">
-              <body>ephemeralConfigured - Configured ephemeral storage capacity in GB.&#xD;
+              <body>Configured ephemeral storage capacity in GB.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_qCL6YIklEeiddpojVtQ0Hg" name="filesysytemName">
             <ownedComment xmi:type="uml:Comment" xmi:id="_w7gGIIkmEeiddpojVtQ0Hg" annotatedElement="_qCL6YIklEeiddpojVtQ0Hg">
-              <body>filesystemName - File system name.&#xD;
+              <body>File system name.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_qub8YIklEeiddpojVtQ0Hg" name="blockConfigured" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ymdMEIkmEeiddpojVtQ0Hg" annotatedElement="_qub8YIklEeiddpojVtQ0Hg">
-              <body>blockConfigured - Configured block storage capacity in GB.&#xD;
+              <body>Configured block storage capacity in GB.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ra5ZwIklEeiddpojVtQ0Hg" name="blockops" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_1Qty4IkmEeiddpojVtQ0Hg" annotatedElement="_ra5ZwIklEeiddpojVtQ0Hg">
-              <body>blockIops - Block storage input-output operations per second.&#xD;
+              <body>Block storage input-output operations per second.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sFP-UIklEeiddpojVtQ0Hg" name="blockUsed" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_3AK-UIkmEeiddpojVtQ0Hg" annotatedElement="_sFP-UIklEeiddpojVtQ0Hg">
-              <body>blockUsed - Used block storage capacity in GB.&#xD;
+              <body>Used block storage capacity in GB.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_uF_uEIklEeiddpojVtQ0Hg" name="ephemerallops" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_7SM0MIkmEeiddpojVtQ0Hg" annotatedElement="_uF_uEIklEeiddpojVtQ0Hg">
-              <body>ephemeralIops - Ephemeral storage input-output operations per second.&#xD;
+              <body>Ephemeral storage input-output operations per second.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_u1_noIklEeiddpojVtQ0Hg" name="ephemeralUsed" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_882_MIkmEeiddpojVtQ0Hg" annotatedElement="_u1_noIklEeiddpojVtQ0Hg">
-              <body>ephemeralUsed - Used ephemeral storage capacity in GB.&#xD;
+              <body>Used ephemeral storage capacity in GB.&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_YT8fIIm2EeiOe-BKGdv_Yg" name="Ipmi">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dRL1MIm2EeiOe-BKGdv_Yg" name="ipmiFanArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_etCvMIm2EeiOe-BKGdv_Yg" name="ipmiBatteryArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fceBAIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardVoltageRegulatorAray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g6QNoIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardTemperatureArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_hj_HIIm2EeiOe-BKGdv_Yg" name="ioModuleTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iyBnkIm2EeiOe-BKGdv_Yg" name="frontPanelTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_j-UbkIm2EeiOe-BKGdv_Yg" name="exitAirTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lAj7sIm2EeiOe-BKGdv_Yg" name="ipmiGlobalAggregateTemperatureMarginarray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lzrasIm2EeiOe-BKGdv_Yg" name="ipmiHsbpArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mig2oIm2EeiOe-BKGdv_Yg" name="ipmiNicArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_n7IPYIm2EeiOe-BKGdv_Yg" name="ipmiPowerSupplyArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_okqUkIm2EeiOe-BKGdv_Yg" name="ipmiProcessorArray"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pOy2sIm2EeiOe-BKGdv_Yg" name="systemAirflow" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_VL-ysLIFEeid-vjMcczUWA" annotatedElement="_YT8fIIm2EeiOe-BKGdv_Yg">
+            <body>The ipmi (Intelligent Platform Management Interface) datatype provides intelligent platform management interface metrics; it consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dRL1MIm2EeiOe-BKGdv_Yg" name="ipmiFanArray" type="_xrBPELIZEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1_5fQLIGEeid-vjMcczUWA" annotatedElement="_dRL1MIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiFan objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NYLkLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NcdALIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_etCvMIm2EeiOe-BKGdv_Yg" name="ipmiBatteryArray" type="_wEFGcLIZEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0WeqYLIGEeid-vjMcczUWA" annotatedElement="_etCvMIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiBattery objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NOakLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NTTELIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fceBAIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardVoltageRegulatorArray" type="_CV008LIZEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yzd_gLIGEeid-vjMcczUWA" annotatedElement="_fceBAIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiBaseboard VoltageRegulator objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NEpkLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NKJILIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_g6QNoIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardTemperatureArray" type="_SGvQULIWEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_w5owELIGEeid-vjMcczUWA" annotatedElement="_g6QNoIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiBaseboard Temperature objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MyVsLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7M7foLIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hj_HIIm2EeiOe-BKGdv_Yg" name="ioModuleTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vaji8LIGEeid-vjMcczUWA" annotatedElement="_hj_HIIm2EeiOe-BKGdv_Yg">
+              <body>Io module temp in Celsius </body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MgB0LIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Mpy0LIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iyBnkIm2EeiOe-BKGdv_Yg" name="frontPanelTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_t6KHMLIGEeid-vjMcczUWA" annotatedElement="_iyBnkIm2EeiOe-BKGdv_Yg">
+              <body>Front panel temp in Celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MMf0LIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MW34LIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j-UbkIm2EeiOe-BKGdv_Yg" name="exitAirTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_r5hsMLIGEeid-vjMcczUWA" annotatedElement="_j-UbkIm2EeiOe-BKGdv_Yg">
+              <body>System fan exit air flow temperature in Celsius </body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tzQasLIWEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tzV6QLIWEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lAj7sIm2EeiOe-BKGdv_Yg" name="ipmiGlobalAggregateTemperatureMarginArray" type="__cHVgLIbEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3gAAELIGEeid-vjMcczUWA" annotatedElement="_lAj7sIm2EeiOe-BKGdv_Yg">
+              <body>ipmi global aggregate temperature margin</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NgucLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Nk_4LIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lzrasIm2EeiOe-BKGdv_Yg" name="ipmiHsbpArray" type="_car9oLIcEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5DgaMLIGEeid-vjMcczUWA" annotatedElement="_lzrasIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiHsbp objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NpRULIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7N03gLIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mig2oIm2EeiOe-BKGdv_Yg" name="ipmiNicArray" type="_dTJ2sLIcEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_61VkMLIGEeid-vjMcczUWA" annotatedElement="_mig2oIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiNic objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7N5I8LIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7N-ogLIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n7IPYIm2EeiOe-BKGdv_Yg" name="ipmiPowerSupplyArray" type="_d8MzsLIcEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_8MdIILIGEeid-vjMcczUWA" annotatedElement="_n7IPYIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiPowerSupply objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ODhALIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7OHycLIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_okqUkIm2EeiOe-BKGdv_Yg" name="ipmiProcessorArray" type="_ejgEQLIcEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9ijYYLIGEeid-vjMcczUWA" annotatedElement="_okqUkIm2EeiOe-BKGdv_Yg">
+              <body>Array of ipmiProcessor objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7OMD4LIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7OXqELIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pOy2sIm2EeiOe-BKGdv_Yg" name="systemAirflow" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-9NYgLIGEeid-vjMcczUWA" annotatedElement="_pOy2sIm2EeiOe-BKGdv_Yg">
+              <body>Airflow in cubic feet per minute (cfm)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7OcikLIYEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Og0ALIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_zCl6wImwEeiOe-BKGdv_Yg" name="HugePages">
           <ownedComment xmi:type="uml:Comment" xmi:id="_7c70YImxEeiOe-BKGdv_Yg" annotatedElement="_zCl6wImwEeiOe-BKGdv_Yg">
@@ -2711,7 +2805,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5wjnkImwEeiOe-BKGdv_Yg" name="bytesFree" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_etXRkImxEeiOe-BKGdv_Yg" annotatedElement="_5wjnkImwEeiOe-BKGdv_Yg">
-              <body>bytesFree - Number of free hugePages in bytes.&#xD;
+              <body>Number of free hugePages in bytes.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W38NcImxEeiOe-BKGdv_Yg"/>
@@ -2719,7 +2813,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_7sOqEImwEeiOe-BKGdv_Yg" name="bytesUsed" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_i2BJAImxEeiOe-BKGdv_Yg" annotatedElement="_7sOqEImwEeiOe-BKGdv_Yg">
-              <body>bytesUsed - Number of used hugePages in bytes.&#xD;
+              <body>Number of used hugePages in bytes.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W4GlgImxEeiOe-BKGdv_Yg"/>
@@ -2727,16 +2821,16 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8fCnEImwEeiOe-BKGdv_Yg" name="hugePagesIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_kttqcImxEeiOe-BKGdv_Yg" annotatedElement="_8fCnEImwEeiOe-BKGdv_Yg">
-              <body>hugePagesIdentifier - HugePages identifier&#xD;
+              <body>HugePages identifier&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W4SLsImxEeiOe-BKGdv_Yg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W4SLsImxEeiOe-BKGdv_Yg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W4XrQImxEeiOe-BKGdv_Yg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9NclMImwEeiOe-BKGdv_Yg" name="percentFree" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_maMaYImxEeiOe-BKGdv_Yg" annotatedElement="_9NclMImwEeiOe-BKGdv_Yg">
-              <body>percentFree - Number of free hugePages in percent.&#xD;
+              <body>Number of free hugePages in percent.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W4mUwImxEeiOe-BKGdv_Yg"/>
@@ -2744,7 +2838,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_-Wc0oImwEeiOe-BKGdv_Yg" name="percentused" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_oXrawImxEeiOe-BKGdv_Yg" annotatedElement="_-Wc0oImwEeiOe-BKGdv_Yg">
-              <body>percentUsed - Number of used hugePages in percent.&#xD;
+              <body>Number of used hugePages in percent.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W4ws0ImxEeiOe-BKGdv_Yg"/>
@@ -2752,7 +2846,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__92QQImwEeiOe-BKGdv_Yg" name="vmPageNumberFree" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_wLqUcImxEeiOe-BKGdv_Yg" annotatedElement="__92QQImwEeiOe-BKGdv_Yg">
-              <body>vmPageNumberFree - Number of free hugePages in numbers.&#xD;
+              <body>Number of free hugePages in numbers.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W46d0ImxEeiOe-BKGdv_Yg"/>
@@ -2760,7 +2854,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_AqOOEImxEeiOe-BKGdv_Yg" name="vmPageNumberUsed" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_umJvMImxEeiOe-BKGdv_Yg" annotatedElement="_AqOOEImxEeiOe-BKGdv_Yg">
-              <body>vmPageNumberUsed - Number of used hugePages in numbers.&#xD;
+              <body>Number of used hugePages in numbers.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W5E14ImxEeiOe-BKGdv_Yg"/>
@@ -2935,6 +3029,734 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QfPrIJaYEeiGg_moIHe9Sw" value="*"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zD-Z0KcHEeiFp-jDq2Hw-A" name="LatencyBucketMeasure">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_a_bM8KcNEeiFp-jDq2Hw-A" annotatedElement="_zD-Z0KcHEeiFp-jDq2Hw-A">
+            <body>The latencyBucketMeasure datatype consists of the following fields which describe the number of counts falling within a defined latency bucket</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7S8mYKcHEeiFp-jDq2Hw-A" name="countsInTheBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lgTHgKcJEeiFp-jDq2Hw-A" annotatedElement="_7S8mYKcHEeiFp-jDq2Hw-A">
+              <body>Number of counts falling within a defined latency bucket</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_76OBwKcHEeiFp-jDq2Hw-A" name="highEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_naHv4KcJEeiFp-jDq2Hw-A" annotatedElement="_76OBwKcHEeiFp-jDq2Hw-A">
+              <body>High end of bucket range (typically in ms)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qdcW8KcJEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qdjrsKcJEeiFp-jDq2Hw-A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8cpZYKcHEeiFp-jDq2Hw-A" name="lowEndOfLatencyBucket" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pOiT0KcJEeiFp-jDq2Hw-A" annotatedElement="_8cpZYKcHEeiFp-jDq2Hw-A">
+              <body>Low end of bucket range (typically in ms)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYsisKcJEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sY2TsKcJEeiFp-jDq2Hw-A" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_-7CVIKcMEeiFp-jDq2Hw-A" name="Load">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y3U4AKcNEeiFp-jDq2Hw-A" annotatedElement="_-7CVIKcMEeiFp-jDq2Hw-A">
+            <body>The load datatype provides metrics on system cpu and io utilization obtained using /proc/loadavg</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E2dKsKcNEeiFp-jDq2Hw-A" name="longTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TOSL4KcNEeiFp-jDq2Hw-A" annotatedElement="_E2dKsKcNEeiFp-jDq2Hw-A">
+              <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 15 minutes using /proc/loadavg</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dBRv8KcNEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dBX2kKcNEeiFp-jDq2Hw-A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FgDhUKcNEeiFp-jDq2Hw-A" name="midTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_U_m_kKcNEeiFp-jDq2Hw-A" annotatedElement="_FgDhUKcNEeiFp-jDq2Hw-A">
+              <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 5 minutes using /proc/loadavg</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eijVcKcNEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eioN8KcNEeiFp-jDq2Hw-A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GHjmMKcNEeiFp-jDq2Hw-A" name="shortTerm" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WhlIoKcNEeiFp-jDq2Hw-A" annotatedElement="_GHjmMKcNEeiFp-jDq2Hw-A">
+              <body>number of jobs in the run queue (state R, cpu utilization) or waiting for disk I/O (state D, io utilization) averaged over 1 minute using /proc/loadavg</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gXyYwKcNEeiFp-jDq2Hw-A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gYAbMKcNEeiFp-jDq2Hw-A" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qlX8oLBZEeix4eA61SHRMQ" name="MachineCheckException">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_QIXc4LBaEeix4eA61SHRMQ" annotatedElement="_qlX8oLBZEeix4eA61SHRMQ">
+            <body>The machineCheckException datatype describes machine check exceptions</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tp6RALBaEeix4eA61SHRMQ" name="correctedMemoryErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_HsrYELBcEeix4eA61SHRMQ" annotatedElement="_Tp6RALBaEeix4eA61SHRMQ">
+              <body>Total hardware errors that were corrected by the hardware (e.g. data corruption corrected via  ECC) over the measurementInterval. These errors do not require immediate software actions, but are still reported for accounting and predictive failure analysis</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EwWJ0LBcEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EweFoLBcEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U9IMYLBaEeix4eA61SHRMQ" name="correctedMemoryErrors In1Hr" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P_RgYLBcEeix4eA61SHRMQ" annotatedElement="_U9IMYLBaEeix4eA61SHRMQ">
+              <body>Total hardware errors that were corrected by the hardware over the last one hour</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mn0cYLBcEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MoBQsLBcEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vf1Q0LBaEeix4eA61SHRMQ" name="processIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XI0V8LBcEeix4eA61SHRMQ" annotatedElement="_Vf1Q0LBaEeix4eA61SHRMQ">
+              <body>processIdentifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WMZb4LBaEeix4eA61SHRMQ" name="uncorrectedMemoryErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bPoaULBcEeix4eA61SHRMQ" annotatedElement="_WMZb4LBaEeix4eA61SHRMQ">
+              <body>Total uncorrected hardware errors that were detected by the hardware (e.g., causing data corruption) over the measurementInterval.  These errors require a software response.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rIIuoLBdEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rIOOMLBdEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W8YuYLBaEeix4eA61SHRMQ" name="uncorrectedMemoryErrors In1Hr" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vRzSsLBdEeix4eA61SHRMQ" annotatedElement="_W8YuYLBaEeix4eA61SHRMQ">
+              <body>Total uncorrected hardware errors that were detected by the hardware over the last one hour</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tHy5QLBdEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tH6OALBdEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_bco-wLBgEeix4eA61SHRMQ" name="memoryUsage">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jCQsULBgEeix4eA61SHRMQ" name="memoryBuffered" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dyowULBhEeix4eA61SHRMQ" annotatedElement="_jCQsULBgEeix4eA61SHRMQ">
+              <body>Kibibytes of temporary storage for raw disk blocks</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bPO_cLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bPYwcLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kNgXcLBgEeix4eA61SHRMQ" name="memoryCached" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zwThgLBhEeix4eA61SHRMQ" annotatedElement="_kNgXcLBgEeix4eA61SHRMQ">
+              <body>Kibibytes of memory used for cache</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bPfeILBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bPmy4LBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_k2tFcLBgEeix4eA61SHRMQ" name="memoryConfigured" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CPd5wLBiEeix4eA61SHRMQ" annotatedElement="_k2tFcLBgEeix4eA61SHRMQ">
+              <body>Kibibytes of memory configured in the virtual machine on which the xNFC reporting the event is running</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bPuHoLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bP1cYLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lhzQ4LBgEeix4eA61SHRMQ" name="memoryDemand" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_U1dkgLBiEeix4eA61SHRMQ" annotatedElement="_lhzQ4LBgEeix4eA61SHRMQ">
+              <body>Host demand in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bP8xILBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQEF4LBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nxGaALBgEeix4eA61SHRMQ" name="memoryFree" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Z4CtkLBiEeix4eA61SHRMQ" annotatedElement="_nxGaALBgEeix4eA61SHRMQ">
+              <body>Kibibytes of physical RAM left unused by the system</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQLaoLBhEeix4eA61SHRMQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQZdELBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_olfrYLBgEeix4eA61SHRMQ" name="memoryLatencyAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jz6g0LBiEeix4eA61SHRMQ" annotatedElement="_olfrYLBgEeix4eA61SHRMQ">
+              <body>Percentage of time the VM is waiting to access swapped or compressed memory</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQh_8LBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQotoLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pMxGwLBgEeix4eA61SHRMQ" name="memorySharedAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ldSSYLBiEeix4eA61SHRMQ" annotatedElement="_pMxGwLBgEeix4eA61SHRMQ">
+              <body>Shared memory in kilobytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQwCYLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQ3XILBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_p20JULBgEeix4eA61SHRMQ" name="memorySlabRecl" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pOqSQLBiEeix4eA61SHRMQ" annotatedElement="_p20JULBgEeix4eA61SHRMQ">
+              <body>The part of the slab that can be reclaimed such as caches measured in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQ-r4LBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRGnsLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qiY14LBgEeix4eA61SHRMQ" name="memorySlabUnrecl" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__UlnkLBiEeix4eA61SHRMQ" annotatedElement="_qiY14LBgEeix4eA61SHRMQ">
+              <body>The part of the slab that cannot be reclaimed even when lacking memory measure in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRN8cLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRVRMLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rNLfULBgEeix4eA61SHRMQ" name="memorySwapInAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CqOtsLBjEeix4eA61SHRMQ" annotatedElement="_rNLfULBgEeix4eA61SHRMQ">
+              <body>Amount of memory swapped-in from host cache in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRb-4LBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRkhwLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ry73wLBgEeix4eA61SHRMQ" name="memorySwapInRateAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rKrdkLBjEeix4eA61SHRMQ" annotatedElement="_ry73wLBgEeix4eA61SHRMQ">
+              <body>Rate at which memory is swapped from disk into active memory during the interval in kilobytes per second</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRr2gLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRzLQLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tEj3sLBgEeix4eA61SHRMQ" name="memorySwapOutAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xQygMLBjEeix4eA61SHRMQ" annotatedElement="_tEj3sLBgEeix4eA61SHRMQ">
+              <body>Amount of memory swapped-out to host cache in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bR548LBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSBNsLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ueGdgLBgEeix4eA61SHRMQ" name="memorySwapOutRateAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1TxNcLBjEeix4eA61SHRMQ" annotatedElement="_ueGdgLBgEeix4eA61SHRMQ">
+              <body>Rate at which memory is being swapped from active memory to disk during the current interval in kilobytes per second</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSIicLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSPQILBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vHIMYLBgEeix4eA61SHRMQ" name="memorySwapUsedAvg" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4y604LBjEeix4eA61SHRMQ" annotatedElement="_vHIMYLBgEeix4eA61SHRMQ">
+              <body>Space used for caching swapped pages in the host cache in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSXL8LBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSjZMLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_v0UpkLBgEeix4eA61SHRMQ" name="memoryUsed" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_77E4oLBjEeix4eA61SHRMQ" annotatedElement="_v0UpkLBgEeix4eA61SHRMQ">
+              <body>Total memory minus the sum of free, buffered, cached and slab memory measured in kibibytes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bSqt8LBhEeix4eA61SHRMQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bSypwLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wcpN0LBgEeix4eA61SHRMQ" name="percentMemoryUsage" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__UUFULBjEeix4eA61SHRMQ" annotatedElement="_wcpN0LBgEeix4eA61SHRMQ">
+              <body>Percentage of memory usage; value = (memoryUsed / (memoryUsed + memoryFree) x 100 if denomintor is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bS6lkLBhEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bTB6ULBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xUpz4LBgEeix4eA61SHRMQ" name="vmIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CiPZ4LBkEeix4eA61SHRMQ" annotatedElement="_xUpz4LBgEeix4eA61SHRMQ">
+              <body>Virtual Machine identifier associated with the memory metrics</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bTJPELBhEeix4eA61SHRMQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bTP8wLBhEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_kg6GsLCDEeix4eA61SHRMQ" name="NicAdminState">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3xjQ8LCDEeix4eA61SHRMQ" name="IN_SERVICE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6PPbYLCDEeix4eA61SHRMQ" name="OUT_OF_SERVICE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_Gl0kQLCJEeix4eA61SHRMQ" name="NicOpsState">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Lw1QkLCJEeix4eA61SHRMQ" name="IN_SERVICE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NndbALCJEeix4eA61SHRMQ" name="OUT_OF_SERVICE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_cp9IoLBvEeix4eA61SHRMQ" name="NicPerformance">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_oJIFMLBwEeix4eA61SHRMQ" annotatedElement="_cp9IoLBvEeix4eA61SHRMQ">
+            <body>The nicPerformance datatype consists of the following fields which describe the performance and errors of an of an identified virtual network interface card</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hdvnwLBvEeix4eA61SHRMQ" name="administrativeState" type="_kg6GsLCDEeix4eA61SHRMQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rEarcLCNEeix4eA61SHRMQ" annotatedElement="_hdvnwLBvEeix4eA61SHRMQ">
+              <body>Administrative state: enum: ‘inService’, ‘outOfService’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_klGaQLBvEeix4eA61SHRMQ" name="receivedPercentDiscard" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Fphh0LCOEeix4eA61SHRMQ" annotatedElement="_klGaQLBvEeix4eA61SHRMQ">
+              <body>Percentage of discarded packets received; value = (receivedDiscardedPacketsDelta / receivedTotalPacketsDelta) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DordsLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DoxkULCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lvjbMLBvEeix4eA61SHRMQ" name="nicIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_s6TPALCNEeix4eA61SHRMQ" annotatedElement="_lvjbMLBvEeix4eA61SHRMQ">
+              <body>Network interface card identifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nb-gwLBvEeix4eA61SHRMQ" name="operationalState" type="_Gl0kQLCJEeix4eA61SHRMQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vN0w0LCNEeix4eA61SHRMQ" annotatedElement="_nb-gwLBvEeix4eA61SHRMQ">
+              <body>Operational state: enum: ‘inService’, ‘outOfService’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n57oELBvEeix4eA61SHRMQ" name="receivedBroadcastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xAXsgLCNEeix4eA61SHRMQ" annotatedElement="_n57oELBvEeix4eA61SHRMQ">
+              <body>Cumulative count of broadcast packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dm2RsLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dm9mcLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ogPaILBvEeix4eA61SHRMQ" name="receivedBroadcastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_y_AjcLCNEeix4eA61SHRMQ" annotatedElement="_ogPaILBvEeix4eA61SHRMQ">
+              <body>Count of broadcast packets received within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnDGALCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DnIlkLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pClSMLBvEeix4eA61SHRMQ" name="receivedDiscardedPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_08eVsLCNEeix4eA61SHRMQ" annotatedElement="_pClSMLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of discarded packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnOFILCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DnTksLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ppgIQLBvEeix4eA61SHRMQ" name="receivedDiscardedPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2tUoQLCNEeix4eA61SHRMQ" annotatedElement="_ppgIQLBvEeix4eA61SHRMQ">
+              <body>Count of discarded packets received within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnZEQLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DnfK4LCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qNbUsLBvEeix4eA61SHRMQ" name="receivedErrorPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4omCILCNEeix4eA61SHRMQ" annotatedElement="_qNbUsLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of error packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnkqcLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dnpi8LCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rIyJsLBvEeix4eA61SHRMQ" name="receivedErrorPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7TdF4LCNEeix4eA61SHRMQ" annotatedElement="_rIyJsLBvEeix4eA61SHRMQ">
+              <body>Count of error packets received within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnvCgLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dnz7ALCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rpNWMLBvEeix4eA61SHRMQ" name="receivedMulticastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9O-XYLCNEeix4eA61SHRMQ" annotatedElement="_rpNWMLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of multicast packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dn5akLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dn-6ILCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tf-qkLBvEeix4eA61SHRMQ" name="receivedMulticastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__h5cQLCNEeix4eA61SHRMQ" annotatedElement="_tf-qkLBvEeix4eA61SHRMQ">
+              <body>Count of multicast packets received within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DoEZsLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DoJ5QLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uKpYMLBvEeix4eA61SHRMQ" name="receivedOctetsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_B01vQLCOEeix4eA61SHRMQ" annotatedElement="_uKpYMLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of octets received as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DoOxwLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DocNILCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uyhQgLBvEeix4eA61SHRMQ" name="receivedOctetsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DxBvILCOEeix4eA61SHRMQ" annotatedElement="_uyhQgLBvEeix4eA61SHRMQ">
+              <body>Count of octets received within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DohFoLCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DomlMLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vdWWMLBvEeix4eA61SHRMQ" name="receivedPercentError" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_IyVF0LCOEeix4eA61SHRMQ" annotatedElement="_vdWWMLBvEeix4eA61SHRMQ">
+              <body>Percentage of error packets received; value = (receivedErrorPacketsDelta / receivedTotalPacketsDelta) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Do3q8LCJEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Do9KgLCJEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xIsdsLBvEeix4eA61SHRMQ" name="receivedTotalPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KrDiALCOEeix4eA61SHRMQ" annotatedElement="_xIsdsLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of all packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_x0GyMLBvEeix4eA61SHRMQ" name="receivedTotalPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_M27jsLCOEeix4eA61SHRMQ" annotatedElement="_x0GyMLBvEeix4eA61SHRMQ">
+              <body>Count of all packets received within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ycgO8LBvEeix4eA61SHRMQ" name="receivedUnicastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_O61VILCOEeix4eA61SHRMQ" annotatedElement="_ycgO8LBvEeix4eA61SHRMQ">
+              <body>Cumulative count of unicast packets received as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zHfFoLBvEeix4eA61SHRMQ" name="receivedUnicastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_RyHrULCOEeix4eA61SHRMQ" annotatedElement="_zHfFoLBvEeix4eA61SHRMQ">
+              <body>Count of unicast packets received within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zxJtsLBvEeix4eA61SHRMQ" name="receivedUtilization" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Ts-1gLCOEeix4eA61SHRMQ" annotatedElement="_zxJtsLBvEeix4eA61SHRMQ">
+              <body>Percentage of utilization received; value = (receivedOctetsDelta / (speed x (lastEpochMicrosec - startEpochMicrosec))) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0XmCoLBvEeix4eA61SHRMQ" name="speed" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_VbHyULCOEeix4eA61SHRMQ" annotatedElement="_0XmCoLBvEeix4eA61SHRMQ">
+              <body>Speed configured in mbps.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_08YxwLBvEeix4eA61SHRMQ" name="transmittedBroadcastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XRKG4LCOEeix4eA61SHRMQ" annotatedElement="_08YxwLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of broadcast packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1l4asLBvEeix4eA61SHRMQ" name="transmittedBroadcastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Ze0RQLCOEeix4eA61SHRMQ" annotatedElement="_1l4asLBvEeix4eA61SHRMQ">
+              <body>Count of broadcast packets transmitted within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2PcVELBvEeix4eA61SHRMQ" name="transmittedDiscardedPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bYOC4LCOEeix4eA61SHRMQ" annotatedElement="_2PcVELBvEeix4eA61SHRMQ">
+              <body>Cumulative count of discarded packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_25CrsLBvEeix4eA61SHRMQ" name="transmittedDiscardedPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dNQR4LCOEeix4eA61SHRMQ" annotatedElement="_25CrsLBvEeix4eA61SHRMQ">
+              <body>Count of discarded packets transmitted within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3r8IQLBvEeix4eA61SHRMQ" name="transmittedErrorPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fGCYcLCOEeix4eA61SHRMQ" annotatedElement="_3r8IQLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of error packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6prrwLBvEeix4eA61SHRMQ" name="transmittedErrorPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_hGbi4LCOEeix4eA61SHRMQ" annotatedElement="_6prrwLBvEeix4eA61SHRMQ">
+              <body>Count of error packets transmitted within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7a8woLBvEeix4eA61SHRMQ" name="transmittedMulticastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_i0SL0LCOEeix4eA61SHRMQ" annotatedElement="_7a8woLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of multicast packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8i-IoLBvEeix4eA61SHRMQ" name="transmittedMulticastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lAdvgLCOEeix4eA61SHRMQ" annotatedElement="_8i-IoLBvEeix4eA61SHRMQ">
+              <body>Count of multicast packets transmitted within the measurement interval</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9l0swLBvEeix4eA61SHRMQ" name="transmittedOctetsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qWoCQLCWEeix4eA61SHRMQ" annotatedElement="_9l0swLBvEeix4eA61SHRMQ">
+              <body>Cumulative count of octets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l1dlMLCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l1lhALCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-W9OwLBvEeix4eA61SHRMQ" name="transmittedOctetsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_sCHTsLCWEeix4eA61SHRMQ" annotatedElement="_-W9OwLBvEeix4eA61SHRMQ">
+              <body>Count of octets transmitted within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l1rAkLCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l1wgILCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__XVGoLBvEeix4eA61SHRMQ" name="transmittedPercentDiscard" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_t5hhQLCWEeix4eA61SHRMQ" annotatedElement="__XVGoLBvEeix4eA61SHRMQ">
+              <body>Percentage of discarded packets transmitted; value = (transmittedDiscardedPacketsDelta / transmittedTotalPacketsDelta) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l11_sLCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l18GULCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ATsoQLBwEeix4eA61SHRMQ" name="transmittedPercentError" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vuOZELCWEeix4eA61SHRMQ" annotatedElement="_ATsoQLBwEeix4eA61SHRMQ">
+              <body>Percentage of error packets received; value = (transmittedErrorPacketsDelta / transmittedTotalPacketsDelta) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2Bl4LCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2GeYLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BZbhQLBwEeix4eA61SHRMQ" name="transmittedTotalPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xYGg8LCWEeix4eA61SHRMQ" annotatedElement="_BZbhQLBwEeix4eA61SHRMQ">
+              <body>Cumulative count of all packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2L98LCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2Q2cLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CWqlkLBwEeix4eA61SHRMQ" name="transmittedTotalPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zojgoLCWEeix4eA61SHRMQ" annotatedElement="_CWqlkLBwEeix4eA61SHRMQ">
+              <body>Count of all packets transmitted within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2WWALCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2bOgLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DZFE0LBwEeix4eA61SHRMQ" name="transmittedUnicastPacketsAccumulated" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1WUqALCWEeix4eA61SHRMQ" annotatedElement="_DZFE0LBwEeix4eA61SHRMQ">
+              <body>Cumulative count of unicast packets transmitted as read at the end of the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2gHALCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2mNoLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Eo2DkLBwEeix4eA61SHRMQ" name="transmittedUnicastPacketsDelta" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3GgOMLCWEeix4eA61SHRMQ" annotatedElement="_Eo2DkLBwEeix4eA61SHRMQ">
+              <body>Count of unicast packets transmitted within the measurement interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2sUQLCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2xMwLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FvT8YLBwEeix4eA61SHRMQ" name="transmittedUtilization" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_41zooLCWEeix4eA61SHRMQ" annotatedElement="_FvT8YLBwEeix4eA61SHRMQ">
+              <body>Percentage of utilization transmitted; value = (transmittedOctetsDelta / (speed x (lastEpochMicrosec - startEpochMicrosec))) x 100, if denominator is nonzero, or 0, if otherwise.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l22FQLCLEeix4eA61SHRMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3CSgLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cOzM8LCLEeix4eA61SHRMQ" name="valuesAreSuspect">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9k8RQLCWEeix4eA61SHRMQ" annotatedElement="_cOzM8LCLEeix4eA61SHRMQ">
+              <body>Enumeration: ‘true’ or ‘false’.  If ‘true’ then the vNicPerformance values are likely inaccurate due to counter overflow or other conditions.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l3HLALCLEeix4eA61SHRMQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3NRoLCLEeix4eA61SHRMQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_9xbHMLHMEeid-vjMcczUWA" name="ProcessStats">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GYOk8LHNEeid-vjMcczUWA" annotatedElement="_9xbHMLHMEeid-vjMcczUWA">
+            <body>The processStats datatype provides metrics on system processes</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JipSgLHNEeid-vjMcczUWA" name="forkRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_GqRhwLHOEeid-vjMcczUWA" annotatedElement="_JipSgLHNEeid-vjMcczUWA">
+              <body>The number of threads created since the last reboot</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cghRwLHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgs38LHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LFvc8LHNEeid-vjMcczUWA" name="processIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_IYSiwLHOEeid-vjMcczUWA" annotatedElement="_LFvc8LHNEeid-vjMcczUWA">
+              <body>processIdentifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LwiGYLHNEeid-vjMcczUWA" name="psStateBlocked" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_J8KJQLHOEeid-vjMcczUWA" annotatedElement="_LwiGYLHNEeid-vjMcczUWA">
+              <body>The number of processes in a blocked state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7m9lULHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nDE4LHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Mp_d8LHNEeid-vjMcczUWA" name="psStatePaging" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MIkWcLHOEeid-vjMcczUWA" annotatedElement="_Mp_d8LHNEeid-vjMcczUWA">
+              <body>The number of processes in a paging state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nHWULHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nLnwLHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NYAagLHNEeid-vjMcczUWA" name="psStateRunning" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Nq66ALHOEeid-vjMcczUWA" annotatedElement="_NYAagLHNEeid-vjMcczUWA">
+              <body>The number of processes in a running state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nP5MLHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nUKoLHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OJbQYLHNEeid-vjMcczUWA" name="psStateSleeping" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Plbe4LHOEeid-vjMcczUWA" annotatedElement="_OJbQYLHNEeid-vjMcczUWA">
+              <body>The number of processes in a sleeping state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nYcELHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nbfYLHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PHZUgLHNEeid-vjMcczUWA" name="psStateStopped" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Rb2N8LHOEeid-vjMcczUWA" annotatedElement="_PHZUgLHNEeid-vjMcczUWA">
+              <body>The number of processes in a stopped state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7neisLHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nhmALHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q0pggLHNEeid-vjMcczUWA" name="psStateZombie" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TaQbYLHOEeid-vjMcczUWA" annotatedElement="_Q0pggLHNEeid-vjMcczUWA">
+              <body>The number of processes in a zombie state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nkpULHNEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7noTsLHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_SGvQULIWEeid-vjMcczUWA" name="ipmiBaseboardTemperature">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wx3isLIWEeid-vjMcczUWA" name="baseboardTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jdJigLIWEeid-vjMcczUWA" annotatedElement="_Wx3isLIWEeid-vjMcczUWA">
+              <body>Baseboard temperature in celsius</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XmCKkLIWEeid-vjMcczUWA" name="baseboardTemperature Identifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_l8gg4LIWEeid-vjMcczUWA" annotatedElement="_XmCKkLIWEeid-vjMcczUWA">
+              <body>Identifier for the location where the temperature is taken</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkFqsLIWEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkJ8ILIWEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CV008LIZEeid-vjMcczUWA" name="ipmiBaseboardVoltageRegulator">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_eM968LIZEeid-vjMcczUWA" annotatedElement="_CV008LIZEeid-vjMcczUWA">
+            <body>The ipmiBaseboardVoltageRegulator datatype consists of the following fields which describe ipmi baseboard voltage regulator metrics:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JRQ9ELIZEeid-vjMcczUWA" name="baseboaredVoltageRegulatorIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P6G5ULIZEeid-vjMcczUWA" annotatedElement="_JRQ9ELIZEeid-vjMcczUWA">
+              <body>Identifier for the baseboard voltage regulator</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JqZOwLIZEeid-vjMcczUWA" name="voltageRegulatorTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_V31cALIZEeid-vjMcczUWA" annotatedElement="_JqZOwLIZEeid-vjMcczUWA">
+              <body>Voltage regulator temperature in celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TiDQYLIZEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TiGTsLIZEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_wEFGcLIZEeid-vjMcczUWA" name="ipmiBattery">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_KRTL0LIbEeid-vjMcczUWA" annotatedElement="_wEFGcLIZEeid-vjMcczUWA">
+            <body>The ipmiBattery datatype consists of the following fields which describe ipmi battery metrics:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1cWysLIZEeid-vjMcczUWA" name="batteryIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-V5JwLIaEeid-vjMcczUWA" annotatedElement="_1cWysLIZEeid-vjMcczUWA">
+              <body>Identifier for the battery</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_14uloLIZEeid-vjMcczUWA" name="batteryType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DtoqgLIbEeid-vjMcczUWA" annotatedElement="_14uloLIZEeid-vjMcczUWA">
+              <body>Type of battery</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bzf5ELIbEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BzkKgLIbEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2tFawLIZEeid-vjMcczUWA" name="batteryVoltageLevel" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_H7Jz0LIbEeid-vjMcczUWA" annotatedElement="_2tFawLIZEeid-vjMcczUWA">
+              <body>Battery voltage level</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_xrBPELIZEeid-vjMcczUWA" name="ipmiFan">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_36FugLIbEeid-vjMcczUWA" annotatedElement="_xrBPELIZEeid-vjMcczUWA">
+            <body>The ipmiFan datatype consists of the following fields which describe ipmi fan metrics:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RvBhoLIbEeid-vjMcczUWA" name="fanIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wd5pwLIbEeid-vjMcczUWA" annotatedElement="_RvBhoLIbEeid-vjMcczUWA">
+              <body>Identifier for the fan</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_S10xoLIbEeid-vjMcczUWA" name="fanSpeed" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1L5p8LIbEeid-vjMcczUWA" annotatedElement="_S10xoLIbEeid-vjMcczUWA">
+              <body>Fan speed in revolutions per minute (rpm)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z3Cv0LIbEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z3HBQLIbEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__cHVgLIbEeid-vjMcczUWA" name="ipmiGlobalAggregateTemperatureMargin">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_DU494LIcEeid-vjMcczUWA" annotatedElement="__cHVgLIbEeid-vjMcczUWA">
+            <body>The ipmiGlobalAggregateTemperatureMargin datatype consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GcqAELIcEeid-vjMcczUWA" name="globalAggregateTemperatureMargin" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OjWaYLIcEeid-vjMcczUWA" annotatedElement="_GcqAELIcEeid-vjMcczUWA">
+              <body>Temperature margin in Celsius relative to a throttling thermal trip point</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MhhFgLIcEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mhl-ALIcEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HOH5QLIcEeid-vjMcczUWA" name="globalAggregateTemperatureMarginIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_R3HRMLIcEeid-vjMcczUWA" annotatedElement="_HOH5QLIcEeid-vjMcczUWA">
+              <body>Identifier for the ipmi global aggregate temperature margin metrics</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_car9oLIcEeid-vjMcczUWA" name="ipmiHsbp">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_FCVhsLIdEeid-vjMcczUWA" annotatedElement="_car9oLIcEeid-vjMcczUWA">
+            <body>The ipmiHsbp datatype provides ipmi hot swap backplane power metrics; it consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rCJ9ULIcEeid-vjMcczUWA" name="hsbpIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-Q0xoLIcEeid-vjMcczUWA" annotatedElement="_rCJ9ULIcEeid-vjMcczUWA">
+              <body>Identifier for the hot swap backplane power unit</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sDMjkLIcEeid-vjMcczUWA" name="hsbpTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DC3kULIdEeid-vjMcczUWA" annotatedElement="_sDMjkLIcEeid-vjMcczUWA">
+              <body>Hot swap backplane power temperature in celsius </body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BE9GILIdEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BFB-oLIdEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_dTJ2sLIcEeid-vjMcczUWA" name="ipmiNic">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PCgmILIdEeid-vjMcczUWA" annotatedElement="_dTJ2sLIcEeid-vjMcczUWA">
+            <body>The ipmiNic datatype provides network interface control care metrics; it consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_t_9yQLIcEeid-vjMcczUWA" name="nicIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WZxuoLIdEeid-vjMcczUWA" annotatedElement="_t_9yQLIcEeid-vjMcczUWA">
+              <body>Identifier for the network interface control card</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ufaHULIcEeid-vjMcczUWA" name="nicTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XzBZgLIdEeid-vjMcczUWA" annotatedElement="_ufaHULIcEeid-vjMcczUWA">
+              <body>nic temperature in Celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lCg5oLIdEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lCmZMLIdEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_d8MzsLIcEeid-vjMcczUWA" name="ipmiPowerSupply">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_v38nkLIcEeid-vjMcczUWA" name="powerSupplyCurrentOutput Percent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zkmqELIdEeid-vjMcczUWA" annotatedElement="_v38nkLIcEeid-vjMcczUWA">
+              <body>Current output voltage as a percentage of the design specified level</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1RPwLIeEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J1WvULIeEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wR6mwLIcEeid-vjMcczUWA" name="powerSupplyIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yM-v0LIdEeid-vjMcczUWA" annotatedElement="_wR6mwLIcEeid-vjMcczUWA">
+              <body>Identifier for the power supply</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wt-QoLIcEeid-vjMcczUWA" name="powerSupplyInputPower" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_EUXL8LIeEeid-vjMcczUWA" annotatedElement="_wt-QoLIcEeid-vjMcczUWA">
+              <body>Input power in watts</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1cO4LIeEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J1i8kLIeEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xIKSQLIcEeid-vjMcczUWA" name="powerSupplyTemperature" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_v0WEgLIdEeid-vjMcczUWA" annotatedElement="_xIKSQLIcEeid-vjMcczUWA">
+              <body>Power supply temperature in Celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1nOALIeEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J1qRULIeEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ejgEQLIcEeid-vjMcczUWA" name="ipmiProcessor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ywW_ILIcEeid-vjMcczUWA" name="processorDimmAggregateThermalMarginArray" type="_kR7C0LIgEeid-vjMcczUWA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DreVELIgEeid-vjMcczUWA" annotatedElement="_ywW_ILIcEeid-vjMcczUWA">
+              <body>Array of processorDimmAggregate ThermalMargin objects</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B5rK0LIhEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B53YELIhEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zKxDMLIcEeid-vjMcczUWA" name="processorDtsThermalMargin" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FKkJQLIgEeid-vjMcczUWA" annotatedElement="_zKxDMLIcEeid-vjMcczUWA">
+              <body>Front panel temperature in celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBAmULIhEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBE3wLIhEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zk7PoLIcEeid-vjMcczUWA" name="processorIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JTFd0LIgEeid-vjMcczUWA" annotatedElement="_zk7PoLIcEeid-vjMcczUWA">
+              <body>Identifier for the power supply</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z_K7oLIcEeid-vjMcczUWA" name="pprocessorThermalControlPercent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LiJWYLIgEeid-vjMcczUWA" annotatedElement="_z_K7oLIcEeid-vjMcczUWA">
+              <body>Io module temperatue in celsius</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EAr6oLIhEeid-vjMcczUWA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EAzPYLIhEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_kR7C0LIgEeid-vjMcczUWA" name="processorDimmAggregateThermalMargin">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_oSG6wLIgEeid-vjMcczUWA" annotatedElement="_kR7C0LIgEeid-vjMcczUWA">
+            <body>The processorDimmAggregateThermalMargin datatype provides intelligent platform management interface (ipmi) processor dual inline memory module aggregate thermal margin metrics; it consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rCqW0LIgEeid-vjMcczUWA" name="processorDimmAggregateThermal MarginIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3QXCwLIgEeid-vjMcczUWA" annotatedElement="_rCqW0LIgEeid-vjMcczUWA">
+              <body>identifier for the aggregate thermal margin metrics from the processor dual inline memory module</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rcMRILIgEeid-vjMcczUWA" name="thermalMargin" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5CtKILIgEeid-vjMcczUWA" annotatedElement="_rcMRILIgEeid-vjMcczUWA">
+              <body>the difference between the DIMM's current temperature, in celsius, and the DIMM's throttling thermal trip point</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
@@ -3073,20 +3895,16 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fFI88YUSEeiRGZJrXkgR0w" base_StructuralFeature="_fFI88IUSEeiRGZJrXkgR0w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MAG38IbiEei-x_BD9U-ssQ" base_StructuralFeature="_MAGQ4IbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NvX2IYbiEei-x_BD9U-ssQ" base_StructuralFeature="_NvX2IIbiEei-x_BD9U-ssQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_OUhKkIbiEei-x_BD9U-ssQ" base_StructuralFeature="_OUgjgIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QoSkAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_QoSkAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_S7iZAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_S7iZAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TdtR8YbiEei-x_BD9U-ssQ" base_StructuralFeature="_TdtR8IbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UCG_gIbiEei-x_BD9U-ssQ" base_StructuralFeature="_UCGYcIbiEei-x_BD9U-ssQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UgasIIbiEei-x_BD9U-ssQ" base_StructuralFeature="_UgaFEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VASfAYbiEei-x_BD9U-ssQ" base_StructuralFeature="_VASfAIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ViLEEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_ViLEEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WBJfEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_WBJfEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WZyBgYbiEei-x_BD9U-ssQ" base_StructuralFeature="_WZyBgIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W5dAEYbiEei-x_BD9U-ssQ" base_StructuralFeature="_W5dAEIbiEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XgoU0IbiEei-x_BD9U-ssQ" base_StructuralFeature="_XgntwIbiEei-x_BD9U-ssQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ku_sMYblEei-x_BD9U-ssQ" base_StructuralFeature="_ku_sMIblEei-x_BD9U-ssQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_levuIIblEei-x_BD9U-ssQ" base_StructuralFeature="_levHEIblEei-x_BD9U-ssQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ppQ7gIkOEeiddpojVtQ0Hg" base_StructuralFeature="_ppPGUIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qoYPIYkOEeiddpojVtQ0Hg" base_StructuralFeature="_qoXoEIkOEeiddpojVtQ0Hg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wNHqEYkOEeiddpojVtQ0Hg" base_StructuralFeature="_wNHDAIkOEeiddpojVtQ0Hg"/>
@@ -3352,4 +4170,108 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
   <OpenModel_Profile:Preliminary xmi:id="_p4PvMKe5Eeixw5Ke5QD1pQ" base_Element="_2aIggDa9EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_r0DUkKe5Eeixw5Ke5QD1pQ" base_Element="_tMoywDnJEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_t0PDoKe5Eeixw5Ke5QD1pQ" base_Element="_B3kJsDnKEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Tp6RAbBaEeix4eA61SHRMQ" base_StructuralFeature="_Tp6RALBaEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_U9IMYbBaEeix4eA61SHRMQ" base_StructuralFeature="_U9IMYLBaEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Vf134LBaEeix4eA61SHRMQ" base_StructuralFeature="_Vf1Q0LBaEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WMZb4bBaEeix4eA61SHRMQ" base_StructuralFeature="_WMZb4LBaEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_W8ZVcLBaEeix4eA61SHRMQ" base_StructuralFeature="_W8YuYLBaEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jCQsUbBgEeix4eA61SHRMQ" base_StructuralFeature="_jCQsULBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_kNgXcbBgEeix4eA61SHRMQ" base_StructuralFeature="_kNgXcLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_k2tFcbBgEeix4eA61SHRMQ" base_StructuralFeature="_k2tFcLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lhzQ4bBgEeix4eA61SHRMQ" base_StructuralFeature="_lhzQ4LBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nxGaAbBgEeix4eA61SHRMQ" base_StructuralFeature="_nxGaALBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_olfrYbBgEeix4eA61SHRMQ" base_StructuralFeature="_olfrYLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pMxGwbBgEeix4eA61SHRMQ" base_StructuralFeature="_pMxGwLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_p20wYLBgEeix4eA61SHRMQ" base_StructuralFeature="_p20JULBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qiY14bBgEeix4eA61SHRMQ" base_StructuralFeature="_qiY14LBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rNLfUbBgEeix4eA61SHRMQ" base_StructuralFeature="_rNLfULBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ry8e0LBgEeix4eA61SHRMQ" base_StructuralFeature="_ry73wLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tEj3sbBgEeix4eA61SHRMQ" base_StructuralFeature="_tEj3sLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ueGdgbBgEeix4eA61SHRMQ" base_StructuralFeature="_ueGdgLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vHIzcLBgEeix4eA61SHRMQ" base_StructuralFeature="_vHIMYLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_v0VQoLBgEeix4eA61SHRMQ" base_StructuralFeature="_v0UpkLBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wcpN0bBgEeix4eA61SHRMQ" base_StructuralFeature="_wcpN0LBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xUqa8LBgEeix4eA61SHRMQ" base_StructuralFeature="_xUpz4LBgEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hdwO0LBvEeix4eA61SHRMQ" base_StructuralFeature="_hdvnwLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_klGaQbBvEeix4eA61SHRMQ" base_StructuralFeature="_klGaQLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lvjbMbBvEeix4eA61SHRMQ" base_StructuralFeature="_lvjbMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nb-gwbBvEeix4eA61SHRMQ" base_StructuralFeature="_nb-gwLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n57oEbBvEeix4eA61SHRMQ" base_StructuralFeature="_n57oELBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ogQBMLBvEeix4eA61SHRMQ" base_StructuralFeature="_ogPaILBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pClSMbBvEeix4eA61SHRMQ" base_StructuralFeature="_pClSMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ppgIQbBvEeix4eA61SHRMQ" base_StructuralFeature="_ppgIQLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qNbUsbBvEeix4eA61SHRMQ" base_StructuralFeature="_qNbUsLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rIyJsbBvEeix4eA61SHRMQ" base_StructuralFeature="_rIyJsLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rpN9QLBvEeix4eA61SHRMQ" base_StructuralFeature="_rpNWMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tf-qkbBvEeix4eA61SHRMQ" base_StructuralFeature="_tf-qkLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uKpYMbBvEeix4eA61SHRMQ" base_StructuralFeature="_uKpYMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uyhQgbBvEeix4eA61SHRMQ" base_StructuralFeature="_uyhQgLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vdWWMbBvEeix4eA61SHRMQ" base_StructuralFeature="_vdWWMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xIsdsbBvEeix4eA61SHRMQ" base_StructuralFeature="_xIsdsLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_x0GyMbBvEeix4eA61SHRMQ" base_StructuralFeature="_x0GyMLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ycg2ALBvEeix4eA61SHRMQ" base_StructuralFeature="_ycgO8LBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zHfFobBvEeix4eA61SHRMQ" base_StructuralFeature="_zHfFoLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zxJtsbBvEeix4eA61SHRMQ" base_StructuralFeature="_zxJtsLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0XmpsLBvEeix4eA61SHRMQ" base_StructuralFeature="_0XmCoLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_08YxwbBvEeix4eA61SHRMQ" base_StructuralFeature="_08YxwLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1l4asbBvEeix4eA61SHRMQ" base_StructuralFeature="_1l4asLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_2PcVEbBvEeix4eA61SHRMQ" base_StructuralFeature="_2PcVELBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_25DSwLBvEeix4eA61SHRMQ" base_StructuralFeature="_25CrsLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3r8IQbBvEeix4eA61SHRMQ" base_StructuralFeature="_3r8IQLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6psS0LBvEeix4eA61SHRMQ" base_StructuralFeature="_6prrwLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7a8wobBvEeix4eA61SHRMQ" base_StructuralFeature="_7a8woLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8i-IobBvEeix4eA61SHRMQ" base_StructuralFeature="_8i-IoLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_9l0swbBvEeix4eA61SHRMQ" base_StructuralFeature="_9l0swLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_-W9OwbBvEeix4eA61SHRMQ" base_StructuralFeature="_-W9OwLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__XVGobBvEeix4eA61SHRMQ" base_StructuralFeature="__XVGoLBvEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ATsoQbBwEeix4eA61SHRMQ" base_StructuralFeature="_ATsoQLBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BZcIULBwEeix4eA61SHRMQ" base_StructuralFeature="_BZbhQLBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_CWqlkbBwEeix4eA61SHRMQ" base_StructuralFeature="_CWqlkLBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DZFE0bBwEeix4eA61SHRMQ" base_StructuralFeature="_DZFE0LBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Eo2qoLBwEeix4eA61SHRMQ" base_StructuralFeature="_Eo2DkLBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_FvUjcLBwEeix4eA61SHRMQ" base_StructuralFeature="_FvT8YLBwEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cOzM8bCLEeix4eA61SHRMQ" base_StructuralFeature="_cOzM8LCLEeix4eA61SHRMQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Jip5kLHNEeid-vjMcczUWA" base_StructuralFeature="_JipSgLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LFvc8bHNEeid-vjMcczUWA" base_StructuralFeature="_LFvc8LHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LwiGYbHNEeid-vjMcczUWA" base_StructuralFeature="_LwiGYLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Mp_d8bHNEeid-vjMcczUWA" base_StructuralFeature="_Mp_d8LHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NYAagbHNEeid-vjMcczUWA" base_StructuralFeature="_NYAagLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OJbQYbHNEeid-vjMcczUWA" base_StructuralFeature="_OJbQYLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PHZ7kLHNEeid-vjMcczUWA" base_StructuralFeature="_PHZUgLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Q0qHkLHNEeid-vjMcczUWA" base_StructuralFeature="_Q0pggLHNEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6cpsUbHjEeid-vjMcczUWA" base_StructuralFeature="_6cpsULHjEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_91w9MbHjEeid-vjMcczUWA" base_StructuralFeature="_91w9MLHjEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_-hW34LHjEeid-vjMcczUWA" base_StructuralFeature="_-hWQ0LHjEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_A67XUbHkEeid-vjMcczUWA" base_StructuralFeature="_A67XULHkEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BhlHoLHkEeid-vjMcczUWA" base_StructuralFeature="_BhkgkLHkEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MFvaMbH1Eeid-vjMcczUWA" base_StructuralFeature="_MFvaMLH1Eeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NroZ8LH1Eeid-vjMcczUWA" base_StructuralFeature="_Nrny4LH1Eeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PTyqkbH1Eeid-vjMcczUWA" base_StructuralFeature="_PTyqkLH1Eeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_P7HJQbH1Eeid-vjMcczUWA" base_StructuralFeature="_P7HJQLH1Eeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QpWvUbH1Eeid-vjMcczUWA" base_StructuralFeature="_QpWvULH1Eeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Wx3isbIWEeid-vjMcczUWA" base_StructuralFeature="_Wx3isLIWEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XmCKkbIWEeid-vjMcczUWA" base_StructuralFeature="_XmCKkLIWEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JRQ9EbIZEeid-vjMcczUWA" base_StructuralFeature="_JRQ9ELIZEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JqZOwbIZEeid-vjMcczUWA" base_StructuralFeature="_JqZOwLIZEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1cWysbIZEeid-vjMcczUWA" base_StructuralFeature="_1cWysLIZEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_14ulobIZEeid-vjMcczUWA" base_StructuralFeature="_14uloLIZEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_2tFawbIZEeid-vjMcczUWA" base_StructuralFeature="_2tFawLIZEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RvBhobIbEeid-vjMcczUWA" base_StructuralFeature="_RvBhoLIbEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_S10xobIbEeid-vjMcczUWA" base_StructuralFeature="_S10xoLIbEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GcqAEbIcEeid-vjMcczUWA" base_StructuralFeature="_GcqAELIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HOH5QbIcEeid-vjMcczUWA" base_StructuralFeature="_HOH5QLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rCJ9UbIcEeid-vjMcczUWA" base_StructuralFeature="_rCJ9ULIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sDMjkbIcEeid-vjMcczUWA" base_StructuralFeature="_sDMjkLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_t_9yQbIcEeid-vjMcczUWA" base_StructuralFeature="_t_9yQLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ufaHUbIcEeid-vjMcczUWA" base_StructuralFeature="_ufaHULIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_v38nkbIcEeid-vjMcczUWA" base_StructuralFeature="_v38nkLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wR6mwbIcEeid-vjMcczUWA" base_StructuralFeature="_wR6mwLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wt-QobIcEeid-vjMcczUWA" base_StructuralFeature="_wt-QoLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xIKSQbIcEeid-vjMcczUWA" base_StructuralFeature="_xIKSQLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ywW_IbIcEeid-vjMcczUWA" base_StructuralFeature="_ywW_ILIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zKxDMbIcEeid-vjMcczUWA" base_StructuralFeature="_zKxDMLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zk7PobIcEeid-vjMcczUWA" base_StructuralFeature="_zk7PoLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_z_K7obIcEeid-vjMcczUWA" base_StructuralFeature="_z_K7oLIcEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rCqW0bIgEeid-vjMcczUWA" base_StructuralFeature="_rCqW0LIgEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rcMRIbIgEeid-vjMcczUWA" base_StructuralFeature="_rcMRILIgEeid-vjMcczUWA"/>
 </xmi:XMI>
