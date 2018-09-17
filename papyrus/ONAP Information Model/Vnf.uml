@@ -413,18 +413,6 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jJfeEJpZEeidy9iGT_F5-w" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_oiT84JpZEeidy9iGT_F5-w" name="ServiceProvidesAllottedResource" memberEnd="_oiUj8ppZEeidy9iGT_F5-w _oiY1YJpZEeidy9iGT_F5-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oiUj8JpZEeidy9iGT_F5-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oiUj8ZpZEeidy9iGT_F5-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_oiUj8ppZEeidy9iGT_F5-w" name="servicedescatomic" association="_oiT84JpZEeidy9iGT_F5-w">
-          <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_oiY1YJpZEeidy9iGT_F5-w" name="allottedresource" type="_nQZJYJpWEeidy9iGT_F5-w" association="_oiT84JpZEeidy9iGT_F5-w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9SwF8JpZEeidy9iGT_F5-w"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9TQcQJpZEeidy9iGT_F5-w" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_etib0Js4EeiPBvbfaqSLYg" name="ServiceProvidesAnfd" memberEnd="_etjC4Js4EeiPBvbfaqSLYg _etnUUJs4EeiPBvbfaqSLYg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_etib0Zs4EeiPBvbfaqSLYg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_etib0ps4EeiPBvbfaqSLYg" key="nature" value="UML_Nature"/>
@@ -493,11 +481,11 @@ A virtual link is a resource&#xD;
 A license is not a resource&#xD;
 A Cp is not a resource</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_9zRkwJs4EeiPBvbfaqSLYg">
-        <body>Do we need a VnfVL?</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_V35l8Js6EeiPBvbfaqSLYg">
         <body>Need to assess need for service topology for the internal model from a design view.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_U8hrULIOEeid-vjMcczUWA">
+        <body>Add relationship from Anl to ServiceDescAtomic</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_MevNkJddEei-sOl6ywWHlg" name="AddressType">
         <ownedComment xmi:type="uml:Comment" xmi:id="_zYqPEJdeEei-sOl6ywWHlg" annotatedElement="_MevNkJddEei-sOl6ywWHlg">
@@ -506,7 +494,12 @@ A Cp is not a resource</body>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RSljMKGGEeinsNXClcPPiQ" name="PrimitiveType17"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mcXjILIKEeid-vjMcczUWA" name="Anl">
+        <generalization xmi:type="uml:Generalization" xmi:id="_lFpyYLILEeid-vjMcczUWA" general="_AC2eIDQUEeixv_sLOod4lQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uMR1ILIKEeid-vjMcczUWA" name="Vnl">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qwsCkLILEeid-vjMcczUWA" general="_AC2eIDQUEeixv_sLOod4lQ"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MjOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -1051,7 +1044,7 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aPEasDm3EeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="VnfVirtualLinkDesc ">
+      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="NetworkLinkDesc ">
         <generalization xmi:type="uml:Generalization" xmi:id="_xcr5AJssEeiPBvbfaqSLYg" general="_DAQisJpXEeidy9iGT_F5-w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_pszPADd9EeiIfPeSAqyGdQ" name="virtualLinkDescId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_IJjFUDd-EeiIfPeSAqyGdQ" annotatedElement="_pszPADd9EeiIfPeSAqyGdQ">
@@ -1859,16 +1852,11 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
           <general xmi:type="uml:Class" href="Common.uml#_Tw5PIES0EeiVGPeZpaYNtQ"/>
         </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_nQZJYJpWEeidy9iGT_F5-w" name="AllottedResourceDesc">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_z6cv4KY4Eeily5uFlujj3Q" annotatedElement="_nQZJYJpWEeidy9iGT_F5-w">
-          <body>An Allotted Resource is a generic resource which could never be considered a network function and thus is not derived from the network function class.  This “non-network function” based resource is provided (or allotted) by some service to be used or consumed by some other service.   The consuming service does not need to know that the resource is “allotted”.</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_W1tqMJpXEeidy9iGT_F5-w" general="_DAQisJpXEeidy9iGT_F5-w"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_xVaLUJs3EeiPBvbfaqSLYg" name="Anfd">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2qM6sKY4Eeily5uFlujj3Q" annotatedElement="_xVaLUJs3EeiPBvbfaqSLYg">
-          <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.   The consuming service does not need to know that the resource is “allotted”.</body>
+          <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.  Note:  the allotted network function is no longer derived from some allotted resource parent.&#xD;
+</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_7DhPYJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
       </packagedElement>
@@ -3121,12 +3109,9 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_41m_8JdeEei-sOl6ywWHlg" base_Element="_UVFewJddEei-sOl6ywWHlg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_psa4QZmYEeibE8EgApNciA" base_StructuralFeature="_psa4QJmYEeibE8EgApNciA"/>
   <OpenModel_Profile:Preliminary xmi:id="_76XPYJmYEeibE8EgApNciA" base_Element="_psa4QJmYEeibE8EgApNciA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_nQZwcJpWEeidy9iGT_F5-w" base_Class="_nQZJYJpWEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_DAQisZpXEeidy9iGT_F5-w" base_Class="_DAQisJpXEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UugbMJpZEeidy9iGT_F5-w" base_StructuralFeature="_Uuf0IJpZEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UuhpUZpZEeidy9iGT_F5-w" base_StructuralFeature="_UuhCQJpZEeidy9iGT_F5-w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_oiVLAZpZEeidy9iGT_F5-w" base_StructuralFeature="_oiUj8ppZEeidy9iGT_F5-w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_oiY1YppZEeidy9iGT_F5-w" base_StructuralFeature="_oiY1YJpZEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_O385opssEeiPBvbfaqSLYg" base_Class="_O385oJssEeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xVayYZs3EeiPBvbfaqSLYg" base_Class="_xVaLUJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etjC4Zs4EeiPBvbfaqSLYg" base_StructuralFeature="_etjC4Js4EeiPBvbfaqSLYg"/>
@@ -3257,6 +3242,7 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
     <base_Element xmi:type="uml:Property" href="Common.uml#_W5c2wDgXEeiOYfGHew0BGg"/>
   </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Experimental xmi:id="_B0g3AKY5Eeily5uFlujj3Q" base_Element="_xVaLUJs3EeiPBvbfaqSLYg"/>
-  <OpenModel_Profile:Experimental xmi:id="_DvCqAKY5Eeily5uFlujj3Q" base_Element="_nQZJYJpWEeidy9iGT_F5-w"/>
   <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_mcYKMLIKEeid-vjMcczUWA" base_Class="_mcXjILIKEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_uMR1IbIKEeid-vjMcczUWA" base_Class="_uMR1ILIKEeid-vjMcczUWA"/>
 </xmi:XMI>
