@@ -481,11 +481,13 @@ A virtual link is a resource&#xD;
 A license is not a resource&#xD;
 A Cp is not a resource</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_V35l8Js6EeiPBvbfaqSLYg">
-        <body>Need to assess need for service topology for the internal model from a design view.</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_U8hrULIOEeid-vjMcczUWA">
         <body>Add relationship from Anl to ServiceDescAtomic</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HdKzwLavEeiWgvNHCpdNlg">
+        <body>ONAP has VirtualLinkDesc, not NetworkLink&#xD;
+&#xD;
+This will probably need to move to common</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_MevNkJddEei-sOl6ywWHlg" name="AddressType">
         <ownedComment xmi:type="uml:Comment" xmi:id="_zYqPEJdeEei-sOl6ywWHlg" annotatedElement="_MevNkJddEei-sOl6ywWHlg">
@@ -494,11 +496,12 @@ A Cp is not a resource</body>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_mcXjILIKEeid-vjMcczUWA" name="Anl">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mcXjILIKEeid-vjMcczUWA" name="AllottedLink">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_hNCywLeVEeiq7vtzCAMDQQ" annotatedElement="_mcXjILIKEeid-vjMcczUWA">
+          <body>An AllottedLink is a link provided (or allotted) by some service instance.   The Allottedlink may be incorporated into the topology of some consuming service like other links. &#xD;
+</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_lFpyYLILEeid-vjMcczUWA" general="_AC2eIDQUEeixv_sLOod4lQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_uMR1ILIKEeid-vjMcczUWA" name="Vnl">
-        <generalization xmi:type="uml:Generalization" xmi:id="_qwsCkLILEeid-vjMcczUWA" general="_AC2eIDQUEeixv_sLOod4lQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
@@ -1044,7 +1047,10 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aPEasDm3EeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="NetworkLinkDesc ">
+      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="LinkDesc ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Ey004LeVEeiq7vtzCAMDQQ" annotatedElement="_AC2eIDQUEeixv_sLOod4lQ">
+          <body>A communication channel that connects two or more devices, nodes, or entities.</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_xcr5AJssEeiPBvbfaqSLYg" general="_DAQisJpXEeidy9iGT_F5-w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_pszPADd9EeiIfPeSAqyGdQ" name="virtualLinkDescId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_IJjFUDd-EeiIfPeSAqyGdQ" annotatedElement="_pszPADd9EeiIfPeSAqyGdQ">
@@ -3244,5 +3250,4 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_B0g3AKY5Eeily5uFlujj3Q" base_Element="_xVaLUJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_mcYKMLIKEeid-vjMcczUWA" base_Class="_mcXjILIKEeid-vjMcczUWA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_uMR1IbIKEeid-vjMcczUWA" base_Class="_uMR1ILIKEeid-vjMcczUWA"/>
 </xmi:XMI>
