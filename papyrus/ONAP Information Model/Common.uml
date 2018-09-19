@@ -6,6 +6,9 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sT2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sD2pEeiu6I5JfRTxxQ">
           <body>Common part of the various VLDs.</body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_tmOdULeSEeiq7vtzCAMDQQ">
+          <general xmi:type="uml:Class" href="Vnf.uml#_AC2eIDQUEeixv_sLOod4lQ"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw79sj2pEeiu6I5JfRTxxQ" name="virtualLinkDescId" type="_AuYtcDkBEeiWMf5FLWfdLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sz2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sj2pEeiu6I5JfRTxxQ">
             <body>Uniquely identifies a VLD in the parent descriptor.&#xD;
@@ -366,6 +369,12 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_BTKPcLCXEeix4eA61SHRMQ">
         <body>Why not boolean in spec?</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_41HfsLtYEeiq-o0aE00M6w">
+        <body>Legend&#xD;
+Blue - Review Complete&#xD;
+Green - Ready for Review&#xD;
+White - Not Ready for Review</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
@@ -958,9 +967,11 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__LaKwH78EeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__LgRYH78EeifJIHxnlj6Cg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iviyoH7yEeifJIHxnlj6Cg" name="heartbeat" type="_r_TYsH7wEeifJIHxnlj6Cg">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iviyoH7yEeifJIHxnlj6Cg" name="heartbeat" type="_suey4H7wEeifJIHxnlj6Cg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_76Xl4H7-EeifJIHxnlj6Cg" annotatedElement="_iviyoH7yEeifJIHxnlj6Cg">
-              <body>Fields specific to fault events.</body>
+              <body>Fields specific to heartbeat events.&#xD;
+&#xD;
+Note:  For heardbeat events, an event body is not required.</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DOeXkH79EeifJIHxnlj6Cg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DOj3IH79EeifJIHxnlj6Cg" value="1"/>
@@ -1786,40 +1797,110 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_1spnwH7wEeifJIHxnlj6Cg" name="PnfRegistration">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_wTZ74Jc-Eeis0eUbsDSw0w" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ"/>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cZs5QLbJEeiWgvNHCpdNlg" annotatedElement="_1spnwH7wEeifJIHxnlj6Cg">
+            <body>The pnfRegistrationFields datatype defines fields for events belonging to the 'pnfRegistration' domain of the commonEventHeader domain enumeration; it consists of the following fields:</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wTZ74Jc-Eeis0eUbsDSw0w" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iLbK0LbKEeiWgvNHCpdNlg" annotatedElement="_wTZ74Jc-Eeis0eUbsDSw0w">
+              <body>Additional pnfRegistration fields if needed</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lfW2MLbJEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lfdj4LbJEeiWgvNHCpdNlg" value="1"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_w5-MoJc-Eeis0eUbsDSw0w" name="lastServiceDate">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lDaEkLbKEeiWgvNHCpdNlg" annotatedElement="_w5-MoJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 dateOfLastService = date of last service; e.g. 15022017</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlHuELbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlObwLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_xjg44Jc-Eeis0eUbsDSw0w" name="macAddress">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_n3sxILbKEeiWgvNHCpdNlg" annotatedElement="_xjg44Jc-Eeis0eUbsDSw0w">
+              <body>MAC address of OAM interface of the unit</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlUiYLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlapALbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yI76IJc-Eeis0eUbsDSw0w" name="manufactureDate">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qKtVkLbKEeiWgvNHCpdNlg" annotatedElement="_yI76IJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 dateOfManufacture = manufacture date of the unit; 24032016</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlgIkLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlm2QLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1YuP4Jc-Eeis0eUbsDSw0w" name="modelNumber">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uVLK4LbKEeiWgvNHCpdNlg" annotatedElement="_1YuP4Jc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 versionNumber = version of the unit from vendor; e.g. AJ02.  Maps to AAI equip-model</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dls84LbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlzDgLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_19gX8Jc-Eeis0eUbsDSw0w" name="oamV4lpAddress">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wOn_0LbKEeiWgvNHCpdNlg" annotatedElement="_19gX8Jc-Eeis0eUbsDSw0w">
+              <body>IPv4 m-plane IP address to be used by the manager to contact the PNF</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dl5KILbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dl_QwLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_2ocLUJc-Eeis0eUbsDSw0w" name="oamV6lpAddress">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yV084LbKEeiWgvNHCpdNlg" annotatedElement="_2ocLUJc-Eeis0eUbsDSw0w">
+              <body>IPv6 m-plane IP address to be used by the manager to contact the PNF</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmFXYLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmLeALbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_3mxb0Jc-Eeis0eUbsDSw0w" name="pnfRegistrationFieldsVersion" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3mxb0Jc-Eeis0eUbsDSw0w" name="pnfRegistrationFieldsVersion" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0hlCwLbKEeiWgvNHCpdNlg" annotatedElement="_3mxb0Jc-Eeis0eUbsDSw0w">
+              <body>Version of the registrationFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmRkoLbKEeiWgvNHCpdNlg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmYSULbKEeiWgvNHCpdNlg" value="1"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4D4OkJc-Eeis0eUbsDSw0w" name="serialNumber">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5A674LbKEeiWgvNHCpdNlg" annotatedElement="_4D4OkJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 serialNumber = serial number of the unit; e.g. 6061ZW3</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmdx4LbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmjRcLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4lixMJc-Eeis0eUbsDSw0w" name="softwareVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6x0RwLbKEeiWgvNHCpdNlg" annotatedElement="_4lixMJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 swName = active SW running on the unit; e.g. 5gDUv18.05.201</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmp_ILbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmxT4LbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5BEPkJc-Eeis0eUbsDSw0w" name="unitFamily">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_8fQrALbKEeiWgvNHCpdNlg" annotatedElement="_5BEPkJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 vendorUnitFamilyType = general type of HW unit; e.g. BBU</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dm3agLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnBLgLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_7YTzwJc-Eeis0eUbsDSw0w" name="unitType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-JcU4LbKEeiWgvNHCpdNlg" annotatedElement="_7YTzwJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 vendorUnitTypeNumber = vendor name for the unit; e.g. Airscale</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnH5MLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnOm4LbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_7_o5gJc-Eeis0eUbsDSw0w" name="vendorName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__x12ELbKEeiWgvNHCpdNlg" annotatedElement="_7_o5gJc-Eeis0eUbsDSw0w">
+              <body>TS 32.692 vendorName = name of manufacturer; e.g. Nokia.  Maps to AAI equip-vendor</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnXJwLbKEeiWgvNHCpdNlg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dndQYLbKEeiWgvNHCpdNlg" value="1"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_NcX08IEsEeieQ4zKGFzYtQ" name="EventSeverity">
@@ -1839,7 +1920,7 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_VL2WIJpnEeidy9iGT_F5-w" name="additionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Kuns0JpoEeidy9iGT_F5-w" annotatedElement="_VL2WIJpnEeidy9iGT_F5-w">
-              <body>additionalInformation - Additional sipSignalling fields.&#xD;
+              <body>zdditionalInformation - Additional sipSignalling fields.&#xD;
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SkSokJpoEeidy9iGT_F5-w"/>
@@ -1920,7 +2001,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_2XJ9UH7wEeifJIHxnlj6Cg" name="StateChangeFields">
           <ownedComment xmi:type="uml:Comment" xmi:id="_JcpEYJzVEeiLvPKMh61-Bg" annotatedElement="_2XJ9UH7wEeifJIHxnlj6Cg">
-            <body>stateChangeFields - Fields specific to state change events.</body>
+            <body>Fields specific to state change events.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JYYzUJzREeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_FjUJwJzSEeiLvPKMh61-Bg" annotatedElement="_JYYzUJzREeiLvPKMh61-Bg">
@@ -1954,50 +2035,173 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_7F_D8H7wEeifJIHxnlj6Cg" name="SyslogFields">
           <ownedComment xmi:type="uml:Comment" xmi:id="_GBKcAJzVEeiLvPKMh61-Bg" annotatedElement="_7F_D8H7wEeifJIHxnlj6Cg">
-            <body>syslogFields - Fields specific to syslog events.</body>
+            <body>The syslogFields datatype consists of the following fields:</body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fX1bQJzTEeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fX1bQJzTEeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tMbUkLt0Eeiq-o0aE00M6w" annotatedElement="_fX1bQJzTEeiLvPKMh61-Bg">
+              <body>Additional syslog fields if needed Ex:  {“name1”: ”value1”, “name2: “value2” … }</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vK-BsLtwEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vLKO8LtwEeiq-o0aE00M6w" value="*"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_f54_cJzTEeiLvPKMh61-Bg" name="eventSourceHost">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uuwC8Lt0Eeiq-o0aE00M6w" annotatedElement="_f54_cJzTEeiLvPKMh61-Bg">
+              <body>Hostname of the device</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gaDGMJzTEeiLvPKMh61-Bg" name="eventSourceType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xFMV4Lt0Eeiq-o0aE00M6w" annotatedElement="_gaDGMJzTEeiLvPKMh61-Bg">
+              <body>Examples: ‘other’, ‘router’, ‘switch’, ‘host’, ‘card’, ‘port’, ‘slotThreshold’, ‘portThreshold’, ‘virtualMachine’, ‘virtualNetworkFunction’</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdPScLt0Eeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdS80Lt0Eeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_hwG6MJzTEeiLvPKMh61-Bg" name="syslogFacilty">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zk6goLt0Eeiq-o0aE00M6w" annotatedElement="_hwG6MJzTEeiLvPKMh61-Bg">
+              <body>Numeric code from 0 to 23 for facility: &#xD;
+         0             kernel messages&#xD;
+         1             user-level messages&#xD;
+         2             mail system&#xD;
+         3             system daemons&#xD;
+         4             security/authorization messages&#xD;
+         5             messages generated internally by syslogd&#xD;
+         6             line printer subsystem&#xD;
+         7             network news subsystem&#xD;
+         8             UUCP subsystem&#xD;
+         9             clock daemon&#xD;
+        10             security/authorization messages&#xD;
+        11             FTP daemon&#xD;
+        12             NTP subsystem&#xD;
+        13             log audit&#xD;
+        14             log alert&#xD;
+        15             clock daemon (note 2)&#xD;
+        16             local use 0  (local0)&#xD;
+        17             local use 1  (local1)&#xD;
+        18             local use 2  (local2)&#xD;
+        19             local use 3  (local3)&#xD;
+        20             local use 4  (local4)&#xD;
+        21             local use 5  (local5)&#xD;
+        22             local use 6  (local6)&#xD;
+        23             local use 7  (local7 )&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SH3yALuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SH7cYLuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_iWVzwJzTEeiLvPKMh61-Bg" name="syslogFieldVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jID8kLuIEeiq-o0aE00M6w" annotatedElement="_iWVzwJzTEeiLvPKMh61-Bg">
+              <body>Version of the syslogFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jV7BcJzTEeiLvPKMh61-Bg" name="syslogMsg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lBwpILuIEeiq-o0aE00M6w" annotatedElement="_jV7BcJzTEeiLvPKMh61-Bg">
+              <body>Syslog message</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_kgWNMJzTEeiLvPKMh61-Bg" name="syslogMsgHost">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mzfFcLuIEeiq-o0aE00M6w" annotatedElement="_kgWNMJzTEeiLvPKMh61-Bg">
+              <body>Hostname parsed from non-VES syslog message</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YptuYLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YpzN8LuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lKBcUJzTEeiLvPKMh61-Bg" name="syslogPri">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_o80JcLuIEeiq-o0aE00M6w" annotatedElement="_lKBcUJzTEeiLvPKMh61-Bg">
+              <body>0-192&#xD;
+Combined Severity and Facility (see rfc5424)&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yp4GcLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yp-0ILuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lxdPwJzTEeiLvPKMh61-Bg" name="syslogProc">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qm9XELuIEeiq-o0aE00M6w" annotatedElement="_lxdPwJzTEeiLvPKMh61-Bg">
+              <body>Identifies the application that originated the message</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqDsoLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqLocLuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mYnWYJzTEeiLvPKMh61-Bg" name="syslogProcId" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mYnWYJzTEeiLvPKMh61-Bg" name="syslogProcId" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_sNaXgLuIEeiq-o0aE00M6w" annotatedElement="_mYnWYJzTEeiLvPKMh61-Bg">
+              <body>The process number assigned by the OS when the application was started</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqTkQLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqbgELuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nBDPYJzTEeiLvPKMh61-Bg" name="syslogSData">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vZi8ULuIEeiq-o0aE00M6w" annotatedElement="_nBDPYJzTEeiLvPKMh61-Bg">
+              <body>A &lt;space> separated list of key=”value” pairs following the rfc5424 standard for SD-ELEMENT.&#xD;
+&#xD;
+Deprecated &#xD;
+The entire rfc5424 syslogSData object, including square brackets [ ], SD-ID and list of SD-PARAMs&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqg_oLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqlRELuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_nhhfMJzTEeiLvPKMh61-Bg" name="sysllogSdId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xuWQgLuIEeiq-o0aE00M6w" annotatedElement="_nhhfMJzTEeiLvPKMh61-Bg">
+              <body>0-32 char in format name@number, &#xD;
+i.e., ourSDID@32473&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqqJkLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqvCELuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oCtgsJzTEeiLvPKMh61-Bg" name="syslogSev">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_z_YfALuIEeiq-o0aE00M6w" annotatedElement="_oCtgsJzTEeiLvPKMh61-Bg">
+              <body>Level-of-severity text enumeration defined below: &#xD;
+Text 	Sev	Description&#xD;
+Emergency	0	system is unusable&#xD;
+Alert	1	action must be taken immediately&#xD;
+Critical	2	critical conditions&#xD;
+Error	3	error conditions&#xD;
+Warning	4	warning conditions&#xD;
+Notice	5	normal but significant condition&#xD;
+Info	6	Informational messages&#xD;
+Debug	          7	    debug-level messages&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqz6kLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq5aILuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oiiQQJzTEeiLvPKMh61-Bg" name="syslogTag">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2IOa0LuIEeiq-o0aE00M6w" annotatedElement="_oiiQQJzTEeiLvPKMh61-Bg">
+              <body>Also known as MsgId. Brief non-spaced text indicating the type of message such as ‘TCPOUT’ or ‘BGP_STATUS_CHANGE’; ‘NILVALUE’ should be used when no other value can be provided</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq-5sLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrFAULuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pFelQJzTEeiLvPKMh61-Bg" name="syslogTs">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4CZBcLuIEeiq-o0aE00M6w" annotatedElement="_pFelQJzTEeiLvPKMh61-Bg">
+              <body>Timestamp parsed from non-VES syslog message</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrJ40LuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrR0oLuIEeiq-o0aE00M6w" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pucpwJzTEeiLvPKMh61-Bg" name="syslogVer" type="_p3EKoDm0EeiWMf5FLWfdLA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pucpwJzTEeiLvPKMh61-Bg" name="syslogVer" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7EncULuIEeiq-o0aE00M6w" annotatedElement="_pucpwJzTEeiLvPKMh61-Bg">
+              <body>IANA assigned version of the syslog protocol specification:&#xD;
+   0: VES&#xD;
+   1: IANA RFC5424&#xD;
+</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrWGELuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrbloLuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_8IBvwH7wEeifJIHxnlj6Cg" name="ThresholdCrossingAlertFields">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_RRq8IKJVEeibfLkXoC-lBg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
