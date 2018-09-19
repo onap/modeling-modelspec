@@ -655,12 +655,35 @@ If null, then represents to the end of time&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3DWlgK0SEei2W47ZDLIFGA" name="version">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Ap5B8K0TEei2W47ZDLIFGA" name="designer">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_PHQDY60TEei2W47ZDLIFGA" name="serviceinstance" type="_VfCloKuDEeiRK6iIVq4LZA" association="_PHQDYK0TEei2W47ZDLIFGA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PHZNUK0TEei2W47ZDLIFGA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PHZNUa0TEei2W47ZDLIFGA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yEVNILvAEei0ia1vZVVOqA" name="serviceType" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yEVNIbvAEei0ia1vZVVOqA" annotatedElement="_yEVNILvAEei0ia1vZVVOqA">
+            <body>An optional string field defining a generic type (like category) of the service. E.g. this field can be used for defining the service as “TRANSPORT”.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Dd5hALvBEei0ia1vZVVOqA" name="serviceRole" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Dd5hAbvBEei0ia1vZVVOqA" annotatedElement="_Dd5hALvBEei0ia1vZVVOqA">
+            <body>An optional string field for shortcode that defines the function that the service is providing. E.g. “MISVPN” or “AIM”.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dd5hArvBEei0ia1vZVVOqA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dd5hA7vBEei0ia1vZVVOqA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Fpq1ALvBEei0ia1vZVVOqA" name="icon" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Fpq1AbvBEei0ia1vZVVOqA" annotatedElement="_Fpq1ALvBEei0ia1vZVVOqA">
+            <body>The icon path of the service.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IJRD8LvBEei0ia1vZVVOqA" name="serviceComponentUuid" visibility="public" aggregation="shared">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_IJRD8bvBEei0ia1vZVVOqA" annotatedElement="_IJRD8LvBEei0ia1vZVVOqA">
+            <body>The service component descriptor UUIDs that the service includes (relationhip to Service Component).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_YQwQ0D0NEeiWMf5FLWfdLA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_PHQDYK0TEei2W47ZDLIFGA" name="ServiceDescriptorMadeAvailableAs" memberEnd="_PHQDY60TEei2W47ZDLIFGA _PHZNUq0TEei2W47ZDLIFGA">
@@ -1185,7 +1208,7 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_HLlNsD0PEeiWMf5FLWfdLA" name="serviceComponentUuid" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HLlNsD0PEeiWMf5FLWfdLA" name="serviceComponentUuid" visibility="public" aggregation="shared">
           <ownedComment xmi:type="uml:Comment" xmi:id="_RdZbwD0PEeiWMf5FLWfdLA" annotatedElement="_HLlNsD0PEeiWMf5FLWfdLA">
             <body>The service component descriptor UUIDs that the service includes (relationhip to Service Component).</body>
           </ownedComment>
@@ -2241,9 +2264,12 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_W4TaUq0SEei2W47ZDLIFGA" base_StructuralFeature="_W4TaUK0SEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_v-DWwa0SEei2W47ZDLIFGA" base_StructuralFeature="_v-DWwK0SEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3DWlga0SEei2W47ZDLIFGA" base_StructuralFeature="_3DWlgK0SEei2W47ZDLIFGA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Ap5B8a0TEei2W47ZDLIFGA" base_StructuralFeature="_Ap5B8K0TEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PHQDZK0TEei2W47ZDLIFGA" base_StructuralFeature="_PHQDY60TEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PHZNU60TEei2W47ZDLIFGA" base_StructuralFeature="_PHZNUq0TEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kqgJc60TEei2W47ZDLIFGA" base_StructuralFeature="_kqgJcq0TEei2W47ZDLIFGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kqgJd60TEei2W47ZDLIFGA" base_StructuralFeature="_kqgJdq0TEei2W47ZDLIFGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yEVNIrvAEei0ia1vZVVOqA" base_StructuralFeature="_yEVNILvAEei0ia1vZVVOqA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Dd5hBLvBEei0ia1vZVVOqA" base_StructuralFeature="_Dd5hALvBEei0ia1vZVVOqA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Fpq1ArvBEei0ia1vZVVOqA" base_StructuralFeature="_Fpq1ALvBEei0ia1vZVVOqA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IJRD8rvBEei0ia1vZVVOqA" base_StructuralFeature="_IJRD8LvBEei0ia1vZVVOqA"/>
 </xmi:XMI>
