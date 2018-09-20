@@ -6,16 +6,16 @@
 Modeling Spec Release Notes
 ===========================
 
-Version: 1.2.1
+Version: 3.1.1
 --------------
 
-:Release Date: 2018-06-07
+:Release Date: 2018-11-07
 
 
 
 **New Features**
 
-Define design time VNFD model information model and data model specifications based on ETSI NFV specifications IFA011 and SOL001.
+Define design time VNFD model information model and onboarding data model specifications based on ETSI NFV specifications IFA011 and SOL001.
 
 **Bug Fixes**
 

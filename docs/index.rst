@@ -2,7 +2,9 @@
 
 Model Specifications
 ====================
-ONAP 2nd release defines the resource IM/DM based on ETSI specifications and OASIS TOSCA NFV Profile
+ONAP 3rd release defines the resource IM based on ETSI specifications
+ONAP 3rd release defines the resource onboarding DM based on ETSI specifications
+ONAP 3rd release doesn't define the internal DM
 
 .. toctree::
    :maxdepth: 1
