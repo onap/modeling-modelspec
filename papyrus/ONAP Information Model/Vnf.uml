@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_xXjM8DOHEei5Af8DcjrhIQ" name="Vnf">
+    <packagedElement xmi:type="uml:Association" xmi:id="_0kHRwLxOEeiMnLuHd6ALAg" name="ServiceProvidesAllottedLink" memberEnd="_0kN_cLxOEeiMnLuHd6ALAg _0kRp0LxOEeiMnLuHd6ALAg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0kMxULxOEeiMnLuHd6ALAg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0kMxUbxOEeiMnLuHd6ALAg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0kN_cLxOEeiMnLuHd6ALAg" name="servicedescatomic" association="_0kHRwLxOEeiMnLuHd6ALAg">
+        <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0kRp0LxOEeiMnLuHd6ALAg" name="allottedlink" type="_mcXjILIKEeid-vjMcczUWA" association="_0kHRwLxOEeiMnLuHd6ALAg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3_nELxPEeiMnLuHd6ALAg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C4UXMLxPEeiMnLuHd6ALAg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPNSIDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_u3e7kDOVEeiHat9KcP8uWA" name="VnfdUsesVCDesc" memberEnd="_u3gwwDOVEeiHat9KcP8uWA _u3j0EDOVEeiHat9KcP8uWA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u3gJsDOVEeiHat9KcP8uWA" source="org.eclipse.papyrus">
@@ -446,12 +458,6 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <annotatedElement xmi:type="uml:Class" href="#_aaEZADOREeiHat9KcP8uWA"/>
         <body>ResourceDesc???</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_pyAEgGTiEeikY4u622M0BQ">
-        <body>Red items are proposed to be deleted.</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_RTntQGTmEeikY4u622M0BQ">
-        <body>gold indicates an add or a change</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_ZbAZAJWXEeiBQt0DCQoFTw">
         <body>&#xD;
 .&#xD;
@@ -481,13 +487,16 @@ A virtual link is a resource&#xD;
 A license is not a resource&#xD;
 A Cp is not a resource</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_U8hrULIOEeid-vjMcczUWA">
-        <body>Add relationship from Anl to ServiceDescAtomic</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_HdKzwLavEeiWgvNHCpdNlg">
         <body>ONAP has VirtualLinkDesc, not NetworkLink&#xD;
 &#xD;
 This will probably need to move to common</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_J2WLsL_xEeisMMIUeH4UGw">
+        <body>Attributes in violet - not necessary in Infomodell - can be retrieved from Vnfd.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_qrs4IL_xEeisMMIUeH4UGw">
+        <body>Attributes in beige - added or changed</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_MevNkJddEei-sOl6ywWHlg" name="AddressType">
         <ownedComment xmi:type="uml:Comment" xmi:id="_zYqPEJdeEei-sOl6ywWHlg" annotatedElement="_MevNkJddEei-sOl6ywWHlg">
@@ -2767,29 +2776,8 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oQAKwmN4Eeio9amveq0yWQ" base_StructuralFeature="_oQAKwGN4Eeio9amveq0yWQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2YlPAGN4Eeio9amveq0yWQ" base_StructuralFeature="_2Ykn8GN4Eeio9amveq0yWQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WbP6QGN5Eeio9amveq0yWQ" base_StructuralFeature="_WbPTMGN5Eeio9amveq0yWQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_22ZWsGj6Eeip9umi7zNprw" base_Element="_xSnkYF3eEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_qJoTsGj7Eeip9umi7zNprw" base_Element="_jsFn0F3fEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_tbuWkGj7Eeip9umi7zNprw" base_Element="_HY63sF3gEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_weXBIGj7Eeip9umi7zNprw" base_Element="_rg2KUF3vEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_055YUGj7Eeip9umi7zNprw" base_Element="_D0XjIF3xEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_3m4jAGj7Eeip9umi7zNprw" base_Element="_yX0vkF33EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_BcsKgGj8Eeip9umi7zNprw" base_Element="_Pjwo0F35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_Q1oN8Gj9Eeip9umi7zNprw" base_Element="_s23WgF35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_TmWCEGj9Eeip9umi7zNprw" base_Element="_t2N6sF35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_WEth8Gj9Eeip9umi7zNprw" base_Element="_u8wsAF35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_ZTAC4Gj9Eeip9umi7zNprw" base_Element="_wvGzYF35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_b7z4MGj9Eeip9umi7zNprw" base_Element="_xjSpYF35EeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_VQxcMGkAEeip9umi7zNprw" base_Element="_4zoYkF37Eei-d9bwZwcVEw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PG3z0WkCEeip9umi7zNprw" base_StructuralFeature="_PG3MwGkCEeip9umi7zNprw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PG5B82kCEeip9umi7zNprw" base_StructuralFeature="_PG5B8WkCEeip9umi7zNprw"/>
-  <OpenModel_Profile:Faulty xmi:id="_oyJ0UGkEEeip9umi7zNprw" base_Element="_ANTnwF3vEeiwL5tPgFMcjQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_vTqkEGkFEeip9umi7zNprw" base_Element="_fpzkYF9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_yOevYGkFEeip9umi7zNprw" base_Element="_gjdwQF9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_1AiAQGkFEeip9umi7zNprw" base_Element="_lCv_AF9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_I9RbgGkGEeip9umi7zNprw" base_Element="_mDlw8F9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_OWNPEGkGEeip9umi7zNprw" base_Element="_m9TAIF9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_UW0GoGkGEeip9umi7zNprw" base_Element="_utZfYF9vEeiaLPXj8My4aQ"/>
-  <OpenModel_Profile:Faulty xmi:id="_XJ-KwGkGEeip9umi7zNprw" base_Element="_vnd68F9vEeiaLPXj8My4aQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_taAyAGmNEeiIM-XECFR2Pw" base_StructuralFeature="_tZ9usGmNEeiIM-XECFR2Pw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_taTs8WmNEeiIM-XECFR2Pw" base_StructuralFeature="_taTF4GmNEeiIM-XECFR2Pw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_TuSmgH7dEei4v5WRHqfM1Q" base_Class="_TuRYYH7dEei4v5WRHqfM1Q"/>
@@ -3250,4 +3238,26 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_B0g3AKY5Eeily5uFlujj3Q" base_Element="_xVaLUJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_mcYKMLIKEeid-vjMcczUWA" base_Class="_mcXjILIKEeid-vjMcczUWA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0kN_cbxOEeiMnLuHd6ALAg" base_StructuralFeature="_0kN_cLxOEeiMnLuHd6ALAg"/>
+  <OpenModel_Profile:Experimental xmi:id="_TSB-AL23EeigqpWKF5WysQ" base_Element="_xSnkYF3eEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_WxS6ML23EeigqpWKF5WysQ" base_Element="_jsFn0F3fEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_aT_k4L23EeigqpWKF5WysQ" base_Element="_HY63sF3gEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_ck3bUL23EeigqpWKF5WysQ" base_Element="_ANTnwF3vEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_1cbFML_wEeisMMIUeH4UGw" base_Element="_rg2KUF3vEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_305_gL_wEeisMMIUeH4UGw" base_Element="_D0XjIF3xEeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_7EqgEL_wEeisMMIUeH4UGw" base_Element="_yX0vkF33EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_1Et6YL_xEeisMMIUeH4UGw" base_Element="_Pjwo0F35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_4JmnsL_xEeisMMIUeH4UGw" base_Element="_s23WgF35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_6-yFEL_xEeisMMIUeH4UGw" base_Element="_t2N6sF35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_9cmyYL_xEeisMMIUeH4UGw" base_Element="_u8wsAF35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_AdTjQL_yEeisMMIUeH4UGw" base_Element="_wvGzYF35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_DLFYIL_yEeisMMIUeH4UGw" base_Element="_xjSpYF35EeiwL5tPgFMcjQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_FoRMQL_yEeisMMIUeH4UGw" base_Element="_4zoYkF37Eei-d9bwZwcVEw"/>
+  <OpenModel_Profile:Experimental xmi:id="_RmcOcL_yEeisMMIUeH4UGw" base_Element="_fpzkYF9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_FpEoEL_zEeisMMIUeH4UGw" base_Element="_gjdwQF9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_J0KvgL_zEeisMMIUeH4UGw" base_Element="_lCv_AF9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_MdAaAL_zEeisMMIUeH4UGw" base_Element="_mDlw8F9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_PEVBkL_zEeisMMIUeH4UGw" base_Element="_m9TAIF9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_RpyA4L_zEeisMMIUeH4UGw" base_Element="_utZfYF9vEeiaLPXj8My4aQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_dipFQL_zEeisMMIUeH4UGw" base_Element="_vnd68F9vEeiaLPXj8My4aQ"/>
 </xmi:XMI>
