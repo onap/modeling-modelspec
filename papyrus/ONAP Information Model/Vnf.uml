@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_xXjM8DOHEei5Af8DcjrhIQ" name="Vnf">
-    <packagedElement xmi:type="uml:Association" xmi:id="_0kHRwLxOEeiMnLuHd6ALAg" name="ServiceProvidesAllottedLink" memberEnd="_0kN_cLxOEeiMnLuHd6ALAg _0kRp0LxOEeiMnLuHd6ALAg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0kMxULxOEeiMnLuHd6ALAg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0kMxUbxOEeiMnLuHd6ALAg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_0kN_cLxOEeiMnLuHd6ALAg" name="servicedescatomic" association="_0kHRwLxOEeiMnLuHd6ALAg">
-        <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
-      </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_0kRp0LxOEeiMnLuHd6ALAg" name="allottedlink" type="_mcXjILIKEeid-vjMcczUWA" association="_0kHRwLxOEeiMnLuHd6ALAg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3_nELxPEeiMnLuHd6ALAg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C4UXMLxPEeiMnLuHd6ALAg" value="*"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPNSIDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_u3e7kDOVEeiHat9KcP8uWA" name="VnfdUsesVCDesc" memberEnd="_u3gwwDOVEeiHat9KcP8uWA _u3j0EDOVEeiHat9KcP8uWA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u3gJsDOVEeiHat9KcP8uWA" source="org.eclipse.papyrus">
@@ -290,12 +278,6 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dd-6QD5yEeijbdkIlrq2uQ" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_8cc0EES6EeiVGPeZpaYNtQ" name="VnfExposesExtCp" memberEnd="_8c1OkES6EeiVGPeZpaYNtQ _8dhyIES6EeiVGPeZpaYNtQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8csEoES6EeiVGPeZpaYNtQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8c0ngES6EeiVGPeZpaYNtQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_8dhyIES6EeiVGPeZpaYNtQ" name="_vnf" type="_Io3nQESzEeiVGPeZpaYNtQ" association="_8cc0EES6EeiVGPeZpaYNtQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_m-GzoEJ_EeiwbqJBYHKltg" memberEnd="_m-HasUJ_EeiwbqJBYHKltg _m-RLsEJ_EeiwbqJBYHKltg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-GzoUJ_EeiwbqJBYHKltg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-HasEJ_EeiwbqJBYHKltg" key="nature" value="UML_Nature"/>
@@ -437,6 +419,18 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
           <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0kHRwLxOEeiMnLuHd6ALAg" name="ServiceProvidesAllottedLink" memberEnd="_0kN_cLxOEeiMnLuHd6ALAg _0kRp0LxOEeiMnLuHd6ALAg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0kMxULxOEeiMnLuHd6ALAg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0kMxUbxOEeiMnLuHd6ALAg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0kN_cLxOEeiMnLuHd6ALAg" name="servicedescatomic" association="_0kHRwLxOEeiMnLuHd6ALAg">
+          <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0kRp0LxOEeiMnLuHd6ALAg" name="allottedlink" type="_mcXjILIKEeid-vjMcczUWA" association="_0kHRwLxOEeiMnLuHd6ALAg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3_nELxPEeiMnLuHd6ALAg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C4UXMLxPEeiMnLuHd6ALAg" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MDOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_bphG0DTSEeiwQ6KPLHcy4g" annotatedElement="_zPN5MDOHEei5Af8DcjrhIQ">
@@ -473,9 +467,6 @@ Change L2addressData and l3addressData to 0..1 given &quot;only present....&quot
 .&#xD;
 onboardedVnfPkgInfoId - need class for VnfPkg?   Yes - probably need more discussion - tied to vnf model and internal model.   Vnf Instance related to vnf descriptor or onboarding pkg descriptor</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_QKT3gJdJEei-sOl6ywWHlg">
-        <body>do we need both superclass and subclass or just one???</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_YxDD0JdJEei-sOl6ywWHlg">
         <body>Will not try to push this out into R3 - save for R4</body>
       </ownedComment>
@@ -488,7 +479,7 @@ A license is not a resource&#xD;
 A Cp is not a resource</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_HdKzwLavEeiWgvNHCpdNlg">
-        <body>ONAP has VirtualLinkDesc, not NetworkLink&#xD;
+        <body>ONAP has a VirtualLinkDesc, not NetworkLink or LinkDesc&#xD;
 &#xD;
 This will probably need to move to common</body>
       </ownedComment>
@@ -1056,7 +1047,7 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aPEasDm3EeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="LinkDesc ">
+      <packagedElement xmi:type="uml:Class" xmi:id="_AC2eIDQUEeixv_sLOod4lQ" name="LinkDesc " isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Ey004LeVEeiq7vtzCAMDQQ" annotatedElement="_AC2eIDQUEeixv_sLOod4lQ">
           <body>A communication channel that connects two or more devices, nodes, or entities.</body>
         </ownedComment>
@@ -1526,21 +1517,6 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
           <general xmi:type="uml:Class" href="Common.uml#_8naVoES0EeiVGPeZpaYNtQ"/>
         </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Io3nQESzEeiVGPeZpaYNtQ" name="Vnf">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_g9jTIESzEeiVGPeZpaYNtQ" annotatedElement="_Io3nQESzEeiVGPeZpaYNtQ">
-          <body>An implementation of an NF that can be deployed on a Network Function Virtualisation Infrastructure (NFVI).</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_WZrrwESzEeiVGPeZpaYNtQ">
-          <general xmi:type="uml:Class" href="Common.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
-        </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_8c1OkES6EeiVGPeZpaYNtQ" name="_vnfExtCp" type="_fMPCUES6EeiVGPeZpaYNtQ" aggregation="composite" association="_8cc0EES6EeiVGPeZpaYNtQ">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_djlNAES7EeiVGPeZpaYNtQ" annotatedElement="_8c1OkES6EeiVGPeZpaYNtQ">
-            <body>External CP of the VNF.</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8dJ-sES6EeiVGPeZpaYNtQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8dhLEES6EeiVGPeZpaYNtQ" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_jH_PgF3PEeiwL5tPgFMcjQ" name="Vnf">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Qzli4F4CEei-d9bwZwcVEw" annotatedElement="_jH_PgF3PEeiwL5tPgFMcjQ">
           <body>An implementation of an NF that can be deployed on a Network Function Virtualisation Infrastructure (NFVI).</body>
@@ -1867,7 +1843,14 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
           <general xmi:type="uml:Class" href="Common.uml#_Tw5PIES0EeiVGPeZpaYNtQ"/>
         </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)" isAbstract="true">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_psrJgMGxEeiS695oPTRE1Q" annotatedElement="_DAQisJpXEeidy9iGT_F5-w">
+          <body>ResourceDesc represents physical and non-physical (virtual) components which are owned / managed by the business or provided by a Supplier and are used (directly or indirectly) to construct services.&#xD;
+&#xD;
+In this context, a resource is something that goes into a resource catalog from which services are composed.&#xD;
+  </body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xVaLUJs3EeiPBvbfaqSLYg" name="Anfd">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2qM6sKY4Eeily5uFlujj3Q" annotatedElement="_xVaLUJs3EeiPBvbfaqSLYg">
           <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.  Note:  the allotted network function is no longer derived from some allotted resource parent.&#xD;
@@ -1875,7 +1858,7 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_7DhPYJs3EeiPBvbfaqSLYg" general="_O385oJssEeiPBvbfaqSLYg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_O385oJssEeiPBvbfaqSLYg" name="NetworkFunctionDesc">
+      <packagedElement xmi:type="uml:Class" xmi:id="_O385oJssEeiPBvbfaqSLYg" name="NetworkFunctionDesc" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_vrMhMKY4Eeily5uFlujj3Q" annotatedElement="_O385oJssEeiPBvbfaqSLYg">
           <body>A NetworkFunction is a functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour.</body>
         </ownedComment>
@@ -2473,7 +2456,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oUjqgjm-EeiWMf5FLWfdLA" base_StructuralFeature="_oUjqgTm-EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PJnV8DnHEeiWMf5FLWfdLA" base_StructuralFeature="_PJmu4jnHEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8qIn4j5xEeijbdkIlrq2uQ" base_StructuralFeature="_8qIn4T5xEeijbdkIlrq2uQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_wjgxMEdtEei3KMAUV7YMMQ" base_StructuralFeature="_8dhyIES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KOSrIEJ9EeiwbqJBYHKltg" base_StructuralFeature="_KOSEEEJ9EeiwbqJBYHKltg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KOYxwUJ9EeiwbqJBYHKltg" base_StructuralFeature="_KOYxwEJ9EeiwbqJBYHKltg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oVpgQUJ9EeiwbqJBYHKltg" base_StructuralFeature="_oVpgQEJ9EeiwbqJBYHKltg"/>
@@ -3146,8 +3128,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:Experimental xmi:id="_zAqbEJwaEeiPD5fN_oRNAg" base_Element="_PG3MwGkCEeip9umi7zNprw"/>
   <OpenModel_Profile:Experimental xmi:id="_0gpnIJwaEeiPD5fN_oRNAg" base_Element="_inPiUH7eEei4v5WRHqfM1Q"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_p_Z_8KVwEeikF6xsfT18UA" base_Class="_fMPCUES6EeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_p_bOEKVwEeikF6xsfT18UA" base_Class="_Io3nQESzEeiVGPeZpaYNtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_p_ccMKVwEeikF6xsfT18UA" base_StructuralFeature="_8c1OkES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_f72YgKeuEeixw5Ke5QD1pQ">
     <base_Class xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
   </OpenModel_Profile:OpenModelClass>

@@ -376,6 +376,15 @@ Blue - Review Complete&#xD;
 Green - Ready for Review&#xD;
 White - Not Ready for Review</body>
       </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7SeaAMGaEeiS695oPTRE1Q" name="Fault">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CJjmkMGbEeiS695oPTRE1Q" name="faultFields" type="_r_TYsH7wEeifJIHxnlj6Cg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Tp2NgMGbEeiS695oPTRE1Q" memberEnd="_Tp20ksGbEeiS695oPTRE1Q _Tp3bosGbEeiS695oPTRE1Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tp20kMGbEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tp20kcGbEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Tp3bosGbEeiS695oPTRE1Q" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Tp2NgMGbEeiS695oPTRE1Q"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -764,6 +773,10 @@ ONAP event messages are serialized as a unicode ASCII character string which may
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x9KKMJGnEeiUeLUnFxb3Bg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x9UiQJGnEeiUeLUnFxb3Bg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tp20ksGbEeiS695oPTRE1Q" name="fault" type="_7SeaAMGaEeiS695oPTRE1Q" association="_Tp2NgMGbEeiS695oPTRE1Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tp3boMGbEeiS695oPTRE1Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tp3bocGbEeiS695oPTRE1Q" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
@@ -1251,14 +1264,14 @@ Could contain managed object instance as separate key:value; could add probable 
 </body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D8LX8KcGEeiFp-jDq2Hw-A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D8Q3gKcGEeiFp-jDq2Hw-A" value="*"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D8Q3gKcGEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fzeMcIFKEeieQ4zKGFzYtQ" name="filesystemUsageArray" type="_i-TA4IklEeiddpojVtQ0Hg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hN0RkImwEeiOe-BKGdv_Yg" annotatedElement="_fzeMcIFKEeieQ4zKGFzYtQ">
               <body>Filesystem usage of the VM on which the VNFC reporting the event is running.&#xD;
 </body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JpttEKcHEeiFp-jDq2Hw-A"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JpttEKcHEeiFp-jDq2Hw-A" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JpzzsKcHEeiFp-jDq2Hw-A" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_gWrAIIFKEeieQ4zKGFzYtQ" name="hugePagesArray" type="_zCl6wImwEeiOe-BKGdv_Yg">
@@ -4562,4 +4575,8 @@ Percentage of time spent handling soft irq interrupts</body>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rCqW0bIgEeid-vjMcczUWA" base_StructuralFeature="_rCqW0LIgEeid-vjMcczUWA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rcMRIbIgEeid-vjMcczUWA" base_StructuralFeature="_rcMRILIgEeid-vjMcczUWA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KiGhEL0VEeiIStCQ6XYZ_w" base_StructuralFeature="_KiF6AL0VEeiIStCQ6XYZ_w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_7T8ZoMGaEeiS695oPTRE1Q" base_Class="_7SeaAMGaEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_CJjmkcGbEeiS695oPTRE1Q" base_StructuralFeature="_CJjmkMGbEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Tp20k8GbEeiS695oPTRE1Q" base_StructuralFeature="_Tp20ksGbEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Tp3bo8GbEeiS695oPTRE1Q" base_StructuralFeature="_Tp3bosGbEeiS695oPTRE1Q"/>
 </xmi:XMI>

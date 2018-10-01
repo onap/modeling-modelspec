@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Lvny4MDgEeiebIKjAGZWdA" name="ServiceDescriptorHasCharacteristic" memberEnd="_LvrdQMDgEeiebIKjAGZWdA _LvvusMDgEeiebIKjAGZWdA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LvqPIMDgEeiebIKjAGZWdA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LvqPIcDgEeiebIKjAGZWdA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LvrdQMDgEeiebIKjAGZWdA" name="servicecharacteristic" type="_UWL1gMDfEeiebIKjAGZWdA" aggregation="shared" association="_Lvny4MDgEeiebIKjAGZWdA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YXtfUMDhEeiebIKjAGZWdA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YX00EMDhEeiebIKjAGZWdA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LvvusMDgEeiebIKjAGZWdA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_Lvny4MDgEeiebIKjAGZWdA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aGIwAMDhEeiebIKjAGZWdA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aGNBcMDhEeiebIKjAGZWdA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6z5EwMGTEeiS695oPTRE1Q" name="ServiceDescriptorMadeAvailableAsServiceInstance" memberEnd="_6z658sGTEeiS695oPTRE1Q _6z9WMMGTEeiS695oPTRE1Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6z658MGTEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6z658cGTEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6z658sGTEeiS695oPTRE1Q" name="serviceinstance" type="_HFfXUD0QEeiWMf5FLWfdLA" aggregation="composite" association="_6z5EwMGTEeiS695oPTRE1Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GE--gMGUEeiS695oPTRE1Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GFPdMMGUEeiS695oPTRE1Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6z9WMMGTEeiS695oPTRE1Q" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_6z5EwMGTEeiS695oPTRE1Q"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXMl4DOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_qK6eYD0PEeiWMf5FLWfdLA" name="ServiceComprisedOf" memberEnd="_qK86oD0PEeiWMf5FLWfdLA _qK_W4D0PEeiWMf5FLWfdLA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qK8TkD0PEeiWMf5FLWfdLA" source="org.eclipse.papyrus">
@@ -417,20 +440,21 @@
           <type xmi:type="uml:Class" href="Resource.uml#_13gdcDzEEeiWMf5FLWfdLA"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OGFpEMDiEeiebIKjAGZWdA" name="CharacteristicHasValue" memberEnd="_OGGQIsDiEeiebIKjAGZWdA _OGHeQMDiEeiebIKjAGZWdA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OGGQIMDiEeiebIKjAGZWdA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OGGQIcDiEeiebIKjAGZWdA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_OGGQIsDiEeiebIKjAGZWdA" name="value" type="_HFmo4MDiEeiebIKjAGZWdA" association="_OGFpEMDiEeiebIKjAGZWdA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oSJdUMGSEeiS695oPTRE1Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oSYG0MGSEeiS695oPTRE1Q" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_OGHeQMDiEeiebIKjAGZWdA" name="servicecharacteristic" type="_UWL1gMDfEeiebIKjAGZWdA" association="_OGFpEMDiEeiebIKjAGZWdA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pttcYMGSEeiS695oPTRE1Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_puPn4MGSEeiS695oPTRE1Q" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_OR0wUI9QEeiT7tMsBl6xjA">
-        <body>Red items - need input from ExtAPI team.</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_IpxtQI9REeiT7tMsBl6xjA">
-        <body>action - an enumeration?</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_SLZ0gI9REeiT7tMsBl6xjA">
-        <body>Quantity an add from TMF Model</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_hcacQI9YEeiT7tMsBl6xjA">
-        <body>Discuss ServiceOrderItem to ServiceDesc / Service Insance Multiplicity</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
         <body>Some Questions:&#xD;
 1. Do we have a business need to have multiple service catalogs?&#xD;
@@ -447,15 +471,54 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_Bs8YsJDrEei9Vqs7Ti8Wxg">
         <body>I don't think SDC uses the SID Characteristic patern.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DwZV4LwnEeifWa7EkiXrHA" name="OrderPriority">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_ShbhQLwnEeifWa7EkiXrHA" annotatedElement="_DwZV4LwnEeifWa7EkiXrHA">
-          <body>A way that can be used by order requester to prioritize orders in Service Order Management system (from 0 to 4: 0 is the highest priority, and 4 the lowest). It could be for example valued by BSS based on customer order requested priority.</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gEq14MDfEeiebIKjAGZWdA" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_j0sK4MDfEeiebIKjAGZWdA" name="valueType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HFmo4MDiEeiebIKjAGZWdA" name="Value">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1_pvIMGSEeiS695oPTRE1Q" name="value">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nT4ykMHEEeiS695oPTRE1Q" annotatedElement="_1_pvIMGSEeiS695oPTRE1Q">
+            <body>The value of a given ServiceCharacteristic</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_MnBKUMGjEeiS695oPTRE1Q" name="OrderRelationship" memberEnd="_MnE0scGjEeiS695oPTRE1Q _MnGp4MGjEeiS695oPTRE1Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MnENoMGjEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MnE0sMGjEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SeyhEMHGEeirPIyAdej0kg" annotatedElement="_MnBKUMGjEeiS695oPTRE1Q">
+          <body>An assocation between two ServiceOrders.</body>
         </ownedComment>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_I95VgLwnEeifWa7EkiXrHA" name="0"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JzrG8LwnEeifWa7EkiXrHA" name="1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_K5KvYLwnEeifWa7EkiXrHA" name="2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LyHJkLwnEeifWa7EkiXrHA" name="3"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_M98qkLwnEeifWa7EkiXrHA" name="4"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_R9Rn4MGkEeiS695oPTRE1Q" name="type">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tEYKYMNMEeik36qdAhNdCw" annotatedElement="_R9Rn4MGkEeiS695oPTRE1Q">
+            <body>A categorization of the relationship, such as bulk, parent/child, and so forth.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MnE0scGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MnGp4MGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_hUzLgMGkEeiS695oPTRE1Q" name="OrderItemRelationship" memberEnd="_hU0ZosGkEeiS695oPTRE1Q _hU1AsMGkEeiS695oPTRE1Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hU0ZoMGkEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hU0ZocGkEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7KUVAMHFEeirPIyAdej0kg" annotatedElement="_hUzLgMGkEeiS695oPTRE1Q">
+          <body>Enables specifying any kind of relastionships between ServiceOrderItems</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__mP8gMG_EeiS695oPTRE1Q" name="type">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_QqfcUMNPEeik36qdAhNdCw" annotatedElement="__mP8gMG_EeiS695oPTRE1Q">
+            <body>The type of relationship such as contains, relies on.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hU0ZosGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hU1AsMGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces"/>
@@ -1252,6 +1315,9 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_rUHk0IoAEeiOe-BKGdv_Yg" name="_serviceOrderItem" type="_wng4cIn9EeiOe-BKGdv_Yg" aggregation="composite" association="_rUEhgIoAEeiOe-BKGdv_Yg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iFnW4MHEEeiS695oPTRE1Q" annotatedElement="_rUHk0IoAEeiOe-BKGdv_Yg">
+            <body>Reference to ServiceOrderItem</body>
+          </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rUIy8IoAEeiOe-BKGdv_Yg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rUIy8YoAEeiOe-BKGdv_Yg" value="*"/>
         </ownedAttribute>
@@ -1274,29 +1340,21 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ttCHgIoBEeiOe-BKGdv_Yg" name="action">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ttCHgIoBEeiOe-BKGdv_Yg" name="action" type="_pWPaEMA-Eei02ItngDf4ZA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_LsUUcI6REeiLSKWGMeE9mQ" annotatedElement="_ttCHgIoBEeiOe-BKGdv_Yg">
             <body>The action to take for an InteractionItem, such as add, change, remove.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uN6nAIoBEeiOe-BKGdv_Yg" name="state">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uN6nAIoBEeiOe-BKGdv_Yg" name="state" type="_3a0cEI6OEeiLSKWGMeE9mQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_5cQbYMA-Eei02ItngDf4ZA" annotatedElement="_uN6nAIoBEeiOe-BKGdv_Yg">
+            <body>State of the order item: described in the state machine diagram. This is the requested state.</body>
+          </ownedComment>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_up_fAIoBEeiOe-BKGdv_Yg" name="Quantity">
           <ownedComment xmi:type="uml:Comment" xmi:id="_ge_5MI6REeiLSKWGMeE9mQ" annotatedElement="_up_fAIoBEeiOe-BKGdv_Yg">
             <body>Quantity of an interaction item involved in an interaction.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_wUQocIoBEeiOe-BKGdv_Yg" name="type">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_vltEcI9TEeiT7tMsBl6xjA" name="schemaLocation">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xbTUII9TEeiT7tMsBl6xjA" name="baseType">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_iQkugJpYEeidy9iGT_F5-w" name="ServiceDescAtomic">
@@ -1666,15 +1724,15 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_3a0cEI6OEeiLSKWGMeE9mQ" name="OrderState">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KgZ4I6OEeiLSKWGMeE9mQ" name="Acknowledged"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9e8hsI6OEeiLSKWGMeE9mQ" name="InProgress"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A5qVEI6PEeiLSKWGMeE9mQ" name="Pending"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CIzBsI6PEeiLSKWGMeE9mQ" name="Held"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ded0II6PEeiLSKWGMeE9mQ" name="Cancelled"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EoLOMI6PEeiLSKWGMeE9mQ" name="Completed"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GBApYI6PEeiLSKWGMeE9mQ" name="Failed"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HE9ZsI6PEeiLSKWGMeE9mQ" name="Partial"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JHmm4I6PEeiLSKWGMeE9mQ" name="Rejected"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7KgZ4I6OEeiLSKWGMeE9mQ" name="ACKNOWLEDGED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9e8hsI6OEeiLSKWGMeE9mQ" name="IN_PROGRESS"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_A5qVEI6PEeiLSKWGMeE9mQ" name="PENDING"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CIzBsI6PEeiLSKWGMeE9mQ" name="HELD"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ded0II6PEeiLSKWGMeE9mQ" name="CANCELLED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EoLOMI6PEeiLSKWGMeE9mQ" name="COMPLETED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GBApYI6PEeiLSKWGMeE9mQ" name="FAILED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_HE9ZsI6PEeiLSKWGMeE9mQ" name="PARTIAL"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JHmm4I6PEeiLSKWGMeE9mQ" name="REJECTED"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_RZ1sQJAjEei1uKE-hf_HvQ" name="TimePeriod">
         <ownedComment xmi:type="uml:Comment" xmi:id="_5k0icJAjEei1uKE-hf_HvQ" annotatedElement="_RZ1sQJAjEei1uKE-hf_HvQ">
@@ -1700,6 +1758,22 @@ If null, then represents to the end of time&#xD;
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_pWPaEMA-Eei02ItngDf4ZA" name="Action">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_t-VmkMA-Eei02ItngDf4ZA" name="ADD"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vKPZAMA-Eei02ItngDf4ZA" name="MODIFY"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wjzM8MA-Eei02ItngDf4ZA" name="DELETE"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yj4OUMA-Eei02ItngDf4ZA" name="NO_CHANGE"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DwZV4LwnEeifWa7EkiXrHA" name="OrderPriority">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ShbhQLwnEeifWa7EkiXrHA" annotatedElement="_DwZV4LwnEeifWa7EkiXrHA">
+          <body>A way that can be used by order requester to prioritize orders in Service Order Management system (from 0 to 4: 0 is the highest priority, and 4 the lowest). It could be for example valued by BSS based on customer order requested priority.</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_I95VgLwnEeifWa7EkiXrHA" name="0"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JzrG8LwnEeifWa7EkiXrHA" name="1"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_K5KvYLwnEeifWa7EkiXrHA" name="2"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LyHJkLwnEeifWa7EkiXrHA" name="3"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_M98qkLwnEeifWa7EkiXrHA" name="4"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
@@ -2049,12 +2123,9 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ttCHgooBEeiOe-BKGdv_Yg" base_StructuralFeature="_ttCHgIoBEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uN7OEYoBEeiOe-BKGdv_Yg" base_StructuralFeature="_uN6nAIoBEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_up_fAooBEeiOe-BKGdv_Yg" base_StructuralFeature="_up_fAIoBEeiOe-BKGdv_Yg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_wUQocooBEeiOe-BKGdv_Yg" base_StructuralFeature="_wUQocIoBEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LBvXsooCEeiOe-BKGdv_Yg" base_StructuralFeature="_LBvXsIoCEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LBv-xIoCEeiOe-BKGdv_Yg" base_StructuralFeature="_LBv-wooCEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uattgI6OEeiLSKWGMeE9mQ" base_StructuralFeature="_uatGcI6OEeiLSKWGMeE9mQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_vltrgY9TEeiT7tMsBl6xjA" base_StructuralFeature="_vltEcI9TEeiT7tMsBl6xjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_xbT7MY9TEeiT7tMsBl6xjA" base_StructuralFeature="_xbTUII9TEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IdvDEI9WEeiT7tMsBl6xjA" base_StructuralFeature="_IducAI9WEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IdwRMo9WEeiT7tMsBl6xjA" base_StructuralFeature="_IdwRMI9WEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_efN6QY93EeiT7tMsBl6xjA" base_Class="_efN6QI93EeiT7tMsBl6xjA"/>
@@ -2287,4 +2358,23 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0kRp0bxOEeiMnLuHd6ALAg">
     <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_0kRp0LxOEeiMnLuHd6ALAg"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelClass xmi:id="_UWORwMDfEeiebIKjAGZWdA" base_Class="_UWL1gMDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_gErc8MDfEeiebIKjAGZWdA" base_StructuralFeature="_gEq14MDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_j0sK4cDfEeiebIKjAGZWdA" base_StructuralFeature="_j0sK4MDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LvrdQcDgEeiebIKjAGZWdA" base_StructuralFeature="_LvrdQMDgEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LvwVwMDgEeiebIKjAGZWdA" base_StructuralFeature="_LvvusMDgEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_HFmo4cDiEeiebIKjAGZWdA" base_Class="_HFmo4MDiEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OGG3MMDiEeiebIKjAGZWdA" base_StructuralFeature="_OGGQIsDiEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OGHeQcDiEeiebIKjAGZWdA" base_StructuralFeature="_OGHeQMDiEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1_pvIcGSEeiS695oPTRE1Q" base_StructuralFeature="_1_pvIMGSEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6z7hAMGTEeiS695oPTRE1Q" base_StructuralFeature="_6z658sGTEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6z9WMcGTEeiS695oPTRE1Q" base_StructuralFeature="_6z9WMMGTEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_MnBxYMGjEeiS695oPTRE1Q" base_Class="_MnBKUMGjEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MnE0ssGjEeiS695oPTRE1Q" base_StructuralFeature="_MnE0scGjEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MnGp4cGjEeiS695oPTRE1Q" base_StructuralFeature="_MnGp4MGjEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_R9Rn4cGkEeiS695oPTRE1Q" base_StructuralFeature="_R9Rn4MGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_hUzLgcGkEeiS695oPTRE1Q" base_Class="_hUzLgMGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hU0Zo8GkEeiS695oPTRE1Q" base_StructuralFeature="_hU0ZosGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hU1nwMGkEeiS695oPTRE1Q" base_StructuralFeature="_hU1AsMGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__mP8gcG_EeiS695oPTRE1Q" base_StructuralFeature="__mP8gMG_EeiS695oPTRE1Q"/>
 </xmi:XMI>
