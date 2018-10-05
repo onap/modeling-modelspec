@@ -520,6 +520,36 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_hU0ZosGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_hU1AsMGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xPZN8MhdEeiSA51ssKbbgA" name="PnfdAssociatedNsVirtualLinkDesc" memberEnd="_xcsqIMhdEeiSA51ssKbbgA _xcw7kchdEeiSA51ssKbbgA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcqN4MhdEeiSA51ssKbbgA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xcq08MhdEeiSA51ssKbbgA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xcw7kchdEeiSA51ssKbbgA" name="nsvirtuallinkdesc" association="_xPZN8MhdEeiSA51ssKbbgA">
+          <type xmi:type="uml:Class" href="Resource.uml#_13WFYDzEEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-WIQMhfEeiSA51ssKbbgA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-jjoMhfEeiSA51ssKbbgA" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xcsqIMhdEeiSA51ssKbbgA" name="pnfd" association="_xPZN8MhdEeiSA51ssKbbgA">
+          <type xmi:type="uml:Class" href="Resource.uml#_13TCEDzEEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xcwUgMhdEeiSA51ssKbbgA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xcw7kMhdEeiSA51ssKbbgA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_yKT-EMhdEeiSA51ssKbbgA" name="VnfdAssociatedNsVirtualLinkDesc " memberEnd="_yKYPgMhdEeiSA51ssKbbgA _yKbS0chdEeiSA51ssKbbgA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yKXBYMhdEeiSA51ssKbbgA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yKXocMhdEeiSA51ssKbbgA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_yKbS0chdEeiSA51ssKbbgA" name="nsvirtuallinkdesc" association="_yKT-EMhdEeiSA51ssKbbgA">
+          <type xmi:type="uml:Class" href="Resource.uml#_13WFYDzEEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RwFcgMhfEeiSA51ssKbbgA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RwKVAMhfEeiSA51ssKbbgA" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_yKYPgMhdEeiSA51ssKbbgA" name="vnfd" association="_yKT-EMhdEeiSA51ssKbbgA">
+          <type xmi:type="uml:Class" href="Vnf.uml#_aaEZADOREeiHat9KcP8uWA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKarwMhdEeiSA51ssKbbgA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKbS0MhdEeiSA51ssKbbgA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXN0ADOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -2377,4 +2407,6 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hU0Zo8GkEeiS695oPTRE1Q" base_StructuralFeature="_hU0ZosGkEeiS695oPTRE1Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hU1nwMGkEeiS695oPTRE1Q" base_StructuralFeature="_hU1AsMGkEeiS695oPTRE1Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__mP8gcG_EeiS695oPTRE1Q" base_StructuralFeature="__mP8gMG_EeiS695oPTRE1Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xcxioMhdEeiSA51ssKbbgA" base_StructuralFeature="_xcw7kchdEeiSA51ssKbbgA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yKb54MhdEeiSA51ssKbbgA" base_StructuralFeature="_yKbS0chdEeiSA51ssKbbgA"/>
 </xmi:XMI>
