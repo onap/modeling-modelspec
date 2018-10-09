@@ -13,3 +13,5 @@ ONAP Information Model Specifications
    :titlesonly:
 
    VnfdAndVnfInstance
+   NSD
+   ServiceDescriptor
