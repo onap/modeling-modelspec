@@ -502,6 +502,17 @@ This will probably need to move to common</body>
 </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_lFpyYLILEeid-vjMcczUWA" general="_AC2eIDQUEeixv_sLOod4lQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oQSGgMySEeiNIpLnpwYDYw" name="event" association="_oQHucMySEeiNIpLnpwYDYw">
+          <type xmi:type="uml:Class" href="Common.uml#_PmIOkH7uEeifJIHxnlj6Cg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oQUiwMySEeiNIpLnpwYDYw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oQUiwcySEeiNIpLnpwYDYw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oQHucMySEeiNIpLnpwYDYw" memberEnd="_oQSGgMySEeiNIpLnpwYDYw _oQVJ0MySEeiNIpLnpwYDYw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oQQRUMySEeiNIpLnpwYDYw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oQQ4YMySEeiNIpLnpwYDYw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oQVJ0MySEeiNIpLnpwYDYw" name="allottedlink" type="_mcXjILIKEeid-vjMcczUWA" association="_oQHucMySEeiNIpLnpwYDYw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
@@ -3243,4 +3254,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CcICUcfzEeiEtuRgTYzSUQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_CcICUMfzEeiEtuRgTYzSUQ"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oQStkMySEeiNIpLnpwYDYw" base_StructuralFeature="_oQSGgMySEeiNIpLnpwYDYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oQVJ0cySEeiNIpLnpwYDYw" base_StructuralFeature="_oQVJ0MySEeiNIpLnpwYDYw"/>
 </xmi:XMI>

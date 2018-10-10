@@ -337,12 +337,6 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventHasVoiceVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f24I8MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f24I8cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_f24wAsWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_f23h4MWqEeiLjtyU_R81wg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_vV0jwES0EeiVGPeZpaYNtQ" name="VirtualLinkHasLinkPort" memberEnd="_vV1x4kS0EeiVGPeZpaYNtQ _vWZykES0EeiVGPeZpaYNtQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vV1x4ES0EeiVGPeZpaYNtQ" source="org.eclipse.papyrus">
@@ -358,78 +352,6 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SYdnIES1EeiVGPeZpaYNtQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SYrpkES1EeiVGPeZpaYNtQ" value="1"/>
         </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_MjWCwMWqEeiLjtyU_R81wg" name="EventConainsThresholdCrossingAlert" memberEnd="_MjWp0sWqEeiLjtyU_R81wg _MjWp1sWqEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MjWp0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MjWp0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_MjWp1sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_MjWCwMWqEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_8DrRgMWMEeiLjtyU_R81wg" name="EventContainsComonEventHeader" memberEnd="_8Dr4ksWMEeiLjtyU_R81wg _8DsfosWMEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Dr4kMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Dr4kcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_8DsfosWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_8DrRgMWMEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Tp2NgMGbEeiS695oPTRE1Q" name="EventContainsFault" memberEnd="_Tp20ksGbEeiS695oPTRE1Q _Tp3bosGbEeiS695oPTRE1Q">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tp20kMGbEeiS695oPTRE1Q" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tp20kcGbEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Tp3bosGbEeiS695oPTRE1Q" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Tp2NgMGbEeiS695oPTRE1Q"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_IYFe4MWMEeiLjtyU_R81wg" name="EventContainsHeartbeat" memberEnd="_IYJJQMWMEeiLjtyU_R81wg _IYK-ccWMEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IYH7IMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IYH7IcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_IYK-ccWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_IYFe4MWMEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_O1nboMWPEeiLjtyU_R81wg" name="EventContainsMeasurement" memberEnd="_O1pQ0cWPEeiLjtyU_R81wg _O1v-gMWPEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O1opwMWPEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O1pQ0MWPEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_O1v-gMWPEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_O1nboMWPEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_QWlBoMWbEeiLjtyU_R81wg" name="EventContainsMobileFlow" memberEnd="_QWlossWbEeiLjtyU_R81wg _QWmPwsWbEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QWlosMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QWloscWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_QWmPwsWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_QWlBoMWbEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Vf3PoMWbEeiLjtyU_R81wg" name="EventContainsNotification" memberEnd="_Vf32ssWbEeiLjtyU_R81wg _Vf5E0MWbEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vf32sMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vf32scWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Vf5E0MWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Vf3PoMWbEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Ya42UMWbEeiLjtyU_R81wg" name="EventContainsOther" memberEnd="_Ya5dYsWbEeiLjtyU_R81wg _Ya6EccWbEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ya5dYMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ya5dYcWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Ya6EccWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Ya42UMWbEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_ZyP4kMWgEeiLjtyU_R81wg" name="EventContainsPnfRegistration" memberEnd="_ZyQfosWgEeiLjtyU_R81wg _ZyRGs8WgEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZyQfoMWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZyQfocWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ZyRGs8WgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_ZyP4kMWgEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_oQMI0MWgEeiLjtyU_R81wg" name="EventContainsSipSignaling" memberEnd="_oQMv4cWgEeiLjtyU_R81wg _oQNW8sWgEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oQMI0cWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oQMv4MWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_oQNW8sWgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_oQMI0MWgEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_t-VBQMWpEeiLjtyU_R81wg" name="EventContainsStateChange" memberEnd="_t-WPYMWpEeiLjtyU_R81wg _t-W2ccWpEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t-VoUMWpEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t-VoUcWpEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_t-W2ccWpEeiLjtyU_R81wg" name="eventcontainssipsignaling" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_t-VBQMWpEeiLjtyU_R81wg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Bw4lwMWqEeiLjtyU_R81wg" name="EventContainsSysLog" memberEnd="_Bw5M0sWqEeiLjtyU_R81wg _Bw5z4sWqEeiLjtyU_R81wg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bw5M0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bw5M0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Bw5z4sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Bw4lwMWqEeiLjtyU_R81wg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Sgc88DOHEei5Af8DcjrhIQ" name="Diagrams">
@@ -451,36 +373,7 @@ Blue - Review Complete&#xD;
 Green - Ready for Review&#xD;
 White - Not Ready for Review</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Association" xmi:id="_BkqnUMgeEeiEtuRgTYzSUQ" name="MeasurementHasHugePages" memberEnd="_BkrOYsgeEeiEtuRgTYzSUQ _BkscgcgeEeiEtuRgTYzSUQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BkrOYMgeEeiEtuRgTYzSUQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BkrOYcgeEeiEtuRgTYzSUQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_BkscgcgeEeiEtuRgTYzSUQ" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_BkqnUMgeEeiEtuRgTYzSUQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_322w4MivEeiKReoLXDYvSw" name="MeasurementHasCodecsInUse" memberEnd="_325NIMivEeiKReoLXDYvSw _326bQsivEeiKReoLXDYvSw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_324mEMivEeiKReoLXDYvSw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_324mEcivEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_326bQsivEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_322w4MivEeiKReoLXDYvSw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_U7Y3EMiwEeiKReoLXDYvSw" name="MeasurementHasCpuUsage" memberEnd="_U7ZeIsiwEeiKReoLXDYvSw _U7asQciwEeiKReoLXDYvSw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7ZeIMiwEeiKReoLXDYvSw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U7ZeIciwEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_U7asQciwEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_U7Y3EMiwEeiKReoLXDYvSw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_THJc0MixEeiKReoLXDYvSw" name="MeasurementHasDiskUsage" memberEnd="_THKD4sixEeiKReoLXDYvSw _THT04MixEeiKReoLXDYvSw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_THKD4MixEeiKReoLXDYvSw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_THKD4cixEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_THT04MixEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_THJc0MixEeiKReoLXDYvSw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_MpiqwMiyEeiKReoLXDYvSw" memberEnd="_MpjR0siyEeiKReoLXDYvSw _Mpj44siyEeiKReoLXDYvSw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MpjR0MiyEeiKReoLXDYvSw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MpjR0ciyEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Mpj44siyEeiKReoLXDYvSw" name="measurementhasdiskusage" type="_qX-WsMWKEeiLjtyU_R81wg" association="_MpiqwMiyEeiKReoLXDYvSw"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_waXfYMwLEeiL9oW50yu7zw" name="Kevin"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -4225,6 +4118,117 @@ Debug	          7	    debug-level messages&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_kokBwIkOEeiddpojVtQ0Hg" name="DiskUsage"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UgGsIMyIEeicT7FGufu5-g" name="Associations">
+        <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventHasVoiceVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f24I8MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f24I8cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_f24wAsWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_f23h4MWqEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_MjWCwMWqEeiLjtyU_R81wg" name="EventConainsThresholdCrossingAlert" memberEnd="_MjWp0sWqEeiLjtyU_R81wg _MjWp1sWqEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MjWp0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MjWp0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MjWp1sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_MjWCwMWqEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_8DrRgMWMEeiLjtyU_R81wg" name="EventContainsComonEventHeader" memberEnd="_8Dr4ksWMEeiLjtyU_R81wg _8DsfosWMEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Dr4kMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Dr4kcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_8DsfosWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_8DrRgMWMEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Tp2NgMGbEeiS695oPTRE1Q" name="EventContainsFault" memberEnd="_Tp20ksGbEeiS695oPTRE1Q _Tp3bosGbEeiS695oPTRE1Q">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tp20kMGbEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tp20kcGbEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Tp3bosGbEeiS695oPTRE1Q" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Tp2NgMGbEeiS695oPTRE1Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_IYFe4MWMEeiLjtyU_R81wg" name="EventContainsHeartbeat" memberEnd="_IYJJQMWMEeiLjtyU_R81wg _IYK-ccWMEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IYH7IMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IYH7IcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_IYK-ccWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_IYFe4MWMEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_O1nboMWPEeiLjtyU_R81wg" name="EventContainsMeasurement" memberEnd="_O1pQ0cWPEeiLjtyU_R81wg _O1v-gMWPEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O1opwMWPEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O1pQ0MWPEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_O1v-gMWPEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_O1nboMWPEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_QWlBoMWbEeiLjtyU_R81wg" name="EventContainsMobileFlow" memberEnd="_QWlossWbEeiLjtyU_R81wg _QWmPwsWbEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QWlosMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QWloscWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_QWmPwsWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_QWlBoMWbEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Vf3PoMWbEeiLjtyU_R81wg" name="EventContainsNotification" memberEnd="_Vf32ssWbEeiLjtyU_R81wg _Vf5E0MWbEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vf32sMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vf32scWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Vf5E0MWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Vf3PoMWbEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Ya42UMWbEeiLjtyU_R81wg" name="EventContainsOther" memberEnd="_Ya5dYsWbEeiLjtyU_R81wg _Ya6EccWbEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ya5dYMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ya5dYcWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Ya6EccWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Ya42UMWbEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZyP4kMWgEeiLjtyU_R81wg" name="EventContainsPnfRegistration" memberEnd="_ZyQfosWgEeiLjtyU_R81wg _ZyRGs8WgEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZyQfoMWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZyQfocWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ZyRGs8WgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_ZyP4kMWgEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oQMI0MWgEeiLjtyU_R81wg" name="EventContainsSipSignaling" memberEnd="_oQMv4cWgEeiLjtyU_R81wg _oQNW8sWgEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oQMI0cWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oQMv4MWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_oQNW8sWgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_oQMI0MWgEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_t-VBQMWpEeiLjtyU_R81wg" name="EventContainsStateChange" memberEnd="_t-WPYMWpEeiLjtyU_R81wg _t-W2ccWpEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t-VoUMWpEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t-VoUcWpEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_t-W2ccWpEeiLjtyU_R81wg" name="eventcontainssipsignaling" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_t-VBQMWpEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Bw4lwMWqEeiLjtyU_R81wg" name="EventContainsSysLog" memberEnd="_Bw5M0sWqEeiLjtyU_R81wg _Bw5z4sWqEeiLjtyU_R81wg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bw5M0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bw5M0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Bw5z4sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Bw4lwMWqEeiLjtyU_R81wg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_322w4MivEeiKReoLXDYvSw" name="MeasurementHasCodecsInUse" memberEnd="_325NIMivEeiKReoLXDYvSw _326bQsivEeiKReoLXDYvSw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_324mEMivEeiKReoLXDYvSw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_324mEcivEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_326bQsivEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_322w4MivEeiKReoLXDYvSw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_U7Y3EMiwEeiKReoLXDYvSw" name="MeasurementHasCpuUsage" memberEnd="_U7ZeIsiwEeiKReoLXDYvSw _U7asQciwEeiKReoLXDYvSw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U7ZeIMiwEeiKReoLXDYvSw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U7ZeIciwEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_U7asQciwEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_U7Y3EMiwEeiKReoLXDYvSw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_THJc0MixEeiKReoLXDYvSw" name="MeasurementHasDiskUsage" memberEnd="_THKD4sixEeiKReoLXDYvSw _THT04MixEeiKReoLXDYvSw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_THKD4MixEeiKReoLXDYvSw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_THKD4cixEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_THT04MixEeiKReoLXDYvSw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_THJc0MixEeiKReoLXDYvSw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_BkqnUMgeEeiEtuRgTYzSUQ" name="MeasurementHasHugePages" memberEnd="_BkrOYsgeEeiEtuRgTYzSUQ _BkscgcgeEeiEtuRgTYzSUQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BkrOYMgeEeiEtuRgTYzSUQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BkrOYcgeEeiEtuRgTYzSUQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_BkscgcgeEeiEtuRgTYzSUQ" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_BkqnUMgeEeiEtuRgTYzSUQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_MpiqwMiyEeiKReoLXDYvSw" memberEnd="_MpjR0siyEeiKReoLXDYvSw _Mpj44siyEeiKReoLXDYvSw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MpjR0MiyEeiKReoLXDYvSw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MpjR0ciyEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Mpj44siyEeiKReoLXDYvSw" name="measurementhasdiskusage" type="_qX-WsMWKEeiLjtyU_R81wg" association="_MpiqwMiyEeiKReoLXDYvSw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Nfy1oMyJEeicT7FGufu5-g" name="Diagrams"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License">
       <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams">
@@ -4843,4 +4847,5 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_THT04cixEeiKReoLXDYvSw" base_StructuralFeature="_THT04MixEeiKReoLXDYvSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MpjR08iyEeiKReoLXDYvSw" base_StructuralFeature="_MpjR0siyEeiKReoLXDYvSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Mpj448iyEeiKReoLXDYvSw" base_StructuralFeature="_Mpj44siyEeiKReoLXDYvSw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_wcQVwMwLEeiL9oW50yu7zw" base_Class="_waXfYMwLEeiL9oW50yu7zw"/>
 </xmi:XMI>
