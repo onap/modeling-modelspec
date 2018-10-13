@@ -373,7 +373,6 @@ Blue - Review Complete&#xD;
 Green - Ready for Review&#xD;
 White - Not Ready for Review</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_waXfYMwLEeiL9oW50yu7zw" name="Kevin"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -1099,14 +1098,6 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oBfnsIFTEeieQ4zKGFzYtQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oBkgMIFTEeieQ4zKGFzYtQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_br89cIFKEeieQ4zKGFzYtQ" name="codecUsageArray" type="_wrtaQIFdEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_T8FVwImwEeiOe-BKGdv_Yg" annotatedElement="_br89cIFKEeieQ4zKGFzYtQ">
-              <body>Array of codecs in use.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kWIwQIFTEeieQ4zKGFzYtQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kWShQIFTEeieQ4zKGFzYtQ" value="*"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_cvnZ4IFKEeieQ4zKGFzYtQ" name="concurrentSessions">
             <ownedComment xmi:type="uml:Comment" xmi:id="_V2iQQImwEeiOe-BKGdv_Yg" annotatedElement="_cvnZ4IFKEeieQ4zKGFzYtQ">
               <body>Peak concurrent sessions for the VM or VNF (depending on the context) over the measurementInterval.&#xD;
@@ -1133,46 +1124,6 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D8LX8KcGEeiFp-jDq2Hw-A"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D8Q3gKcGEeiFp-jDq2Hw-A" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_gWrAIIFKEeieQ4zKGFzYtQ" name="hugePagesArray" type="_zCl6wImwEeiOe-BKGdv_Yg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_p3VFEImwEeiOe-BKGdv_Yg" annotatedElement="_gWrAIIFKEeieQ4zKGFzYtQ">
-              <body>Array of metrics on hugePages&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBuJ4ImwEeiOe-BKGdv_Yg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nCbUgImwEeiOe-BKGdv_Yg" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g58sUIFKEeieQ4zKGFzYtQ" name="ipmiArray" type="_YT8fIIm2EeiOe-BKGdv_Yg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_HEH9IIm2EeiOe-BKGdv_Yg" annotatedElement="_g58sUIFKEeieQ4zKGFzYtQ">
-              <body>Array of intelligent platform management interface metrics.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hHdw8KcHEeiFp-jDq2Hw-A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hHj3kKcHEeiFp-jDq2Hw-A" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_hlHwQIFKEeieQ4zKGFzYtQ" name="latencyDistribution" type="_zD-Z0KcHEeiFp-jDq2Hw-A">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_vY6q0JGyEeiUeLUnFxb3Bg" annotatedElement="_hlHwQIFKEeieQ4zKGFzYtQ">
-              <body>Array of integers representing counts of requests whose latency in milliseconds falls within per-VNF configured ranges; where latency is the duration between a service request and its fulfillment.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1nyoIKcMEeiFp-jDq2Hw-A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1n584KcMEeiFp-jDq2Hw-A" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_i9VgYIFKEeieQ4zKGFzYtQ" name="loadArray" type="_-7CVIKcMEeiFp-jDq2Hw-A">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_w2xv8JGyEeiUeLUnFxb3Bg" annotatedElement="_i9VgYIFKEeieQ4zKGFzYtQ">
-              <body>Array of system load metrics&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p8Y7gKcNEeiFp-jDq2Hw-A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p8lv0KcNEeiFp-jDq2Hw-A" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oGLCcIFKEeieQ4zKGFzYtQ" name="machineCheckExceptionArray" type="_qlX8oLBZEeix4eA61SHRMQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_zDuIoJGyEeiUeLUnFxb3Bg" annotatedElement="_oGLCcIFKEeieQ4zKGFzYtQ">
-              <body>Array of machine check exceptions&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iqy7QLBeEeix4eA61SHRMQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Iq63ELBeEeix4eA61SHRMQ" value="1"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pW31UIFKEeieQ4zKGFzYtQ" name="meanRequestLatency" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_0kuoYJGyEeiUeLUnFxb3Bg" annotatedElement="_pW31UIFKEeieQ4zKGFzYtQ">
               <body>Mean seconds required to respond to each request for the VM on which the VNFC reporting the event is running.&#xD;
@@ -1192,14 +1143,6 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
               <body>Interval over which measurements are being reported in seconds</body>
             </ownedComment>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_xB0HwIFKEeieQ4zKGFzYtQ" name="memoryUsageArray" type="_bco-wLBgEeix4eA61SHRMQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_bLy0wJGzEeiUeLUnFxb3Bg" annotatedElement="_xB0HwIFKEeieQ4zKGFzYtQ">
-              <body>Memory usage of an array of VMs&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4b7QMLBuEeix4eA61SHRMQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4cAvwLBuEeix4eA61SHRMQ" value="*"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_xj0ooIFKEeieQ4zKGFzYtQ" name="nfcScalingMetric">
             <ownedComment xmi:type="uml:Comment" xmi:id="_d3kegJGzEeiUeLUnFxb3Bg" annotatedElement="_xj0ooIFKEeieQ4zKGFzYtQ">
               <body>Represents busy-ness of the network function from 0 to 100 as reported by the nfc.&#xD;
@@ -1209,26 +1152,12 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A1XAULBvEeix4eA61SHRMQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A1fjMLBvEeix4eA61SHRMQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zM3qEIFKEeieQ4zKGFzYtQ" name="nicPerformanceArray" type="_cp9IoLBvEeix4eA61SHRMQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_i0u8EJGzEeiUeLUnFxb3Bg" annotatedElement="_zM3qEIFKEeieQ4zKGFzYtQ">
-              <body>Performance metrics of an array of network interface cards.&#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_bqn7QJGyEeiUeLUnFxb3Bg" name="numberOfMediaPortsInUse">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hFwRwJGzEeiUeLUnFxb3Bg" annotatedElement="_bqn7QJGyEeiUeLUnFxb3Bg">
               <body>Number of media ports in use.&#xD;
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ciU_UJGyEeiUeLUnFxb3Bg" name="processStatsArray" type="_9xbHMLHMEeid-vjMcczUWA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_npjV8JGzEeiUeLUnFxb3Bg" annotatedElement="_ciU_UJGyEeiUeLUnFxb3Bg">
-              <body>Array of metrics on system processes&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPOAELHOEeid-vjMcczUWA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPTfoLHOEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dGL6UJGyEeiUeLUnFxb3Bg" name="requestRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_pb75kJGzEeiUeLUnFxb3Bg" annotatedElement="_dGL6UJGyEeiUeLUnFxb3Bg">
@@ -1237,24 +1166,88 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_BkrOYsgeEeiEtuRgTYzSUQ" name="_Hugepages" type="_PBg_IMc7EeiRs7MlzxwPhg" aggregation="composite" association="_BkqnUMgeEeiEtuRgTYzSUQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_E02xAM2VEeieTchE0MWKmw" annotatedElement="_BkrOYsgeEeiEtuRgTYzSUQ">
+              <body>Array of metrics on hugePages</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bkr1cMgeEeiEtuRgTYzSUQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BkscgMgeEeiEtuRgTYzSUQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_325NIMivEeiKReoLXDYvSw" name="codecsinuse" type="_4bBlUMc4EeiRs7MlzxwPhg" aggregation="composite" association="_322w4MivEeiKReoLXDYvSw">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_325NIMivEeiKReoLXDYvSw" name="_codecsinuse" type="_4bBlUMc4EeiRs7MlzxwPhg" aggregation="composite" association="_322w4MivEeiKReoLXDYvSw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_J-hZgM2VEeieTchE0MWKmw" annotatedElement="_325NIMivEeiKReoLXDYvSw">
+              <body>Array of codecs in use</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_326bQMivEeiKReoLXDYvSw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_326bQcivEeiKReoLXDYvSw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_U7ZeIsiwEeiKReoLXDYvSw" name="_cpuUsage" type="_oboT8Mc5EeiRs7MlzxwPhg" aggregation="composite" association="_U7Y3EMiwEeiKReoLXDYvSw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_AmTs8M2VEeieTchE0MWKmw" annotatedElement="_U7ZeIsiwEeiKReoLXDYvSw">
+              <body>Usage of an array of CPUs</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U7aFMMiwEeiKReoLXDYvSw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U7asQMiwEeiKReoLXDYvSw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_THKD4sixEeiKReoLXDYvSw" name="_diskUsage" type="_IO8mgMc4EeiRs7MlzxwPhg" aggregation="composite" association="_THJc0MixEeiKReoLXDYvSw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CmhRMM2VEeieTchE0MWKmw" annotatedElement="_THKD4sixEeiKReoLXDYvSw">
+              <body>Usage of an array of disks</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_THOVUMixEeiKReoLXDYvSw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_THQxkMixEeiKReoLXDYvSw" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_MpjR0siyEeiKReoLXDYvSw" name="filesystemusage" type="_CufjwMc6EeiRs7MlzxwPhg" aggregation="composite" association="_MpiqwMiyEeiKReoLXDYvSw">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MpjR0siyEeiKReoLXDYvSw" name="_filesystemusage" type="_CufjwMc6EeiRs7MlzxwPhg" aggregation="composite" association="_MpiqwMiyEeiKReoLXDYvSw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OyW78M2VEeieTchE0MWKmw" annotatedElement="_MpjR0siyEeiKReoLXDYvSw">
+              <body>Filesystem usage of the VM on which the xNFC reporting the event is running</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mpj44MiyEeiKReoLXDYvSw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mpj44ciyEeiKReoLXDYvSw" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uYnZAM2KEeieTchE0MWKmw" name="_ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" aggregation="composite" association="_uYh5cM2KEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TlukUM2VEeieTchE0MWKmw" annotatedElement="_uYnZAM2KEeieTchE0MWKmw">
+              <body>Array of intelligent platform management interface metrics</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uYwi8M2KEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uY0NUM2KEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wwLGQs2KEeieTchE0MWKmw" name="_latencybucketmeasure" type="_0V_VsMdQEeiNaKPf3x1gTw" aggregation="composite" association="_wwJ4IM2KEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XvVeAM2VEeieTchE0MWKmw" annotatedElement="_wwLGQs2KEeieTchE0MWKmw">
+              <body>Array of integers representing counts of requests whose latency in milliseconds falls within per-xNF configured ranges; where latency is the duration between a service request and its fulfillment.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwLtUM2KEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwLtUc2KEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zrPwQs2KEeieTchE0MWKmw" name="_load" type="_1Vj8UMdQEeiNaKPf3x1gTw" aggregation="composite" association="_zrPJMM2KEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_a1_s8M2VEeieTchE0MWKmw" annotatedElement="_zrPwQs2KEeieTchE0MWKmw">
+              <body>Array of system load metrics</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrQXUc2KEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zrQXUs2KEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_daJeAs2QEeieTchE0MWKmw" name="_machinecheckexception" type="_2efTQMdQEeiNaKPf3x1gTw" aggregation="composite" association="_daI28M2QEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_d0FOsM2VEeieTchE0MWKmw" annotatedElement="_daJeAs2QEeieTchE0MWKmw">
+              <body>Array of machine check exceptions</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_daKFEc2QEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_daKFEs2QEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eb2yos2QEeieTchE0MWKmw" name="_memoryusage" type="_4wX2UMdQEeiNaKPf3x1gTw" aggregation="composite" association="_eb1kgM2QEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iaXdUM2VEeieTchE0MWKmw" annotatedElement="_eb2yos2QEeieTchE0MWKmw">
+              <body>Memory usage of an array of VMs</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eb3Zsc2QEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eb4AwM2QEeieTchE0MWKmw" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_e_hgYs2QEeieTchE0MWKmw" name="_nicperformance" type="_5ivHYMdQEeiNaKPf3x1gTw" aggregation="composite" association="_e_gSQM2QEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_l5Fm8M2VEeieTchE0MWKmw" annotatedElement="_e_hgYs2QEeieTchE0MWKmw">
+              <body>Performance metrics of an array of network interface cards</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e_iHcM2QEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e_iHcc2QEeieTchE0MWKmw" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oHa8Ms2UEeieTchE0MWKmw" name="_processstats" type="_qYdAIM2TEeieTchE0MWKmw" aggregation="composite" association="_oHZuEM2UEeieTchE0MWKmw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_27QHcM2VEeieTchE0MWKmw" annotatedElement="_oHa8Ms2UEeieTchE0MWKmw">
+              <body>Array of metrics on system processes</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oHcKUM2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oHcKUc2UEeieTchE0MWKmw" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_25jHQMWSEeiLjtyU_R81wg" name="MobileFlow">
@@ -2628,20 +2621,6 @@ Percentage of time spent handling soft irq interrupts</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MgB0LIYEeid-vjMcczUWA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Mpy0LIYEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g6QNoIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardTemperatureArray" type="_SGvQULIWEeid-vjMcczUWA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_w5owELIGEeid-vjMcczUWA" annotatedElement="_g6QNoIm2EeiOe-BKGdv_Yg">
-              <body>Array of ipmiBaseboard Temperature objects</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MyVsLIYEeid-vjMcczUWA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7M7foLIYEeid-vjMcczUWA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fceBAIm2EeiOe-BKGdv_Yg" name="ipmiBaseboardVoltageRegulatorArray" type="_CV008LIZEeid-vjMcczUWA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_yzd_gLIGEeid-vjMcczUWA" annotatedElement="_fceBAIm2EeiOe-BKGdv_Yg">
-              <body>Array of ipmiBaseboard VoltageRegulator objects</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NEpkLIYEeid-vjMcczUWA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NKJILIYEeid-vjMcczUWA" value="1"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_etCvMIm2EeiOe-BKGdv_Yg" name="ipmiBatteryArray" type="_wEFGcLIZEeid-vjMcczUWA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_0WeqYLIGEeid-vjMcczUWA" annotatedElement="_etCvMIm2EeiOe-BKGdv_Yg">
               <body>Array of ipmiBattery objects</body>
@@ -2697,6 +2676,22 @@ Percentage of time spent handling soft irq interrupts</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7OcikLIYEeid-vjMcczUWA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Og0ALIYEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pjPu0M41EeixI-embJ5ltQ" name="ipmibaseboardtemperature" type="_ehz3sMdQEeiNaKPf3x1gTw" aggregation="composite" association="_pjJBIM41EeixI-embJ5ltQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pjQ88M41EeixI-embJ5ltQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pjQ88c41EeixI-embJ5ltQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_trL0ks41EeixI-embJ5ltQ" name="ipmibaseboardvoltageregulator" type="_ulsLAMdQEeiNaKPf3x1gTw" aggregation="composite" association="_trKmcM41EeixI-embJ5ltQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_trNCsM41EeixI-embJ5ltQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trNCsc41EeixI-embJ5ltQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vI694s41EeixI-embJ5ltQ" name="ipmibattery" type="_tUPxQMdQEeiNaKPf3x1gTw" association="_vI6W0M41EeixI-embJ5ltQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vI8MAM41EeixI-embJ5ltQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vI8MAc41EeixI-embJ5ltQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_x7wR4s41EeixI-embJ5ltQ" name="ipmifan" type="_t2wocMdQEeiNaKPf3x1gTw" association="_x7vq0M41EeixI-embJ5ltQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x7w48M41EeixI-embJ5ltQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x7w48c41EeixI-embJ5ltQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_ehz3sMdQEeiNaKPf3x1gTw" name="IpmiBaseboardTemperature">
@@ -3417,6 +3412,63 @@ Percentage of time spent handling soft irq interrupts</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nkpULHNEeid-vjMcczUWA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7noTsLHNEeid-vjMcczUWA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qYdAIM2TEeieTchE0MWKmw" name="ProcessStats">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yCZ0EM2TEeieTchE0MWKmw" name="forkRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_O5D2UM2UEeieTchE0MWKmw" annotatedElement="_yCZ0EM2TEeieTchE0MWKmw">
+              <body>The number of threads created since the last reboot</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MovZgM2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mo2uQM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yjfu8M2TEeieTchE0MWKmw" name="processIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Q9NfYM2UEeieTchE0MWKmw" annotatedElement="_yjfu8M2TEeieTchE0MWKmw">
+              <body>processIdentifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zA8f8M2TEeieTchE0MWKmw" name="psStateBlocked" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Sc04AM2UEeieTchE0MWKmw" annotatedElement="_zA8f8M2TEeieTchE0MWKmw">
+              <body>The number of processes in a blocked state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mo9b8M2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MpEJoM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zalH8M2TEeieTchE0MWKmw" name="psStatePaging" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_T-YKUM2UEeieTchE0MWKmw" annotatedElement="_zalH8M2TEeieTchE0MWKmw">
+              <body>The number of processes in a paging state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpIbEM2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MpMsgM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0p73AM2TEeieTchE0MWKmw" name="psStateRunning" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_VzVg0M2UEeieTchE0MWKmw" annotatedElement="_0p73AM2TEeieTchE0MWKmw">
+              <body>The number of processes in a running state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpQ98M2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MpVPYM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1Gw88M2TEeieTchE0MWKmw" name="psStateSleeping" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XS_VsM2UEeieTchE0MWKmw" annotatedElement="_1Gw88M2TEeieTchE0MWKmw">
+              <body>The number of processes in a sleeping state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpZg0M2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MpdLMM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1fatgM2TEeieTchE0MWKmw" name="PsStateStopped" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Yo8cAM2UEeieTchE0MWKmw" annotatedElement="_1fatgM2TEeieTchE0MWKmw">
+              <body>The number of processes in a stopped state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mpg1kM2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MplHAM2UEeieTchE0MWKmw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_126ngM2TEeieTchE0MWKmw" name="psStateZombie" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_aik3IM2UEeieTchE0MWKmw" annotatedElement="_126ngM2TEeieTchE0MWKmw">
+              <body>The number of processes in a zombie state</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MppYcM2UEeieTchE0MWKmw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mptp4M2UEeieTchE0MWKmw" value="1"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
@@ -4221,12 +4273,84 @@ Debug	          7	    debug-level messages&#xD;
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_BkscgcgeEeiEtuRgTYzSUQ" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_BkqnUMgeEeiEtuRgTYzSUQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_MpiqwMiyEeiKReoLXDYvSw" memberEnd="_MpjR0siyEeiKReoLXDYvSw _Mpj44siyEeiKReoLXDYvSw">
+        <packagedElement xmi:type="uml:Association" xmi:id="_MpiqwMiyEeiKReoLXDYvSw" name="MeasurementHasFilesystemUsage" memberEnd="_MpjR0siyEeiKReoLXDYvSw _Mpj44siyEeiKReoLXDYvSw">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MpjR0MiyEeiKReoLXDYvSw" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MpjR0ciyEeiKReoLXDYvSw" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_Mpj44siyEeiKReoLXDYvSw" name="measurementhasdiskusage" type="_qX-WsMWKEeiLjtyU_R81wg" association="_MpiqwMiyEeiKReoLXDYvSw"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_uYh5cM2KEeieTchE0MWKmw" name="MeasurementHasIpmi" memberEnd="_uYnZAM2KEeieTchE0MWKmw _uY3QoM2KEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uYmK4M2KEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uYmx8M2KEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_uY3QoM2KEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_uYh5cM2KEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_wwJ4IM2KEeieTchE0MWKmw" name="MeasurementHasLatencyBucketMeasure" memberEnd="_wwLGQs2KEeieTchE0MWKmw _wwMUYM2KEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wwLGQM2KEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wwLGQc2KEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_wwMUYM2KEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_wwJ4IM2KEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_zrPJMM2KEeieTchE0MWKmw" name="MeasurementHasLoad" memberEnd="_zrPwQs2KEeieTchE0MWKmw _zrQ-YM2KEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zrPwQM2KEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zrPwQc2KEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_zrQ-YM2KEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_zrPJMM2KEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eb1kgM2QEeieTchE0MWKmw" name="MeasurementHasMemoryUsage" memberEnd="_eb2yos2QEeieTchE0MWKmw _eb4Awc2QEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eb2yoM2QEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eb2yoc2QEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_eb4Awc2QEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_eb1kgM2QEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_e_gSQM2QEeieTchE0MWKmw" name="MeasurementHasNicPerformance" memberEnd="_e_hgYs2QEeieTchE0MWKmw _e_iHcs2QEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e_hgYM2QEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e_hgYc2QEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_e_iHcs2QEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_e_gSQM2QEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oHZuEM2UEeieTchE0MWKmw" name="MeasurementHasProcessStats" memberEnd="_oHa8Ms2UEeieTchE0MWKmw _oHcKUs2UEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oHa8MM2UEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oHa8Mc2UEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_oHcKUs2UEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_oHZuEM2UEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_daI28M2QEeieTchE0MWKmw" name="MeausrementHasMachineCheckException" memberEnd="_daJeAs2QEeieTchE0MWKmw _daKsIM2QEeieTchE0MWKmw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_daJeAM2QEeieTchE0MWKmw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_daJeAc2QEeieTchE0MWKmw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_daKsIM2QEeieTchE0MWKmw" name="measurement" type="_qX-WsMWKEeiLjtyU_R81wg" association="_daI28M2QEeieTchE0MWKmw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vI6W0M41EeixI-embJ5ltQ" memberEnd="_vI694s41EeixI-embJ5ltQ _vI8MAs41EeixI-embJ5ltQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vI694M41EeixI-embJ5ltQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vI694c41EeixI-embJ5ltQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_vI8MAs41EeixI-embJ5ltQ" name="ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" association="_vI6W0M41EeixI-embJ5ltQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_trKmcM41EeixI-embJ5ltQ" name="IpmiHasIpmiBaseboardVoltageRegulator" memberEnd="_trL0ks41EeixI-embJ5ltQ _trNCss41EeixI-embJ5ltQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_trL0kM41EeixI-embJ5ltQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_trL0kc41EeixI-embJ5ltQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cxuusM42EeixI-embJ5ltQ" annotatedElement="_trKmcM41EeixI-embJ5ltQ">
+            <body>Array of ipmiBaseboard VoltageRegulator objects</body>
+          </ownedComment>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_trNCss41EeixI-embJ5ltQ" name="ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" association="_trKmcM41EeixI-embJ5ltQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_x7vq0M41EeixI-embJ5ltQ" memberEnd="_x7wR4s41EeixI-embJ5ltQ _x7w48s41EeixI-embJ5ltQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x7wR4M41EeixI-embJ5ltQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x7wR4c41EeixI-embJ5ltQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_x7w48s41EeixI-embJ5ltQ" name="ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" association="_x7vq0M41EeixI-embJ5ltQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pjJBIM41EeixI-embJ5ltQ" name="IpmiHasIpmiBaseboardTemperature" memberEnd="_pjPu0M41EeixI-embJ5ltQ _pjRkAM41EeixI-embJ5ltQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pjN5oM41EeixI-embJ5ltQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pjOgsM41EeixI-embJ5ltQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ZLeZsM42EeixI-embJ5ltQ" annotatedElement="_pjJBIM41EeixI-embJ5ltQ">
+          <body>Array of ipmiBaseboard Temperature objects</body>
+        </ownedComment>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_pjRkAM41EeixI-embJ5ltQ" name="ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" association="_pjJBIM41EeixI-embJ5ltQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Nfy1oMyJEeicT7FGufu5-g" name="Diagrams"/>
     </packagedElement>
@@ -4338,21 +4462,13 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MIUQcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_MIUQcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NyvK4YFKEeieQ4zKGFzYtQ" base_StructuralFeature="_Nyuj0IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ahVkcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_ahVkcIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_br89coFKEeieQ4zKGFzYtQ" base_StructuralFeature="_br89cIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_cvnZ4oFKEeieQ4zKGFzYtQ" base_StructuralFeature="_cvnZ4IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_daMn8oFKEeieQ4zKGFzYtQ" base_StructuralFeature="_daMn8IFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fOZJcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_fOZJcIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_gWrAIoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_gWrAIIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_g58sUoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_g58sUIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_hlIXUYFKEeieQ4zKGFzYtQ" base_StructuralFeature="_hlHwQIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_i9VgYoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_i9VgYIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_oGLCcoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_oGLCcIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pW31UoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_pW31UIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sw_LwoFKEeieQ4zKGFzYtQ" base_StructuralFeature="_sw_LwIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uh694IFKEeieQ4zKGFzYtQ" base_StructuralFeature="_uh6W0IFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_xB0u0YFKEeieQ4zKGFzYtQ" base_StructuralFeature="_xB0HwIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xj1PsIFKEeieQ4zKGFzYtQ" base_StructuralFeature="_xj0ooIFKEeieQ4zKGFzYtQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_zM4RIIFKEeieQ4zKGFzYtQ" base_StructuralFeature="_zM3qEIFKEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rPjt4IFNEeieQ4zKGFzYtQ" base_StructuralFeature="_rPjG0IFNEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_r7owwoFNEeieQ4zKGFzYtQ" base_StructuralFeature="_r7owwIFNEeieQ4zKGFzYtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0AyfsoFdEeieQ4zKGFzYtQ" base_StructuralFeature="_0AyfsIFdEeieQ4zKGFzYtQ"/>
@@ -4467,8 +4583,6 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AqOOEomxEeiOe-BKGdv_Yg" base_StructuralFeature="_AqOOEImxEeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dRMcQYm2EeiOe-BKGdv_Yg" base_StructuralFeature="_dRL1MIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etDWQIm2EeiOe-BKGdv_Yg" base_StructuralFeature="_etCvMIm2EeiOe-BKGdv_Yg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_fceBAom2EeiOe-BKGdv_Yg" base_StructuralFeature="_fceBAIm2EeiOe-BKGdv_Yg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_g6Q0sYm2EeiOe-BKGdv_Yg" base_StructuralFeature="_g6QNoIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hj_HIom2EeiOe-BKGdv_Yg" base_StructuralFeature="_hj_HIIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_iyBnkom2EeiOe-BKGdv_Yg" base_StructuralFeature="_iyBnkIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j-VCoIm2EeiOe-BKGdv_Yg" base_StructuralFeature="_j-UbkIm2EeiOe-BKGdv_Yg"/>
@@ -4479,7 +4593,6 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_okqUkom2EeiOe-BKGdv_Yg" base_StructuralFeature="_okqUkIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pOy2som2EeiOe-BKGdv_Yg" base_StructuralFeature="_pOy2sIm2EeiOe-BKGdv_Yg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bqoiUZGyEeiUeLUnFxb3Bg" base_StructuralFeature="_bqn7QJGyEeiUeLUnFxb3Bg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ciU_UpGyEeiUeLUnFxb3Bg" base_StructuralFeature="_ciU_UJGyEeiUeLUnFxb3Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dGL6UpGyEeiUeLUnFxb3Bg" base_StructuralFeature="_dGL6UJGyEeiUeLUnFxb3Bg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_69GDMJQkEei6kI-JPNdeuw" base_StructuralFeature="_69Dm8JQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_8IUgMJQkEei6kI-JPNdeuw" base_StructuralFeature="_8IT5IJQkEei6kI-JPNdeuw"/>
@@ -4847,5 +4960,35 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_THT04cixEeiKReoLXDYvSw" base_StructuralFeature="_THT04MixEeiKReoLXDYvSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MpjR08iyEeiKReoLXDYvSw" base_StructuralFeature="_MpjR0siyEeiKReoLXDYvSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Mpj448iyEeiKReoLXDYvSw" base_StructuralFeature="_Mpj44siyEeiKReoLXDYvSw"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_wcQVwMwLEeiL9oW50yu7zw" base_Class="_waXfYMwLEeiL9oW50yu7zw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uYoAEM2KEeieTchE0MWKmw" base_StructuralFeature="_uYnZAM2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uY3Qoc2KEeieTchE0MWKmw" base_StructuralFeature="_uY3QoM2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wwLGQ82KEeieTchE0MWKmw" base_StructuralFeature="_wwLGQs2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wwMUYc2KEeieTchE0MWKmw" base_StructuralFeature="_wwMUYM2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zrQXUM2KEeieTchE0MWKmw" base_StructuralFeature="_zrPwQs2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zrQ-Yc2KEeieTchE0MWKmw" base_StructuralFeature="_zrQ-YM2KEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_daKFEM2QEeieTchE0MWKmw" base_StructuralFeature="_daJeAs2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_daKsIc2QEeieTchE0MWKmw" base_StructuralFeature="_daKsIM2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eb3ZsM2QEeieTchE0MWKmw" base_StructuralFeature="_eb2yos2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eb4Aws2QEeieTchE0MWKmw" base_StructuralFeature="_eb4Awc2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_e_hgY82QEeieTchE0MWKmw" base_StructuralFeature="_e_hgYs2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_e_iugM2QEeieTchE0MWKmw" base_StructuralFeature="_e_iHcs2QEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_qYdAIc2TEeieTchE0MWKmw" base_Class="_qYdAIM2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yCabIM2TEeieTchE0MWKmw" base_StructuralFeature="_yCZ0EM2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yjfu8c2TEeieTchE0MWKmw" base_StructuralFeature="_yjfu8M2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zA9HAM2TEeieTchE0MWKmw" base_StructuralFeature="_zA8f8M2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zalH8c2TEeieTchE0MWKmw" base_StructuralFeature="_zalH8M2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0p73Ac2TEeieTchE0MWKmw" base_StructuralFeature="_0p73AM2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1Gw88c2TEeieTchE0MWKmw" base_StructuralFeature="_1Gw88M2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1fbUkM2TEeieTchE0MWKmw" base_StructuralFeature="_1fatgM2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_127OkM2TEeieTchE0MWKmw" base_StructuralFeature="_126ngM2TEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oHbjQM2UEeieTchE0MWKmw" base_StructuralFeature="_oHa8Ms2UEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oHcKU82UEeieTchE0MWKmw" base_StructuralFeature="_oHcKUs2UEeieTchE0MWKmw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pjPu0c41EeixI-embJ5ltQ" base_StructuralFeature="_pjPu0M41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pjRkAc41EeixI-embJ5ltQ" base_StructuralFeature="_pjRkAM41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_trL0k841EeixI-embJ5ltQ" base_StructuralFeature="_trL0ks41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_trNCs841EeixI-embJ5ltQ" base_StructuralFeature="_trNCss41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vI7k8M41EeixI-embJ5ltQ" base_StructuralFeature="_vI694s41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vI8MA841EeixI-embJ5ltQ" base_StructuralFeature="_vI8MAs41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_x7wR4841EeixI-embJ5ltQ" base_StructuralFeature="_x7wR4s41EeixI-embJ5ltQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_x7xgAM41EeixI-embJ5ltQ" base_StructuralFeature="_x7w48s41EeixI-embJ5ltQ"/>
 </xmi:XMI>
