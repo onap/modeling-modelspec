@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service">
-    <packagedElement xmi:type="uml:Association" xmi:id="_Lvny4MDgEeiebIKjAGZWdA" name="ServiceDescriptorHasCharacteristic" memberEnd="_LvrdQMDgEeiebIKjAGZWdA _LvvusMDgEeiebIKjAGZWdA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LvqPIMDgEeiebIKjAGZWdA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LvqPIcDgEeiebIKjAGZWdA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_LvrdQMDgEeiebIKjAGZWdA" name="servicecharacteristic" type="_UWL1gMDfEeiebIKjAGZWdA" aggregation="shared" association="_Lvny4MDgEeiebIKjAGZWdA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YXtfUMDhEeiebIKjAGZWdA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YX00EMDhEeiebIKjAGZWdA" value="*"/>
-      </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_LvvusMDgEeiebIKjAGZWdA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_Lvny4MDgEeiebIKjAGZWdA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aGIwAMDhEeiebIKjAGZWdA" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aGNBcMDhEeiebIKjAGZWdA" value="1"/>
-      </ownedEnd>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_6z5EwMGTEeiS695oPTRE1Q" name="ServiceDescriptorMadeAvailableAsServiceInstance" memberEnd="_6z658sGTEeiS695oPTRE1Q _6z9WMMGTEeiS695oPTRE1Q">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6z658MGTEeiS695oPTRE1Q" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6z658cGTEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_6z658sGTEeiS695oPTRE1Q" name="serviceinstance" type="_HFfXUD0QEeiWMf5FLWfdLA" aggregation="composite" association="_6z5EwMGTEeiS695oPTRE1Q">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GE--gMGUEeiS695oPTRE1Q"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GFPdMMGUEeiS695oPTRE1Q" value="*"/>
-      </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_6z9WMMGTEeiS695oPTRE1Q" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_6z5EwMGTEeiS695oPTRE1Q"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXMl4DOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_2PSc8D0UEeiWMf5FLWfdLA" name="ServiceDescriptorMadeAvailableAs" memberEnd="_2PU5Mj0UEeiWMf5FLWfdLA _2PXVcj0UEeiWMf5FLWfdLA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2PU5MD0UEeiWMf5FLWfdLA" source="org.eclipse.papyrus">
@@ -416,55 +393,28 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_puPn4MGSEeiS695oPTRE1Q" value="1"/>
         </ownedEnd>
       </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
-        <body>Some Questions:&#xD;
-1. Do we have a business need to have multiple service catalogs?&#xD;
--&#xD;
-2. Do we have a need to have a service descriptor in a given catalog multiple times for different time periods?&#xD;
--&#xD;
-3. How do we handle moving a descriptor from a test catalog to a production catalog?&#xD;
--&#xD;
-4. What is the attachment class?</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_A-91QJAjEei1uKE-hf_HvQ">
-        <body>Presently, SDC stores the descriptor directly in the catalog.</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Bs8YsJDrEei9Vqs7Ti8Wxg">
-        <body>I don't think SDC uses the SID Characteristic patern.</body>
-      </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_gEq14MDfEeiebIKjAGZWdA" name="name">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_j0sK4MDfEeiebIKjAGZWdA" name="valueType">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_HFmo4MDiEeiebIKjAGZWdA" name="Value">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_1_pvIMGSEeiS695oPTRE1Q" name="value">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_nT4ykMHEEeiS695oPTRE1Q" annotatedElement="_1_pvIMGSEeiS695oPTRE1Q">
-            <body>The value of a given ServiceCharacteristic</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_MnBKUMGjEeiS695oPTRE1Q" name="OrderRelationship" memberEnd="_MnE0scGjEeiS695oPTRE1Q _MnGp4MGjEeiS695oPTRE1Q">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MnENoMGjEeiS695oPTRE1Q" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MnE0sMGjEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Lvny4MDgEeiebIKjAGZWdA" name="ServiceDescriptorHasCharacteristic" memberEnd="_LvrdQMDgEeiebIKjAGZWdA _LvvusMDgEeiebIKjAGZWdA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LvqPIMDgEeiebIKjAGZWdA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LvqPIcDgEeiebIKjAGZWdA" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_SeyhEMHGEeirPIyAdej0kg" annotatedElement="_MnBKUMGjEeiS695oPTRE1Q">
-          <body>An assocation between two ServiceOrders.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_R9Rn4MGkEeiS695oPTRE1Q" name="type">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_tEYKYMNMEeik36qdAhNdCw" annotatedElement="_R9Rn4MGkEeiS695oPTRE1Q">
-            <body>A categorization of the relationship, such as bulk, parent/child, and so forth.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_MnE0scGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_MnGp4MGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LvrdQMDgEeiebIKjAGZWdA" name="servicecharacteristic" type="_UWL1gMDfEeiebIKjAGZWdA" aggregation="shared" association="_Lvny4MDgEeiebIKjAGZWdA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YXtfUMDhEeiebIKjAGZWdA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YX00EMDhEeiebIKjAGZWdA" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LvvusMDgEeiebIKjAGZWdA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_Lvny4MDgEeiebIKjAGZWdA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aGIwAMDhEeiebIKjAGZWdA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aGNBcMDhEeiebIKjAGZWdA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6z5EwMGTEeiS695oPTRE1Q" name="ServiceDescriptorMadeAvailableAsServiceInstance" memberEnd="_6z658sGTEeiS695oPTRE1Q _6z9WMMGTEeiS695oPTRE1Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6z658MGTEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6z658cGTEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6z658sGTEeiS695oPTRE1Q" name="serviceinstance" type="_HFfXUD0QEeiWMf5FLWfdLA" aggregation="composite" association="_6z5EwMGTEeiS695oPTRE1Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GE--gMGUEeiS695oPTRE1Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GFPdMMGUEeiS695oPTRE1Q" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6z9WMMGTEeiS695oPTRE1Q" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_6z5EwMGTEeiS695oPTRE1Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:AssociationClass" xmi:id="_hUzLgMGkEeiS695oPTRE1Q" name="OrderItemRelationship" memberEnd="_hU0ZosGkEeiS695oPTRE1Q _hU1AsMGkEeiS695oPTRE1Q">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hU0ZoMGkEeiS695oPTRE1Q" source="org.eclipse.papyrus">
@@ -483,6 +433,34 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_hU0ZosGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_hU1AsMGkEeiS695oPTRE1Q" name="serviceorderitem" type="_wng4cIn9EeiOe-BKGdv_Yg" association="_hUzLgMGkEeiS695oPTRE1Q"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ejprMM4pEeinDdlk3ffduQ" name="ServiceCompositeDescriptorHasServiceDescriptor" memberEnd="_ejq5Uc4pEeinDdlk3ffduQ _ej47wM4pEeinDdlk3ffduQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ejqSQM4pEeinDdlk3ffduQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ejq5UM4pEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ej47wM4pEeinDdlk3ffduQ" name="servicecompositedescriptor" type="_OfhrQKuCEeiRK6iIVq4LZA" association="_ejprMM4pEeinDdlk3ffduQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AssociationClass" xmi:id="_MnBKUMGjEeiS695oPTRE1Q" name="OrderRelationship" memberEnd="_MnE0scGjEeiS695oPTRE1Q _MnGp4MGjEeiS695oPTRE1Q">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MnENoMGjEeiS695oPTRE1Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MnE0sMGjEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SeyhEMHGEeirPIyAdej0kg" annotatedElement="_MnBKUMGjEeiS695oPTRE1Q">
+          <body>An assocation between two ServiceOrders.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_R9Rn4MGkEeiS695oPTRE1Q" name="type">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tEYKYMNMEeik36qdAhNdCw" annotatedElement="_R9Rn4MGkEeiS695oPTRE1Q">
+            <body>A categorization of the relationship, such as bulk, parent/child, and so forth.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MnE0scGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MnGp4MGjEeiS695oPTRE1Q" name="serviceorder" type="_mrJV8In9EeiOe-BKGdv_Yg" association="_MnBKUMGjEeiS695oPTRE1Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xe2pkM4sEeinDdlk3ffduQ" name="ServiceDescriptorHasReferenceonResourceDescriptor" visibility="package" memberEnd="_xe2pk84sEeinDdlk3ffduQ _xe2pl84sEeinDdlk3ffduQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xe2pkc4sEeinDdlk3ffduQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xe2pks4sEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xe2pl84sEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_xe2pkM4sEeinDdlk3ffduQ"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_xPZN8MhdEeiSA51ssKbbgA" name="PnfdAssociatedNsVirtualLinkDesc" memberEnd="_xcsqIMhdEeiSA51ssKbbgA _xcw7kchdEeiSA51ssKbbgA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xcqN4MhdEeiSA51ssKbbgA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xcq08MhdEeiSA51ssKbbgA" key="nature" value="UML_Nature"/>
@@ -497,6 +475,18 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xcwUgMhdEeiSA51ssKbbgA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xcw7kMhdEeiSA51ssKbbgA" value="*"/>
         </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_fG2XgM4sEeinDdlk3ffduQ" name="ServiceDescriptorHasAttachments" memberEnd="_fICqUs4sEeinDdlk3ffduQ _fICqVs4sEeinDdlk3ffduQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fICqUM4sEeinDdlk3ffduQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fICqUc4sEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_fICqVs4sEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_fG2XgM4sEeinDdlk3ffduQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IKIEcM4pEeinDdlk3ffduQ" name="ServiceDescriptorMadeAvailableAs" memberEnd="_IKJSks4pEeinDdlk3ffduQ _IKyLwM4pEeinDdlk3ffduQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IKJSkM4pEeinDdlk3ffduQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IKJSkc4pEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IKyLwM4pEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_IKIEcM4pEeinDdlk3ffduQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_yKT-EMhdEeiSA51ssKbbgA" name="VnfdAssociatedNsVirtualLinkDesc " memberEnd="_yKYPgMhdEeiSA51ssKbbgA _yKbS0chdEeiSA51ssKbbgA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yKXBYMhdEeiSA51ssKbbgA" source="org.eclipse.papyrus">
@@ -513,30 +503,24 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKbS0MhdEeiSA51ssKbbgA" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_IKIEcM4pEeinDdlk3ffduQ" name="ServiceDescriptorMadeAvailableAs" memberEnd="_IKJSks4pEeinDdlk3ffduQ _IKyLwM4pEeinDdlk3ffduQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IKJSkM4pEeinDdlk3ffduQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IKJSkc4pEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_IKyLwM4pEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_IKIEcM4pEeinDdlk3ffduQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_ejprMM4pEeinDdlk3ffduQ" name="ServiceCompositeDescriptorHasServiceDescriptor" memberEnd="_ejq5Uc4pEeinDdlk3ffduQ _ej47wM4pEeinDdlk3ffduQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ejqSQM4pEeinDdlk3ffduQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ejq5UM4pEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ej47wM4pEeinDdlk3ffduQ" name="servicecompositedescriptor" type="_OfhrQKuCEeiRK6iIVq4LZA" association="_ejprMM4pEeinDdlk3ffduQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_fG2XgM4sEeinDdlk3ffduQ" name="ServiceDescriptorHasAttachments" memberEnd="_fICqUs4sEeinDdlk3ffduQ _fICqVs4sEeinDdlk3ffduQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fICqUM4sEeinDdlk3ffduQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fICqUc4sEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_fICqVs4sEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_fG2XgM4sEeinDdlk3ffduQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_xe2pkM4sEeinDdlk3ffduQ" name="ServiceDescriptorHasReferenceonResourceDescriptor" visibility="package" memberEnd="_xe2pk84sEeinDdlk3ffduQ _xe2pl84sEeinDdlk3ffduQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xe2pkc4sEeinDdlk3ffduQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xe2pks4sEeinDdlk3ffduQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xe2pl84sEeinDdlk3ffduQ" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_xe2pkM4sEeinDdlk3ffduQ"/>
-      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
+        <body>Some Questions:&#xD;
+1. Do we have a business need to have multiple service catalogs?&#xD;
+-&#xD;
+2. Do we have a need to have a service descriptor in a given catalog multiple times for different time periods?&#xD;
+-&#xD;
+3. How do we handle moving a descriptor from a test catalog to a production catalog?&#xD;
+-&#xD;
+4. What is the attachment class?</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_A-91QJAjEei1uKE-hf_HvQ">
+        <body>Presently, SDC stores the descriptor directly in the catalog.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Bs8YsJDrEei9Vqs7Ti8Wxg">
+        <body>I don't think SDC uses the SID Characteristic patern.</body>
+      </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXN0ADOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -1572,6 +1556,56 @@ NOTE: It indicates an exhaustive list of all the CP instances and SAP instances 
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_VfCloKuDEeiRK6iIVq4LZA" name="ServiceInstance"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gEq14MDfEeiebIKjAGZWdA" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_j0sK4MDfEeiebIKjAGZWdA" name="valueType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_26_M0NB2EeijRJbJ9rGSQQ" name="OrderState">
+        <region xmi:type="uml:Region" xmi:id="_4k5J4NB2EeijRJbJ9rGSQQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_dT8EsNB3EeijRJbJ9rGSQQ" source="_62pxINB2EeijRJbJ9rGSQQ" target="_WqfEcNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_rBKpsNB3EeijRJbJ9rGSQQ" name="YES" source="_WqfEcNB3EeijRJbJ9rGSQQ" target="_C02WwNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yjZFANB3EeijRJbJ9rGSQQ" name="NO" source="_WqfEcNB3EeijRJbJ9rGSQQ" target="_EnO6YNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_CupLoNB4EeijRJbJ9rGSQQ" name="start order processing" source="_C02WwNB3EeijRJbJ9rGSQQ" target="_H6HAYNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_P3TD8NB4EeijRJbJ9rGSQQ" name="missing order data" source="_H6HAYNB3EeijRJbJ9rGSQQ" target="_F-vf4NB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dtYqANB4EeijRJbJ9rGSQQ" name="order fall-out" source="_H6HAYNB3EeijRJbJ9rGSQQ" target="_J2M5oNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ilj54NB4EeijRJbJ9rGSQQ" name="problem solved" source="_J2M5oNB3EeijRJbJ9rGSQQ" target="_H6HAYNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_kZYA4NB4EeijRJbJ9rGSQQ" name="order data supplied" source="_F-vf4NB3EeijRJbJ9rGSQQ" target="_H6HAYNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2NgJ0NB4EeijRJbJ9rGSQQ" name="incomplete order" source="_F-vf4NB3EeijRJbJ9rGSQQ" target="_0L6FgNB4EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="__VsdYNB4EeijRJbJ9rGSQQ" name="blocking issue" source="_J2M5oNB3EeijRJbJ9rGSQQ" target="_0L6FgNB4EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_KqImENB5EeijRJbJ9rGSQQ" name="processing finished" source="_H6HAYNB3EeijRJbJ9rGSQQ" target="_LVBoENB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_OUf_ANB5EeijRJbJ9rGSQQ" name="processing failed" source="_H6HAYNB3EeijRJbJ9rGSQQ" target="_MVniYNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_YfvrANB5EeijRJbJ9rGSQQ" name="partial processing" source="_H6HAYNB3EeijRJbJ9rGSQQ" target="_PnHIUNB3EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_r7LI8NB5EeijRJbJ9rGSQQ" source="_EnO6YNB3EeijRJbJ9rGSQQ" target="_oESW8NB5EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_b3cKINB6EeijRJbJ9rGSQQ" source="_0L6FgNB4EeijRJbJ9rGSQQ" target="_oESW8NB5EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_gS9TMNB6EeijRJbJ9rGSQQ" source="_PnHIUNB3EeijRJbJ9rGSQQ" target="_oESW8NB5EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_3xQakNCDEeijRJbJ9rGSQQ" source="_MVniYNB3EeijRJbJ9rGSQQ" target="_oESW8NB5EeijRJbJ9rGSQQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="__k7LMNCDEeijRJbJ9rGSQQ" source="_LVBoENB3EeijRJbJ9rGSQQ" target="_oESW8NB5EeijRJbJ9rGSQQ"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_62pxINB2EeijRJbJ9rGSQQ" name="Initial1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_C02WwNB3EeijRJbJ9rGSQQ" name="Acknowledged"/>
+          <subvertex xmi:type="uml:State" xmi:id="_EnO6YNB3EeijRJbJ9rGSQQ" name="Rejected"/>
+          <subvertex xmi:type="uml:State" xmi:id="_F-vf4NB3EeijRJbJ9rGSQQ" name="Pending"/>
+          <subvertex xmi:type="uml:State" xmi:id="_H6HAYNB3EeijRJbJ9rGSQQ" name="InProgress"/>
+          <subvertex xmi:type="uml:State" xmi:id="_J2M5oNB3EeijRJbJ9rGSQQ" name="Held"/>
+          <subvertex xmi:type="uml:State" xmi:id="_LVBoENB3EeijRJbJ9rGSQQ" name="Completed"/>
+          <subvertex xmi:type="uml:State" xmi:id="_MVniYNB3EeijRJbJ9rGSQQ" name="Failed"/>
+          <subvertex xmi:type="uml:State" xmi:id="_PnHIUNB3EeijRJbJ9rGSQQ" name="Partial"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_WqfEcNB3EeijRJbJ9rGSQQ" name="Accept Order" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_0L6FgNB4EeijRJbJ9rGSQQ" name="Cancelled"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_oESW8NB5EeijRJbJ9rGSQQ" name="Final"/>
+        </region>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HFmo4MDiEeiebIKjAGZWdA" name="Value">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1_pvIMGSEeiS695oPTRE1Q" name="value">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nT4ykMHEEeiS695oPTRE1Q" annotatedElement="_1_pvIMGSEeiS695oPTRE1Q">
+            <body>The value of a given ServiceCharacteristic</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoUjzEEeiWMf5FLWfdLA" name="VnfIndicatorData">
@@ -1717,6 +1751,12 @@ If null, then represents to the end of time&#xD;
         <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jY4psNB3EeijRJbJ9rGSQQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jY6e4NB3EeijRJbJ9rGSQQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Package>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0q_0Ke3Eeixw5Ke5QD1pQ">
@@ -2293,4 +2333,5 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_fICqV84sEeinDdlk3ffduQ" base_StructuralFeature="_fICqVs4sEeinDdlk3ffduQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xe2plM4sEeinDdlk3ffduQ" base_StructuralFeature="_xe2pk84sEeinDdlk3ffduQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xe2pmM4sEeinDdlk3ffduQ" base_StructuralFeature="_xe2pl84sEeinDdlk3ffduQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_26_z4NB2EeijRJbJ9rGSQQ" base_Class="_26_M0NB2EeijRJbJ9rGSQQ"/>
 </xmi:XMI>
