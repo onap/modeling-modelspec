@@ -125,10 +125,10 @@ Applied stereotypes:
 |                          |                            |             |        false      | instantiated   |
 |                          |                            |             |                   | according      |
 |                          |                            |             | -  valueRange:    | to the NSD.    |
-|                          |                            |             |                   | NOTE 1: The    |
-|                          |                            |             |       no          | rule is        |
-|                          |                            |             |       range       | based on a     |
-|                          |                            |             |       constraint  | combination    |
+|                          |                            |             |       no          | NOTE 1: The    |
+|                          |                            |             |       range       | rule is        |
+|                          |                            |             |       constraint  | based on a     |
+|                          |                            |             |                   | combination    |
 |                          |                            |             |                   | of             |
 |                          |                            |             |                   | assertions     |
 |                          |                            |             | -  support:       | on the         |
@@ -178,10 +178,9 @@ Applied stereotypes:
 |                          |                            |             |                   | script         |
 |                          |                            |             |                   | written in     |
 |                          |                            |             | -  isInvariant:   | a Domain       |
-|                          |                            |             |                   | Specific       |
-|                          |                            |             |       false       | Language       |
-|                          |                            |             |                   | (DSL).         |
-|                          |                            |             | -  valueRange:    |                |
+|                          |                            |             |       false       | Specific       |
+|                          |                            |             |                   | Language       |
+|                          |                            |             | -  valueRange:    | (DSL).         |
 |                          |                            |             |       no          |                |
 |                          |                            |             |       range       |                |
 |                          |                            |             |       constraint  |                |
@@ -195,12 +194,11 @@ Applied stereotypes:
 |                          |                            |             |                   | VLDs.          |
 |                          |                            |             |                   | Cardinality    |
 |                          |                            |             | -  isInvariant:   | of 0 means     |
-|                          |                            |             |                   | that the NS    |
-|                          |                            |             |       false       | is a NF set    |
+|                          |                            |             |       false       | that the NS    |
+|                          |                            |             |                   | is a NF set    |
 |                          |                            |             |                   | with           |
 |                          |                            |             | -  valueRange:    | unspecified    |
-|                          |                            |             |                   | connectivity.  |
-|                          |                            |             |       no          |                |
+|                          |                            |             |       no          | connectivity.  |
 |                          |                            |             |       range       |                |
 |                          |                            |             |       constraint  |                |
 |                          |                            |             |                   |                |
@@ -318,11 +316,11 @@ Applied stereotypes:
 |                        |                 |             |                   | the parent     |
 |                        |                 |             |                   | descriptor.    |
 |                        |                 |             | -  isInvariant:   | For            |
-|                        |                 |             |                   | VnfVirtualL    |
-|                        |                 |             |       false       | inkDesc,       |
+|                        |                 |             |       false       | VnfVirtualL    |
+|                        |                 |             |                   | inkDesc,       |
 |                        |                 |             |                   | the parent     |
-|                        |                 |             | -  valueRange:    | descriptor     |
-|                        |                 |             |                   | is the         |
+|                        |                 |             |                   | descriptor     |
+|                        |                 |             | -  valueRange:    | is the         |
 |                        |                 |             |       no          | VNFD. For      |
 |                        |                 |             |       range       | NsVirtualLi-   |
 |                        |                 |             |       constraint  | nkDesc,        |
@@ -350,8 +348,8 @@ Applied stereotypes:
 |                        |                 |             |                   | exposed by     |
 |                        |                 |             |                   | a VL and       |
 |                        |                 |             | -  isInvariant:   | the flow       |
-|                        |                 |             |                   | pattern        |
-|                        |                 |             |       false       | supported      |
+|                        |                 |             |       false       | pattern        |
+|                        |                 |             |                   | supported      |
 |                        |                 |             |                   | by the VL.     |
 |                        |                 |             | -  valueRange:    |                |
 |                        |                 |             |       no          |                |
@@ -366,12 +364,11 @@ Applied stereotypes:
 |                        |                 |             | OpenModelAttribute| information    |
 |                        |                 |             |                   | on the         |
 |                        |                 |             | -  isInvariant:   | purpose of     |
-|                        |                 |             |                   | the VL         |
-|                        |                 |             |       false       | (e.g.          |
+|                        |                 |             |       false       | the VL         |
+|                        |                 |             |                   | (e.g.          |
 |                        |                 |             |                   | control        |
 |                        |                 |             | -  valueRange:    | plane          |
-|                        |                 |             |                   | traffic).      |
-|                        |                 |             |       no          |                |
+|                        |                 |             |       no          | traffic).      |
 |                        |                 |             |       range       |                |
 |                        |                 |             |       constraint  |                |
 |                        |                 |             |                   |                |
@@ -415,7 +412,7 @@ the flow pattern supported by the VL.
 +--------------+--------------+-----------+-----------+-------------------+----------------+
 | **Attribute  | **Type**     | **Mult.** | **Access**| **Stereotypes**   | **Description**|
 | Name**       |              |           |           |                   |                |
-+==============+==============+===========+===============================+================+
++==============+==============+===========+===========+===================+================+
 | layerProtocol| LayerProtocol| 1         | RW        | Preliminary       | identifies     |
 |              |              |           |           |                   | the            |
 |              |              |           |           | OpenModelAttribute| protocol       |
@@ -437,8 +434,8 @@ the flow pattern supported by the VL.
 |              |              |           |           | OpenModelAttribute| pattern        |
 |              |              |           |           |                   | of the         |
 |              |              |           |           | -  isInvariant:   | connectivity   |
-|              |              |           |           |                   | (Line,         |
-|              |              |           |           |       false       | Tree,          |
+|              |              |           |           |       false       | (Line,         |
+|              |              |           |           |                   | Tree,          |
 |              |              |           |           |                   | Mesh).         |
 |              |              |           |           | -  valueRange:    |                |
 |              |              |           |           |       no          |                |
@@ -464,12 +461,12 @@ the NS.
 +-------------+-----------+-----------+-----------+-------------------+----------------+
 | **Attribute | **Type**  | **Mult.** | **Access**| **Stereotypes**   | **Description**|
 | Name**      |           |           |           |                   |                |
-+=============+===========+===========+===============================+================+
++=============+===========+===========+===========+===================+================+
 | event       | String    | 1..\*     | RW        | OpenModelAttribute| Describes  NS  |
 |             |           |           |           |                   | lifecycle      |
 |             |           |           |           | -  isInvarriant:  | event(s)       |
-|             |           |           |           |                   | or an          |
-|             |           |           |           |       false       | external       |
+|             |           |           |           |       false       | or an          |
+|             |           |           |           |                   | external       |
 |             |           |           |           |                   | stimulus       |
 |             |           |           |           |                   | detected       |
 |             |           |           |           |                   | on an          |
@@ -527,12 +524,11 @@ the NS.
 |             |           |           |           |                   | an NS LCM      |
 |             |           |           |           |                   | script         |
 |             |           |           |           | -  isInvarriant:  | (e.g.,         |
-|             |           |           |           |                   | written        |
-|             |           |           |           |       false       | in a DSL)      |
+|             |           |           |           |       false       | written        |
+|             |           |           |           |                   | in a DSL)      |
 |             |           |           |           |                   | triggered      |
 |             |           |           |           |                   | to react       |
-|             |           |           |           | -  valueRange:    | to one of      |
-|             |           |           |           |                   | the            |
+|             |           |           |           | -  valueRange:    | to one of the  |
 |             |           |           |           |       no          | events         |
 |             |           |           |           |       range       | listed in      |
 |             |           |           |           |       constraint  | the event      |
@@ -605,8 +601,8 @@ a NS VL.
 |                     |           |           |           | OpenModelAttribute| ratio.         |
 |                     |           |           |           |                   | Cardinality    |
 |                     |           |           |           | -  isInvariant:   | is 0 if        |
-|                     |           |           |           |                   | no             |
-|                     |           |           |           |       false       | packetLossRatio|
+|                     |           |           |           |       false       | no             |
+|                     |           |           |           |                   | packetLossRatio|
 |                     |           |           |           |                   | requirement    |
 |                     |           |           |           | -  valueRange:    | exists.        |
 |                     |           |           |           |       no          |                |
