@@ -1542,6 +1542,10 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HdzjAJQrEei6kI-JPNdeuw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hd1_QJQrEei6kI-JPNdeuw" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6bEHoNiVEeiRnMGpBj3Tnw" name="gtpperflowmetrics" type="_ihIjUNLdEeiMg4jJCQOcCA" aggregation="composite" association="_6bBrYNiVEeiRnMGpBj3Tnw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6bEusdiVEeiRnMGpBj3Tnw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6bEustiVEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_53AW4MWSEeiLjtyU_R81wg" name="Notification">
           <ownedComment xmi:type="uml:Comment" xmi:id="_QMUjkNE6EeilcYLXtz_Wig" annotatedElement="_53AW4MWSEeiLjtyU_R81wg">
@@ -1579,7 +1583,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_wyu8cJQuEei6kI-JPNdeuw" name="chnageType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wyu8cJQuEei6kI-JPNdeuw" name="changeType">
             <ownedComment xmi:type="uml:Comment" xmi:id="_grAmMLX0EeiFDLhMCq9-Iw" annotatedElement="_wyu8cJQuEei6kI-JPNdeuw">
               <body>Describes what has changed for the entity, for example: configuration changed, capability added, capability removed…</body>
             </ownedComment>
@@ -1641,6 +1645,8 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
               <body>Array of JSON objects described by name, schema and other meta-information.&#xD;
 </body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_08vy4NiXEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_083usNiXEeiRnMGpBj3Tnw" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_XxkHkJQ6Eei6kI-JPNdeuw" name="otherFieldsVersion">
             <ownedComment xmi:type="uml:Comment" xmi:id="_X-h24LX3EeiFDLhMCq9-Iw" annotatedElement="_XxkHkJQ6Eei6kI-JPNdeuw">
@@ -1841,6 +1847,10 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
 </body>
             </ownedComment>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_awKWgtkhEei09Y1bp3mjwA" name="vendornfnamefields" type="_6KnMMNkWEei09Y1bp3mjwA" aggregation="composite" association="_awJvcNkhEei09Y1bp3mjwA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_awK9kNkhEei09Y1bp3mjwA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_awK9kdkhEei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_1ZragMWTEeiLjtyU_R81wg" name="StateChange">
           <ownedComment xmi:type="uml:Comment" xmi:id="_hclKcNE6EeilcYLXtz_Wig" annotatedElement="_1ZragMWTEeiLjtyU_R81wg">
@@ -1884,6 +1894,171 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
 VES supports both classes of syslog, however VES is only recommended for control logs or for lower volume session logs, less than 60k per hour. High volume session logging should use a file-based transport solution.&#xD;
 </body>
           </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fX1bQJzTEeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tMbUkLt0Eeiq-o0aE00M6w" annotatedElement="_fX1bQJzTEeiLvPKMh61-Bg">
+              <body>Additional syslog fields if needed Ex:  {“name1”: ”value1”, “name2: “value2” … }</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vK-BsLtwEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vLKO8LtwEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f54_cJzTEeiLvPKMh61-Bg" name="eventSourceHost">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uuwC8Lt0Eeiq-o0aE00M6w" annotatedElement="_f54_cJzTEeiLvPKMh61-Bg">
+              <body>Hostname of the device</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gaDGMJzTEeiLvPKMh61-Bg" name="eventSourceType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xFMV4Lt0Eeiq-o0aE00M6w" annotatedElement="_gaDGMJzTEeiLvPKMh61-Bg">
+              <body>Examples: ‘other’, ‘router’, ‘switch’, ‘host’, ‘card’, ‘port’, ‘slotThreshold’, ‘portThreshold’, ‘virtualMachine’, ‘virtualNetworkFunction’</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdPScLt0Eeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdS80Lt0Eeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nhhfMJzTEeiLvPKMh61-Bg" name="sysllogSdId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xuWQgLuIEeiq-o0aE00M6w" annotatedElement="_nhhfMJzTEeiLvPKMh61-Bg">
+              <body>0-32 char in format name@number, &#xD;
+i.e., ourSDID@32473&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqqJkLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqvCELuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hwG6MJzTEeiLvPKMh61-Bg" name="syslogFacilty">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zk6goLt0Eeiq-o0aE00M6w" annotatedElement="_hwG6MJzTEeiLvPKMh61-Bg">
+              <body>Numeric code from 0 to 23 for facility: &#xD;
+         0             kernel messages&#xD;
+         1             user-level messages&#xD;
+         2             mail system&#xD;
+         3             system daemons&#xD;
+         4             security/authorization messages&#xD;
+         5             messages generated internally by syslogd&#xD;
+         6             line printer subsystem&#xD;
+         7             network news subsystem&#xD;
+         8             UUCP subsystem&#xD;
+         9             clock daemon&#xD;
+        10             security/authorization messages&#xD;
+        11             FTP daemon&#xD;
+        12             NTP subsystem&#xD;
+        13             log audit&#xD;
+        14             log alert&#xD;
+        15             clock daemon (note 2)&#xD;
+        16             local use 0  (local0)&#xD;
+        17             local use 1  (local1)&#xD;
+        18             local use 2  (local2)&#xD;
+        19             local use 3  (local3)&#xD;
+        20             local use 4  (local4)&#xD;
+        21             local use 5  (local5)&#xD;
+        22             local use 6  (local6)&#xD;
+        23             local use 7  (local7 )&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SH3yALuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SH7cYLuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iWVzwJzTEeiLvPKMh61-Bg" name="syslogFieldVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jID8kLuIEeiq-o0aE00M6w" annotatedElement="_iWVzwJzTEeiLvPKMh61-Bg">
+              <body>Version of the syslogFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jV7BcJzTEeiLvPKMh61-Bg" name="syslogMsg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lBwpILuIEeiq-o0aE00M6w" annotatedElement="_jV7BcJzTEeiLvPKMh61-Bg">
+              <body>Syslog message</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kgWNMJzTEeiLvPKMh61-Bg" name="syslogMsgHost">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mzfFcLuIEeiq-o0aE00M6w" annotatedElement="_kgWNMJzTEeiLvPKMh61-Bg">
+              <body>Hostname parsed from non-VES syslog message</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YptuYLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YpzN8LuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lKBcUJzTEeiLvPKMh61-Bg" name="syslogPri">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_o80JcLuIEeiq-o0aE00M6w" annotatedElement="_lKBcUJzTEeiLvPKMh61-Bg">
+              <body>0-192&#xD;
+Combined Severity and Facility (see rfc5424)&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yp4GcLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yp-0ILuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lxdPwJzTEeiLvPKMh61-Bg" name="syslogProc">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qm9XELuIEeiq-o0aE00M6w" annotatedElement="_lxdPwJzTEeiLvPKMh61-Bg">
+              <body>Identifies the application that originated the message</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqDsoLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqLocLuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mYnWYJzTEeiLvPKMh61-Bg" name="syslogProcId" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_sNaXgLuIEeiq-o0aE00M6w" annotatedElement="_mYnWYJzTEeiLvPKMh61-Bg">
+              <body>The process number assigned by the OS when the application was started</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqTkQLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqbgELuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nBDPYJzTEeiLvPKMh61-Bg" name="syslogSData">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vZi8ULuIEeiq-o0aE00M6w" annotatedElement="_nBDPYJzTEeiLvPKMh61-Bg">
+              <body>A &lt;space> separated list of key=”value” pairs following the rfc5424 standard for SD-ELEMENT.&#xD;
+&#xD;
+Deprecated &#xD;
+The entire rfc5424 syslogSData object, including square brackets [ ], SD-ID and list of SD-PARAMs&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqg_oLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqlRELuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oCtgsJzTEeiLvPKMh61-Bg" name="syslogSev">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_z_YfALuIEeiq-o0aE00M6w" annotatedElement="_oCtgsJzTEeiLvPKMh61-Bg">
+              <body>Level-of-severity text enumeration defined below: &#xD;
+Text 	Sev	Description&#xD;
+Emergency	0	system is unusable&#xD;
+Alert	1	action must be taken immediately&#xD;
+Critical	2	critical conditions&#xD;
+Error	3	error conditions&#xD;
+Warning	4	warning conditions&#xD;
+Notice	5	normal but significant condition&#xD;
+Info	6	Informational messages&#xD;
+Debug	          7	    debug-level messages&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqz6kLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq5aILuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oiiQQJzTEeiLvPKMh61-Bg" name="syslogTag">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2IOa0LuIEeiq-o0aE00M6w" annotatedElement="_oiiQQJzTEeiLvPKMh61-Bg">
+              <body>Also known as MsgId. Brief non-spaced text indicating the type of message such as ‘TCPOUT’ or ‘BGP_STATUS_CHANGE’; ‘NILVALUE’ should be used when no other value can be provided</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq-5sLuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrFAULuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pFelQJzTEeiLvPKMh61-Bg" name="syslogTs">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4CZBcLuIEeiq-o0aE00M6w" annotatedElement="_pFelQJzTEeiLvPKMh61-Bg">
+              <body>Timestamp parsed from non-VES syslog message</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrJ40LuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrR0oLuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pucpwJzTEeiLvPKMh61-Bg" name="syslogVer" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7EncULuIEeiq-o0aE00M6w" annotatedElement="_pucpwJzTEeiLvPKMh61-Bg">
+              <body>IANA assigned version of the syslog protocol specification:&#xD;
+   0: VES&#xD;
+   1: IANA RFC5424&#xD;
+</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrWGELuIEeiq-o0aE00M6w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrbloLuIEeiq-o0aE00M6w" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_IO8mgMc4EeiRs7MlzxwPhg" name="DiskUsage">
           <ownedComment xmi:type="uml:Comment" xmi:id="_7TG1IIkQEeiddpojVtQ0Hg" annotatedElement="_kokBwIkOEeiddpojVtQ0Hg">
@@ -2355,11 +2530,178 @@ VES supports both classes of syslog, however VES is only recommended for control
           <ownedComment xmi:type="uml:Comment" xmi:id="__uOkANE6EeilcYLXtz_Wig" annotatedElement="_4d4yYMWTEeiLjtyU_R81wg">
             <body>The thresholdCrossingAlertFields datatype consists of the following fields:</body>
           </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RRq8IKJVEeibfLkXoC-lBg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_GtNpcKJWEeibfLkXoC-lBg" annotatedElement="_RRq8IKJVEeibfLkXoC-lBg">
+              <body>additionalFields - Additional pnfRegistration fields if needed.&#xD;
+</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jx4UUKJWEeibfLkXoC-lBg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JyBeQKJWEeibfLkXoC-lBg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TGB1sKJVEeibfLkXoC-lBg" name="additionalParameters" type="_tptTQKJWEeibfLkXoC-lBg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TgHPkL2yEeigqpWKF5WysQ" annotatedElement="_TGB1sKJVEeibfLkXoC-lBg">
+              <body>Array of performance counters</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OD7_YKJWEeibfLkXoC-lBg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OEA34KJWEeibfLkXoC-lBg" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Trf6QKJVEeibfLkXoC-lBg" name="alertAction" type="_ZTMBcL2yEeigqpWKF5WysQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WiDWkL2yEeigqpWKF5WysQ" annotatedElement="_Trf6QKJVEeibfLkXoC-lBg">
+              <body>Enumeration: ‘SET’, ‘CONT’, ‘CLEAR’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UekV8KJVEeibfLkXoC-lBg" name="alertDescription">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0cns4L2yEeigqpWKF5WysQ" annotatedElement="_UekV8KJVEeibfLkXoC-lBg">
+              <body>Unique short alert description (e.g., NE-CPUMEM)</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXKx4KJVEeibfLkXoC-lBg" name="alertType" type="_8Xi8EL2yEeigqpWKF5WysQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3G3soL2yEeigqpWKF5WysQ" annotatedElement="_VXKx4KJVEeibfLkXoC-lBg">
+              <body>Enumeration: ‘CARD-ANOMALY’, ‘INTERFACE-ANOMALY’, ELEMENT-ANOMALY’, ‘SERVICE-ANOMALY’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W9q1oKJVEeibfLkXoC-lBg" name="alertValue">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_X08sYL2zEeigqpWKF5WysQ" annotatedElement="_W9q1oKJVEeibfLkXoC-lBg">
+              <body>Calculated API value (if applicable)</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YAEt0KJVEeibfLkXoC-lBg" name="associatedAlertIdList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_EqIA0L20EeigqpWKF5WysQ" annotatedElement="_YAEt0KJVEeibfLkXoC-lBg">
+              <body>List of eventIds associated with the event being reported</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9tNAL20EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G92-AL20EeigqpWKF5WysQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Yr9jcKJVEeibfLkXoC-lBg" name="collectionTimestamp">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_UBw5ML20EeigqpWKF5WysQ" annotatedElement="_Yr9jcKJVEeibfLkXoC-lBg">
+              <body>Time when the performance collector picked up the data; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZXlTUKJVEeibfLkXoC-lBg" name="dataCollector">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WjcLwL20EeigqpWKF5WysQ" annotatedElement="_ZXlTUKJVEeibfLkXoC-lBg">
+              <body>Specific performance collector instance used</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bkg48L20EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bkj8QL20EeigqpWKF5WysQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aM6Y0KJVEeibfLkXoC-lBg" name="elementType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_hXvb0L20EeigqpWKF5WysQ" annotatedElement="_aM6Y0KJVEeibfLkXoC-lBg">
+              <body>Type of network element (internal AT&amp;T field)</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpETgL20EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpKaIL20EeigqpWKF5WysQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a-5PYKJVEeibfLkXoC-lBg" name="eventSeverity" type="_NcX08IEsEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mV5-8L20EeigqpWKF5WysQ" annotatedElement="_a-5PYKJVEeibfLkXoC-lBg">
+              <body>Event severity or priority enumeration: ‘CRITICAL’, ‘MAJOR’, ‘MINOR’, ‘WARNING’, ‘NORMAL’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cMRogKJVEeibfLkXoC-lBg" name="eventStartTimestamp">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_EdbMIL21EeigqpWKF5WysQ" annotatedElement="_cMRogKJVEeibfLkXoC-lBg">
+              <body>Time closest to when the measurement was made; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dDI_EKJVEeibfLkXoC-lBg" name="interfaceName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YVZcIL21EeigqpWKF5WysQ" annotatedElement="_dDI_EKJVEeibfLkXoC-lBg">
+              <body>Physical or logical port or card (if applicable</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq0sQL21EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq4WoL21EeigqpWKF5WysQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dwvr8KJVEeibfLkXoC-lBg" name="networkService">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_aA3fcL21EeigqpWKF5WysQ" annotatedElement="_dwvr8KJVEeibfLkXoC-lBg">
+              <body>Network name (internal AT&amp;T field)</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq7Z8L21EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq-dQL21EeigqpWKF5WysQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_en-O4KJVEeibfLkXoC-lBg" name="possibleRootCause">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bk9IYL21EeigqpWKF5WysQ" annotatedElement="_en-O4KJVEeibfLkXoC-lBg">
+              <body>Reserved for future use</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VrA5gL21EeigqpWKF5WysQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VrCusL21EeigqpWKF5WysQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fZgZgKJVEeibfLkXoC-lBg" name="thresholdCrossingFieldsVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dXjucL21EeigqpWKF5WysQ" annotatedElement="_fZgZgKJVEeibfLkXoC-lBg">
+              <body>Version of the thresholdCrossingAlertFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_7sljAMWTEeiLjtyU_R81wg" name="VoiceQuality">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Na2FANE7EeilcYLXtz_Wig" annotatedElement="_7sljAMWTEeiLjtyU_R81wg">
             <body>The voiceQuality class provides statistics related to customer facing voice products; consists of the following fields:</body>
           </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_e9yVUNikEeiRnMGpBj3Tnw" name="additionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wvMlMNkXEei09Y1bp3mjwA" annotatedElement="_e9yVUNikEeiRnMGpBj3Tnw">
+              <body>Additional voice quality fields</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZCwTINkZEei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZC1LoNkZEei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ftCA8NikEeiRnMGpBj3Tnw" name="calleeSideCodec">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zIvPcNkXEei09Y1bp3mjwA" annotatedElement="_ftCA8NikEeiRnMGpBj3Tnw">
+              <body>Callee codec for the call</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_g5WqINikEeiRnMGpBj3Tnw" name="callerSideCodec">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1bfVMNkXEei09Y1bp3mjwA" annotatedElement="_g5WqINikEeiRnMGpBj3Tnw">
+              <body>Caller codec for the call</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hdrfMNikEeiRnMGpBj3Tnw" name="correlator">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3SJ74NkXEei09Y1bp3mjwA" annotatedElement="_hdrfMNikEeiRnMGpBj3Tnw">
+              <body>Constant across all events on this call</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jBe0QNikEeiRnMGpBj3Tnw" name="phoneNumber">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zsKQINkYEei09Y1bp3mjwA" annotatedElement="_jBe0QNikEeiRnMGpBj3Tnw">
+              <body>Phone number associated with the correlator</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bcApgNkZEei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bcHXMNkZEei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jnUsQNikEeiRnMGpBj3Tnw" name="midCallRtcp">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1xUl0NkYEei09Y1bp3mjwA" annotatedElement="_jnUsQNikEeiRnMGpBj3Tnw">
+              <body>Base64 encoding of the binary RTCP data (excluding Eth/IP/UDP headers) </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_k-prkNikEeiRnMGpBj3Tnw" name="voiceQualityFieldsVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_VE1FANkZEei09Y1bp3mjwA" annotatedElement="_k-prkNikEeiRnMGpBj3Tnw">
+              <body>Version of the voiceQualityFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7OsC4NkXEei09Y1bp3mjwA" name="_endofcallvqmsummaries" type="_8GJXINiaEeiRnMGpBj3Tnw" aggregation="composite" association="_7OpmoNkXEei09Y1bp3mjwA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uzIEoNkYEei09Y1bp3mjwA" annotatedElement="_7OsC4NkXEei09Y1bp3mjwA">
+              <body>End of call voice quality metric summaries</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Osp8NkXEei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Osp8dkXEei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4IiU0tkYEei09Y1bp3mjwA" name="_vendornfnamefields" type="_6KnMMNkWEei09Y1bp3mjwA" aggregation="composite" association="_4IhtwNkYEei09Y1bp3mjwA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_GbIQsNkZEei09Y1bp3mjwA" annotatedElement="_4IiU0tkYEei09Y1bp3mjwA">
+              <body>Vendor, NF and nfModule names</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Ii74NkYEei09Y1bp3mjwA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Ii74dkYEei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_oboT8Mc5EeiRs7MlzxwPhg" name="CpuUsage">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Q10hoNE8EeilcYLXtz_Wig" annotatedElement="_oboT8Mc5EeiRs7MlzxwPhg">
@@ -3435,6 +3777,542 @@ Field	Type	Required?	Description&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mptp4M2UEeieTchE0MWKmw" value="1"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ihIjUNLdEeiMg4jJCQOcCA" name="GtpPerFlowMetrics">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jc7CgNLeEeiMg4jJCQOcCA" name="avgBitErrorRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_i_kEYNLgEeiMg4jJCQOcCA" annotatedElement="_Jc7CgNLeEeiMg4jJCQOcCA">
+              <body>Average bit error rate</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KIa2kNLeEeiMg4jJCQOcCA" name="avgPacketDelayVariation" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_kvE6MNLgEeiMg4jJCQOcCA" annotatedElement="_KIa2kNLeEeiMg4jJCQOcCA">
+              <body>Average packet delay variation or jitter in milliseconds for received packets: Average difference between the packet timestamp and time received for all pairs of consecutive packets</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_K0AKMNLeEeiMg4jJCQOcCA" name="avgPacketLatency" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mYnq4NLgEeiMg4jJCQOcCA" annotatedElement="_K0AKMNLeEeiMg4jJCQOcCA">
+              <body>Average delivery latency</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bJ2XQNLeEeiMg4jJCQOcCA" name="avgReceiveThroughput" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_oqNTANLgEeiMg4jJCQOcCA" annotatedElement="_bJ2XQNLeEeiMg4jJCQOcCA">
+              <body>Average receive throughput</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bmoZ4NLeEeiMg4jJCQOcCA" name="avgTransmitThroughput" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qbviENLgEeiMg4jJCQOcCA" annotatedElement="_bmoZ4NLeEeiMg4jJCQOcCA">
+              <body>Average transmit throughput</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cEXewNLeEeiMg4jJCQOcCA" name="durConnectionFailedStatus" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_t7dxQNLgEeiMg4jJCQOcCA" annotatedElement="_cEXewNLeEeiMg4jJCQOcCA">
+              <body>Duration of failed state in milliseconds, computed as the cumulative time between a failed echo request and the next following successful error request, over this reporting interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gib6oNLgEeiMg4jJCQOcCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gij2cNLgEeiMg4jJCQOcCA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_c7ZNYNLeEeiMg4jJCQOcCA" name="durTunnelFailedStatus" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xaJeoNLgEeiMg4jJCQOcCA" annotatedElement="_c7ZNYNLeEeiMg4jJCQOcCA">
+              <body>Duration of errored state, computed as the cumulative time between a tunnel error indicator and the next following non-errored indicator, over this reporting interval</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yhv-ENMbEeig45NPS8-MSw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yh1doNMbEeig45NPS8-MSw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dq7z8NLeEeiMg4jJCQOcCA" name="flowActivatedBy">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zbIe8NLgEeiMg4jJCQOcCA" annotatedElement="_dq7z8NLeEeiMg4jJCQOcCA">
+              <body>Endpoint activating the flow</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xCTkkNMbEeig45NPS8-MSw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xCZEINMbEeig45NPS8-MSw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eEj04NLeEeiMg4jJCQOcCA" name="flowActivationEpoch" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_SP-aQNLjEeiMg4jJCQOcCA" annotatedElement="_eEj04NLeEeiMg4jJCQOcCA">
+              <body>Time the connection is activated in the flow (connection) being reported on, or transmission time of the first packet if activation time is not available</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_edR24NLeEeiMg4jJCQOcCA" name="flowActivationMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_U1o08NLjEeiMg4jJCQOcCA" annotatedElement="_edR24NLeEeiMg4jJCQOcCA">
+              <body>Integer microseconds for the start of the flow connection</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_e4KcENLeEeiMg4jJCQOcCA" name="flowActivationTime">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XK2_4NLjEeiMg4jJCQOcCA" annotatedElement="_e4KcENLeEeiMg4jJCQOcCA">
+              <body>Time the connection is activated in the flow being reported on, or transmission time of the first packet if activation time is not available; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q9EEoNMbEeig45NPS8-MSw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q9KyUNMbEeig45NPS8-MSw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gFWA4NLeEeiMg4jJCQOcCA" name="flowDeactivatedBy">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bJ3MENLjEeiMg4jJCQOcCA" annotatedElement="_gFWA4NLeEeiMg4jJCQOcCA">
+              <body>Endpoint deactivating the flow</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_poRb8NMbEeig45NPS8-MSw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_poVtYNMbEeig45NPS8-MSw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gspRcNLeEeiMg4jJCQOcCA" name="flowDeactivationEpoch" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dZUtQNLjEeiMg4jJCQOcCA" annotatedElement="_gspRcNLeEeiMg4jJCQOcCA">
+              <body>Time for the start of the flow connection, in integer UTC epoch time aka UNIX time</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jZFpkNLeEeiMg4jJCQOcCA" name="flowDeactivationMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_f0wN4NLjEeiMg4jJCQOcCA" annotatedElement="_jZFpkNLeEeiMg4jJCQOcCA">
+              <body>Integer microseconds for the start of the flow connection</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j7OtUNLeEeiMg4jJCQOcCA" name="flowDeactivationTime">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_hi38kNLjEeiMg4jJCQOcCA" annotatedElement="_j7OtUNLeEeiMg4jJCQOcCA">
+              <body>Transmission time of the first packet in the flow connection being reported on; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mH2V4NLeEeiMg4jJCQOcCA" name="flowStatus">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_j1KIQNLjEeiMg4jJCQOcCA" annotatedElement="_mH2V4NLeEeiMg4jJCQOcCA">
+              <body>Connection status at reporting time as a working / inactive / failed indicator value</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_muYKYNLeEeiMg4jJCQOcCA" name="gtpConnectionStatus">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lopfINLjEeiMg4jJCQOcCA" annotatedElement="_muYKYNLeEeiMg4jJCQOcCA">
+              <body>Current connection state at reporting time</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_37UlQNLjEeiMg4jJCQOcCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_37XokNLjEeiMg4jJCQOcCA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nQLP4NLeEeiMg4jJCQOcCA" name="gtpTunnelStatus">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_nWKJ0NLjEeiMg4jJCQOcCA" annotatedElement="_nQLP4NLeEeiMg4jJCQOcCA">
+              <body>Current tunnel state  at reporting time</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1fyW8NLjEeiMg4jJCQOcCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1f3PcNLjEeiMg4jJCQOcCA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nwZBANLeEeiMg4jJCQOcCA" name="ipTosCountList" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_phmtsNLjEeiMg4jJCQOcCA" annotatedElement="_nwZBANLeEeiMg4jJCQOcCA">
+              <body>Array of key: value pairs where the keys are drawn from the IP Type-of-Service identifiers which range from '0' to '255', and the values are the count of packets that had those ToS identifiers in the flow</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zBRtINLjEeiMg4jJCQOcCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zBZB4NLjEeiMg4jJCQOcCA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oaDpENLeEeiMg4jJCQOcCA" name="ipTosList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__CT7oNMbEeig45NPS8-MSw" annotatedElement="_oaDpENLeEeiMg4jJCQOcCA">
+              <body>Array of unique IP Type-of-Service values observed in the flow where values range from '0' to '255'</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7C4RoNMbEeig45NPS8-MSw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7C-_UNMbEeig45NPS8-MSw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pj3w0NLeEeiMg4jJCQOcCA" name="largePacketRtt" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FT6ToNUsEeiNIfg-qanPsQ" annotatedElement="_pj3w0NLeEeiMg4jJCQOcCA">
+              <body>large packet round trip time</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AaGsENUsEeiNIfg-qanPsQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AaV8oNUsEeiNIfg-qanPsQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qAk68NLeEeiMg4jJCQOcCA" name="largePacketThreshold" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0k9MsNiREeiRnMGpBj3Tnw" annotatedElement="_qAk68NLeEeiMg4jJCQOcCA">
+              <body>large packet threshold being applied</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D_avkNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D_fBANiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qzFV8NLeEeiMg4jJCQOcCA" name="maxPacketDelayVariation" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4i1XgNiREeiRnMGpBj3Tnw" annotatedElement="_qzFV8NLeEeiMg4jJCQOcCA">
+              <body>Maximum packet delay variation or jitter in milliseconds for received packets: Maximum of the difference between the packet timestamp and time received for all pairs of consecutive packets</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D_RloNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D_V3ENiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rTRR4NLeEeiMg4jJCQOcCA" name="maxReceiveBitRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6YQoENiREeiRnMGpBj3Tnw" annotatedElement="_rTRR4NLeEeiMg4jJCQOcCA">
+              <body>maximum receive bit rate&quot;</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D_JCwNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D_NUMNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ru7TINLeEeiMg4jJCQOcCA" name="maxTransmitBitRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_AbJ-oNiSEeiRnMGpBj3Tnw" annotatedElement="_ru7TINLeEeiMg4jJCQOcCA">
+              <body>maximum transmit bit rate</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D-_40NiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D_EKQNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tk5WQNLeEeiMg4jJCQOcCA" name="mobileQciCosCountList" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PHTqANiSEeiRnMGpBj3Tnw" annotatedElement="_tk5WQNLeEeiMg4jJCQOcCA">
+              <body>array of key: value pairs where the keys are drawn from LTE QCI or UMTS class of service strings, and the values are the count of packets that had those strings in the flow</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IYgPsNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IYlvQNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5ne-YNLeEeiMg4jJCQOcCA" name="mobileQciCosList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YrNCINiSEeiRnMGpBj3Tnw" annotatedElement="_5ne-YNLeEeiMg4jJCQOcCA">
+              <body>Array of unique LTE QCI or UMTS class-of-service values observed in the flow</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQFNQNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQIQkNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6J6WANLeEeiMg4jJCQOcCA" name="numActivationFailures" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jdHFgNiSEeiRnMGpBj3Tnw" annotatedElement="_6J6WANLeEeiMg4jJCQOcCA">
+              <body>Number of failed activation requests, as observed by the reporting node</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7YawgNLeEeiMg4jJCQOcCA" name="numBitErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mwL_0NiSEeiRnMGpBj3Tnw" annotatedElement="_7YawgNLeEeiMg4jJCQOcCA">
+              <body>number of errored bits</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7w2eoNLeEeiMg4jJCQOcCA" name="numBytesReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pgvb4NiSEeiRnMGpBj3Tnw" annotatedElement="_7w2eoNLeEeiMg4jJCQOcCA">
+              <body>number of bytes received, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8HutkNLeEeiMg4jJCQOcCA" name="numBytesTransmitted" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rX-qUNiSEeiRnMGpBj3Tnw" annotatedElement="_8HutkNLeEeiMg4jJCQOcCA">
+              <body>number of bytes transmitted, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8eWd0NLeEeiMg4jJCQOcCA" name="numDroppedPackets" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_th91oNiSEeiRnMGpBj3Tnw" annotatedElement="_8eWd0NLeEeiMg4jJCQOcCA">
+              <body>number of received packets dropped due to errors per virtual interface</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_814NANLeEeiMg4jJCQOcCA" name="numGtpEchoFailures" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vy7LoNiSEeiRnMGpBj3Tnw" annotatedElement="_814NANLeEeiMg4jJCQOcCA">
+              <body>Number of Echo request path failures where failed paths are defined in 3GPP TS 29.281 sec 7.2.1 and 3GPP TS 29.060 sec. 11.2</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60GaENiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60KrgNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9LvvUNLeEeiMg4jJCQOcCA" name="numGtpTunnelErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yMV6ENiSEeiRnMGpBj3Tnw" annotatedElement="_9LvvUNLeEeiMg4jJCQOcCA">
+              <body>Number of tunnel error indications where errors are defined in 3GPP TS 29.281 sec 7.3.1 and 3GPP TS 29.060 sec. 11.1</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60Nu0NiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60QyINiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9kaG8NLeEeiMg4jJCQOcCA" name="numHttpErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0WLUYNiSEeiRnMGpBj3Tnw" annotatedElement="_9kaG8NLeEeiMg4jJCQOcCA">
+              <body>Http error count</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60T1cNiSEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60W4wNiSEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-wsT4NLeEeiMg4jJCQOcCA" name="numL7BytesReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_X6Us4NiUEeiRnMGpBj3Tnw" annotatedElement="_-wsT4NLeEeiMg4jJCQOcCA">
+              <body>number of tunneled layer 7 bytes received, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AU3cYNLfEeiMg4jJCQOcCA" name="numL7BytesTransmitted" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZZ96sNiUEeiRnMGpBj3Tnw" annotatedElement="_AU3cYNLfEeiMg4jJCQOcCA">
+              <body>number of tunneled layer 7 bytes received, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_A4Ca4NLfEeiMg4jJCQOcCA" name="numLostPackets" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cLPIcNiUEeiRnMGpBj3Tnw" annotatedElement="_A4Ca4NLfEeiMg4jJCQOcCA">
+              <body>number of tunneled layer 7 bytes received, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BO_iUNLfEeiMg4jJCQOcCA" name="numOutOfOrderPackets" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_eaDwcNiUEeiRnMGpBj3Tnw" annotatedElement="_BO_iUNLfEeiMg4jJCQOcCA">
+              <body>number of out-of-order packets</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ByDMENLfEeiMg4jJCQOcCA" name="numPacketErrors" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_gYXQMNiUEeiRnMGpBj3Tnw" annotatedElement="_ByDMENLfEeiMg4jJCQOcCA">
+              <body>number of errored packets</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CMfsYNLfEeiMg4jJCQOcCA" name="numPacketsReceivedExclRetrans" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iYUVwNiUEeiRnMGpBj3Tnw" annotatedElement="_CMfsYNLfEeiMg4jJCQOcCA">
+              <body>number of packets received, excluding retransmission</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ci298NLfEeiMg4jJCQOcCA" name="numPacketsReceivedInclRetrans" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_QmZW0NiVEeiRnMGpBj3Tnw" annotatedElement="_Ci298NLfEeiMg4jJCQOcCA">
+              <body>number of packets received, including retransmission</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DICHkNLfEeiMg4jJCQOcCA" name="numPacketsTransmittedInclRetrans" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_S5DV8NiVEeiRnMGpBj3Tnw" annotatedElement="_DICHkNLfEeiMg4jJCQOcCA">
+              <body>number of packets transmitted, including retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DnNW4NLfEeiMg4jJCQOcCA" name="numRetries" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Vl1sUNiVEeiRnMGpBj3Tnw" annotatedElement="_DnNW4NLfEeiMg4jJCQOcCA">
+              <body>number of packet retrie</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ETiRYNLfEeiMg4jJCQOcCA" name="numTimeouts" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YsnQANiVEeiRnMGpBj3Tnw" annotatedElement="_ETiRYNLfEeiMg4jJCQOcCA">
+              <body>number of packet timeouts</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IHr4cNLfEeiMg4jJCQOcCA" name="numTunneledL7BytesReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_anoLMNiVEeiRnMGpBj3Tnw" annotatedElement="_IHr4cNLfEeiMg4jJCQOcCA">
+              <body>number of tunneled layer 7 bytes received, excluding retransmissions</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ItTG8NLfEeiMg4jJCQOcCA" name="roundTripTime" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cp16kNiVEeiRnMGpBj3Tnw" annotatedElement="_ItTG8NLfEeiMg4jJCQOcCA">
+              <body>Round Trip time</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JUhfANLfEeiMg4jJCQOcCA" name="tcpFlagCountList" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fMO-0NiVEeiRnMGpBj3Tnw" annotatedElement="_JUhfANLfEeiMg4jJCQOcCA">
+              <body>Array of key: value pairs where the keys are drawn from TCP Flags and the values are the count of packets that had that TCP Flag in the flow</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qJ2i8NiVEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qJ9QoNiVEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KDI4gNLfEeiMg4jJCQOcCA" name="tcpFlagList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_gylRkNiVEeiRnMGpBj3Tnw" annotatedElement="_KDI4gNLfEeiMg4jJCQOcCA">
+              <body>Array of unique TCP Flags observed in the flow</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sdR-INiVEeiRnMGpBj3Tnw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sdZS4NiVEeiRnMGpBj3Tnw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Kx1KgNLfEeiMg4jJCQOcCA" name="timeToFirstByte" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jCdCcNiVEeiRnMGpBj3Tnw" annotatedElement="_Kx1KgNLfEeiMg4jJCQOcCA">
+              <body>Time in milliseconds between the connection activation and first byte received</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8GJXINiaEeiRnMGpBj3Tnw" name="EndOfCallVqmSummaries">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J3IEoNikEeiRnMGpBj3Tnw" name="adjacencyName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-ZDxUNkQEei09Y1bp3mjwA" annotatedElement="_J3IEoNikEeiRnMGpBj3Tnw">
+              <body>Adjacency name</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LbNtkNikEeiRnMGpBj3Tnw" name="endpointAverageJitter" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="___uNINkQEei09Y1bp3mjwA" annotatedElement="_LbNtkNikEeiRnMGpBj3Tnw">
+              <body>Endpoint average jitter</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F0mV0NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F0tqkNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_L2y2UNikEeiRnMGpBj3Tnw" name="endpointDescription" type="_KBvEoNkREei09Y1bp3mjwA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Bd2YANkREei09Y1bp3mjwA" annotatedElement="_L2y2UNikEeiRnMGpBj3Tnw">
+              <body>Enumeration: ‘Caller’, ‘Callee’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M6cEoNikEeiRnMGpBj3Tnw" name="endpointMaxJitter" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_C43kgNkREei09Y1bp3mjwA" annotatedElement="_M6cEoNikEeiRnMGpBj3Tnw">
+              <body>Endpoint maximum jitter</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HiR_oNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HiVqANkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NZpJINikEeiRnMGpBj3Tnw" name="endpointRtpOctetsDiscarded" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_EUXSINkREei09Y1bp3mjwA" annotatedElement="_NZpJINikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP octets discarded</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoZ6MNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IojEINkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_N06I0NikEeiRnMGpBj3Tnw" name="endpointRtpOctetsLost" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rF-hoNkREei09Y1bp3mjwA" annotatedElement="_N06I0NikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP octets lost</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dhGAUNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dhPxUNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OSdAcNikEeiRnMGpBj3Tnw" name="endpointRtpOctetsReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_sowjANkREei09Y1bp3mjwA" annotatedElement="_OSdAcNikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP octets received</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dhY7QNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dhiFMNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OysmwNikEeiRnMGpBj3Tnw" name="endpointRtpOctetsSent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uU4toNkREei09Y1bp3mjwA" annotatedElement="_OysmwNikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP octets sent</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dhr2MNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dh1nMNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PzbD8NikEeiRnMGpBj3Tnw" name="endpointRtpPacketsDiscarded" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_v_qNYNkREei09Y1bp3mjwA" annotatedElement="_PzbD8NikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP packets discarded</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dh-xINkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_diHUANkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QWetsNikEeiRnMGpBj3Tnw" name="endpointRtpPacketsLost" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xenesNkREei09Y1bp3mjwA" annotatedElement="_QWetsNikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP packets lost</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_diQd8NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_diegYNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QuxR4NikEeiRnMGpBj3Tnw" name="endpointRtpPacketsReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2Cy0gNkREei09Y1bp3mjwA" annotatedElement="_QuxR4NikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP packets received</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dipfgNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_di4JANkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RLJr4NikEeiRnMGpBj3Tnw" name="endpointRtpPacketsSent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_AbdRcNkSEei09Y1bp3mjwA" annotatedElement="_RLJr4NikEeiRnMGpBj3Tnw">
+              <body>Endpoint RTP packets sent</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_djGygNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djU08NkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RqTGANikEeiRnMGpBj3Tnw" name="localAverageJitter" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_B9qEANkSEei09Y1bp3mjwA" annotatedElement="_RqTGANikEeiRnMGpBj3Tnw">
+              <body>Local average jitter</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_djf0ENkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djqMINkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SUy0gNikEeiRnMGpBj3Tnw" name="localAverageJitterBufferDelay" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Dr02ANkSEei09Y1bp3mjwA" annotatedElement="_SUy0gNikEeiRnMGpBj3Tnw">
+              <body>Local average jitter buffer delay</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dkCmoNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkLwkNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SxKncNikEeiRnMGpBj3Tnw" name="localMaxJitter" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FTewUNkSEei09Y1bp3mjwA" annotatedElement="_SxKncNikEeiRnMGpBj3Tnw">
+              <body>Local maximum jitter</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dkUTcNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkddYNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TJ3bUNikEeiRnMGpBj3Tnw" name="localMaxJitterBufferDelay" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_GIjPwNkVEei09Y1bp3mjwA" annotatedElement="_TJ3bUNikEeiRnMGpBj3Tnw">
+              <body>Local max jitter buffer delay</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dkmAQNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkujINkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tke6wNikEeiRnMGpBj3Tnw" name="localRtpOctetsDiscarded" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_HuhIANkVEei09Y1bp3mjwA" annotatedElement="_Tke6wNikEeiRnMGpBj3Tnw">
+              <body>Local RTP octets discarded</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dk3GANkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlAP8NkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UEIrMNikEeiRnMGpBj3Tnw" name="localRtpOctetsLost" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JgQLYNkVEei09Y1bp3mjwA" annotatedElement="_UEIrMNikEeiRnMGpBj3Tnw">
+              <body>Local RTP octets lost</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlJZ4NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlSj0NkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UenAsNikEeiRnMGpBj3Tnw" name="localRtpOctetsReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LB-c0NkVEei09Y1bp3mjwA" annotatedElement="_UenAsNikEeiRnMGpBj3Tnw">
+              <body>Local RTP octets received</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dlexENkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dltakNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U6fEYNikEeiRnMGpBj3Tnw" name="localRtpOctetsSent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MdzhoNkVEei09Y1bp3mjwA" annotatedElement="_U6fEYNikEeiRnMGpBj3Tnw">
+              <body>Local RTP octets sent</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dl7dANkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmEm8NkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_X_KWUNikEeiRnMGpBj3Tnw" name="localRtpPacketsDiscarded" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YRjcgNkVEei09Y1bp3mjwA" annotatedElement="_X_KWUNikEeiRnMGpBj3Tnw">
+              <body>Local RTP packets discarded</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmNJ0NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmWTwNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Yt7g0NikEeiRnMGpBj3Tnw" name="localRtpPacketsLost" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Zwqe0NkVEei09Y1bp3mjwA" annotatedElement="_Yt7g0NikEeiRnMGpBj3Tnw">
+              <body>Local RTP packets lost</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dme2oNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmoAkNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZOyLINikEeiRnMGpBj3Tnw" name="localRtpPacketsReceived" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_b3Q-8NkVEei09Y1bp3mjwA" annotatedElement="_ZOyLINikEeiRnMGpBj3Tnw">
+              <body>Local RTP packets received</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmwjcNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dm5tYNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Zz-i4NikEeiRnMGpBj3Tnw" name="localRtpPacketsSent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dhwx4NkVEei09Y1bp3mjwA" annotatedElement="_Zz-i4NikEeiRnMGpBj3Tnw">
+              <body>Local RTP packets sent</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnC3UNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnMBQNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aTrWoNikEeiRnMGpBj3Tnw" name="mosCqe" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fIKH8NkVEei09Y1bp3mjwA" annotatedElement="_aTrWoNikEeiRnMGpBj3Tnw">
+              <body>Decimal range from 1 to 5 (1 decimal place)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnVLMNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dneVINkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bu9o4NikEeiRnMGpBj3Tnw" name="oneWayDelay" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yMU8cNkVEei09Y1bp3mjwA" annotatedElement="_bu9o4NikEeiRnMGpBj3Tnw">
+              <body>one-way path delay in milliseconds</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dnmQ8NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnva4NkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cQ_-8NikEeiRnMGpBj3Tnw" name="packetLossPercent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0BtJsNkVEei09Y1bp3mjwA" annotatedElement="_cQ_-8NikEeiRnMGpBj3Tnw">
+              <body>Calculated percentage packet loss based on endpoint RTP packets lost (as reported in RTCP) and local RTP packets sent. Direction is based on endpoint description (Caller, Callee). Decimal (2 decimal places)</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dn82QNkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_doFZINkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cvt7QNikEeiRnMGpBj3Tnw" name="rFactor" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1uOV4NkVEei09Y1bp3mjwA" annotatedElement="_cvt7QNikEeiRnMGpBj3Tnw">
+              <body>rFactor from 0 to 100</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_doN8ANkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_doXtANkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dLM9YNikEeiRnMGpBj3Tnw" name="roundTripDelay" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3azzgNkVEei09Y1bp3mjwA" annotatedElement="_dLM9YNikEeiRnMGpBj3Tnw">
+              <body>Round trip delay in milliseconds</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dogP4NkREei09Y1bp3mjwA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dooLsNkREei09Y1bp3mjwA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6KnMMNkWEei09Y1bp3mjwA" name="VendorNfNameFields">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_KveFoNkXEei09Y1bp3mjwA" annotatedElement="_6KnMMNkWEei09Y1bp3mjwA">
+            <body>vendorNfNameFields - The vendorNfNameFields provides vendor, nf and nfModule identifying information.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M9AlEJpqEeidy9iGT_F5-w" name="nfModuleName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YySUgJprEeidy9iGT_F5-w" annotatedElement="_M9AlEJpqEeidy9iGT_F5-w">
+              <body>nfModuleName - Name of the nfModule generating the event.&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RksFYJprEeidy9iGT_F5-w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rk2dcJprEeidy9iGT_F5-w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OD8_AJpqEeidy9iGT_F5-w" name="nfName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_a_4NcJprEeidy9iGT_F5-w" annotatedElement="_OD8_AJpqEeidy9iGT_F5-w">
+              <body>nfName - Name of the network function generating the event&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ss-jIJprEeidy9iGT_F5-w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_StC0kJprEeidy9iGT_F5-w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_L71b8JpqEeidy9iGT_F5-w" name="vendorName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_W6VUYJprEeidy9iGT_F5-w" annotatedElement="_L71b8JpqEeidy9iGT_F5-w">
+              <body>vendorName - Network function vendor name.&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_wZkrsIbfEei-x_BD9U-ssQ" name="EventTypeDefinitions">
         <packagedElement xmi:type="uml:DataType" xmi:id="_f1L3IH7uEeifJIHxnlj6Cg" name="CommonEventHeader"/>
@@ -3604,286 +4482,8 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_2Hi0AH7wEeifJIHxnlj6Cg" name="SipSignalingFields"/>
         <packagedElement xmi:type="uml:DataType" xmi:id="_2XJ9UH7wEeifJIHxnlj6Cg" name="StateChangeFields"/>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_7F_D8H7wEeifJIHxnlj6Cg" name="SyslogFields">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_GBKcAJzVEeiLvPKMh61-Bg" annotatedElement="_7F_D8H7wEeifJIHxnlj6Cg">
-            <body>The syslogFields datatype consists of the following fields:</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fX1bQJzTEeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_tMbUkLt0Eeiq-o0aE00M6w" annotatedElement="_fX1bQJzTEeiLvPKMh61-Bg">
-              <body>Additional syslog fields if needed Ex:  {“name1”: ”value1”, “name2: “value2” … }</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vK-BsLtwEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vLKO8LtwEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_f54_cJzTEeiLvPKMh61-Bg" name="eventSourceHost">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_uuwC8Lt0Eeiq-o0aE00M6w" annotatedElement="_f54_cJzTEeiLvPKMh61-Bg">
-              <body>Hostname of the device</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_gaDGMJzTEeiLvPKMh61-Bg" name="eventSourceType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_xFMV4Lt0Eeiq-o0aE00M6w" annotatedElement="_gaDGMJzTEeiLvPKMh61-Bg">
-              <body>Examples: ‘other’, ‘router’, ‘switch’, ‘host’, ‘card’, ‘port’, ‘slotThreshold’, ‘portThreshold’, ‘virtualMachine’, ‘virtualNetworkFunction’</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdPScLt0Eeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdS80Lt0Eeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_hwG6MJzTEeiLvPKMh61-Bg" name="syslogFacilty">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_zk6goLt0Eeiq-o0aE00M6w" annotatedElement="_hwG6MJzTEeiLvPKMh61-Bg">
-              <body>Numeric code from 0 to 23 for facility: &#xD;
-         0             kernel messages&#xD;
-         1             user-level messages&#xD;
-         2             mail system&#xD;
-         3             system daemons&#xD;
-         4             security/authorization messages&#xD;
-         5             messages generated internally by syslogd&#xD;
-         6             line printer subsystem&#xD;
-         7             network news subsystem&#xD;
-         8             UUCP subsystem&#xD;
-         9             clock daemon&#xD;
-        10             security/authorization messages&#xD;
-        11             FTP daemon&#xD;
-        12             NTP subsystem&#xD;
-        13             log audit&#xD;
-        14             log alert&#xD;
-        15             clock daemon (note 2)&#xD;
-        16             local use 0  (local0)&#xD;
-        17             local use 1  (local1)&#xD;
-        18             local use 2  (local2)&#xD;
-        19             local use 3  (local3)&#xD;
-        20             local use 4  (local4)&#xD;
-        21             local use 5  (local5)&#xD;
-        22             local use 6  (local6)&#xD;
-        23             local use 7  (local7 )&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SH3yALuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SH7cYLuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iWVzwJzTEeiLvPKMh61-Bg" name="syslogFieldVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_jID8kLuIEeiq-o0aE00M6w" annotatedElement="_iWVzwJzTEeiLvPKMh61-Bg">
-              <body>Version of the syslogFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_jV7BcJzTEeiLvPKMh61-Bg" name="syslogMsg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_lBwpILuIEeiq-o0aE00M6w" annotatedElement="_jV7BcJzTEeiLvPKMh61-Bg">
-              <body>Syslog message</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_kgWNMJzTEeiLvPKMh61-Bg" name="syslogMsgHost">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_mzfFcLuIEeiq-o0aE00M6w" annotatedElement="_kgWNMJzTEeiLvPKMh61-Bg">
-              <body>Hostname parsed from non-VES syslog message</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YptuYLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YpzN8LuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lKBcUJzTEeiLvPKMh61-Bg" name="syslogPri">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_o80JcLuIEeiq-o0aE00M6w" annotatedElement="_lKBcUJzTEeiLvPKMh61-Bg">
-              <body>0-192&#xD;
-Combined Severity and Facility (see rfc5424)&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yp4GcLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yp-0ILuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lxdPwJzTEeiLvPKMh61-Bg" name="syslogProc">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_qm9XELuIEeiq-o0aE00M6w" annotatedElement="_lxdPwJzTEeiLvPKMh61-Bg">
-              <body>Identifies the application that originated the message</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqDsoLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqLocLuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mYnWYJzTEeiLvPKMh61-Bg" name="syslogProcId" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_sNaXgLuIEeiq-o0aE00M6w" annotatedElement="_mYnWYJzTEeiLvPKMh61-Bg">
-              <body>The process number assigned by the OS when the application was started</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqTkQLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqbgELuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nBDPYJzTEeiLvPKMh61-Bg" name="syslogSData">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_vZi8ULuIEeiq-o0aE00M6w" annotatedElement="_nBDPYJzTEeiLvPKMh61-Bg">
-              <body>A &lt;space> separated list of key=”value” pairs following the rfc5424 standard for SD-ELEMENT.&#xD;
-&#xD;
-Deprecated &#xD;
-The entire rfc5424 syslogSData object, including square brackets [ ], SD-ID and list of SD-PARAMs&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqg_oLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqlRELuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nhhfMJzTEeiLvPKMh61-Bg" name="sysllogSdId">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_xuWQgLuIEeiq-o0aE00M6w" annotatedElement="_nhhfMJzTEeiLvPKMh61-Bg">
-              <body>0-32 char in format name@number, &#xD;
-i.e., ourSDID@32473&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YqqJkLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YqvCELuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oCtgsJzTEeiLvPKMh61-Bg" name="syslogSev">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_z_YfALuIEeiq-o0aE00M6w" annotatedElement="_oCtgsJzTEeiLvPKMh61-Bg">
-              <body>Level-of-severity text enumeration defined below: &#xD;
-Text 	Sev	Description&#xD;
-Emergency	0	system is unusable&#xD;
-Alert	1	action must be taken immediately&#xD;
-Critical	2	critical conditions&#xD;
-Error	3	error conditions&#xD;
-Warning	4	warning conditions&#xD;
-Notice	5	normal but significant condition&#xD;
-Info	6	Informational messages&#xD;
-Debug	          7	    debug-level messages&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yqz6kLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq5aILuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oiiQQJzTEeiLvPKMh61-Bg" name="syslogTag">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_2IOa0LuIEeiq-o0aE00M6w" annotatedElement="_oiiQQJzTEeiLvPKMh61-Bg">
-              <body>Also known as MsgId. Brief non-spaced text indicating the type of message such as ‘TCPOUT’ or ‘BGP_STATUS_CHANGE’; ‘NILVALUE’ should be used when no other value can be provided</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq-5sLuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrFAULuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pFelQJzTEeiLvPKMh61-Bg" name="syslogTs">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_4CZBcLuIEeiq-o0aE00M6w" annotatedElement="_pFelQJzTEeiLvPKMh61-Bg">
-              <body>Timestamp parsed from non-VES syslog message</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrJ40LuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrR0oLuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pucpwJzTEeiLvPKMh61-Bg" name="syslogVer" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_7EncULuIEeiq-o0aE00M6w" annotatedElement="_pucpwJzTEeiLvPKMh61-Bg">
-              <body>IANA assigned version of the syslog protocol specification:&#xD;
-   0: VES&#xD;
-   1: IANA RFC5424&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrWGELuIEeiq-o0aE00M6w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YrbloLuIEeiq-o0aE00M6w" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_8IBvwH7wEeifJIHxnlj6Cg" name="ThresholdCrossingAlertFields">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_RRq8IKJVEeibfLkXoC-lBg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_GtNpcKJWEeibfLkXoC-lBg" annotatedElement="_RRq8IKJVEeibfLkXoC-lBg">
-              <body>additionalFields - Additional pnfRegistration fields if needed.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jx4UUKJWEeibfLkXoC-lBg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JyBeQKJWEeibfLkXoC-lBg" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TGB1sKJVEeibfLkXoC-lBg" name="additionalParameters" type="_tptTQKJWEeibfLkXoC-lBg">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_TgHPkL2yEeigqpWKF5WysQ" annotatedElement="_TGB1sKJVEeibfLkXoC-lBg">
-              <body>Array of performance counters</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OD7_YKJWEeibfLkXoC-lBg" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OEA34KJWEeibfLkXoC-lBg" value="*"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Trf6QKJVEeibfLkXoC-lBg" name="alertAction" type="_ZTMBcL2yEeigqpWKF5WysQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_WiDWkL2yEeigqpWKF5WysQ" annotatedElement="_Trf6QKJVEeibfLkXoC-lBg">
-              <body>Enumeration: ‘SET’, ‘CONT’, ‘CLEAR’</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UekV8KJVEeibfLkXoC-lBg" name="alertDescription">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_0cns4L2yEeigqpWKF5WysQ" annotatedElement="_UekV8KJVEeibfLkXoC-lBg">
-              <body>Unique short alert description (e.g., NE-CPUMEM)</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXKx4KJVEeibfLkXoC-lBg" name="alertType" type="_8Xi8EL2yEeigqpWKF5WysQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_3G3soL2yEeigqpWKF5WysQ" annotatedElement="_VXKx4KJVEeibfLkXoC-lBg">
-              <body>Enumeration: ‘CARD-ANOMALY’, ‘INTERFACE-ANOMALY’, ELEMENT-ANOMALY’, ‘SERVICE-ANOMALY’</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_W9q1oKJVEeibfLkXoC-lBg" name="alertValue">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_X08sYL2zEeigqpWKF5WysQ" annotatedElement="_W9q1oKJVEeibfLkXoC-lBg">
-              <body>Calculated API value (if applicable)</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_YAEt0KJVEeibfLkXoC-lBg" name="associatedAlertIdList">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_EqIA0L20EeigqpWKF5WysQ" annotatedElement="_YAEt0KJVEeibfLkXoC-lBg">
-              <body>List of eventIds associated with the event being reported</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9tNAL20EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G92-AL20EeigqpWKF5WysQ" value="*"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Yr9jcKJVEeibfLkXoC-lBg" name="collectionTimestamp">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_UBw5ML20EeigqpWKF5WysQ" annotatedElement="_Yr9jcKJVEeibfLkXoC-lBg">
-              <body>Time when the performance collector picked up the data; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZXlTUKJVEeibfLkXoC-lBg" name="dataCollector">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_WjcLwL20EeigqpWKF5WysQ" annotatedElement="_ZXlTUKJVEeibfLkXoC-lBg">
-              <body>Specific performance collector instance used</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bkg48L20EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bkj8QL20EeigqpWKF5WysQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aM6Y0KJVEeibfLkXoC-lBg" name="elementType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_hXvb0L20EeigqpWKF5WysQ" annotatedElement="_aM6Y0KJVEeibfLkXoC-lBg">
-              <body>Type of network element (internal AT&amp;T field)</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpETgL20EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpKaIL20EeigqpWKF5WysQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_a-5PYKJVEeibfLkXoC-lBg" name="eventSeverity" type="_NcX08IEsEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_mV5-8L20EeigqpWKF5WysQ" annotatedElement="_a-5PYKJVEeibfLkXoC-lBg">
-              <body>Event severity or priority enumeration: ‘CRITICAL’, ‘MAJOR’, ‘MINOR’, ‘WARNING’, ‘NORMAL’</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cMRogKJVEeibfLkXoC-lBg" name="eventStartTimestamp">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_EdbMIL21EeigqpWKF5WysQ" annotatedElement="_cMRogKJVEeibfLkXoC-lBg">
-              <body>Time closest to when the measurement was made; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dDI_EKJVEeibfLkXoC-lBg" name="interfaceName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_YVZcIL21EeigqpWKF5WysQ" annotatedElement="_dDI_EKJVEeibfLkXoC-lBg">
-              <body>Physical or logical port or card (if applicable</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq0sQL21EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq4WoL21EeigqpWKF5WysQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dwvr8KJVEeibfLkXoC-lBg" name="networkService">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_aA3fcL21EeigqpWKF5WysQ" annotatedElement="_dwvr8KJVEeibfLkXoC-lBg">
-              <body>Network name (internal AT&amp;T field)</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vq7Z8L21EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vq-dQL21EeigqpWKF5WysQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_en-O4KJVEeibfLkXoC-lBg" name="possibleRootCause">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_bk9IYL21EeigqpWKF5WysQ" annotatedElement="_en-O4KJVEeibfLkXoC-lBg">
-              <body>Reserved for future use</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VrA5gL21EeigqpWKF5WysQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VrCusL21EeigqpWKF5WysQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fZgZgKJVEeibfLkXoC-lBg" name="thresholdCrossingFieldsVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_dXjucL21EeigqpWKF5WysQ" annotatedElement="_fZgZgKJVEeibfLkXoC-lBg">
-              <body>Version of the thresholdCrossingAlertFields block as “#.#” where # is a digit; see section 1 for the correct digits to use.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_7F_D8H7wEeifJIHxnlj6Cg" name="SyslogFields"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8IBvwH7wEeifJIHxnlj6Cg" name="ThresholdCrossingAlertFields"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_H0pqkIFEEeieQ4zKGFzYtQ" name="VfStatus">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Vyrl4KZKEeily5uFlujj3Q" annotatedElement="_H0pqkIFEEeieQ4zKGFzYtQ">
             <body>Virtual function status enumeration: ‘Active’, ‘Idle’, ‘Preparing to terminate’, ‘Ready to terminate’, ‘Requesting Termination’</body>
@@ -4037,37 +4637,7 @@ Debug	          7	    debug-level messages&#xD;
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cnWHkJQ2Eei6kI-JPNdeuw" name="MAINTENANCE"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eugBUJQ2Eei6kI-JPNdeuw" name="OUT_OF_SERVICE"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_AooCUJpqEeidy9iGT_F5-w" name="VendorNfNameFields">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_VTtU0JprEeidy9iGT_F5-w" annotatedElement="_AooCUJpqEeidy9iGT_F5-w">
-            <body>vendorNfNameFields - The vendorNfNameFields provides vendor, nf and nfModule identifying information.&#xD;
-</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_L71b8JpqEeidy9iGT_F5-w" name="vendorName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_W6VUYJprEeidy9iGT_F5-w" annotatedElement="_L71b8JpqEeidy9iGT_F5-w">
-              <body>vendorName - Network function vendor name.&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_M9AlEJpqEeidy9iGT_F5-w" name="nfModuleName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_YySUgJprEeidy9iGT_F5-w" annotatedElement="_M9AlEJpqEeidy9iGT_F5-w">
-              <body>nfModuleName - Name of the nfModule generating the event.&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RksFYJprEeidy9iGT_F5-w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rk2dcJprEeidy9iGT_F5-w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OD8_AJpqEeidy9iGT_F5-w" name="nfName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_a_4NcJprEeidy9iGT_F5-w" annotatedElement="_OD8_AJpqEeidy9iGT_F5-w">
-              <body>nfName - Name of the network function generating the event&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ss-jIJprEeidy9iGT_F5-w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_StC0kJprEeidy9iGT_F5-w" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_AooCUJpqEeidy9iGT_F5-w" name="VendorNfNameFields"/>
         <packagedElement xmi:type="uml:DataType" xmi:id="_tptTQKJWEeibfLkXoC-lBg" name="Counter">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4wuD8KJWEeibfLkXoC-lBg" name="criticality">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -4133,6 +4703,22 @@ Debug	          7	    debug-level messages&#xD;
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Hfx0wL2zEeigqpWKF5WysQ" name="SERVICE_ANOMALY"/>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_kokBwIkOEeiddpojVtQ0Hg" name="DiskUsage"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_KBvEoNkREei09Y1bp3mjwA" name="EndpointDescription">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QJ58wNkREei09Y1bp3mjwA" name="Caller"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RlbfkNkREei09Y1bp3mjwA" name="Callee"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4IhtwNkYEei09Y1bp3mjwA" name="VoiceQualityHasVendorNfNameFields" memberEnd="_4IiU0tkYEei09Y1bp3mjwA _4Ii74tkYEei09Y1bp3mjwA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4IiU0NkYEei09Y1bp3mjwA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4IiU0dkYEei09Y1bp3mjwA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4Ii74tkYEei09Y1bp3mjwA" name="voicequality" type="_7sljAMWTEeiLjtyU_R81wg" association="_4IhtwNkYEei09Y1bp3mjwA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_awJvcNkhEei09Y1bp3mjwA" name="SipSignalingHasVendorNfNameFields" memberEnd="_awKWgtkhEei09Y1bp3mjwA _awK9ktkhEei09Y1bp3mjwA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_awKWgNkhEei09Y1bp3mjwA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_awKWgdkhEei09Y1bp3mjwA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_awK9ktkhEei09Y1bp3mjwA" name="sipsignaling" type="_zieoUMWTEeiLjtyU_R81wg" association="_awJvcNkhEei09Y1bp3mjwA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_UgGsIMyIEeicT7FGufu5-g" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventHasVoiceVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
@@ -4351,6 +4937,18 @@ Debug	          7	    debug-level messages&#xD;
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_LWvhsNCrEeius9GPYoVrTg" name="ipmiprocessor" type="_zRiPEMdQEeiNaKPf3x1gTw" association="_LWrQQNCrEeius9GPYoVrTg"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_6bBrYNiVEeiRnMGpBj3Tnw" name="MobileFlowHasGtpPerFlowMetrics" memberEnd="_6bEHoNiVEeiRnMGpBj3Tnw _6bEus9iVEeiRnMGpBj3Tnw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6bDgkNiVEeiRnMGpBj3Tnw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6bDgkdiVEeiRnMGpBj3Tnw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_6bEus9iVEeiRnMGpBj3Tnw" name="mobileflow" type="_25jHQMWSEeiLjtyU_R81wg" association="_6bBrYNiVEeiRnMGpBj3Tnw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7OpmoNkXEei09Y1bp3mjwA" name="VoiceQualityHasEndOfCallVqmSummaries" memberEnd="_7OsC4NkXEei09Y1bp3mjwA _7Osp8tkXEei09Y1bp3mjwA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7Orb0NkXEei09Y1bp3mjwA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Orb0dkXEei09Y1bp3mjwA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_7Osp8tkXEei09Y1bp3mjwA" name="voicequality" type="_7sljAMWTEeiLjtyU_R81wg" association="_7OpmoNkXEei09Y1bp3mjwA"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Nfy1oMyJEeicT7FGufu5-g" name="Diagrams">
         <ownedComment xmi:type="uml:Comment" xmi:id="_L3adsJzVEeiLvPKMh61-Bg">
@@ -4362,164 +4960,9 @@ Debug	          7	    debug-level messages&#xD;
         <ownedComment xmi:type="uml:Comment" xmi:id="_QTgDgNMEEeig45NPS8-MSw" annotatedElement="_Nfy1oMyJEeicT7FGufu5-g">
           <body>This diagram shows the relationship between MobileFlow and GtpPerFlowMetrics classes.</body>
         </ownedComment>
-        <packagedElement xmi:type="uml:Class" xmi:id="_ihIjUNLdEeiMg4jJCQOcCA" name="GtpPerFlowMetrics">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jc7CgNLeEeiMg4jJCQOcCA" name="avgBitErrorRate" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_i_kEYNLgEeiMg4jJCQOcCA" annotatedElement="_Jc7CgNLeEeiMg4jJCQOcCA">
-              <body>Average bit error rate</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_KIa2kNLeEeiMg4jJCQOcCA" name="avgPacketDelayVariation" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_kvE6MNLgEeiMg4jJCQOcCA" annotatedElement="_KIa2kNLeEeiMg4jJCQOcCA">
-              <body>Average packet delay variation or jitter in milliseconds for received packets: Average difference between the packet timestamp and time received for all pairs of consecutive packets</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_K0AKMNLeEeiMg4jJCQOcCA" name="avgPacketLatency" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_mYnq4NLgEeiMg4jJCQOcCA" annotatedElement="_K0AKMNLeEeiMg4jJCQOcCA">
-              <body>Average delivery latency</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bJ2XQNLeEeiMg4jJCQOcCA" name="avgReceiveThroughput" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_oqNTANLgEeiMg4jJCQOcCA" annotatedElement="_bJ2XQNLeEeiMg4jJCQOcCA">
-              <body>Average receive throughput</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bmoZ4NLeEeiMg4jJCQOcCA" name="avgTransmitThroughput" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_qbviENLgEeiMg4jJCQOcCA" annotatedElement="_bmoZ4NLeEeiMg4jJCQOcCA">
-              <body>Average transmit throughput</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cEXewNLeEeiMg4jJCQOcCA" name="durConnectionFailedStatus" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_t7dxQNLgEeiMg4jJCQOcCA" annotatedElement="_cEXewNLeEeiMg4jJCQOcCA">
-              <body>Duration of failed state in milliseconds, computed as the cumulative time between a failed echo request and the next following successful error request, over this reporting interval</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gib6oNLgEeiMg4jJCQOcCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gij2cNLgEeiMg4jJCQOcCA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_c7ZNYNLeEeiMg4jJCQOcCA" name="durTunnelFailedStatus" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_xaJeoNLgEeiMg4jJCQOcCA" annotatedElement="_c7ZNYNLeEeiMg4jJCQOcCA">
-              <body>Duration of errored state, computed as the cumulative time between a tunnel error indicator and the next following non-errored indicator, over this reporting interval</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yhv-ENMbEeig45NPS8-MSw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yh1doNMbEeig45NPS8-MSw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_dq7z8NLeEeiMg4jJCQOcCA" name="flowActivatedBy">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_zbIe8NLgEeiMg4jJCQOcCA" annotatedElement="_dq7z8NLeEeiMg4jJCQOcCA">
-              <body>Endpoint activating the flow</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xCTkkNMbEeig45NPS8-MSw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xCZEINMbEeig45NPS8-MSw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_eEj04NLeEeiMg4jJCQOcCA" name="flowActivationEpoch" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_SP-aQNLjEeiMg4jJCQOcCA" annotatedElement="_eEj04NLeEeiMg4jJCQOcCA">
-              <body>Time the connection is activated in the flow (connection) being reported on, or transmission time of the first packet if activation time is not available</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_edR24NLeEeiMg4jJCQOcCA" name="flowActivationMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_U1o08NLjEeiMg4jJCQOcCA" annotatedElement="_edR24NLeEeiMg4jJCQOcCA">
-              <body>Integer microseconds for the start of the flow connection</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_e4KcENLeEeiMg4jJCQOcCA" name="flowActivationTime">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_XK2_4NLjEeiMg4jJCQOcCA" annotatedElement="_e4KcENLeEeiMg4jJCQOcCA">
-              <body>Time the connection is activated in the flow being reported on, or transmission time of the first packet if activation time is not available; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q9EEoNMbEeig45NPS8-MSw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q9KyUNMbEeig45NPS8-MSw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_gFWA4NLeEeiMg4jJCQOcCA" name="flowDeactivatedBy">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_bJ3MENLjEeiMg4jJCQOcCA" annotatedElement="_gFWA4NLeEeiMg4jJCQOcCA">
-              <body>Endpoint deactivating the flow</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_poRb8NMbEeig45NPS8-MSw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_poVtYNMbEeig45NPS8-MSw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_gspRcNLeEeiMg4jJCQOcCA" name="flowDeactivationEpoch" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_dZUtQNLjEeiMg4jJCQOcCA" annotatedElement="_gspRcNLeEeiMg4jJCQOcCA">
-              <body>Time for the start of the flow connection, in integer UTC epoch time aka UNIX time</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_jZFpkNLeEeiMg4jJCQOcCA" name="flowDeactivationMicrosec" type="_p3EKoDm0EeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_f0wN4NLjEeiMg4jJCQOcCA" annotatedElement="_jZFpkNLeEeiMg4jJCQOcCA">
-              <body>Integer microseconds for the start of the flow connection</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_j7OtUNLeEeiMg4jJCQOcCA" name="flowDeactivationTime">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_hi38kNLjEeiMg4jJCQOcCA" annotatedElement="_j7OtUNLeEeiMg4jJCQOcCA">
-              <body>Transmission time of the first packet in the flow connection being reported on; with RFC 2822 compliant format: ‘Sat, 13 Mar 2010 11:29:05 -0800’</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mH2V4NLeEeiMg4jJCQOcCA" name="flowStatus">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_j1KIQNLjEeiMg4jJCQOcCA" annotatedElement="_mH2V4NLeEeiMg4jJCQOcCA">
-              <body>Connection status at reporting time as a working / inactive / failed indicator value</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_muYKYNLeEeiMg4jJCQOcCA" name="gtpConnectionStatus">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_lopfINLjEeiMg4jJCQOcCA" annotatedElement="_muYKYNLeEeiMg4jJCQOcCA">
-              <body>Current connection state at reporting time</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_37UlQNLjEeiMg4jJCQOcCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_37XokNLjEeiMg4jJCQOcCA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nQLP4NLeEeiMg4jJCQOcCA" name="gtpTunnelStatus">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_nWKJ0NLjEeiMg4jJCQOcCA" annotatedElement="_nQLP4NLeEeiMg4jJCQOcCA">
-              <body>Current tunnel state  at reporting time</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1fyW8NLjEeiMg4jJCQOcCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1f3PcNLjEeiMg4jJCQOcCA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nwZBANLeEeiMg4jJCQOcCA" name="ipTosCountList" type="_yPR44IEoEeieQ4zKGFzYtQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_phmtsNLjEeiMg4jJCQOcCA" annotatedElement="_nwZBANLeEeiMg4jJCQOcCA">
-              <body>Array of key: value pairs where the keys are drawn from the IP Type-of-Service identifiers which range from '0' to '255', and the values are the count of packets that had those ToS identifiers in the flow</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zBRtINLjEeiMg4jJCQOcCA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zBZB4NLjEeiMg4jJCQOcCA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oaDpENLeEeiMg4jJCQOcCA" name="ipTosList">
-            <ownedComment xmi:type="uml:Comment" xmi:id="__CT7oNMbEeig45NPS8-MSw" annotatedElement="_oaDpENLeEeiMg4jJCQOcCA">
-              <body>Array of unique IP Type-of-Service values observed in the flow where values range from '0' to '255'</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7C4RoNMbEeig45NPS8-MSw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7C-_UNMbEeig45NPS8-MSw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_pj3w0NLeEeiMg4jJCQOcCA" name="Property21"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_qAk68NLeEeiMg4jJCQOcCA" name="Property22"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_qzFV8NLeEeiMg4jJCQOcCA" name="Property23"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_rTRR4NLeEeiMg4jJCQOcCA" name="Property24"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ru7TINLeEeiMg4jJCQOcCA" name="Property25"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_tk5WQNLeEeiMg4jJCQOcCA" name="Property26"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_5ne-YNLeEeiMg4jJCQOcCA" name="Property27"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6J6WANLeEeiMg4jJCQOcCA" name="Property28"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_7YawgNLeEeiMg4jJCQOcCA" name="Property29"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_7w2eoNLeEeiMg4jJCQOcCA" name="Property30"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_8HutkNLeEeiMg4jJCQOcCA" name="Property31"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_8eWd0NLeEeiMg4jJCQOcCA" name="Property32"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_814NANLeEeiMg4jJCQOcCA" name="Property33"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_9LvvUNLeEeiMg4jJCQOcCA" name="Property34"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_9kaG8NLeEeiMg4jJCQOcCA" name="Property35"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_-wsT4NLeEeiMg4jJCQOcCA" name="Property36"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_AU3cYNLfEeiMg4jJCQOcCA" name="Property37"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_A4Ca4NLfEeiMg4jJCQOcCA" name="Property38"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_BO_iUNLfEeiMg4jJCQOcCA" name="Property39"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ByDMENLfEeiMg4jJCQOcCA" name="Property40"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_CMfsYNLfEeiMg4jJCQOcCA" name="Property41"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ci298NLfEeiMg4jJCQOcCA" name="Property42"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_DICHkNLfEeiMg4jJCQOcCA" name="Property43"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_DnNW4NLfEeiMg4jJCQOcCA" name="Property44"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ETiRYNLfEeiMg4jJCQOcCA" name="Property45"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_IHr4cNLfEeiMg4jJCQOcCA" name="Property46"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ItTG8NLfEeiMg4jJCQOcCA" name="Property47"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_JUhfANLfEeiMg4jJCQOcCA" name="Property48"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_KDI4gNLfEeiMg4jJCQOcCA" name="Property49"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Kx1KgNLfEeiMg4jJCQOcCA" name="Property50"/>
-        </packagedElement>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2PneENiZEeiRnMGpBj3Tnw">
+          <body>syslogFacility and syslogSev as enums?</body>
+        </ownedComment>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License">
@@ -4590,15 +5033,75 @@ Debug	          7	    debug-level messages&#xD;
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sGh10NMVEeig45NPS8-MSw" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sGh10dMVEeig45NPS8-MSw" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_sGh10tMVEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_sGjD8NMVEeig45NPS8-MSw" name="policygroup" type="_jUQ9sNMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_sGh10tMVEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LQCEUNcPEeitAsFAkChUcg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LQMcYNcPEeitAsFAkChUcg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_sGjD8NMVEeig45NPS8-MSw" name="policygroup" type="_jUQ9sNMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MCbKkNcPEeitAsFAkChUcg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MChRMNcPEeitAsFAkChUcg" value="*"/>
+          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_GYkqcNMPEeig45NPS8-MSw" name="PolicyObjectClasses">
-        <packagedElement xmi:type="uml:Class" xmi:id="_trl94NMPEeig45NPS8-MSw" name="PolicyAction">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_fyc8cNMSEeig45NPS8-MSw" annotatedElement="_trl94NMPEeig45NPS8-MSw">
-            <body>A PolicyAction clause is an aggregation of individual PolicyActions, and is treated as an atomic object that is aggregated by a PolicyRule. It represents the necessary actions that should be performed if the PolicyCondition clause evaluates to TRUE.  These actions are applied to a set of managed objects, and have the effect of either maintaining an existing state, or transitioning to a new state, of those managed objects.</body>
+        <packagedElement xmi:type="uml:Class" xmi:id="_trl94NMPEeig45NPS8-MSw" name="PolicyAction" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Mef6ANb4EeitAsFAkChUcg" annotatedElement="_trl94NMPEeig45NPS8-MSw">
+            <body>This is an abstract base class that represents how to form the action clause of a PolicyRule. This consists of a single occurrence of a PolicyStatement, which is of the form:&#xD;
+&#xD;
+ {variable, operator, value}&#xD;
+&#xD;
+Policy actions have the semantics of &quot;SET variable to value&quot;. There are two types of actions:</body>
           </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WKdB8Nb4EeitAsFAkChUcg" name="keywords">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_gjjfkNb_EeitAsFAkChUcg" annotatedElement="_WKdB8Nb4EeitAsFAkChUcg">
+              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WqDIANb4EeitAsFAkChUcg" name="PolicyName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lyLgkNb_EeitAsFAkChUcg" annotatedElement="_WqDIANb4EeitAsFAkChUcg">
+              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU specs or CIM specs.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XITKQNb4EeitAsFAkChUcg" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tw98ENb_EeitAsFAkChUcg" annotatedElement="_XITKQNb4EeitAsFAkChUcg">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XnXr4Nb4EeitAsFAkChUcg" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_z87vENb_EeitAsFAkChUcg" annotatedElement="_XnXr4Nb4EeitAsFAkChUcg">
+              <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YFZEoNb4EeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4SI0wNb_EeitAsFAkChUcg" annotatedElement="_YFZEoNb4EeitAsFAkChUcg">
+              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+            </ownedComment>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_otly0NMPEeig45NPS8-MSw" name="PolicyEvent">
           <ownedComment xmi:type="uml:Comment" xmi:id="_HW0UANMSEeig45NPS8-MSw" annotatedElement="_otly0NMPEeig45NPS8-MSw">
@@ -4606,15 +5109,503 @@ Debug	          7	    debug-level messages&#xD;
           </ownedComment>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_jUQ9sNMPEeig45NPS8-MSw" name="PolicyGroup">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_hdCHkNMVEeig45NPS8-MSw" annotatedElement="_jUQ9sNMPEeig45NPS8-MSw">
-            <body>A PolicyRule is designed to be used for a single purpose. Sometimes, a management system needs multiple separate policy decisions and actions to be conducted in concert. A PolicyGroup is a generalized aggregation container.  It enables PolicyRules and/or PolicyGroups to be aggregated in a single container. Note that loops, including the degenerate case of a PolicyGroup that contains itself, are not allowed when PolicyGroups contain other PolicyGroups. PolicyGroups do not have associated specifications, as they are “just” containers.</body>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nM_NMNhpEeiRnMGpBj3Tnw" annotatedElement="_jUQ9sNMPEeig45NPS8-MSw">
+            <body>This class is a generalized aggregation container. It enables PolicyRules and/or PolicyGroups to be aggregated in a single container. Note that loops, including the degenerate case of a PolicyGroup that contains itself, are not allowed when PolicyGroups contain other PolicyGroups.&#xD;
+</body>
           </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_09izANhpEeiRnMGpBj3Tnw" name="isMandatoryEvaluation">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tl9sANhqEeiRnMGpBj3Tnw" annotatedElement="_09izANhpEeiRnMGpBj3Tnw">
+              <body>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be &quot;best effort&quot; and may be ignored. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1rrEUNhpEeiRnMGpBj3Tnw" name="usage">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vei-QNhqEeiRnMGpBj3Tnw" annotatedElement="_1rrEUNhpEeiRnMGpBj3Tnw">
+              <body>This is a free-form string attribute that recommends how this policy object should be used. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7w7LUNhpEeiRnMGpBj3Tnw" name="keywords">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yF1woNhqEeiRnMGpBj3Tnw" annotatedElement="_7w7LUNhpEeiRnMGpBj3Tnw">
+              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8nPIQNhpEeiRnMGpBj3Tnw" name="policyName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1Ko-YNhqEeiRnMGpBj3Tnw" annotatedElement="_8nPIQNhpEeiRnMGpBj3Tnw">
+              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU specs or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9eti0NhpEeiRnMGpBj3Tnw" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4iaLcNhqEeiRnMGpBj3Tnw" annotatedElement="_9eti0NhpEeiRnMGpBj3Tnw">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-qnVQNhpEeiRnMGpBj3Tnw" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6NkFsNhqEeiRnMGpBj3Tnw" annotatedElement="_-qnVQNhpEeiRnMGpBj3Tnw">
+              <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__egQUNhpEeiRnMGpBj3Tnw" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_8C_9UNhqEeiRnMGpBj3Tnw" annotatedElement="__egQUNhpEeiRnMGpBj3Tnw">
+              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+            </ownedComment>
+          </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_eM1J0NMPEeig45NPS8-MSw" name="PolicyRule"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_vYK0cNMPEeig45NPS8-MSw" name="PolicyRuleTemplate (PolicyRuleSpec)"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eM1J0NMPEeig45NPS8-MSw" name="PolicyRule">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_5PuYANb3EeitAsFAkChUcg" annotatedElement="_eM1J0NMPEeig45NPS8-MSw">
+            <body>This is a concrete base class for realizing the &quot;event-condition-passaction-failaction&quot; semantics that form a policy rule. The semantics of this rule are that the rule is evaluated when an event occurs. If the condition clause is satisfied, then the pass-action clause will be executed (otherwise, the fail-action clause will be executed). &#xD;
+ &#xD;
+PolicyRules may be nested within PolicyRules. This is often needed in networking (e.g., bandwidth allocation). </body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0VWWQNbXEeitAsFAkChUcg" name="isCNF">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NP1d4NbYEeitAsFAkChUcg" annotatedElement="_0VWWQNbXEeitAsFAkChUcg">
+              <body>This is a Boolean attribute that, if TRUE, defines the condition clause of this rule to be represented in Conjunctive Normal Form (e.g., an AND of ORs). If the value of this attribute is FALSE, then the condition clause will be represented in Disjunctive Normal Form (e.g., an OR of ANDs).&#xD;
+&#xD;
+This attribute controls the setting of how multiple condition clauses (as represented by multiple PolicyConditionComposite objects) are treated in the PolicyRule. As such, it is different from the attribute PolicyConditionComposite.IsCNF, which controls how multiple PolicyConditionAtomic objects are treated in a (single) PolicyConditionComposite object.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1d7H4NbXEeitAsFAkChUcg" name="hasSubRules">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_VAYpENbYEeitAsFAkChUcg" annotatedElement="_1d7H4NbXEeitAsFAkChUcg">
+              <body>This is a Boolean attribute that, if TRUE, signifies that this PolicyRule has one or more sub-rules. Sub-rules are used to enforce a hierarchical nesting of rules, so that parent rules may control the execution and other semantics of sub-rules that they contain.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_16YaYNbXEeitAsFAkChUcg" name="isMandatoryEvaluation">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ebkxINbYEeitAsFAkChUcg" annotatedElement="_16YaYNbXEeitAsFAkChUcg">
+              <body>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be &quot;best effort&quot; and may be ignored. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2xdMUNbXEeitAsFAkChUcg" name="usage">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lkVjkNbYEeitAsFAkChUcg" annotatedElement="_2xdMUNbXEeitAsFAkChUcg">
+              <body>This is a free-form string attribute that recommends how this policy object should be used. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3P8fINbXEeitAsFAkChUcg" name="keywords">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wHWPUNbYEeitAsFAkChUcg" annotatedElement="_3P8fINbXEeitAsFAkChUcg">
+              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3wPv0NbXEeitAsFAkChUcg" name="policyName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7jQR8NbYEeitAsFAkChUcg" annotatedElement="_3wPv0NbXEeitAsFAkChUcg">
+              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU specs or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8TomANbYEeitAsFAkChUcg" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DMLLINbZEeitAsFAkChUcg" annotatedElement="_8TomANbYEeitAsFAkChUcg">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GPytINbZEeitAsFAkChUcg" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Qkl9wNbZEeitAsFAkChUcg" annotatedElement="_GPytINbZEeitAsFAkChUcg">
+              <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HYmIQNbZEeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vYK0cNMPEeig45NPS8-MSw" name="PolicyRuleTemplate (PolicyRuleSpec)">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Bn-ikNbbEeitAsFAkChUcg" annotatedElement="_vYK0cNMPEeig45NPS8-MSw">
+            <body>This is a concrete base class that is used to define the invariant characteristics (attributes, methods, constraints and relationships) of a PolicyRule entity.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_I-2pgNbbEeitAsFAkChUcg" name="executionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_SQ4KUNbiEeitAsFAkChUcg" annotatedElement="_I-2pgNbbEeitAsFAkChUcg">
+              <body>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: Do Until Success&#xD;
+ 2: Do All&#xD;
+ 3: Do Until Failure&#xD;
+ 4: Do All Without Failure or Do Nothing&#xD;
+&#xD;
+&quot;Do Until Success&quot; means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).&#xD;
+&#xD;
+&quot;Do All&quot; means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.&#xD;
+&#xD;
+&quot;Do Until Failure&quot; means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.&#xD;
+&#xD;
+Finally, &quot;Do All Without Failure or Do Nothing&quot; means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JiNOMNbbEeitAsFAkChUcg" name="sequencedActions">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uEI14NbiEeitAsFAkChUcg" annotatedElement="_JiNOMNbbEeitAsFAkChUcg">
+              <body>This is an enumerated integer defines how the ordering of the PolicyActions associated with this PolicyRule is to be interpreted. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs (the CIM defined a subset of these values as an attribute in the PolicyRule).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J-gIoNbbEeitAsFAkChUcg" name="policyActionSelectCriteria">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1N5RYNbjEeitAsFAkChUcg" annotatedElement="_J-gIoNbbEeitAsFAkChUcg">
+              <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyConditions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyConditions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KcJG4NbbEeitAsFAkChUcg" name="policyConditionSelectCriteria">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4cuk4NbjEeitAsFAkChUcg" annotatedElement="_KcJG4NbbEeitAsFAkChUcg">
+              <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LAB3ENbbEeitAsFAkChUcg" name="policyEventSelectCriteria">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_IBJ8ENbkEeitAsFAkChUcg" annotatedElement="_LAB3ENbbEeitAsFAkChUcg">
+              <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PdPCMNbbEeitAsFAkChUcg" name="decisionStrategy" type="_P59EUNbkEeitAsFAkChUcg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MHFPoNbkEeitAsFAkChUcg" annotatedElement="_PdPCMNbbEeitAsFAkChUcg">
+              <body>This is an enumerated integer that specifies the particular decision strategy to be used in this PolicySet. &#xD;
+ &#xD;
+Permitted Values: &#xD;
+ &#xD;
+ 0: Unknown &#xD;
+ 1: MatchFirst &#xD;
+ 2: MatchAll &#xD;
+ &#xD;
+MatchFirst enforces the actions of the first rule that evaluates to TRUE; policy evaluation then STOPS, meaning that all subsequent rules are no longer evaluated. &#xD;
+ &#xD;
+MatchAll enforces the actions of all rules that evaluate to TRUE. This is equivalent to performing two passes through the rule set. The first pass gathers all PolicyRules that evaluate to true and places them in a group. The second pass then executes only those rules that evaluated to true. Execution of these rules is controlled through the Priority property (on the aggregation PolicySetComponent), which defines the order in which the PolicyRules execute. </body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RE7YwNbbEeitAsFAkChUcg" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Z6WC0NbyEeitAsFAkChUcg" annotatedElement="_RE7YwNbbEeitAsFAkChUcg">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R0EWsNbbEeitAsFAkChUcg" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cCHnoNbyEeitAsFAkChUcg" annotatedElement="_R0EWsNbbEeitAsFAkChUcg">
+              <body>his is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z3q-8NbbEeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_eFXRwNbyEeitAsFAkChUcg" annotatedElement="_z3q-8NbbEeitAsFAkChUcg">
+              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_JwPw4NMPEeig45NPS8-MSw" name="PolicyTypeDefinitions"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_NnYagNMPEeig45NPS8-MSw" name="Diagrams"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JwPw4NMPEeig45NPS8-MSw" name="PolicyTypeDefinitions">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_P59EUNbkEeitAsFAkChUcg" name="DecisionStrategy">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_EYaLYNbyEeitAsFAkChUcg" annotatedElement="_P59EUNbkEeitAsFAkChUcg">
+            <body>This is an enumerated integer that specifies the particular decision strategy to be used in this PolicySet. &#xD;
+ &#xD;
+Permitted Values: &#xD;
+ &#xD;
+ 0: Unknown &#xD;
+ 1: MatchFirst &#xD;
+ 2: MatchAll &#xD;
+ &#xD;
+MatchFirst enforces the actions of the first rule that evaluates to TRUE; policy evaluation then STOPS, meaning that all subsequent rules are no longer evaluated. &#xD;
+ &#xD;
+MatchAll enforces the actions of all rules that evaluate to TRUE. This is equivalent to performing two passes through the rule set. The first pass gathers all PolicyRules that evaluate to true and places them in a group. The second pass then executes only those rules that evaluated to true. Execution of these rules is controlled through the Priority property (on the aggregation PolicySetComponent), which defines the order in which the PolicyRules execute. </body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TuyA0NbkEeitAsFAkChUcg" name="0"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VGA5gNbkEeitAsFAkChUcg" name="1"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V2DPUNbkEeitAsFAkChUcg" name="2"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_9a1vkNbhEeitAsFAkChUcg" name="PolicyExecutionStrategy">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Q5h84NbiEeitAsFAkChUcg" annotatedElement="_9a1vkNbhEeitAsFAkChUcg">
+            <body>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: Do Until Success&#xD;
+ 2: Do All&#xD;
+ 3: Do Until Failure&#xD;
+ 4: Do All Without Failure or Do Nothing&#xD;
+&#xD;
+&quot;Do Until Success&quot; means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).&#xD;
+&#xD;
+&quot;Do All&quot; means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.&#xD;
+&#xD;
+&quot;Do Until Failure&quot; means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.&#xD;
+&#xD;
+Finally, &quot;Do All Without Failure or Do Nothing&quot; means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DAPR0NbiEeitAsFAkChUcg" name="0"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FIf-0NbiEeitAsFAkChUcg" name="1"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JqyeQNbiEeitAsFAkChUcg" name="2"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Mbd2INbiEeitAsFAkChUcg" name="3"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NI480NbiEeitAsFAkChUcg" name="4"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NnYagNMPEeig45NPS8-MSw" name="Diagrams">
+        <packagedElement xmi:type="uml:Class" xmi:id="_sqwFcNcAEeitAsFAkChUcg" name="PolicyActionAtomic">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_DYsKENcOEeitAsFAkChUcg" annotatedElement="_sqwFcNcAEeitAsFAkChUcg">
+            <body>This is the base class for all simple PolicyActions. A simple PolicyAction consists of a single Boolean clause, which is used to perform a single action. This consists of a single occurrence of a PolicyStatement, which is of the form:&#xD;
+&#xD;
+ {SET | CLEAR} PolicyVariable to PolicyValue&#xD;
+&#xD;
+This is distinctly different from the PolicyActionVendor, which does not use a PolicyStatement.&#xD;
+&#xD;
+PolicyActionAtomic objects can also be used to form more complex action structures. A PolicyActionComposite object can be used to contain a group of PolicyActionAtomic objects - this grouping enables multiple PolicyActionAtomic objects to be executed as a group. Alternatively, a PolicyActionAtomic object can contain one or more PolicyActionAtomic objects (and also PolicyActionComposite groups if desired) to provide the semantics of a compound PolicyAction. In either case, the aggregation is done using the containedPolicyActions aggregation.&#xD;
+</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_mv7KINceEeitAsFAkChUcg" general="_trl94NMPEeig45NPS8-MSw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ia0ucNhYEeiRnMGpBj3Tnw" name="actionSequenceNumber">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JQvJ8NhrEeiRnMGpBj3Tnw" annotatedElement="_ia0ucNhYEeiRnMGpBj3Tnw">
+              <body>This attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. This will allow a policy engine to reference externally supplied arguments to this object as it is executed. &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; CIM 2.7 has a subset of these values.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_jCZr0NhYEeiRnMGpBj3Tnw" name="hasExecuted" type="_-wiKUNhZEeiRnMGpBj3Tnw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Gjw_0NiLEeiRnMGpBj3Tnw" annotatedElement="_jCZr0NhYEeiRnMGpBj3Tnw">
+              <body>This is an enumerated integer that is set by a policy application to define the state of execution of this policyAction. &#xD;
+ &#xD;
+Permited Values: &#xD;
+ 0: not yet executed &#xD;
+ 1: executed with no errors &#xD;
+ 2: executed with errors but successfully rolled back &#xD;
+ 3: executed with errors and did not roll back &#xD;
+ 4: did not complete execution but successfully rolled back &#xD;
+ 5: did not complete execution and did not roll back &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs. &#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j3VvwNhYEeiRnMGpBj3Tnw" name="hasSubActions">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_K5j7YNiLEeiRnMGpBj3Tnw" annotatedElement="_j3VvwNhYEeiRnMGpBj3Tnw">
+              <body>This is a Boolean attribute that, if TRUE, signifies that this PolicyAction has one or more sub-actions. Sub-actions are used to enforce a hierarchical nesting of actions, so that parent actions may control the evaluation and other semantics of the sub-actions that they contain. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kSNt4NhYEeiRnMGpBj3Tnw" name="keywords">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Oj--sNiLEeiRnMGpBj3Tnw" annotatedElement="_kSNt4NhYEeiRnMGpBj3Tnw">
+              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_krwPQNhYEeiRnMGpBj3Tnw" name="policyName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Qe2I4NiLEeiRnMGpBj3Tnw" annotatedElement="_krwPQNhYEeiRnMGpBj3Tnw">
+              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU specs or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lCzdUNhYEeiRnMGpBj3Tnw" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TWz0gNiLEeiRnMGpBj3Tnw" annotatedElement="_lCzdUNhYEeiRnMGpBj3Tnw">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_l1EnwNhYEeiRnMGpBj3Tnw" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WBBYANiLEeiRnMGpBj3Tnw" annotatedElement="_l1EnwNhYEeiRnMGpBj3Tnw">
+              <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nVM9wNhYEeiRnMGpBj3Tnw" name="id">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_X57aYNiLEeiRnMGpBj3Tnw" annotatedElement="_nVM9wNhYEeiRnMGpBj3Tnw">
+              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_u-NV0NcAEeitAsFAkChUcg" name="PolicyActionComposite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RyyMYNcfEeitAsFAkChUcg" annotatedElement="_u-NV0NcAEeitAsFAkChUcg">
+            <body>This attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. &#xD;
+For example if a composite is part of another composite policy structure. &#xD;
+ &#xD;
+Notes: default is “1”</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_nry8gNceEeitAsFAkChUcg" general="_trl94NMPEeig45NPS8-MSw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_D7P00NcfEeitAsFAkChUcg" name="actionSequence">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_EY72YNcfEeitAsFAkChUcg" name="actionExecutionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_kbsoQNcfEeitAsFAkChUcg" annotatedElement="_EY72YNcfEeitAsFAkChUcg">
+              <body>This is an enumerated integer that defines the execution strategy to be used upon the sequenced actions aggregated by this PolicyActionComposite object. Defined execution strategies include:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: Do Until Success&#xD;
+ 2: Do All&#xD;
+ 3: Do Until Failure&#xD;
+ 4: Do All Without Failure or Do Nothing&#xD;
+&#xD;
+&quot;Do Until Success&quot; means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).&#xD;
+&#xD;
+&quot;Do All&quot; means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.&#xD;
+&#xD;
+&quot;Do Until Failure&quot; means that actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.&#xD;
+&#xD;
+Finally, &quot;Do All Without Failure or Do Nothing&quot; means that ALL actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_EyQ8YNcfEeitAsFAkChUcg" name="hasSubPolicyActions">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_r84hwNcfEeitAsFAkChUcg" annotatedElement="_EyQ8YNcfEeitAsFAkChUcg">
+              <body>This is a Boolean attribute that, if TRUE, signifies that this PolicyAction has one or more sub-actions. Sub-actions are used to enforce a hierarchical nesting of actions, so that parent actions may control the evaluation and other semantics of sub-actions that they contain. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FpW8cNcfEeitAsFAkChUcg" name="actionsCNF">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_F_YPwNcfEeitAsFAkChUcg" name="keywords">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_G2jIUNcfEeitAsFAkChUcg" name="policyName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hV5fgNcgEeitAsFAkChUcg" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wtgisNcgEeitAsFAkChUcg" annotatedElement="_hV5fgNcgEeitAsFAkChUcg">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iLRoUNcgEeitAsFAkChUcg" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ygtlsNcgEeitAsFAkChUcg" annotatedElement="_iLRoUNcgEeitAsFAkChUcg">
+              <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n02f8NcgEeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0YtpINcgEeitAsFAkChUcg" annotatedElement="_n02f8NcgEeitAsFAkChUcg">
+              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_yMQDgNceEeitAsFAkChUcg" name="CompositeActionHasAction" memberEnd="_yMSfwNceEeitAsFAkChUcg _yMTt4dceEeitAsFAkChUcg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yMR4sNceEeitAsFAkChUcg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yMR4sdceEeitAsFAkChUcg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_yMTt4dceEeitAsFAkChUcg" name="policyactioncomposite" type="_u-NV0NcAEeitAsFAkChUcg" association="_yMQDgNceEeitAsFAkChUcg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6FlXQNceEeitAsFAkChUcg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6FqPwNceEeitAsFAkChUcg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_yMSfwNceEeitAsFAkChUcg" name="policyaction" type="_trl94NMPEeig45NPS8-MSw" aggregation="shared" association="_yMQDgNceEeitAsFAkChUcg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yMTG0dceEeitAsFAkChUcg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yMTt4NceEeitAsFAkChUcg" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_-wiKUNhZEeiRnMGpBj3Tnw" name="HasExecuted">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_IHxwQNiLEeiRnMGpBj3Tnw" annotatedElement="_-wiKUNhZEeiRnMGpBj3Tnw">
+            <body>This is an enumerated integer that is set by a policy application to define the state of execution of this policyAction. &#xD;
+ &#xD;
+Permited Values: &#xD;
+ 0: not yet executed &#xD;
+ 1: executed with no errors &#xD;
+ 2: executed with errors but successfully rolled back &#xD;
+ 3: executed with errors and did not roll back &#xD;
+ 4: did not complete execution but successfully rolled back &#xD;
+ 5: did not complete execution and did not roll back &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs. &#xD;
+</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_By_OsNhaEeiRnMGpBj3Tnw" name="0"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CpbugNhaEeiRnMGpBj3Tnw" name="1"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DVT9ENhaEeiRnMGpBj3Tnw" name="2"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_E3XlsNhaEeiRnMGpBj3Tnw" name="3"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YPRQKVxEeikF6xsfT18UA" source="PapyrusVersion">
@@ -5231,7 +6222,6 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:Experimental xmi:id="_kdWtwNJAEei2f7881JEvKA" base_Element="_CufjwMc6EeiRs7MlzxwPhg"/>
   <OpenModel_Profile:Experimental xmi:id="_HSfgoNJBEei2f7881JEvKA" base_Element="_3lgyQMc7EeiRs7MlzxwPhg"/>
   <OpenModel_Profile:Experimental xmi:id="_cO6QMNJBEei2f7881JEvKA" base_Element="_0V_VsMdQEeiNaKPf3x1gTw"/>
-  <OpenModel_Profile:Example xmi:id="_mTcQMNJBEei2f7881JEvKA" base_Element="_1Vj8UMdQEeiNaKPf3x1gTw"/>
   <OpenModel_Profile:Experimental xmi:id="_SJ3n8NJDEei2f7881JEvKA" base_Element="_2efTQMdQEeiNaKPf3x1gTw"/>
   <OpenModel_Profile:Experimental xmi:id="_Zmr-0NJDEei2f7881JEvKA" base_Element="_4wX2UMdQEeiNaKPf3x1gTw"/>
   <OpenModel_Profile:Experimental xmi:id="_fJm00NJDEei2f7881JEvKA" base_Element="_5ivHYMdQEeiNaKPf3x1gTw"/>
@@ -5310,4 +6300,123 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sGjD8dMVEeig45NPS8-MSw" base_StructuralFeature="_sGjD8NMVEeig45NPS8-MSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-vBlg9MWEeig45NPS8-MSw" base_StructuralFeature="_-vBlgtMWEeig45NPS8-MSw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-vGeAdMWEeig45NPS8-MSw" base_StructuralFeature="_-vGeANMWEeig45NPS8-MSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0YvBcNbXEeitAsFAkChUcg" base_StructuralFeature="_0VWWQNbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1d7H4dbXEeitAsFAkChUcg" base_StructuralFeature="_1d7H4NbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_16ZBcNbXEeitAsFAkChUcg" base_StructuralFeature="_16YaYNbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_2xdMUdbXEeitAsFAkChUcg" base_StructuralFeature="_2xdMUNbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3P9GMNbXEeitAsFAkChUcg" base_StructuralFeature="_3P8fINbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3wQW4NbXEeitAsFAkChUcg" base_StructuralFeature="_3wPv0NbXEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8TomAdbYEeitAsFAkChUcg" base_StructuralFeature="_8TomANbYEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GPytIdbZEeitAsFAkChUcg" base_StructuralFeature="_GPytINbZEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HYmIQdbZEeitAsFAkChUcg" base_StructuralFeature="_HYmIQNbZEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_I-2pgdbbEeitAsFAkChUcg" base_StructuralFeature="_I-2pgNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JiN1QNbbEeitAsFAkChUcg" base_StructuralFeature="_JiNOMNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J-gvsNbbEeitAsFAkChUcg" base_StructuralFeature="_J-gIoNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_KcJt8NbbEeitAsFAkChUcg" base_StructuralFeature="_KcJG4NbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LAB3EdbbEeitAsFAkChUcg" base_StructuralFeature="_LAB3ENbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PdPCMdbbEeitAsFAkChUcg" base_StructuralFeature="_PdPCMNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RE7YwdbbEeitAsFAkChUcg" base_StructuralFeature="_RE7YwNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_R0EWsdbbEeitAsFAkChUcg" base_StructuralFeature="_R0EWsNbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_z3q-8dbbEeitAsFAkChUcg" base_StructuralFeature="_z3q-8NbbEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WKdB8db4EeitAsFAkChUcg" base_StructuralFeature="_WKdB8Nb4EeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WqDIAdb4EeitAsFAkChUcg" base_StructuralFeature="_WqDIANb4EeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XITKQdb4EeitAsFAkChUcg" base_StructuralFeature="_XITKQNb4EeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XnXr4db4EeitAsFAkChUcg" base_StructuralFeature="_XnXr4Nb4EeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YFZEodb4EeitAsFAkChUcg" base_StructuralFeature="_YFZEoNb4EeitAsFAkChUcg"/>
+  <OpenModel_Profile:Experimental xmi:id="_KG2MgNcAEeitAsFAkChUcg" base_Element="_trl94NMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:Experimental xmi:id="_NCTRANcAEeitAsFAkChUcg" base_Element="_eM1J0NMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:Experimental xmi:id="_N-JOMNcAEeitAsFAkChUcg" base_Element="_otly0NMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:Experimental xmi:id="_O-TqsNcAEeitAsFAkChUcg" base_Element="_vYK0cNMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:Experimental xmi:id="_Qto6UNcAEeitAsFAkChUcg" base_Element="_NnYagNMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:Experimental xmi:id="_UQD4MNcAEeitAsFAkChUcg" base_Element="_jUQ9sNMPEeig45NPS8-MSw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_sqwFcdcAEeitAsFAkChUcg" base_Class="_sqwFcNcAEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_u-NV0dcAEeitAsFAkChUcg" base_Class="_u-NV0NcAEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yMTG0NceEeitAsFAkChUcg" base_StructuralFeature="_yMSfwNceEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yMTt4tceEeitAsFAkChUcg" base_StructuralFeature="_yMTt4dceEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_D7P00dcfEeitAsFAkChUcg" base_StructuralFeature="_D7P00NcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EY8dcNcfEeitAsFAkChUcg" base_StructuralFeature="_EY72YNcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EyRjcNcfEeitAsFAkChUcg" base_StructuralFeature="_EyQ8YNcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_FpW8cdcfEeitAsFAkChUcg" base_StructuralFeature="_FpW8cNcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_F_Y20NcfEeitAsFAkChUcg" base_StructuralFeature="_F_YPwNcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_G2jIUdcfEeitAsFAkChUcg" base_StructuralFeature="_G2jIUNcfEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hV5fgdcgEeitAsFAkChUcg" base_StructuralFeature="_hV5fgNcgEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_iLSPYNcgEeitAsFAkChUcg" base_StructuralFeature="_iLRoUNcgEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n02f8dcgEeitAsFAkChUcg" base_StructuralFeature="_n02f8NcgEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_icIWANhYEeiRnMGpBj3Tnw" base_StructuralFeature="_ia0ucNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jCZr0dhYEeiRnMGpBj3Tnw" base_StructuralFeature="_jCZr0NhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_j3VvwdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_j3VvwNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_kSNt4dhYEeiRnMGpBj3Tnw" base_StructuralFeature="_kSNt4NhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_krwPQdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_krwPQNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lCzdUdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_lCzdUNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_l1EnwdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_l1EnwNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nVM9wdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_nVM9wNhYEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:Experimental xmi:id="_ZUdYINheEeiRnMGpBj3Tnw" base_Element="_sqwFcNcAEeitAsFAkChUcg"/>
+  <OpenModel_Profile:Experimental xmi:id="_auuWsNheEeiRnMGpBj3Tnw" base_Element="_u-NV0NcAEeitAsFAkChUcg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_09izAdhpEeiRnMGpBj3Tnw" base_StructuralFeature="_09izANhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1rrEUdhpEeiRnMGpBj3Tnw" base_StructuralFeature="_1rrEUNhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7w7LUdhpEeiRnMGpBj3Tnw" base_StructuralFeature="_7w7LUNhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8nPvUNhpEeiRnMGpBj3Tnw" base_StructuralFeature="_8nPIQNhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_9euJ4NhpEeiRnMGpBj3Tnw" base_StructuralFeature="_9eti0NhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_-qnVQdhpEeiRnMGpBj3Tnw" base_StructuralFeature="_-qnVQNhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__egQUdhpEeiRnMGpBj3Tnw" base_StructuralFeature="__egQUNhpEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6bEusNiVEeiRnMGpBj3Tnw" base_StructuralFeature="_6bEHoNiVEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6bFVwNiVEeiRnMGpBj3Tnw" base_StructuralFeature="_6bEus9iVEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:Experimental xmi:id="_GFoRUNiWEeiRnMGpBj3Tnw" base_Element="_25jHQMWSEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_sJhCsNiXEeiRnMGpBj3Tnw" base_Element="_53AW4MWSEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_5rjEUNiXEeiRnMGpBj3Tnw" base_Element="_7_tv0MWSEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_Zo3VgNiYEeiRnMGpBj3Tnw" base_Element="_w0GWgMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_mo1y8NiYEeiRnMGpBj3Tnw" base_Element="_zieoUMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_0SDaoNiYEeiRnMGpBj3Tnw" base_Element="_1ZragMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_wAu58NiZEeiRnMGpBj3Tnw" base_Element="_2rBtoMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:Experimental xmi:id="_VnECENiaEeiRnMGpBj3Tnw" base_Element="_4d4yYMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_8GJXIdiaEeiRnMGpBj3Tnw" base_Class="_8GJXINiaEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J3IEodikEeiRnMGpBj3Tnw" base_StructuralFeature="_J3IEoNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LbNtkdikEeiRnMGpBj3Tnw" base_StructuralFeature="_LbNtkNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_L2y2UdikEeiRnMGpBj3Tnw" base_StructuralFeature="_L2y2UNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_M6cEodikEeiRnMGpBj3Tnw" base_StructuralFeature="_M6cEoNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NZpJIdikEeiRnMGpBj3Tnw" base_StructuralFeature="_NZpJINikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_N06v4NikEeiRnMGpBj3Tnw" base_StructuralFeature="_N06I0NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OSdAcdikEeiRnMGpBj3Tnw" base_StructuralFeature="_OSdAcNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OysmwdikEeiRnMGpBj3Tnw" base_StructuralFeature="_OysmwNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PzbD8dikEeiRnMGpBj3Tnw" base_StructuralFeature="_PzbD8NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QWetsdikEeiRnMGpBj3Tnw" base_StructuralFeature="_QWetsNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QuxR4dikEeiRnMGpBj3Tnw" base_StructuralFeature="_QuxR4NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RLKS8NikEeiRnMGpBj3Tnw" base_StructuralFeature="_RLJr4NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RqTtENikEeiRnMGpBj3Tnw" base_StructuralFeature="_RqTGANikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SUy0gdikEeiRnMGpBj3Tnw" base_StructuralFeature="_SUy0gNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SxKncdikEeiRnMGpBj3Tnw" base_StructuralFeature="_SxKncNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_TJ3bUdikEeiRnMGpBj3Tnw" base_StructuralFeature="_TJ3bUNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Tkfh0NikEeiRnMGpBj3Tnw" base_StructuralFeature="_Tke6wNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UEIrMdikEeiRnMGpBj3Tnw" base_StructuralFeature="_UEIrMNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UennwNikEeiRnMGpBj3Tnw" base_StructuralFeature="_UenAsNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_U6fEYdikEeiRnMGpBj3Tnw" base_StructuralFeature="_U6fEYNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_X_KWUdikEeiRnMGpBj3Tnw" base_StructuralFeature="_X_KWUNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Yt7g0dikEeiRnMGpBj3Tnw" base_StructuralFeature="_Yt7g0NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZOyLIdikEeiRnMGpBj3Tnw" base_StructuralFeature="_ZOyLINikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Zz-i4dikEeiRnMGpBj3Tnw" base_StructuralFeature="_Zz-i4NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aTrWodikEeiRnMGpBj3Tnw" base_StructuralFeature="_aTrWoNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bu9o4dikEeiRnMGpBj3Tnw" base_StructuralFeature="_bu9o4NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cQ_-8dikEeiRnMGpBj3Tnw" base_StructuralFeature="_cQ_-8NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cvt7QdikEeiRnMGpBj3Tnw" base_StructuralFeature="_cvt7QNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_dLM9YdikEeiRnMGpBj3Tnw" base_StructuralFeature="_dLM9YNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_e9yVUdikEeiRnMGpBj3Tnw" base_StructuralFeature="_e9yVUNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ftCA8dikEeiRnMGpBj3Tnw" base_StructuralFeature="_ftCA8NikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_g5WqIdikEeiRnMGpBj3Tnw" base_StructuralFeature="_g5WqINikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_hdrfMdikEeiRnMGpBj3Tnw" base_StructuralFeature="_hdrfMNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jBe0QdikEeiRnMGpBj3Tnw" base_StructuralFeature="_jBe0QNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jnUsQdikEeiRnMGpBj3Tnw" base_StructuralFeature="_jnUsQNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_k-prkdikEeiRnMGpBj3Tnw" base_StructuralFeature="_k-prkNikEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:Experimental xmi:id="_SyjE4NkPEei09Y1bp3mjwA" base_Element="_8GJXINiaEeiRnMGpBj3Tnw"/>
+  <OpenModel_Profile:Experimental xmi:id="_UWoGwNkPEei09Y1bp3mjwA" base_Element="_7sljAMWTEeiLjtyU_R81wg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_6KnMMdkWEei09Y1bp3mjwA" base_Class="_6KnMMNkWEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:Experimental xmi:id="_TbZT8NkXEei09Y1bp3mjwA" base_Element="_1Vj8UMdQEeiNaKPf3x1gTw"/>
+  <OpenModel_Profile:Experimental xmi:id="_ZUZusNkXEei09Y1bp3mjwA" base_Element="_6KnMMNkWEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7OsC4dkXEei09Y1bp3mjwA" base_StructuralFeature="_7OsC4NkXEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7Osp89kXEei09Y1bp3mjwA" base_StructuralFeature="_7Osp8tkXEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4IiU09kYEei09Y1bp3mjwA" base_StructuralFeature="_4IiU0tkYEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4Iji8NkYEei09Y1bp3mjwA" base_StructuralFeature="_4Ii74tkYEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:Experimental xmi:id="_yIxVUNkZEei09Y1bp3mjwA" base_Element="_ihIjUNLdEeiMg4jJCQOcCA"/>
+  <OpenModel_Profile:Experimental xmi:id="_88R7MNkZEei09Y1bp3mjwA" base_Element="_t2wocMdQEeiNaKPf3x1gTw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_awKWg9khEei09Y1bp3mjwA" base_StructuralFeature="_awKWgtkhEei09Y1bp3mjwA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_awK9k9khEei09Y1bp3mjwA" base_StructuralFeature="_awK9ktkhEei09Y1bp3mjwA"/>
 </xmi:XMI>
