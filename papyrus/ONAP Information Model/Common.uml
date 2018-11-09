@@ -1331,7 +1331,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_2rBtoMWTEeiLjtyU_R81wg" name="SysLog">
+        <packagedElement xmi:type="uml:Class" xmi:id="_2rBtoMWTEeiLjtyU_R81wg" name="Syslog">
           <ownedComment xmi:type="uml:Comment" xmi:id="_2CA9YNE6EeilcYLXtz_Wig" annotatedElement="_2rBtoMWTEeiLjtyU_R81wg">
             <body>Syslog’s can be classified as either Control or Session/Traffic. They differ by message content and expected volume:  &#xD;
 •	Control logs are generally free-form human-readable text used for reporting errors or warnings supporting the operation and troubleshooting of NFs.  The volume of these logs is typically less than 2k per day.&#xD;
@@ -2658,7 +2658,7 @@ Field	Type	Required?	Description&#xD;
           <ownedComment xmi:type="uml:Comment" xmi:id="_FibkQNCsEeius9GPYoVrTg" annotatedElement="_zRiPEMdQEeiNaKPf3x1gTw">
             <body>The ipmiProcessor datatype provides ipmi processor metrics</body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_z_K7oLIcEeid-vjMcczUWA" name="pprocessorThermalControlPercent" type="_p3EKoDm0EeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z_K7oLIcEeid-vjMcczUWA" name="processorThermalControlPercent" type="_p3EKoDm0EeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LiJWYLIgEeid-vjMcczUWA" annotatedElement="_z_K7oLIcEeid-vjMcczUWA">
               <body>Io module temperatue in celsius</body>
             </ownedComment>
@@ -2672,18 +2672,18 @@ Field	Type	Required?	Description&#xD;
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DBAmULIhEeid-vjMcczUWA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DBE3wLIhEeid-vjMcczUWA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zk7PoLIcEeid-vjMcczUWA" name="processorIdentifier">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_JTFd0LIgEeid-vjMcczUWA" annotatedElement="_zk7PoLIcEeid-vjMcczUWA">
-              <body>Identifier for the power supply</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_LWtsgdCrEeius9GPYoVrTg" name="_processordimmaggregatethermalmargin" type="_rufssMdWEeiNaKPf3x1gTw" aggregation="composite" association="_LWrQQNCrEeius9GPYoVrTg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NZoKANCsEeius9GPYoVrTg" annotatedElement="_LWtsgdCrEeius9GPYoVrTg">
               <body>Array of processorDimmAggregate ThermalMargin objects</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LWu6oNCrEeius9GPYoVrTg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LWu6odCrEeius9GPYoVrTg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zk7PoLIcEeid-vjMcczUWA" name="processorIdentifier">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JTFd0LIgEeid-vjMcczUWA" annotatedElement="_zk7PoLIcEeid-vjMcczUWA">
+              <body>Identifier for the power supply</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_0V_VsMdQEeiNaKPf3x1gTw" name="LatencyBucketMeasure">
@@ -4177,7 +4177,7 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_UgGsIMyIEeicT7FGufu5-g" name="Associations">
-        <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventHasVoiceVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
+        <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventHasVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f24I8MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f24I8cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
           </eAnnotations>
@@ -4357,7 +4357,7 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
           </ownedComment>
           <ownedEnd xmi:type="uml:Property" xmi:id="_pjRkAM41EeixI-embJ5ltQ" name="ipmi" type="_3lgyQMc7EeiRs7MlzxwPhg" association="_pjJBIM41EeixI-embJ5ltQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_qfRTMNCbEeius9GPYoVrTg" name="IpmiHasIpmiGLobalAggregateTemperatureMargin" memberEnd="_qfShUtCbEeius9GPYoVrTg _qfTvcNCbEeius9GPYoVrTg">
+        <packagedElement xmi:type="uml:Association" xmi:id="_qfRTMNCbEeius9GPYoVrTg" name="IpmiHasIpmiGlobalAggregateTemperatureMargin" memberEnd="_qfShUtCbEeius9GPYoVrTg _qfTvcNCbEeius9GPYoVrTg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qfShUNCbEeius9GPYoVrTg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qfShUdCbEeius9GPYoVrTg" key="nature" value="UML_Nature"/>
           </eAnnotations>
@@ -4597,56 +4597,6 @@ Note: in ATTServiceSpecification - VesEventListener v5.4.1 type = field [].&#xD;
 &#xD;
 Policy actions have the semantics of &quot;SET variable to value&quot;. There are two types of actions:</body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WKdB8Nb4EeitAsFAkChUcg" name="keywords">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_gjjfkNb_EeitAsFAkChUcg" annotatedElement="_WKdB8Nb4EeitAsFAkChUcg">
-              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
- &#xD;
-Permitted Values: &#xD;
-Unknown InstallPermissions &#xD;
- ConfigChange InstallMethod &#xD;
- Default Error &#xD;
- Usage InternalError &#xD;
- Security ExternalError &#xD;
- Authentication Notification &#xD;
- Authorization Publish &#xD;
- Accounting Subscribe &#xD;
- Auditing Publish-Subscribe &#xD;
- Service Exception &#xD;
- CustomerFacingService &#xD;
- ResourceFacingService &#xD;
- &#xD;
-Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WqDIANb4EeitAsFAkChUcg" name="PolicyName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_lyLgkNb_EeitAsFAkChUcg" annotatedElement="_WqDIANb4EeitAsFAkChUcg">
-              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
- &#xD;
-Notes: &#xD;
-Not present in the ITU specs or CIM specs.</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_XITKQNb4EeitAsFAkChUcg" name="name">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_tw98ENb_EeitAsFAkChUcg" annotatedElement="_XITKQNb4EeitAsFAkChUcg">
-              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_XnXr4Nb4EeitAsFAkChUcg" name="description">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_z87vENb_EeitAsFAkChUcg" annotatedElement="_XnXr4Nb4EeitAsFAkChUcg">
-              <body>This is a string, and defines a textual free-form description of the object. &#xD;
- &#xD;
-Notes: &#xD;
-This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_YFZEoNb4EeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_4SI0wNb_EeitAsFAkChUcg" annotatedElement="_YFZEoNb4EeitAsFAkChUcg">
-              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
-            </ownedComment>
-          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_otly0NMPEeig45NPS8-MSw" name="PolicyEvent">
           <ownedComment xmi:type="uml:Comment" xmi:id="_HW0UANMSEeig45NPS8-MSw" annotatedElement="_otly0NMPEeig45NPS8-MSw">
@@ -4949,6 +4899,12 @@ Finally, &quot;Do All Without Failure or Do Nothing&quot; means that all actions
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_NnYagNMPEeig45NPS8-MSw" name="Diagrams">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__UYQQOK3EeiKy5JVrA0UGA">
+          <body>PolicyEvents can include a state chnage, a VES Event, or a configuration request.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PF2LoOK9EeiKy5JVrA0UGA">
+          <body>Model Based Strongly On the TMF SID</body>
+        </ownedComment>
         <packagedElement xmi:type="uml:Class" xmi:id="_sqwFcNcAEeitAsFAkChUcg" name="PolicyActionAtomic">
           <ownedComment xmi:type="uml:Comment" xmi:id="_DYsKENcOEeitAsFAkChUcg" annotatedElement="_sqwFcNcAEeitAsFAkChUcg">
             <body>This is the base class for all simple PolicyActions. A simple PolicyAction consists of a single Boolean clause, which is used to perform a single action. This consists of a single occurrence of a PolicyStatement, which is of the form:&#xD;
@@ -4994,58 +4950,6 @@ Notes: Not present in the ITU or CIM specs.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_kSNt4NhYEeiRnMGpBj3Tnw" name="keywords">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Oj--sNiLEeiRnMGpBj3Tnw" annotatedElement="_kSNt4NhYEeiRnMGpBj3Tnw">
-              <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
- &#xD;
-Permitted Values: &#xD;
-Unknown InstallPermissions &#xD;
- ConfigChange InstallMethod &#xD;
- Default Error &#xD;
- Usage InternalError &#xD;
- Security ExternalError &#xD;
- Authentication Notification &#xD;
- Authorization Publish &#xD;
- Accounting Subscribe &#xD;
- Auditing Publish-Subscribe &#xD;
- Service Exception &#xD;
- CustomerFacingService &#xD;
- ResourceFacingService &#xD;
- &#xD;
-Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_krwPQNhYEeiRnMGpBj3Tnw" name="policyName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Qe2I4NiLEeiRnMGpBj3Tnw" annotatedElement="_krwPQNhYEeiRnMGpBj3Tnw">
-              <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
- &#xD;
-Notes: &#xD;
-Not present in the ITU specs or CIM specs.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lCzdUNhYEeiRnMGpBj3Tnw" name="name">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_TWz0gNiLEeiRnMGpBj3Tnw" annotatedElement="_lCzdUNhYEeiRnMGpBj3Tnw">
-              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_l1EnwNhYEeiRnMGpBj3Tnw" name="description">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_WBBYANiLEeiRnMGpBj3Tnw" annotatedElement="_l1EnwNhYEeiRnMGpBj3Tnw">
-              <body>This is a string, and defines a textual free-form description of the object. &#xD;
- &#xD;
-Notes: &#xD;
-This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nVM9wNhYEeiRnMGpBj3Tnw" name="id">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_X57aYNiLEeiRnMGpBj3Tnw" annotatedElement="_nVM9wNhYEeiRnMGpBj3Tnw">
-              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_u-NV0NcAEeitAsFAkChUcg" name="PolicyActionComposite">
           <ownedComment xmi:type="uml:Comment" xmi:id="_RyyMYNcfEeitAsFAkChUcg" annotatedElement="_u-NV0NcAEeitAsFAkChUcg">
@@ -5088,32 +4992,6 @@ Notes: Not present in the ITU or CIM specs.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FpW8cNcfEeitAsFAkChUcg" name="actionsCNF">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_F_YPwNcfEeitAsFAkChUcg" name="keywords">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_G2jIUNcfEeitAsFAkChUcg" name="policyName">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_hV5fgNcgEeitAsFAkChUcg" name="name">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_wtgisNcgEeitAsFAkChUcg" annotatedElement="_hV5fgNcgEeitAsFAkChUcg">
-              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iLRoUNcgEeitAsFAkChUcg" name="description">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ygtlsNcgEeitAsFAkChUcg" annotatedElement="_iLRoUNcgEeitAsFAkChUcg">
-              <body>This is a string, and defines a textual free-form description of the object. &#xD;
- &#xD;
-Notes: &#xD;
-This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_n02f8NcgEeitAsFAkChUcg" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_0YtpINcgEeitAsFAkChUcg" annotatedElement="_n02f8NcgEeitAsFAkChUcg">
-              <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
-            </ownedComment>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_yMQDgNceEeitAsFAkChUcg" name="CompositeActionHasAction" memberEnd="_yMSfwNceEeitAsFAkChUcg _yMTt4dceEeitAsFAkChUcg">
@@ -5167,43 +5045,25 @@ White - Not Ready for Review</body>
           <body>configurableProperties is a datatype</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_rRjrIN0lEeiRzJu73dYz2w">
-          <body>Does NF have a direct asociation to elementgroups, or would that be through adf?</body>
+          <body>Does NF have a direct asociation to elementgroups, or would that be through a df?</body>
         </ownedComment>
-        <packagedElement xmi:type="uml:Class" xmi:id="_KEN2IN0dEeiRzJu73dYz2w" name="NfIndicator">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_tkisUN0jEeiRzJu73dYz2w" annotatedElement="_KEN2IN0dEeiRzJu73dYz2w">
-            <body>The NfIndicator class defines the indicator the NF supports</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_yYBw0N0gEeiRzJu73dYz2w" name="id+" type="_AuYtcDkBEeiWMf5FLWfdLA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zAJgwN0gEeiRzJu73dYz2w" name="name">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_CmW5QN0kEeiRzJu73dYz2w" annotatedElement="_zAJgwN0gEeiRzJu73dYz2w">
-              <body>The human readable name of the NfIndicator.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-g1OUN0jEeiRzJu73dYz2w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-g9xMN0jEeiRzJu73dYz2w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBhwoN0jEeiRzJu73dYz2w" name="indicatorValue">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Ex48sN0kEeiRzJu73dYz2w" annotatedElement="_FBhwoN0jEeiRzJu73dYz2w">
-              <body>Defines the allowed values or value ranges of this indicator.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__80rMN0jEeiRzJu73dYz2w" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__848oN0jEeiRzJu73dYz2w" value="*"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fox94N0jEeiRzJu73dYz2w" name="source" type="_LjDHcN0kEeiRzJu73dYz2w">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_H9of8N0kEeiRzJu73dYz2w" annotatedElement="_Fox94N0jEeiRzJu73dYz2w">
-              <body>Describe the source of the indicator. The possible values are:&#xD;
-• VNF,&#xD;
-• EM,&#xD;
-• Both.&#xD;
-This tells the consumer where to send the subscription request.&#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_AtzKQN0mEeiRzJu73dYz2w" name="PNFDevice"/>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_3escoOEmEeidEfhiAaiFzQ">
+          <body>Onboarding??</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_kq9wgOEpEeidEfhiAaiFzQ">
+          <body>Onboarding</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_MbFkgOQ8Eei2Ub3VuxG4ag">
+          <body>Abstract</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_N7jRsOQ8Eei2Ub3VuxG4ag">
+          <body>Concrete</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_sOGGUORAEei2Ub3VuxG4ag">
+          <body>Model or Descriptor?</body>
+        </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_OFje8DOHEei5Af8DcjrhIQ" name="ObjectClasses">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OFje8DOHEei5Af8DcjrhIQ" name="NetworkObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_Tw79sD2pEeiu6I5JfRTxxQ" name="VirtualLinkDesc" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sT2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sD2pEeiu6I5JfRTxxQ">
             <body>Common part of the various VLDs.</body>
@@ -5539,6 +5399,7 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_7eiCYNxcEei0G_d67y10Rg" name="NetworkFunctionDesc" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_kTr88ONuEei5tv7lNaV3pA" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_z51scNxdEei0G_d67y10Rg" name="descriptorId" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_g53mANxeEei0G_d67y10Rg" annotatedElement="_z51scNxdEei0G_d67y10Rg">
               <body>Identifier of this NFD information element.   This attribute shall be globally unique.&#xD;
@@ -5713,6 +5574,68 @@ NOTE: This allows to provide one or more   localization languages to support sel
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_rmDCkNxjEei0G_d67y10Rg" name="ExtCpd"/>
         <packagedElement xmi:type="uml:Class" xmi:id="__ez0YNxxEei0G_d67y10Rg" name="NfDf"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_KEN2IN0dEeiRzJu73dYz2w" name="NfIndicator">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tkisUN0jEeiRzJu73dYz2w" annotatedElement="_KEN2IN0dEeiRzJu73dYz2w">
+            <body>The NfIndicator class defines the indicator the NF supports</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yYBw0N0gEeiRzJu73dYz2w" name="id+" type="_AuYtcDkBEeiWMf5FLWfdLA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zAJgwN0gEeiRzJu73dYz2w" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CmW5QN0kEeiRzJu73dYz2w" annotatedElement="_zAJgwN0gEeiRzJu73dYz2w">
+              <body>The human readable name of the NfIndicator.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-g1OUN0jEeiRzJu73dYz2w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-g9xMN0jEeiRzJu73dYz2w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBhwoN0jEeiRzJu73dYz2w" name="indicatorValue">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Ex48sN0kEeiRzJu73dYz2w" annotatedElement="_FBhwoN0jEeiRzJu73dYz2w">
+              <body>Defines the allowed values or value ranges of this indicator.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__80rMN0jEeiRzJu73dYz2w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__848oN0jEeiRzJu73dYz2w" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fox94N0jEeiRzJu73dYz2w" name="source" type="_LjDHcN0kEeiRzJu73dYz2w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_H9of8N0kEeiRzJu73dYz2w" annotatedElement="_Fox94N0jEeiRzJu73dYz2w">
+              <body>Describe the source of the indicator. The possible values are:&#xD;
+• VNF,&#xD;
+• EM,&#xD;
+• Both.&#xD;
+This tells the consumer where to send the subscription request.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AtzKQN0mEeiRzJu73dYz2w" name="PNFDevice"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yyN_EOEpEeidEfhiAaiFzQ" name="InternalNetworkFunctionDesc"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_w3xrYOQ5Eei2Ub3VuxG4ag" name="InternalNfModel" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9jP4cOQ5Eei2Ub3VuxG4ag" name="InternalPnfModel">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Td7AAOQ6Eei2Ub3VuxG4ag" general="_w3xrYOQ5Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4QQU0OQ5Eei2Ub3VuxG4ag" name="InternalVnfModel">
+          <generalization xmi:type="uml:Generalization" xmi:id="_SnZAoOQ6Eei2Ub3VuxG4ag" general="_w3xrYOQ5Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2_GuoOQ8Eei2Ub3VuxG4ag" name="NfInstance" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cbT5IOQ3Eei2Ub3VuxG4ag" name="OnboardingNfDescriptor" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TpqdUOQ3Eei2Ub3VuxG4ag" name="OnboardingNfPackage" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ucHMIOQ3Eei2Ub3VuxG4ag" name="OnboardingPnfDescriptor">
+          <generalization xmi:type="uml:Generalization" xmi:id="_VM11YOQ5Eei2Ub3VuxG4ag" general="_cbT5IOQ3Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZLtJkOQ3Eei2Ub3VuxG4ag" name="OnboardingPnfPackage">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Qg_KQOQ5Eei2Ub3VuxG4ag" general="_TpqdUOQ3Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fSQ4IOQ3Eei2Ub3VuxG4ag" name="OnboardingVnfDescriptor">
+          <generalization xmi:type="uml:Generalization" xmi:id="_WD3kAOQ5Eei2Ub3VuxG4ag" general="_cbT5IOQ3Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_WCEfIOQ3Eei2Ub3VuxG4ag" name="OnboardingVnfPackage">
+          <generalization xmi:type="uml:Generalization" xmi:id="_PshAYOQ5Eei2Ub3VuxG4ag" general="_TpqdUOQ3Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_U37_kOQ9Eei2Ub3VuxG4ag" name="PnfInstance">
+          <generalization xmi:type="uml:Generalization" xmi:id="_a30XAORAEei2Ub3VuxG4ag" general="_2_GuoOQ8Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SRIVYOQ9Eei2Ub3VuxG4ag" name="VnfInstance">
+          <generalization xmi:type="uml:Generalization" xmi:id="_daVXEORAEei2Ub3VuxG4ag" general="_2_GuoOQ8Eei2Ub3VuxG4ag"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_vV0jwES0EeiVGPeZpaYNtQ" name="VirtualLinkHasLinkPort" memberEnd="_vV1x4kS0EeiVGPeZpaYNtQ _vWZykES0EeiVGPeZpaYNtQ">
@@ -5747,6 +5670,69 @@ NOTE: This allows to provide one or more   localization languages to support sel
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Kqcw8dxzEei0G_d67y10Rg" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_Kqd_EdxzEei0G_d67y10Rg" name="networkfunctiondesc" type="_7eiCYNxcEei0G_d67y10Rg" association="_KqcJ4NxzEei0G_d67y10Rg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_jOU9sOQ6Eei2Ub3VuxG4ag" name="OnboardingPnfPackageHasOnboardingPnfDescriptor" memberEnd="_jOYBAOQ6Eei2Ub3VuxG4ag _jOadQOQ6Eei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jOWy4OQ6Eei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jOXZ8OQ6Eei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_jOYBAOQ6Eei2Ub3VuxG4ag" name="onboardingpnfdescriptor" type="_ucHMIOQ3Eei2Ub3VuxG4ag" aggregation="composite" association="_jOU9sOQ6Eei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4kIBIOQ7Eei2Ub3VuxG4ag" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4kqzsOQ7Eei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_jOadQOQ6Eei2Ub3VuxG4ag" name="onboardingpnfpackage" type="_ZLtJkOQ3Eei2Ub3VuxG4ag" association="_jOU9sOQ6Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_mDnv0OQ6Eei2Ub3VuxG4ag" name="OnboardingVnfPackageHasOnboardingVnfDescriptor" memberEnd="_mDoW4uQ6Eei2Ub3VuxG4ag _mDo98OQ6Eei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mDoW4OQ6Eei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mDoW4eQ6Eei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mDoW4uQ6Eei2Ub3VuxG4ag" name="onboardingpnfpackage" type="_fSQ4IOQ3Eei2Ub3VuxG4ag" aggregation="composite" association="_mDnv0OQ6Eei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQstEOQ7Eei2Ub3VuxG4ag" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mRDSYOQ7Eei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mDo98OQ6Eei2Ub3VuxG4ag" name="onboardingvnfpackage" type="_WCEfIOQ3Eei2Ub3VuxG4ag" association="_mDnv0OQ6Eei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_io5f8OQ7Eei2Ub3VuxG4ag" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iptYQOQ7Eei2Ub3VuxG4ag" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_1r89UOQ_Eei2Ub3VuxG4ag" name="PnfInstanceBasedOnOnboardingPnfDescriptor" memberEnd="_1r9kYuQ_Eei2Ub3VuxG4ag _1r-LcOQ_Eei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1r9kYOQ_Eei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1r9kYeQ_Eei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1r9kYuQ_Eei2Ub3VuxG4ag" name="internalpnfmodel" type="_9jP4cOQ5Eei2Ub3VuxG4ag" aggregation="composite" association="_1r89UOQ_Eei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OnhqEORAEei2Ub3VuxG4ag"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OnkGUORAEei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1r-LcOQ_Eei2Ub3VuxG4ag" name="onboardingpnfdescriptor" type="_ucHMIOQ3Eei2Ub3VuxG4ag" association="_1r89UOQ_Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_0-FVQORAEei2Ub3VuxG4ag" name="PnfInstanceCreatedFromInternalPnfModel" memberEnd="_0-F8UuRAEei2Ub3VuxG4ag _0-GjYORAEei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0-F8UORAEei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0-F8UeRAEei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_0-F8UuRAEei2Ub3VuxG4ag" name="pnfinstance" type="_U37_kOQ9Eei2Ub3VuxG4ag" aggregation="composite" association="_0-FVQORAEei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JMcsAORBEei2Ub3VuxG4ag"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JNDI8ORBEei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_0-GjYORAEei2Ub3VuxG4ag" name="internalpnfmodel" type="_9jP4cOQ5Eei2Ub3VuxG4ag" association="_0-FVQORAEei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Mvk0gORBEei2Ub3VuxG4ag" name="VnfInstanceCreatedFromInternalVnfModel" memberEnd="_MvmCoORBEei2Ub3VuxG4ag _MvnQwORBEei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MvlbkORBEei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MvlbkeRBEei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MvmCoORBEei2Ub3VuxG4ag" name="vnfinstance" type="_SRIVYOQ9Eei2Ub3VuxG4ag" aggregation="composite" association="_Mvk0gORBEei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bTr-MORBEei2Ub3VuxG4ag"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bT6AoORBEei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MvnQwORBEei2Ub3VuxG4ag" name="internalvnfmodel" type="_4QQU0OQ5Eei2Ub3VuxG4ag" association="_Mvk0gORBEei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_eezhQOQ_Eei2Ub3VuxG4ag" name="InternalVnfModelBasedOnOnboardingVnfDescriptor" memberEnd="_ee0vYeQ_Eei2Ub3VuxG4ag _ee5n4OQ_Eei2Ub3VuxG4ag">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ee0IUOQ_Eei2Ub3VuxG4ag" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ee0vYOQ_Eei2Ub3VuxG4ag" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ee0vYeQ_Eei2Ub3VuxG4ag" name="internalvnfmodel" type="_4QQU0OQ5Eei2Ub3VuxG4ag" aggregation="composite" association="_eezhQOQ_Eei2Ub3VuxG4ag">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vkX7EOQ_Eei2Ub3VuxG4ag"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vk3qUOQ_Eei2Ub3VuxG4ag" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ee5n4OQ_Eei2Ub3VuxG4ag" name="onboardingvnfdescriptor" type="_fSQ4IOQ3Eei2Ub3VuxG4ag" association="_eezhQOQ_Eei2Ub3VuxG4ag"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_YBnZgN3rEei-jeeHUjfpLA" name="NetworkTypeDefinitions">
@@ -5966,6 +5952,46 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Z6H9EDnFEeiWMf5FLWfdLA" name="VXLAN"/>
         </packagedElement>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BprD8OLJEeiKy5JVrA0UGA" name="Root">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ErJ38OLJEeiKy5JVrA0UGA" name="Associations"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HtkgEOLJEeiKy5JVrA0UGA" name="Diagrams"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Qb00MOLKEeiKy5JVrA0UGA" name="Descriptor (EntitySpecification)">
+          <generalization xmi:type="uml:Generalization" xmi:id="_ZstwwOLKEeiKy5JVrA0UGA" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="___h5gOLMEeiKy5JVrA0UGA" name="providerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ApRaEOLNEeiKy5JVrA0UGA" name="version">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BJBRIOLNEeiKy5JVrA0UGA" name="providedEntityName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KDOzEOLNEeiKy5JVrA0UGA" name="providedEntityVersion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MlAMQOLNEeiKy5JVrA0UGA" name="providedEntityDescription">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_T6QikOLNEeiKy5JVrA0UGA" name="status">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vi4oQOLJEeiKy5JVrA0UGA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wEHtEOLJEeiKy5JVrA0UGA" name="description">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wj9DsOLJEeiKy5JVrA0UGA" name="id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Yg6D8OLVEeiKy5JVrA0UGA" value=""/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YPRQKVxEeikF6xsfT18UA" source="PapyrusVersion">
@@ -6678,11 +6704,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RE7YwdbbEeitAsFAkChUcg" base_StructuralFeature="_RE7YwNbbEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_R0EWsdbbEeitAsFAkChUcg" base_StructuralFeature="_R0EWsNbbEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_z3q-8dbbEeitAsFAkChUcg" base_StructuralFeature="_z3q-8NbbEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_WKdB8db4EeitAsFAkChUcg" base_StructuralFeature="_WKdB8Nb4EeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_WqDIAdb4EeitAsFAkChUcg" base_StructuralFeature="_WqDIANb4EeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_XITKQdb4EeitAsFAkChUcg" base_StructuralFeature="_XITKQNb4EeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_XnXr4db4EeitAsFAkChUcg" base_StructuralFeature="_XnXr4Nb4EeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_YFZEodb4EeitAsFAkChUcg" base_StructuralFeature="_YFZEoNb4EeitAsFAkChUcg"/>
   <OpenModel_Profile:Experimental xmi:id="_KG2MgNcAEeitAsFAkChUcg" base_Element="_trl94NMPEeig45NPS8-MSw"/>
   <OpenModel_Profile:Experimental xmi:id="_NCTRANcAEeitAsFAkChUcg" base_Element="_eM1J0NMPEeig45NPS8-MSw"/>
   <OpenModel_Profile:Experimental xmi:id="_N-JOMNcAEeitAsFAkChUcg" base_Element="_otly0NMPEeig45NPS8-MSw"/>
@@ -6697,19 +6718,9 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EY8dcNcfEeitAsFAkChUcg" base_StructuralFeature="_EY72YNcfEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EyRjcNcfEeitAsFAkChUcg" base_StructuralFeature="_EyQ8YNcfEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FpW8cdcfEeitAsFAkChUcg" base_StructuralFeature="_FpW8cNcfEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_F_Y20NcfEeitAsFAkChUcg" base_StructuralFeature="_F_YPwNcfEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_G2jIUdcfEeitAsFAkChUcg" base_StructuralFeature="_G2jIUNcfEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_hV5fgdcgEeitAsFAkChUcg" base_StructuralFeature="_hV5fgNcgEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_iLSPYNcgEeitAsFAkChUcg" base_StructuralFeature="_iLRoUNcgEeitAsFAkChUcg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_n02f8dcgEeitAsFAkChUcg" base_StructuralFeature="_n02f8NcgEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_icIWANhYEeiRnMGpBj3Tnw" base_StructuralFeature="_ia0ucNhYEeiRnMGpBj3Tnw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jCZr0dhYEeiRnMGpBj3Tnw" base_StructuralFeature="_jCZr0NhYEeiRnMGpBj3Tnw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j3VvwdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_j3VvwNhYEeiRnMGpBj3Tnw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_kSNt4dhYEeiRnMGpBj3Tnw" base_StructuralFeature="_kSNt4NhYEeiRnMGpBj3Tnw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_krwPQdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_krwPQNhYEeiRnMGpBj3Tnw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_lCzdUdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_lCzdUNhYEeiRnMGpBj3Tnw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_l1EnwdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_l1EnwNhYEeiRnMGpBj3Tnw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_nVM9wdhYEeiRnMGpBj3Tnw" base_StructuralFeature="_nVM9wNhYEeiRnMGpBj3Tnw"/>
   <OpenModel_Profile:Experimental xmi:id="_ZUdYINheEeiRnMGpBj3Tnw" base_Element="_sqwFcNcAEeitAsFAkChUcg"/>
   <OpenModel_Profile:Experimental xmi:id="_auuWsNheEeiRnMGpBj3Tnw" base_Element="_u-NV0NcAEeitAsFAkChUcg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_09izAdhpEeiRnMGpBj3Tnw" base_StructuralFeature="_09izANhpEeiRnMGpBj3Tnw"/>
@@ -6833,4 +6844,43 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Sj3TMd3yEei-jeeHUjfpLA" base_StructuralFeature="_Sj3TMN3yEei-jeeHUjfpLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Hu8io93zEei-jeeHUjfpLA" base_StructuralFeature="_Hu8iot3zEei-jeeHUjfpLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Hu9wwd3zEei-jeeHUjfpLA" base_StructuralFeature="_Hu9wwN3zEei-jeeHUjfpLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_yyN_EeEpEeidEfhiAaiFzQ" base_Class="_yyN_EOEpEeidEfhiAaiFzQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_eCkzMOLJEeiKy5JVrA0UGA" base_Class="_eCjlEOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_vi4oQeLJEeiKy5JVrA0UGA" base_StructuralFeature="_vi4oQOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wEIUIOLJEeiKy5JVrA0UGA" base_StructuralFeature="_wEHtEOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wj9DseLJEeiKy5JVrA0UGA" base_StructuralFeature="_wj9DsOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Experimental xmi:id="_J-LbUOLKEeiKy5JVrA0UGA" base_Element="_eCjlEOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Qb00MeLKEeiKy5JVrA0UGA" base_Class="_Qb00MOLKEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Experimental xmi:id="_XFDyAOLKEeiKy5JVrA0UGA" base_Element="_Qb00MOLKEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="___h5geLMEeiKy5JVrA0UGA" base_StructuralFeature="___h5gOLMEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ApRaEeLNEeiKy5JVrA0UGA" base_StructuralFeature="_ApRaEOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BJBRIeLNEeiKy5JVrA0UGA" base_StructuralFeature="_BJBRIOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_KDPaIOLNEeiKy5JVrA0UGA" base_StructuralFeature="_KDOzEOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MlAMQeLNEeiKy5JVrA0UGA" base_StructuralFeature="_MlAMQOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Td26ceLNEeiKy5JVrA0UGA" base_StructuralFeature="_Td26cOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_T6QikeLNEeiKy5JVrA0UGA" base_StructuralFeature="_T6QikOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_TsknYOQ3Eei2Ub3VuxG4ag" base_Class="_TpqdUOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_WCEfIeQ3Eei2Ub3VuxG4ag" base_Class="_WCEfIOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_ZLtwoOQ3Eei2Ub3VuxG4ag" base_Class="_ZLtJkOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_cbT5IeQ3Eei2Ub3VuxG4ag" base_Class="_cbT5IOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_fSRfMOQ3Eei2Ub3VuxG4ag" base_Class="_fSQ4IOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_ucHMIeQ3Eei2Ub3VuxG4ag" base_Class="_ucHMIOQ3Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_w3xrYeQ5Eei2Ub3VuxG4ag" base_Class="_w3xrYOQ5Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_4QQU0eQ5Eei2Ub3VuxG4ag" base_Class="_4QQU0OQ5Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_9jP4ceQ5Eei2Ub3VuxG4ag" base_Class="_9jP4cOQ5Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jOYoEOQ6Eei2Ub3VuxG4ag" base_StructuralFeature="_jOYBAOQ6Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jOadQeQ6Eei2Ub3VuxG4ag" base_StructuralFeature="_jOadQOQ6Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mDoW4-Q6Eei2Ub3VuxG4ag" base_StructuralFeature="_mDoW4uQ6Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mDo98eQ6Eei2Ub3VuxG4ag" base_StructuralFeature="_mDo98OQ6Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_2_GuoeQ8Eei2Ub3VuxG4ag" base_Class="_2_GuoOQ8Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_SRIVYeQ9Eei2Ub3VuxG4ag" base_Class="_SRIVYOQ9Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_U37_keQ9Eei2Ub3VuxG4ag" base_Class="_U37_kOQ9Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ee0vYuQ_Eei2Ub3VuxG4ag" base_StructuralFeature="_ee0vYeQ_Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ee5n4eQ_Eei2Ub3VuxG4ag" base_StructuralFeature="_ee5n4OQ_Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1r9kY-Q_Eei2Ub3VuxG4ag" base_StructuralFeature="_1r9kYuQ_Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1r-LceQ_Eei2Ub3VuxG4ag" base_StructuralFeature="_1r-LcOQ_Eei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0-F8U-RAEei2Ub3VuxG4ag" base_StructuralFeature="_0-F8UuRAEei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0-GjYeRAEei2Ub3VuxG4ag" base_StructuralFeature="_0-GjYORAEei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MvmCoeRBEei2Ub3VuxG4ag" base_StructuralFeature="_MvmCoORBEei2Ub3VuxG4ag"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MvnQweRBEei2Ub3VuxG4ag" base_StructuralFeature="_MvnQwORBEei2Ub3VuxG4ag"/>
 </xmi:XMI>
