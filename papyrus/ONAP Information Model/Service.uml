@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
-  <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service">
+  <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service" visibility="protected">
     <packagedElement xmi:type="uml:Package" xmi:id="_fXMl4DOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_2PSc8D0UEeiWMf5FLWfdLA" name="ServiceDescriptorMadeAvailableAs" memberEnd="_2PU5Mj0UEeiWMf5FLWfdLA _2PXVcj0UEeiWMf5FLWfdLA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2PU5MD0UEeiWMf5FLWfdLA" source="org.eclipse.papyrus">
@@ -1746,6 +1746,79 @@ If null, then represents to the end of time&#xD;
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_M98qkLwnEeifWa7EkiXrHA" name="4"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W1wF4OgIEeiNE-az-riPDQ" name="InternalServiceDescriptor">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NGtQ4-gMEeiNE-az-riPDQ" name="globaltype" type="_5Tkk8OgIEeiNE-az-riPDQ" aggregation="shared" association="_NGtQ4OgMEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NG3B4OgMEeiNE-az-riPDQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NG3B4egMEeiNE-az-riPDQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_za16M-gMEeiNE-az-riPDQ" name="customizedtype" type="_7Y7u8OgIEeiNE-az-riPDQ" aggregation="shared" association="_za16MOgMEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_za_rMOgMEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_za_rMegMEeiNE-az-riPDQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LtMDw-gNEeiNE-az-riPDQ" name="attachments" type="_GNGcIOgJEeiNE-az-riPDQ" association="_LtMDwOgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LtMDxegNEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LtMDxugNEeiNE-az-riPDQ" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_l1QY0-gNEeiNE-az-riPDQ" name="resourcedescriptor" type="_KGjZ8OgJEeiNE-az-riPDQ" association="_l1QY0OgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l1Y7sOgNEeiNE-az-riPDQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l1Y7segNEeiNE-az-riPDQ" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3c92Y-gNEeiNE-az-riPDQ" name="serviceinstance" type="_UgFusOgLEeiNE-az-riPDQ" aggregation="shared" association="_3c92YOgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3c92ZegNEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3c92ZugNEeiNE-az-riPDQ" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zSX3gOgIEeiNE-az-riPDQ" name="OnboardNSDescriptor"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5Tkk8OgIEeiNE-az-riPDQ" name="GlobalType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7Y7u8OgIEeiNE-az-riPDQ" name="CustomizedType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GNGcIOgJEeiNE-az-riPDQ" name="Attachments"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KGjZ8OgJEeiNE-az-riPDQ" name="ResourceDescriptor"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UgFusOgLEeiNE-az-riPDQ" name="ServiceInstance"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NGtQ4OgMEeiNE-az-riPDQ" name="SDHasReferenceonGlobalType" memberEnd="_NGtQ4-gMEeiNE-az-riPDQ _NHAL0OgMEeiNE-az-riPDQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NGtQ4egMEeiNE-az-riPDQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NGtQ4ugMEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NHAL0OgMEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_NGtQ4OgMEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jHdyUOgMEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jINZMOgMEeiNE-az-riPDQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_za16MOgMEeiNE-az-riPDQ" name="SDHasReferenceonCustomizedType" memberEnd="_za16M-gMEeiNE-az-riPDQ _za_rMugMEeiNE-az-riPDQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_za16MegMEeiNE-az-riPDQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_za16MugMEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_za_rMugMEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_za16MOgMEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Di5i4OgNEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DjpJwOgNEeiNE-az-riPDQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LtMDwOgNEeiNE-az-riPDQ" name="SDHasAttachments" memberEnd="_LtMDw-gNEeiNE-az-riPDQ _LtMDx-gNEeiNE-az-riPDQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LtMDwegNEeiNE-az-riPDQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LtMDwugNEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LtMDx-gNEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_LtMDwOgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dP1bIOgNEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dQI9IOgNEeiNE-az-riPDQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l1QY0OgNEeiNE-az-riPDQ" name="SDHasReferenceonReourceDescriptor" memberEnd="_l1QY0-gNEeiNE-az-riPDQ _l1issOgNEeiNE-az-riPDQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l1QY0egNEeiNE-az-riPDQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l1QY0ugNEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_l1issOgNEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_l1QY0OgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vV9TAOgNEeiNE-az-riPDQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vWGc8OgNEeiNE-az-riPDQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3c92YOgNEeiNE-az-riPDQ" name="SDMadeAvailableAs" memberEnd="_3c92Y-gNEeiNE-az-riPDQ _3c92Z-gNEeiNE-az-riPDQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3c92YegNEeiNE-az-riPDQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3c92YugNEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_3c92Z-gNEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_3c92YOgNEeiNE-az-riPDQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FHN_4OgOEeiNE-az-riPDQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FHg60OgOEeiNE-az-riPDQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ouXO0KVwEeikF6xsfT18UA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA"/>
@@ -2334,4 +2407,21 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xe2plM4sEeinDdlk3ffduQ" base_StructuralFeature="_xe2pk84sEeinDdlk3ffduQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xe2pmM4sEeinDdlk3ffduQ" base_StructuralFeature="_xe2pl84sEeinDdlk3ffduQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_26_z4NB2EeijRJbJ9rGSQQ" base_Class="_26_M0NB2EeijRJbJ9rGSQQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_W1wF4egIEeiNE-az-riPDQ" base_Class="_W1wF4OgIEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_zSX3gegIEeiNE-az-riPDQ" base_Class="_zSX3gOgIEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_5Tkk8egIEeiNE-az-riPDQ" base_Class="_5Tkk8OgIEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_7Y7u8egIEeiNE-az-riPDQ" base_Class="_7Y7u8OgIEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_GNGcIegJEeiNE-az-riPDQ" base_Class="_GNGcIOgJEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_KGjZ8egJEeiNE-az-riPDQ" base_Class="_KGjZ8OgJEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_UgFusegLEeiNE-az-riPDQ" base_Class="_UgFusOgLEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NGtQ5OgMEeiNE-az-riPDQ" base_StructuralFeature="_NGtQ4-gMEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NHAL0egMEeiNE-az-riPDQ" base_StructuralFeature="_NHAL0OgMEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_za16NOgMEeiNE-az-riPDQ" base_StructuralFeature="_za16M-gMEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_za_rM-gMEeiNE-az-riPDQ" base_StructuralFeature="_za_rMugMEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LtMDxOgNEeiNE-az-riPDQ" base_StructuralFeature="_LtMDw-gNEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LtMDyOgNEeiNE-az-riPDQ" base_StructuralFeature="_LtMDx-gNEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_l1QY1OgNEeiNE-az-riPDQ" base_StructuralFeature="_l1QY0-gNEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_l1issegNEeiNE-az-riPDQ" base_StructuralFeature="_l1issOgNEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3c92ZOgNEeiNE-az-riPDQ" base_StructuralFeature="_3c92Y-gNEeiNE-az-riPDQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3c92aOgNEeiNE-az-riPDQ" base_StructuralFeature="_3c92Z-gNEeiNE-az-riPDQ"/>
 </xmi:XMI>
