@@ -1,3 +1,7 @@
+.. Copyright 2018 (China Mobile)
+.. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
+.. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
+
 ONAP Vnf Sub Model
 
 1. .. rubric:: Diagrams
@@ -99,12 +103,9 @@ Applied stereotypes:
        -  valueRange: no range constraint
        -  support: MANDATORY
      - The homing strategy can be one of the following:
-       Exclusivity
-       - Resources within the cloud region are exclusive to the group
-       Inclusively
-       - Resources are co-located in the same cloud-region.
-       Diversity
-	   - Resources are geo-diverse (cannot be co-located).
+       Exclusivity \- Resources within the cloud region are exclusive to the group
+       Inclusively \- Resources are co-located in the same cloud-region.
+       Diversity \- Resources are geo-diverse (cannot be co-located).
 
    * - vnfdMembers
      - invalid
@@ -133,7 +134,7 @@ Applied stereotypes:
      - 1
      - OpenModelAttribute
 
-	   -  isInvariant: false
+       -  isInvariant: false
        -  valueRange: no range constraint
        -  support: MANDATORY
 
@@ -252,8 +253,8 @@ Applied stereotypes:
 
        Preliminary
      - Specifies bitrate requirements applicable to virtual links created from particular virtual link descriptors for this level.
-       NOTE: If not present, it is assumed that the bitrate requirements can be derived from those specified in the VduCpd instances applicable to the internal VL. If present in
-       both the InstantiationLevel and the VduCpd instances applicable to the internal VL, the highest value takes precedence.
+       
+	   NOTE: If not present, it is assumed that the bitrate requirements can be derived from those specified in the VduCpd instances applicable to the internal VL. If present in both the InstantiationLevel and the VduCpd instances applicable to the internal VL, the highest value takes precedence.
 
 LinkDesc
 ~~~~~~~~
@@ -737,7 +738,8 @@ Applied stereotypes:
 
        Preliminary
      - Boot order of valid boot devices.
-       NOTE: If no boot order is defined the default boot order defined in the VIM or NFVI shall be used.
+       
+	   NOTE: If no boot order is defined the default boot order defined in the VIM or NFVI shall be used.
 
    * - nfviConstraint
      - KeyValuePair
@@ -751,8 +753,8 @@ Applied stereotypes:
        Preliminary
      - Describes constraints on the NFVI for the VNFC instance(s) created from this Vdu. For example, aspects of a secure hosting environment
        for the VNFC instance that involve additional entities or processes.
-       NOTE: These are constraints other than stipulating that a VNFC instance has access to a certain resource, as a prerequisite to instantiation.
-       The attributes virtualComputeDesc and virtualStorageDesc define the resources required for instantiation of the VNFC instance.
+       
+	   NOTE: These are constraints other than stipulating that a VNFC instance has access to a certain resource, as a prerequisite to instantiation. The attributes virtualComputeDesc and virtualStorageDesc define the resources required for instantiation of the VNFC instance.
 
    * - monitoringParameter
      - MonitoringParameter
@@ -839,7 +841,8 @@ Applied stereotypes:
        Preliminary
      - Describes the software image which is directly loaded on the virtualisation
        container realising this Vdu.
-       NOTE: More software images can be attached to the virtualisation container using VirtualStorage resources.
+       
+	   NOTE: More software images can be attached to the virtualisation container using VirtualStorage resources.
 
 
 VduCpd
@@ -980,7 +983,6 @@ Applied stereotypes:
      - Identifies the protocol layering information the CP uses for connectivity
        purposes and associated information. There shall be one cpProtocol for each layer
        protocol as indicated by the attribute layerProtocol.
-       Editor's note: the attribute "layerProtocol" still needs further discussion and not included in this table.
 
    * - trunkMode
      - Boolean
@@ -1140,9 +1142,8 @@ Applied stereotypes:
 
        Preliminary
      - Identifier(s) of the affinity or anti-affinity group(s) the VDU belongs to.
-       NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity
-       relationships between the virtualisation container(s) (e.g. virtual machine(s)) to be created using this VDU and the
-       virtualisation container(s) (e.g. virtual machine(s)) to be created using other VDU(s) in the same group.
+       
+	   NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationships between the virtualisation container(s) (e.g. virtual machine(s)) to be created using this VDU and the virtualisation container(s) (e.g. virtual machine(s)) to be created using other VDU(s) in the same group.
 
    * - watchdog
      - String
@@ -1365,9 +1366,8 @@ Applied stereotypes:
 
        Preliminary
      - Identifier(s) of the affinity or anti-affinity group(s) the VnfVirtualLinkDesc belongs to.
-       NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity
-       relationship between the VL(s) using this VnfVirtualLinkDesc and the VL(s) using other VnfVirtualLinkDesc(s)
-       in the same group.
+       
+	   NOTE: Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationship between the VL(s) using this VnfVirtualLinkDesc and the VL(s) using other VnfVirtualLinkDesc(s) in the same group.
 
    * - maxBitRateRequirements
      - LinkBitrateRequirements
@@ -2083,7 +2083,9 @@ Applied stereotypes:
 
        Preliminary
      - Defines the internal VLD along with additional data which is used in this DF.
-       NOTE 1: This allows for different VNF internal topologies between DFs.
+       
+	   NOTE 1: This allows for different VNF internal topologies between DFs.
+	   
 	   NOTE 2: virtualLink Profile needs to be provided for all VLs that the CPs of the VDUs in the VDU profiles connect to.
 
    * - \_instantiationLevel
@@ -2113,10 +2115,8 @@ Applied stereotypes:
      - Specifies affinity or anti-affinity relationship applicable between the virtualisation containers
        (e.g. virtual machines) to be created using different VDUs or internal VLs to be created using
        different VnfVirtualLinkDesc(s) in the same affinity or anti-affinity group.
-       NOTE: In the present specification, including either VDU(s) or VnfVirtualLinkDesc(s) into the
-       same affinity or anti-affinity group is supported. Extension to support including both VDU(s)
-       and VnfVirtualLinkDesc(s) into the same affinity or anti-affinity group is left for future
-       specification.
+       
+	   NOTE: In the present specification, including either VDU(s) or VnfVirtualLinkDesc(s) into the same affinity or anti-affinity group is supported. Extension to support including both VDU(s) and VnfVirtualLinkDesc(s) into the same affinity or anti-affinity group is left for future specification.
 
    * - \_scalingAspect
      - ScalingAspect
@@ -2242,8 +2242,8 @@ Applied stereotypes:
 
        Preliminary
      - Specifies requirements on a virtual network interface realising the CPs instantiated from this CPD.
-	   NOTE: In case of referencing an intCpd via its identifier, the virtualNetworkInterfaceRequirements attribute
-       of the referenced intCpd applies.
+	   
+	   NOTE: In case of referencing an intCpd via its identifier, the virtualNetworkInterfaceRequirements attribute of the referenced intCpd applies.
 
    * - \_vduCpd
      - VduCpd
@@ -2720,8 +2720,8 @@ Applied stereotypes:
 
        Preliminary
      - Information about localization languages of the VNF (includes e.g. strings in the VNFD).
-       NOTE: This allows to provide one or more localization languages to support selecting a
-       specific localization language at VNF instantiation time.
+       
+	   NOTE: This allows to provide one or more localization languages to support selecting a specific localization language at VNF instantiation time.
 
    * - modifiableAttributes
      - VnfInfoModifiableAttributes
@@ -2747,9 +2747,8 @@ Applied stereotypes:
 
        Preliminary
      - Identifier of this VNFD information element. This attribute shall be globally unique.
-       NOTE: The VNFD Identifier shall be used as the unique identifier of the VNF Package that
-       contains this VNFD. Any modification of the content of the VNFD or the VNF Package
-       shall result in a new VNFD Identifier.
+       
+	   NOTE: The VNFD Identifier shall be used as the unique identifier of the VNF Package that contains this VNFD. Any modification of the content of the VNFD or the VNF Package shall result in a new VNFD Identifier.
 
    * - defaultLocalizationLanguage
      - String
@@ -2762,8 +2761,8 @@ Applied stereotypes:
 
        Preliminary
      - Information about localization languages of the VNF (includes e.g. strings in the VNFD).
-       NOTE: This allows to provide one or more localization languages to support selecting a
-       specific localization language at VNF instantiation time.
+       
+	   NOTE: This allows to provide one or more localization languages to support selecting a specific localization language at VNF instantiation time.
 
    * - configurableProperties
      - VnfConfigurableProperties
@@ -3043,7 +3042,8 @@ Applied stereotypes:
        Preliminary
      - Describes the transition VNF lifecycle event(s) that cannot be mapped to any of
        the enumerated values defined for the event attribute.
-       NOTE: At least one of these two attributes shall be included.
+       
+	   NOTE: At least one of these two attributes shall be included.
 
    * - script
      - String
@@ -3085,8 +3085,8 @@ Applied stereotypes:
 
        Preliminary
      - Array of KVP requirements with the key as the parameter name and the value as the parameter that need to be passed as an input to the script.
-       NOTE: The scriptInput values are passed to the scripts in addition to the parameters received in the operation invocation request or
-       indicator value change.
+       
+	   NOTE: The scriptInput values are passed to the scripts in addition to the parameters received in the operation invocation request or indicator value change.
 
 
 LogicalNodeData
@@ -3200,8 +3200,8 @@ values can be used as inputs to auto-scaling rules.
      - An attribute that describes the recommended periodicity at which to collect the performance information.
        VNFM determines if this parameter is considered. The vendor may provide this information as a guidance for
        creating PmJobs if needed.
-       NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on their functionalities, and can
-       reject the requests based on the recommended collectionPeriod in this case.
+       
+	   NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on their functionalities, and can reject the requests based on the recommended collectionPeriod in this case.
 
 
 QoS
@@ -3637,7 +3637,8 @@ these properties can be modified by the VNFM
 
        Preliminary
      - It permits to enable (TRUE)/disable (FALSE) the auto-scaling functionality.
-       NOTE: A cardinality of "0" indicates that configuring this present VNF property is not supported.
+       
+	   NOTE: A cardinality of "0" indicates that configuring this present VNF property is not supported.
 
    * - isAutohealEnabled
      - Boolean
@@ -3651,7 +3652,8 @@ these properties can be modified by the VNFM
 
        Preliminary
      - It permits to enable (TRUE)/disable (FALSE) the auto-healing functionality.
-       NOTE: A cardinality of "0" indicates that configuring this present VNF property is not supported.
+       
+	   NOTE: A cardinality of "0" indicates that configuring this present VNF property is not supported.
 
    * - additionalConfigurableProperty
      - String
