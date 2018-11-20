@@ -7,14 +7,11 @@
 ..
 
 
- NetworkServiceDescriptorModel 
-
-===============================
-
 |image0|
 
-Classes
-=======
+NetworkServiceDescriptorModel 
+===============================
+
 
 NetworkServiceDescriptor
 ------------------------
@@ -400,8 +397,6 @@ Vnfd
 The Vnfd class is a deployment template enabling on-boarding VNFs and
 referencing them from an NSD. 
 
-Data Types
-==========
 
 ConnectivityType
 ----------------
@@ -673,12 +668,10 @@ according to a specific flavour.
 |                       |                          |           |           |       MANDATORY   |                |
 +-----------------------+--------------------------+-----------+-----------+-------------------+----------------+
 
-Enumerations
-============
 
- ServiceAvailabilityLevel
 
--------------------------
+ServiceAvailabilityLevel
+------------------------
 
 Specifies one of the three levels defined in ETSI GS NFV-REL 001: 
 Level 1  Level 2  Level 3
@@ -691,4 +684,4 @@ Contains Enumeration Literals:
 
 -  LEVEL_3:
 
-.. |image0| image:: media/image1.png
+.. |image0| image:: NSD1.PNG

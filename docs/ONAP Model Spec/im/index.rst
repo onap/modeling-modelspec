@@ -15,3 +15,4 @@ ONAP Information Model Specifications
    VnfdAndVnfInstance
    NSD
    Service
+   NSD1
