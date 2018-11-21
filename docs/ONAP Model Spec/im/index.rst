@@ -10,7 +10,7 @@ ONAP Information Model Specifications
 =====================================
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 2
 
    VnfdAndVnfInstance
    NSD
