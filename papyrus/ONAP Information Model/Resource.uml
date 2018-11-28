@@ -371,12 +371,40 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13TCGjzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13TCGzzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCHDzEEeiWMf5FLWfdLA" name="pnfExtCpd " type="_bd53ADzFEeiWMf5FLWfdLA" aggregation="composite">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_13TCHTzEEeiWMf5FLWfdLA" annotatedElement="_13TCHDzEEeiWMf5FLWfdLA">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qsDkMOw1EeiDiIttoROOIw" name="_pnfExtCpd " type="_bd53ADzFEeiWMf5FLWfdLA" aggregation="composite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8YF2MOw3EeiDiIttoROOIw" annotatedElement="_qsDkMOw1EeiDiIttoROOIw">
             <body>Specifies the characteristics of one or more connection points where to connect the PNF to a VL.</body>
           </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13TCHjzEEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13TCHzzEEeiWMf5FLWfdLA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qsEyUOw1EeiDiIttoROOIw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qsEyUew1EeiDiIttoROOIw" value="*"/>
+          <association xmi:type="uml:Association" href="Service.uml#_qsAg4Ow1EeiDiIttoROOIw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_x8ZI0Ow2EeiDiIttoROOIw" name="functionDescription" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-VZF0Ow2EeiDiIttoROOIw" annotatedElement="_x8ZI0Ow2EeiDiIttoROOIw">
+            <body>Describes the PNF function.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WDCm4Ow3EeiDiIttoROOIw" name="pnfdInvarientId" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fgMd0Ow3EeiDiIttoROOIw" annotatedElement="_WDCm4Ow3EeiDiIttoROOIw">
+            <body>Identifies a PNFD in a version independent manner. This attribute is invariant across versions of PNFD.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_le5Q4Ow3EeiDiIttoROOIw" name="name" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uAL8gOw3EeiDiIttoROOIw" annotatedElement="_le5Q4Ow3EeiDiIttoROOIw">
+            <body>Provides the human readable name of the PNFD.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EFTyYPGPEeiSnciiH95D-g" name="geographicLocationInfo" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TSOogPGPEeiSnciiH95D-g" annotatedElement="_EFTyYPGPEeiSnciiH95D-g">
+            <body>It provides information about the geographical location (e.g. geographic&#xD;
+coordinates or address of the building, etc.) of the PNF. The cardinality 0 is used when the location is unknown.&#xD;
+</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MLyxUPGPEeiSnciiH95D-g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MM6LoPGPEeiSnciiH95D-g" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
@@ -500,4 +528,10 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yKYPgchdEeiSA51ssKbbgA">
     <base_StructuralFeature xmi:type="uml:Property" href="Service.uml#_yKYPgMhdEeiSA51ssKbbgA"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Experimental xmi:id="_cz9zAOw1EeiDiIttoROOIw" base_Element="_bd53ADzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qsDkMew1EeiDiIttoROOIw" base_StructuralFeature="_qsDkMOw1EeiDiIttoROOIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_x8Zv4Ow2EeiDiIttoROOIw" base_StructuralFeature="_x8ZI0Ow2EeiDiIttoROOIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WDCm4ew3EeiDiIttoROOIw" base_StructuralFeature="_WDCm4Ow3EeiDiIttoROOIw" isInvariant="true"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_le538Ow3EeiDiIttoROOIw" base_StructuralFeature="_le5Q4Ow3EeiDiIttoROOIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EF5oQPGPEeiSnciiH95D-g" base_StructuralFeature="_EFTyYPGPEeiSnciiH95D-g"/>
 </xmi:XMI>
