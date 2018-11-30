@@ -1,5 +1,13 @@
+.. Copyright 2018 (China Mobile)
+.. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
+.. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
-Classes
+.. contents::
+   :depth: 3
+..
+
+
+Service 
 =======
 
 Attachment
@@ -11,154 +19,114 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| id          | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| href        | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| name        | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| description | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| type        | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| uri         | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| mimeType    | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| validFor    | TimePeriod  | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------------+-----------------+
+| **Attribute | **Type**    | **Mult.**   | **Stereotypes**   | **Description** |
+| Name**      |             |             |                   |                 |
++=============+=============+=============+===================+=================+
+| id          | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| href        | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| name        | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| description | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| type        | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| uri         | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| mimeType    | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| validFor    | TimePeriod  | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
 
 .. _attachment-1:
 
@@ -171,100 +139,75 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| id          | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| name        | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| description | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| type        | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| url         | String      | 1           | OpenModelAt |             |
-|             |             |             | tribute     |             |
-|             |             |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------------+-----------------+
+| **Attribute | **Type**    | **Mult.**   | **Stereotypes**   | **Description** |
+| Name**      |             |             |                   |                 |
++=============+=============+=============+===================+=================+
+| id          | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| name        | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| description | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| type        | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
+| url         | String      | 1           | OpenModelAttribute|                 |
+|             |             |             |                   |                 |
+|             |             |             | -  isInvariant:   |                 |
+|             |             |             |       false       |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  valueRange:    |                 |
+|             |             |             |       no          |                 |
+|             |             |             |       range       |                 |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
 
 CpdPool
 -------
@@ -280,28 +223,25 @@ Applied stereotypes:
 
 -  Future
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| cpdPoolId   | Identifier  | 1           | OpenModelAt | Identifier  |
-|             |             |             | tribute     | of this     |
-|             |             |             |             | CpdPool     |
-|             |             |             | -  isInvari | class. It   |
-|             |             |             | ant:        | identifies  |
-|             |             |             |       false | a pool of   |
-|             |             |             |             | descriptors |
-|             |             |             | -  valueRan | of          |
-|             |             |             | ge:         | connection  |
-|             |             |             |       no    | points and  |
-|             |             |             |       range | NS SAPs.    |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------------+-----------------+
+| **Attribute | **Type**    | **Mult.**   | **Stereotypes**   | **Description** |
+| Name**      |             |             |                   |                 |
++=============+=============+=============+===================+=================+
+| cpdPoolId   | Identifier  | 1           | OpenModelAttribute| Identifier      |
+|             |             |             |                   | of this         |
+|             |             |             |                   | CpdPool         |
+|             |             |             | -  isInvariant:   | class. It       |
+|             |             |             |      false        | identifies      |
+|             |             |             |                   | a pool of       |
+|             |             |             |                   | descriptors     |
+|             |             |             | -  valueRange:    | of connection   |
+|             |             |             |       no          | points and      |
+|             |             |             |       range       | NS SAPs.        |
+|             |             |             |       constraint  |                 |
+|             |             |             |                   |                 |
+|             |             |             | -  support:       |                 |
+|             |             |             |       MANDATORY   |                 |
++-------------+-------------+-------------+-------------------+-----------------+
 
 Dependencies
 ------------
@@ -318,88 +258,81 @@ Applied stereotypes:
 
 -  Future
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| \_primaryPr | NsOrVnfProf | 1..\*       | OpenModelAt | References  |
-| ofileRefere | ile         |             | tribute     | a           |
-| nce         |             |             |             | VnfProfile  |
-|             |             |             | -  isInvari | or          |
-|             |             |             | ant:        | NsProfile.  |
-|             |             |             |       false | NOTE: NFV   |
-|             |             |             |             | Management  |
-|             |             |             | -  valueRan | and         |
-|             |             |             | ge:         | Orchestrati |
-|             |             |             |       no    | on          |
-|             |             |             |       range | functions   |
-|             |             |             |       const | shall       |
-|             |             |             | raint       | instantiate |
-|             |             |             |             | VNFs from   |
-|             |             |             | -  support: | the         |
-|             |             |             |       MANDA | VnfProfile  |
-|             |             |             | TORY        | and/or      |
-|             |             |             |             | nested NSs  |
-|             |             |             |             | from the    |
-|             |             |             |             | NsProfile   |
-|             |             |             |             | referenced  |
-|             |             |             |             | in the      |
-|             |             |             |             | primary     |
-|             |             |             |             | attribute   |
-|             |             |             |             | before      |
-|             |             |             |             | instantiati |
-|             |             |             |             | ng          |
-|             |             |             |             | VNFs from   |
-|             |             |             |             | the         |
-|             |             |             |             | VnfProfile  |
-|             |             |             |             | and/or      |
-|             |             |             |             | nested NSs  |
-|             |             |             |             | from the    |
-|             |             |             |             | NsProfile   |
-|             |             |             |             | referenced  |
-|             |             |             |             | in the      |
-|             |             |             |             | secondary   |
-|             |             |             |             | attribute.  |
-+-------------+-------------+-------------+-------------+-------------+
-| \_secondary | NsOrVnfProf | 1..\*       | OpenModelAt | References  |
-| ProfileRefe | ile         |             | tribute     | a           |
-| rence       |             |             |             | VnfProfile  |
-|             |             |             | -  isInvari | or          |
-|             |             |             | ant:        | NsProfile.  |
-|             |             |             |       false | NOTE: NFV   |
-|             |             |             |             | Management  |
-|             |             |             | -  valueRan | and         |
-|             |             |             | ge:         | Orchestrati |
-|             |             |             |       no    | on          |
-|             |             |             |       range | functions   |
-|             |             |             |       const | shall       |
-|             |             |             | raint       | instantiate |
-|             |             |             |             | VNFs from   |
-|             |             |             | -  support: | the         |
-|             |             |             |       MANDA | VnfProfile  |
-|             |             |             | TORY        | and/or      |
-|             |             |             |             | nested NSs  |
-|             |             |             |             | from the    |
-|             |             |             |             | NsProfile   |
-|             |             |             |             | referenced  |
-|             |             |             |             | in the      |
-|             |             |             |             | primary     |
-|             |             |             |             | attribute   |
-|             |             |             |             | before      |
-|             |             |             |             | instantiati |
-|             |             |             |             | ng          |
-|             |             |             |             | VNFs from   |
-|             |             |             |             | the         |
-|             |             |             |             | VnfProfile  |
-|             |             |             |             | and/or      |
-|             |             |             |             | nested NSs  |
-|             |             |             |             | from the    |
-|             |             |             |             | NsProfile   |
-|             |             |             |             | referenced  |
-|             |             |             |             | in the      |
-|             |             |             |             | secondary   |
-|             |             |             |             | attribute   |
-+-------------+-------------+-------------+-------------+-------------+
++-----------------------------+----------------+-------------+-------------------+-----------------+
+| **Attribute                 | **Type**       | **Mult.**   | **Stereotypes**   | **Description** |
+| Name**                      |                |             |                   |                 |
++=============================+================+=============+===================+=================+
+| \_primaryProfileReference   | NsOrVnfProfile | 1..\*       | OpenModelAttribute| References  a   |
+|                             |                |             |                   | VnfProfile      |
+|                             |                |             | -  isInvariant:   | or NsProfile.   |
+|                             |                |             |       false       | NOTE: NFV       |
+|                             |                |             |                   | Management      |
+|                             |                |             | -  valueRange:    | and             |
+|                             |                |             |       no          | Orchestration   |
+|                             |                |             |       range       | functions       |
+|                             |                |             |       constraint  | shall           |
+|                             |                |             |                   | instantiate     |
+|                             |                |             |                   | VNFs from       |
+|                             |                |             | -  support:       | the             |
+|                             |                |             |       MANDATORY   | VnfProfile      |
+|                             |                |             |                   | and/or          |
+|                             |                |             |                   | nested NSs      |
+|                             |                |             |                   | from the        |
+|                             |                |             |                   | NsProfile       |
+|                             |                |             |                   | referenced      |
+|                             |                |             |                   | in the          |
+|                             |                |             |                   | primary         |
+|                             |                |             |                   | attribute       |
+|                             |                |             |                   | before          |
+|                             |                |             |                   | instantiating   |
+|                             |                |             |                   | VNFs from       |
+|                             |                |             |                   | the             |
+|                             |                |             |                   | VnfProfile      |
+|                             |                |             |                   | and/or          |
+|                             |                |             |                   | nested NSs      |
+|                             |                |             |                   | from the        |
+|                             |                |             |                   | NsProfile       |
+|                             |                |             |                   | referenced      |
+|                             |                |             |                   | in the          |
+|                             |                |             |                   | secondary       |
+|                             |                |             |                   | attribute.      |
++-----------------------------+----------------+-------------+-------------------+-----------------+
+| \_secondaryProfileReference | NsOrVnfProfile | 1..\*       | OpenModelAttribute| References a    |
+|                             |                |             |                   | VnfProfile      |
+|                             |                |             | -  isInvariant:   | or              |
+|                             |                |             |       false       | NsProfile.      |
+|                             |                |             |                   | NOTE: NFV       |
+|                             |                |             |                   | Management      |
+|                             |                |             | -  valueRange:    | and             |
+|                             |                |             |       no          | Orchestration   |
+|                             |                |             |       range       | functions       |
+|                             |                |             |       constraint  | shall           |
+|                             |                |             |                   | instantiate     |
+|                             |                |             |                   | VNFs from       |
+|                             |                |             | -  support:       | the             |
+|                             |                |             |       MANDATORY   | VnfProfile      |
+|                             |                |             |                   | and/or          |
+|                             |                |             |                   | nested NSs      |
+|                             |                |             |                   | from the        |
+|                             |                |             |                   | NsProfile       |
+|                             |                |             |                   | referenced      |
+|                             |                |             |                   | in the          |
+|                             |                |             |                   | primary         |
+|                             |                |             |                   | attribute       |
+|                             |                |             |                   | before          |
+|                             |                |             |                   | instantiating   |
+|                             |                |             |                   | VNFs from       |
+|                             |                |             |                   | the             |
+|                             |                |             |                   | VnfProfile      |
+|                             |                |             |                   | and/or          |
+|                             |                |             |                   | nested NSs      |
+|                             |                |             |                   | from the        |
+|                             |                |             |                   | NsProfile       |
+|                             |                |             |                   | referenced      |
+|                             |                |             |                   | in the          |
+|                             |                |             |                   | secondary       |
+|                             |                |             |                   | attribute.      |
++-----------------------------+----------------+-------------+-------------------+-----------------+
 
 NetworkServiceInstance
 ----------------------
@@ -422,316 +355,315 @@ Applied stereotypes:
 
 -  Future
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| nsInstanceI | Identifier  | 1           | OpenModelAt | Identifier  |
-| d           |             |             | tribute     | of this     |
-|             |             |             |             | NetworkServ |
-|             |             |             | -  isInvari | ice,        |
-|             |             |             | ant:        | identifying |
-|             |             |             |       false | the NS      |
-|             |             |             |             | instance.   |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| nsName      | String      | 1           | OpenModelAt | Human       |
-|             |             |             | tribute     | readable    |
-|             |             |             |             | name of the |
-|             |             |             | -  isInvari | NS          |
-|             |             |             | ant:        | instance.   |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| description | String      | 1           | OpenModelAt | Human       |
-|             |             |             | tribute     | readable    |
-|             |             |             |             | description |
-|             |             |             | -  isInvari | of the NS   |
-|             |             |             | ant:        | instance    |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_nf        | NetworkFunc | 0..\*       | OpenModelAt | Reference   |
-|             | tion        |             | tribute     | to          |
-|             |             |             |             | consistitue |
-|             |             |             | -  isInvari | nt          |
-|             |             |             | ant:        | VNFs and    |
-|             |             |             |       false | PNFs on     |
-|             |             |             |             | this NS.    |
-|             |             |             | -  valueRan | NOTE:       |
-|             |             |             | ge:         | Cardinality |
-|             |             |             |       no    | of zero is  |
-|             |             |             |       range | only valid  |
-|             |             |             |       const | for a       |
-|             |             |             | raint       | non-instant |
-|             |             |             |             | iated       |
-|             |             |             | -  support: | NS.         |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_nsVirtual | NsVirtualLi | 0..\*       | OpenModelAt | Information |
-| Link        | nk          |             | tribute     | on the VLs  |
-|             |             |             |             | of this NS. |
-|             |             |             | -  isInvari | NOTE:       |
-|             |             |             | ant:        | Cardinality |
-|             |             |             |       false | of zero is  |
-|             |             |             |             | only valid  |
-|             |             |             | -  valueRan | for a       |
-|             |             |             | ge:         | non-instant |
-|             |             |             |       no    | iated       |
-|             |             |             |       range | NS.         |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_sap       | Sap         | 0..\*       | OpenModelAt | Information |
-|             |             |             | tribute     | on the SAPs |
-|             |             |             |             | of this NS. |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_nestedNsi | NetworkServ | 0..\*       | OpenModelAt | Reference   |
-|             | iceInstance |             | tribute     | to          |
-|             |             |             |             | information |
-|             |             |             | -  isInvari | on nested   |
-|             |             |             | ant:        | NSs of this |
-|             |             |             |       false | NS.         |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_vnffg     | Vnffg       | 0..\*       | OpenModelAt | Information |
-|             |             |             | tribute     | on the      |
-|             |             |             |             | VNFFGs of   |
-|             |             |             | -  isInvari | this NS.    |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| instanceId  | Identifier  | 1           | OpenModelAt | Uniquely    |
-|             |             |             | tribute     | identifies  |
-|             |             |             |             | this        |
-|             |             |             | -  isInvari | instance of |
-|             |             |             | ant:        | a service   |
-|             |             |             |       false | component.  |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| name        | String      | 1           | OpenModelAt | The name    |
-|             |             |             | tribute     | assigned to |
-|             |             |             |             | the service |
-|             |             |             | -  isInvari | component   |
-|             |             |             | ant:        | instance.   |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| modelInvari | Uuid        | 1           | OpenModelAt | Constant    |
-| antUuid     |             |             | tribute     | identifier  |
-|             |             |             |             | of the      |
-|             |             |             | -  isInvari | service     |
-|             |             |             | ant:        | component   |
-|             |             |             |       false | model.      |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| modelUuid   | Uuid        | 1           | OpenModelAt | Versioned   |
-|             |             |             | tribute     | identifier  |
-|             |             |             |             | of the      |
-|             |             |             | -  isInvari | service     |
-|             |             |             | ant:        | component   |
-|             |             |             |       false | model (this |
-|             |             |             |             | uuid is     |
-|             |             |             | -  valueRan | changed for |
-|             |             |             | ge:         | every major |
-|             |             |             |       no    | version of  |
-|             |             |             |       range | the service |
-|             |             |             |       const | component). |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| modelVersio | String      | 1           | OpenModelAt | The service |
-| n           |             |             | tribute     | version in  |
-|             |             |             |             | SDC         |
-|             |             |             | -  isInvari | catalog.    |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| selfLink    | Uri         | 1           | OpenModelAt | URL to      |
-|             |             |             | tribute     | endpoint    |
-|             |             |             |             | where more  |
-|             |             |             | -  isInvari | details can |
-|             |             |             | ant:        | be gotten.  |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| orchestrati | String      | 1           | OpenModelAt | Orchestrati |
-| onStatus    |             |             | tribute     | on          |
-|             |             |             |             | status of   |
-|             |             |             | -  isInvari | the service |
-|             |             |             | ant:        | component   |
-|             |             |             |       false | instance.   |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| description | String      | 1           | OpenModelAt | The         |
-|             |             |             | tribute     | description |
-|             |             |             |             | of service  |
-|             |             |             | -  isInvari | component   |
-|             |             |             | ant:        | instance.   |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| \_serviceCo | ServiceComp | 0..\*       | OpenModelAt |             |
-| mponentInst | onentInstan |             | tribute     |             |
-| ance        | ce          |             |             |             |
-|             |             |             | -  isInvari |             |
-|             |             |             | ant:        |             |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| **Attribute                | **Type**                    | **Mult.**   | **Stereotypes**       | **Description**  |
+| Name**                     |                             |             |                       |                  |
++============================+=============================+=============+=======================+==================+
+| nsInstanceId               | Identifier                  | 1           | OpenModelAttribute    | Identifier       |
+|                            |                             |             |                       | of this          |
+|                            |                             |             |                       | NetworkServ      |
+|                            |                             |             | -  isInvariant:       | ice,             |
+|                            |                             |             |       false           | identifying      |
+|                            |                             |             |                       | the NS           |
+|                            |                             |             |                       | instance.        |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| nsName                     | String                      | 1           | OpenModelAttribute    | Human            |
+|                            |                             |             |                       | readable         |
+|                            |                             |             |                       | name of the      |
+|                            |                             |             | -  isInvari           | NS               |
+|                            |                             |             | ant:                  | instance.        |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| description                | String                      | 1           | OpenModelAttribute    | Human            |
+|                            |                             |             |                       | readable         |
+|                            |                             |             |                       | description      |
+|                            |                             |             | -  isInvari           | of the NS        |
+|                            |                             |             | ant:                  | instance         |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_nf                       | NetworkFunction             | 0..\*       | OpenModelAttribute    | Reference        |
+|                            |                             |             |                       | to               |
+|                            |                             |             |                       | consistitue      |
+|                            |                             |             | -  isInvari           | nt               |
+|                            |                             |             | ant:                  | VNFs and         |
+|                            |                             |             |       false           | PNFs on          |
+|                            |                             |             |                       | this NS.         |
+|                            |                             |             | -  valueRan           | NOTE:            |
+|                            |                             |             | ge:                   | Cardinality      |
+|                            |                             |             |       no              | of zero is       |
+|                            |                             |             |       range           | only valid       |
+|                            |                             |             |       const           | for a            |
+|                            |                             |             | raint                 | non-instant      |
+|                            |                             |             |                       | iated            |
+|                            |                             |             | -  support:           | NS.              |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_nsVirtualLink            | NsVirtualLink               | 0..\*       | OpenModelAttribute    | Information      |
+|                            |                             |             |                       | on the VLs       |
+|                            |                             |             |                       | of this NS.      |
+|                            |                             |             | -  isInvari           | NOTE:            |
+|                            |                             |             | ant:                  | Cardinality      |
+|                            |                             |             |       false           | of zero is       |
+|                            |                             |             |                       | only valid       |
+|                            |                             |             | -  valueRan           | for a            |
+|                            |                             |             | ge:                   | non-instant      |
+|                            |                             |             |       no              | iated            |
+|                            |                             |             |       range           | NS.              |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_sap                      | Sap                         | 0..\*       | OpenModelAttribute    | Information      |
+|                            |                             |             |                       | on the SAPs      |
+|                            |                             |             |                       | of this NS.      |
+|                            |                             |             | -  isInvari           |                  |
+|                            |                             |             | ant:                  |                  |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_nestedNsi                | NetworkServiceInstance      | 0..\*       | OpenModelAttribute    | Reference        |
+|                            |                             |             |                       | to               |
+|                            |                             |             |                       | information      |
+|                            |                             |             | -  isInvari           | on nested        |
+|                            |                             |             | ant:                  | NSs of this      |
+|                            |                             |             |       false           | NS.              |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_vnffg                    | Vnffg                       | 0..\*       | OpenModelAttribute    | Information      |
+|                            |                             |             |                       | on the           |
+|                            |                             |             |                       | VNFFGs of        |
+|                            |                             |             | -  isInvari           | this NS.         |
+|                            |                             |             | ant:                  |                  |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| instanceId                 | Identifier                  | 1           | OpenModelAttribute    | Uniquely         |
+|                            |                             |             |                       | identifies       |
+|                            |                             |             |                       | this             |
+|                            |                             |             | -  isInvari           | instance of      |
+|                            |                             |             | ant:                  | a service        |
+|                            |                             |             |       false           | component.       |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| name                       | String                      | 1           | OpenModelAttribute    | The name         |
+|                            |                             |             |                       | assigned to      |
+|                            |                             |             |                       | the service      |
+|                            |                             |             | -  isInvari           | component        |
+|                            |                             |             | ant:                  | instance.        |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| modelInvariantUuid         | Uuid                        | 1           | OpenModelAttribute    | Constant         |
+|                            |                             |             |                       | identifier       |
+|                            |                             |             |                       | of the           |
+|                            |                             |             | -  isInvari           | service          |
+|                            |                             |             | ant:                  | component        |
+|                            |                             |             |       false           | model.           |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| modelUuid                  | Uuid                        | 1           | OpenModelAttribute    | Versioned        |
+|                            |                             |             |                       | identifier       |
+|                            |                             |             |                       | of the           |
+|                            |                             |             | -  isInvari           | service          |
+|                            |                             |             | ant:                  | component        |
+|                            |                             |             |       false           | model (this      |
+|                            |                             |             |                       | uuid is          |
+|                            |                             |             | -  valueRan           | changed for      |
+|                            |                             |             | ge:                   | every major      |
+|                            |                             |             |       no              | version of       |
+|                            |                             |             |       range           | the service      |
+|                            |                             |             |       const           | component).      |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| modelVersion               | String                      | 1           | OpenModelAttribute    | The service      |
+|                            |                             |             |                       | version in       |
+|                            |                             |             |                       | SDC              |
+|                            |                             |             | -  isInvari           | catalog.         |
+|                            |                             |             | ant:                  |                  |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| selfLink                   | Uri                         | 1           | OpenModelAttribute    | URL to           |
+|                            |                             |             |                       | endpoint         |
+|                            |                             |             |                       | where more       |
+|                            |                             |             | -  isInvari           | details can      |
+|                            |                             |             | ant:                  | be gotten.       |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| orchestrationStatus        | String                      | 1           | OpenModelAttribute    | Orchestrati      |
+|                            |                             |             |                       | on               |
+|                            |                             |             |                       | status of        |
+|                            |                             |             | -  isInvari           | the service      |
+|                            |                             |             | ant:                  | component        |
+|                            |                             |             |       false           | instance.        |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| description                | String                      | 1           | OpenModelAttribute    | The              |
+|                            |                             |             |                       | description      |
+|                            |                             |             |                       | of service       |
+|                            |                             |             | -  isInvari           | component        |
+|                            |                             |             | ant:                  | instance.        |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
+| \_serviceComponentInstance | ServiceComponentInstance    | 0..\*       | OpenModelAttribute    |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  isInvari           |                  |
+|                            |                             |             | ant:                  |                  |
+|                            |                             |             |       false           |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  valueRan           |                  |
+|                            |                             |             | ge:                   |                  |
+|                            |                             |             |       no              |                  |
+|                            |                             |             |       range           |                  |
+|                            |                             |             |       const           |                  |
+|                            |                             |             | raint                 |                  |
+|                            |                             |             |                       |                  |
+|                            |                             |             | -  support:           |                  |
+|                            |                             |             |       MANDA           |                  |
+|                            |                             |             | TORY                  |                  |
++----------------------------+-----------------------------+-------------+-----------------------+------------------+
 
 Nfpd
 ----
@@ -748,109 +680,109 @@ Applied stereotypes:
 
 -  Future
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| nfpdId      | invalid     | 1           | OpenModelAt | Identifies  |
-|             |             |             | tribute     | this nfpd   |
-|             |             |             |             | class       |
-|             |             |             | -  isInvari | within a    |
-|             |             |             | ant:        | VNFFGD.     |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| nfpRule     | invalid     | 1           | OpenModelAt | Provides an |
-|             |             |             | tribute     | NFP         |
-|             |             |             |             | classificat |
-|             |             |             | -  isInvari | ion         |
-|             |             |             | ant:        | and         |
-|             |             |             |       false | selection   |
-|             |             |             |             | rule. The   |
-|             |             |             | -  valueRan | rule may be |
-|             |             |             | ge:         | expressed   |
-|             |             |             |       no    | as a        |
-|             |             |             |       range | criteria    |
-|             |             |             |       const | constructed |
-|             |             |             | raint       | out of      |
-|             |             |             |             | atomic      |
-|             |             |             | -  support: | assertions  |
-|             |             |             |       MANDA | linked by   |
-|             |             |             | TORY        | Boolean     |
-|             |             |             |             | operators   |
-|             |             |             |             | AND, OR and |
-|             |             |             |             | NOT. NOTE:  |
-|             |             |             |             | Examples of |
-|             |             |             |             | atomic      |
-|             |             |             |             | assertions  |
-|             |             |             |             | are         |
-|             |             |             |             | assertions  |
-|             |             |             |             | on packet   |
-|             |             |             |             | header      |
-|             |             |             |             | fields'     |
-|             |             |             |             | values,     |
-|             |             |             |             | date and    |
-|             |             |             |             | time        |
-|             |             |             |             | ranges,     |
-|             |             |             |             | etc.        |
-+-------------+-------------+-------------+-------------+-------------+
-| cpd         | invalid     | 1           | OpenModelAt | References  |
-|             |             |             | tribute     | the         |
-|             |             |             |             | descriptor  |
-|             |             |             | -  isInvari | of a        |
-|             |             |             | ant:        | connection  |
-|             |             |             |       false | point to be |
-|             |             |             |             | traversed   |
-|             |             |             | -  valueRan | by the      |
-|             |             |             | ge:         | traffic     |
-|             |             |             |       no    | flows       |
-|             |             |             |       range | matching    |
-|             |             |             |       const | the         |
-|             |             |             | raint       | criteria.   |
-|             |             |             |             | This shall  |
-|             |             |             | -  support: | be a        |
-|             |             |             |       MANDA | connection  |
-|             |             |             | TORY        | point       |
-|             |             |             |             | attached to |
-|             |             |             |             | one of the  |
-|             |             |             |             | constituent |
-|             |             |             |             | VNFs and    |
-|             |             |             |             | PNFs of the |
-|             |             |             |             | parent      |
-|             |             |             |             | VNFFG, or a |
-|             |             |             |             | SAP of one  |
-|             |             |             |             | of the      |
-|             |             |             |             | constituent |
-|             |             |             |             | nested NSs  |
-|             |             |             |             | of the      |
-|             |             |             |             | parent      |
-|             |             |             |             | VNFFG.      |
-|             |             |             |             | NOTE: When  |
-|             |             |             |             | multiple    |
-|             |             |             |             | values are  |
-|             |             |             |             | provided,   |
-|             |             |             |             | the order   |
-|             |             |             |             | is          |
-|             |             |             |             | significant |
-|             |             |             |             | and         |
-|             |             |             |             | specifies   |
-|             |             |             |             | the         |
-|             |             |             |             | sequence of |
-|             |             |             |             | connection  |
-|             |             |             |             | points to   |
-|             |             |             |             | be          |
-|             |             |             |             | traversed.  |
-+-------------+-------------+-------------+-------------+-------------+
++-------------+-------------+-------------+-------------------+-------------+
+| **Attribute | **Type**    | **Mult.**   | **Stereotyp       | **Descripti |
+| Name**      |             |             | es**              | on**        |
++=============+=============+=============+===================+=============+
+| nfpdId      | invalid     | 1           | OpenModelAttribute| Identifies  |
+|             |             |             |                   | this nfpd   |
+|             |             |             |                   | class       |
+|             |             |             | -  isInvari       | within a    |
+|             |             |             | ant:              | VNFFGD.     |
+|             |             |             |       false       |             |
+|             |             |             |                   |             |
+|             |             |             | -  valueRan       |             |
+|             |             |             | ge:               |             |
+|             |             |             |       no          |             |
+|             |             |             |       range       |             |
+|             |             |             |       const       |             |
+|             |             |             | raint             |             |
+|             |             |             |                   |             |
+|             |             |             | -  support:       |             |
+|             |             |             |       MANDA       |             |
+|             |             |             | TORY              |             |
++-------------+-------------+-------------+-------------------+-------------+
+| nfpRule     | invalid     | 1           | OpenModelAt       | Provides an |
+|             |             |             | tribute           | NFP         |
+|             |             |             |                   | classificat |
+|             |             |             | -  isInvari       | ion         |
+|             |             |             | ant:              | and         |
+|             |             |             |       false       | selection   |
+|             |             |             |                   | rule. The   |
+|             |             |             | -  valueRan       | rule may be |
+|             |             |             | ge:               | expressed   |
+|             |             |             |       no          | as a        |
+|             |             |             |       range       | criteria    |
+|             |             |             |       const       | constructed |
+|             |             |             | raint             | out of      |
+|             |             |             |                   | atomic      |
+|             |             |             | -  support:       | assertions  |
+|             |             |             |       MANDA       | linked by   |
+|             |             |             | TORY              | Boolean     |
+|             |             |             |                   | operators   |
+|             |             |             |                   | AND, OR and |
+|             |             |             |                   | NOT. NOTE:  |
+|             |             |             |                   | Examples of |
+|             |             |             |                   | atomic      |
+|             |             |             |                   | assertions  |
+|             |             |             |                   | are         |
+|             |             |             |                   | assertions  |
+|             |             |             |                   | on packet   |
+|             |             |             |                   | header      |
+|             |             |             |                   | fields'     |
+|             |             |             |                   | values,     |
+|             |             |             |                   | date and    |
+|             |             |             |                   | time        |
+|             |             |             |                   | ranges,     |
+|             |             |             |                   | etc.        |
++-------------+-------------+-------------+-------------------+-------------+
+| cpd         | invalid     | 1           | OpenModelAt       | References  |
+|             |             |             | tribute           | the         |
+|             |             |             |                   | descriptor  |
+|             |             |             | -  isInvari       | of a        |
+|             |             |             | ant:              | connection  |
+|             |             |             |       false       | point to be |
+|             |             |             |                   | traversed   |
+|             |             |             | -  valueRan       | by the      |
+|             |             |             | ge:               | traffic     |
+|             |             |             |       no          | flows       |
+|             |             |             |       range       | matching    |
+|             |             |             |       const       | the         |
+|             |             |             | raint             | criteria.   |
+|             |             |             |                   | This shall  |
+|             |             |             | -  support:       | be a        |
+|             |             |             |       MANDA       | connection  |
+|             |             |             | TORY              | point       |
+|             |             |             |                   | attached to |
+|             |             |             |                   | one of the  |
+|             |             |             |                   | constituent |
+|             |             |             |                   | VNFs and    |
+|             |             |             |                   | PNFs of the |
+|             |             |             |                   | parent      |
+|             |             |             |                   | VNFFG, or a |
+|             |             |             |                   | SAP of one  |
+|             |             |             |                   | of the      |
+|             |             |             |                   | constituent |
+|             |             |             |                   | nested NSs  |
+|             |             |             |                   | of the      |
+|             |             |             |                   | parent      |
+|             |             |             |                   | VNFFG.      |
+|             |             |             |                   | NOTE: When  |
+|             |             |             |                   | multiple    |
+|             |             |             |                   | values are  |
+|             |             |             |                   | provided,   |
+|             |             |             |                   | the order   |
+|             |             |             |                   | is          |
+|             |             |             |                   | significant |
+|             |             |             |                   | and         |
+|             |             |             |                   | specifies   |
+|             |             |             |                   | the         |
+|             |             |             |                   | sequence of |
+|             |             |             |                   | connection  |
+|             |             |             |                   | points to   |
+|             |             |             |                   | be          |
+|             |             |             |                   | traversed.  |
++-------------+-------------+-------------+-------------------+-------------+
 
 NsLevel
 -------
@@ -880,101 +812,100 @@ Applied stereotypes:
 
 -  Future
 
-+-------------+-------------+-------------+-------------+-------------+
-| **Attribute | **Type**    | **Mult.**   | **Stereotyp | **Descripti |
-| Name**      |             |             | es**        | on**        |
-+=============+=============+=============+=============+=============+
-| nsLevelId   | Identifier  | 1           | OpenModelAt | Identifier  |
-|             |             |             | tribute     | of this     |
-|             |             |             |             | NsLevel     |
-|             |             |             | -  isInvari | class. It   |
-|             |             |             | ant:        | uniquely    |
-|             |             |             |       false | identifies  |
-|             |             |             |             | an NS level |
-|             |             |             | -  valueRan | within the  |
-|             |             |             | ge:         | DF.         |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| description | String      | 1           | OpenModelAt | Human       |
-|             |             |             | tribute     | readable    |
-|             |             |             |             | description |
-|             |             |             | -  isInvari | of the NS   |
-|             |             |             | ant:        | level.      |
-|             |             |             |       false |             |
-|             |             |             |             |             |
-|             |             |             | -  valueRan |             |
-|             |             |             | ge:         |             |
-|             |             |             |       no    |             |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| vnfToLevelM | VnfToLevelM | 0..\*       | OpenModelAt | Specifies   |
-| apping      | apping      |             | tribute     | the profile |
-|             |             |             |             | of the VNFs |
-|             |             |             | -  isInvari | involved in |
-|             |             |             | ant:        | this NS     |
-|             |             |             |       false | level and,  |
-|             |             |             |             | for each of |
-|             |             |             | -  valueRan | them, the   |
-|             |             |             | ge:         | required    |
-|             |             |             |       no    | number of   |
-|             |             |             |       range | instances.  |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| virtualLink | VirtualLink | 0..\*       | OpenModelAt | Specifies   |
-| ToLevelMapp | ToLevelMapp |             | tribute     | the profile |
-| ing         | ing         |             |             | of the VLs  |
-|             |             |             | -  isInvari | involved in |
-|             |             |             | ant:        | this NS     |
-|             |             |             |       false | level and,  |
-|             |             |             |             | for each of |
-|             |             |             | -  valueRan | them, the   |
-|             |             |             | ge:         | needed      |
-|             |             |             |       no    | bandwidth.  |
-|             |             |             |       range |             |
-|             |             |             |       const |             |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-| nsToLevelMa | NsToLevelMa | 0..\*       | OpenModelAt | Specifies   |
-| pping       | pping       |             | tribute     | the profile |
-|             |             |             |             | of the      |
-|             |             |             | -  isInvari | nested NSs  |
-|             |             |             | ant:        | involved in |
-|             |             |             |       false | this NS     |
-|             |             |             |             | level and,  |
-|             |             |             | -  valueRan | for each of |
-|             |             |             | ge:         | them, the   |
-|             |             |             |       no    | required    |
-|             |             |             |       range | number of   |
-|             |             |             |       const | instances.  |
-|             |             |             | raint       |             |
-|             |             |             |             |             |
-|             |             |             | -  support: |             |
-|             |             |             |       MANDA |             |
-|             |             |             | TORY        |             |
-+-------------+-------------+-------------+-------------+-------------+
-
++-------------+-------------+-------------+-------------------------+-------------+
+| **Attribute | **Type**    | **Mult.**   | **Stereotypes**         | **Descripti |
+| Name**      |             |             |                         | on**        |
++=============+=============+=============+=========================+=============+
+| nsLevelId   | Identifier  | 1           | OpenModelAttribute      | Identifier  |
+|             |             |             |                         | of this     |
+|             |             |             |                         | NsLevel     |
+|             |             |             | -  isInvari             | class. It   |
+|             |             |             | ant:                    | uniquely    |
+|             |             |             |       false             | identifies  |
+|             |             |             |                         | an NS level |
+|             |             |             | -  valueRan             | within the  |
+|             |             |             | ge:                     | DF.         |
+|             |             |             |       no                |             |
+|             |             |             |       range             |             |
+|             |             |             |       const             |             |
+|             |             |             | raint                   |             |
+|             |             |             |                         |             |
+|             |             |             | -  support:             |             |
+|             |             |             |       MANDA             |             |
+|             |             |             | TORY                    |             |
++-------------+-------------+-------------+-------------------------+-------------+
+| description | String      | 1           | OpenModelAt             | Human       |
+|             |             |             | tribute                 | readable    |
+|             |             |             |                         | description |
+|             |             |             | -  isInvari             | of the NS   |
+|             |             |             | ant:                    | level.      |
+|             |             |             |       false             |             |
+|             |             |             |                         |             |
+|             |             |             | -  valueRan             |             |
+|             |             |             | ge:                     |             |
+|             |             |             |       no                |             |
+|             |             |             |       range             |             |
+|             |             |             |       const             |             |
+|             |             |             | raint                   |             |
+|             |             |             |                         |             |
+|             |             |             | -  support:             |             |
+|             |             |             |       MANDA             |             |
+|             |             |             | TORY                    |             |
++-------------+-------------+-------------+-------------------------+-------------+
+| vnfToLevelM | VnfToLevelM | 0..\*       | OpenModelAt             | Specifies   |
+| apping      | apping      |             | tribute                 | the profile |
+|             |             |             |                         | of the VNFs |
+|             |             |             | -  isInvari             | involved in |
+|             |             |             | ant:                    | this NS     |
+|             |             |             |       false             | level and,  |
+|             |             |             |                         | for each of |
+|             |             |             | -  valueRan             | them, the   |
+|             |             |             | ge:                     | required    |
+|             |             |             |       no                | number of   |
+|             |             |             |       range             | instances.  |
+|             |             |             |       const             |             |
+|             |             |             | raint                   |             |
+|             |             |             |                         |             |
+|             |             |             | -  support:             |             |
+|             |             |             |       MANDA             |             |
+|             |             |             | TORY                    |             |
++-------------+-------------+-------------+-------------------------+-------------+
+| virtualLink | VirtualLink | 0..\*       | OpenModelAt             | Specifies   |
+| ToLevelMapp | ToLevelMapp |             | tribute                 | the profile |
+| ing         | ing         |             |                         | of the VLs  |
+|             |             |             | -  isInvari             | involved in |
+|             |             |             | ant:                    | this NS     |
+|             |             |             |       false             | level and,  |
+|             |             |             |                         | for each of |
+|             |             |             | -  valueRan             | them, the   |
+|             |             |             | ge:                     | needed      |
+|             |             |             |       no                | bandwidth.  |
+|             |             |             |       range             |             |
+|             |             |             |       const             |             |
+|             |             |             | raint                   |             |
+|             |             |             |                         |             |
+|             |             |             | -  support:             |             |
+|             |             |             |       MANDA             |             |
+|             |             |             | TORY                    |             |
++-------------+-------------+-------------+-------------------------+-------------+
+| nsToLevelMa | NsToLevelMa | 0..\*       | OpenModelAt             | Specifies   |
+| pping       | pping       |             | tribute                 | the profile |
+|             |             |             |                         | of the      |
+|             |             |             | -  isInvari             | nested NSs  |
+|             |             |             | ant:                    | involved in |
+|             |             |             |       false             | this NS     |
+|             |             |             |                         | level and,  |
+|             |             |             | -  valueRan             | for each of |
+|             |             |             | ge:                     | them, the   |
+|             |             |             |       no                | required    |
+|             |             |             |       range             | number of   |
+|             |             |             |       const             | instances.  |
+|             |             |             | raint                   |             |
+|             |             |             |                         |             |
+|             |             |             | -  support:             |             |
+|             |             |             |       MANDA             |             |
+|             |             |             | TORY                    |             |
++-------------+-------------+-------------+-------------------------+-------------+
 NsLinkPort
 ----------
 

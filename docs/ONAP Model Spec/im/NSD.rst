@@ -7,11 +7,7 @@
 ..
 
 
- NetworkServiceDescriptorModel 
 
-===============================
-
-|image0|
 
 Classes
 =======
@@ -29,7 +25,7 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
--  Preliminaryry
+-  Preliminary
 
 +--------------------------+----------------------------+-------------+-------------------+----------------+
 | **AttributeName**        | **Type**                   | **Mult.**   | **Stereotypes**   | **Description**|
@@ -258,7 +254,7 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
--  Preliminaryry
+-  Preliminary
 
 +------------------------+-----------------+-------------+-------------------+----------------+
 | **Attribute Name**     | **Type**        | **Mult.**   | **Stereotypes**   | **Description**|
@@ -691,4 +687,4 @@ Contains Enumeration Literals:
 
 -  LEVEL_3:
 
-.. |image0| image:: media/image1.png
+
