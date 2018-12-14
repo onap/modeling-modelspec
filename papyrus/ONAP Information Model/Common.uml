@@ -142,6 +142,16 @@ In the value set and its semantics, this type is equivalent to the Uri SMIv2 tex
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RUyssDnKEeiWMf5FLWfdLA" name="NFVI_NODE"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_oyf9MOwXEei7-e9MrPJW7Q" name="TimePeriod"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_KwZPMP8VEeiZ-fXSiUXhdA" name="DateTime">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PeVlAP8VEeiZ-fXSiUXhdA" annotatedElement="_KwZPMP8VEeiZ-fXSiUXhdA">
+          <body>ateTime - RFC 2822 standard date/time format.&#xD;
+&#xD;
+RFC 2822 format&#xD;
+day-of-week, dd MM yyyy HH’:’mm’:’ss ‘GMT’&#xD;
+&#xD;
+e.g. Tue, 21 Jun 2016 14:05:20 GMT</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_mi5hgIbfEei-x_BD9U-ssQ" name="Event (VES)">
       <packagedElement xmi:type="uml:Package" xmi:id="_rmBdIIbfEei-x_BD9U-ssQ" name="EventObjectClasses">
@@ -4510,6 +4520,8 @@ Debug	          7	    debug-level messages&#xD;
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_CcDw4sfzEeiEtuRgTYzSUQ" name="vnfd" association="_CcCiwMfzEeiEtuRgTYzSUQ">
             <type xmi:type="uml:Class" href="Vnf.uml#_aaEZADOREeiHat9KcP8uWA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lZE3kP1gEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lcU_4P1gEeisxOMTY1eUug" value="*"/>
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_CcICUMfzEeiEtuRgTYzSUQ" name="velndorlicensemodel (vlm)" type="_mEllAMfyEeiEtuRgTYzSUQ" association="_CcCiwMfzEeiEtuRgTYzSUQ"/>
         </packagedElement>
@@ -4523,11 +4535,14 @@ Debug	          7	    debug-level messages&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hoQ4wN3tEei-jeeHUjfpLA" value="*"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_Jg-TMN3uEei-jeeHUjfpLA" name="LicenseKeyDescHas" memberEnd="_Jg_hUN3uEei-jeeHUjfpLA _JhAIYN3uEei-jeeHUjfpLA">
+        <packagedElement xmi:type="uml:Association" xmi:id="_Jg-TMN3uEei-jeeHUjfpLA" name="LicenseKeyPoolDescHasLicenseKeyDesc" memberEnd="_Jg_hUN3uEei-jeeHUjfpLA _JhAIYN3uEei-jeeHUjfpLA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Jg-6QN3uEei-jeeHUjfpLA" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Jg-6Qd3uEei-jeeHUjfpLA" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_Jg_hUN3uEei-jeeHUjfpLA" name="licensekeydesc" type="_oURIoMfyEeiEtuRgTYzSUQ" association="_Jg-TMN3uEei-jeeHUjfpLA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Jg_hUN3uEei-jeeHUjfpLA" name="licensekeydesc" type="_oURIoMfyEeiEtuRgTYzSUQ" association="_Jg-TMN3uEei-jeeHUjfpLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9CUuEP2SEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9CbbwP2SEeisxOMTY1eUug" value="*"/>
+          </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_JhAIYN3uEei-jeeHUjfpLA" name="licencekeypooldesc" type="_4ZDVsMgEEeiEtuRgTYzSUQ" association="_Jg-TMN3uEei-jeeHUjfpLA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_Sj1eAN3yEei-jeeHUjfpLA" name="LicenseKeyDescMadeAvailableAs" memberEnd="_Sj2FEt3yEei-jeeHUjfpLA _Sj3TMN3yEei-jeeHUjfpLA">
@@ -4576,10 +4591,86 @@ Debug	          7	    debug-level messages&#xD;
           <ownedEnd xmi:type="uml:Property" xmi:id="_Hu8iot3zEei-jeeHUjfpLA" name="licencekeypooldesc" type="_4ZDVsMgEEeiEtuRgTYzSUQ" association="_Hu77kN3zEei-jeeHUjfpLA"/>
           <ownedEnd xmi:type="uml:Property" xmi:id="_Hu9wwN3zEei-jeeHUjfpLA" name="vendorlicensemodel (vlm)" type="_mEllAMfyEeiEtuRgTYzSUQ" association="_Hu77kN3zEei-jeeHUjfpLA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_J2HtUP1qEeisxOMTY1eUug" name="EntitlementDescMdeAvailableAsEntitlementIntstance" memberEnd="_J2IUYv1qEeisxOMTY1eUug _J2JigP1qEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J2IUYP1qEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J2IUYf1qEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_J2IUYv1qEeisxOMTY1eUug" name="entitlementinstance" type="_QG4ysP1oEeisxOMTY1eUug" aggregation="composite" association="_J2HtUP1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sgsJwP18EeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_shGZcP18EeisxOMTY1eUug" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_J2JigP1qEeisxOMTY1eUug" name="entitlementdesc (purchaseuserights - pur)" type="_EFk28N3tEei-jeeHUjfpLA" association="_J2HtUP1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nhGDQP18EeisxOMTY1eUug" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nhXwEP18EeisxOMTY1eUug" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_QExA4P1qEeisxOMTY1eUug" name="EntitlementPoolDescHasEntitlementLimitsList" memberEnd="_QExn8v1qEeisxOMTY1eUug _QEyPAv1qEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QExn8P1qEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QExn8f1qEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_QEyPAv1qEeisxOMTY1eUug" name="entitlementdesc (purchaseuserights - pur)" type="_GlxBwP1oEeisxOMTY1eUug" association="_QExA4P1qEeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_pqAAkP1oEeisxOMTY1eUug" name="EntitlementPoolDescHasEntitlementPoolSelectionCriteriaList" memberEnd="_pq9p4P1oEeisxOMTY1eUug _prAtMP1oEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pqBOsP1oEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pqBOsf1oEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_prAtMP1oEeisxOMTY1eUug" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_pqAAkP1oEeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OjPjwP1qEeisxOMTY1eUug" name="EntitlementPoolDescHasEntitlmentDesc" memberEnd="_OjQK0v1qEeisxOMTY1eUug _OjVDUP1qEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OjQK0P1qEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OjQK0f1qEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OjQK0v1qEeisxOMTY1eUug" name="entitlementdesc (purchaseuserights - pur)" type="_EFk28N3tEei-jeeHUjfpLA" association="_OjPjwP1qEeisxOMTY1eUug"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OjVDUP1qEeisxOMTY1eUug" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_OjPjwP1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NRvXQP14EeisxOMTY1eUug" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NR-n0P14EeisxOMTY1eUug" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="__LoWAP1oEeisxOMTY1eUug" name="EntitlementPoolDescHasVendorPoolLimits" memberEnd="__Lo9Ev1oEeisxOMTY1eUug __Lw44P1oEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__Lo9EP1oEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__Lo9Ef1oEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="__Lw44P1oEeisxOMTY1eUug" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="__LoWAP1oEeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_M9Q54P1pEeisxOMTY1eUug" name="EntitlementPoolDescHasVendorPoolLimits" memberEnd="_M9Rg8v1pEeisxOMTY1eUug _M9XAgP1pEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M9Rg8P1pEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M9Rg8f1pEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_M9XAgP1pEeisxOMTY1eUug" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_M9Q54P1pEeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_GSdZUP1qEeisxOMTY1eUug" name="EntitlementPoolDescMadeAvailableAsEntitementPoolInstance" memberEnd="_GSdZU_1qEeisxOMTY1eUug _GSiR0P1qEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GSdZUf1qEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSdZUv1qEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_GSiR0P1qEeisxOMTY1eUug" name="entitlementdesc (purchaseuserights - pur)" type="_GlxBwP1oEeisxOMTY1eUug" association="_GSdZUP1qEeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_MT7MgP1qEeisxOMTY1eUug" name="VLMHasEntitlementDesc" memberEnd="_MT7zkf1qEeisxOMTY1eUug _MT_d8P1qEeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MT7Mgf1qEeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MT7zkP1qEeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MT7zkf1qEeisxOMTY1eUug" name="vendorlicensemodel (vlm)" type="_mEllAMfyEeiEtuRgTYzSUQ" association="_MT7MgP1qEeisxOMTY1eUug"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MT_d8P1qEeisxOMTY1eUug" name="entitlementdesc (purchaseuserights - pur)" type="_EFk28N3tEei-jeeHUjfpLA" association="_MT7MgP1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OsImwP16EeisxOMTY1eUug" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Osa6oP16EeisxOMTY1eUug" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_pR8wUP2REeisxOMTY1eUug" name="EntitlementPoolInstanceContainsEntitlementInstance" memberEnd="_pR9XYv2REeisxOMTY1eUug _pR-lgP2REeisxOMTY1eUug">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pR9XYP2REeisxOMTY1eUug" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pR9XYf2REeisxOMTY1eUug" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_pR9XYv2REeisxOMTY1eUug" name="entitlementinstance" type="_QG4ysP1oEeisxOMTY1eUug" association="_pR8wUP2REeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIi5IP2REeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xInKkP2REeisxOMTY1eUug" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_pR-lgP2REeisxOMTY1eUug" name="entitlementpoolinstance" type="_NkuX8P1oEeisxOMTY1eUug" association="_pR8wUP2REeisxOMTY1eUug"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ZAQzEMfyEeiEtuRgTYzSUQ" name="ObjectClasses">
-        <packagedElement xmi:type="uml:Class" xmi:id="_oURIoMfyEeiEtuRgTYzSUQ" name="LicenseKeyDesc"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oURIoMfyEeiEtuRgTYzSUQ" name="LicenseKeyDesc">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Za7pwP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_4ZDVsMgEEeiEtuRgTYzSUQ" name="LicenceKeyPoolDesc">
+          <generalization xmi:type="uml:Generalization" xmi:id="_YQ5fkP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sNzeod3uEei-jeeHUjfpLA" name="poollimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="_sNy3kN3uEei-jeeHUjfpLA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sNzeo93uEei-jeeHUjfpLA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sN0FsN3uEei-jeeHUjfpLA" value="*"/>
@@ -4589,13 +4680,220 @@ Debug	          7	    debug-level messages&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_43os8N3uEei-jeeHUjfpLA" value="*"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_mEllAMfyEeiEtuRgTYzSUQ" name="VendorLicenseModel (VLM)"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_EFk28N3tEei-jeeHUjfpLA" name="EntitlementDesc (PurchaseUseRights - PUR)"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_B5kVkN3xEei-jeeHUjfpLA" name="LicenseKeyPoolInstance"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_T5-uYN3uEei-jeeHUjfpLA" name="PoolLimit"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mEllAMfyEeiEtuRgTYzSUQ" name="VendorLicenseModel (VLM)">
+          <generalization xmi:type="uml:Generalization" xmi:id="_eHdzkP7_EeiZ-fXSiUXhdA" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_EFk28N3tEei-jeeHUjfpLA" name="EntitlementDesc (PurchaseUseRights-PUR)">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_62doQP73EeiZ-fXSiUXhdA" annotatedElement="_EFk28N3tEei-jeeHUjfpLA">
+            <body>Specifies the use rights for the software as described by the license. The use rights may be quantified by various metrics: # users, # software instances,  # units.  Customer RTU is within the customer subscription.   Entitlement is related to how the service provider  purchased the software from the supplier, 1 RTU may equate to 5 instances of the software.   &#xD;
+&#xD;
+Either no key, universal key, or unique key per instance required.  &#xD;
+</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_a9qAwP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W-tJsP8WEeiZ-fXSiUXhdA" name="vendorPartNumber (SKU/ManufacturerReferenceNumber)">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XhV8sP8WEeiZ-fXSiUXhdA" name="description">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Yb7VoP8WEeiZ-fXSiUXhdA" name="entitlementIdentifier">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZaGOEP8WEeiZ-fXSiUXhdA" name="minimumOrderRquirement">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z4kSwP8WEeiZ-fXSiUXhdA" name="uniqueReportingRequirements"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aWtAQP8WEeiZ-fXSiUXhdA" name="licenseType">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bNYJkP8WEeiZ-fXSiUXhdA" name="licenseDuration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HRGL4P8XEeiZ-fXSiUXhdA" name="licenseDurationQuantification">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HqdHEP8XEeiZ-fXSiUXhdA" name="limits"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance">
+          <generalization xmi:type="uml:Generalization" xmi:id="_2jxBIP2QEeisxOMTY1eUug" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B5kVkN3xEei-jeeHUjfpLA" name="LicenseKeyPoolInstance">
+          <generalization xmi:type="uml:Generalization" xmi:id="_3ScFAP2QEeisxOMTY1eUug" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_T5-uYN3uEei-jeeHUjfpLA" name="PoolLimit">
+          <generalization xmi:type="uml:Generalization" xmi:id="_lAvcoP-8EeiQG4ZZm0HgYw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qbaLAP-7EeiQG4ZZm0HgYw" name="limitname">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_r8cf8P-7EeiQG4ZZm0HgYw" name="limitDescription">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tG0BUP-7EeiQG4ZZm0HgYw" name="limitMetric"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tntH4P-7EeiQG4ZZm0HgYw" name="limitMetricValue"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_v5xRIP-7EeiQG4ZZm0HgYw" name="aggregationFunction"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wXOpMP-7EeiQG4ZZm0HgYw" name="limitUnits"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yQCk8P-7EeiQG4ZZm0HgYw" name="time" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QG4ysP1oEeisxOMTY1eUug" name="EntitlementInstance">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_BAUicP74EeiZ-fXSiUXhdA" annotatedElement="_QG4ysP1oEeisxOMTY1eUug">
+            <body>Represents an instance of a EntitlementDesc.&#xD;
+&#xD;
+Specifies the use rights for the software as described by the license. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_T3pukP1oEeisxOMTY1eUug" name="EntitlementLimitsList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nHuz0P73EeiZ-fXSiUXhdA" annotatedElement="_T3pukP1oEeisxOMTY1eUug">
+            <body>A variable set of values that identify the limits that may be imposed by an entitlement instance in the pool.  Multiple constraints may be applicable for an instance of entitlement in the pool.  For example, an entitlement based on GB and number of sessions. Increments, aggregation function, time scope, threshold value may repeat for each metric in the list.&#xD;
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M9Jy4P_fEeiQG4ZZm0HgYw" name="entitlementAggregationInterval">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_N8An0P_fEeiQG4ZZm0HgYw" name="entitlementAggregation">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OxF1sP_fEeiQG4ZZm0HgYw" name="entitlmenetQuantification">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PcPrgP_fEeiQG4ZZm0HgYw" name="entitlementEndDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QFljcP_fEeiQG4ZZm0HgYw" name="entitlementStartDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QrklYP_fEeiQG4ZZm0HgYw" name="entitlementDuration"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RQZwwP_fEeiQG4ZZm0HgYw" name="entitlementConstraintType"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SySaQP_fEeiQG4ZZm0HgYw" name="entitlementQuantification">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UqaZgP_fEeiQG4ZZm0HgYw" name="entitlementConstraint">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VOTJsP_fEeiQG4ZZm0HgYw" name="entitlmentTHresholdValue">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GlxBwP1oEeisxOMTY1eUug" name="EntitlementPoolDesc">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_T6IWgP73EeiZ-fXSiUXhdA" annotatedElement="_GlxBwP1oEeisxOMTY1eUug">
+            <body>An EntitlementPool is created for each type of Entitlement that is required for the software products.&#xD;
+&#xD;
+An EntitlementPool is not specific to a Feature Group. An Entitlement Pool may be related to multiple Feature Groups of a software product or even to multiple software products.&#xD;
+&#xD;
+Purchased entitlements are inventoried in the Entitlement Pools.&#xD;
+&#xD;
+Multiple pools for the same type of entitlement may be created based on the constraints.&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+An Entitlement Pool is created for each type of Entitlement that is required for the software products.   Each Entitlement Pool is assigned a Name and Description for modeling purposes and is uniquely identified by a UUID. In addition, a list of characteristics of the Entitlement Pool are defined.&#xD;
+&#xD;
+The entitlement pool model provides a description to systems like ALTS for the entitlements that will be purchased.  ALTS will create a “pool” and Purchasing systems (GPS and HP Asset Center) will send the inventory of purchased entitlements to be held by ALTS in the appropriate pool.&#xD;
+&#xD;
+Controllers will request entitlements from ALTS using the UUID of the pool, as directed by the ASDC models for the software (i.e. VFs).&#xD;
+&#xD;
+An entitlement pool is not specific to a feature group.  An entitlement pool may be related to multiple feature groups of a software item or even to multiple software items.&#xD;
+&#xD;
+&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pq9p4P1oEeisxOMTY1eUug" name="entitlementpoolselectioncriteriallist" type="_IwgbAP1oEeisxOMTY1eUug" aggregation="composite" association="_pqAAkP1oEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pq_fEP1oEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_prAGIP1oEeisxOMTY1eUug" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__Lo9Ev1oEeisxOMTY1eUug" name="poollimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="__LoWAP1oEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__LtOgP1oEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__LvqwP1oEeisxOMTY1eUug" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M9Rg8v1pEeisxOMTY1eUug" name="poollimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="_M9Q54P1pEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M9T9MP1pEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M9VyYP1pEeisxOMTY1eUug" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QExn8v1qEeisxOMTY1eUug" name="entitlementlimitslist" type="_T3pukP1oEeisxOMTY1eUug" association="_QExA4P1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QEyPAP1qEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QEyPAf1qEeisxOMTY1eUug" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GSdZU_1qEeisxOMTY1eUug" name="entitlementpoolinstance" type="_NkuX8P1oEeisxOMTY1eUug" aggregation="composite" association="_GSdZUP1qEeisxOMTY1eUug">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GSf1kP1qEeisxOMTY1eUug"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GShDsP1qEeisxOMTY1eUug" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AOWnMP19EeisxOMTY1eUug" name="entitlementPoolName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Atk50P19EeisxOMTY1eUug" name="entitlementPoolDescription">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BLpV4P19EeisxOMTY1eUug" name="manufactureReferencdNumber">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BluCwP19EeisxOMTY1eUug" name="entitlementPurchaseIncrements">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cNgCIP4LEeiao-2FtYZWRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNlhsP4LEeiao-2FtYZWRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_C15RMP19EeisxOMTY1eUug" name="entitlementMetricType" type="_FbFaQP4LEeiao-2FtYZWRA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IjiJcP19EeisxOMTY1eUug" name="entitlementPoolThresholdValue">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h77kkP4LEeiao-2FtYZWRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h7_2AP4LEeiao-2FtYZWRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_I9Ob0P19EeisxOMTY1eUug" name="entitlementPoolThresholdUnits">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JWKgQP19EeisxOMTY1eUug" name="entitlementPoolIncrements">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ju2tEP19EeisxOMTY1eUug" name="entitlementPoolStartDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YepH4P8VEeiZ-fXSiUXhdA" name="entitlementPoolExpiryDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZyGT0P8VEeiZ-fXSiUXhdA" name="entitlementPoolOperationalScope">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NkuX8P1oEeisxOMTY1eUug" name="EntitlementPoolInstance">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_jHhGsP73EeiZ-fXSiUXhdA" annotatedElement="_NkuX8P1oEeisxOMTY1eUug">
+            <body>An EntitlementPool describes the characteristics of a type of entitlement and the behavior of the entitlement instances in the pool.&#xD;
+&#xD;
+Management of the collection.&#xD;
+</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IwgbAP1oEeisxOMTY1eUug" name="EntitlementPoolSelectionCriterialList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Py3wwP74EeiZ-fXSiUXhdA" annotatedElement="_IwgbAP1oEeisxOMTY1eUug">
+            <body>A variable set of values that identify the factors to be evaluated in the selection/application of this entitlement pool (i.e. network-wide, Availability Zone, Data Center, Tenant, etc.).  The constraints may be specified by the vendor and/or by AT&amp;T.   For example:&#xD;
+- the entitlements allow the software to only be used in a specific country.&#xD;
+- the entitlements allow the software to be used network-wide.&#xD;
+&#xD;
+Multiple constraints may be applicable for the pool.  Constraint type, duration, quantification, aggregation, aggregation interval, start date, end date, and threshold may repeat for each constraint in the list and are optional.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DKq6IP74EeiZ-fXSiUXhdA" name="Property1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Omfk4P2SEeisxOMTY1eUug" name="VnfFeatureGroup"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bCM3oP2SEeisxOMTY1eUug" name="LicenseAgreement">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bspo0P_BEeiQG4ZZm0HgYw" name="name"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cFdxcP_BEeiQG4ZZm0HgYw" name="description"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ccRu8P_BEeiQG4ZZm0HgYw" name="requirementsAndConstraints">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n-pl8P_BEeiQG4ZZm0HgYw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n-w6sP_BEeiQG4ZZm0HgYw" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cy77cP_BEeiQG4ZZm0HgYw" name="licenseTerm" type="_sckiwP_BEeiQG4ZZm0HgYw"/>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_bIcAgMfyEeiEtuRgTYzSUQ" name="TypeDefinitions"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bIcAgMfyEeiEtuRgTYzSUQ" name="TypeDefinitions">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_FbFaQP4LEeiao-2FtYZWRA" name="EPMetricType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JcMfQP4LEeiao-2FtYZWRA" name="BWTH"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_K1kF8P4LEeiao-2FtYZWRA" name="COUNTRY"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MMljQP4LEeiao-2FtYZWRA" name="SESSION"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NWS9UP4LEeiao-2FtYZWRA" name="LOB"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OUUr0P4LEeiao-2FtYZWRA" name="SITE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_P-pfoP4LEeiao-2FtYZWRA" name="USAGE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RFYeMP4LEeiao-2FtYZWRA" name="OTHER"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_sckiwP_BEeiQG4ZZm0HgYw" name="LicenseTerm">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wi434P_BEeiQG4ZZm0HgYw" name="FIXED_TERM"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ydBCQP_BEeiQG4ZZm0HgYw" name="PERPETUAL"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2ICigP_BEeiQG4ZZm0HgYw" name="UNLIMITED"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3aXtEP_BEeiQG4ZZm0HgYw" name="OTHER"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_710dYNMOEeig45NPS8-MSw" name="Policy">
       <packagedElement xmi:type="uml:Package" xmi:id="_D-ZuENMPEeig45NPS8-MSw" name="Associations">
@@ -6139,6 +6437,12 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Y8al8P2JEeisxOMTY1eUug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y8fecP2JEeisxOMTY1eUug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
   </uml:Package>
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw8kwD2pEeiu6I5JfRTxxQ" base_Class="_Tw79sD2pEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Tw9y4D2pEeiu6I5JfRTxxQ" base_StructuralFeature="_Tw79sj2pEeiu6I5JfRTxxQ"/>
@@ -7032,4 +7336,71 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:Experimental xmi:id="_bprrEPfDEeiEqKXVVPCm1Q" base_Element="_4QQU0OQ5Eei2Ub3VuxG4ag"/>
   <OpenModel_Profile:Experimental xmi:id="_d0t_QPfDEeiEqKXVVPCm1Q" base_Element="_9jP4cOQ5Eei2Ub3VuxG4ag"/>
   <OpenModel_Profile:Experimental xmi:id="_VhyMAPgAEeiEqKXVVPCm1Q" base_Element="_PmIOkH7uEeifJIHxnlj6Cg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_GlxBwf1oEeisxOMTY1eUug" base_Class="_GlxBwP1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_IwhCEP1oEeisxOMTY1eUug" base_Class="_IwgbAP1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_NkuX8f1oEeisxOMTY1eUug" base_Class="_NkuX8P1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_QG4ysf1oEeisxOMTY1eUug" base_Class="_QG4ysP1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_T3pukf1oEeisxOMTY1eUug" base_Class="_T3pukP1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pq-Q8P1oEeisxOMTY1eUug" base_StructuralFeature="_pq9p4P1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_prAtMf1oEeisxOMTY1eUug" base_StructuralFeature="_prAtMP1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__LpkIP1oEeisxOMTY1eUug" base_StructuralFeature="__Lo9Ev1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__Lxf8P1oEeisxOMTY1eUug" base_StructuralFeature="__Lw44P1oEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_M9Rg8_1pEeisxOMTY1eUug" base_StructuralFeature="_M9Rg8v1pEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_M9XAgf1pEeisxOMTY1eUug" base_StructuralFeature="_M9XAgP1pEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GSeAYP1qEeisxOMTY1eUug" base_StructuralFeature="_GSdZU_1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GSiR0f1qEeisxOMTY1eUug" base_StructuralFeature="_GSiR0P1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J2IUY_1qEeisxOMTY1eUug" base_StructuralFeature="_J2IUYv1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J2KJkP1qEeisxOMTY1eUug" base_StructuralFeature="_J2JigP1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MT7zkv1qEeisxOMTY1eUug" base_StructuralFeature="_MT7zkf1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MT_d8f1qEeisxOMTY1eUug" base_StructuralFeature="_MT_d8P1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OjQK0_1qEeisxOMTY1eUug" base_StructuralFeature="_OjQK0v1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OjVDUf1qEeisxOMTY1eUug" base_StructuralFeature="_OjVDUP1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QExn8_1qEeisxOMTY1eUug" base_StructuralFeature="_QExn8v1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QEyPA_1qEeisxOMTY1eUug" base_StructuralFeature="_QEyPAv1qEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_AOWnMf19EeisxOMTY1eUug" base_StructuralFeature="_AOWnMP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Atk50f19EeisxOMTY1eUug" base_StructuralFeature="_Atk50P19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BLpV4f19EeisxOMTY1eUug" base_StructuralFeature="_BLpV4P19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Blup0P19EeisxOMTY1eUug" base_StructuralFeature="_BluCwP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_C154QP19EeisxOMTY1eUug" base_StructuralFeature="_C15RMP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IjiwgP19EeisxOMTY1eUug" base_StructuralFeature="_IjiJcP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_I9Ob0f19EeisxOMTY1eUug" base_StructuralFeature="_I9Ob0P19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JWKgQf19EeisxOMTY1eUug" base_StructuralFeature="_JWKgQP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Ju2tEf19EeisxOMTY1eUug" base_StructuralFeature="_Ju2tEP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pR9XY_2REeisxOMTY1eUug" base_StructuralFeature="_pR9XYv2REeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pR-lgf2REeisxOMTY1eUug" base_StructuralFeature="_pR-lgP2REeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_OmgL8P2SEeisxOMTY1eUug" base_Class="_Omfk4P2SEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_bCM3of2SEeisxOMTY1eUug" base_Class="_bCM3oP2SEeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DKsIQP74EeiZ-fXSiUXhdA" base_StructuralFeature="_DKq6IP74EeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YepH4f8VEeiZ-fXSiUXhdA" base_StructuralFeature="_YepH4P8VEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZyGT0f8VEeiZ-fXSiUXhdA" base_StructuralFeature="_ZyGT0P8VEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_W-tJsf8WEeiZ-fXSiUXhdA" base_StructuralFeature="_W-tJsP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XhWjwP8WEeiZ-fXSiUXhdA" base_StructuralFeature="_XhV8sP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Yb7Vof8WEeiZ-fXSiUXhdA" base_StructuralFeature="_Yb7VoP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZaG1IP8WEeiZ-fXSiUXhdA" base_StructuralFeature="_ZaGOEP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Z4k50P8WEeiZ-fXSiUXhdA" base_StructuralFeature="_Z4kSwP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aWtAQf8WEeiZ-fXSiUXhdA" base_StructuralFeature="_aWtAQP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bNYJkf8WEeiZ-fXSiUXhdA" base_StructuralFeature="_bNYJkP8WEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HRGL4f8XEeiZ-fXSiUXhdA" base_StructuralFeature="_HRGL4P8XEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HqdHEf8XEeiZ-fXSiUXhdA" base_StructuralFeature="_HqdHEP8XEeiZ-fXSiUXhdA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qeJV8P-7EeiQG4ZZm0HgYw" base_StructuralFeature="_qbaLAP-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_r8duEP-7EeiQG4ZZm0HgYw" base_StructuralFeature="_r8cf8P-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tG0BUf-7EeiQG4ZZm0HgYw" base_StructuralFeature="_tG0BUP-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tntH4f-7EeiQG4ZZm0HgYw" base_StructuralFeature="_tntH4P-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_v5x4MP-7EeiQG4ZZm0HgYw" base_StructuralFeature="_v5xRIP-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wXOpMf-7EeiQG4ZZm0HgYw" base_StructuralFeature="_wXOpMP-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yQCk8f-7EeiQG4ZZm0HgYw" base_StructuralFeature="_yQCk8P-7EeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bspo0f_BEeiQG4ZZm0HgYw" base_StructuralFeature="_bspo0P_BEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cFdxcf_BEeiQG4ZZm0HgYw" base_StructuralFeature="_cFdxcP_BEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ccSWAP_BEeiQG4ZZm0HgYw" base_StructuralFeature="_ccRu8P_BEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cy77cf_BEeiQG4ZZm0HgYw" base_StructuralFeature="_cy77cP_BEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_M9Jy4f_fEeiQG4ZZm0HgYw" base_StructuralFeature="_M9Jy4P_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_N8An0f_fEeiQG4ZZm0HgYw" base_StructuralFeature="_N8An0P_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OxF1sf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_OxF1sP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PcPrgf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_PcPrgP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QFljcf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_QFljcP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QrklYf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_QrklYP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RQZwwf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_RQZwwP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SyTBUP_fEeiQG4ZZm0HgYw" base_StructuralFeature="_SySaQP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UqaZgf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_UqaZgP_fEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VOTJsf_fEeiQG4ZZm0HgYw" base_StructuralFeature="_VOTJsP_fEeiQG4ZZm0HgYw"/>
 </xmi:XMI>
