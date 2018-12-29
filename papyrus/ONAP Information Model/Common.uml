@@ -4522,63 +4522,7 @@ Debug	          7	    debug-level messages&#xD;
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License">
-      <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams">
-        <packagedElement xmi:type="uml:Association" xmi:id="_Eo0HEAUiEemrBZmpgd_POA" name="VLMHasLicenseAgreement" memberEnd="_Eo4YgAUiEemrBZmpgd_POA _Eo94EAUiEemrBZmpgd_POA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Eo3xcAUiEemrBZmpgd_POA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Eo3xcQUiEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_Eo4YgAUiEemrBZmpgd_POA" name="licenseagreement" type="_bCM3oP2SEeisxOMTY1eUug" aggregation="shared" association="_Eo0HEAUiEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y1HoUAUiEemrBZmpgd_POA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y1UcoAUiEemrBZmpgd_POA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_Eo94EAUiEemrBZmpgd_POA" name="vendorlicensemodel (vlm)" type="_mEllAMfyEeiEtuRgTYzSUQ" association="_Eo0HEAUiEemrBZmpgd_POA"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_mQo20AVlEemrBZmpgd_POA" name="FeatureGroupHasLicenceKeyPoolDesc" memberEnd="_mQqsAAVlEemrBZmpgd_POA _mQrTEAVlEemrBZmpgd_POA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mQqE8AVlEemrBZmpgd_POA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mQqE8QVlEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_mQqsAAVlEemrBZmpgd_POA" name="licencekeypooldesc" type="_4ZDVsMgEEeiEtuRgTYzSUQ" association="_mQo20AVlEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ASB8IAVmEemrBZmpgd_POA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ASG0oAVmEemrBZmpgd_POA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_mQrTEAVlEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_mQo20AVlEemrBZmpgd_POA"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_n3nbsAVlEemrBZmpgd_POA" name="FeatureGroupHasEntitelmentPoolDesc" memberEnd="_n3oCwgVlEemrBZmpgd_POA _n3op0AVlEemrBZmpgd_POA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n3oCwAVlEemrBZmpgd_POA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n3oCwQVlEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_n3oCwgVlEemrBZmpgd_POA" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_n3nbsAVlEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5SrkYAVlEemrBZmpgd_POA" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5S_GYAVlEemrBZmpgd_POA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_n3op0AVlEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_n3nbsAVlEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y1BkcAVlEemrBZmpgd_POA" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y1F14AVlEemrBZmpgd_POA" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_LMfMoAVoEemrBZmpgd_POA" name="LicenseAgreementHasFeatureGroup" memberEnd="_LMgawgVoEemrBZmpgd_POA _LMho4AVoEemrBZmpgd_POA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LMgawAVoEemrBZmpgd_POA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LMgawQVoEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_LMgawgVoEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_LMfMoAVoEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8ZeoAVoEemrBZmpgd_POA" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8p9UAVoEemrBZmpgd_POA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_LMho4AVoEemrBZmpgd_POA" name="licenseagreement" type="_bCM3oP2SEeisxOMTY1eUug" association="_LMfMoAVoEemrBZmpgd_POA"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_ph8IIAVoEemrBZmpgd_POA" name="VnfHasFeatureGroups" memberEnd="_ph9WQgVoEemrBZmpgd_POA _p41lMAVoEemrBZmpgd_POA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ph9WQAVoEemrBZmpgd_POA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ph9WQQVoEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_ph9WQgVoEemrBZmpgd_POA" name="licenseagreement" type="_Omfk4P2SEeisxOMTY1eUug" association="_ph8IIAVoEemrBZmpgd_POA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yPMzMAVoEemrBZmpgd_POA" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yPUvAAVoEemrBZmpgd_POA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_p41lMAVoEemrBZmpgd_POA" name="vnfd" association="_ph8IIAVoEemrBZmpgd_POA">
-            <type xmi:type="uml:Class" href="Vnf.uml#_aaEZADOREeiHat9KcP8uWA"/>
-          </ownedEnd>
-        </packagedElement>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_Whm_UMfyEeiEtuRgTYzSUQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_CcCiwMfzEeiEtuRgTYzSUQ" name="VLMHasVnfd" memberEnd="_CcDw4sfzEeiEtuRgTYzSUQ _CcICUMfzEeiEtuRgTYzSUQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CcDw4MfzEeiEtuRgTYzSUQ" source="org.eclipse.papyrus">
@@ -4707,6 +4651,61 @@ Debug	          7	    debug-level messages&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xInKkP2REeisxOMTY1eUug" value="*"/>
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_pR-lgP2REeisxOMTY1eUug" name="entitlementpoolinstance" type="_NkuX8P1oEeisxOMTY1eUug" association="_pR8wUP2REeisxOMTY1eUug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_n3nbsAVlEemrBZmpgd_POA" name="FeatureGroupHasEntitelmentPoolDesc" memberEnd="_n3oCwgVlEemrBZmpgd_POA _n3op0AVlEemrBZmpgd_POA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n3oCwAVlEemrBZmpgd_POA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n3oCwQVlEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_n3oCwgVlEemrBZmpgd_POA" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_n3nbsAVlEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5SrkYAVlEemrBZmpgd_POA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5S_GYAVlEemrBZmpgd_POA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_n3op0AVlEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_n3nbsAVlEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y1BkcAVlEemrBZmpgd_POA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y1F14AVlEemrBZmpgd_POA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_mQo20AVlEemrBZmpgd_POA" name="FeatureGroupHasLicenceKeyPoolDesc" memberEnd="_mQqsAAVlEemrBZmpgd_POA _mQrTEAVlEemrBZmpgd_POA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mQqE8AVlEemrBZmpgd_POA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mQqE8QVlEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mQqsAAVlEemrBZmpgd_POA" name="licencekeypooldesc" type="_4ZDVsMgEEeiEtuRgTYzSUQ" association="_mQo20AVlEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ASB8IAVmEemrBZmpgd_POA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ASG0oAVmEemrBZmpgd_POA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_mQrTEAVlEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_mQo20AVlEemrBZmpgd_POA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Eo0HEAUiEemrBZmpgd_POA" name="VLMHasLicenseAgreement" memberEnd="_Eo4YgAUiEemrBZmpgd_POA _Eo94EAUiEemrBZmpgd_POA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Eo3xcAUiEemrBZmpgd_POA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Eo3xcQUiEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Eo4YgAUiEemrBZmpgd_POA" name="licenseagreement" type="_bCM3oP2SEeisxOMTY1eUug" aggregation="shared" association="_Eo0HEAUiEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y1HoUAUiEemrBZmpgd_POA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y1UcoAUiEemrBZmpgd_POA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Eo94EAUiEemrBZmpgd_POA" name="vendorlicensemodel (vlm)" type="_mEllAMfyEeiEtuRgTYzSUQ" association="_Eo0HEAUiEemrBZmpgd_POA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_LMfMoAVoEemrBZmpgd_POA" name="LicenseAgreementHasFeatureGroup" memberEnd="_LMgawgVoEemrBZmpgd_POA _LMho4AVoEemrBZmpgd_POA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LMgawAVoEemrBZmpgd_POA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LMgawQVoEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_LMgawgVoEemrBZmpgd_POA" name="featuregroup" type="_Omfk4P2SEeisxOMTY1eUug" association="_LMfMoAVoEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8ZeoAVoEemrBZmpgd_POA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8p9UAVoEemrBZmpgd_POA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_LMho4AVoEemrBZmpgd_POA" name="licenseagreement" type="_bCM3oP2SEeisxOMTY1eUug" association="_LMfMoAVoEemrBZmpgd_POA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ph8IIAVoEemrBZmpgd_POA" name="VnfHasFeatureGroups" memberEnd="_ph9WQgVoEemrBZmpgd_POA _p41lMAVoEemrBZmpgd_POA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ph9WQAVoEemrBZmpgd_POA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ph9WQQVoEemrBZmpgd_POA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ph9WQgVoEemrBZmpgd_POA" name="licenseagreement" type="_Omfk4P2SEeisxOMTY1eUug" association="_ph8IIAVoEemrBZmpgd_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yPMzMAVoEemrBZmpgd_POA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yPUvAAVoEemrBZmpgd_POA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_p41lMAVoEemrBZmpgd_POA" name="vnfd" association="_ph8IIAVoEemrBZmpgd_POA">
+            <type xmi:type="uml:Class" href="Vnf.uml#_aaEZADOREeiHat9KcP8uWA"/>
+          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ZAQzEMfyEeiEtuRgTYzSUQ" name="ObjectClasses">
@@ -5002,6 +5001,12 @@ If an Entitlement Pool or License Key Group is associated with a particular Feat
 </body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_oY-pEAV1EemrBZmpgd_POA" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_83544Ad5EemP4pZRr6syIA" name="partNumber">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-QcZIAd5EemP4pZRr6syIA" name="referenceNumber">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_bCM3oP2SEeisxOMTY1eUug" name="LicenseAgreement">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_bspo0P_BEeiQG4ZZm0HgYw" name="name"/>
@@ -7582,4 +7587,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LMgawwVoEemrBZmpgd_POA" base_StructuralFeature="_LMgawgVoEemrBZmpgd_POA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LMho4QVoEemrBZmpgd_POA" base_StructuralFeature="_LMho4AVoEemrBZmpgd_POA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_p41lMQVoEemrBZmpgd_POA" base_StructuralFeature="_p41lMAVoEemrBZmpgd_POA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_86YlIAd5EemP4pZRr6syIA" base_StructuralFeature="_83544Ad5EemP4pZRr6syIA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_-QdAMAd5EemP4pZRr6syIA" base_StructuralFeature="_-QcZIAd5EemP4pZRr6syIA"/>
 </xmi:XMI>
