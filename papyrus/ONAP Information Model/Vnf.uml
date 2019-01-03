@@ -1004,6 +1004,16 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y5pgYPuOEeiYVshOvl6_ww"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y51toPuOEeiYVshOvl6_ww" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4rzi8A5rEemrJqq3q9vf6g" name="flavorExtraSpecs">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RCwpQA54EemrJqq3q9vf6g" annotatedElement="_4rzi8A5rEemrJqq3q9vf6g">
+            <body>Describe Openstack flavour expansion parameters:&#xD;
+•	CPU Model&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WHasYA5sEemrJqq3q9vf6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WHioMA5sEemrJqq3q9vf6g" value="*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_-gDvwDOREeiHat9KcP8uWA" name="VirtualComputeDesc ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_JozqAFqbEeiTzriVSbKglg" annotatedElement="_-gDvwDOREeiHat9KcP8uWA">
@@ -2049,6 +2059,27 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
             <body>Uniquely identifies a Vnf VLD.</body>
           </ownedComment>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DQCY4A57EemrJqq3q9vf6g" name="segmentationId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uPeTsA57EemrJqq3q9vf6g" annotatedElement="_DQCY4A57EemrJqq3q9vf6g">
+            <body>Network segment ID (VLAN/VxLAN ID).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xv5IQA57EemrJqq3q9vf6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xv-n0A57EemrJqq3q9vf6g" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UWbcoA58EemrJqq3q9vf6g" name="physicalNetwork">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZgZAEA58EemrJqq3q9vf6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZgnCgA58EemrJqq3q9vf6g" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gTpnIA59EemrJqq3q9vf6g" name="routerExternal">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_2PRJ4A59EemrJqq3q9vf6g" annotatedElement="_gTpnIA59EemrJqq3q9vf6g">
+            <body>Specify if a vrouter comes from an external network.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j-NNUA59EemrJqq3q9vf6g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j-T7AA59EemrJqq3q9vf6g" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DlOpkDnDEeiWMf5FLWfdLA" name="ScalingAspect">
         <ownedComment xmi:type="uml:Comment" xmi:id="_PNdQ8DnDEeiWMf5FLWfdLA" annotatedElement="_DlOpkDnDEeiWMf5FLWfdLA">
@@ -2260,13 +2291,13 @@ This could include the number of CPU cores on this logical node, a memory config
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_RayLoPuIEeiYVshOvl6_ww" name="qosname">
           <ownedComment xmi:type="uml:Comment" xmi:id="_ZP674PuIEeiYVshOvl6_ww" annotatedElement="_RayLoPuIEeiYVshOvl6_ww">
-            <body>Qos name.</body>
+            <body>Human readable Qos name.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gUB30PuIEeiYVshOvl6_ww" name="rules">
           <ownedComment xmi:type="uml:Comment" xmi:id="_yom7EPuLEeiYVshOvl6_ww" annotatedElement="_gUB30PuIEeiYVshOvl6_ww">
-            <body>Qualities of Qos, including max_kbps、max_burst_kbps 、direction.</body>
+            <body>Detailed requirements of Qos, including maximum bandwidth limitation{max_kbps}、maximum burst bandwidth limitation{max_burst_kbps} 、direction{egress|ingress}，etc.</body>
           </ownedComment>
           <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTldoPuIEeiYVshOvl6_ww"/>
@@ -3382,7 +3413,6 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tID8QfuOEeiYVshOvl6_ww" base_StructuralFeature="_tID8QPuOEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QOpoEfwqEeijjKJn7OxwuQ" base_StructuralFeature="_QOpoEPwqEeijjKJn7OxwuQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zm95I_wtEeijjKJn7OxwuQ" base_StructuralFeature="_zm95IvwtEeijjKJn7OxwuQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_znD_w_wtEeijjKJn7OxwuQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_u6wxQfxEEeijjKJn7OxwuQ" base_StructuralFeature="_u6wxQPxEEeijjKJn7OxwuQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_7qyuMfxEEeijjKJn7OxwuQ" base_StructuralFeature="_7qyuMPxEEeijjKJn7OxwuQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tMfJMfxSEeijjKJn7OxwuQ" base_StructuralFeature="_tMfJMPxSEeijjKJn7OxwuQ"/>
@@ -3393,4 +3423,8 @@ NOTE: The MANO or NFVI may not support the recommended collectionPeriod based on
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ph99UAVoEemrBZmpgd_POA">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_ph9WQgVoEemrBZmpgd_POA"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4r4bcA5rEemrJqq3q9vf6g" base_StructuralFeature="_4rzi8A5rEemrJqq3q9vf6g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DQC_8A57EemrJqq3q9vf6g" base_StructuralFeature="_DQCY4A57EemrJqq3q9vf6g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UWcDsA58EemrJqq3q9vf6g" base_StructuralFeature="_UWbcoA58EemrJqq3q9vf6g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_gTpnIQ59EemrJqq3q9vf6g" base_StructuralFeature="_gTpnIA59EemrJqq3q9vf6g"/>
 </xmi:XMI>
