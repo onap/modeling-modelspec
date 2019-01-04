@@ -412,11 +412,19 @@ coordinates or address of the building, etc.) of the PNF. The cardinality 0 is u
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgSAkP4fEeirJOiRiTRpBw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgTOsP4fEeirJOiRiTRpBw" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GkGmcA-TEemEj74AZiZr9A" name="swVersionList" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Z1OR0A-TEemEj74AZiZr9A" annotatedElement="_GkGmcA-TEemEj74AZiZr9A">
+            <body>Describes the software the PNF supports</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qq0-0A-TEemEj74AZiZr9A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrnB8A-TEemEj74AZiZr9A" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_bd53ATzFEeiWMf5FLWfdLA" annotatedElement="_bd53ADzFEeiWMf5FLWfdLA">
           <body>A PnfExtCpd is a type of Cpd and describes the characteristics of an external interface, a.k.a external CP, where to connect the PNF to a VL. &#xD;
-A PnfExtCpd inherits from the Cpd Class.</body>
+ </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_QFTUsP4gEeirJOiRiTRpBw">
           <general xmi:type="uml:Class" href="Common.uml#_rmDCkNxjEei0G_d67y10Rg"/>
@@ -540,4 +548,5 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
   <OpenModel_Profile:OpenModelAttribute xmi:id="_le538Ow3EeiDiIttoROOIw" base_StructuralFeature="_le5Q4Ow3EeiDiIttoROOIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EF5oQPGPEeiSnciiH95D-g" base_StructuralFeature="_EFTyYPGPEeiSnciiH95D-g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kgMhAP4fEeirJOiRiTRpBw" base_StructuralFeature="_kgLS4P4fEeirJOiRiTRpBw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GkSMoA-TEemEj74AZiZr9A" base_StructuralFeature="_GkGmcA-TEemEj74AZiZr9A"/>
 </xmi:XMI>
