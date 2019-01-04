@@ -4522,7 +4522,19 @@ Debug	          7	    debug-level messages&#xD;
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License">
-      <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_oaES0A64EemnO9QINOJnHg" name="LicenseDuration">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9MpJ4A64EemnO9QINOJnHg" annotatedElement="_oaES0A64EemnO9QINOJnHg">
+            <body>Units of the entitlement/license term.   Valid values: year, quarter, month, day.&#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KovioA65EemnO9QINOJnHg" name="YEAR"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MeFToA65EemnO9QINOJnHg" name="QUARTER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OGL54A65EemnO9QINOJnHg" name="MONTH"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QAd1QA65EemnO9QINOJnHg" name="DAY"/>
+        </packagedElement>
+      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Whm_UMfyEeiEtuRgTYzSUQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_CcCiwMfzEeiEtuRgTYzSUQ" name="VLMHasVnfd" memberEnd="_CcDw4sfzEeiEtuRgTYzSUQ _CcICUMfzEeiEtuRgTYzSUQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CcDw4MfzEeiEtuRgTYzSUQ" source="org.eclipse.papyrus">
@@ -4549,8 +4561,11 @@ Debug	          7	    debug-level messages&#xD;
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Sj2FEN3yEei-jeeHUjfpLA" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sj2FEd3yEei-jeeHUjfpLA" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_Sj2FEt3yEei-jeeHUjfpLA" name="licensekeyinstance" type="_D_LXMN3xEei-jeeHUjfpLA" association="_Sj1eAN3yEei-jeeHUjfpLA"/>
           <ownedEnd xmi:type="uml:Property" xmi:id="_Sj3TMN3yEei-jeeHUjfpLA" name="licensekeydesc" type="_oURIoMfyEeiEtuRgTYzSUQ" association="_Sj1eAN3yEei-jeeHUjfpLA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Sj2FEt3yEei-jeeHUjfpLA" name="licensekeyinstance" type="_D_LXMN3xEei-jeeHUjfpLA" aggregation="composite" association="_Sj1eAN3yEei-jeeHUjfpLA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_as4TcA6fEemnO9QINOJnHg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_atQt8A6fEemnO9QINOJnHg" value="*"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_Q3zaAN3yEei-jeeHUjfpLA" name="LicenseKeyPolDescMadeAvaiableAs" memberEnd="_Q30oIt3yEei-jeeHUjfpLA _Q33EYN3yEei-jeeHUjfpLA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q30oIN3yEei-jeeHUjfpLA" source="org.eclipse.papyrus">
@@ -4712,13 +4727,24 @@ Debug	          7	    debug-level messages&#xD;
         <packagedElement xmi:type="uml:Class" xmi:id="_oURIoMfyEeiEtuRgTYzSUQ" name="LicenseKeyDesc">
           <generalization xmi:type="uml:Generalization" xmi:id="_Za7pwP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jOvlIAOOEemCCMXOyOLwIw" name="keyFunction+">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_en_GAA6-EemnO9QINOJnHg" annotatedElement="_jOvlIAOOEemCCMXOyOLwIw">
+              <body>Lifecycle stage or state (e.g., Instantiation or Activation) at which the license key is applied to the software.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_kYusAAOOEemCCMXOyOLwIw" name="licenseKeyType" type="_sckiwP_BEeiQG4ZZm0HgYw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lUfwsAOOEemCCMXOyOLwIw" name="licenseKeyFile">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QVzvcAO-EemCCMXOyOLwIw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QV2ywAO-EemCCMXOyOLwIw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UcqsEA6_EemnO9QINOJnHg" name="licenseKeyType" type="_4CYPgAO3EemCCMXOyOLwIw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3zl9YA6_EemnO9QINOJnHg" annotatedElement="_UcqsEA6_EemnO9QINOJnHg">
+              <body>Valid values: &#xD;
+Universal, Unique&#xD;
+Universal - a single license key value that may be used with any number of instances of the software. &#xD;
+Unique - a unique license key value is required for each instance of the software.  &#xD;
+</body>
+            </ownedComment>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_4ZDVsMgEEeiEtuRgTYzSUQ" name="LicenceKeyPoolDesc">
@@ -4820,11 +4846,25 @@ Either no key, universal key, or unique key per instance required.  &#xD;
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RPtAUAPIEemCCMXOyOLwIw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RP2KQAPIEemCCMXOyOLwIw" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aWtAQP8WEeiZ-fXSiUXhdA" name="licenseType" type="_sckiwP_BEeiQG4ZZm0HgYw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bNYJkP8WEeiZ-fXSiUXhdA" name="licenseDuration">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aWtAQP8WEeiZ-fXSiUXhdA" name="licenseType" type="_sckiwP_BEeiQG4ZZm0HgYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CyQkAA64EemnO9QINOJnHg" annotatedElement="_aWtAQP8WEeiZ-fXSiUXhdA">
+              <body>Type of license applicable to the software product. (e.g.:  fixed-term, perpetual, trial, subscription.)  </body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bNYJkP8WEeiZ-fXSiUXhdA" name="licenseDuration" type="_oaES0A64EemnO9QINOJnHg">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_HfTh8A64EemnO9QINOJnHg" annotatedElement="_bNYJkP8WEeiZ-fXSiUXhdA">
+              <body>Valid values:&#xD;
+year, quarter, month, day.&#xD;
+Not applicable when license type is Perpetual.&#xD;
+</body>
+            </ownedComment>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_HRGL4P8XEeiZ-fXSiUXhdA" name="licenseDurationQuantification">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_blIyUA65EemnO9QINOJnHg" annotatedElement="_HRGL4P8XEeiZ-fXSiUXhdA">
+              <body>Number of years, quarters, months, or days for which the license is valid. &#xD;
+Not applicable when license type is Perpetual.&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_HqdHEP8XEeiZ-fXSiUXhdA" name="limits"/>
@@ -5030,6 +5070,12 @@ If an Entitlement Pool or License Key Group is associated with a particular Feat
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RFYeMP4LEeiao-2FtYZWRA" name="OTHER"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_sckiwP_BEeiQG4ZZm0HgYw" name="LicenseTerm">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_lpSNQA64EemnO9QINOJnHg" annotatedElement="_sckiwP_BEeiQG4ZZm0HgYw">
+            <body>Valid values:&#xD;
+year, quarter, month, day.&#xD;
+Not applicable when license type is Perpetual.&#xD;
+</body>
+          </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wi434P_BEeiQG4ZZm0HgYw" name="FIXED_TERM"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ydBCQP_BEeiQG4ZZm0HgYw" name="PERPETUAL"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2ICigP_BEeiQG4ZZm0HgYw" name="UNLIMITED"/>
@@ -5066,6 +5112,11 @@ If an Entitlement Pool or License Key Group is associated with a particular Feat
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_710dYNMOEeig45NPS8-MSw" name="Policy">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ahnBMBBYEemHjtkpPBz29Q" annotatedElement="_710dYNMOEeig45NPS8-MSw">
+        <body>Presently the scope of policy is imperitive only (not declaritive or intent).&#xD;
+&#xD;
+Approach will be pragmatic in nature, establishing a model that meets the Policy team's near term needs, and then evolve from there.</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Package" xmi:id="_D-ZuENMPEeig45NPS8-MSw" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_Hp5S8NMQEeig45NPS8-MSw" name="PolicyEventTriggersPolicyRule" memberEnd="_Hp8WQNMQEeig45NPS8-MSw _Hp89UNMQEeig45NPS8-MSw">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hp7IINMQEeig45NPS8-MSw" source="org.eclipse.papyrus">
@@ -5159,11 +5210,12 @@ If an Entitlement Pool or License Key Group is associated with a particular Feat
       <packagedElement xmi:type="uml:Package" xmi:id="_GYkqcNMPEeig45NPS8-MSw" name="PolicyObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_trl94NMPEeig45NPS8-MSw" name="PolicyAction" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Mef6ANb4EeitAsFAkChUcg" annotatedElement="_trl94NMPEeig45NPS8-MSw">
-            <body>This is an abstract base class that represents how to form the action clause of a PolicyRule. This consists of a single occurrence of a PolicyStatement, which is of the form:&#xD;
+            <body>This is an abstract base class that represents how to form the action clause of a PolicyRule.&#xD;
 &#xD;
- {variable, operator, value}&#xD;
+Certain actions will take place if the condition clause is TRUE, others if the condition clause is FALSE.&#xD;
 &#xD;
-Policy actions have the semantics of &quot;SET variable to value&quot;. There are two types of actions:</body>
+&#xD;
+</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_AcOXwOztEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_yn_zEO0REei7-e9MrPJW7Q" name="keyValuePair">
@@ -5176,8 +5228,16 @@ Policy actions have the semantics of &quot;SET variable to value&quot;. There ar
             <body>A PolicyEvent is an occurrence of an important event, and can be used to trigger the evaluation of a PolicyCondition or PolicyCondition clause in a PolicyRule. </body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_u6kmAO2IEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_x5sNEO2JEei7-e9MrPJW7Q" name="eventOrigin"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_yy6UEO2JEei7-e9MrPJW7Q" name="eventDomain"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_x5sNEO2JEei7-e9MrPJW7Q" name="eventOrigin">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wn9X0BBZEemHjtkpPBz29Q" annotatedElement="_x5sNEO2JEei7-e9MrPJW7Q">
+              <body>eventOrigin provides information on the entity that generates the event (DCAE, Vnf, monitors).</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yy6UEO2JEei7-e9MrPJW7Q" name="eventDomain">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_GbFs8BBaEemHjtkpPBz29Q" annotatedElement="_yy6UEO2JEei7-e9MrPJW7Q">
+              <body>The environment or entity in which the event occurred (Eg - Vnf, switch, eNodeB, or data center).</body>
+            </ownedComment>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_jUQ9sNMPEeig45NPS8-MSw" name="PolicyGroup">
           <ownedComment xmi:type="uml:Comment" xmi:id="_nM_NMNhpEeiRnMGpBj3Tnw" annotatedElement="_jUQ9sNMPEeig45NPS8-MSw">
@@ -5464,6 +5524,10 @@ Notes: Not present in the ITU or CIM specs.</body>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_VwTgwOzqEei7-e9MrPJW7Q" name="PolicyEventComposite">
           <generalization xmi:type="uml:Generalization" xmi:id="_nypE0OzqEei7-e9MrPJW7Q" general="_otly0NMPEeig45NPS8-MSw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VDruABBaEemHjtkpPBz29Q" name="_policyevent" type="_otly0NMPEeig45NPS8-MSw" aggregation="composite" association="_VC8uMBBaEemHjtkpPBz29Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VDsVEBBaEemHjtkpPBz29Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VDs8IBBaEemHjtkpPBz29Q" value="*"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_bPkT4OzsEei7-e9MrPJW7Q" name="PolicyStatement">
           <generalization xmi:type="uml:Generalization" xmi:id="__vra0OzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
@@ -5475,6 +5539,17 @@ Notes: Not present in the ITU or CIM specs.</body>
           <generalization xmi:type="uml:Generalization" xmi:id="_kyVWsO0EEei7-e9MrPJW7Q" general="_vYK0cNMPEeig45NPS8-MSw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_ZqOtwOzsEei7-e9MrPJW7Q" name="PolicyCondition">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Wd_MEA-aEemJKtuCXLlg4w" annotatedElement="_ZqOtwOzsEei7-e9MrPJW7Q">
+            <body>This is an abstract base class that represents how to form the condition clause of a PolicyRule. This class can be used to represent rule-specific or reusable policy conditions.&#xD;
+&#xD;
+Policy conditions are of the form:&#xD;
+&#xD;
+ {variable, operator, value}&#xD;
+&#xD;
+where the operator is usually the MATCH operator, but could be another type (e.g., compare) of operator. This gives the semantics of &quot;IF the condition is TRUE (or FALSE)&quot;.&#xD;
+&#xD;
+The subclasses of PolicyCondition, along with its recursive aggregation, enable simple and compound (e.g., nested) PolicyConditions to be supported by the same structure.</body>
+          </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_-6jJoOzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_X0O1cOzsEei7-e9MrPJW7Q" name="Policy" isAbstract="true">
@@ -5559,6 +5634,12 @@ Not present in the ITU or CIM specs. &#xD;
         <ownedComment xmi:type="uml:Comment" xmi:id="_6KVDAO2IEei7-e9MrPJW7Q">
           <body>Rooted PolicyEvent</body>
         </ownedComment>
+        <packagedElement xmi:type="uml:Association" xmi:id="_VC8uMBBaEemHjtkpPBz29Q" name="CompositeEventHasEvents" memberEnd="_VDruABBaEemHjtkpPBz29Q _VDs8IRBaEemHjtkpPBz29Q">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VDqf4BBaEemHjtkpPBz29Q" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VDrG8BBaEemHjtkpPBz29Q" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_VDs8IRBaEemHjtkpPBz29Q" name="policyeventcomposite" type="_VwTgwOzqEei7-e9MrPJW7Q" association="_VC8uMBBaEemHjtkpPBz29Q"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_1t6IcN3ZEei-jeeHUjfpLA" name="Network">
@@ -7562,7 +7643,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LybrsAOOEemCCMXOyOLwIw" base_StructuralFeature="_LybEoAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OFmoMQOOEemCCMXOyOLwIw" base_StructuralFeature="_OFmoMAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jOwMMAOOEemCCMXOyOLwIw" base_StructuralFeature="_jOvlIAOOEemCCMXOyOLwIw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_kYvTEAOOEemCCMXOyOLwIw" base_StructuralFeature="_kYusAAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lUfwsQOOEemCCMXOyOLwIw" base_StructuralFeature="_lUfwsAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:Experimental xmi:id="_NlSS8AOaEemCCMXOyOLwIw" base_Element="_4ZDVsMgEEeiEtuRgTYzSUQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1cJK0ARsEemo7ZzqT33fqQ" base_StructuralFeature="_1cIjwARsEemo7ZzqT33fqQ"/>
@@ -7589,4 +7669,7 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_p41lMQVoEemrBZmpgd_POA" base_StructuralFeature="_p41lMAVoEemrBZmpgd_POA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_86YlIAd5EemP4pZRr6syIA" base_StructuralFeature="_83544Ad5EemP4pZRr6syIA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-QdAMAd5EemP4pZRr6syIA" base_StructuralFeature="_-QcZIAd5EemP4pZRr6syIA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UcqsEQ6_EemnO9QINOJnHg" base_StructuralFeature="_UcqsEA6_EemnO9QINOJnHg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VDruARBaEemHjtkpPBz29Q" base_StructuralFeature="_VDruABBaEemHjtkpPBz29Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VDs8IhBaEemHjtkpPBz29Q" base_StructuralFeature="_VDs8IRBaEemHjtkpPBz29Q"/>
 </xmi:XMI>
