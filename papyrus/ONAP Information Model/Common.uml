@@ -6682,6 +6682,49 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Djzu4BKsEemBRrIw3NBuCA" name="Core">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GDoAQBKsEemBRrIw3NBuCA" name="Diagrams">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_MeYnwBKtEemBRrIw3NBuCA">
+          <body>Do we have UnManaged Entities?</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Jnr84BKsEemBRrIw3NBuCA" name="CoreObjectClasses">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Q0cegBKsEemBRrIw3NBuCA" name="RootEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UhYDQBKsEemBRrIw3NBuCA" name="Entity">
+          <generalization xmi:type="uml:Generalization" xmi:id="_-WccsBKsEemBRrIw3NBuCA" general="_Q0cegBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XVtzIBKsEemBRrIw3NBuCA" name="ManagedEntity">
+          <generalization xmi:type="uml:Generalization" xmi:id="_CFSF8BKtEemBRrIw3NBuCA" general="_UhYDQBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z46IoBKsEemBRrIw3NBuCA" name="UnManagedEntity">
+          <generalization xmi:type="uml:Generalization" xmi:id="_ImLnIBKtEemBRrIw3NBuCA" general="_UhYDQBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dcrxYBKsEemBRrIw3NBuCA" name="Party">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Y5YI0BKtEemBRrIw3NBuCA" general="_UhYDQBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hp8cABKsEemBRrIw3NBuCA" name="BusinessObject">
+          <generalization xmi:type="uml:Generalization" xmi:id="_euVKABKtEemBRrIw3NBuCA" general="_UhYDQBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lx-BUBKsEemBRrIw3NBuCA" name="Order">
+          <generalization xmi:type="uml:Generalization" xmi:id="_kG80gBKtEemBRrIw3NBuCA" general="_hp8cABKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pTSzABKsEemBRrIw3NBuCA" name="Policy">
+          <generalization xmi:type="uml:Generalization" xmi:id="_oQ2pIBKtEemBRrIw3NBuCA" general="_XVtzIBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_saplgBKsEemBRrIw3NBuCA" name="Product">
+          <generalization xmi:type="uml:Generalization" xmi:id="_snuiwBKtEemBRrIw3NBuCA" general="_XVtzIBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vB1DIBKsEemBRrIw3NBuCA" name="Service">
+          <generalization xmi:type="uml:Generalization" xmi:id="_xykP8BKtEemBRrIw3NBuCA" general="_XVtzIBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_y5FokBKsEemBRrIw3NBuCA" name="Resource">
+          <generalization xmi:type="uml:Generalization" xmi:id="_2B_dwBKtEemBRrIw3NBuCA" general="_XVtzIBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_11GtwBKsEemBRrIw3NBuCA" name="Descriptor">
+          <generalization xmi:type="uml:Generalization" xmi:id="_BuResBKuEemBRrIw3NBuCA" general="_XVtzIBKsEemBRrIw3NBuCA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YPRQKVxEeikF6xsfT18UA" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YPRQaVxEeikF6xsfT18UA" key="Version" value="0.2.14"/>
@@ -7672,4 +7715,16 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UcqsEQ6_EemnO9QINOJnHg" base_StructuralFeature="_UcqsEA6_EemnO9QINOJnHg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VDruARBaEemHjtkpPBz29Q" base_StructuralFeature="_VDruABBaEemHjtkpPBz29Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VDs8IhBaEemHjtkpPBz29Q" base_StructuralFeature="_VDs8IRBaEemHjtkpPBz29Q"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Q0fh0BKsEemBRrIw3NBuCA" base_Class="_Q0cegBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_UhYqUBKsEemBRrIw3NBuCA" base_Class="_UhYDQBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_XVuaMBKsEemBRrIw3NBuCA" base_Class="_XVtzIBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Z46vsBKsEemBRrIw3NBuCA" base_Class="_Z46IoBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_dcrxYRKsEemBRrIw3NBuCA" base_Class="_dcrxYBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_hp9DEBKsEemBRrIw3NBuCA" base_Class="_hp8cABKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_lx_PcBKsEemBRrIw3NBuCA" base_Class="_lx-BUBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_pTTaEBKsEemBRrIw3NBuCA" base_Class="_pTSzABKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_saqMkBKsEemBRrIw3NBuCA" base_Class="_saplgBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_vB2RQBKsEemBRrIw3NBuCA" base_Class="_vB1DIBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_y5G2sBKsEemBRrIw3NBuCA" base_Class="_y5FokBKsEemBRrIw3NBuCA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_11HU0BKsEemBRrIw3NBuCA" base_Class="_11GtwBKsEemBRrIw3NBuCA"/>
 </xmi:XMI>
