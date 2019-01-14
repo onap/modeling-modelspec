@@ -5780,11 +5780,6 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tw79vT2pEeiu6I5JfRTxxQ" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_VtzSoESyEeiVGPeZpaYNtQ" name="NetworkFunction" isAbstract="true">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_VtzSoUSyEeiVGPeZpaYNtQ" annotatedElement="_VtzSoESyEeiVGPeZpaYNtQ">
-            <body>A functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour. NOTE: In practical terms, a Network Function is today often a network node or physical appliance</body>
-          </ownedComment>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_Tw5PIES0EeiVGPeZpaYNtQ" name="VirtualLink" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_ZmFg4ES0EeiVGPeZpaYNtQ" annotatedElement="_Tw5PIES0EeiVGPeZpaYNtQ">
             <body>A set of connection points along with the connectivity relationship between them and any associated target performance metrics (e.g. bandwidth, latency, QoS). NOTE: The Virtual Link can interconnect two or more entities (VNF components, VNFs, or PNFs) and it is supported by a Virtual Network (VN) of the NFVI.</body>
@@ -6088,39 +6083,6 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
         <packagedElement xmi:type="uml:Class" xmi:id="_rmDCkNxjEei0G_d67y10Rg" name="ExtCpd">
           <generalization xmi:type="uml:Generalization" xmi:id="_haUa8PS4EeiGPpKdxajt7g" general="_7pUNEDa7EeivvI-m1BaAbA"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="__ez0YNxxEei0G_d67y10Rg" name="NfDf"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_KEN2IN0dEeiRzJu73dYz2w" name="NfIndicator">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_tkisUN0jEeiRzJu73dYz2w" annotatedElement="_KEN2IN0dEeiRzJu73dYz2w">
-            <body>The NfIndicator class defines the indicator the NF supports</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_yYBw0N0gEeiRzJu73dYz2w" name="id+" type="_AuYtcDkBEeiWMf5FLWfdLA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_zAJgwN0gEeiRzJu73dYz2w" name="name">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_CmW5QN0kEeiRzJu73dYz2w" annotatedElement="_zAJgwN0gEeiRzJu73dYz2w">
-              <body>The human readable name of the NfIndicator.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-g1OUN0jEeiRzJu73dYz2w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-g9xMN0jEeiRzJu73dYz2w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBhwoN0jEeiRzJu73dYz2w" name="indicatorValue">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_Ex48sN0kEeiRzJu73dYz2w" annotatedElement="_FBhwoN0jEeiRzJu73dYz2w">
-              <body>Defines the allowed values or value ranges of this indicator.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__80rMN0jEeiRzJu73dYz2w" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__848oN0jEeiRzJu73dYz2w" value="*"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fox94N0jEeiRzJu73dYz2w" name="source" type="_LjDHcN0kEeiRzJu73dYz2w">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_H9of8N0kEeiRzJu73dYz2w" annotatedElement="_Fox94N0jEeiRzJu73dYz2w">
-              <body>Describe the source of the indicator. The possible values are:&#xD;
-• VNF,&#xD;
-• EM,&#xD;
-• Both.&#xD;
-This tells the consumer where to send the subscription request.&#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_AtzKQN0mEeiRzJu73dYz2w" name="PNFDevice"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_yyN_EOEpEeidEfhiAaiFzQ" name="InternalNetworkFunctionDesc"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_w3xrYOQ5Eei2Ub3VuxG4ag" name="PlatformDescriptor (InternalModel)" isAbstract="true">
@@ -6278,6 +6240,68 @@ NOTE: This allows to provide one or more   localization languages to support sel
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_onMTkPGSEei7s9ZrY0W7MQ" name="PlatformVLDescriptor">
           <generalization xmi:type="uml:Generalization" xmi:id="_isi-UPM4EeiKa_-nH9J3Lg" general="_w3xrYOQ5Eei2Ub3VuxG4ag"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_45bWUDzEEeiWMf5FLWfdLA" name="VirtualLinkProfile">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_45bWUTzEEeiWMf5FLWfdLA" annotatedElement="_45bWUDzEEeiWMf5FLWfdLA">
+            <body>The VirtualLinkProfile class specifies a profile for instantiating VLs of a particular NS DF according to a specific VLD and VL DF. </body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWUjzEEeiWMf5FLWfdLA" name="virtualLinkProfileId" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWUzzEEeiWMf5FLWfdLA" annotatedElement="_45bWUjzEEeiWMf5FLWfdLA">
+              <body>Uniquely identifies this VirtualLinkProfile class.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWVDzEEeiWMf5FLWfdLA" name="flavourId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWVTzEEeiWMf5FLWfdLA" annotatedElement="_45bWVDzEEeiWMf5FLWfdLA">
+              <body>Identifies a flavour within the VLD.</body>
+            </ownedComment>
+            <type xmi:type="uml:DataType" href="Ns.uml#_kEZBoTzEEeiWMf5FLWfdLA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWVjzEEeiWMf5FLWfdLA" name="localAffinityOrAntiAffinityRule " type="_RVZi0D2-Eeiu6I5JfRTxxQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWVzzEEeiWMf5FLWfdLA" annotatedElement="_45bWVjzEEeiWMf5FLWfdLA">
+              <body>Specifies affinity and anti-affinity rules applicable between VLs instantiated from the referenced VLD. </body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45bWWDzEEeiWMf5FLWfdLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45bWWTzEEeiWMf5FLWfdLA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWWjzEEeiWMf5FLWfdLA" name="affinityOrAntiAffinityGroupId" type="_0AbUYDnBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWWzzEEeiWMf5FLWfdLA" annotatedElement="_45bWWjzEEeiWMf5FLWfdLA">
+              <body>Identifies an affinity or anti-affinity group the VLs instantiated according to the VlProfile belong to. &#xD;
+NOTE : 	Each identifier references an affinity or anti-affinity group which expresses affinity or anti-affinity relationship between the VL(s) using this VirtualLinkProfile and the VL(s) using other VirtualLinkProfile(s) in the same group.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45bWXDzEEeiWMf5FLWfdLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45bWXTzEEeiWMf5FLWfdLA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWXjzEEeiWMf5FLWfdLA" name="maxBitrateRequirements" type="_nPNHsD2-Eeiu6I5JfRTxxQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWXzzEEeiWMf5FLWfdLA" annotatedElement="_45bWXjzEEeiWMf5FLWfdLA">
+              <body>Specifies the maximum bitrate requirements for a VL instantiated according to this profile. &#xD;
+NOTE: 	These attributes are used to control scaling boundaries.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWYDzEEeiWMf5FLWfdLA" name="minBitrateRequirements" type="_nPNHsD2-Eeiu6I5JfRTxxQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_45bWYTzEEeiWMf5FLWfdLA" annotatedElement="_45bWYDzEEeiWMf5FLWfdLA">
+              <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
+NOTE: 	These attributes are used to control scaling boundaries.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PAQXwj27Eeiu6I5JfRTxxQ" name="_nsVirtualLinkDesc">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pFTMgEPmEeiVGPeZpaYNtQ" annotatedElement="_PAQXwj27Eeiu6I5JfRTxxQ">
+              <body>Uniquely references a VLD.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="Ns.uml#_13WFYDzEEeiWMf5FLWfdLA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PASM8D27Eeiu6I5JfRTxxQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PASM8T27Eeiu6I5JfRTxxQ" value="1"/>
+            <association xmi:type="uml:Association" href="Service.uml#_PAOikD27Eeiu6I5JfRTxxQ"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kEZB9jzEEeiWMf5FLWfdLA" name="CpdPool">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_kEZB9zzEEeiWMf5FLWfdLA" annotatedElement="_kEZB9jzEEeiWMf5FLWfdLA">
+            <body>The CpdPool class specifies a pool of descriptors of connection points and service access points.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZB-DzEEeiWMf5FLWfdLA" name="cpdPoolId" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_kEZB-TzEEeiWMf5FLWfdLA" annotatedElement="_kEZB-DzEEeiWMf5FLWfdLA">
+              <body>Identifier of this CpdPool class. It identifies a pool of descriptors of connection points and NS SAPs.</body>
+            </ownedComment>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
@@ -6646,14 +6670,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_LjDHcN0kEeiRzJu73dYz2w" name="NfIndicatorSource">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Q6jXoN0kEeiRzJu73dYz2w" annotatedElement="_LjDHcN0kEeiRzJu73dYz2w">
-            <body>Describe the source of an indicator.</body>
-          </ownedComment>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SrLAsN0kEeiRzJu73dYz2w" name="VNF"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UEbSoN0kEeiRzJu73dYz2w" name="EM"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VaP2EN0kEeiRzJu73dYz2w" name="BOTH"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qmf1kDnFEeiWMf5FLWfdLA" name="NetworkType">
           <ownedComment xmi:type="uml:Comment" xmi:id="_VN9I4DnFEeiWMf5FLWfdLA" annotatedElement="_Qmf1kDnFEeiWMf5FLWfdLA">
             <body>Type of network supported.</body>
@@ -6829,7 +6845,9 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RVaJ4D2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_RVZi0z2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNHuD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHsj2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNuwD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHtD2-Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_Vt-RwESyEeiVGPeZpaYNtQ" base_Class="_VtzSoESyEeiVGPeZpaYNtQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Vt-RwESyEeiVGPeZpaYNtQ">
+    <base_Class xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
+  </OpenModel_Profile:OpenModelClass>
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw52MES0EeiVGPeZpaYNtQ" base_Class="_Tw5PIES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_il0cAUS0EeiVGPeZpaYNtQ" base_Class="_il0cAES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vV3AAES0EeiVGPeZpaYNtQ" base_StructuralFeature="_vV1x4kS0EeiVGPeZpaYNtQ"/>
@@ -7143,7 +7161,9 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E2dKsacNEeiFp-jDq2Hw-A" base_StructuralFeature="_E2dKsKcNEeiFp-jDq2Hw-A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FgDhUacNEeiFp-jDq2Hw-A" base_StructuralFeature="_FgDhUKcNEeiFp-jDq2Hw-A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_GHjmMacNEeiFp-jDq2Hw-A" base_StructuralFeature="_GHjmMKcNEeiFp-jDq2Hw-A"/>
-  <OpenModel_Profile:Preliminary xmi:id="_YOFpUKezEeixw5Ke5QD1pQ" base_Element="_VtzSoESyEeiVGPeZpaYNtQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_YOFpUKezEeixw5Ke5QD1pQ">
+    <base_Element xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
+  </OpenModel_Profile:Preliminary>
   <OpenModel_Profile:Preliminary xmi:id="_i11R0Ke4Eeixw5Ke5QD1pQ" base_Element="_Tw5PIES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_nyvQsKe4Eeixw5Ke5QD1pQ" base_Element="_il0cAES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_r54FMKe4Eeixw5Ke5QD1pQ" base_Element="_8naVoES0EeiVGPeZpaYNtQ"/>
@@ -7576,15 +7596,31 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4SOpAdxdEei0G_d67y10Rg" base_StructuralFeature="_4SOpANxdEei0G_d67y10Rg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4o8f4dxdEei0G_d67y10Rg" base_StructuralFeature="_4o8f4NxdEei0G_d67y10Rg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_rmDpoNxjEei0G_d67y10Rg" base_Class="_rmDCkNxjEei0G_d67y10Rg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="__e0bcNxxEei0G_d67y10Rg" base_Class="__ez0YNxxEei0G_d67y10Rg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_KEN2Id0dEeiRzJu73dYz2w" base_Class="_KEN2IN0dEeiRzJu73dYz2w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_yYCX4N0gEeiRzJu73dYz2w" base_StructuralFeature="_yYBw0N0gEeiRzJu73dYz2w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_zAJgwd0gEeiRzJu73dYz2w" base_StructuralFeature="_zAJgwN0gEeiRzJu73dYz2w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_FBiXsN0jEeiRzJu73dYz2w" base_StructuralFeature="_FBhwoN0jEeiRzJu73dYz2w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Fox94d0jEeiRzJu73dYz2w" base_StructuralFeature="_Fox94N0jEeiRzJu73dYz2w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="__e0bcNxxEei0G_d67y10Rg">
+    <base_Class xmi:type="uml:Class" href="Nf.uml#__ez0YNxxEei0G_d67y10Rg"/>
+  </OpenModel_Profile:OpenModelClass>
+  <OpenModel_Profile:OpenModelClass xmi:id="_KEN2Id0dEeiRzJu73dYz2w">
+    <base_Class xmi:type="uml:Class" href="Nf.uml#_KEN2IN0dEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:OpenModelClass>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yYCX4N0gEeiRzJu73dYz2w">
+    <base_StructuralFeature xmi:type="uml:Property" href="Nf.uml#_yYBw0N0gEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zAJgwd0gEeiRzJu73dYz2w">
+    <base_StructuralFeature xmi:type="uml:Property" href="Nf.uml#_zAJgwN0gEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_FBiXsN0jEeiRzJu73dYz2w">
+    <base_StructuralFeature xmi:type="uml:Property" href="Nf.uml#_FBhwoN0jEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Fox94d0jEeiRzJu73dYz2w">
+    <base_StructuralFeature xmi:type="uml:Property" href="Nf.uml#_Fox94N0jEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_AtzxUN0mEeiRzJu73dYz2w" base_Class="_AtzKQN0mEeiRzJu73dYz2w"/>
-  <OpenModel_Profile:Experimental xmi:id="_ezw4QN0mEeiRzJu73dYz2w" base_Element="__ez0YNxxEei0G_d67y10Rg"/>
-  <OpenModel_Profile:Experimental xmi:id="_hsh1IN0mEeiRzJu73dYz2w" base_Element="_KEN2IN0dEeiRzJu73dYz2w"/>
+  <OpenModel_Profile:Experimental xmi:id="_ezw4QN0mEeiRzJu73dYz2w">
+    <base_Element xmi:type="uml:Class" href="Nf.uml#__ez0YNxxEei0G_d67y10Rg"/>
+  </OpenModel_Profile:Experimental>
+  <OpenModel_Profile:Experimental xmi:id="_hsh1IN0mEeiRzJu73dYz2w">
+    <base_Element xmi:type="uml:Class" href="Nf.uml#_KEN2IN0dEeiRzJu73dYz2w"/>
+  </OpenModel_Profile:Experimental>
   <OpenModel_Profile:Experimental xmi:id="_jrteoN0mEeiRzJu73dYz2w" base_Element="_AtzKQN0mEeiRzJu73dYz2w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_EFleAN3tEei-jeeHUjfpLA" base_Class="_EFk28N3tEei-jeeHUjfpLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Jg_hUd3uEei-jeeHUjfpLA" base_StructuralFeature="_Jg_hUN3uEei-jeeHUjfpLA"/>
