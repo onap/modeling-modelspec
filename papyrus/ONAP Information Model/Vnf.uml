@@ -608,6 +608,10 @@ This will probably need to move to common</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j1pWMRx-Eemit6R65X1VNQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_1DEVYByHEemVVe_wt-ZCGw" name="NetworkType">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__oFMQByHEemVVe_wt-ZCGw" name="VLAN"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CP_psByIEemVVe_wt-ZCGw" name="VXLAN"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MjOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -3702,4 +3706,7 @@ NOTE 3: 	When the corresponding NS level is used in the context of NS scaling, t
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gKzRkRx9Eemit6R65X1VNQ" base_StructuralFeature="_gKzRkBx9Eemit6R65X1VNQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_geJEURx9Eemit6R65X1VNQ" base_StructuralFeature="_geJEUBx9Eemit6R65X1VNQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gy064Rx9Eemit6R65X1VNQ" base_StructuralFeature="_gy064Bx9Eemit6R65X1VNQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_zaVAgByIEemVVe_wt-ZCGw" base_Element="__oFMQByHEemVVe_wt-ZCGw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_1AVVAByIEemVVe_wt-ZCGw" base_Element="_1DEVYByHEemVVe_wt-ZCGw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_5INwYByIEemVVe_wt-ZCGw" base_Element="_CP_psByIEemVVe_wt-ZCGw"/>
 </xmi:XMI>
