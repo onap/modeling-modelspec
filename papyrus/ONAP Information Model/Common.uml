@@ -5753,8 +5753,15 @@ White - Not Ready for Review</body>
         <ownedComment xmi:type="uml:Comment" xmi:id="_y6ZfQPgVEeiEqKXVVPCm1Q">
           <body>Runtime</body>
         </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_DW7PMB8-EemJTaeYhZuDRA">
+          <body>IpAddress type?</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_5oWYMB_ZEemC0a79AbY09g">
+          <body>Kevin to update L2ProtocolData and L3ProtocolData with material on WIKI, and association updates to Vnf objects by end of week.   Kevin will also send gendoc output for Chuyi to review.</body>
+        </ownedComment>
         <packagedElement xmi:type="uml:Class" xmi:id="_kl8eAPM6EeiKa_-nH9J3Lg" name="Location"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_lZpZgPGSEei7s9ZrY0W7MQ" name="PlatformCpDescriptor"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QXzoYB86EemJTaeYhZuDRA" name="L3ProtocolData"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_OFje8DOHEei5Af8DcjrhIQ" name="NetworkObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_Tw79sD2pEeiu6I5JfRTxxQ" name="VirtualLinkDesc" isAbstract="true">
@@ -6682,6 +6689,183 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_W5tgEDnFEeiWMf5FLWfdLA" name="VLAN"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Z6H9EDnFEeiWMf5FLWfdLA" name="VXLAN"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zxlckB8-EemJTaeYhZuDRA" name="L2ProtocolData">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TC2ncB88EemJTaeYhZuDRA">
+            <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MiWAcB8_EemJTaeYhZuDRA" annotatedElement="_zxlckB8-EemJTaeYhZuDRA">
+            <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PJJAYB87EemJTaeYhZuDRA" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cXsFUB87EemJTaeYhZuDRA" annotatedElement="_PJJAYB87EemJTaeYhZuDRA">
+              <body>Network name associated with this L2&#xD;
+protocol.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YlMEEB87EemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YlYRUB87EemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PuRtwB87EemJTaeYhZuDRA" name="networkType" type="_6TxekB87EemJTaeYhZuDRA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jdtFwB87EemJTaeYhZuDRA" annotatedElement="_PuRtwB87EemJTaeYhZuDRA">
+              <body>Specifies the network type for this L2&#xD;
+protocol. Possible values: FLAT, VLAN,&#xD;
+VXLAN, GRE.&#xD;
+&#xD;
+Note:  If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eu2J8B87EemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eu-s0B87EemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qe_ZAB87EemJTaeYhZuDRA" name="vlanTransparent">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_s1sv4B87EemJTaeYhZuDRA" annotatedElement="_Qe_ZAB87EemJTaeYhZuDRA">
+              <body>Specifies whether to support VLAN&#xD;
+transparency for this L2 protocol or not.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nWswkB87EemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nWxpEB87EemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ej13AB8_EemJTaeYhZuDRA" name="mtu">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_kENvUB8_EemJTaeYhZuDRA" annotatedElement="_ej13AB8_EemJTaeYhZuDRA">
+              <body>Specifies the maximum transmission unit&#xD;
+(MTU) value for this L2 protocol.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_6TxekB87EemJTaeYhZuDRA" name="NetworkTypes">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Mss9sB88EemJTaeYhZuDRA" annotatedElement="_6TxekB87EemJTaeYhZuDRA">
+            <body>Specifies the network type for this L2&#xD;
+protocol. Possible values: FLAT, VLAN,&#xD;
+VXLAN, GRE.</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-HirIB87EemJTaeYhZuDRA" name="FLAT"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__jymsB87EemJTaeYhZuDRA" name="VLAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BypD4B88EemJTaeYhZuDRA" name="VXLAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DSshYB88EemJTaeYhZuDRA" name="GRE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_4DfhMB8_EemJTaeYhZuDRA" name="L3ProtocolData">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Wbv14B88EemJTaeYhZuDRA" annotatedElement="_QXzoYB86EemJTaeYhZuDRA">
+            <body>The L3ProtocolData information element describes the L3 protocol related data for a virtual link.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RnrJQB9EEemJTaeYhZuDRA" annotatedElement="_4DfhMB8_EemJTaeYhZuDRA">
+            <body>The L3ProtocolData information element describes the L3 protocol related data for a virtual link.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z5XzUB88EemJTaeYhZuDRA" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1DOVgB88EemJTaeYhZuDRA" annotatedElement="_Z5XzUB88EemJTaeYhZuDRA">
+              <body>Network name associated with this L3&#xD;
+protocol.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kPLUEB89EemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kPQzoB89EemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XWjUcB9AEemJTaeYhZuDRA" name="ipVersion" type="_TTf2EB89EemJTaeYhZuDRA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yKAI0B9AEemJTaeYhZuDRA" annotatedElement="_XWjUcB9AEemJTaeYhZuDRA">
+              <body>Specifies IP version of this L3 protocol.&#xD;
+Value:&#xD;
+• IPV4.&#xD;
+• IPV6.&#xD;
+&#xD;
+NOTE : The value of the ipVersion attribute shall be consistent with the value of the layerProtocol attribute of the&#xD;
+ConnectivityType IE .</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YJLEMB9AEemJTaeYhZuDRA" name="cidr">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3ORT8B9AEemJTaeYhZuDRA" annotatedElement="_YJLEMB9AEemJTaeYhZuDRA">
+              <body>Specifies the CIDR (Classless Inter-&#xD;
+Domain Routing) of this L3 protocol.&#xD;
+&#xD;
+NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Y2KGAB9AEemJTaeYhZuDRA" name="ipAllocationPools">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5IzG8B9AEemJTaeYhZuDRA" annotatedElement="_Y2KGAB9AEemJTaeYhZuDRA">
+              <body>Specifies the allocation pools&#xD;
+with start and end IP addresses for this L3&#xD;
+protocol.&#xD;
+&#xD;
+NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MfufYB9BEemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mf7TsB9BEemJTaeYhZuDRA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZdOtEB9AEemJTaeYhZuDRA" name="gatewayIp">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7PtwIB9AEemJTaeYhZuDRA" annotatedElement="_ZdOtEB9AEemJTaeYhZuDRA">
+              <body>Specifies the gateway IP address for this&#xD;
+L3 protocol.&#xD;
+&#xD;
+NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OiVQUB9BEemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oiav4B9BEemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aMwFgB9AEemJTaeYhZuDRA" name="dhcpEnabled">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9SCNMB9AEemJTaeYhZuDRA" annotatedElement="_aMwFgB9AEemJTaeYhZuDRA">
+              <body>Indicates whether DHCP (Dynamic Host&#xD;
+Configuration Protocol) is enabled or&#xD;
+disabled for this L3 protocol.&#xD;
+&#xD;
+NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_zT4B9BEemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_2XMB9BEemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a3GDAB9AEemJTaeYhZuDRA" name="ipv6AddressMode" type="_I79lEB8-EemJTaeYhZuDRA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__YMBYB9AEemJTaeYhZuDRA" annotatedElement="_a3GDAB9AEemJTaeYhZuDRA">
+              <body>Specifies IPv6 address mode. Possible&#xD;
+values:&#xD;
+• SLAAC.&#xD;
+• DHCPV6-STATEFUL.&#xD;
+• DHCPV6-STATELESS.&#xD;
+May be present when the value of the&#xD;
+ipVersion attribute is &quot;IPV6&quot; and shall be&#xD;
+absent otherwise.&#xD;
+&#xD;
+NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
+is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
+overridden at run-time.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rd8s4B9BEemJTaeYhZuDRA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ReA-UB9BEemJTaeYhZuDRA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_I79lEB8-EemJTaeYhZuDRA" name="IpV6AdressMode">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OQxtoB8-EemJTaeYhZuDRA" annotatedElement="_I79lEB8-EemJTaeYhZuDRA">
+            <body>Specifies IPv6 address mode. Possible&#xD;
+values:&#xD;
+• SLAAC.&#xD;
+• DHCPV6-STATEFUL.&#xD;
+• DHCPV6-STATELESS.&#xD;
+May be present when the value of the&#xD;
+ipVersion attribute is &quot;IPV6&quot; and shall be&#xD;
+absent otherwise.</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QWVE4B8-EemJTaeYhZuDRA" name="SLAAC"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UkypYB8-EemJTaeYhZuDRA" name="DHCPV6_STATEFUL"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_W1oDkB8-EemJTaeYhZuDRA" name="DHCPV6_STATELESS"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_TTf2EB89EemJTaeYhZuDRA" name="IpVersion">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_at05oB89EemJTaeYhZuDRA" annotatedElement="_TTf2EB89EemJTaeYhZuDRA">
+            <body>Specifies IP version of this L3 protocol.&#xD;
+Value:&#xD;
+• IPV4.&#xD;
+• IPV6.</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XAJG8B89EemJTaeYhZuDRA" name="IPV4"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YHaRAB89EemJTaeYhZuDRA" name="IPV6"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -8039,4 +8223,22 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TEpw4RqfEemOGejS9lsDjA" base_StructuralFeature="_TEpw4BqfEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Wia4QRqfEemOGejS9lsDjA" base_StructuralFeature="_Wia4QBqfEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_cWvnURqfEemOGejS9lsDjA" base_StructuralFeature="_cWvnUBqfEemOGejS9lsDjA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_QXzoYR86EemJTaeYhZuDRA" base_Class="_QXzoYB86EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_bZVcIB86EemJTaeYhZuDRA" base_Element="_QXzoYB86EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PJJAYR87EemJTaeYhZuDRA" base_StructuralFeature="_PJJAYB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PuSU0B87EemJTaeYhZuDRA" base_StructuralFeature="_PuRtwB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QfAAEB87EemJTaeYhZuDRA" base_StructuralFeature="_Qe_ZAB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_FMwaUB88EemJTaeYhZuDRA" base_Element="_6TxekB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Z5XzUR88EemJTaeYhZuDRA" base_StructuralFeature="_Z5XzUB88EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_d8E-UB89EemJTaeYhZuDRA" base_Element="_TTf2EB89EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_gUGJIB8-EemJTaeYhZuDRA" base_Element="_I79lEB8-EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_NjG54B8_EemJTaeYhZuDRA" base_Element="_zxlckB8-EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ej2eEB8_EemJTaeYhZuDRA" base_StructuralFeature="_ej13AB8_EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XWj7gB9AEemJTaeYhZuDRA" base_StructuralFeature="_XWjUcB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YJLEMR9AEemJTaeYhZuDRA" base_StructuralFeature="_YJLEMB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Y2KGAR9AEemJTaeYhZuDRA" base_StructuralFeature="_Y2KGAB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZdOtER9AEemJTaeYhZuDRA" base_StructuralFeature="_ZdOtEB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aMwskB9AEemJTaeYhZuDRA" base_StructuralFeature="_aMwFgB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_a3GqEB9AEemJTaeYhZuDRA" base_StructuralFeature="_a3GDAB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_alzMwB9CEemJTaeYhZuDRA" base_Element="_4DfhMB8_EemJTaeYhZuDRA"/>
 </xmi:XMI>
