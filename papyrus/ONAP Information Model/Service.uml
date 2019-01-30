@@ -555,25 +555,11 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_vyTaID0OEeiWMf5FLWfdLA" name="serviceRole" visibility="public">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_221M0D0OEeiWMf5FLWfdLA" annotatedElement="_vyTaID0OEeiWMf5FLWfdLA">
-            <body>An optional string field for shortcode that defines the function that the service is providing. E.g. “MISVPN” or “AIM”.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0mJjoD0OEeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0o1EMD0OEeiWMf5FLWfdLA" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5tq3ED0OEeiWMf5FLWfdLA" name="icon" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_ASXTID0PEeiWMf5FLWfdLA" annotatedElement="_5tq3ED0OEeiWMf5FLWfdLA">
             <body>The icon path of the service.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_HLlNsD0PEeiWMf5FLWfdLA" name="serviceComponentUuid" visibility="public" aggregation="shared">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_RdZbwD0PEeiWMf5FLWfdLA" annotatedElement="_HLlNsD0PEeiWMf5FLWfdLA">
-            <body>The service component descriptor UUIDs that the service includes (relationhip to Service Component).</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_YQwQ0D0NEeiWMf5FLWfdLA"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Zze64JDrEei9Vqs7Ti8Wxg" name="attachment" type="_nrfckI93EeiT7tMsBl6xjA" aggregation="composite" association="_ZzapcJDrEei9Vqs7Ti8Wxg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZzkacJDrEei9Vqs7Ti8Wxg"/>
@@ -709,6 +695,12 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AcqQoquGEeiRK6iIVq4LZA" name="servicecompositeinstance" type="_YBdfEKuDEeiRK6iIVq4LZA" association="_AchGsKuGEeiRK6iIVq4LZA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AcqQpKuGEeiRK6iIVq4LZA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AcqQpauGEeiRK6iIVq4LZA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HLlNsD0PEeiWMf5FLWfdLA" name="serviceComponentUuid" visibility="public" aggregation="shared">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RdZbwD0PEeiWMf5FLWfdLA" annotatedElement="_HLlNsD0PEeiWMf5FLWfdLA">
+            <body>The service component descriptor UUIDs that the service includes (relationhip to Service Component).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_YQwQ0D0NEeiWMf5FLWfdLA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mrJV8In9EeiOe-BKGdv_Yg" name="ServiceOrder">
@@ -1619,7 +1611,6 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MiSCED0OEeiWMf5FLWfdLA" base_StructuralFeature="_MiRbAD0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_bJNPMT0OEeiWMf5FLWfdLA" base_StructuralFeature="_bJNPMD0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lzY58T0OEeiWMf5FLWfdLA" base_StructuralFeature="_lzY58D0OEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_vyTaIT0OEeiWMf5FLWfdLA" base_StructuralFeature="_vyTaID0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_5tq3ET0OEeiWMf5FLWfdLA" base_StructuralFeature="_5tq3ED0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_HLlNsT0PEeiWMf5FLWfdLA" base_StructuralFeature="_HLlNsD0PEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_HFfXUT0QEeiWMf5FLWfdLA" base_Class="_HFfXUD0QEeiWMf5FLWfdLA"/>
@@ -2086,4 +2077,15 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hxFscyC7Eemw1L3J4dNy4w" base_StructuralFeature="_hxFsciC7Eemw1L3J4dNy4w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hxLzESC7Eemw1L3J4dNy4w" base_StructuralFeature="_hxLzECC7Eemw1L3J4dNy4w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_f1WjECC8Eemw1L3J4dNy4w" base_StructuralFeature="_yKYPgMhdEeiSA51ssKbbgA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_VmilACRGEemq1cNQ-nJozQ" base_Element="_biWkcD0NEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ZryjICRGEemq1cNQ-nJozQ" base_Element="_rj6jkD0NEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_bJEZcCRGEemq1cNQ-nJozQ" base_Element="_0_MLMD0NEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_cUfqwCRGEemq1cNQ-nJozQ" base_Element="_BLHVgD0OEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_dkiWUCRGEemq1cNQ-nJozQ" base_Element="_MiRbAD0OEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ezF0ICRGEemq1cNQ-nJozQ" base_Element="_bJNPMD0OEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_f7sa8CRGEemq1cNQ-nJozQ" base_Element="_lzY58D0OEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_hGFKcCRGEemq1cNQ-nJozQ" base_Element="_5tq3ED0OEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_iVXoECRGEemq1cNQ-nJozQ" base_Element="_Zze64JDrEei9Vqs7Ti8Wxg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_jT3QoCRGEemq1cNQ-nJozQ" base_Element="_IKJSks4pEeinDdlk3ffduQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_k97lwCRGEemq1cNQ-nJozQ" base_Element="_HLlNsD0PEeiWMf5FLWfdLA"/>
 </xmi:XMI>
