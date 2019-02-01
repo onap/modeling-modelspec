@@ -69,29 +69,12 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_EFTyYPGPEeiSnciiH95D-g" name="geographicLocationInfo" visibility="public">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_TSOogPGPEeiSnciiH95D-g" annotatedElement="_EFTyYPGPEeiSnciiH95D-g">
-            <body>It provides information about the geographical location (e.g. geographic&#xD;
-coordinates or address of the building, etc.) of the PNF. The cardinality 0 is used when the location is unknown.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MLyxUPGPEeiSnciiH95D-g"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MM6LoPGPEeiSnciiH95D-g" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kgLS4P4fEeirJOiRiTRpBw" name="_pnfExtCpd " type="_bd53ADzFEeiWMf5FLWfdLA" aggregation="composite" association="_kf17sP4fEeirJOiRiTRpBw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_3bGPUP4gEeirJOiRiTRpBw" annotatedElement="_kgLS4P4fEeirJOiRiTRpBw">
             <body>Specifies the characteristics of one or more connection points where to connect the PNF to a VL.</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgSAkP4fEeirJOiRiTRpBw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgTOsP4fEeirJOiRiTRpBw" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GkGmcA-TEemEj74AZiZr9A" name="swVersionList" visibility="public" type="_tlyigBgIEembeqMx64UEWQ">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_Z1OR0A-TEemEj74AZiZr9A" annotatedElement="_GkGmcA-TEemEj74AZiZr9A">
-            <body>Describes the software the PNF supports</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qq0-0A-TEemEj74AZiZr9A" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrnB8A-TEemEj74AZiZr9A" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
@@ -207,9 +190,7 @@ coordinates or address of the building, etc.) of the PNF. The cardinality 0 is u
   <OpenModel_Profile:OpenModelAttribute xmi:id="_x8Zv4Ow2EeiDiIttoROOIw" base_StructuralFeature="_x8ZI0Ow2EeiDiIttoROOIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WDCm4ew3EeiDiIttoROOIw" base_StructuralFeature="_WDCm4Ow3EeiDiIttoROOIw" isInvariant="true"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_le538Ow3EeiDiIttoROOIw" base_StructuralFeature="_le5Q4Ow3EeiDiIttoROOIw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_EF5oQPGPEeiSnciiH95D-g" base_StructuralFeature="_EFTyYPGPEeiSnciiH95D-g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kgMhAP4fEeirJOiRiTRpBw" base_StructuralFeature="_kgLS4P4fEeirJOiRiTRpBw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_GkSMoA-TEemEj74AZiZr9A" base_StructuralFeature="_GkGmcA-TEemEj74AZiZr9A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_phXtUBRDEembeqMx64UEWQ" base_StructuralFeature="_kgUc0P4fEeirJOiRiTRpBw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_361DsBgIEembeqMx64UEWQ" base_StructuralFeature="_36z1kBgIEembeqMx64UEWQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__fpgABgIEembeqMx64UEWQ" base_StructuralFeature="__fnq0BgIEembeqMx64UEWQ"/>
@@ -221,8 +202,6 @@ coordinates or address of the building, etc.) of the PNF. The cardinality 0 is u
   <OpenModel_Profile:Experimental xmi:id="_5vnJIBgKEembeqMx64UEWQ" base_Element="_x8ZI0Ow2EeiDiIttoROOIw"/>
   <OpenModel_Profile:Experimental xmi:id="_7aq8wBgKEembeqMx64UEWQ" base_Element="_WDCm4Ow3EeiDiIttoROOIw"/>
   <OpenModel_Profile:Experimental xmi:id="_9EeMIBgKEembeqMx64UEWQ" base_Element="_le5Q4Ow3EeiDiIttoROOIw"/>
-  <OpenModel_Profile:Experimental xmi:id="_-vim0BgKEembeqMx64UEWQ" base_Element="_EFTyYPGPEeiSnciiH95D-g"/>
-  <OpenModel_Profile:Experimental xmi:id="_Ah4uMBgLEembeqMx64UEWQ" base_Element="_GkGmcA-TEemEj74AZiZr9A"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_n0I0UKe3Eeixw5Ke5QD1pQ" base_Class="_13TCEDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0PiAKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCEjzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0UagKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCFDzEEeiWMf5FLWfdLA"/>
