@@ -119,7 +119,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_XHgosBg2EembeqMx64UEWQ" name="Diagrams"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_XHh20Bg2EembeqMx64UEWQ" name="ObjectClasses">
-      <packagedElement xmi:type="uml:Class" xmi:id="_13KfMDzEEeiWMf5FLWfdLA" name="NetworkServiceDescriptor">
+      <packagedElement xmi:type="uml:Class" xmi:id="_13KfMDzEEeiWMf5FLWfdLA" name="NSD">
         <ownedComment xmi:type="uml:Comment" xmi:id="_13KfMTzEEeiWMf5FLWfdLA" annotatedElement="_13KfMDzEEeiWMf5FLWfdLA">
           <body>The NSD class is a deployment template whose instances are used by the NFVO for the lifecycle management of NSs.&#xD;
 For all attributes in this class, the Producer is SDC and the Consumer is SDC/UUI/VFC&#xD;
@@ -537,7 +537,7 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
           <body>The NsQoS datatype specifies quality of service parameters applicable to a NS VL.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_nlCDoKY-Eeixw5Ke5QD1pQ">
-          <general xmi:type="uml:DataType" href="Vnf.uml#_B1G2UDd_EeiIfPeSAqyGdQ"/>
+          <general xmi:type="uml:DataType" href="Common.uml#_B1G2UDd_EeiIfPeSAqyGdQ"/>
         </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZo-zzEEeiWMf5FLWfdLA" name="priority">
           <ownedComment xmi:type="uml:Comment" xmi:id="_kEZo_DzEEeiWMf5FLWfdLA" annotatedElement="_kEZo-zzEEeiWMf5FLWfdLA">

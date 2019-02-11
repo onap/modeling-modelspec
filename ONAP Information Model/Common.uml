@@ -6296,9 +6296,6 @@ White - Not Ready for Review</body>
           <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sT2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sD2pEeiu6I5JfRTxxQ">
             <body>Common part of the various VLDs.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_tmOdULeSEeiq7vtzCAMDQQ">
-            <general xmi:type="uml:Class" href="Vnf.uml#_AC2eIDQUEeixv_sLOod4lQ"/>
-          </generalization>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw79sj2pEeiu6I5JfRTxxQ" name="virtualLinkDescId" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sz2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sj2pEeiu6I5JfRTxxQ">
               <body>Uniquely identifies a VLD in the parent descriptor.&#xD;
@@ -6545,8 +6542,9 @@ Note: the description of this class are different in ETSI GS NFV IFA 011 and ETS
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_7pUNEDa7EeivvI-m1BaAbA" name="Cpd " isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_R0MsAEbwEei7eo5RdnNiBQ" annotatedElement="_7pUNEDa7EeivvI-m1BaAbA">
-            <body>A Cpd information element describes network connectivity to a compute resource or a VL. This is an abstract class used&#xD;
-as parent for the various Cpd classes.</body>
+            <body>The Cpd class specifies the characteristics of connection points attached to NFs and NSs. This is an abstract class used as parent for the various Cpd classes.&#xD;
+&#xD;
+Note 1: the description of this class is different in ETSI GS NFV IFA 011 and ETSI GS NFV IFA 014. The present definition uses the definition in ETSI GS NFV IFA 014 as it is the more general.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_knSmcDa8EeivvI-m1BaAbA" name="cpdId" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_XFxTUEbwEei7eo5RdnNiBQ" annotatedElement="_knSmcDa8EeivvI-m1BaAbA">
@@ -6554,7 +6552,7 @@ as parent for the various Cpd classes.</body>
 </body>
             </ownedComment>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lRLQ8Da8EeivvI-m1BaAbA" name="cpRole">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lRLQ8Da8EeivvI-m1BaAbA" name="cpdRole">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Zs7i0EbwEei7eo5RdnNiBQ" annotatedElement="_lRLQ8Da8EeivvI-m1BaAbA">
               <body>Identifies the role of the port in the context of the traffic flow patterns in the VNF or parent NS.&#xD;
 &#xD;
@@ -6591,18 +6589,19 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_p8meQDa8EeivvI-m1BaAbA" name="allowedAddressData" type="_2aIggDa9EeivvI-m1BaAbA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_kI39QEbwEei7eo5RdnNiBQ" annotatedElement="_p8meQDa8EeivvI-m1BaAbA">
-              <body>For specifying floating IP(s) to be shared among Cpds, which are reserved for vnfReservedCpd described in the VNFD.&#xD;
-</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MVvycC4zEemS0_wZSU3sbA" name="layerProtocol" visibility="public" type="_tFQGcDnLEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bLoooC4zEemS0_wZSU3sbA" annotatedElement="_MVvycC4zEemS0_wZSU3sbA">
+              <body>Identifies which protocol the CP uses for connectivity purposes (Ethernet, MPLS, ODU2, IPV4, IPV6, Pseudo-Wire, etc.).</body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H0-cMDa9EeivvI-m1BaAbA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H1CtoDa9EeivvI-m1BaAbA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TUOAcC4zEemS0_wZSU3sbA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TUg7YC4zEemS0_wZSU3sbA" value="*"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_0AbUYDnBEeiWMf5FLWfdLA" name="AffinityOrAntiAffinityGroup">
           <ownedComment xmi:type="uml:Comment" xmi:id="_L_HiIDnCEeiWMf5FLWfdLA" annotatedElement="_0AbUYDnBEeiWMf5FLWfdLA">
-            <body>The AffinityOrAntiAffinityGroup class describes the affinity or anti-affinity relationship.</body>
+            <body>The AffinityOrAntiAffinityGroup class describes the affinity or anti-affinity relationship. For NSs, those rules are applicable between the VNF instances created using different VnfProfiles, the Virtual Link instances created using different VlProfiles or the nested NS instances created using different NsProfiles.&#xD;
+&#xD;
+For VNFs, those rules are applicable between the virtualization containers to be created based on different VDUs, or between internal VLs to be created based on different VnfVirtualLinkDesc(s).</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_6g1tYDnBEeiWMf5FLWfdLA" name="groupId" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_6g1tYTnBEeiWMf5FLWfdLA" annotatedElement="_6g1tYDnBEeiWMf5FLWfdLA">
@@ -7015,7 +7014,7 @@ NOTE: 	These attributes are used to control scaling boundaries.</body>
           <ownedComment xmi:type="uml:Comment" xmi:id="_Wv89wGNfEeio9amveq0yWQ" annotatedElement="_2aIggDa9EeivvI-m1BaAbA">
             <body>The AddressData information element supports providing information about the addressing scheme and parameters applicable to a CP. </body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_A8dPwDa-EeivvI-m1BaAbA" name="addressType" type="_AuYtcDkBEeiWMf5FLWfdLA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_A8dPwDa-EeivvI-m1BaAbA" name="addressType" type="_MevNkJddEei-sOl6ywWHlg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_dD2YQDa-EeivvI-m1BaAbA" annotatedElement="_A8dPwDa-EeivvI-m1BaAbA">
               <body>Describes the type of the address to be assigned to the CP instantiated from the parent CPD. The content type shall be aligned with the address type supported by the layerProtocol attribute of the parent CPD.&#xD;
 </body>
@@ -7040,11 +7039,11 @@ Shall be present when the addressType is IP address.</body>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_ImxsgDeBEeiIfPeSAqyGdQ" name="ConnectivityType">
           <ownedComment xmi:type="uml:Comment" xmi:id="_8qt_MK0pEeiQr7XQ2okIrA" annotatedElement="_ImxsgDeBEeiIfPeSAqyGdQ">
-            <body>The ConnectivityType datatype specifies the protocol exposed by a VL and the flow pattern supported by the VL.</body>
+            <body>The ConnectivityType datatype specifies the protocol exposed by a VL and the flow pattern supported by the VL.The top layer protocol of the VL protocol stack shall always be provided. The lower layer protocols may be included when there are specific requirements on these layers.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_N61nIDeBEeiIfPeSAqyGdQ" name="layerProtocol" type="_tFQGcDnLEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_XlK-cDeBEeiIfPeSAqyGdQ" annotatedElement="_N61nIDeBEeiIfPeSAqyGdQ">
-              <body>Identifies the protocol this VL gives access to (Ethernet, MPLS, ODU2, IPV4, IPV6, Pseudo-Wire).&#xD;
+              <body>Identifies the protocols to which this VL gives access (Ethernet, MPLS, ODU2, IPV4, IPV6, Pseudo-Wire).&#xD;
 </body>
             </ownedComment>
           </ownedAttribute>
@@ -7069,10 +7068,10 @@ Shall be present when the addressType is IP address.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pMKqYDa9EeivvI-m1BaAbA" name="addressData" type="_2aIggDa9EeivvI-m1BaAbA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_06IGUDa9EeivvI-m1BaAbA" annotatedElement="_pMKqYDa9EeivvI-m1BaAbA">
-              <body>Provides information on the addresses to be assigned to the CP(s) instantiated from the CPD.</body>
+              <body>Provides information on the address to be assigned to the CP(s) instantiated from the CPD.</body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xOJj0Da9EeivvI-m1BaAbA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xORfoDa9EeivvI-m1BaAbA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xOJj0Da9EeivvI-m1BaAbA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xORfoDa9EeivvI-m1BaAbA" value="1"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_X9TdUDdPEeiIfPeSAqyGdQ" name="L2AddressData">
@@ -7107,7 +7106,7 @@ If it is set to True, it is the management and orchestration function responsibi
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__o0JQDdPEeiIfPeSAqyGdQ" name="ipAddressType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__o0JQDdPEeiIfPeSAqyGdQ" name="ipAddressType" type="_TTf2EB89EemJTaeYhZuDRA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_WilWUDdQEeiIfPeSAqyGdQ" annotatedElement="__o0JQDdPEeiIfPeSAqyGdQ">
               <body>Define address type.&#xD;
 &#xD;
@@ -7211,13 +7210,6 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qmf1kDnFEeiWMf5FLWfdLA" name="NetworkType">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_VN9I4DnFEeiWMf5FLWfdLA" annotatedElement="_Qmf1kDnFEeiWMf5FLWfdLA">
-            <body>Type of network supported.</body>
-          </ownedComment>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_W5tgEDnFEeiWMf5FLWfdLA" name="VLAN"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Z6H9EDnFEeiWMf5FLWfdLA" name="VXLAN"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_zxlckB8-EemJTaeYhZuDRA" name="L2ProtocolData">
           <ownedComment xmi:type="uml:Comment" xmi:id="_TC2ncB88EemJTaeYhZuDRA">
             <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
@@ -7225,7 +7217,7 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
           <ownedComment xmi:type="uml:Comment" xmi:id="_MiWAcB8_EemJTaeYhZuDRA" annotatedElement="_zxlckB8-EemJTaeYhZuDRA">
             <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_PJJAYB87EemJTaeYhZuDRA" name="networkName">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PJJAYB87EemJTaeYhZuDRA" name="name">
             <ownedComment xmi:type="uml:Comment" xmi:id="_cXsFUB87EemJTaeYhZuDRA" annotatedElement="_PJJAYB87EemJTaeYhZuDRA">
               <body>Network name associated with this L2&#xD;
 protocol.</body>
@@ -7290,7 +7282,7 @@ transparency for this L2 protocol or not.</body>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74KP4CCjEemw1L3J4dNy4w" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_6TxekB87EemJTaeYhZuDRA" name="NetworkTypes">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_6TxekB87EemJTaeYhZuDRA" name="NetworkType">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Mss9sB88EemJTaeYhZuDRA" annotatedElement="_6TxekB87EemJTaeYhZuDRA">
             <body>Specifies the network type for this L2&#xD;
 protocol. Possible values: FLAT, VLAN,&#xD;
@@ -7458,6 +7450,56 @@ Value:&#xD;
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XAJG8B89EemJTaeYhZuDRA" name="IPV4"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YHaRAB89EemJTaeYhZuDRA" name="IPV6"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_B1G2UDd_EeiIfPeSAqyGdQ" name="QoS">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_DNOvkGNgEeio9amveq0yWQ" annotatedElement="_B1G2UDd_EeiIfPeSAqyGdQ">
+            <body>The QoS datatype specifies quality of service parameters applicable to a VL.&#xD;
+It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS in ETSI GS NFV IFA 014) includes a priority attribute, while VnfQoS (QoS in ETSI GS NFV IFA 011) does not.&#xD;
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GA6IYDd_EeiIfPeSAqyGdQ" name="latency" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P3EVMDd_EeiIfPeSAqyGdQ" annotatedElement="_GA6IYDd_EeiIfPeSAqyGdQ">
+              <body>Maximum latency in ms.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_G-MQADd_EeiIfPeSAqyGdQ" name="packetDelayVariation" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_V5HXMDd_EeiIfPeSAqyGdQ" annotatedElement="_G-MQADd_EeiIfPeSAqyGdQ">
+              <body>Maximum jitter in ms.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Hy64kDd_EeiIfPeSAqyGdQ" name="packetLossRatio" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bo3vUDd_EeiIfPeSAqyGdQ" annotatedElement="_Hy64kDd_EeiIfPeSAqyGdQ">
+              <body>Maximum packet loss ratio. Cardinality is 0 if no packetLossRatio requirement exists.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z7MFgDd_EeiIfPeSAqyGdQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z7WdkDd_EeiIfPeSAqyGdQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uFBX8PuHEeiYVshOvl6_ww" name="qosId" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LF1bwPuIEeiYVshOvl6_ww" annotatedElement="_uFBX8PuHEeiYVshOvl6_ww">
+              <body>Qos ID.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RayLoPuIEeiYVshOvl6_ww" name="qosName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZP674PuIEeiYVshOvl6_ww" annotatedElement="_RayLoPuIEeiYVshOvl6_ww">
+              <body>Human readable Qos name.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gUB30PuIEeiYVshOvl6_ww" name="rules" type="_vxJ9ADafEei23_xWdimG9w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_yom7EPuLEeiYVshOvl6_ww" annotatedElement="_gUB30PuIEeiYVshOvl6_ww">
+              <body>Detailed requirements of Qos, including maximum bandwidth limitation{max_kbps}、maximum burst bandwidth limitation{max_burst_kbps} 、direction{egress|ingress}，etc.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kTldoPuIEeiYVshOvl6_ww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kUKFYPuIEeiYVshOvl6_ww" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_MevNkJddEei-sOl6ywWHlg" name="AddressType">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_zYqPEJdeEei-sOl6ywWHlg" annotatedElement="_MevNkJddEei-sOl6ywWHlg">
+            <body>Type of address</body>
+          </ownedComment>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -8149,7 +8191,6 @@ Value:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_fl9AAKe5Eeixw5Ke5QD1pQ" base_Element="_LsX6UDgXEeiOYfGHew0BGg"/>
   <OpenModel_Profile:Preliminary xmi:id="_huR-cKe5Eeixw5Ke5QD1pQ" base_Element="_tFQGcDnLEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_jLXAcKe5Eeixw5Ke5QD1pQ" base_Element="_7hn1IDd1EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_mWkYMKe5Eeixw5Ke5QD1pQ" base_Element="_Qmf1kDnFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_n2f54Ke5Eeixw5Ke5QD1pQ" base_Element="_PjIasDa9EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_p4PvMKe5Eeixw5Ke5QD1pQ" base_Element="_2aIggDa9EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_r0DUkKe5Eeixw5Ke5QD1pQ" base_Element="_tMoywDnJEeiWMf5FLWfdLA"/>
@@ -8872,12 +8913,11 @@ Value:&#xD;
   <OpenModel_Profile:Future xmi:id="_IofU0KewEeixw5Ke5QD1pQ" base_Element="_45bWUDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Future xmi:id="_NTGp0KewEeixw5Ke5QD1pQ" base_Element="_kEZB9jzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_7pU0IDa7EeivvI-m1BaAbA" base_Class="_7pUNEDa7EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_knSmcTa8EeivvI-m1BaAbA" base_StructuralFeature="_knSmcDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_knSmcTa8EeivvI-m1BaAbA" base_StructuralFeature="_knSmcDa8EeivvI-m1BaAbA" isInvariant="true"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lRLQ8Ta8EeivvI-m1BaAbA" base_StructuralFeature="_lRLQ8Da8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_luv9wDa8EeivvI-m1BaAbA" base_StructuralFeature="_luvWsDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oWHBkTa8EeivvI-m1BaAbA" base_StructuralFeature="_oWHBkDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pJTZETa8EeivvI-m1BaAbA" base_StructuralFeature="_pJTZEDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_p8meQTa8EeivvI-m1BaAbA" base_StructuralFeature="_p8meQDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_0Ab7cDnBEeiWMf5FLWfdLA" base_Class="_0AbUYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6g1tYjnBEeiWMf5FLWfdLA" base_StructuralFeature="_6g1tYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6g3ikjnBEeiWMf5FLWfdLA" base_StructuralFeature="_6g3ikDnBEeiWMf5FLWfdLA"/>
@@ -8895,7 +8935,6 @@ Value:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_i388MJT1EeiYXO5wr78TUw" base_Element="_luvWsDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_kDQ4wJT1EeiYXO5wr78TUw" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_lmmTwJT1EeiYXO5wr78TUw" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_mm4FAJT1EeiYXO5wr78TUw" base_Element="_p8meQDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_XkYfwJUBEeiYXO5wr78TUw" base_Element="_0AbUYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_YpUHgJUBEeiYXO5wr78TUw" base_Element="_6g1tYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_ZkJ_IJUBEeiYXO5wr78TUw" base_Element="_6g3ikDnBEeiWMf5FLWfdLA"/>
@@ -8910,9 +8949,6 @@ Value:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_LCFOEJUHEeiYXO5wr78TUw" base_Element="_7hn1IDd1EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_L1qAEJUHEeiYXO5wr78TUw" base_Element="_EjJgADd2EeiIfPeSAqyGdQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_Mjc6MJUHEeiYXO5wr78TUw" base_Element="_F5b9gDd2EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_tn5ykJUHEeiYXO5wr78TUw" base_Element="_Qmf1kDnFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_ugdLMJUHEeiYXO5wr78TUw" base_Element="_W5tgEDnFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_vUP_oJUHEeiYXO5wr78TUw" base_Element="_Z6H9EDnFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_ONrx8JUIEeiYXO5wr78TUw" base_Element="_B3kJsDnKEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_O-PFIJUIEeiYXO5wr78TUw" base_Element="_IJCHwDnKEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_PrZtIJUIEeiYXO5wr78TUw" base_Element="_LgsnIDnKEeiWMf5FLWfdLA"/>
@@ -9038,4 +9074,16 @@ Value:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FeGUYCoxEemnoK-fhDe5lw" base_StructuralFeature="_FeFtUCoxEemnoK-fhDe5lw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IkqcsSoxEemnoK-fhDe5lw" base_StructuralFeature="_IkqcsCoxEemnoK-fhDe5lw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RF49QSo5EemnoK-fhDe5lw" base_StructuralFeature="_RF49QCo5EemnoK-fhDe5lw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MVvycS4zEemS0_wZSU3sbA" base_StructuralFeature="_MVvycC4zEemS0_wZSU3sbA"/>
+  <OpenModel_Profile:Experimental xmi:id="_eYHLsC4zEemS0_wZSU3sbA" base_Element="_MVvycC4zEemS0_wZSU3sbA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_8TIQ4JUHEeiYXO5wr78TUw" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Reference xmi:id="_2s5kQCvNEemS0_wZSU3sbA" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Experimental xmi:id="_18lkYJdeEei-sOl6ywWHlg" base_Element="_MevNkJddEei-sOl6ywWHlg"/>
+  <OpenModel_Profile:Reference xmi:id="_WoDPEC47EemS0_wZSU3sbA" base_Element="_Tw79sD2pEeiu6I5JfRTxxQ" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_abu8EC47EemS0_wZSU3sbA" base_Element="_Tw5PIES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_eCHz8C47EemS0_wZSU3sbA" base_Element="_il0cAES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_hbI-MC47EemS0_wZSU3sbA" base_Element="_7pUNEDa7EeivvI-m1BaAbA" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_lR_T8C47EemS0_wZSU3sbA" base_Element="_0AbUYDnBEeiWMf5FLWfdLA" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Preliminary xmi:id="_qqZjEC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg"/>
+  <OpenModel_Profile:Reference xmi:id="_qrVXMC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg" reference="IFA011 v2.5.1"/>
 </xmi:XMI>
