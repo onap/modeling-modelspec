@@ -4,7 +4,14 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_Uu_4IDOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_W8GB0DOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_AuYtcDkBEeiWMf5FLWfdLA" name="Identifier"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_vxJ9ADafEei23_xWdimG9w" name="KeyValuePair "/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vxJ9ADafEei23_xWdimG9w" name="KeyValuePair ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_9-F7MCZBEemRA_CB-n5OfQ" name="key">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-0ohoCZBEemRA_CB-n5OfQ" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_P-qXMD2vEeiu6I5JfRTxxQ" name="SecurityParameters">
         <ownedComment xmi:type="uml:Comment" xmi:id="_P-qXMT2vEeiu6I5JfRTxxQ" annotatedElement="_P-qXMD2vEeiu6I5JfRTxxQ">
           <body>The SecurityParameters contains the signature of a NSD, VLD, PNFD or VNFFGD instance together with information required to validate the signature.</body>
@@ -523,7 +530,7 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KV_h8H7_EeifJIHxnlj6Cg" name="timeZoneOffset">
             <ownedComment xmi:type="uml:Comment" xmi:id="_TwKYsKZDEeily5uFlujj3Q" annotatedElement="_KV_h8H7_EeifJIHxnlj6Cg">
-              <body>Offset to GMT to indicate local time zone for device formatted as ‘UTC+/-hh.mm’; see https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations for UTC offset examples</body>
+              <body>Offset to GMT to indicate local time zone for device formatted as ‘UTC+/-hh:mm’; see https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations for UTC offset examples</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OydIkKZDEeily5uFlujj3Q"/>
@@ -797,14 +804,6 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OHu2oJQmEei6kI-JPNdeuw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OH0WMJQmEei6kI-JPNdeuw" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_AK9PMJQlEei6kI-JPNdeuw" name="gtpPerFlowMetrics">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_31ZLEJQnEei6kI-JPNdeuw" annotatedElement="_AK9PMJQlEei6kI-JPNdeuw">
-              <body>gtpPerFlowMetrics - Mobility GTP Protocol per flow metrics.&#xD;
-</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OIAjcJQmEei6kI-JPNdeuw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OIFb8JQmEei6kI-JPNdeuw" value="1"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Bs7_UJQlEei6kI-JPNdeuw" name="gtpProtocolType">
             <ownedComment xmi:type="uml:Comment" xmi:id="_P10W0JQrEei6kI-JPNdeuw" annotatedElement="_Bs7_UJQlEei6kI-JPNdeuw">
               <body>gtpProtocolType - GTP protocol&#xD;
@@ -1022,7 +1021,10 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HdzjAJQrEei6kI-JPNdeuw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hd1_QJQrEei6kI-JPNdeuw" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6bEHoNiVEeiRnMGpBj3Tnw" name="gtpperflowmetrics" type="_ihIjUNLdEeiMg4jJCQOcCA" aggregation="composite" association="_6bBrYNiVEeiRnMGpBj3Tnw">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6bEHoNiVEeiRnMGpBj3Tnw" name="_gtpperflowmetrics" type="_ihIjUNLdEeiMg4jJCQOcCA" aggregation="composite" association="_6bBrYNiVEeiRnMGpBj3Tnw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2NZ9YCZSEemRA_CB-n5OfQ" annotatedElement="_6bEHoNiVEeiRnMGpBj3Tnw">
+              <body>Mobility GTP Protocol per flow metrics</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6bEusdiVEeiRnMGpBj3Tnw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6bEustiVEeiRnMGpBj3Tnw" value="1"/>
           </ownedAttribute>
@@ -2785,7 +2787,7 @@ Field	Type	Required?	Description&#xD;
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mn0cYLBcEeix4eA61SHRMQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MoBQsLBcEeix4eA61SHRMQ" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vf1Q0LBaEeix4eA61SHRMQ" name="processIdentifier">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vf1Q0LBaEeix4eA61SHRMQ" name="vmlIdentifier">
             <ownedComment xmi:type="uml:Comment" xmi:id="_XI0V8LBcEeix4eA61SHRMQ" annotatedElement="_Vf1Q0LBaEeix4eA61SHRMQ">
               <body>processIdentifier</body>
             </ownedComment>
@@ -3835,18 +3837,302 @@ Field	Type	Required?	Description&#xD;
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_2YJOAiDREemw1L3J4dNy4w" name="measdatacollection" type="_7y9GUCDQEemw1L3J4dNy4w" association="_2YIm8CDREemw1L3J4dNy4w">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2YJOAiDREemw1L3J4dNy4w" name="_measDataCollection" type="_7y9GUCDQEemw1L3J4dNy4w" aggregation="composite" association="_2YIm8CDREemw1L3J4dNy4w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ZRtpACV0Eem2wfSvtxnwBQ" annotatedElement="_2YJOAiDREemw1L3J4dNy4w">
+              <body>3GPP measurement collection structure</body>
+            </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2YJ1ESDREemw1L3J4dNy4w" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2YJ1EiDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7y9GUCDQEemw1L3J4dNy4w" name="MeasDataCollection">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iMB4oCV0Eem2wfSvtxnwBQ" annotatedElement="_7y9GUCDQEemw1L3J4dNy4w">
+            <body>The measDataCollection datatype defines a 3GPP measurement collection structure aligned with the 3GPP PM format</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IwvLYCDREemw1L3J4dNy4w" name="formatVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iQ0TYCDREemw1L3J4dNy4w" annotatedElement="_IwvLYCDREemw1L3J4dNy4w">
+              <body>3GPP PM reporting file format version from pre-standard TS 28.550 v2.0.0</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_clbd4CDREemw1L3J4dNy4w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cljZsCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JMG4wCDREemw1L3J4dNy4w" name="granularityPeriod">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_kNCvgCDREemw1L3J4dNy4w" annotatedElement="_JMG4wCDREemw1L3J4dNy4w">
+              <body>Granularity period for the PM report in seconds</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_clqHYCDREemw1L3J4dNy4w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_clyqQCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jl__cCDREemw1L3J4dNy4w" name="measObjInstIdList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_l_GjACDREemw1L3J4dNy4w" annotatedElement="_Jl__cCDREemw1L3J4dNy4w">
+              <body>Array of monitored object local distinguished name ids per 3GPP TS 32.300</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cl5_ACDREemw1L3J4dNy4w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cl-3gCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J_pOgCDREemw1L3J4dNy4w" name="measuredEntityDn">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_n6PaACDREemw1L3J4dNy4w" annotatedElement="_J_pOgCDREemw1L3J4dNy4w">
+              <body>Distinguished name per 3GPP TS 28.550</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmDwACDREemw1L3J4dNy4w" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmIogCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KXdRkCDREemw1L3J4dNy4w" name="measuredEntitySoftwareVersion">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pjsEECDREemw1L3J4dNy4w" annotatedElement="_KXdRkCDREemw1L3J4dNy4w">
+              <body>Software version for the NF providing the PM data as specified in 3GPP TS 28.550</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmNhACDREemw1L3J4dNy4w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmSZgCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LGwnkCDREemw1L3J4dNy4w" name="measuredEntityUserName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rMP9UCDREemw1L3J4dNy4w" annotatedElement="_LGwnkCDREemw1L3J4dNy4w">
+              <body>User Definable name for the measured object per 3GPP TS 28.550</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmXSACDREemw1L3J4dNy4w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmcKgCDREemw1L3J4dNy4w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dDmJwCV1Eem2wfSvtxnwBQ" name="_measinfo" type="_FbTEICDSEemw1L3J4dNy4w" aggregation="composite" association="_dDhRQCV1Eem2wfSvtxnwBQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dDmw0CV1Eem2wfSvtxnwBQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dDnX4CV1Eem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FbTEICDSEemw1L3J4dNy4w" name="MeasInfo">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_t21vYCVzEem2wfSvtxnwBQ" name="jobId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5jp70CVzEem2wfSvtxnwBQ" annotatedElement="_t21vYCVzEem2wfSvtxnwBQ">
+              <body>Name of the measurement job </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Do2HgCWSEem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Do-qYCWSEem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NbMfQSV6Eem2wfSvtxnwBQ" name="_measinfoidinteger" type="_6szN0CV2Eem2wfSvtxnwBQ" aggregation="composite" association="_NbKDACV6Eem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_piwDACV-Eem2wfSvtxnwBQ" annotatedElement="_NbMfQSV6Eem2wfSvtxnwBQ">
+              <body>Measurement group Identifier</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NbNGUCV6Eem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NbNtYCV6Eem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Oh1XMCV6Eem2wfSvtxnwBQ" name="_measinfoidstring" type="__tZZ4CV2Eem2wfSvtxnwBQ" aggregation="composite" association="_Oh0JECV6Eem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_q4hjICV-Eem2wfSvtxnwBQ" annotatedElement="_Oh1XMCV6Eem2wfSvtxnwBQ">
+              <body>Measurement group Identifier</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oh1-QCV6Eem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oh1-QSV6Eem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pUVeciV8Eem2wfSvtxnwBQ" name="_meastypesinteger" type="_I-d_0CV7Eem2wfSvtxnwBQ" association="_pUU3YCV8Eem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tc-c4CV-Eem2wfSvtxnwBQ" annotatedElement="_pUVeciV8Eem2wfSvtxnwBQ">
+              <body>Array of measurement identifiers associated with the measurement results expressed as integers for efficiency rather than strings</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pUWFgSV8Eem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pUWskCV8Eem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rrne4yV8Eem2wfSvtxnwBQ" name="_meastypesstring" type="_Lk7EsCV7Eem2wfSvtxnwBQ" aggregation="composite" association="_rrne4CV8Eem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_uoRyYCV-Eem2wfSvtxnwBQ" annotatedElement="_rrne4yV8Eem2wfSvtxnwBQ">
+              <body>Array of measurement identifiers associated with the measurement results expressed as integers for efficiency rather than strings</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rroF8CV8Eem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rroF8SV8Eem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pycOYiWKEem2wfSvtxnwBQ" name="_measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" aggregation="composite" association="_pybAQCWKEem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6r-XUCWKEem2wfSvtxnwBQ" annotatedElement="_pycOYiWKEem2wfSvtxnwBQ">
+              <body>Array of measValues</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pydcgCWKEem2wfSvtxnwBQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pydcgSWKEem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6szN0CV2Eem2wfSvtxnwBQ" name="measInfoIdInteger">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Z1rKUCV3Eem2wfSvtxnwBQ" annotatedElement="_6szN0CV2Eem2wfSvtxnwBQ">
+            <body>The measInfoIdInteger datatype provides an integer measurement group identifier;</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Mgq4ECV3Eem2wfSvtxnwBQ" name="iMeasInfoId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_XSajYCV3Eem2wfSvtxnwBQ" annotatedElement="_Mgq4ECV3Eem2wfSvtxnwBQ">
+              <body>Integer measurement group Identifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__tZZ4CV2Eem2wfSvtxnwBQ" name="MeasInfoIdString">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_lBydcCV3Eem2wfSvtxnwBQ" annotatedElement="__tZZ4CV2Eem2wfSvtxnwBQ">
+            <body>The measInfoIdString datatype provides a string measurement group identifier;</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M6UuMCV3Eem2wfSvtxnwBQ" name="sMeasInfoId">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iwz5UCV3Eem2wfSvtxnwBQ" annotatedElement="_M6UuMCV3Eem2wfSvtxnwBQ">
+              <body>String measurement group Identifier</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I-d_0CV7Eem2wfSvtxnwBQ" name="MeasTypesInteger">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0TSNYCV-Eem2wfSvtxnwBQ" annotatedElement="_I-d_0CV7Eem2wfSvtxnwBQ">
+            <body>The measTypesInteger datatype provides an array of integer measurement identifiers associated with the measurement results</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YBJU0CV7Eem2wfSvtxnwBQ" name="iMeasTypesList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jzZnkCZPEemRA_CB-n5OfQ" annotatedElement="_YBJU0CV7Eem2wfSvtxnwBQ">
+              <body>Array of integer measurement identifiers associated with the measurement results</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UPekkCV8Eem2wfSvtxnwBQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UPjdECV8Eem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Lk7EsCV7Eem2wfSvtxnwBQ" name="MeasTypesString">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_2Zx_0CV-Eem2wfSvtxnwBQ" annotatedElement="_Lk7EsCV7Eem2wfSvtxnwBQ">
+            <body>The measTypesString datatype provides an array of string measurement identifiers associated with the measurement results</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YeqXQCV7Eem2wfSvtxnwBQ" name="sMeasTypesList">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zhvIsCZPEemRA_CB-n5OfQ" annotatedElement="_YeqXQCV7Eem2wfSvtxnwBQ">
+              <body>Array of string measurement identifiers associated with the measurement results</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bQyrMCV8Eem2wfSvtxnwBQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bQ3jsCV8Eem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AgoUACV_Eem2wfSvtxnwBQ" name="MeasValues">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_HmMogCV_Eem2wfSvtxnwBQ" annotatedElement="_AgoUACV_Eem2wfSvtxnwBQ">
+            <body>The measValues datatype provides 3GPP measurement values</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QY7pcCV_Eem2wfSvtxnwBQ" name="measObjAddFlds" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dAm7oCV_Eem2wfSvtxnwBQ" annotatedElement="_QY7pcCV_Eem2wfSvtxnwBQ">
+              <body>Additional key-value pairs if needed</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aPllgCV_Eem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aPp28CV_Eem2wfSvtxnwBQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RbnOcCV_Eem2wfSvtxnwBQ" name="suspectFlag">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lIEK8CV_Eem2wfSvtxnwBQ" annotatedElement="_RbnOcCV_Eem2wfSvtxnwBQ">
+              <body>Enumeration: ‘true’, ‘false’. Indicates if the values are suspect</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Y2vzMCWTEem2wfSvtxnwBQ" annotatedElement="_RbnOcCV_Eem2wfSvtxnwBQ">
+              <body>VES 7.1 Spec has this attribute as a string.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_smUZUiWMEem2wfSvtxnwBQ" name="_measresultinteger" type="_PiViMCWLEem2wfSvtxnwBQ" aggregation="composite" association="_smTyQCWMEem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NbcRoCZQEemRA_CB-n5OfQ" annotatedElement="_smUZUiWMEem2wfSvtxnwBQ">
+              <body>Array of results</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smUZVCWMEem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_smVAYCWMEem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zdXwsiWMEem2wfSvtxnwBQ" name="_measresultnull" type="_QzoK8CWLEem2wfSvtxnwBQ" association="_zdXJoCWMEem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OVmMwCZQEemRA_CB-n5OfQ" annotatedElement="_zdXwsiWMEem2wfSvtxnwBQ">
+              <body>Array of results</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zdYXwCWMEem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zdYXwSWMEem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SGDKMiWNEem2wfSvtxnwBQ" name="_mesresultnumber" type="_RVQRUCWLEem2wfSvtxnwBQ" association="_SGB8ECWNEem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PLRQgCZQEemRA_CB-n5OfQ" annotatedElement="_SGDKMiWNEem2wfSvtxnwBQ">
+              <body>Array of results</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SGDxQCWNEem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SGDxQSWNEem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TtVRESWNEem2wfSvtxnwBQ" name="_measresultstring" type="_SXULQCWLEem2wfSvtxnwBQ" association="_TtUqACWNEem2wfSvtxnwBQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P5oLUCZQEemRA_CB-n5OfQ" annotatedElement="_TtVRESWNEem2wfSvtxnwBQ">
+              <body>Array of results</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TtV4ICWNEem2wfSvtxnwBQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TtV4ISWNEem2wfSvtxnwBQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_PiViMCWLEem2wfSvtxnwBQ" name="MeasResultInteger">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_o4EbYCWLEem2wfSvtxnwBQ" annotatedElement="_PiViMCWLEem2wfSvtxnwBQ">
+            <body>The measResultInteger datatype provides an integer 3GPP PM measurement result;</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1GfgECWLEem2wfSvtxnwBQ" name="p">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_HporICWMEem2wfSvtxnwBQ" annotatedElement="_1GfgECWLEem2wfSvtxnwBQ">
+              <body>Integer reference to the counter</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1p358CWLEem2wfSvtxnwBQ" name="iValue">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dRDfgCWMEem2wfSvtxnwBQ" annotatedElement="_1p358CWLEem2wfSvtxnwBQ">
+              <body>Integer counter value</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QzoK8CWLEem2wfSvtxnwBQ" name="measResultNull">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_quX1sCWLEem2wfSvtxnwBQ" annotatedElement="_QzoK8CWLEem2wfSvtxnwBQ">
+            <body>The measResultNull datatype provides a null 3GPP PM measurement result</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3OSTACWLEem2wfSvtxnwBQ" name="p">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Ia2FoCWMEem2wfSvtxnwBQ" annotatedElement="_3OSTACWLEem2wfSvtxnwBQ">
+              <body>Integer reference to the counter</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3oh_ACWLEem2wfSvtxnwBQ" name="isNull">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_gSP_oCWMEem2wfSvtxnwBQ" annotatedElement="_3oh_ACWLEem2wfSvtxnwBQ">
+              <body>Enumeration: ‘true’ or ‘false’</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NoNowCWUEem2wfSvtxnwBQ" annotatedElement="_3oh_ACWLEem2wfSvtxnwBQ">
+              <body>The VES 7.1 Spec has this attribute as a string.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RVQRUCWLEem2wfSvtxnwBQ" name="MesResultNumber">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_s1xAACWLEem2wfSvtxnwBQ" annotatedElement="_RVQRUCWLEem2wfSvtxnwBQ">
+            <body>The measResultNumber datatype provides a number 3GPP PM measurement result</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_43lMECWLEem2wfSvtxnwBQ" name="p">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_JL6WMCWMEem2wfSvtxnwBQ" annotatedElement="_43lMECWLEem2wfSvtxnwBQ">
+              <body>Integer reference to the counter</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5Su3ACWLEem2wfSvtxnwBQ" name="rValue" type="_p3EKoDm0EeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_l4vHACWMEem2wfSvtxnwBQ" annotatedElement="_5Su3ACWLEem2wfSvtxnwBQ">
+              <body>Number counter value</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SXULQCWLEem2wfSvtxnwBQ" name="MeasResultString">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uuHBsCWLEem2wfSvtxnwBQ" annotatedElement="_SXULQCWLEem2wfSvtxnwBQ">
+            <body>The measResultString datatype provides a string 3GPP PM measurement result;</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6BFx0CWLEem2wfSvtxnwBQ" name="p">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KC_IICWMEem2wfSvtxnwBQ" annotatedElement="_6BFx0CWLEem2wfSvtxnwBQ">
+              <body>Integer reference to the counter</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6bOwICWLEem2wfSvtxnwBQ" name="sVlaue">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_oNWN8CWMEem2wfSvtxnwBQ" annotatedElement="_6bOwICWLEem2wfSvtxnwBQ">
+              <body>String counter value</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_wZkrsIbfEei-x_BD9U-ssQ" name="EventTypeDefinitions">
         <packagedElement xmi:type="uml:DataType" xmi:id="_yPR44IEoEeieQ4zKGFzYtQ" name="HashMap">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZnY40CZKEemRA_CB-n5OfQ" annotatedElement="_yPR44IEoEeieQ4zKGFzYtQ">
+            <body>The hashMap datatype is an ‘associative array’, which is an unordered collection of key-value pairs of the form “key”: “value”, where each key and value are strings. Keys must use camel casing to separate words and acronyms; only the first letter of each acronym shall be capitalized.</body>
+          </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_k1ND8IEpEeieQ4zKGFzYtQ" name="name">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ddOh8CZKEemRA_CB-n5OfQ" annotatedElement="_k1ND8IEpEeieQ4zKGFzYtQ">
+              <body>Hashmap name.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_rEkJMIEpEeieQ4zKGFzYtQ" name="arrayOfFields" type="_yPR44IEoEeieQ4zKGFzYtQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rEkJMIEpEeieQ4zKGFzYtQ" name="hashmapEntry" type="_vxJ9ADafEei23_xWdimG9w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_h2qAUCZKEemRA_CB-n5OfQ" annotatedElement="_rEkJMIEpEeieQ4zKGFzYtQ">
+              <body>A given entry in the hashmap, which is a key/value pair.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jl5yMCZKEemRA_CB-n5OfQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jl_40CZKEemRA_CB-n5OfQ" value="*"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_NcX08IEsEeieQ4zKGFzYtQ" name="EventSeverity">
           <ownedComment xmi:type="uml:Comment" xmi:id="_iaLuYKZJEeily5uFlujj3Q" annotatedElement="_NcX08IEsEeieQ4zKGFzYtQ">
@@ -3987,13 +4273,13 @@ Field	Type	Required?	Description&#xD;
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YTI0wIngEeiOe-BKGdv_Yg" name="MOBILEFLOW"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jKx3QInhEeiOe-BKGdv_Yg" name="NOTIFICATION"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oToncInhEeiOe-BKGdv_Yg" name="OTHER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hvBcoCDLEemw1L3J4dNy4w" name="PERF3GPP"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rMwwsInhEeiOe-BKGdv_Yg" name="PNFREGISTRATION"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wT_JMInhEeiOe-BKGdv_Yg" name="SIP_SIGNALING"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_xzSYwInhEeiOe-BKGdv_Yg" name="STATE_CHANGE"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_y5OGEInhEeiOe-BKGdv_Yg" name="SYSLOG"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3Eo9oInhEeiOe-BKGdv_Yg" name="THRESHOLD_CROSSING_ALERT"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4T_FoInhEeiOe-BKGdv_Yg" name="VOICE_QUALITY"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hvBcoCDLEemw1L3J4dNy4w" name="PERF3GPP"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_VZxGkJQ2Eei6kI-JPNdeuw" name="NotificationState">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bN1-AJQ2Eei6kI-JPNdeuw" name="IN_SERVICE"/>
@@ -4001,9 +4287,20 @@ Field	Type	Required?	Description&#xD;
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eugBUJQ2Eei6kI-JPNdeuw" name="OUT_OF_SERVICE"/>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_tptTQKJWEeibfLkXoC-lBg" name="ThresholdCrossingAlertCounter">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4wuD8KJWEeibfLkXoC-lBg" name="criticality" type="_JLLKUBW9Eem1a9CgBTwvhA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_5x4mAKJWEeibfLkXoC-lBg" name="hashMap" type="_yPR44IEoEeieQ4zKGFzYtQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4wuD8KJWEeibfLkXoC-lBg" name="criticality" type="_JLLKUBW9Eem1a9CgBTwvhA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_s0f30CZTEemRA_CB-n5OfQ" annotatedElement="_4wuD8KJWEeibfLkXoC-lBg">
+              <body>Enumeration: ‘CRIT’, ‘MAJ’</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5x4mAKJWEeibfLkXoC-lBg" name="hashMap" type="_yPR44IEoEeieQ4zKGFzYtQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_u56FICZTEemRA_CB-n5OfQ" annotatedElement="_5x4mAKJWEeibfLkXoC-lBg">
+              <body>Key is the name of the counter and value is the current value of the counter</body>
+            </ownedComment>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_61QHgKJWEeibfLkXoC-lBg" name="thresholdCrossed">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_wsXhQCZTEemRA_CB-n5OfQ" annotatedElement="_61QHgKJWEeibfLkXoC-lBg">
+              <body>Last threshold that was crossed</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
@@ -4527,6 +4824,81 @@ Debug	          7	    debug-level messages&#xD;
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_4Ii74tkYEei09Y1bp3mjwA" name="voicequality" type="_7sljAMWTEeiLjtyU_R81wg" association="_4IhtwNkYEei09Y1bp3mjwA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_NprCgCDMEemw1L3J4dNy4w" name="EventContainsPerf3gpp" memberEnd="_NprpkiDMEemw1L3J4dNy4w _NpsQoiDMEemw1L3J4dNy4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NprpkCDMEemw1L3J4dNy4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NprpkSDMEemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PkTJoCZSEemRA_CB-n5OfQ" annotatedElement="_NprCgCDMEemw1L3J4dNy4w">
+            <body>Fields specific to 3gpp types of events</body>
+          </ownedComment>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_NpsQoiDMEemw1L3J4dNy4w" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_NprCgCDMEemw1L3J4dNy4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_2YIm8CDREemw1L3J4dNy4w" name="Perf3gppContainsMeasDataCollection" memberEnd="_2YJOAiDREemw1L3J4dNy4w _2YJ1EyDREemw1L3J4dNy4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YJOACDREemw1L3J4dNy4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YJOASDREemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2YJ1EyDREemw1L3J4dNy4w" name="perf3gpp" type="_ATTeUCDMEemw1L3J4dNy4w" association="_2YIm8CDREemw1L3J4dNy4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_dDhRQCV1Eem2wfSvtxnwBQ" name="MeasDataCollectionContainsMeasInfo" memberEnd="_dDmJwCV1Eem2wfSvtxnwBQ _dDnX4SV1Eem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dDkUkCV1Eem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dDk7oCV1Eem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dDnX4SV1Eem2wfSvtxnwBQ" name="measdatacollection" type="_7y9GUCDQEemw1L3J4dNy4w" association="_dDhRQCV1Eem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_NbKDACV6Eem2wfSvtxnwBQ" name="MeasInfoContainsMeasInfoIdInteger" memberEnd="_NbMfQSV6Eem2wfSvtxnwBQ _NbNtYSV6Eem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NbL4MCV6Eem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NbMfQCV6Eem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_NbNtYSV6Eem2wfSvtxnwBQ" name="measinfo" type="_FbTEICDSEemw1L3J4dNy4w" association="_NbKDACV6Eem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Oh0JECV6Eem2wfSvtxnwBQ" name="MeasInfoContainsMeasInfoIdString" memberEnd="_Oh1XMCV6Eem2wfSvtxnwBQ _Oh1-QiV6Eem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oh0wICV6Eem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Oh0wISV6Eem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Oh1-QiV6Eem2wfSvtxnwBQ" name="measinfo" type="_FbTEICDSEemw1L3J4dNy4w" association="_Oh0JECV6Eem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_pUU3YCV8Eem2wfSvtxnwBQ" name="MeasInfoContainsMeasTypesInteger" memberEnd="_pUVeciV8Eem2wfSvtxnwBQ _pUWskSV8Eem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pUVecCV8Eem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pUVecSV8Eem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_pUWskSV8Eem2wfSvtxnwBQ" name="measinfo" type="_FbTEICDSEemw1L3J4dNy4w" association="_pUU3YCV8Eem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rrne4CV8Eem2wfSvtxnwBQ" name="MeasInfoContainsMeasTypesString" memberEnd="_rrne4yV8Eem2wfSvtxnwBQ _rroF8iV8Eem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rrne4SV8Eem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rrne4iV8Eem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_rroF8iV8Eem2wfSvtxnwBQ" name="measinfo" type="_FbTEICDSEemw1L3J4dNy4w" association="_rrne4CV8Eem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_pybAQCWKEem2wfSvtxnwBQ" name="MeasInfoContainsMeasValues" memberEnd="_pycOYiWKEem2wfSvtxnwBQ _pydcgiWKEem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pycOYCWKEem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pycOYSWKEem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_pydcgiWKEem2wfSvtxnwBQ" name="measinfo" type="_FbTEICDSEemw1L3J4dNy4w" association="_pybAQCWKEem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_smTyQCWMEem2wfSvtxnwBQ" name="MeasValuesContainsMeasResultInteger" memberEnd="_smUZUiWMEem2wfSvtxnwBQ _smVAYSWMEem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_smUZUCWMEem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_smUZUSWMEem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_smVAYSWMEem2wfSvtxnwBQ" name="measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" association="_smTyQCWMEem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_zdXJoCWMEem2wfSvtxnwBQ" name="MeasValuesContainsMeasResultNull" memberEnd="_zdXwsiWMEem2wfSvtxnwBQ _zdYXwiWMEem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zdXwsCWMEem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zdXwsSWMEem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_zdYXwiWMEem2wfSvtxnwBQ" name="measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" association="_zdXJoCWMEem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_SGB8ECWNEem2wfSvtxnwBQ" name="MeasValuesContainsMEasResultNumber" memberEnd="_SGDKMiWNEem2wfSvtxnwBQ _SGDxQiWNEem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SGDKMCWNEem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SGDKMSWNEem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_SGDxQiWNEem2wfSvtxnwBQ" name="measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" association="_SGB8ECWNEem2wfSvtxnwBQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TtUqACWNEem2wfSvtxnwBQ" name="MeasValuesContainsMeasResultString" memberEnd="_TtVRESWNEem2wfSvtxnwBQ _TtWfMCWNEem2wfSvtxnwBQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TtUqASWNEem2wfSvtxnwBQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TtVRECWNEem2wfSvtxnwBQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TtWfMCWNEem2wfSvtxnwBQ" name="measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" association="_TtUqACWNEem2wfSvtxnwBQ"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Nfy1oMyJEeicT7FGufu5-g" name="Diagrams">
         <ownedComment xmi:type="uml:Comment" xmi:id="_L3adsJzVEeiLvPKMh61-Bg">
@@ -4541,88 +4913,6 @@ Debug	          7	    debug-level messages&#xD;
         <ownedComment xmi:type="uml:Comment" xmi:id="_0b2vMPJoEeibsZxxyZUKdQ">
           <body>Treated associatedAlertList as a String with multiplicity of *</body>
         </ownedComment>
-        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_ZBD6YBqeEemOGejS9lsDjA" name="HashMap">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_dB-yIBqeEemOGejS9lsDjA" annotatedElement="_ZBD6YBqeEemOGejS9lsDjA">
-            <body>The hashMap datatype is an ‘associative array’, which is an unordered collection of key-value pairs of the form “key”: “value”, where each key and value are strings. Keys must use camel casing to separate words and acronyms; only the first letter of each acronym shall be capitalized.</body>
-          </ownedComment>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_QuMP0BqfEemOGejS9lsDjA" name="KeyValuePair">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TEpw4BqfEemOGejS9lsDjA" name="key">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wia4QBqfEemOGejS9lsDjA" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_ZhEasBqfEemOGejS9lsDjA" name="HashKevin">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cWvnUBqfEemOGejS9lsDjA" name="Something" type="_QuMP0BqfEemOGejS9lsDjA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kUKw4BqfEemOGejS9lsDjA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kUPpYBqfEemOGejS9lsDjA" value="*"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_NprCgCDMEemw1L3J4dNy4w" name="EventContainsPerf3gpp" memberEnd="_NprpkiDMEemw1L3J4dNy4w _NpsQoiDMEemw1L3J4dNy4w">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NprpkCDMEemw1L3J4dNy4w" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NprpkSDMEemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_NpsQoiDMEemw1L3J4dNy4w" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_NprCgCDMEemw1L3J4dNy4w"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_7y9GUCDQEemw1L3J4dNy4w" name="MeasDataCollection">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_IwvLYCDREemw1L3J4dNy4w" name="formatVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_iQ0TYCDREemw1L3J4dNy4w" annotatedElement="_IwvLYCDREemw1L3J4dNy4w">
-              <body>3GPP PM reporting file format version from pre-standard TS 28.550 v2.0.0</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_clbd4CDREemw1L3J4dNy4w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cljZsCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_JMG4wCDREemw1L3J4dNy4w" name="granularityPeriod">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_kNCvgCDREemw1L3J4dNy4w" annotatedElement="_JMG4wCDREemw1L3J4dNy4w">
-              <body>Granularity period for the PM report in seconds</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_clqHYCDREemw1L3J4dNy4w" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_clyqQCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jl__cCDREemw1L3J4dNy4w" name="measObjInstIdList">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_l_GjACDREemw1L3J4dNy4w" annotatedElement="_Jl__cCDREemw1L3J4dNy4w">
-              <body>Array of monitored object local distinguished name ids per 3GPP TS 32.300</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cl5_ACDREemw1L3J4dNy4w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cl-3gCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_J_pOgCDREemw1L3J4dNy4w" name="measuredEntityDn">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_n6PaACDREemw1L3J4dNy4w" annotatedElement="_J_pOgCDREemw1L3J4dNy4w">
-              <body>Distinguished name per 3GPP TS 28.550</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmDwACDREemw1L3J4dNy4w" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmIogCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_KXdRkCDREemw1L3J4dNy4w" name="measuredEntitySoftwareVersion">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_pjsEECDREemw1L3J4dNy4w" annotatedElement="_KXdRkCDREemw1L3J4dNy4w">
-              <body>Software version for the NF providing the PM data as specified in 3GPP TS 28.550</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmNhACDREemw1L3J4dNy4w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmSZgCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_LGwnkCDREemw1L3J4dNy4w" name="measuredEntityUserName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_rMP9UCDREemw1L3J4dNy4w" annotatedElement="_LGwnkCDREemw1L3J4dNy4w">
-              <body>User Definable name for the measured object per 3GPP TS 28.550</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmXSACDREemw1L3J4dNy4w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmcKgCDREemw1L3J4dNy4w" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_2YIm8CDREemw1L3J4dNy4w" name="Perf3gppHasMeasDataCollection" memberEnd="_2YJOAiDREemw1L3J4dNy4w _2YJ1EyDREemw1L3J4dNy4w">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YJOACDREemw1L3J4dNy4w" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YJOASDREemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_2YJ1EyDREemw1L3J4dNy4w" name="perf3gpp" type="_ATTeUCDMEemw1L3J4dNy4w" association="_2YIm8CDREemw1L3J4dNy4w"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_FbTEICDSEemw1L3J4dNy4w" name="MeasInfo"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License">
@@ -7026,7 +7316,31 @@ Value:&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_j1UzAPgUEeiEqKXVVPCm1Q" annotatedElement="_BprD8OLJEeiKy5JVrA0UGA">
         <body>A set of common business entities that collectively serve as the foundation of the ONAP Information Model.. This set of entities enables the entities in different domains of the Information Model to be associated with each other, providing greater overall coherence.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Package" xmi:id="_ErJ38OLJEeiKy5JVrA0UGA" name="Associations"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ErJ38OLJEeiKy5JVrA0UGA" name="Associations">
+        <packagedElement xmi:type="uml:Association" xmi:id="_kO0hMBp7EemOGejS9lsDjA" name="EntityFurtherDefinedBy" memberEnd="_kO29cBp7EemOGejS9lsDjA _kO4LkBp7EemOGejS9lsDjA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kO2WYBp7EemOGejS9lsDjA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kO2WYRp7EemOGejS9lsDjA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_kO4LkBp7EemOGejS9lsDjA" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" association="_kO0hMBp7EemOGejS9lsDjA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_kO29cBp7EemOGejS9lsDjA" name="managedentity" type="_gBaFkBp7EemOGejS9lsDjA" aggregation="composite" association="_kO0hMBp7EemOGejS9lsDjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tQHikBp7EemOGejS9lsDjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tQLM8Bp7EemOGejS9lsDjA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vmPJwBqZEemOGejS9lsDjA" memberEnd="_vmPw0hqZEemOGejS9lsDjA _vmQ-8BqZEemOGejS9lsDjA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vmPw0BqZEemOGejS9lsDjA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vmPw0RqZEemOGejS9lsDjA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_vmPw0hqZEemOGejS9lsDjA" name="metadata" type="_roVJwBqZEemOGejS9lsDjA" aggregation="shared" association="_vmPJwBqZEemOGejS9lsDjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7U6sBqZEemOGejS9lsDjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7XW8BqZEemOGejS9lsDjA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_vmQ-8BqZEemOGejS9lsDjA" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" association="_vmPJwBqZEemOGejS9lsDjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DVroBqZEemOGejS9lsDjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DZWABqZEemOGejS9lsDjA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_HtkgEOLJEeiKy5JVrA0UGA" name="Diagrams" URI="">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2v3KwOwpEei7-e9MrPJW7Q">
           <body>Perhaps all these attributes can be moved up to OnboardingNfDescriptor</body>
@@ -7055,31 +7369,58 @@ Value:&#xD;
           <generalization xmi:type="uml:Generalization" xmi:id="_JVBfwPMUEeiKa_-nH9J3Lg" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_gBaFkBp7EemOGejS9lsDjA" name="ManagedEntity"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_kO0hMBp7EemOGejS9lsDjA" name="EntityFurtherDefinedBy" memberEnd="_kO29cBp7EemOGejS9lsDjA _kO4LkBp7EemOGejS9lsDjA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kO2WYBp7EemOGejS9lsDjA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kO2WYRp7EemOGejS9lsDjA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_kO4LkBp7EemOGejS9lsDjA" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" association="_kO0hMBp7EemOGejS9lsDjA"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_kO29cBp7EemOGejS9lsDjA" name="managedentity" type="_gBaFkBp7EemOGejS9lsDjA" aggregation="composite" association="_kO0hMBp7EemOGejS9lsDjA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tQHikBp7EemOGejS9lsDjA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tQLM8Bp7EemOGejS9lsDjA" value="1"/>
-          </ownedEnd>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_roVJwBqZEemOGejS9lsDjA" name="Metadata">
           <generalization xmi:type="uml:Generalization" xmi:id="_uV144BqZEemOGejS9lsDjA" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_vmPJwBqZEemOGejS9lsDjA" memberEnd="_vmPw0hqZEemOGejS9lsDjA _vmQ-8BqZEemOGejS9lsDjA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vmPw0BqZEemOGejS9lsDjA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vmPw0RqZEemOGejS9lsDjA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_vmPw0hqZEemOGejS9lsDjA" name="metadata" type="_roVJwBqZEemOGejS9lsDjA" aggregation="shared" association="_vmPJwBqZEemOGejS9lsDjA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7U6sBqZEemOGejS9lsDjA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z7XW8BqZEemOGejS9lsDjA" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_vmQ-8BqZEemOGejS9lsDjA" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" association="_vmPJwBqZEemOGejS9lsDjA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DVroBqZEemOGejS9lsDjA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DZWABqZEemOGejS9lsDjA" value="*"/>
-          </ownedEnd>
+        <packagedElement xmi:type="uml:Class" xmi:id="_O6IOQCYxEemRA_CB-n5OfQ" name="Descriptor">
+          <generalization xmi:type="uml:Generalization" xmi:id="_T1HhkCYxEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sjEpECYxEemRA_CB-n5OfQ" name="descriptorName" redefinedProperty="_vi4oQOLJEeiKy5JVrA0UGA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tIbjcCYyEemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_039a8CYyEemRA_CB-n5OfQ" name="status">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UiIJ0CY3EemRA_CB-n5OfQ" name="descriptorDescription" redefinedProperty="_wEHtEOLJEeiKy5JVrA0UGA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RM0NICYyEemRA_CB-n5OfQ" name="Party">
+          <generalization xmi:type="uml:Generalization" xmi:id="_UXWPcCYyEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AQ7eUCYzEemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I4XOMCYzEemRA_CB-n5OfQ" name="BusinessInteraction">
+          <generalization xmi:type="uml:Generalization" xmi:id="_OUjKECYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eRVW4CYzEemRA_CB-n5OfQ" name="startDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_etB0YCYzEemRA_CB-n5OfQ" name="endDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wk2KgCYzEemRA_CB-n5OfQ" name="status">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Q8qb0CYzEemRA_CB-n5OfQ" name="Location">
+          <generalization xmi:type="uml:Generalization" xmi:id="_UVWO4CYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QfkasCY0EemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iQAhACY1EemRA_CB-n5OfQ" name="VnfD">
+          <generalization xmi:type="uml:Generalization" xmi:id="_KV1xcCY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qEwPsCY1EemRA_CB-n5OfQ" name="ServiceDescriptor">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Ek1cICY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_r58PsCY1EemRA_CB-n5OfQ" name="PnfD">
+          <generalization xmi:type="uml:Generalization" xmi:id="_GG8vICY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Xht84CY2EemRA_CB-n5OfQ" name="Service">
+          <generalization xmi:type="uml:Generalization" xmi:id="_rTv88CY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_aUEIsCY2EemRA_CB-n5OfQ" name="Pnf">
+          <generalization xmi:type="uml:Generalization" xmi:id="_t2wsQCY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b-lw0CY2EemRA_CB-n5OfQ" name="Vnf">
+          <generalization xmi:type="uml:Generalization" xmi:id="_vuJrsCY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RRur4CY-EemRA_CB-n5OfQ" name="CommonEventHeader">
+          <generalization xmi:type="uml:Generalization" xmi:id="_eksWwCY-EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
@@ -7115,7 +7456,12 @@ Value:&#xD;
             <ownedComment xmi:type="uml:Comment" xmi:id="_Y5yEwPgPEeiEqKXVVPCm1Q" annotatedElement="_vi4oQOLJEeiKy5JVrA0UGA">
               <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KhlEMCYyEemRA_CB-n5OfQ">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W2GEcCYfEemRA_CB-n5OfQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W2S4wCYfEemRA_CB-n5OfQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_wEHtEOLJEeiKy5JVrA0UGA" name="description">
             <ownedComment xmi:type="uml:Comment" xmi:id="_fixyAPgPEeiEqKXVVPCm1Q" annotatedElement="_wEHtEOLJEeiKy5JVrA0UGA">
@@ -7499,7 +7845,6 @@ Value:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-GrDQpQkEei6kI-JPNdeuw" base_StructuralFeature="_-GrDQJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-qdFwpQkEei6kI-JPNdeuw" base_StructuralFeature="_-qdFwJQkEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__NVwYJQkEei6kI-JPNdeuw" base_StructuralFeature="__NT7MJQkEei6kI-JPNdeuw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_AK92QJQlEei6kI-JPNdeuw" base_StructuralFeature="_AK9PMJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Bs8mYJQlEei6kI-JPNdeuw" base_StructuralFeature="_Bs7_UJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Ez0QsJQlEei6kI-JPNdeuw" base_StructuralFeature="_EzzpoJQlEei6kI-JPNdeuw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FUQEQZQlEei6kI-JPNdeuw" base_StructuralFeature="_FUPdMJQlEei6kI-JPNdeuw"/>
@@ -8343,9 +8688,6 @@ Value:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_roVw0BqZEemOGejS9lsDjA" base_Class="_roVJwBqZEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vmPw0xqZEemOGejS9lsDjA" base_StructuralFeature="_vmPw0hqZEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vmQ-8RqZEemOGejS9lsDjA" base_StructuralFeature="_vmQ-8BqZEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_TEpw4RqfEemOGejS9lsDjA" base_StructuralFeature="_TEpw4BqfEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Wia4QRqfEemOGejS9lsDjA" base_StructuralFeature="_Wia4QBqfEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_cWvnURqfEemOGejS9lsDjA" base_StructuralFeature="_cWvnUBqfEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PJJAYR87EemJTaeYhZuDRA" base_StructuralFeature="_PJJAYB87EemJTaeYhZuDRA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PuSU0B87EemJTaeYhZuDRA" base_StructuralFeature="_PuRtwB87EemJTaeYhZuDRA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QfAAEB87EemJTaeYhZuDRA" base_StructuralFeature="_Qe_ZAB87EemJTaeYhZuDRA"/>
@@ -8473,4 +8815,81 @@ Value:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_YbUhQqY4Eeily5uFlujj3Q" base_Element="_TsnHUDgXEeiOYfGHew0BGg"/>
   <OpenModel_Profile:Preliminary xmi:id="_YbVIUaY4Eeily5uFlujj3Q" base_Element="_W5c2wDgXEeiOYfGHew0BGg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ph99UAVoEemrBZmpgd_POA" base_StructuralFeature="_ph9WQgVoEemrBZmpgd_POA"/>
+  <OpenModel_Profile:Experimental xmi:id="_cdjvYCVzEem2wfSvtxnwBQ" base_Element="_FbTEICDSEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_t21vYSVzEem2wfSvtxnwBQ" base_StructuralFeature="_t21vYCVzEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_dDmJwSV1Eem2wfSvtxnwBQ" base_StructuralFeature="_dDmJwCV1Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_dDnX4iV1Eem2wfSvtxnwBQ" base_StructuralFeature="_dDnX4SV1Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_6sz04CV2Eem2wfSvtxnwBQ" base_Class="_6szN0CV2Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="__taA8CV2Eem2wfSvtxnwBQ" base_Class="__tZZ4CV2Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_KOOUUCV3Eem2wfSvtxnwBQ" base_Element="_6szN0CV2Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_LI2wkCV3Eem2wfSvtxnwBQ" base_Element="__tZZ4CV2Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MgrfICV3Eem2wfSvtxnwBQ" base_StructuralFeature="_Mgq4ECV3Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_M6UuMSV3Eem2wfSvtxnwBQ" base_StructuralFeature="_M6UuMCV3Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NbMfQiV6Eem2wfSvtxnwBQ" base_StructuralFeature="_NbMfQSV6Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NbNtYiV6Eem2wfSvtxnwBQ" base_StructuralFeature="_NbNtYSV6Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Oh1XMSV6Eem2wfSvtxnwBQ" base_StructuralFeature="_Oh1XMCV6Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Oh1-QyV6Eem2wfSvtxnwBQ" base_StructuralFeature="_Oh1-QiV6Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_I-em4CV7Eem2wfSvtxnwBQ" base_Class="_I-d_0CV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Lk7EsSV7Eem2wfSvtxnwBQ" base_Class="_Lk7EsCV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YBJ74CV7Eem2wfSvtxnwBQ" base_StructuralFeature="_YBJU0CV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Yeq-UCV7Eem2wfSvtxnwBQ" base_StructuralFeature="_YeqXQCV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_g3ktgCV8Eem2wfSvtxnwBQ" base_Element="_I-d_0CV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_iPKLgCV8Eem2wfSvtxnwBQ" base_Element="_Lk7EsCV7Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pUWFgCV8Eem2wfSvtxnwBQ" base_StructuralFeature="_pUVeciV8Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pUWskiV8Eem2wfSvtxnwBQ" base_StructuralFeature="_pUWskSV8Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rrne5CV8Eem2wfSvtxnwBQ" base_StructuralFeature="_rrne4yV8Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rroF8yV8Eem2wfSvtxnwBQ" base_StructuralFeature="_rroF8iV8Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_AgoUASV_Eem2wfSvtxnwBQ" base_Class="_AgoUACV_Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_F0T0ICV_Eem2wfSvtxnwBQ" base_Element="_AgoUACV_Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QY8QgCV_Eem2wfSvtxnwBQ" base_StructuralFeature="_QY7pcCV_Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RbnOcSV_Eem2wfSvtxnwBQ" base_StructuralFeature="_RbnOcCV_Eem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pyc1cCWKEem2wfSvtxnwBQ" base_StructuralFeature="_pycOYiWKEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pyeDkCWKEem2wfSvtxnwBQ" base_StructuralFeature="_pydcgiWKEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_PiWJQCWLEem2wfSvtxnwBQ" base_Class="_PiViMCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_QzoK8SWLEem2wfSvtxnwBQ" base_Class="_QzoK8CWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_RVQ4YCWLEem2wfSvtxnwBQ" base_Class="_RVQRUCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_SXULQSWLEem2wfSvtxnwBQ" base_Class="_SXULQCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_br24wCWLEem2wfSvtxnwBQ" base_Element="_PiViMCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_co7lACWLEem2wfSvtxnwBQ" base_Element="_QzoK8CWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_ep1FwCWLEem2wfSvtxnwBQ" base_Element="_RVQRUCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_fgpZACWLEem2wfSvtxnwBQ" base_Element="_SXULQCWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1GgHICWLEem2wfSvtxnwBQ" base_StructuralFeature="_1GfgECWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1p358SWLEem2wfSvtxnwBQ" base_StructuralFeature="_1p358CWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3OSTASWLEem2wfSvtxnwBQ" base_StructuralFeature="_3OSTACWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3oh_ASWLEem2wfSvtxnwBQ" base_StructuralFeature="_3oh_ACWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_43lMESWLEem2wfSvtxnwBQ" base_StructuralFeature="_43lMECWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_5Su3ASWLEem2wfSvtxnwBQ" base_StructuralFeature="_5Su3ACWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6BFx0SWLEem2wfSvtxnwBQ" base_StructuralFeature="_6BFx0CWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6bOwISWLEem2wfSvtxnwBQ" base_StructuralFeature="_6bOwICWLEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_smUZUyWMEem2wfSvtxnwBQ" base_StructuralFeature="_smUZUiWMEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_smVAYiWMEem2wfSvtxnwBQ" base_StructuralFeature="_smVAYSWMEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zdXwsyWMEem2wfSvtxnwBQ" base_StructuralFeature="_zdXwsiWMEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zdYXwyWMEem2wfSvtxnwBQ" base_StructuralFeature="_zdYXwiWMEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SGDKMyWNEem2wfSvtxnwBQ" base_StructuralFeature="_SGDKMiWNEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SGDxQyWNEem2wfSvtxnwBQ" base_StructuralFeature="_SGDxQiWNEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_TtVREiWNEem2wfSvtxnwBQ" base_StructuralFeature="_TtVRESWNEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_TtWfMSWNEem2wfSvtxnwBQ" base_StructuralFeature="_TtWfMCWNEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_O6I1UCYxEemRA_CB-n5OfQ" base_Class="_O6IOQCYxEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sjEpESYxEemRA_CB-n5OfQ" base_StructuralFeature="_sjEpECYxEemRA_CB-n5OfQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_KhrK0CYyEemRA_CB-n5OfQ" base_Comment="_KhlEMCYyEemRA_CB-n5OfQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_RM0NISYyEemRA_CB-n5OfQ" base_Class="_RM0NICYyEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tIbjcSYyEemRA_CB-n5OfQ" base_StructuralFeature="_tIbjcCYyEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_039a8SYyEemRA_CB-n5OfQ" base_StructuralFeature="_039a8CYyEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_AQ8FYCYzEemRA_CB-n5OfQ" base_StructuralFeature="_AQ7eUCYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_I4XOMSYzEemRA_CB-n5OfQ" base_Class="_I4XOMCYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Q8qb0SYzEemRA_CB-n5OfQ" base_Class="_Q8qb0CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eRVW4SYzEemRA_CB-n5OfQ" base_StructuralFeature="_eRVW4CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_etB0YSYzEemRA_CB-n5OfQ" base_StructuralFeature="_etB0YCYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wk2KgSYzEemRA_CB-n5OfQ" base_StructuralFeature="_wk2KgCYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QfkasSY0EemRA_CB-n5OfQ" base_StructuralFeature="_QfkasCY0EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_iQAhASY1EemRA_CB-n5OfQ" base_Class="_iQAhACY1EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_qEwPsSY1EemRA_CB-n5OfQ" base_Class="_qEwPsCY1EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_r58PsSY1EemRA_CB-n5OfQ" base_Class="_r58PsCY1EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Xht84SY2EemRA_CB-n5OfQ" base_Class="_Xht84CY2EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_aUEvwCY2EemRA_CB-n5OfQ" base_Class="_aUEIsCY2EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_b-lw0SY2EemRA_CB-n5OfQ" base_Class="_b-lw0CY2EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UiIJ0SY3EemRA_CB-n5OfQ" base_StructuralFeature="_UiIJ0CY3EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_RRvS8CY-EemRA_CB-n5OfQ" base_Class="_RRur4CY-EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_9-F7MSZBEemRA_CB-n5OfQ" base_StructuralFeature="_9-F7MCZBEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_-0ohoSZBEemRA_CB-n5OfQ" base_StructuralFeature="_-0ohoCZBEemRA_CB-n5OfQ"/>
 </xmi:XMI>
