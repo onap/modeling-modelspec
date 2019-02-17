@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oZz14DOHEei5Af8DcjrhIQ" name="Party">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oZz14DOHEei5Af8DcjrhIQ" name="Party">
   <packagedElement xmi:type="uml:Package" xmi:id="_pl6coDOHEei5Af8DcjrhIQ" name="Associations"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsDOHEei5Af8DcjrhIQ" name="Diagrams"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsDOHEei5Af8DcjrhIQ" name="Diagrams">
+    <packagedElement xmi:type="uml:Class" xmi:id="_pLrroC7mEem7DJry5UTesQ" name="Party"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rdTI8C7mEem7DJry5UTesQ" name="Individual">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3Dw1wC7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_shyr0C7mEem7DJry5UTesQ" name="Organization">
+      <generalization xmi:type="uml:Generalization" xmi:id="_33D68C7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yB-98C7mEem7DJry5UTesQ" name="OrganizationDecompositionComponent"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5mFBgC7mEem7DJry5UTesQ" name="AtomicOrganization">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UjGooC7nEem7DJry5UTesQ" general="_shyr0C7mEem7DJry5UTesQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6E0zAC7mEem7DJry5UTesQ" name="CompositeOrganization">
+      <generalization xmi:type="uml:Generalization" xmi:id="_XP0tkC7nEem7DJry5UTesQ" general="_shyr0C7mEem7DJry5UTesQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qTvDYC7nEem7DJry5UTesQ" name="CompositeOrganizationComposedOf" memberEnd="_qTw4kC7nEem7DJry5UTesQ _qTxfoC7nEem7DJry5UTesQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qTwRgC7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qTwRgS7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qTw4kC7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qTxfoC7nEem7DJry5UTesQ" name="compositeorganization" type="_6E0zAC7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_q99FEC7nEem7DJry5UTesQ" memberEnd="_q99sIC7nEem7DJry5UTesQ _q99sIS7nEem7DJry5UTesQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q99FES7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q99FEi7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIC7nEem7DJry5UTesQ" name="organization" type="_shyr0C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIS7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ"/>
+    </packagedElement>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsTOHEei5Af8DcjrhIQ" name="Interfaces"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_pl7qwDOHEei5Af8DcjrhIQ" name="ObjectClasses"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_pl7qwTOHEei5Af8DcjrhIQ" name="TypeDefinitions"/>
