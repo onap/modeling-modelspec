@@ -6786,7 +6786,7 @@ NOTE: This allows to provide one or more   localization languages to support sel
             </ownedComment>
             <type xmi:type="uml:DataType" href="Ns.uml#_kEZBoTzEEeiWMf5FLWfdLA"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWVjzEEeiWMf5FLWfdLA" name="localAffinityOrAntiAffinityRule " type="_RVZi0D2-Eeiu6I5JfRTxxQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWVjzEEeiWMf5FLWfdLA" name="localAffinityOrAntiAffinityRule ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_45bWVzzEEeiWMf5FLWfdLA" annotatedElement="_45bWVjzEEeiWMf5FLWfdLA">
               <body>Specifies affinity and anti-affinity rules applicable between VLs instantiated from the referenced VLD. </body>
             </ownedComment>
@@ -6801,13 +6801,13 @@ NOTE : 	Each identifier references an affinity or anti-affinity group which expr
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45bWXDzEEeiWMf5FLWfdLA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45bWXTzEEeiWMf5FLWfdLA" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWXjzEEeiWMf5FLWfdLA" name="maxBitrateRequirements" type="_nPNHsD2-Eeiu6I5JfRTxxQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWXjzEEeiWMf5FLWfdLA" name="maxBitrateRequirements">
             <ownedComment xmi:type="uml:Comment" xmi:id="_45bWXzzEEeiWMf5FLWfdLA" annotatedElement="_45bWXjzEEeiWMf5FLWfdLA">
               <body>Specifies the maximum bitrate requirements for a VL instantiated according to this profile. &#xD;
 NOTE: 	These attributes are used to control scaling boundaries.</body>
             </ownedComment>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWYDzEEeiWMf5FLWfdLA" name="minBitrateRequirements" type="_nPNHsD2-Eeiu6I5JfRTxxQ">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_45bWYDzEEeiWMf5FLWfdLA" name="minBitrateRequirements">
             <ownedComment xmi:type="uml:Comment" xmi:id="_45bWYTzEEeiWMf5FLWfdLA" annotatedElement="_45bWYDzEEeiWMf5FLWfdLA">
               <body>Specifies the minimum bitrate requirements for a VL instantiated according to this profile.&#xD;
 NOTE: 	These attributes are used to control scaling boundaries.</body>
@@ -7065,6 +7065,9 @@ Shall be present when the addressType is IP address.</body>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_X9TdUDdPEeiIfPeSAqyGdQ" name="L2AddressData">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4Ik0gDVDEemHv-d7dSGofA" annotatedElement="_X9TdUDdPEeiIfPeSAqyGdQ">
+            <body>The L2AddressData information element supports providing information about Layer 2 level addressing applicable to a CP.</body>
+          </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ifaxMDdPEeiIfPeSAqyGdQ" name="macAddressAssignment">
             <ownedComment xmi:type="uml:Comment" xmi:id="_oHJ1wDdPEeiIfPeSAqyGdQ" annotatedElement="_ifaxMDdPEeiIfPeSAqyGdQ">
               <body>Specify if the MAC address assignment is the responsibility of management and orchestration function or not.&#xD;
@@ -7117,7 +7120,7 @@ NOTE: The address type should be aligned with the address type supported by the 
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_tFQGcDnLEeiWMf5FLWfdLA" name="LayerProtocol">
           <ownedComment xmi:type="uml:Comment" xmi:id="_zLXwIDnLEeiWMf5FLWfdLA" annotatedElement="_tFQGcDnLEeiWMf5FLWfdLA">
-            <body>Identifies the protocol this VL gives access to </body>
+            <body>Identifies the protocol to which this VL gives access.</body>
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0VFxQDnLEeiWMf5FLWfdLA" name="ETHERNET"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2M_uEDnLEeiWMf5FLWfdLA" name="MPLS"/>
@@ -7125,26 +7128,6 @@ NOTE: The address type should be aligned with the address type supported by the 
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6gEFwDnLEeiWMf5FLWfdLA" name="IPV4"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_95b1UDnLEeiWMf5FLWfdLA" name="IPV6"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__bv8oDnLEeiWMf5FLWfdLA" name="PSEUDOWIRE"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_nPNHsD2-Eeiu6I5JfRTxxQ" name="LinkBitrateRequirements">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_nPNHsT2-Eeiu6I5JfRTxxQ" annotatedElement="_nPNHsD2-Eeiu6I5JfRTxxQ">
-            <body>The LinkBitrateRequirements datatype describes the requirements in terms of bitrate for a Virtual Link.</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nPNHsj2-Eeiu6I5JfRTxxQ" name="root">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_nPNHsz2-Eeiu6I5JfRTxxQ" annotatedElement="_nPNHsj2-Eeiu6I5JfRTxxQ">
-              <body>Specifies the throughput requirement of the link (e.g. bitrate of E-Line, root bitrate of E-Tree, aggregate capacity of E-LAN).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_nPNHtD2-Eeiu6I5JfRTxxQ" name="leaf">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_nPNHtT2-Eeiu6I5JfRTxxQ" annotatedElement="_nPNHtD2-Eeiu6I5JfRTxxQ">
-              <body>Specifies the throughput requirement of leaf connections to the link when applicable to the connectivity type (e.g. for E-Tree and E-LAN branches).&#xD;
-NOTE:	The present document does not specify the means to declare different bitrate requirements for leaf connections (e.g. E-LAN leaves).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nPNHtj2-Eeiu6I5JfRTxxQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nPNHtz2-Eeiu6I5JfRTxxQ" value="1"/>
-          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_LsX6UDgXEeiOYfGHew0BGg" name="LinkBitrateRequirements">
           <ownedComment xmi:type="uml:Comment" xmi:id="_TNBy4DgYEeiOYfGHew0BGg" annotatedElement="_LsX6UDgXEeiOYfGHew0BGg">
@@ -7165,21 +7148,6 @@ NOTE: The present document does not specify the means to declare different bitra
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GlJsYDgYEeiOYfGHew0BGg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GlNWwDgYEeiOYfGHew0BGg" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_RVZi0D2-Eeiu6I5JfRTxxQ" name="LocalAffinityOrAntiAffinityRule">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_RVZi0T2-Eeiu6I5JfRTxxQ" name="type">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_RVZi0j2-Eeiu6I5JfRTxxQ" annotatedElement="_RVZi0T2-Eeiu6I5JfRTxxQ">
-              <body>Specifies whether the rule is an affinity rule or an anti-affinity rule.&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_RVZi0z2-Eeiu6I5JfRTxxQ" name="scope">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_RVZi1D2-Eeiu6I5JfRTxxQ" annotatedElement="_RVZi0z2-Eeiu6I5JfRTxxQ">
-              <body>Specifies the scope of the rule.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_7hn1IDd1EeiIfPeSAqyGdQ" name="LocalAffinityOrAntiAffinityRule">
@@ -7274,9 +7242,7 @@ transparency for this L2 protocol or not.</body>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_6TxekB87EemJTaeYhZuDRA" name="NetworkType">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Mss9sB88EemJTaeYhZuDRA" annotatedElement="_6TxekB87EemJTaeYhZuDRA">
-            <body>Specifies the network type for this L2&#xD;
-protocol. Possible values: FLAT, VLAN,&#xD;
-VXLAN, GRE.</body>
+            <body>Specifies the network type for this L2 protocol. </body>
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-HirIB87EemJTaeYhZuDRA" name="FLAT"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__jymsB87EemJTaeYhZuDRA" name="VLAN"/>
@@ -7418,13 +7384,9 @@ Note: The value of  ipv6RaMode and ipv6AddressMode must be same.&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_I79lEB8-EemJTaeYhZuDRA" name="IpV6AdressMode">
           <ownedComment xmi:type="uml:Comment" xmi:id="_OQxtoB8-EemJTaeYhZuDRA" annotatedElement="_I79lEB8-EemJTaeYhZuDRA">
-            <body>Specifies IPv6 address mode. Possible&#xD;
-values:&#xD;
-• SLAAC.&#xD;
-• DHCPV6-STATEFUL.&#xD;
-• DHCPV6-STATELESS.&#xD;
+            <body>Specifies IPv6 address mode.  &#xD;
 May be present when the value of the&#xD;
-ipVersion attribute is &quot;IPV6&quot; and shall be&#xD;
+ipVersion attribute is IPV6 and shall be&#xD;
 absent otherwise.</body>
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QWVE4B8-EemJTaeYhZuDRA" name="SLAAC"/>
@@ -7959,10 +7921,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelAttribute xmi:id="_P-rlUD2vEeiu6I5JfRTxxQ" base_StructuralFeature="_P-qXMj2vEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_P-szcD2vEeiu6I5JfRTxxQ" base_StructuralFeature="_P-qXND2vEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_P-tagD2vEeiu6I5JfRTxxQ" base_StructuralFeature="_P-qXNj2vEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_RVZi1T2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_RVZi0T2-Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_RVaJ4D2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_RVZi0z2-Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNHuD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHsj2-Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_nPNuwD2-Eeiu6I5JfRTxxQ" base_StructuralFeature="_nPNHtD2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_Tw52MES0EeiVGPeZpaYNtQ" base_Class="_Tw5PIES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_il0cAUS0EeiVGPeZpaYNtQ" base_Class="_il0cAES0EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vV3AAES0EeiVGPeZpaYNtQ" base_StructuralFeature="_vV1x4kS0EeiVGPeZpaYNtQ"/>
@@ -8284,8 +8242,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:Preliminary xmi:id="__h6bwKe4Eeixw5Ke5QD1pQ" base_Element="_AuYtcDkBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_BU2ZAKe5Eeixw5Ke5QD1pQ" base_Element="_vxJ9ADafEei23_xWdimG9w"/>
   <OpenModel_Profile:Preliminary xmi:id="_Gv66kKe5Eeixw5Ke5QD1pQ" base_Element="_P-qXMD2vEeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_IbgSoKe5Eeixw5Ke5QD1pQ" base_Element="_RVZi0D2-Eeiu6I5JfRTxxQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_KERAMKe5Eeixw5Ke5QD1pQ" base_Element="_nPNHsD2-Eeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_LkXhAKe5Eeixw5Ke5QD1pQ" base_Element="_oXexoD2uEeiu6I5JfRTxxQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_NfABsKe5Eeixw5Ke5QD1pQ" base_Element="_YQwQ0D0NEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_Pib5EKe5Eeixw5Ke5QD1pQ" base_Element="_8dlAoD0TEeiWMf5FLWfdLA"/>
@@ -9214,4 +9170,40 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelClass xmi:id="_srGdATFQEemw1_Ys6rcLWw" base_Class="_srGdADFQEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tw4IkTFsEemw1_Ys6rcLWw" base_StructuralFeature="_tw4IkDFsEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tw5WsTFsEemw1_Ys6rcLWw" base_StructuralFeature="_tw5WsDFsEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Reference xmi:id="_FLCc0DOlEemzC6274d_Yog" base_Element="_8naVoES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Experimental xmi:id="_dyf6wDOlEemzC6274d_Yog" base_Element="_PJJAYB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_fTDHgDOlEemzC6274d_Yog" base_Element="_PuRtwB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_gyrHMDOlEemzC6274d_Yog" base_Element="_Qe_ZAB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_ieGuQDOlEemzC6274d_Yog" base_Element="_ej13AB8_EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Future xmi:id="_kz4S0DOlEemzC6274d_Yog" base_Element="_EXheUCCjEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Future xmi:id="_mPacsDOlEemzC6274d_Yog" base_Element="_FUxJsCCjEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Future xmi:id="_oMWDcDOlEemzC6274d_Yog" base_Element="_GEsKwCCjEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Preliminary xmi:id="__2gysDOlEemzC6274d_Yog" base_Element="_-b8GcDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Cn4uIDOmEemzC6274d_Yog" base_Element="__BqCoDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ExUf0DOmEemzC6274d_Yog" base_Element="__o0JQDdPEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_G6J0kDOmEemzC6274d_Yog" base_Element="_Ag8rIDdQEeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_kukfkDOmEemzC6274d_Yog" base_Element="_Z5XzUB88EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_l1JtIDOmEemzC6274d_Yog" base_Element="_XWjUcB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_nPiAcDOmEemzC6274d_Yog" base_Element="_YJLEMB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_o75boDOmEemzC6274d_Yog" base_Element="_Y2KGAB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_qmSg4DOmEemzC6274d_Yog" base_Element="_ZdOtEB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_sM1A4DOmEemzC6274d_Yog" base_Element="_aMwFgB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Experimental xmi:id="_ty4YsDOmEemzC6274d_Yog" base_Element="_a3GDAB9AEemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Future xmi:id="_v7WhEDOmEemzC6274d_Yog" base_Element="_ZrpFwCCvEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Future xmi:id="_xUL8QDOmEemzC6274d_Yog" base_Element="_5LAPoCCvEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Future xmi:id="_zZbKcDOmEemzC6274d_Yog" base_Element="_65JzgCCvEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Future xmi:id="___prIDOmEemzC6274d_Yog" base_Element="_uFBX8PuHEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:Future xmi:id="_BVI3YDOnEemzC6274d_Yog" base_Element="_RayLoPuIEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:Future xmi:id="_DAEIIDOnEemzC6274d_Yog" base_Element="_gUB30PuIEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GA6IYTd_EeiIfPeSAqyGdQ" base_StructuralFeature="_GA6IYDd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_G-M3EDd_EeiIfPeSAqyGdQ" base_StructuralFeature="_G-MQADd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Hy64kTd_EeiIfPeSAqyGdQ" base_StructuralFeature="_Hy64kDd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_9Ult4JUHEeiYXO5wr78TUw" base_Element="_GA6IYDd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_-NoOsJUHEeiYXO5wr78TUw" base_Element="_G-MQADd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="__AwUwJUHEeiYXO5wr78TUw" base_Element="_Hy64kDd_EeiIfPeSAqyGdQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_3b7QMJdeEei-sOl6ywWHlg" base_Element="_TXtQgJddEei-sOl6ywWHlg"/>
+  <OpenModel_Profile:Experimental xmi:id="_41m_8JdeEei-sOl6ywWHlg" base_Element="_UVFewJddEei-sOl6ywWHlg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uFCmEPuHEeiYVshOvl6_ww" base_StructuralFeature="_uFBX8PuHEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RayLofuIEeiYVshOvl6_ww" base_StructuralFeature="_RayLoPuIEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_gUB30fuIEeiYVshOvl6_ww" base_StructuralFeature="_gUB30PuIEeiYVshOvl6_ww"/>
 </xmi:XMI>
