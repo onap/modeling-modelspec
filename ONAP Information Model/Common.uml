@@ -5165,7 +5165,7 @@ Debug	          7	    debug-level messages&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_ZAQzEMfyEeiEtuRgTYzSUQ" name="ObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_oURIoMfyEeiEtuRgTYzSUQ" name="Delete LicenseKeyDesc">
-          <generalization xmi:type="uml:Generalization" xmi:id="_Za7pwP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_Za7pwP2QEeisxOMTY1eUug" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jOvlIAOOEemCCMXOyOLwIw" name="keyFunction+">
             <ownedComment xmi:type="uml:Comment" xmi:id="_en_GAA6-EemnO9QINOJnHg" annotatedElement="_jOvlIAOOEemCCMXOyOLwIw">
               <body>Lifecycle stage or state (e.g., Instantiation or Activation) at which the license key is applied to the software.</body>
@@ -5196,7 +5196,7 @@ Controllers will request license keys from ALTS using the UUID of the group, as 
 A license key group is not specific to a feature group.  A license key group may be related to multiple feature groups of a software item or even to multiple software items.&#xD;
 </body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_YQ5fkP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_YQ5fkP2QEeisxOMTY1eUug" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sNzeod3uEei-jeeHUjfpLA" name="_spPooLlimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="_sNy3kN3uEei-jeeHUjfpLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_qFWGIAR2Eemo7ZzqT33fqQ" annotatedElement="_sNzeod3uEei-jeeHUjfpLA">
               <body>Pool limits applied by the service provider</body>
@@ -5272,7 +5272,7 @@ VLM is used to track instaantiations (&quot;entitlements&quot;) of the vendor pr
           <ownedComment xmi:type="uml:Comment" xmi:id="_nPLZkCvvEemHS6guZRbYAw" annotatedElement="_mEllAMfyEeiEtuRgTYzSUQ">
             <body>There should only be on VLM per vendor (given it appears to be &quot;party&quot;, but there is no restriction.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_eHdzkP7_EeiZ-fXSiUXhdA" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_eHdzkP7_EeiZ-fXSiUXhdA" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_KYdhIConEemnoK-fhDe5lw" name="VendorName">
             <ownedComment xmi:type="uml:Comment" xmi:id="_aSLL0ConEemnoK-fhDe5lw">
               <body>The name of the vendor providing this resource.</body>
@@ -5287,7 +5287,7 @@ VLM is used to track instaantiations (&quot;entitlements&quot;) of the vendor pr
 Either no key, universal key, or unique key per instance required.  &#xD;
 </body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_a9qAwP2QEeisxOMTY1eUug" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_a9qAwP2QEeisxOMTY1eUug" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_W-tJsP8WEeiZ-fXSiUXhdA" name="manufacturerReferenceNumber">
             <ownedComment xmi:type="uml:Comment" xmi:id="_dzrbEAPEEemCCMXOyOLwIw" annotatedElement="_W-tJsP8WEeiZ-fXSiUXhdA">
               <body>Identifier for the entitlement as described by the vendor in their price list / catalog / contract.  </body>
@@ -5331,10 +5331,10 @@ Not applicable when license type is Perpetual.&#xD;
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance">
-          <generalization xmi:type="uml:Generalization" xmi:id="_2jxBIP2QEeisxOMTY1eUug" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_2jxBIP2QEeisxOMTY1eUug" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_B5kVkN3xEei-jeeHUjfpLA" name="LicenseKeyPoolInstance">
-          <generalization xmi:type="uml:Generalization" xmi:id="_3ScFAP2QEeisxOMTY1eUug" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_3ScFAP2QEeisxOMTY1eUug" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_T5-uYN3uEei-jeeHUjfpLA" name="PoolLimit">
           <ownedComment xmi:type="uml:Comment" xmi:id="_OA0IkARvEemo7ZzqT33fqQ" annotatedElement="_T5-uYN3uEei-jeeHUjfpLA">
@@ -5342,7 +5342,7 @@ Not applicable when license type is Perpetual.&#xD;
 &#xD;
 Limits can be applied by the vendor or the service provider.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_lAvcoP-8EeiQG4ZZm0HgYw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_lAvcoP-8EeiQG4ZZm0HgYw" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_tG0BUP-7EeiQG4ZZm0HgYw" name="limitMetricType" type="_FbFaQP4LEeiao-2FtYZWRA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_erEmwARsEemo7ZzqT33fqQ" annotatedElement="_tG0BUP-7EeiQG4ZZm0HgYw">
               <body>Specifies if this pool holds entitlements based on usage of the software (number of users), number of sessions, country, line of business, etc.&#xD;
@@ -5414,7 +5414,7 @@ An entitlement pool is not specific to a feature group.  An entitlement pool may
 &#xD;
 </body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_QgjpIAMJEemoQ5ZgWCUg_g" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_QgjpIAMJEemoQ5ZgWCUg_g" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="__Lo9Ev1oEeisxOMTY1eUug" name="_spPoolLimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="__LoWAP1oEeisxOMTY1eUug">
             <ownedComment xmi:type="uml:Comment" xmi:id="_MfC4AARoEemo7ZzqT33fqQ" annotatedElement="__Lo9Ev1oEeisxOMTY1eUug">
               <body>Pool limits applied by the service provider</body>
@@ -5505,7 +5505,7 @@ Management of the collection.&#xD;
 If an Entitlement Pool or License Key Group is associated with a particular Feature Group, the Feature Group becomes a “constraint” for the pool/group.&#xD;
 </body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_oY-pEAV1EemrBZmpgd_POA" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_oY-pEAV1EemrBZmpgd_POA" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_FeFtUCoxEemnoK-fhDe5lw" name="featureGroupName">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -5924,7 +5924,6 @@ This attribute controls the setting of how multiple condition clauses (as repres
           <ownedComment xmi:type="uml:Comment" xmi:id="_Bn-ikNbbEeitAsFAkChUcg" annotatedElement="_vYK0cNMPEeig45NPS8-MSw">
             <body>This is a concrete base class that is used to define the invariant characteristics (attributes, methods, constraints and relationships) of a PolicyRule entity.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_O6ADYO0CEei7-e9MrPJW7Q" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_I-2pgNbbEeitAsFAkChUcg" name="executionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
             <ownedComment xmi:type="uml:Comment" xmi:id="_SQ4KUNbiEeitAsFAkChUcg" annotatedElement="_I-2pgNbbEeitAsFAkChUcg">
               <body>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:&#xD;
@@ -6619,7 +6618,6 @@ For VNFs, those rules are applicable between the virtualization containers to be
           <ownedComment xmi:type="uml:Comment" xmi:id="_Qb96oPoiEeiXda0FrsRiEw" annotatedElement="_w3xrYOQ5Eei2Ub3VuxG4ag">
             <body>PlatformDescriptor is an abstract class that extends Descriptor to represent classes of objects that represent platofrm or internal descriptors.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_KbocsOwoEei7-e9MrPJW7Q" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3L_KMOzmEei7-e9MrPJW7Q" name="invariantID" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NqVBYPM7EeiKa_-nH9J3Lg" annotatedElement="_3L_KMOzmEei7-e9MrPJW7Q">
               <body>ID that spans multiple versions of the same descriptor.</body>
@@ -6646,7 +6644,7 @@ For VNFs, those rules are applicable between the virtualization containers to be
           <ownedComment xmi:type="uml:Comment" xmi:id="_2LScIPohEeiXda0FrsRiEw" annotatedElement="_cbT5IOQ3Eei2Ub3VuxG4ag">
             <body>OnboardingNfDescriptor is an abstract class that extends Descriptor to represent classes of objects that represent onboarded network function descriptors.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_JUSaIOwoEei7-e9MrPJW7Q" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_JUSaIOwoEei7-e9MrPJW7Q" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_hmtRoOwnEei7-e9MrPJW7Q" name="ProviderName">
             <ownedComment xmi:type="uml:Comment" xmi:id="_qCWXsPidEeidz5aeWOPexQ" annotatedElement="_hmtRoOwnEei7-e9MrPJW7Q">
               <body>Provider of the NF and of the NFD being onboarded.&#xD;
@@ -7457,7 +7455,7 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_BprD8OLJEeiKy5JVrA0UGA" name="Root">
       <ownedComment xmi:type="uml:Comment" xmi:id="_j1UzAPgUEeiEqKXVVPCm1Q" annotatedElement="_BprD8OLJEeiKy5JVrA0UGA">
-        <body>A set of common business entities that collectively serve as the foundation of the ONAP Information Model.. This set of entities enables the entities in different domains of the Information Model to be associated with each other, providing greater overall coherence.</body>
+        <body>A set of common business entities that collectively serve as the foundation of the ONAP Information Model.. This set of root classess enable the entities in different domains of the Information Model to be associated with each other, providing greater overall coherence.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Package" xmi:id="_ErJ38OLJEeiKy5JVrA0UGA" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_kO0hMBp7EemOGejS9lsDjA" name="EntityFurtherDefinedBy" memberEnd="_kO29cBp7EemOGejS9lsDjA _kO4LkBp7EemOGejS9lsDjA">
@@ -7483,6 +7481,19 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DZWABqZEemOGejS9lsDjA" value="*"/>
           </ownedEnd>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_dxmUIDE6Eemw1_Ys6rcLWw" name="DomainHasEntity" memberEnd="_dxniQTE6Eemw1_Ys6rcLWw _dxowYDE6Eemw1_Ys6rcLWw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dxm7MDE6Eemw1_Ys6rcLWw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dxniQDE6Eemw1_Ys6rcLWw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dxniQTE6Eemw1_Ys6rcLWw" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" aggregation="shared" association="_dxmUIDE6Eemw1_Ys6rcLWw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBrlkDE8Eemw1_Ys6rcLWw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CCGcUDE8Eemw1_Ys6rcLWw" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dxowYDE6Eemw1_Ys6rcLWw" name="managementdomain" type="_SDiKgDE6Eemw1_Ys6rcLWw" association="_dxmUIDE6Eemw1_Ys6rcLWw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRXEwDE8Eemw1_Ys6rcLWw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRaIEDE8Eemw1_Ys6rcLWw" value="1"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_HtkgEOLJEeiKy5JVrA0UGA" name="Diagrams" URI="">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2v3KwOwpEei7-e9MrPJW7Q">
@@ -7494,9 +7505,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_Cg0I8OwtEei7-e9MrPJW7Q">
           <body>defaultLocalizationLangauge- string, not required (*) goes to OnboardingNfDescriptor</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_lOWFUPM7EeiKa_-nH9J3Lg">
-          <body>Maybe move invariantID up to Descriptor??</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_IyHjYBqaEemOGejS9lsDjA">
           <body>Perhaps put Polilcy, Descriptor under Entity</body>
@@ -7513,65 +7521,21 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         <ownedComment xmi:type="uml:Comment" xmi:id="_U0FX0DFAEemw1_Ys6rcLWw">
           <body>Mgmt Domain</body>
         </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_-0JGADFQEemw1_Ys6rcLWw">
-          <body>Colapse or keep</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_3NHi4DFTEemw1_Ys6rcLWw">
-          <body>Are there other DesignEntities other than descriptors (packages???)</body>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_npkUEDX2EemvTc8tEY2xig">
+          <body>These classes are temporary copies of the actual classes to not impact other models until proposal is accepted</body>
         </ownedComment>
         <packagedElement xmi:type="uml:Class" xmi:id="_eR_ykPJcEeibsZxxyZUKdQ" name="VnfcDescriptor"/>
         <packagedElement xmi:type="uml:Class" xmi:id="__6rFMPMTEeiKa_-nH9J3Lg" name="ServiceDescriptor">
-          <generalization xmi:type="uml:Generalization" xmi:id="_JVBfwPMUEeiKa_-nH9J3Lg" general="_Qb00MOLKEeiKy5JVrA0UGA"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_mVqk8DFQEemw1_Ys6rcLWw" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_mVqk8DFQEemw1_Ys6rcLWw" general="_v04t4DFPEemw1_Ys6rcLWw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_gBaFkBp7EemOGejS9lsDjA" name="ManagedEntity"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_roVJwBqZEemOGejS9lsDjA" name="Metadata">
           <generalization xmi:type="uml:Generalization" xmi:id="_uV144BqZEemOGejS9lsDjA" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_O6IOQCYxEemRA_CB-n5OfQ" name="Descriptor">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_VQ9uAC8EEem7DJry5UTesQ" annotatedElement="_O6IOQCYxEemRA_CB-n5OfQ">
-            <body>A Descriptor (or EntitySpecification as the TMF calls it) is an abstract class that extends the RootEntity class in order to define shared characteristics for any type of description / specification entity</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_T1HhkCYxEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_PR2rEDFQEemw1_Ys6rcLWw" general="_v04t4DFPEemw1_Ys6rcLWw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_sjEpECYxEemRA_CB-n5OfQ" name="name" isUnique="false" redefinedProperty="_vi4oQOLJEeiKy5JVrA0UGA">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_tIbjcCYyEemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_039a8CYyEemRA_CB-n5OfQ" name="status">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UiIJ0CY3EemRA_CB-n5OfQ" name="description" isUnique="false" redefinedProperty="_wEHtEOLJEeiKy5JVrA0UGA">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_RM0NICYyEemRA_CB-n5OfQ" name="Party">
-          <generalization xmi:type="uml:Generalization" xmi:id="_UXWPcCYyEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_ruE0EDFQEemw1_Ys6rcLWw" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_AQ7eUCYzEemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_I4XOMCYzEemRA_CB-n5OfQ" name="BusinessInteraction">
-          <generalization xmi:type="uml:Generalization" xmi:id="_OUjKECYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_eRVW4CYzEemRA_CB-n5OfQ" name="startDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_etB0YCYzEemRA_CB-n5OfQ" name="endDate" type="_KwZPMP8VEeiZ-fXSiUXhdA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_wk2KgCYzEemRA_CB-n5OfQ" name="status">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Q8qb0CYzEemRA_CB-n5OfQ" name="Place">
-          <generalization xmi:type="uml:Generalization" xmi:id="_UVWO4CYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_QfkasCY0EemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_iQAhACY1EemRA_CB-n5OfQ" name="VnfD">
-          <generalization xmi:type="uml:Generalization" xmi:id="_KV1xcCY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_QJCL4DFqEemw1_Ys6rcLWw" general="_il9ZADFQEemw1_Ys6rcLWw"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_qEwPsCY1EemRA_CB-n5OfQ" name="ServiceDescriptor">
-          <generalization xmi:type="uml:Generalization" xmi:id="_Ek1cICY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_QJCL4DFqEemw1_Ys6rcLWw" general="_vzn94DYWEemvTc8tEY2xig"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_r58PsCY1EemRA_CB-n5OfQ" name="PnfD">
-          <generalization xmi:type="uml:Generalization" xmi:id="_GG8vICY2EemRA_CB-n5OfQ" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_UGguEDFqEemw1_Ys6rcLWw" general="_il9ZADFQEemw1_Ys6rcLWw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_UGguEDFqEemw1_Ys6rcLWw" general="_vzn94DYWEemvTc8tEY2xig"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_Xht84CY2EemRA_CB-n5OfQ" name="Service">
           <generalization xmi:type="uml:Generalization" xmi:id="_rTv88CY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
@@ -7579,22 +7543,11 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_aUEIsCY2EemRA_CB-n5OfQ" name="Pnf">
           <generalization xmi:type="uml:Generalization" xmi:id="_t2wsQCY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_kXBvMDFqEemw1_Ys6rcLWw" general="_ASESADFQEemw1_Ys6rcLWw"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_kXBvMDFqEemw1_Ys6rcLWw" general="_qbY4cDYXEemvTc8tEY2xig"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_b-lw0CY2EemRA_CB-n5OfQ" name="Vnf">
           <generalization xmi:type="uml:Generalization" xmi:id="_vuJrsCY2EemRA_CB-n5OfQ" general="_1POjoOwXEei7-e9MrPJW7Q"/>
-          <generalization xmi:type="uml:Generalization" xmi:id="_qWwdADFqEemw1_Ys6rcLWw" general="_ASESADFQEemw1_Ys6rcLWw"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_yT5bEC7rEem7DJry5UTesQ" name="ManagedEntity (Delete)"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_3X2dIC7rEem7DJry5UTesQ" memberEnd="_3X3rQi7rEem7DJry5UTesQ _3X8jwC7rEem7DJry5UTesQ">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3X3rQC7rEem7DJry5UTesQ" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3X3rQS7rEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_3X3rQi7rEem7DJry5UTesQ" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" association="_3X2dIC7rEem7DJry5UTesQ"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_3X8jwC7rEem7DJry5UTesQ" name="managedentity" type="_yT5bEC7rEem7DJry5UTesQ" aggregation="composite" association="_3X2dIC7rEem7DJry5UTesQ"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_YlPkMC7uEem7DJry5UTesQ" name="Event">
-          <generalization xmi:type="uml:Generalization" xmi:id="_ays6QC7uEem7DJry5UTesQ" general="_I4XOMCYzEemRA_CB-n5OfQ"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_qWwdADFqEemw1_Ys6rcLWw" general="_qbY4cDYXEemvTc8tEY2xig"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="__FsJMC8EEem7DJry5UTesQ" memberEnd="__FtXUS8EEem7DJry5UTesQ __FulcC8EEem7DJry5UTesQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__FswQC8EEem7DJry5UTesQ" source="org.eclipse.papyrus">
@@ -7626,97 +7579,32 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           </ownedEnd>
           <ownedEnd xmi:type="uml:Property" xmi:id="_E87CUi8FEem7DJry5UTesQ" name="servicedescriptor" type="__6rFMPMTEeiKa_-nH9J3Lg" association="_E86bQC8FEem7DJry5UTesQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_SDiKgDE6Eemw1_Ys6rcLWw" name="Domain">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_tLwGQDFAEemw1_Ys6rcLWw" annotatedElement="_SDiKgDE6Eemw1_Ys6rcLWw">
-            <body>Defines a collection of entities that share a common purpose. In addition, each constituent Entity in an Domain is both uniquely addressable and uniquely identifiable within that Domain</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_ZWh3ADE6Eemw1_Ys6rcLWw" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_cqWYMDE6Eemw1_Ys6rcLWw" name="DomainHasDescriptor" memberEnd="_cqaCkDE6Eemw1_Ys6rcLWw _cqce0DE6Eemw1_Ys6rcLWw">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cqY0cDE6Eemw1_Ys6rcLWw" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cqY0cTE6Eemw1_Ys6rcLWw" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_cqaCkDE6Eemw1_Ys6rcLWw" name="managementdomain" type="_SDiKgDE6Eemw1_Ys6rcLWw" association="_cqWYMDE6Eemw1_Ys6rcLWw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KfkicDE9Eemw1_Ys6rcLWw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KgDDkDE9Eemw1_Ys6rcLWw" value="1"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_cqce0DE6Eemw1_Ys6rcLWw" name="descriptor" type="_O6IOQCYxEemRA_CB-n5OfQ" aggregation="shared" association="_cqWYMDE6Eemw1_Ys6rcLWw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NCytIDE9Eemw1_Ys6rcLWw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NDVfsDE9Eemw1_Ys6rcLWw" value="*"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_dxmUIDE6Eemw1_Ys6rcLWw" name="DomainHasEntity" memberEnd="_dxniQTE6Eemw1_Ys6rcLWw _dxowYDE6Eemw1_Ys6rcLWw">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dxm7MDE6Eemw1_Ys6rcLWw" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dxniQDE6Eemw1_Ys6rcLWw" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_dxniQTE6Eemw1_Ys6rcLWw" name="entity" type="_1POjoOwXEei7-e9MrPJW7Q" aggregation="shared" association="_dxmUIDE6Eemw1_Ys6rcLWw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBrlkDE8Eemw1_Ys6rcLWw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CCGcUDE8Eemw1_Ys6rcLWw" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_dxowYDE6Eemw1_Ys6rcLWw" name="managementdomain" type="_SDiKgDE6Eemw1_Ys6rcLWw" association="_dxmUIDE6Eemw1_Ys6rcLWw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRXEwDE8Eemw1_Ys6rcLWw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRaIEDE8Eemw1_Ys6rcLWw" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_v04t4DFPEemw1_Ys6rcLWw" name="DesignEntity">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_NLQgEDFSEemw1_Ys6rcLWw" annotatedElement="_v04t4DFPEemw1_Ys6rcLWw">
-            <body>A template which describes an OperationalEntity in terms of deployment and operational behavior requirements.</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_QjAw8DFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_0Zik0DFPEemw1_Ys6rcLWw" name="OperationalEntity">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_pJG1kDFTEemw1_Ys6rcLWw" annotatedElement="_0Zik0DFPEemw1_Ys6rcLWw">
-            <body>An OperationalEntity is a deployment in a NFV environment of a DesignEntity.</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_RDwtkDFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_ASESADFQEemw1_Ys6rcLWw" name="Resource">
           <generalization xmi:type="uml:Generalization" xmi:id="_HDgJkDFQEemw1_Ys6rcLWw" general="_0Zik0DFPEemw1_Ys6rcLWw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_il9ZADFQEemw1_Ys6rcLWw" name="ResourceDescriptor">
-          <generalization xmi:type="uml:Generalization" xmi:id="_nCVdsDFQEemw1_Ys6rcLWw" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_nCVdsDFQEemw1_Ys6rcLWw" general="_v04t4DFPEemw1_Ys6rcLWw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_srGdADFQEemw1_Ys6rcLWw" name="PartyDesc">
-          <generalization xmi:type="uml:Generalization" xmi:id="_wMaAkDFQEemw1_Ys6rcLWw" general="_O6IOQCYxEemRA_CB-n5OfQ"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vzn94DYWEemvTc8tEY2xig" name="NetworkFunctionDesc" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_iYxF0DYXEemvTc8tEY2xig" general="_il9ZADFQEemw1_Ys6rcLWw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_tw26cDFsEemw1_Ys6rcLWw" memberEnd="_tw4IkDFsEemw1_Ys6rcLWw _tw5WsDFsEemw1_Ys6rcLWw">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tw3hgDFsEemw1_Ys6rcLWw" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tw3hgTFsEemw1_Ys6rcLWw" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_tw4IkDFsEemw1_Ys6rcLWw" name="party" type="_RM0NICYyEemRA_CB-n5OfQ" association="_tw26cDFsEemw1_Ys6rcLWw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sD_6kDFtEemw1_Ys6rcLWw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sEGoQDFtEemw1_Ys6rcLWw" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_tw5WsDFsEemw1_Ys6rcLWw" name="partydesc" type="_srGdADFQEemw1_Ys6rcLWw" association="_tw26cDFsEemw1_Ys6rcLWw"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qbY4cDYXEemvTc8tEY2xig" name="NetworkFunction" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_BdCPIDYYEemvTc8tEY2xig" general="_ASESADFQEemw1_Ys6rcLWw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3m850DYiEemz0q_yvHDIRA" name="NSD">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Cnz_MDYjEemz0q_yvHDIRA" general="__6rFMPMTEeiKa_-nH9J3Lg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_MbJhgDYjEemz0q_yvHDIRA" name="NS">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Pjz7kDYjEemz0q_yvHDIRA" general="_Xht84CY2EemRA_CB-n5OfQ"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
-        <packagedElement xmi:type="uml:Class" xmi:id="_Qb00MOLKEeiKy5JVrA0UGA" name="Descriptor (EntitySpecification)">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_nV4OcPoeEeiXda0FrsRiEw" annotatedElement="_Qb00MOLKEeiKy5JVrA0UGA">
-            <body>This is an abstract base class that is used to define the common characteristics (attributes, constraints, and relationships) of a design time entity.</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_ZstwwOLKEeiKy5JVrA0UGA" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_hg0WkPgQEeiEqKXVVPCm1Q" annotatedElement="_Td26cOLNEeiKy5JVrA0UGA">
-              <body>The period during which the descriptor is valid.</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_T6QikOLNEeiKy5JVrA0UGA" name="status">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_DLjL0PgREeiEqKXVVPCm1Q" annotatedElement="_T6QikOLNEeiKy5JVrA0UGA">
-              <body>The condition of the specification, such s active, inactive, or planned.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Nx3i4PgUEeiEqKXVVPCm1Q" annotatedElement="_eCjlEOLJEeiKy5JVrA0UGA">
             <body>This is the top of the ONAP class hierarchy. The purpose of the RootEntity is to define a set of attributes that are common to all entities that derive from it. These properties enable us to name, describe, and identify all objects in the environment.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_vi4oQOLJEeiKy5JVrA0UGA" name="name">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Y5yEwPgPEeiEqKXVVPCm1Q" annotatedElement="_vi4oQOLJEeiKy5JVrA0UGA">
-              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_KhlEMCYyEemRA_CB-n5OfQ">
               <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -7741,12 +7629,91 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_Yg6D8OLVEeiKy5JVrA0UGA" value=""/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_1POjoOwXEei7-e9MrPJW7Q" name="Entity">
+        <packagedElement xmi:type="uml:Class" xmi:id="_1POjoOwXEei7-e9MrPJW7Q" name="Entity" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_DuRnYPofEeiXda0FrsRiEw" annotatedElement="_1POjoOwXEei7-e9MrPJW7Q">
-            <body>TThis is an abstract class that extends the RootEntity class and represents characteristics and behaviors of concepts that pertain to the NFV managed environment. &#xD;
+            <body>This is an abstract class that extends the RootEntity class and represents characteristics and behaviors of concepts that pertain to the NFV managed environment. &#xD;
 </body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_7MZssOwXEei7-e9MrPJW7Q" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SDiKgDE6Eemw1_Ys6rcLWw" name="Domain">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_tLwGQDFAEemw1_Ys6rcLWw" annotatedElement="_SDiKgDE6Eemw1_Ys6rcLWw">
+            <body>Defines a collection of entities that share a common purpose. In addition, each constituent Entity in an Domain is both uniquely addressable and uniquely identifiable within that Domain</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_ZWh3ADE6Eemw1_Ys6rcLWw" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gBaFkBp7EemOGejS9lsDjA" name="ManagedEntity">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Xvl48DYdEemvTc8tEY2xig" annotatedElement="_gBaFkBp7EemOGejS9lsDjA">
+            <body>A ManagedEntity is used to specify that an Entity is manageable by electronic means.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dShWADYdEemvTc8tEY2xig" name="managementMethodCurrent">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7EuagDYdEemvTc8tEY2xig" annotatedElement="_dShWADYdEemvTc8tEY2xig">
+              <body>This is an enumerated integer that defines the particular type of management method that is currently being used. &#xD;
+&#xD;
+Permitted Values:&#xD;
+ 0: Unknown&#xD;
+ 1: None&#xD;
+ 2: CLI&#xD;
+ 3: SNMP&#xD;
+ 4: TL1&#xD;
+ 5: CMIP&#xD;
+ 6: Proprietary</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eCmvIDYdEemvTc8tEY2xig" name="managementMethodSupported">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-2ajcDYdEemvTc8tEY2xig" annotatedElement="_eCmvIDYdEemvTc8tEY2xig">
+              <body>This is an array of integers that define the different management methods that are supported by this object. &#xD;
+&#xD;
+Permitted Values:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: None&#xD;
+ 2: CLI&#xD;
+ 3: SNMP&#xD;
+ 4: TL1&#xD;
+ 5: CMIP&#xD;
+ 6: Proprietary</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Aodv4DYeEemvTc8tEY2xig" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AoiBUDYeEemvTc8tEY2xig" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_v04t4DFPEemw1_Ys6rcLWw" name="DesignEntity" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_NLQgEDFSEemw1_Ys6rcLWw" annotatedElement="_v04t4DFPEemw1_Ys6rcLWw">
+            <body>A template which describes an OperationalEntity in terms of deployment and operational behavior requirements.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_QjAw8DFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_hg0WkPgQEeiEqKXVVPCm1Q" annotatedElement="_Td26cOLNEeiKy5JVrA0UGA">
+              <body>The period during which the design entity is valid.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_T6QikOLNEeiKy5JVrA0UGA" name="status">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DLjL0PgREeiEqKXVVPCm1Q" annotatedElement="_T6QikOLNEeiKy5JVrA0UGA">
+              <body>The condition of the specification, such s active, inactive, or planned.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eoc6EDYQEemvTc8tEY2xig" name="name" isUnique="false" redefinedProperty="_vi4oQOLJEeiKy5JVrA0UGA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_37KrwDYhEemz0q_yvHDIRA" annotatedElement="_eoc6EDYQEemvTc8tEY2xig">
+              <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E4CakDYREemvTc8tEY2xig" name="description" isUnique="false" redefinedProperty="_wEHtEOLJEeiKy5JVrA0UGA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7Ny6IDYhEemz0q_yvHDIRA" annotatedElement="_E4CakDYREemvTc8tEY2xig">
+              <body>Defines a textual free-form description of the object. </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0Zik0DFPEemw1_Ys6rcLWw" name="OperationalEntity" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_pJG1kDFTEemw1_Ys6rcLWw" annotatedElement="_0Zik0DFPEemw1_Ys6rcLWw">
+            <body>An OperationalEntity is a deployment in a NFV environment of a DesignEntity.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_RDwtkDFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons"/>
@@ -7798,19 +7765,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_c8u5EBnKEemlxOdMFpUVvQ" name="Business Interaction">
-      <packagedElement xmi:type="uml:Association" xmi:id="_xB6jwBp8EemOGejS9lsDjA" name="BusinessInteractionModifiedBy" memberEnd="_xB7K0hp8EemOGejS9lsDjA _xB_cQBp8EemOGejS9lsDjA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xB7K0Bp8EemOGejS9lsDjA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xB7K0Rp8EemOGejS9lsDjA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xB7K0hp8EemOGejS9lsDjA" name="businessinteractionversion" type="_toYcIBp8EemOGejS9lsDjA" aggregation="shared" association="_xB6jwBp8EemOGejS9lsDjA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mPMYBp8EemOGejS9lsDjA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mrRQBp8EemOGejS9lsDjA" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xB_cQBp8EemOGejS9lsDjA" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_xB6jwBp8EemOGejS9lsDjA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1E1moBp8EemOGejS9lsDjA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1FEQIBp8EemOGejS9lsDjA" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_iFqhwBnKEemlxOdMFpUVvQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_YFG2ABp-EemOGejS9lsDjA" name="BuisinessInteractionComprisedOf" memberEnd="_YFHdEhp-EemOGejS9lsDjA _YFM8oBp-EemOGejS9lsDjA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YFHdEBp-EemOGejS9lsDjA" source="org.eclipse.papyrus">
@@ -7838,6 +7792,19 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nPfAYBp8EemOGejS9lsDjA" value="1"/>
           </ownedEnd>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_xB6jwBp8EemOGejS9lsDjA" name="BusinessInteractionModifiedBy" memberEnd="_xB7K0hp8EemOGejS9lsDjA _xB_cQBp8EemOGejS9lsDjA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xB7K0Bp8EemOGejS9lsDjA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xB7K0Rp8EemOGejS9lsDjA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_xB7K0hp8EemOGejS9lsDjA" name="businessinteractionversion" type="_toYcIBp8EemOGejS9lsDjA" aggregation="shared" association="_xB6jwBp8EemOGejS9lsDjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3mPMYBp8EemOGejS9lsDjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3mrRQBp8EemOGejS9lsDjA" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_xB_cQBp8EemOGejS9lsDjA" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_xB6jwBp8EemOGejS9lsDjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1E1moBp8EemOGejS9lsDjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1FEQIBp8EemOGejS9lsDjA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_kM4s8BnKEemlxOdMFpUVvQ" name="Diagrams"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_mU1Q4BnKEemlxOdMFpUVvQ" name="ObjectClasses">
@@ -7848,6 +7815,7 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           <ownedComment xmi:type="uml:Comment" xmi:id="_IIT0YBp5EemOGejS9lsDjA" annotatedElement="__F4vsBnKEemlxOdMFpUVvQ">
             <body>A BusinessInteraction is an arrangement, contract, communication or joint activity between one or more PartyRoles, ResourceRoles, or CustomerAccounts. A BusinessInteraction may consist of one or more BusinessInteractionItems. A BusinessInteractionItem may refer to a Product, Service, Resource, or one of their specifications. A BusinessInteraction is further defined by one or more Places. One BusinessInteraction may reference another BusinessInteraction and one BusinessInteractionItem may reference another BusinessInteractionItem on the same or different BusinessInteraction. There are five types of BusinessInteractions: Requests, Responses, Notifications, Agreements, and Instructions.</body>
           </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_utCzUDX1EemvTc8tEY2xig" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_mjJf0BpxEemOGejS9lsDjA" name="ID">
             <ownedComment xmi:type="uml:Comment" xmi:id="_N9QOgBp5EemOGejS9lsDjA" annotatedElement="_mjJf0BpxEemOGejS9lsDjA">
               <body>Unique identifier for Interaction.</body>
@@ -7893,6 +7861,12 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_s8dsMBnKEemlxOdMFpUVvQ" name="TypeDefinitions"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XbW1gDX1EemvTc8tEY2xig" name="Location">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q8qb0CYzEemRA_CB-n5OfQ" name="Place">
+        <generalization xmi:type="uml:Generalization" xmi:id="_UVWO4CYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QfkasCY0EemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HyMlMKVvEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YPRQKVxEeikF6xsfT18UA" source="PapyrusVersion">
@@ -8684,8 +8658,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wEIUIOLJEeiKy5JVrA0UGA" base_StructuralFeature="_wEHtEOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wj9DseLJEeiKy5JVrA0UGA" base_StructuralFeature="_wj9DsOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:Experimental xmi:id="_J-LbUOLKEeiKy5JVrA0UGA" base_Element="_eCjlEOLJEeiKy5JVrA0UGA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_Qb00MeLKEeiKy5JVrA0UGA" base_Class="_Qb00MOLKEeiKy5JVrA0UGA"/>
-  <OpenModel_Profile:Experimental xmi:id="_XFDyAOLKEeiKy5JVrA0UGA" base_Element="_Qb00MOLKEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Td26ceLNEeiKy5JVrA0UGA" base_StructuralFeature="_Td26cOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_T6QikeLNEeiKy5JVrA0UGA" base_StructuralFeature="_T6QikOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_TsknYOQ3Eei2Ub3VuxG4ag" base_Class="_TpqdUOQ3Eei2Ub3VuxG4ag"/>
@@ -9099,26 +9071,13 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelAttribute xmi:id="_SGDxQyWNEem2wfSvtxnwBQ" base_StructuralFeature="_SGDxQiWNEem2wfSvtxnwBQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TtVREiWNEem2wfSvtxnwBQ" base_StructuralFeature="_TtVRESWNEem2wfSvtxnwBQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_TtWfMSWNEem2wfSvtxnwBQ" base_StructuralFeature="_TtWfMCWNEem2wfSvtxnwBQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_O6I1UCYxEemRA_CB-n5OfQ" base_Class="_O6IOQCYxEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sjEpESYxEemRA_CB-n5OfQ" base_StructuralFeature="_sjEpECYxEemRA_CB-n5OfQ"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_KhrK0CYyEemRA_CB-n5OfQ" base_Comment="_KhlEMCYyEemRA_CB-n5OfQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_RM0NISYyEemRA_CB-n5OfQ" base_Class="_RM0NICYyEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_tIbjcSYyEemRA_CB-n5OfQ" base_StructuralFeature="_tIbjcCYyEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_039a8SYyEemRA_CB-n5OfQ" base_StructuralFeature="_039a8CYyEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_AQ8FYCYzEemRA_CB-n5OfQ" base_StructuralFeature="_AQ7eUCYzEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_I4XOMSYzEemRA_CB-n5OfQ" base_Class="_I4XOMCYzEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_Q8qb0SYzEemRA_CB-n5OfQ" base_Class="_Q8qb0CYzEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_eRVW4SYzEemRA_CB-n5OfQ" base_StructuralFeature="_eRVW4CYzEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_etB0YSYzEemRA_CB-n5OfQ" base_StructuralFeature="_etB0YCYzEemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_wk2KgSYzEemRA_CB-n5OfQ" base_StructuralFeature="_wk2KgCYzEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_QfkasSY0EemRA_CB-n5OfQ" base_StructuralFeature="_QfkasCY0EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_iQAhASY1EemRA_CB-n5OfQ" base_Class="_iQAhACY1EemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_qEwPsSY1EemRA_CB-n5OfQ" base_Class="_qEwPsCY1EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_r58PsSY1EemRA_CB-n5OfQ" base_Class="_r58PsCY1EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_Xht84SY2EemRA_CB-n5OfQ" base_Class="_Xht84CY2EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_aUEvwCY2EemRA_CB-n5OfQ" base_Class="_aUEIsCY2EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_b-lw0SY2EemRA_CB-n5OfQ" base_Class="_b-lw0CY2EemRA_CB-n5OfQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UiIJ0SY3EemRA_CB-n5OfQ" base_StructuralFeature="_UiIJ0CY3EemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9-F7MSZBEemRA_CB-n5OfQ" base_StructuralFeature="_9-F7MCZBEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-0ohoSZBEemRA_CB-n5OfQ" base_StructuralFeature="_-0ohoCZBEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_6tkdECibEemvDu1mw_PV_Q" base_Class="_6tin4CibEemvDu1mw_PV_Q"/>
@@ -9147,10 +9106,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:Reference xmi:id="_lR_T8C47EemS0_wZSU3sbA" base_Element="_0AbUYDnBEeiWMf5FLWfdLA" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_qqZjEC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg"/>
   <OpenModel_Profile:Reference xmi:id="_qrVXMC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_yT6pMC7rEem7DJry5UTesQ" base_Class="_yT5bEC7rEem7DJry5UTesQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_3X3rQy7rEem7DJry5UTesQ" base_StructuralFeature="_3X3rQi7rEem7DJry5UTesQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_3X8jwS7rEem7DJry5UTesQ" base_StructuralFeature="_3X8jwC7rEem7DJry5UTesQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_YlPkMS7uEem7DJry5UTesQ" base_Class="_YlPkMC7uEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__FtXUi8EEem7DJry5UTesQ" base_StructuralFeature="__FtXUS8EEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="__FulcS8EEem7DJry5UTesQ" base_StructuralFeature="__FulcC8EEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CtevQC8FEem7DJry5UTesQ" base_StructuralFeature="_CteIMi8FEem7DJry5UTesQ"/>
@@ -9158,8 +9113,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E87CUS8FEem7DJry5UTesQ" base_StructuralFeature="_E87CUC8FEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E87pYC8FEem7DJry5UTesQ" base_StructuralFeature="_E87CUi8FEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_SDkmwDE6Eemw1_Ys6rcLWw" base_Class="_SDiKgDE6Eemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_cqaCkTE6Eemw1_Ys6rcLWw" base_StructuralFeature="_cqaCkDE6Eemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_cqce0TE6Eemw1_Ys6rcLWw" base_StructuralFeature="_cqce0DE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxniQjE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxniQTE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxowYTE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxowYDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Reference xmi:id="_5B1jcDFAEemw1_Ys6rcLWw" base_Element="_eCjlEOLJEeiKy5JVrA0UGA" reference="TMF &amp; MEF"/>
@@ -9167,9 +9120,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelClass xmi:id="_0ZjL4DFPEemw1_Ys6rcLWw" base_Class="_0Zik0DFPEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_ASE5EDFQEemw1_Ys6rcLWw" base_Class="_ASESADFQEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_il9ZATFQEemw1_Ys6rcLWw" base_Class="_il9ZADFQEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_srGdATFQEemw1_Ys6rcLWw" base_Class="_srGdADFQEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_tw4IkTFsEemw1_Ys6rcLWw" base_StructuralFeature="_tw4IkDFsEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_tw5WsTFsEemw1_Ys6rcLWw" base_StructuralFeature="_tw5WsDFsEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Reference xmi:id="_FLCc0DOlEemzC6274d_Yog" base_Element="_8naVoES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Experimental xmi:id="_dyf6wDOlEemzC6274d_Yog" base_Element="_PJJAYB87EemJTaeYhZuDRA"/>
   <OpenModel_Profile:Experimental xmi:id="_fTDHgDOlEemzC6274d_Yog" base_Element="_PuRtwB87EemJTaeYhZuDRA"/>
@@ -9206,4 +9156,18 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uFCmEPuHEeiYVshOvl6_ww" base_StructuralFeature="_uFBX8PuHEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RayLofuIEeiYVshOvl6_ww" base_StructuralFeature="_RayLoPuIEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gUB30fuIEeiYVshOvl6_ww" base_StructuralFeature="_gUB30PuIEeiYVshOvl6_ww"/>
+  <OpenModel_Profile:Experimental xmi:id="_SBuT0DX0EemvTc8tEY2xig" base_Element="_v04t4DFPEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_TRLJgDX0EemvTc8tEY2xig" base_Element="_0Zik0DFPEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_XoSTsDX0EemvTc8tEY2xig" base_Element="_SDiKgDE6Eemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_eDQ9oDX1EemvTc8tEY2xig" base_Element="_Q8qb0CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eodhIDYQEemvTc8tEY2xig" base_StructuralFeature="_eoc6EDYQEemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E4DBoDYREemvTc8tEY2xig" base_StructuralFeature="_E4CakDYREemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_vzok8DYWEemvTc8tEY2xig" base_Class="_vzn94DYWEemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_qbY4cTYXEemvTc8tEY2xig" base_Class="_qbY4cDYXEemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_dShWATYdEemvTc8tEY2xig" base_StructuralFeature="_dShWADYdEemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eCmvITYdEemvTc8tEY2xig" base_StructuralFeature="_eCmvIDYdEemvTc8tEY2xig"/>
+  <OpenModel_Profile:Reference xmi:id="_Pf0lsDYeEemvTc8tEY2xig" base_Element="__F4vsBnKEemlxOdMFpUVvQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_SDIP8DYeEemvTc8tEY2xig" base_Element="_Q8qb0CYzEemRA_CB-n5OfQ" reference="From TMF SID"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_3m9g4DYiEemz0q_yvHDIRA" base_Class="_3m850DYiEemz0q_yvHDIRA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_MbJhgTYjEemz0q_yvHDIRA" base_Class="_MbJhgDYjEemz0q_yvHDIRA"/>
 </xmi:XMI>
