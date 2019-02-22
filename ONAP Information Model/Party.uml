@@ -1,13 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_zWCisKVxEeikF6xsfT18UA/26 OpenModel_Profile.profile.uml#_zWYg8KVxEeikF6xsfT18UA">
   <uml:Package xmi:id="_oZz14DOHEei5Af8DcjrhIQ" name="Party">
-    <packagedElement xmi:type="uml:Package" xmi:id="_pl6coDOHEei5Af8DcjrhIQ" name="Associations"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pl6coDOHEei5Af8DcjrhIQ" name="Associations">
+      <packagedElement xmi:type="uml:Association" xmi:id="_qTvDYC7nEem7DJry5UTesQ" name="CompositeOrganizationComposedOf" memberEnd="_qTw4kC7nEem7DJry5UTesQ _qTxfoC7nEem7DJry5UTesQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qTwRgC7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qTwRgS7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qTw4kC7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tXfIADbZEemP3p_OV1tL7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tY-80DbZEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qTxfoC7nEem7DJry5UTesQ" name="compositeorganization" type="_6E0zAC7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_q99FEC7nEem7DJry5UTesQ" name="OrganizationComposedOf" memberEnd="_q99sIC7nEem7DJry5UTesQ _q99sIS7nEem7DJry5UTesQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q99FES7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q99FEi7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIC7nEem7DJry5UTesQ" name="organization" type="_shyr0C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIS7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2c9ewDbZEemP3p_OV1tL7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2dlw4DbZEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4EeZsDbaEemP3p_OV1tL7g" name="PartyHasPartyRoles" memberEnd="_4Eg18DbaEemP3p_OV1tL7g _4EiEEDbaEemP3p_OV1tL7g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4EgO4DbaEemP3p_OV1tL7g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4EgO4TbaEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4Eg18DbaEemP3p_OV1tL7g" name="partyrole" type="_YOEo0DbaEemP3p_OV1tL7g" aggregation="shared" association="_4EeZsDbaEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wf8b0DbbEemP3p_OV1tL7g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgBUUDbbEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4EiEEDbaEemP3p_OV1tL7g" name="party" type="_pLrroC7mEem7DJry5UTesQ" association="_4EeZsDbaEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6KPzYDbaEemP3p_OV1tL7g" name="PartyRoleSPecDescribesPartyRole" memberEnd="_6KQacjbaEemP3p_OV1tL7g _6KRokDbaEemP3p_OV1tL7g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6KQacDbaEemP3p_OV1tL7g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6KQacTbaEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6KQacjbaEemP3p_OV1tL7g" name="partyrolespecification" type="_pGNDkDbaEemP3p_OV1tL7g" association="_6KPzYDbaEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4DLjwDbbEemP3p_OV1tL7g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4DQcQDbbEemP3p_OV1tL7g" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6KRokDbaEemP3p_OV1tL7g" name="partyrole" type="_YOEo0DbaEemP3p_OV1tL7g" association="_6KPzYDbaEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9YNuwDbbEemP3p_OV1tL7g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9YRZIDbbEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsDOHEei5Af8DcjrhIQ" name="Diagrams">
-      <packagedElement xmi:type="uml:Class" xmi:id="_pLrroC7mEem7DJry5UTesQ" name="Party"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3lu8UDbnEemP3p_OV1tL7g" name="OrganizationName">
+        <generalization xmi:type="uml:Generalization" xmi:id="_bYAF0DboEemP3p_OV1tL7g" general="_5MnakDbnEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5MnakDbnEemP3p_OV1tL7g" name="PartyName" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7wiv4DbnEemP3p_OV1tL7g" name="Language"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_99w1YDbnEemP3p_OV1tL7g" name="IndividualName">
+        <generalization xmi:type="uml:Generalization" xmi:id="_cVdzoDboEemP3p_OV1tL7g" general="_5MnakDbnEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X8MtUDboEemP3p_OV1tL7g" name="IndividualHasIndividualName" memberEnd="_X8NUYjboEemP3p_OV1tL7g _X8OigDboEemP3p_OV1tL7g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X8NUYDboEemP3p_OV1tL7g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X8NUYTboEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_X8NUYjboEemP3p_OV1tL7g" name="individualname" type="_99w1YDbnEemP3p_OV1tL7g" aggregation="shared" association="_X8MtUDboEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dTOm8DbpEemP3p_OV1tL7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dTUtkDbpEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_X8OigDboEemP3p_OV1tL7g" name="individual" type="_rdTI8C7mEem7DJry5UTesQ" association="_X8MtUDboEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i16B0DboEemP3p_OV1tL7g" name="OrganizationHasName" memberEnd="_i16o4jboEemP3p_OV1tL7g _i17P8DboEemP3p_OV1tL7g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i16o4DboEemP3p_OV1tL7g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i16o4TboEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_i16o4jboEemP3p_OV1tL7g" name="organizationname" type="_3lu8UDbnEemP3p_OV1tL7g" aggregation="shared" association="_i16B0DboEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EytegDbpEemP3p_OV1tL7g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EzBAgDbpEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_i17P8DboEemP3p_OV1tL7g" name="organization" type="_shyr0C7mEem7DJry5UTesQ" association="_i16B0DboEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ky0acDboEemP3p_OV1tL7g" name="PartyNameDefinedViaLanuage" memberEnd="_ky0aczboEemP3p_OV1tL7g _ky1BgDboEemP3p_OV1tL7g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ky0acTboEemP3p_OV1tL7g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ky0acjboEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ky0aczboEemP3p_OV1tL7g" name="language" type="_7wiv4DbnEemP3p_OV1tL7g" association="_ky0acDboEemP3p_OV1tL7g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ky1BgDboEemP3p_OV1tL7g" name="partyname" type="_5MnakDbnEemP3p_OV1tL7g" association="_ky0acDboEemP3p_OV1tL7g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ok9Z4DbpEemP3p_OV1tL7g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_olMDYDbpEemP3p_OV1tL7g" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsTOHEei5Af8DcjrhIQ" name="Interfaces"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pl7qwDOHEei5Af8DcjrhIQ" name="ObjectClasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_pLrroC7mEem7DJry5UTesQ" name="Party" isAbstract="true">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Do-hMDbnEemP3p_OV1tL7g" annotatedElement="_pLrroC7mEem7DJry5UTesQ">
+          <body>A Party represents an individual or an organization, or an organization unit that are of interest, involved or that provide value directly or indirectly from an enterprise perspective (Enterprise is to be understood here as provider, service provider or operator). </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_tlggUDXxEemvTc8tEY2xig">
+          <general xmi:type="uml:Class" href="Common.uml#_eCjlEOLJEeiKy5JVrA0UGA"/>
+        </generalization>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_rdTI8C7mEem7DJry5UTesQ" name="Individual">
         <generalization xmi:type="uml:Generalization" xmi:id="_3Dw1wC7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_shyr0C7mEem7DJry5UTesQ" name="Organization">
+      <packagedElement xmi:type="uml:Class" xmi:id="_shyr0C7mEem7DJry5UTesQ" name="Organization" isAbstract="true">
         <generalization xmi:type="uml:Generalization" xmi:id="_33D68C7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_yB-98C7mEem7DJry5UTesQ" name="OrganizationDecompositionComponent"/>
@@ -17,23 +109,26 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_6E0zAC7mEem7DJry5UTesQ" name="CompositeOrganization">
         <generalization xmi:type="uml:Generalization" xmi:id="_XP0tkC7nEem7DJry5UTesQ" general="_shyr0C7mEem7DJry5UTesQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_qTvDYC7nEem7DJry5UTesQ" name="CompositeOrganizationComposedOf" memberEnd="_qTw4kC7nEem7DJry5UTesQ _qTxfoC7nEem7DJry5UTesQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qTwRgC7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qTwRgS7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_qTw4kC7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_qTxfoC7nEem7DJry5UTesQ" name="compositeorganization" type="_6E0zAC7mEem7DJry5UTesQ" association="_qTvDYC7nEem7DJry5UTesQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YOEo0DbaEemP3p_OV1tL7g" name="PartyRole">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JQzsYDbnEemP3p_OV1tL7g" annotatedElement="_YOEo0DbaEemP3p_OV1tL7g">
+          <body>The part played by a party in a given context with any characteristics, such as expected pattern of behavior, attributes, and/or associations that it entails.PartyRole is an abstract concept that should be used in places where the business refers to a Party playing a Role</body>
+        </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_q99FEC7nEem7DJry5UTesQ" memberEnd="_q99sIC7nEem7DJry5UTesQ _q99sIS7nEem7DJry5UTesQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q99FES7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q99FEi7nEem7DJry5UTesQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIC7nEem7DJry5UTesQ" name="organization" type="_shyr0C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_q99sIS7nEem7DJry5UTesQ" name="organizationdecompositioncomponent" type="_yB-98C7mEem7DJry5UTesQ" association="_q99FEC7nEem7DJry5UTesQ"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_a5S48DbaEemP3p_OV1tL7g" name="Customer">
+        <generalization xmi:type="uml:Generalization" xmi:id="_7KS7IDbaEemP3p_OV1tL7g" general="_YOEo0DbaEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eDT94DbaEemP3p_OV1tL7g" name="Vendor">
+        <generalization xmi:type="uml:Generalization" xmi:id="_9srYUDbaEemP3p_OV1tL7g" general="_YOEo0DbaEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gS6B8DbaEemP3p_OV1tL7g" name="ServiceProvider">
+        <generalization xmi:type="uml:Generalization" xmi:id="_802YcDbaEemP3p_OV1tL7g" general="_YOEo0DbaEemP3p_OV1tL7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pGNDkDbaEemP3p_OV1tL7g" name="PartyRoleSpecification">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Q-ZDIDbnEemP3p_OV1tL7g" annotatedElement="_pGNDkDbaEemP3p_OV1tL7g">
+          <body>The definition of a role a party may play.</body>
+        </ownedComment>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_pl7DsTOHEei5Af8DcjrhIQ" name="Interfaces"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_pl7qwDOHEei5Af8DcjrhIQ" name="ObjectClasses"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_pl7qwTOHEei5Af8DcjrhIQ" name="TypeDefinitions"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gXw5UDRUEemxav-w1cv0cw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gX0jsjRUEemxav-w1cv0cw" source="PapyrusVersion">
@@ -59,4 +154,53 @@
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gXz8pjRUEemxav-w1cv0cw" base_StructuralFeature="_qTxfoC7nEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gX0jsDRUEemxav-w1cv0cw" base_StructuralFeature="_q99sIC7nEem7DJry5UTesQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gX0jsTRUEemxav-w1cv0cw" base_StructuralFeature="_q99sIS7nEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_nyDJYDXwEemvTc8tEY2xig" base_Element="_pLrroC7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_o67dADXwEemvTc8tEY2xig" base_Element="_rdTI8C7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_p-eksDXwEemvTc8tEY2xig" base_Element="_shyr0C7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_q39KYDXwEemvTc8tEY2xig" base_Element="_5mFBgC7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_r1B2oDXwEemvTc8tEY2xig" base_Element="_6E0zAC7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_tKfNsDXwEemvTc8tEY2xig" base_Element="_yB-98C7mEem7DJry5UTesQ"/>
+  <OpenModel_Profile:Reference xmi:id="_woT_cDXwEemvTc8tEY2xig" base_Element="_pLrroC7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_0rbPkDXwEemvTc8tEY2xig" base_Element="_rdTI8C7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_14nbcDXwEemvTc8tEY2xig" base_Element="_shyr0C7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_206EkDXwEemvTc8tEY2xig" base_Element="_5mFBgC7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_34FY0DXwEemvTc8tEY2xig" base_Element="_6E0zAC7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_5WvIIDXwEemvTc8tEY2xig" base_Element="_yB-98C7mEem7DJry5UTesQ" reference="From TMF SID"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_YOFP4DbaEemP3p_OV1tL7g" base_Class="_YOEo0DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_a5TgADbaEemP3p_OV1tL7g" base_Class="_a5S48DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_eDT94TbaEemP3p_OV1tL7g" base_Class="_eDT94DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_gS6B8TbaEemP3p_OV1tL7g" base_Class="_gS6B8DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_pGNDkTbaEemP3p_OV1tL7g" base_Class="_pGNDkDbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4Eg18TbaEemP3p_OV1tL7g" base_StructuralFeature="_4Eg18DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4EiEETbaEemP3p_OV1tL7g" base_StructuralFeature="_4EiEEDbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6KRBgDbaEemP3p_OV1tL7g" base_StructuralFeature="_6KQacjbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6KRokTbaEemP3p_OV1tL7g" base_StructuralFeature="_6KRokDbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Experimental xmi:id="_ZfcUoDbbEemP3p_OV1tL7g" base_Element="_YOEo0DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_ZgSpMDbbEemP3p_OV1tL7g" base_Element="_YOEo0DbaEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_a6-egDbbEemP3p_OV1tL7g" base_Element="_pGNDkDbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_a7rCEDbbEemP3p_OV1tL7g" base_Element="_pGNDkDbaEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_csbOADbbEemP3p_OV1tL7g" base_Element="_a5S48DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_ctCSADbbEemP3p_OV1tL7g" base_Element="_a5S48DbaEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_eN7dADbbEemP3p_OV1tL7g" base_Element="_gS6B8DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_eOjIEDbbEemP3p_OV1tL7g" base_Element="_gS6B8DbaEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_fVs9YDbbEemP3p_OV1tL7g" base_Element="_eDT94DbaEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_fWY54DbbEemP3p_OV1tL7g" base_Element="_eDT94DbaEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_3lu8UTbnEemP3p_OV1tL7g" base_Class="_3lu8UDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_5MnakTbnEemP3p_OV1tL7g" base_Class="_5MnakDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_7wiv4TbnEemP3p_OV1tL7g" base_Class="_7wiv4DbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_99w1YTbnEemP3p_OV1tL7g" base_Class="_99w1YDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_X8NUYzboEemP3p_OV1tL7g" base_StructuralFeature="_X8NUYjboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_X8OigTboEemP3p_OV1tL7g" base_StructuralFeature="_X8OigDboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_i16o4zboEemP3p_OV1tL7g" base_StructuralFeature="_i16o4jboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_i17P8TboEemP3p_OV1tL7g" base_StructuralFeature="_i17P8DboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ky0adDboEemP3p_OV1tL7g" base_StructuralFeature="_ky0aczboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ky1BgTboEemP3p_OV1tL7g" base_StructuralFeature="_ky1BgDboEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Experimental xmi:id="_3r4VsDbpEemP3p_OV1tL7g" base_Element="_5MnakDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_3sh18DbpEemP3p_OV1tL7g" base_Element="_5MnakDbnEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_5GzbkDbpEemP3p_OV1tL7g" base_Element="_7wiv4DbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_5Hdi4DbpEemP3p_OV1tL7g" base_Element="_7wiv4DbnEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_7xv-4DbpEemP3p_OV1tL7g" base_Element="_3lu8UDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_7yZfIDbpEemP3p_OV1tL7g" base_Element="_3lu8UDbnEemP3p_OV1tL7g" reference="From TMF SID"/>
+  <OpenModel_Profile:Experimental xmi:id="_FC1IsDbqEemP3p_OV1tL7g" base_Element="_99w1YDbnEemP3p_OV1tL7g"/>
+  <OpenModel_Profile:Reference xmi:id="_FDcMsDbqEemP3p_OV1tL7g" base_Element="_99w1YDbnEemP3p_OV1tL7g" reference="From TMF SID"/>
 </xmi:XMI>
