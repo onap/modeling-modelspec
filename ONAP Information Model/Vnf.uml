@@ -336,21 +336,6 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ue5s0H7eEei4v5WRHqfM1Q" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Uucw0JpZEeidy9iGT_F5-w" name="ServiceDescAtomicRealizedAs" memberEnd="_Uuf0IJpZEeidy9iGT_F5-w _UuhCQJpZEeidy9iGT_F5-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UufNEJpZEeidy9iGT_F5-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UufNEZpZEeidy9iGT_F5-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Uuf0IJpZEeidy9iGT_F5-w" name="resourcedesc (resourcespecification)" aggregation="shared" association="_Uucw0JpZEeidy9iGT_F5-w">
-          <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gbBssJpZEeidy9iGT_F5-w"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gbzv0JpZEeidy9iGT_F5-w" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_UuhCQJpZEeidy9iGT_F5-w" name="servicedescatomic" association="_Uucw0JpZEeidy9iGT_F5-w">
-          <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jI6PQJpZEeidy9iGT_F5-w"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jJfeEJpZEeidy9iGT_F5-w" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_etib0Js4EeiPBvbfaqSLYg" name="ServiceProvidesAnfd" memberEnd="_etjC4Js4EeiPBvbfaqSLYg _etnUUJs4EeiPBvbfaqSLYg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_etib0Zs4EeiPBvbfaqSLYg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_etib0ps4EeiPBvbfaqSLYg" key="nature" value="UML_Nature"/>
@@ -552,6 +537,49 @@ This will probably need to move to common</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_qrs4IL_xEeisMMIUeH4UGw">
         <body>Attributes in beige - added or changed</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5yDmgDxkEemSdYSKacDoqQ">
+        <body>Orange classes are either 'temp' classes, or need to be moved to a different model</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3CXdADwrEemSHu2qGsweWg" name="SeserviceDescCompositeComprisedOfResrouceDesc" memberEnd="_3CZ5QDwrEemSHu2qGsweWg _4VCl0DwrEemSHu2qGsweWg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3CZSMDwrEemSHu2qGsweWg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3CZSMTwrEemSHu2qGsweWg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_3CZ5QDwrEemSHu2qGsweWg" name="resourcedesc" aggregation="shared" association="_3CXdADwrEemSHu2qGsweWg">
+          <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dfz1IDwsEemSHu2qGsweWg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DgDFsDwsEemSHu2qGsweWg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4VCl0DwrEemSHu2qGsweWg" name="servicedesccomposite" association="_3CXdADwrEemSHu2qGsweWg">
+          <type xmi:type="uml:Class" href="Service.uml#_BQaDwJpZEeidy9iGT_F5-w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E67vUDwsEemSHu2qGsweWg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E7Lm8DwsEemSHu2qGsweWg" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_L7Y6UDwsEemSHu2qGsweWg" name="ServiceDescAtomicRealizedAs" memberEnd="_L7aIcTwsEemSHu2qGsweWg _L7b9oDwsEemSHu2qGsweWg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L7ZhYDwsEemSHu2qGsweWg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L7aIcDwsEemSHu2qGsweWg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_L7aIcTwsEemSHu2qGsweWg" name="resourcedesc" aggregation="shared" association="_L7Y6UDwsEemSHu2qGsweWg">
+          <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XGEDADwsEemSHu2qGsweWg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XGIUcDwsEemSHu2qGsweWg" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_L7b9oDwsEemSHu2qGsweWg" name="servicedescatomic" association="_L7Y6UDwsEemSHu2qGsweWg">
+          <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YFLWoDwsEemSHu2qGsweWg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YFPBADwsEemSHu2qGsweWg" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y4w5QDw4EemSHu2qGsweWg" name="Pnfd">
+        <generalization xmi:type="uml:Generalization" xmi:id="_xOGe4DxYEemSHu2qGsweWg">
+          <general xmi:type="uml:Class" href="Nf.uml#_O385oJssEeiPBvbfaqSLYg"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jJ_NcDxkEemSdYSKacDoqQ" name="LinkDesc">
+        <generalization xmi:type="uml:Generalization" xmi:id="_0sPjQDxkEemSdYSKacDoqQ">
+          <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
+        </generalization>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MjOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -2309,6 +2337,7 @@ This could include the number of CPU cores on this logical node, a memory config
         <generalization xmi:type="uml:Generalization" xmi:id="_lFpyYLILEeid-vjMcczUWA">
           <general xmi:type="uml:Class" href="Common.uml#_AC2eIDQUEeixv_sLOod4lQ"/>
         </generalization>
+        <generalization xmi:type="uml:Generalization" xmi:id="_rT3eoDxkEemSdYSKacDoqQ" general="_jJ_NcDxkEemSdYSKacDoqQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MzOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -3413,8 +3442,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_9VPjQJUJEeiYXO5wr78TUw" base_Element="_tIZ6oDa2Eei23_xWdimG9w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_psa4QZmYEeibE8EgApNciA" base_StructuralFeature="_psa4QJmYEeibE8EgApNciA"/>
   <OpenModel_Profile:Preliminary xmi:id="_76XPYJmYEeibE8EgApNciA" base_Element="_psa4QJmYEeibE8EgApNciA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UugbMJpZEeidy9iGT_F5-w" base_StructuralFeature="_Uuf0IJpZEeidy9iGT_F5-w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UuhpUZpZEeidy9iGT_F5-w" base_StructuralFeature="_UuhCQJpZEeidy9iGT_F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_xVayYZs3EeiPBvbfaqSLYg" base_Class="_xVaLUJs3EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etjC4Zs4EeiPBvbfaqSLYg" base_StructuralFeature="_etjC4Js4EeiPBvbfaqSLYg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_etn7YJs4EeiPBvbfaqSLYg" base_StructuralFeature="_etnUUJs4EeiPBvbfaqSLYg"/>
@@ -3727,4 +3754,9 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Future xmi:id="_uzbV8DU2Eem2n8bBHelJyw" base_Element="_aYK0IHPSEeiuFfjlON-CuQ"/>
   <OpenModel_Profile:Future xmi:id="_w9fZwDU2Eem2n8bBHelJyw" base_Element="_JqA_UHPTEeiuFfjlON-CuQ"/>
   <OpenModel_Profile:Future xmi:id="_zOyuADU2Eem2n8bBHelJyw" base_Element="_5--AQJdUEei-sOl6ywWHlg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4VCl0TwrEemSHu2qGsweWg" base_StructuralFeature="_4VCl0DwrEemSHu2qGsweWg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_L7b9oTwsEemSHu2qGsweWg" base_StructuralFeature="_L7b9oDwsEemSHu2qGsweWg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Y4xgUDw4EemSHu2qGsweWg" base_Class="_Y4w5QDw4EemSHu2qGsweWg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jJ_0gDxkEemSdYSKacDoqQ" base_Class="_jJ_NcDxkEemSdYSKacDoqQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_oiRO0DxmEemL36iV0V0qOA" base_Element="_jJ_NcDxkEemSdYSKacDoqQ"/>
 </xmi:XMI>
