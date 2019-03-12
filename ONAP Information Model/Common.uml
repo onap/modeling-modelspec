@@ -234,9 +234,7 @@ White - Not Ready for Review</body>
           <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sT2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sD2pEeiu6I5JfRTxxQ">
             <body>Common part of the various VLDs.</body>
           </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_uKiJwDxkEemSdYSKacDoqQ">
-            <general xmi:type="uml:Class" href="Vnf.uml#_jJ_NcDxkEemSdYSKacDoqQ"/>
-          </generalization>
+          <generalization xmi:type="uml:Generalization" xmi:id="_uKiJwDxkEemSdYSKacDoqQ" general="_jJ_NcDxkEemSdYSKacDoqQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw79sj2pEeiu6I5JfRTxxQ" name="virtualLinkDescId" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_Tw79sz2pEeiu6I5JfRTxxQ" annotatedElement="_Tw79sj2pEeiu6I5JfRTxxQ">
               <body>Uniquely identifies a VLD in the parent descriptor.&#xD;
@@ -537,6 +535,13 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TUOAcC4zEemS0_wZSU3sbA" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TUg7YC4zEemS0_wZSU3sbA" value="*"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BUajMEUBEemWRYeHGX88Yw" name="securityGroupRuleId" visibility="public" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MzcyUEUBEemWRYeHGX88Yw" annotatedElement="_BUajMEUBEemWRYeHGX88Yw">
+              <body>Reference of the security group rules bound to this CPD.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H32bAEUBEemWRYeHGX88Yw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H4NnYEUBEemWRYeHGX88Yw" value="*"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_0AbUYDnBEeiWMf5FLWfdLA" name="AffinityOrAntiAffinityGroup">
           <ownedComment xmi:type="uml:Comment" xmi:id="_L_HiIDnCEeiWMf5FLWfdLA" annotatedElement="_0AbUYDnBEeiWMf5FLWfdLA">
@@ -782,6 +787,11 @@ NOTE: 	These attributes are used to control scaling boundaries.</body>
               <body>Identifier of this CpdPool class. It identifies a pool of descriptors of connection points and NS SAPs.</body>
             </ownedComment>
           </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jJ_NcDxkEemSdYSKacDoqQ" name="LinkDesc">
+          <generalization xmi:type="uml:Generalization" xmi:id="_0sPjQDxkEemSdYSKacDoqQ">
+            <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
+          </generalization>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
@@ -4921,4 +4931,8 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_2KE3YDxdEemSHu2qGsweWg" base_Element="_upuWQDxbEemSHu2qGsweWg"/>
   <OpenModel_Profile:Experimental xmi:id="_25KyADxdEemSHu2qGsweWg" base_Element="_yfwzsDxbEemSHu2qGsweWg"/>
   <OpenModel_Profile:Experimental xmi:id="_33CvgDxdEemSHu2qGsweWg" base_Element="_3gr6cDxcEemSHu2qGsweWg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BUbKQEUBEemWRYeHGX88Yw" base_StructuralFeature="_BUajMEUBEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_O-o3gEUBEemWRYeHGX88Yw" base_Element="_BUajMEUBEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jJ_0gDxkEemSdYSKacDoqQ" base_Class="_jJ_NcDxkEemSdYSKacDoqQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_oiRO0DxmEemL36iV0V0qOA" base_Element="_jJ_NcDxkEemSdYSKacDoqQ"/>
 </xmi:XMI>

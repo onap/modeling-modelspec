@@ -16,6 +16,37 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_VtzSoUSyEeiVGPeZpaYNtQ" annotatedElement="_VtzSoESyEeiVGPeZpaYNtQ">
           <body>A functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour. NOTE: In practical terms, a Network Function is today often a network node or physical appliance</body>
         </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LlLZoEUHEemWRYeHGX88Yw" name="id" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_SqMUgEUHEemWRYeHGX88Yw" annotatedElement="_LlLZoEUHEemWRYeHGX88Yw">
+            <body>Identifier of the network function</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UVcVYEUHEemWRYeHGX88Yw" name="name" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YWCdAEUHEemWRYeHGX88Yw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YWa3gEUHEemWRYeHGX88Yw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZqGs8EUHEemWRYeHGX88Yw" name="type" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iOehwEUHEemWRYeHGX88Yw" annotatedElement="_ZqGs8EUHEemWRYeHGX88Yw">
+            <body>Description of the type of network function</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_srFqkEUHEemWRYeHGX88Yw" name="description" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_zvYMsEUHEemWRYeHGX88Yw" annotatedElement="_srFqkEUHEemWRYeHGX88Yw">
+            <body>Description of the network function</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xL7YgEUHEemWRYeHGX88Yw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMMeQEUHEemWRYeHGX88Yw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6o6QUEUHEemWRYeHGX88Yw" name="role" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AiB_0EUIEemWRYeHGX88Yw" annotatedElement="_6o6QUEUHEemWRYeHGX88Yw">
+            <body>Role the network function will be providing.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="__ez0YNxxEei0G_d67y10Rg" name="NfDf"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_KEN2IN0dEeiRzJu73dYz2w" name="NfIndicator">
@@ -97,4 +128,14 @@ This tells the consumer where to send the subscription request.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_hsh1IN0mEeiRzJu73dYz2w" base_Element="_KEN2IN0dEeiRzJu73dYz2w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_O385opssEeiPBvbfaqSLYg" base_Class="_O385oJssEeiPBvbfaqSLYg"/>
   <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LlMnwEUHEemWRYeHGX88Yw" base_StructuralFeature="_LlLZoEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UVc8cEUHEemWRYeHGX88Yw" base_StructuralFeature="_UVcVYEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZqHUAEUHEemWRYeHGX88Yw" base_StructuralFeature="_ZqGs8EUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_srFqkUUHEemWRYeHGX88Yw" base_StructuralFeature="_srFqkEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6o6QUUUHEemWRYeHGX88Yw" base_StructuralFeature="_6o6QUEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_P5G3gEUIEemWRYeHGX88Yw" base_Element="_LlLZoEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_Rqsw8EUIEemWRYeHGX88Yw" base_Element="_UVcVYEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_S99voEUIEemWRYeHGX88Yw" base_Element="_ZqGs8EUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_UfyHsEUIEemWRYeHGX88Yw" base_Element="_srFqkEUHEemWRYeHGX88Yw"/>
+  <OpenModel_Profile:Experimental xmi:id="_XveW0EUIEemWRYeHGX88Yw" base_Element="_6o6QUEUHEemWRYeHGX88Yw"/>
 </xmi:XMI>
