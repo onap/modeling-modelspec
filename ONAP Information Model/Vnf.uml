@@ -1530,7 +1530,7 @@ When the VnfExtCpd is mapped to a VduCpd, the values for the attributes type, su
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VYZ_ADm9EeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VYvWMDm9EeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_H9Vd0Dm5EeiWMf5FLWfdLA" name="nicIoRequirements" type="_lp6e4DatEei23_xWdimG9w">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_H9Vd0Dm5EeiWMf5FLWfdLA" name="nicIoRequirements" type="_Lpu5wCo9EemS0_wZSU3sbA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1kSgsEbvEei7eo5RdnNiBQ" annotatedElement="_H9Vd0Dm5EeiWMf5FLWfdLA">
             <body>This references (couples) the CPD with any logical node I/O requirements (for network devices) that may have been created. Linking these attributes is necessary so that so that I/O requirements that need to be articulated at the logical node level can be associated with the network interface requirements associated with the CPD.&#xD;
 </body>
@@ -2327,7 +2327,8 @@ This could include the number of CPU cores on this logical node, a memory config
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vyMxAET9EemWRYeHGX88Yw" name="protocol" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_C645IET-EemWRYeHGX88Yw" annotatedElement="_vyMxAET9EemWRYeHGX88Yw">
-            <body>Indicates the protocol carried over the IP layer. Permitted values: any protocol defined in the IANA protocol registry, e.g. TCP, UDP, ICMP, etc.&#xD;
+            <body>Indicates the protocol carried over the IP layer. Permitted values: any protocol defined in the IANA protocol registry, e.g. TCP, UDP, ICMP, etc. &#xD;
+See  https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml&#xD;
 Note: IFA011 defines this as an enum, but as the list is not complete, made this a string.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -2355,22 +2356,6 @@ Note: IFA011 defines this as an enum, but as the list is not complete, made this
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MzOHEei5Af8DcjrhIQ" name="TypeDefinitions">
-      <packagedElement xmi:type="uml:DataType" xmi:id="_lp6e4DatEei23_xWdimG9w" name="LogicalNodeRequirements ">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_9EwVcGNfEeio9amveq0yWQ" annotatedElement="_lp6e4DatEei23_xWdimG9w">
-          <body>This information element describes compute, memory and I/O requirements that are to be associated with the logical node of infrastructure. The logical node requirements are a sub-component of the VDU level requirements. As an example for illustration purposes, a logical node correlates to the concept of a NUMA cell in libvirt terminology. </body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_vXCEcDatEei23_xWdimG9w" name="logicalNodeRequirement" visibility="public">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_3Nax4DatEei23_xWdimG9w" annotatedElement="_vXCEcDatEei23_xWdimG9w">
-            <body>The logical node-level compute, memory and I/O requirements. An array of key-value pairs that articulate the deployment requirements.&#xD;
-&#xD;
-This could include the number of CPU cores on this logical node, a memory configuration specific to a logical node (e.g. such as available in the Linux kernel via the libnuma library) or a requirement related to the association of an I/O device with the logical node.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y-JVEDatEei23_xWdimG9w"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y-PbsDatEei23_xWdimG9w" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_dSO64DawEei23_xWdimG9w" name="RequestedAdditionalCapabilityData">
         <ownedComment xmi:type="uml:Comment" xmi:id="_ByokYGNhEeio9amveq0yWQ" annotatedElement="_dSO64DawEei23_xWdimG9w">
           <body>This information element describes requested additional capability for a particular VDU. Such a capability may be for acceleration or specific tasks. </body>
@@ -3177,7 +3162,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_o4b5oT5eEeijbdkIlrq2uQ" base_StructuralFeature="_o4b5oD5eEeijbdkIlrq2uQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_M45q8T0REeiuk5pWzMOpfA" base_Class="_M45q8D0REeiuk5pWzMOpfA"/>
   <OpenModel_Profile:Experimental xmi:id="_B1NVwEJ8EeiwbqJBYHKltg" base_Element="_M45q8D0REeiuk5pWzMOpfA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_vXCrgDatEei23_xWdimG9w" base_StructuralFeature="_vXCEcDatEei23_xWdimG9w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_d8Gh0TaxEei23_xWdimG9w" base_StructuralFeature="_d8Gh0DaxEei23_xWdimG9w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_j_7h8TawEei23_xWdimG9w" base_StructuralFeature="_j_7h8DawEei23_xWdimG9w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4g-HoTaxEei23_xWdimG9w" base_StructuralFeature="_4g-HoDaxEei23_xWdimG9w"/>
@@ -3380,8 +3364,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_ugpN4JUGEeiYXO5wr78TUw" base_Element="_1euWoD5cEeijbdkIlrq2uQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_25PQgJUGEeiYXO5wr78TUw" base_Element="_c8RX8D3BEeiFiY3bcpqGkg"/>
   <OpenModel_Profile:Preliminary xmi:id="_AP5d4JUHEeiYXO5wr78TUw" base_Element="_nJzw0DnNEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_Ok7pwJUHEeiYXO5wr78TUw" base_Element="_lp6e4DatEei23_xWdimG9w"/>
-  <OpenModel_Profile:Preliminary xmi:id="_PanUkJUHEeiYXO5wr78TUw" base_Element="_vXCEcDatEei23_xWdimG9w"/>
   <OpenModel_Profile:Preliminary xmi:id="_Q-gwQJUHEeiYXO5wr78TUw" base_Element="_HlF2kDmxEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_RuzkwJUHEeiYXO5wr78TUw" base_Element="_ZccSoDmxEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_SYVC4JUHEeiYXO5wr78TUw" base_Element="_ZcmqsDmxEeiWMf5FLWfdLA"/>
@@ -3675,7 +3657,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Reference xmi:id="_UdjmECvNEemS0_wZSU3sbA" base_Element="_M45q8D0REeiuk5pWzMOpfA" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_dqLtsCvNEemS0_wZSU3sbA" base_Element="_8BUXwDm4EeiWMf5FLWfdLA" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_hK4NQCvNEemS0_wZSU3sbA" base_Element="_oFQM8Dd-EeiIfPeSAqyGdQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_o5LVsCvNEemS0_wZSU3sbA" base_Element="_lp6e4DatEei23_xWdimG9w" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_srGIICvNEemS0_wZSU3sbA" base_Element="_AJK9MDa0Eei23_xWdimG9w" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_xq1YkCvNEemS0_wZSU3sbA" base_Element="_tIZ6oDa2Eei23_xWdimG9w" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_5dZV8CvNEemS0_wZSU3sbA" base_Element="_ZqQQ8DkIEeiWMf5FLWfdLA" reference="IFA011 v2.5.1"/>
@@ -3744,7 +3725,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Future xmi:id="_zOyuADU2Eem2n8bBHelJyw" base_Element="_5--AQJdUEei-sOl6ywWHlg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_4VCl0TwrEemSHu2qGsweWg" base_StructuralFeature="_4VCl0DwrEemSHu2qGsweWg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_L7b9oTwsEemSHu2qGsweWg" base_StructuralFeature="_L7b9oDwsEemSHu2qGsweWg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_3cECMET5EemWRYeHGX88Yw"/>
   <OpenModel_Profile:Deprecated xmi:id="_Lh9ZcET6EemWRYeHGX88Yw" base_Element="_S4W1oDazEei23_xWdimG9w"/>
   <OpenModel_Profile:Deprecated xmi:id="_aFnQIET6EemWRYeHGX88Yw" base_Element="_TXQisDa0Eei23_xWdimG9w"/>
   <OpenModel_Profile:Deprecated xmi:id="_dFkaIET6EemWRYeHGX88Yw" base_Element="_mxsiIDa0Eei23_xWdimG9w"/>
