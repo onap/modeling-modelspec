@@ -576,6 +576,12 @@ This will probably need to move to common</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YFPBADwsEemSHu2qGsweWg" value="*"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_5zfvQEdMEemb9YiEz89e4g" name="VNIRHasLNR" memberEnd="_5zqHUEdMEemb9YiEz89e4g _5zvm4EdMEemb9YiEz89e4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5zmc8EdMEemb9YiEz89e4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zmc8UdMEemb9YiEz89e4g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_5zvm4EdMEemb9YiEz89e4g" name="_virtualNetworkInterfaceRequirements" type="_8BUXwDm4EeiWMf5FLWfdLA" association="_5zfvQEdMEemb9YiEz89e4g"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MjOHEei5Af8DcjrhIQ" name="ObjectClasses">
@@ -1530,13 +1536,12 @@ When the VnfExtCpd is mapped to a VduCpd, the values for the attributes type, su
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VYZ_ADm9EeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VYvWMDm9EeiWMf5FLWfdLA" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_H9Vd0Dm5EeiWMf5FLWfdLA" name="nicIoRequirements" type="_Lpu5wCo9EemS0_wZSU3sbA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_1kSgsEbvEei7eo5RdnNiBQ" annotatedElement="_H9Vd0Dm5EeiWMf5FLWfdLA">
-            <body>This references (couples) the CPD with any logical node I/O requirements (for network devices) that may have been created. Linking these attributes is necessary so that so that I/O requirements that need to be articulated at the logical node level can be associated with the network interface requirements associated with the CPD.&#xD;
-</body>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_5zqHUEdMEemb9YiEz89e4g" name="_nicIoRequirements" type="_Lpu5wCo9EemS0_wZSU3sbA" association="_5zfvQEdMEemb9YiEz89e4g">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Pvj98EdNEemb9YiEz89e4g" annotatedElement="_5zqHUEdMEemb9YiEz89e4g">
+            <body>This references (couples) the CPD with any logical node I/O requirements (for network devices) that may have been created. Linking these attributes is necessary so that so that I/O requirements that need to be articulated at the logical node level can be associated with the network interface requirements associated with the CPD.</body>
           </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bumsEDm9EeiWMf5FLWfdLA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bu6OEDm9EeiWMf5FLWfdLA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ztKoEdMEemb9YiEz89e4g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5zu_0EdMEemb9YiEz89e4g" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_6C8F4DnAEeiWMf5FLWfdLA" name="InstantiationLevel">
@@ -3139,7 +3144,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H9RMYTm5EeiWMf5FLWfdLA" base_StructuralFeature="_H9RMYDm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H9SagTm5EeiWMf5FLWfdLA" base_StructuralFeature="_H9SagDm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_H9UPsDm5EeiWMf5FLWfdLA" base_StructuralFeature="_H9TooDm5EeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_H9Vd0Tm5EeiWMf5FLWfdLA" base_StructuralFeature="_H9Vd0Dm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_6C8s8DnAEeiWMf5FLWfdLA" base_Class="_6C8F4DnAEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Y6HcIDnGEeiWMf5FLWfdLA" base_StructuralFeature="_Y6Fm8DnGEeiWMf5FLWfdLA" isInvariant="true"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_jVi5MDnGEeiWMf5FLWfdLA" base_StructuralFeature="_jViSIDnGEeiWMf5FLWfdLA"/>
@@ -3625,8 +3629,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Reference xmi:id="_m7XasCsIEemS0_wZSU3sbA" base_Element="_ISONYDOSEeiHat9KcP8uWA" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_88WloCsIEemS0_wZSU3sbA" base_Element="_6rucQCsHEemS0_wZSU3sbA"/>
   <OpenModel_Profile:PassedByReference xmi:id="_89X5UCsIEemS0_wZSU3sbA" base_Property="_6rucQCsHEemS0_wZSU3sbA"/>
-  <OpenModel_Profile:Experimental xmi:id="_E26L8CsKEemS0_wZSU3sbA" base_Element="_H9Vd0Dm5EeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:PassedByReference xmi:id="_ZIkHQCsKEemS0_wZSU3sbA" base_Property="_H9Vd0Dm5EeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Reference xmi:id="_5JnB4CsKEemS0_wZSU3sbA" base_Element="_0lvvQDgREeiOYfGHew0BGg" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:Reference xmi:id="_RWmKUCsLEemS0_wZSU3sbA" base_Element="_p0UVsDQvEeixv_sLOod4lQ" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oGtFESsLEemS0_wZSU3sbA" base_StructuralFeature="_oGtFECsLEemS0_wZSU3sbA"/>
@@ -3753,4 +3755,7 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wHxGcUT_EemWRYeHGX88Yw" base_StructuralFeature="_wHxGcET_EemWRYeHGX88Yw"/>
   <OpenModel_Profile:Experimental xmi:id="_IA5ewEUAEemWRYeHGX88Yw" base_Element="_wHuqMET_EemWRYeHGX88Yw"/>
   <OpenModel_Profile:PassedByReference xmi:id="_kux4IEUDEemWRYeHGX88Yw" base_Property="_PG3MwGkCEeip9umi7zNprw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_5zquYEdMEemb9YiEz89e4g" base_StructuralFeature="_5zqHUEdMEemb9YiEz89e4g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_5zwN8EdMEemb9YiEz89e4g" base_StructuralFeature="_5zvm4EdMEemb9YiEz89e4g"/>
+  <OpenModel_Profile:PassedByReference xmi:id="_R8H8IEdNEemb9YiEz89e4g" base_Property="_5zqHUEdMEemb9YiEz89e4g"/>
 </xmi:XMI>
