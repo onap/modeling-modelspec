@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mi5hgIbfEei-x_BD9U-ssQ" name="Ves">
   <packagedElement xmi:type="uml:Package" xmi:id="_rmBdIIbfEei-x_BD9U-ssQ" name="ObjectClasses">
-    <packagedElement xmi:type="uml:Class" xmi:id="_PmIOkH7uEeifJIHxnlj6Cg" name="Event">
+    <packagedElement xmi:type="uml:Class" xmi:id="_PmIOkH7uEeifJIHxnlj6Cg" name="VesEvent">
       <ownedComment xmi:type="uml:Comment" xmi:id="_O8t0wIncEeiOe-BKGdv_Yg" annotatedElement="_PmIOkH7uEeifJIHxnlj6Cg">
         <body>An ONAP event is an aggregation of a header and a message.  Event messages may be published to a message broker by service instances, resource instances, or ONAP platform components.  Service or resource instances may be in support of network infrastructure or customer services.  Interested platforms may subscribe to events on the message broker (e.g. Centralized Testing Platform CTP) may see an event on a service VNF instance and perform an automated test as part of a closed loop management policy.  Events are unique and distinguishable from one another.&#xD;
 &#xD;
@@ -11,90 +11,6 @@ ONAP event messages are serialized as a unicode ASCII character string which may
       <generalization xmi:type="uml:Generalization" xmi:id="_FT4nsDq0EemOl5OHBoqS_w">
         <general xmi:type="uml:Class" href="Common.uml#_8fYhoDqyEemOl5OHBoqS_w"/>
       </generalization>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Tp20ksGbEeiS695oPTRE1Q" name="_fault" type="_7SeaAMGaEeiS695oPTRE1Q" aggregation="composite" association="_Tp2NgMGbEeiS695oPTRE1Q">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_ot0fEN1REeiRzJu73dYz2w" annotatedElement="_Tp20ksGbEeiS695oPTRE1Q">
-          <body>Fields specific to fault events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tp3boMGbEeiS695oPTRE1Q"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tp3bocGbEeiS695oPTRE1Q" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IYJJQMWMEeiLjtyU_R81wg" name="_heartbeat" type="_n09AUMWKEeiLjtyU_R81wg" aggregation="composite" association="_IYFe4MWMEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_qKIFAN1REeiRzJu73dYz2w" annotatedElement="_IYJJQMWMEeiLjtyU_R81wg">
-          <body>Fields specific to heartbeat events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IYKXYMWMEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IYK-cMWMEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_O1pQ0cWPEeiLjtyU_R81wg" name="_measurement" type="_qX-WsMWKEeiLjtyU_R81wg" aggregation="composite" association="_O1nboMWPEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_sQR5MN1REeiRzJu73dYz2w" annotatedElement="_O1pQ0cWPEeiLjtyU_R81wg">
-          <body>Fields specific to measurement events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1sUIMWPEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O1uJUMWPEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_QWlossWbEeiLjtyU_R81wg" name="_mobileflow" type="_25jHQMWSEeiLjtyU_R81wg" aggregation="composite" association="_QWlBoMWbEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_ubgaoN1REeiRzJu73dYz2w" annotatedElement="_QWlossWbEeiLjtyU_R81wg">
-          <body>Fields specific to mobility flow events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QWmPwMWbEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QWmPwcWbEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Vf32ssWbEeiLjtyU_R81wg" name="_notification" type="_53AW4MWSEeiLjtyU_R81wg" aggregation="composite" association="_Vf3PoMWbEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_wOJc8N1REeiRzJu73dYz2w" annotatedElement="_Vf32ssWbEeiLjtyU_R81wg">
-          <body>Fields specific to notification events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vf4dwcWbEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vf4dwsWbEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ya5dYsWbEeiLjtyU_R81wg" name="_other" type="_7_tv0MWSEeiLjtyU_R81wg" aggregation="composite" association="_Ya42UMWbEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_x2M_4N1REeiRzJu73dYz2w" annotatedElement="_Ya5dYsWbEeiLjtyU_R81wg">
-          <body>Fields specific to other types of events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ya5dZMWbEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ya6EcMWbEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZyQfosWgEeiLjtyU_R81wg" name="_pnfregistration" type="_w0GWgMWTEeiLjtyU_R81wg" aggregation="composite" association="_ZyP4kMWgEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_zXxgUN1REeiRzJu73dYz2w" annotatedElement="_ZyQfosWgEeiLjtyU_R81wg">
-          <body>Fields specific to pnfRegistration events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZyRGscWgEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyRGssWgEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_oQMv4cWgEeiLjtyU_R81wg" name="_sipSignaling" type="_zieoUMWTEeiLjtyU_R81wg" aggregation="composite" association="_oQMI0MWgEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_09CN8N1REeiRzJu73dYz2w" annotatedElement="_oQMv4cWgEeiLjtyU_R81wg">
-          <body>Fields specific to sipSignaling events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oQNW8MWgEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oQNW8cWgEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_t-WPYMWpEeiLjtyU_R81wg" name="_statechange" type="_1ZragMWTEeiLjtyU_R81wg" aggregation="composite" association="_t-VBQMWpEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_2dlasN1REeiRzJu73dYz2w" annotatedElement="_t-WPYMWpEeiLjtyU_R81wg">
-          <body>Fields specific to state change events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t-WPYsWpEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t-W2cMWpEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bw5M0sWqEeiLjtyU_R81wg" name="_syslog" type="_2rBtoMWTEeiLjtyU_R81wg" aggregation="composite" association="_Bw4lwMWqEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_4EhjUN1REeiRzJu73dYz2w" annotatedElement="_Bw5M0sWqEeiLjtyU_R81wg">
-          <body>Fields specific to syslog events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bw5z4MWqEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bw5z4cWqEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_MjWp0sWqEeiLjtyU_R81wg" name="_thresholdCrossingAlert" type="_4d4yYMWTEeiLjtyU_R81wg" aggregation="composite" association="_MjWCwMWqEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_6EIqoN1REeiRzJu73dYz2w" annotatedElement="_MjWp0sWqEeiLjtyU_R81wg">
-          <body>Fields specific to threshold crossing alert events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MjWp1MWqEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MjWp1cWqEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_f24I8sWqEeiLjtyU_R81wg" name="_voicequality" type="_7sljAMWTEeiLjtyU_R81wg" aggregation="composite" association="_f23h4MWqEeiLjtyU_R81wg">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_7oy7UN1REeiRzJu73dYz2w" annotatedElement="_f24I8sWqEeiLjtyU_R81wg">
-          <body>Fields specific to voiceQuality events</body>
-        </ownedComment>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f24wAMWqEeiLjtyU_R81wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f24wAcWqEeiLjtyU_R81wg" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_8Dr4ksWMEeiLjtyU_R81wg" name="_commoneventheader" type="_XoAlsMWMEeiLjtyU_R81wg" aggregation="composite" association="_8DrRgMWMEeiLjtyU_R81wg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_nLgXwN1REeiRzJu73dYz2w" annotatedElement="_8Dr4ksWMEeiLjtyU_R81wg">
           <body>Fields common to all events</body>
@@ -102,15 +18,12 @@ ONAP event messages are serialized as a unicode ASCII character string which may
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8DsfoMWMEeiLjtyU_R81wg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8DsfocWMEeiLjtyU_R81wg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_NprpkiDMEemw1L3J4dNy4w" name="_perf3gpp" type="_ATTeUCDMEemw1L3J4dNy4w" aggregation="composite" association="_NprCgCDMEemw1L3J4dNy4w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NpsQoCDMEemw1L3J4dNy4w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NpsQoSDMEemw1L3J4dNy4w" value="1"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7SeaAMGaEeiS695oPTRE1Q" name="Fault">
       <ownedComment xmi:type="uml:Comment" xmi:id="_qgCpQMcZEeiafPHvepnkKQ" annotatedElement="_7SeaAMGaEeiS695oPTRE1Q">
         <body>Fields specific to fault events</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_GHoP4EaIEemmD4xckllxww" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_U98FwIEoEeieQ4zKGFzYtQ" name="alarmAdditionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1yYHkKZIEeily5uFlujj3Q" annotatedElement="_U98FwIEoEeieQ4zKGFzYtQ">
           <body>Additional alarm information. &#xD;
@@ -177,6 +90,7 @@ Could contain managed object instance as separate key:value; could add probable 
       <ownedComment xmi:type="uml:Comment" xmi:id="_LA3yYNE6EeilcYLXtz_Wig" annotatedElement="_n09AUMWKEeiLjtyU_R81wg">
         <body>The heartbeatFields datatype is an optional field block for fields specific to heartbeat events.</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_Vdmd4EaUEem_U-rQUWOmPw" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_fTh9kIFJEeieQ4zKGFzYtQ" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1FAF0IFJEeieQ4zKGFzYtQ" annotatedElement="_fTh9kIFJEeieQ4zKGFzYtQ">
           <body>Additional expansion fields if needed.&#xD;
@@ -378,6 +292,7 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
       <ownedComment xmi:type="uml:Comment" xmi:id="_MzyhgNE6EeilcYLXtz_Wig" annotatedElement="_qX-WsMWKEeiLjtyU_R81wg">
         <body>Fields specific to measurement events</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_ZULt4EaUEem_U-rQUWOmPw" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_MIUQcIFKEeieQ4zKGFzYtQ" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_MqDuwIFOEeieQ4zKGFzYtQ" annotatedElement="_MIUQcIFKEeieQ4zKGFzYtQ">
           <body>Additional measurement fields if needed.&#xD;
@@ -562,6 +477,7 @@ For fault events, startEpochMicrosec is the timestamp of the initial alarm; if t
       <ownedComment xmi:type="uml:Comment" xmi:id="_Omf1QNE6EeilcYLXtz_Wig" annotatedElement="_25jHQMWSEeiLjtyU_R81wg">
         <body>Fields specific to mobility flow events</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_bp1WoEaUEem_U-rQUWOmPw" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_69Dm8JQkEei6kI-JPNdeuw" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_D_EvIJQnEei6kI-JPNdeuw" annotatedElement="_69Dm8JQkEei6kI-JPNdeuw">
           <body>additionalFields - Additional mobileFlow fields if needed.&#xD;
@@ -865,6 +781,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
       <ownedComment xmi:type="uml:Comment" xmi:id="_QMUjkNE6EeilcYLXtz_Wig" annotatedElement="_53AW4MWSEeiLjtyU_R81wg">
         <body>Fields specific to notification events</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_32jEAEaUEemtHYgFzN-tvQ" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_sl3TYJQuEei6kI-JPNdeuw" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="__TMVMJQuEei6kI-JPNdeuw" annotatedElement="_sl3TYJQuEei6kI-JPNdeuw">
           <body>Additional notification fields if needed.&#xD;
@@ -942,6 +859,7 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
       <ownedComment xmi:type="uml:Comment" xmi:id="_Y-AboNE6EeilcYLXtz_Wig" annotatedElement="_7_tv0MWSEeiLjtyU_R81wg">
         <body>The otherFields datatype defines fields for events belonging to the 'other' domain of the commonEventHeader domain enumeration.</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_FCgyMEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_V7c6gJQ6Eei6kI-JPNdeuw" name="arrayofNamedHashMap" type="_sOvPAJQ9Eei6kI-JPNdeuw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_R9EqwLX3EeiFDLhMCq9-Iw" annotatedElement="_V7c6gJQ6Eei6kI-JPNdeuw">
           <body>Array of named hashMaps</body>
@@ -976,6 +894,7 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
       <ownedComment xmi:type="uml:Comment" xmi:id="_cNXTkNE6EeilcYLXtz_Wig" annotatedElement="_w0GWgMWTEeiLjtyU_R81wg">
         <body>The pnfRegistrationFields datatype defines fields for events belonging to the 'pnfRegistration' domain of the commonEventHeader domain enumeration; it consists of the following fields:</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_JiXBoEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_wTZ74Jc-Eeis0eUbsDSw0w" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_iLbK0LbKEeiWgvNHCpdNlg" annotatedElement="_wTZ74Jc-Eeis0eUbsDSw0w">
           <body>Additional pnfRegistration fields if needed</body>
@@ -1085,6 +1004,7 @@ For example: &quot;inService&quot;, &quot;outOfService&quot;, &quot;maintenance&
         <body>sipSignalingFields - The sipSignalingFields datatype communicates information about SIP signaling messages, parameters and signaling state.&#xD;
 </body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_PU3y0EaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_VL2WIJpnEeidy9iGT_F5-w" name="additionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Kuns0JpoEeidy9iGT_F5-w" annotatedElement="_VL2WIJpnEeidy9iGT_F5-w">
           <body>zdditionalInformation - Additional sipSignalling fields.&#xD;
@@ -1171,6 +1091,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
       <ownedComment xmi:type="uml:Comment" xmi:id="_hclKcNE6EeilcYLXtz_Wig" annotatedElement="_1ZragMWTEeiLjtyU_R81wg">
         <body>Fields specific to state change events.</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_Sb8RcEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_JYYzUJzREeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_FjUJwJzSEeiLvPKMh61-Bg" annotatedElement="_JYYzUJzREeiLvPKMh61-Bg">
           <body>Additional stateChange fields if needed</body>
@@ -1209,6 +1130,7 @@ Note: current data type (String) may be changed to Common Resource Datatype L3Ad
 VES supports both classes of syslog, however VES is only recommended for control logs or for lower volume session logs, less than 60k per hour. High volume session logging should use a file-based transport solution.&#xD;
 </body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_XAezoEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_fX1bQJzTEeiLvPKMh61-Bg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_tMbUkLt0Eeiq-o0aE00M6w" annotatedElement="_fX1bQJzTEeiLvPKMh61-Bg">
           <body>Additional syslog fields if needed Ex:  {“name1”: ”value1”, “name2: “value2” … }</body>
@@ -1893,6 +1815,7 @@ Debug	          7	    debug-level messages&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="__uOkANE6EeilcYLXtz_Wig" annotatedElement="_4d4yYMWTEeiLjtyU_R81wg">
         <body>The thresholdCrossingAlertFields datatype consists of the following fields:</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_bNb8QEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_RRq8IKJVEeibfLkXoC-lBg" name="additionalFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_GtNpcKJWEeibfLkXoC-lBg" annotatedElement="_RRq8IKJVEeibfLkXoC-lBg">
           <body>additionalFields - Additional pnfRegistration fields if needed.&#xD;
@@ -2008,6 +1931,7 @@ Debug	          7	    debug-level messages&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_Na2FANE7EeilcYLXtz_Wig" annotatedElement="_7sljAMWTEeiLjtyU_R81wg">
         <body>The voiceQuality class provides statistics related to customer facing voice products; consists of the following fields:</body>
       </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_ferH8EaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_e9yVUNikEeiRnMGpBj3Tnw" name="additionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_wvMlMNkXEei09Y1bp3mjwA" annotatedElement="_e9yVUNikEeiRnMGpBj3Tnw">
           <body>Additional voice quality fields</body>
@@ -3892,6 +3816,7 @@ Field	Type	Required?	Description&#xD;
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ATTeUCDMEemw1L3J4dNy4w" name="Perf3gpp">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ifa8IEaZEem3MJDthqMI_w" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_onUNUCDPEemw1L3J4dNy4w" name="eventAddlFields" type="_yPR44IEoEeieQ4zKGFzYtQ">
         <ownedComment xmi:type="uml:Comment" xmi:id="_9_Mw4CDPEemw1L3J4dNy4w" annotatedElement="_onUNUCDPEemw1L3J4dNy4w">
           <body>Additional key-value pairs if needed</body>
@@ -4687,83 +4612,11 @@ Debug	          7	    debug-level messages&#xD;
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_UgGsIMyIEeicT7FGufu5-g" name="Associations">
-    <packagedElement xmi:type="uml:Association" xmi:id="_f23h4MWqEeiLjtyU_R81wg" name="EventContainsVoiceQuality" memberEnd="_f24I8sWqEeiLjtyU_R81wg _f24wAsWqEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f24I8MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f24I8cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_f24wAsWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_f23h4MWqEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MjWCwMWqEeiLjtyU_R81wg" name="EventConainsThresholdCrossingAlert" memberEnd="_MjWp0sWqEeiLjtyU_R81wg _MjWp1sWqEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MjWp0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MjWp0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_MjWp1sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_MjWCwMWqEeiLjtyU_R81wg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_8DrRgMWMEeiLjtyU_R81wg" name="EventContainsComonEventHeader" memberEnd="_8Dr4ksWMEeiLjtyU_R81wg _8DsfosWMEeiLjtyU_R81wg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Dr4kMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Dr4kcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_8DsfosWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_8DrRgMWMEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Tp2NgMGbEeiS695oPTRE1Q" name="EventContainsFault" memberEnd="_Tp20ksGbEeiS695oPTRE1Q _Tp3bosGbEeiS695oPTRE1Q">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tp20kMGbEeiS695oPTRE1Q" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tp20kcGbEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Tp3bosGbEeiS695oPTRE1Q" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Tp2NgMGbEeiS695oPTRE1Q"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_IYFe4MWMEeiLjtyU_R81wg" name="EventContainsHeartbeat" memberEnd="_IYJJQMWMEeiLjtyU_R81wg _IYK-ccWMEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IYH7IMWMEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IYH7IcWMEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_IYK-ccWMEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_IYFe4MWMEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_O1nboMWPEeiLjtyU_R81wg" name="EventContainsMeasurement" memberEnd="_O1pQ0cWPEeiLjtyU_R81wg _O1v-gMWPEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O1opwMWPEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O1pQ0MWPEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_O1v-gMWPEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_O1nboMWPEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QWlBoMWbEeiLjtyU_R81wg" name="EventContainsMobileFlow" memberEnd="_QWlossWbEeiLjtyU_R81wg _QWmPwsWbEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QWlosMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QWloscWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_QWmPwsWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_QWlBoMWbEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Vf3PoMWbEeiLjtyU_R81wg" name="EventContainsNotification" memberEnd="_Vf32ssWbEeiLjtyU_R81wg _Vf5E0MWbEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vf32sMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vf32scWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Vf5E0MWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Vf3PoMWbEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Ya42UMWbEeiLjtyU_R81wg" name="EventContainsOther" memberEnd="_Ya5dYsWbEeiLjtyU_R81wg _Ya6EccWbEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ya5dYMWbEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ya5dYcWbEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Ya6EccWbEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Ya42UMWbEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZyP4kMWgEeiLjtyU_R81wg" name="EventContainsPnfRegistration" memberEnd="_ZyQfosWgEeiLjtyU_R81wg _ZyRGs8WgEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZyQfoMWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZyQfocWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ZyRGs8WgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_ZyP4kMWgEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_oQMI0MWgEeiLjtyU_R81wg" name="EventContainsSipSignaling" memberEnd="_oQMv4cWgEeiLjtyU_R81wg _oQNW8sWgEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oQMI0cWgEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oQMv4MWgEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_oQNW8sWgEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_oQMI0MWgEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_t-VBQMWpEeiLjtyU_R81wg" name="EventContainsStateChange" memberEnd="_t-WPYMWpEeiLjtyU_R81wg _t-W2ccWpEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t-VoUMWpEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t-VoUcWpEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_t-W2ccWpEeiLjtyU_R81wg" name="eventcontainssipsignaling" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_t-VBQMWpEeiLjtyU_R81wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_Bw4lwMWqEeiLjtyU_R81wg" name="EventContainsSysLog" memberEnd="_Bw5M0sWqEeiLjtyU_R81wg _Bw5z4sWqEeiLjtyU_R81wg">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bw5M0MWqEeiLjtyU_R81wg" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bw5M0cWqEeiLjtyU_R81wg" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Bw5z4sWqEeiLjtyU_R81wg" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_Bw4lwMWqEeiLjtyU_R81wg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_322w4MivEeiKReoLXDYvSw" name="MeasurementHasCodecsInUse" memberEnd="_325NIMivEeiKReoLXDYvSw _326bQsivEeiKReoLXDYvSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_324mEMivEeiKReoLXDYvSw" source="org.eclipse.papyrus">
@@ -4926,15 +4779,6 @@ Debug	          7	    debug-level messages&#xD;
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4IiU0dkYEei09Y1bp3mjwA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_4Ii74tkYEei09Y1bp3mjwA" name="voicequality" type="_7sljAMWTEeiLjtyU_R81wg" association="_4IhtwNkYEei09Y1bp3mjwA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NprCgCDMEemw1L3J4dNy4w" name="EventContainsPerf3gpp" memberEnd="_NprpkiDMEemw1L3J4dNy4w _NpsQoiDMEemw1L3J4dNy4w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NprpkCDMEemw1L3J4dNy4w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NprpkSDMEemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_PkTJoCZSEemRA_CB-n5OfQ" annotatedElement="_NprCgCDMEemw1L3J4dNy4w">
-        <body>Fields specific to 3gpp types of events</body>
-      </ownedComment>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_NpsQoiDMEemw1L3J4dNy4w" name="event" type="_PmIOkH7uEeifJIHxnlj6Cg" association="_NprCgCDMEemw1L3J4dNy4w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2YIm8CDREemw1L3J4dNy4w" name="Perf3gppContainsMeasDataCollection" memberEnd="_2YJOAiDREemw1L3J4dNy4w _2YJ1EyDREemw1L3J4dNy4w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YJOACDREemw1L3J4dNy4w" source="org.eclipse.papyrus">
