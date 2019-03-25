@@ -1736,19 +1736,10 @@ Permitted Values:&#xD;
             <body>A BusinessInteraction is an arrangement, contract, communication or joint activity between one or more PartyRoles, ResourceRoles, or CustomerAccounts. A BusinessInteraction may consist of one or more BusinessInteractionItems. A BusinessInteractionItem may refer to a Product, Service, Resource, or one of their specifications. A BusinessInteraction is further defined by one or more Places. One BusinessInteraction may reference another BusinessInteraction and one BusinessInteractionItem may reference another BusinessInteractionItem on the same or different BusinessInteraction. There are five types of BusinessInteractions: Requests, Responses, Notifications, Agreements, and Instructions.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_utCzUDX1EemvTc8tEY2xig" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mjJf0BpxEemOGejS9lsDjA" name="ID">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_N9QOgBp5EemOGejS9lsDjA" annotatedElement="_mjJf0BpxEemOGejS9lsDjA">
-              <body>Unique identifier for Interaction.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_n-rCoBpxEemOGejS9lsDjA" name="StartDate" type="_KwZPMP8VEeiZ-fXSiUXhdA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_QN6CgBp5EemOGejS9lsDjA" annotatedElement="_n-rCoBpxEemOGejS9lsDjA">
               <body>Date interaction initiated</body>
             </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ofCkwBpxEemOGejS9lsDjA" name="description">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_phb14BpxEemOGejS9lsDjA" name="endDate" type="_KwZPMP8VEeiZ-fXSiUXhdA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_SuvAgBp5EemOGejS9lsDjA" annotatedElement="_phb14BpxEemOGejS9lsDjA">
@@ -1760,6 +1751,8 @@ Permitted Values:&#xD;
               <body>The current condition of an interaction, such as open, in research, closed, and so forth</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tZIF8EqREemOLdIUx_ad5Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tZNlgEqREemOLdIUx_ad5Q" value="1"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_NNQYIBp9EemOGejS9lsDjA" name="BusinessInteractionItem" isAbstract="true"/>
@@ -3039,15 +3032,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_qX-WscWKEeiLjtyU_R81wg">
     <base_Class xmi:type="uml:Class" href="Ves.uml#_qX-WsMWKEeiLjtyU_R81wg"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelClass xmi:id="_XoBMwMWMEeiLjtyU_R81wg">
-    <base_Class xmi:type="uml:Class" href="Ves.uml#_XoAlsMWMEeiLjtyU_R81wg"/>
-  </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8Dr4k8WMEeiLjtyU_R81wg">
-    <base_StructuralFeature xmi:type="uml:Property" href="Ves.uml#_8Dr4ksWMEeiLjtyU_R81wg"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8DtGsMWMEeiLjtyU_R81wg">
-    <base_StructuralFeature xmi:type="uml:Property" href="Ves.uml#_8DsfosWMEeiLjtyU_R81wg"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_25jHQcWSEeiLjtyU_R81wg">
     <base_Class xmi:type="uml:Class" href="Ves.uml#_25jHQMWSEeiLjtyU_R81wg"/>
   </OpenModel_Profile:OpenModelClass>
@@ -3306,12 +3290,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_LWvhsdCrEeius9GPYoVrTg">
     <base_StructuralFeature xmi:type="uml:Property" href="Ves.uml#_LWvhsNCrEeius9GPYoVrTg"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Experimental xmi:id="_y8X3kNE5EeilcYLXtz_Wig">
-    <base_Element xmi:type="uml:Class" href="Ves.uml#_XoAlsMWMEeiLjtyU_R81wg"/>
-  </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_8Boy8NE5EeilcYLXtz_Wig">
-    <base_Element xmi:type="uml:Property" href="Ves.uml#_DLbYsH7_EeifJIHxnlj6Cg"/>
-  </OpenModel_Profile:Experimental>
   <OpenModel_Profile:Experimental xmi:id="_98ILANI8Eei2f7881JEvKA">
     <base_Element xmi:type="uml:Class" href="Ves.uml#_7SeaAMGaEeiS695oPTRE1Q"/>
   </OpenModel_Profile:Experimental>
@@ -4338,9 +4316,7 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_ocnK0BnMEemlxOdMFpUVvQ" base_Class="_ocmjwBnMEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ocq1MBnMEemlxOdMFpUVvQ" base_StructuralFeature="_ocqOIBnMEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_octRcRnMEemlxOdMFpUVvQ" base_StructuralFeature="_octRcBnMEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_mjKG4BpxEemOGejS9lsDjA" base_StructuralFeature="_mjJf0BpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n-rpsBpxEemOGejS9lsDjA" base_StructuralFeature="_n-rCoBpxEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ofCkwRpxEemOGejS9lsDjA" base_StructuralFeature="_ofCkwBpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_phcc8BpxEemOGejS9lsDjA" base_StructuralFeature="_phb14BpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Lk238RpyEemOGejS9lsDjA" base_StructuralFeature="_Lk238BpyEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OtrDARpyEemOGejS9lsDjA" base_StructuralFeature="_OtrDABpyEemOGejS9lsDjA"/>
