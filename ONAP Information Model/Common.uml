@@ -226,8 +226,17 @@ White - Not Ready for Review</body>
         <ownedComment xmi:type="uml:Comment" xmi:id="_woyW8CCvEemw1L3J4dNy4w">
           <body>Attributes in Pink are adds (not in IFA 01</body>
         </ownedComment>
-        <packagedElement xmi:type="uml:Class" xmi:id="_kl8eAPM6EeiKa_-nH9J3Lg" name="Location"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_lZpZgPGSEei7s9ZrY0W7MQ" name="PlatformCpDescriptor"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_UPPD8FVTEemo4a1c6QCrGw" name="PnfInstanceHasLocation" memberEnd="_UPUjgFVTEemo4a1c6QCrGw _UPaDEFVTEemo4a1c6QCrGw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UPTVYFVTEemo4a1c6QCrGw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UPT8cFVTEemo4a1c6QCrGw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_UPUjgFVTEemo4a1c6QCrGw" name="pnfinstance" type="_U37_kOQ9Eei2Ub3VuxG4ag" association="_UPPD8FVTEemo4a1c6QCrGw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JxqcYFVUEemo4a1c6QCrGw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JxzmUFVUEemo4a1c6QCrGw" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_UPaDEFVTEemo4a1c6QCrGw" name="place" type="_Q8qb0CYzEemRA_CB-n5OfQ" association="_UPPD8FVTEemo4a1c6QCrGw"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_OFje8DOHEei5Af8DcjrhIQ" name="NetworkObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_Tw79sD2pEeiu6I5JfRTxxQ" name="VirtualLinkDesc" isAbstract="true">
@@ -575,6 +584,7 @@ For VNFs, those rules are applicable between the virtualization containers to be
           <ownedComment xmi:type="uml:Comment" xmi:id="_Qb96oPoiEeiXda0FrsRiEw" annotatedElement="_w3xrYOQ5Eei2Ub3VuxG4ag">
             <body>PlatformDescriptor is an abstract class that extends Descriptor to represent classes of objects that represent platofrm or internal descriptors.</body>
           </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_JW-ZkFVWEemo4a1c6QCrGw" general="_v04t4DFPEemw1_Ys6rcLWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3L_KMOzmEei7-e9MrPJW7Q" name="invariantID" type="_AuYtcDkBEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_NqVBYPM7EeiKa_-nH9J3Lg" annotatedElement="_3L_KMOzmEei7-e9MrPJW7Q">
               <body>ID that spans multiple versions of the same descriptor.</body>
@@ -874,19 +884,6 @@ NOTE: 	These attributes are used to control scaling boundaries.</body>
           <ownedEnd xmi:type="uml:Property" xmi:id="_ee5n4OQ_Eei2Ub3VuxG4ag" name="onboardingvnfdescriptor" type="_fSQ4IOQ3Eei2Ub3VuxG4ag" association="_eezhQOQ_Eei2Ub3VuxG4ag">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__p334PS6EeiGPpKdxajt7g"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__p9-gPS6EeiGPpKdxajt7g" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_ozQL8PM6EeiKa_-nH9J3Lg" memberEnd="_ozRaEfM6EeiKa_-nH9J3Lg _ozSoMPM6EeiKa_-nH9J3Lg">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ozQzAPM6EeiKa_-nH9J3Lg" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ozRaEPM6EeiKa_-nH9J3Lg" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_ozRaEfM6EeiKa_-nH9J3Lg" name="location" type="_kl8eAPM6EeiKa_-nH9J3Lg" association="_ozQL8PM6EeiKa_-nH9J3Lg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p608MPgVEeiEqKXVVPCm1Q"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p68Q8PgVEeiEqKXVVPCm1Q" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_ozSoMPM6EeiKa_-nH9J3Lg" name="pnfinstance" type="_U37_kOQ9Eei2Ub3VuxG4ag" association="_ozQL8PM6EeiKa_-nH9J3Lg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkXBYPgVEeiEqKXVVPCm1Q"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkb54PgVEeiEqKXVVPCm1Q" value="*"/>
           </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_jSVY0OzeEei7-e9MrPJW7Q" memberEnd="_jSYcIOzeEei7-e9MrPJW7Q _jSZqQOzeEei7-e9MrPJW7Q">
@@ -1723,13 +1720,31 @@ Permitted Values:&#xD;
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_kM4s8BnKEemlxOdMFpUVvQ" name="Diagrams">
-        <packagedElement xmi:type="uml:Class" xmi:id="_hRjYoEaKEemmD4xckllxww" name="PolicyEvent">
-          <generalization xmi:type="uml:Generalization" xmi:id="_jm4RQEaKEemmD4xckllxww" general="_8fYhoDqyEemOl5OHBoqS_w"/>
-        </packagedElement>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1p5QIFe0EemOS57QqWJZ3A">
+          <body>PolicyEvent is an example presently.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="__IXVsFe0EemOS57QqWJZ3A">
+          <body>LicenseAgreement is part of another contribution.  Relationship only is for consideration in this contribution.</body>
+        </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_mU1Q4BnKEemlxOdMFpUVvQ" name="ObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_z6bHYBnLEemlxOdMFpUVvQ" name="Agreement">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iAMxIFcOEemLJovD_F1O1A" annotatedElement="_z6bHYBnLEemlxOdMFpUVvQ">
+            <body>A type of BusinessInteraction that represents a contract or arrangement, either written or verbal and sometimes enforceable by law.</body>
+          </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_JT-7QEdFEemetJs_SolH_g" general="__F4vsBnKEemlxOdMFpUVvQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_URSToFcaEemLJovD_F1O1A" name="documentNumber">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cwk0IFcaEemLJovD_F1O1A" annotatedElement="_URSToFcaEemLJovD_F1O1A">
+              <body>A reference number assigned to an Agreement that follows a prescribed numbering system.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f6Gw4FcaEemLJovD_F1O1A" name="statementOfIntent">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mIcicFcaEemLJovD_F1O1A" annotatedElement="_f6Gw4FcaEemLJovD_F1O1A">
+              <body>An overview and goals of the Agreement.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="__F4vsBnKEemlxOdMFpUVvQ" name="BusinessInteraction" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_IIT0YBp5EemOGejS9lsDjA" annotatedElement="__F4vsBnKEemlxOdMFpUVvQ">
@@ -1755,32 +1770,81 @@ Permitted Values:&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tZNlgEqREemOLdIUx_ad5Q" value="1"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_NNQYIBp9EemOGejS9lsDjA" name="BusinessInteractionItem" isAbstract="true"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_UlJoMBp8EemOGejS9lsDjA" name="BusinessInteractionSpec"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_toYcIBp8EemOGejS9lsDjA" name="BusinessInteractionVersion"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_myg8QBqXEemOGejS9lsDjA" name="Order">
-          <generalization xmi:type="uml:Generalization" xmi:id="_uhUO0DqzEemOl5OHBoqS_w" general="_4vw1QDqyEemOl5OHBoqS_w"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NNQYIBp9EemOGejS9lsDjA" name="BusinessInteractionItem" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_SKxeoFcQEemLJovD_F1O1A" annotatedElement="_NNQYIBp9EemOGejS9lsDjA">
+            <body>The purpose for the BusinessInteraction expressed in terms of a ProductSpecification, ProductOffering, ServiceSpecification or ResourceSpecification or may refer to a Product, Service, or Resource.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XUmQcFcWEemLJovD_F1O1A" name="quantity">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lBuu0FcWEemLJovD_F1O1A" annotatedElement="_XUmQcFcWEemLJovD_F1O1A">
+              <body>Quantity of an interaction item involved in an interaction.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Z1QPUFcWEemLJovD_F1O1A" name="action">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2DV1sFcWEemLJovD_F1O1A" annotatedElement="_Z1QPUFcWEemLJovD_F1O1A">
+              <body>The action to take for an InteractionItem, such as add, change, remove.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UlJoMBp8EemOGejS9lsDjA" name="BusinessInteractionSpec">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_KQEHUFcPEemLJovD_F1O1A" annotatedElement="_UlJoMBp8EemOGejS9lsDjA">
+            <body>The invariant characteristics (attributes in the business view, and methods, constraints, relationships, and behavior in the system view) and behavior of a BusinessInteraction. This is done by optionally defining a set of BusinessInteractionSpecItems, each of which aggregates one or more other types of Specifications. This helps to ensure that different BusinessInteractions have the same basic characteristics and behavior by deriving them from the same BusinessInteractionSpec.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_toYcIBp8EemOGejS9lsDjA" name="BusinessInteractionVersion">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MoeTsFcQEemLJovD_F1O1A" annotatedElement="_toYcIBp8EemOGejS9lsDjA">
+            <body>Version of the business interaction.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4vw1QDqyEemOl5OHBoqS_w" name="Request" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WnKRwFcNEemLJovD_F1O1A" annotatedElement="_4vw1QDqyEemOl5OHBoqS_w">
+            <body>The act of asking that something be done that typically involves a Response. Request is a type of Business Interaction.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_Lv3H0EdFEemetJs_SolH_g" general="__F4vsBnKEemlxOdMFpUVvQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8fYhoDqyEemOl5OHBoqS_w" name="Notification" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_im9hEFcMEemLJovD_F1O1A" annotatedElement="_8fYhoDqyEemOl5OHBoqS_w">
+            <body>A communication that informs about something that has or will happen. A Notification is typically one-sided, in that no Response is expected. A Notification can be created as the result of a Request; for example, a Trouble Report may result in Notifications being sent to affected Parties. A Notification is a type of Business Interaction.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_DtbGIEdrEemxfq65Xb2oRg" general="__F4vsBnKEemlxOdMFpUVvQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2HUMUDqyEemOl5OHBoqS_w" name="Response" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_bkK-UFcNEemLJovD_F1O1A" annotatedElement="_2HUMUDqyEemOl5OHBoqS_w">
+            <body>A reply to a Request</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_aERBkEdFEemTDOF2GVSrTg" general="__F4vsBnKEemlxOdMFpUVvQ"/>
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_4VzdIDqyEemOl5OHBoqS_w" name="DataType1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hRjYoEaKEemmD4xckllxww" name="PolicyEvent">
+          <generalization xmi:type="uml:Generalization" xmi:id="_jm4RQEaKEemmD4xckllxww" general="_8fYhoDqyEemOl5OHBoqS_w"/>
         </packagedElement>
         <packagedElement xmi:type="uml:AssociationClass" xmi:id="_ocmjwBnMEemlxOdMFpUVvQ" name="BusinesInteractionRelationship" memberEnd="_ocqOIBnMEemlxOdMFpUVvQ _octRcBnMEemlxOdMFpUVvQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ocpAABnMEemlxOdMFpUVvQ" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ocpnEBnMEemlxOdMFpUVvQ" key="nature" value="UML_Nature"/>
           </eAnnotations>
+          <ownedComment xmi:type="uml:Comment" xmi:id="__0smkFcMEemLJovD_F1O1A" annotatedElement="_ocmjwBnMEemlxOdMFpUVvQ">
+            <body>An association between two Interactions. For example, a Notification sent to customers affected by a problem contained on a Trouble Report; a response to a request, an agreement and the interactions that led up to the agreement.</body>
+          </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Lk238BpyEemOGejS9lsDjA" name="type">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LseF0FcNEemLJovD_F1O1A" annotatedElement="_Lk238BpyEemOGejS9lsDjA">
+              <body>A categorization of the relationship, such as bulk, parent/child, and so forth.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OtrDABpyEemOGejS9lsDjA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_ocqOIBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_octRcBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_4vw1QDqyEemOl5OHBoqS_w" name="Request">
-          <generalization xmi:type="uml:Generalization" xmi:id="_Lv3H0EdFEemetJs_SolH_g" general="__F4vsBnKEemlxOdMFpUVvQ"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8fYhoDqyEemOl5OHBoqS_w" name="Notification">
-          <generalization xmi:type="uml:Generalization" xmi:id="_DtbGIEdrEemxfq65Xb2oRg" general="__F4vsBnKEemlxOdMFpUVvQ"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_2HUMUDqyEemOl5OHBoqS_w" name="Response">
-          <generalization xmi:type="uml:Generalization" xmi:id="_aERBkEdFEemTDOF2GVSrTg" general="__F4vsBnKEemlxOdMFpUVvQ"/>
-          <nestedClassifier xmi:type="uml:DataType" xmi:id="_4VzdIDqyEemOl5OHBoqS_w" name="DataType1"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OtrDABpyEemOGejS9lsDjA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_CdRYEFcdEemLJovD_F1O1A" annotatedElement="_OtrDABpyEemOGejS9lsDjA">
+              <body>Time period for which the business interaction is valid.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ocqOIBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UWvekFceEemLJovD_F1O1A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UW8S4FceEemLJovD_F1O1A" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_octRcBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wt140FceEemLJovD_F1O1A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuuCkFceEemLJovD_F1O1A" value="*"/>
+          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_s8dsMBnKEemlxOdMFpUVvQ" name="TypeDefinitions"/>
@@ -3888,7 +3952,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vi4oQeLJEeiKy5JVrA0UGA" base_StructuralFeature="_vi4oQOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wEIUIOLJEeiKy5JVrA0UGA" base_StructuralFeature="_wEHtEOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wj9DseLJEeiKy5JVrA0UGA" base_StructuralFeature="_wj9DsOLJEeiKy5JVrA0UGA"/>
-  <OpenModel_Profile:Experimental xmi:id="_J-LbUOLKEeiKy5JVrA0UGA" base_Element="_eCjlEOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Td26ceLNEeiKy5JVrA0UGA" base_StructuralFeature="_Td26cOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_T6QikeLNEeiKy5JVrA0UGA" base_StructuralFeature="_T6QikOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_TsknYOQ3Eei2Ub3VuxG4ag" base_Class="_TpqdUOQ3Eei2Ub3VuxG4ag"/>
@@ -3916,7 +3979,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MvmCoeRBEei2Ub3VuxG4ag" base_StructuralFeature="_MvmCoORBEei2Ub3VuxG4ag"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MvnQweRBEei2Ub3VuxG4ag" base_StructuralFeature="_MvnQwORBEei2Ub3VuxG4ag"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_1PPxwOwXEei7-e9MrPJW7Q" base_Class="_1POjoOwXEei7-e9MrPJW7Q"/>
-  <OpenModel_Profile:Experimental xmi:id="_BWnMMOwYEei7-e9MrPJW7Q" base_Element="_1POjoOwXEei7-e9MrPJW7Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hmt4sOwnEei7-e9MrPJW7Q" base_StructuralFeature="_hmtRoOwnEei7-e9MrPJW7Q"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_30qC0ezdEei7-e9MrPJW7Q" base_Class="_30qC0OzdEei7-e9MrPJW7Q"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_CYoX4ezeEei7-e9MrPJW7Q" base_Class="_CYoX4OzeEei7-e9MrPJW7Q"/>
@@ -4013,9 +4075,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FXXXkfM5EeiKa_-nH9J3Lg" base_StructuralFeature="_FXXXkPM5EeiKa_-nH9J3Lg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KcYJk_M5EeiKa_-nH9J3Lg" base_StructuralFeature="_KcYJkvM5EeiKa_-nH9J3Lg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_KcZXsPM5EeiKa_-nH9J3Lg" base_StructuralFeature="_KcYwoPM5EeiKa_-nH9J3Lg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_kl8eAfM6EeiKa_-nH9J3Lg" base_Class="_kl8eAPM6EeiKa_-nH9J3Lg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ozRaEvM6EeiKa_-nH9J3Lg" base_StructuralFeature="_ozRaEfM6EeiKa_-nH9J3Lg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ozSoMfM6EeiKa_-nH9J3Lg" base_StructuralFeature="_ozSoMPM6EeiKa_-nH9J3Lg"/>
   <OpenModel_Profile:Experimental xmi:id="_ZGHbwPe7EeiEqKXVVPCm1Q" base_Element="_w3xrYOQ5Eei2Ub3VuxG4ag"/>
   <OpenModel_Profile:Experimental xmi:id="_o2I-8Pe7EeiEqKXVVPCm1Q" base_Element="_cbT5IOQ3Eei2Ub3VuxG4ag"/>
   <OpenModel_Profile:Experimental xmi:id="_KUwDwPe8EeiEqKXVVPCm1Q" base_Element="_nepCAPGQEei7s9ZrY0W7MQ"/>
@@ -4340,7 +4399,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YFHdExp-EemOGejS9lsDjA" base_StructuralFeature="_YFHdEhp-EemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_YFM8oRp-EemOGejS9lsDjA" base_StructuralFeature="_YFM8oBp-EemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_rTf9gBp-EemOGejS9lsDjA" base_Element="_NNQYIBp9EemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_myg8QRqXEemOGejS9lsDjA" base_Class="_myg8QBqXEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_roVw0BqZEemOGejS9lsDjA" base_Class="_roVJwBqZEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vmPw0xqZEemOGejS9lsDjA" base_StructuralFeature="_vmPw0hqZEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vmQ-8RqZEemOGejS9lsDjA" base_StructuralFeature="_vmQ-8BqZEemOGejS9lsDjA"/>
@@ -4730,7 +4788,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_SDkmwDE6Eemw1_Ys6rcLWw" base_Class="_SDiKgDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxniQjE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxniQTE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxowYTE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxowYDE6Eemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:Reference xmi:id="_5B1jcDFAEemw1_Ys6rcLWw" base_Element="_eCjlEOLJEeiKy5JVrA0UGA" reference="TMF &amp; MEF"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_v05U8DFPEemw1_Ys6rcLWw" base_Class="_v04t4DFPEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_0ZjL4DFPEemw1_Ys6rcLWw" base_Class="_0Zik0DFPEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_ASE5EDFQEemw1_Ys6rcLWw" base_Class="_ASESADFQEemw1_Ys6rcLWw"/>
@@ -4771,8 +4828,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uFCmEPuHEeiYVshOvl6_ww" base_StructuralFeature="_uFBX8PuHEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RayLofuIEeiYVshOvl6_ww" base_StructuralFeature="_RayLoPuIEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gUB30fuIEeiYVshOvl6_ww" base_StructuralFeature="_gUB30PuIEeiYVshOvl6_ww"/>
-  <OpenModel_Profile:Experimental xmi:id="_SBuT0DX0EemvTc8tEY2xig" base_Element="_v04t4DFPEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:Experimental xmi:id="_TRLJgDX0EemvTc8tEY2xig" base_Element="_0Zik0DFPEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Experimental xmi:id="_XoSTsDX0EemvTc8tEY2xig" base_Element="_SDiKgDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Experimental xmi:id="_eDQ9oDX1EemvTc8tEY2xig" base_Element="_Q8qb0CYzEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_eodhIDYQEemvTc8tEY2xig" base_StructuralFeature="_eoc6EDYQEemvTc8tEY2xig"/>
@@ -4789,12 +4844,12 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_4vw1QTqyEemOl5OHBoqS_w" base_Class="_4vw1QDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_8fZIsDqyEemOl5OHBoqS_w" base_Class="_8fYhoDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:Experimental xmi:id="_KH6-cDq0EemOl5OHBoqS_w" base_Element="_4vw1QDqyEemOl5OHBoqS_w"/>
-  <OpenModel_Profile:Reference xmi:id="_KIu2wDq0EemOl5OHBoqS_w" base_Element="_4vw1QDqyEemOl5OHBoqS_w"/>
+  <OpenModel_Profile:Reference xmi:id="_KIu2wDq0EemOl5OHBoqS_w" base_Element="_4vw1QDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
   <OpenModel_Profile:Experimental xmi:id="_MWfHwDq0EemOl5OHBoqS_w" base_Element="_2HUMUDqyEemOl5OHBoqS_w"/>
-  <OpenModel_Profile:Reference xmi:id="_MXZtwDq0EemOl5OHBoqS_w" base_Element="_2HUMUDqyEemOl5OHBoqS_w"/>
-  <OpenModel_Profile:Reference xmi:id="_QFODUDq0EemOl5OHBoqS_w" base_Element="_z6bHYBnLEemlxOdMFpUVvQ"/>
+  <OpenModel_Profile:Reference xmi:id="_MXZtwDq0EemOl5OHBoqS_w" base_Element="_2HUMUDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_QFODUDq0EemOl5OHBoqS_w" base_Element="_z6bHYBnLEemlxOdMFpUVvQ" reference="From TMF SID"/>
   <OpenModel_Profile:Experimental xmi:id="_SepY0Dq0EemOl5OHBoqS_w" base_Element="_8fYhoDqyEemOl5OHBoqS_w"/>
-  <OpenModel_Profile:Reference xmi:id="_SfdRIDq0EemOl5OHBoqS_w" base_Element="_8fYhoDqyEemOl5OHBoqS_w"/>
+  <OpenModel_Profile:Reference xmi:id="_SfdRIDq0EemOl5OHBoqS_w" base_Element="_8fYhoDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_e2_dUTxbEemSHu2qGsweWg" base_Class="_e2_dUDxbEemSHu2qGsweWg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_iaJbADxbEemSHu2qGsweWg" base_Class="_iaIz8DxbEemSHu2qGsweWg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_mOIC8DxbEemSHu2qGsweWg" base_Class="_mOHb4DxbEemSHu2qGsweWg"/>
@@ -4826,4 +4881,32 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_jJ_0gDxkEemSdYSKacDoqQ" base_Class="_jJ_NcDxkEemSdYSKacDoqQ"/>
   <OpenModel_Profile:Experimental xmi:id="_oiRO0DxmEemL36iV0V0qOA" base_Element="_jJ_NcDxkEemSdYSKacDoqQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_hRkmwEaKEemmD4xckllxww" base_Class="_hRjYoEaKEemmD4xckllxww"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UPVKkFVTEemo4a1c6QCrGw" base_StructuralFeature="_UPUjgFVTEemo4a1c6QCrGw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UPaqIFVTEemo4a1c6QCrGw" base_StructuralFeature="_UPaDEFVTEemo4a1c6QCrGw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_6xrb4FZMEempS4TbYDJLLQ" base_Element="_eCjlEOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_A10IkFZNEempS4TbYDJLLQ" base_Element="_1POjoOwXEei7-e9MrPJW7Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_D7zCEFZNEempS4TbYDJLLQ" base_Element="_v04t4DFPEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_MB2jMFZNEempS4TbYDJLLQ" base_Element="_0Zik0DFPEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_YvXXoFZNEempS4TbYDJLLQ" base_Element="_vi4oQOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_c54QQFZNEempS4TbYDJLLQ" base_Element="_wEHtEOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_gD4uIFZNEempS4TbYDJLLQ" base_Element="_wj9DsOLJEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_o6lCAFZNEempS4TbYDJLLQ" base_Element="_eoc6EDYQEemvTc8tEY2xig"/>
+  <OpenModel_Profile:Preliminary xmi:id="_sXgb4FZNEempS4TbYDJLLQ" base_Element="_E4CakDYREemvTc8tEY2xig"/>
+  <OpenModel_Profile:Preliminary xmi:id="_wzCzEFZNEempS4TbYDJLLQ" base_Element="_Td26cOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_zIfAcFZNEempS4TbYDJLLQ" base_Element="_T6QikOLNEeiKy5JVrA0UGA"/>
+  <OpenModel_Profile:Example xmi:id="_Iiv1cFcFEemLJovD_F1O1A" base_Element="_hRjYoEaKEemmD4xckllxww"/>
+  <OpenModel_Profile:Experimental xmi:id="_lWNH0FcHEemLJovD_F1O1A" base_Element="_n-rCoBpxEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Experimental xmi:id="_mht4sFcHEemLJovD_F1O1A" base_Element="_phb14BpxEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Experimental xmi:id="_ngpmIFcHEemLJovD_F1O1A" base_Element="_tRRrEBp5EemOGejS9lsDjA"/>
+  <OpenModel_Profile:Experimental xmi:id="_uyW5MFcHEemLJovD_F1O1A" base_Element="_Lk238BpyEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Experimental xmi:id="_v1MPMFcHEemLJovD_F1O1A" base_Element="_OtrDABpyEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Reference xmi:id="_CesHoFcNEemLJovD_F1O1A" base_Element="_ocmjwBnMEemlxOdMFpUVvQ" reference="From TMF SID"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XUm3gFcWEemLJovD_F1O1A" base_StructuralFeature="_XUmQcFcWEemLJovD_F1O1A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Z1QPUVcWEemLJovD_F1O1A" base_StructuralFeature="_Z1QPUFcWEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Experimental xmi:id="_BrI_QFcXEemLJovD_F1O1A" base_Element="_XUmQcFcWEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Experimental xmi:id="_DXRw8FcXEemLJovD_F1O1A" base_Element="_Z1QPUFcWEemLJovD_F1O1A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_URSToVcaEemLJovD_F1O1A" base_StructuralFeature="_URSToFcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_f6Gw4VcaEemLJovD_F1O1A" base_StructuralFeature="_f6Gw4FcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Experimental xmi:id="_rFCYQFcaEemLJovD_F1O1A" base_Element="_URSToFcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Experimental xmi:id="_sCVG8FcaEemLJovD_F1O1A" base_Element="_f6Gw4FcaEemLJovD_F1O1A"/>
 </xmi:XMI>
