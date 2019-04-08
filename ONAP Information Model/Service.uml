@@ -422,12 +422,6 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U0YlcCC7Eemw1L3J4dNy4w" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_OtbCoDAvEemfJIA7XFfVEg" name="ServiceDescriptorMadeAvailableAsServiceInstance" memberEnd="_OtnP4DAvEemfJIA7XFfVEg _OtnP5DAvEemfJIA7XFfVEg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OthJQDAvEemfJIA7XFfVEg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OthJQTAvEemfJIA7XFfVEg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_OtnP5DAvEemfJIA7XFfVEg" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_OtbCoDAvEemfJIA7XFfVEg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_uulWADJ0EembsLjrwaSXHQ" name="ServiceAtomicDescriptorReferencesResourceDesc" memberEnd="_uuuf8jJ0EembsLjrwaSXHQ _uuuf9jJ0EembsLjrwaSXHQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uuuf8DJ0EembsLjrwaSXHQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uuuf8TJ0EembsLjrwaSXHQ" key="nature" value="UML_Nature"/>
@@ -635,13 +629,6 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Zze64JDrEei9Vqs7Ti8Wxg" name="attachment" type="_nrfckI93EeiT7tMsBl6xjA" aggregation="composite" association="_ZzapcJDrEei9Vqs7Ti8Wxg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZzkacJDrEei9Vqs7Ti8Wxg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zzm2sJDrEei9Vqs7Ti8Wxg" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_OtnP4DAvEemfJIA7XFfVEg" name="_serviceInstance" type="_HFfXUD0QEeiWMf5FLWfdLA" association="_OtbCoDAvEemfJIA7XFfVEg">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_qWGVMEYwEem7INgoaq_j-g" annotatedElement="_OtnP4DAvEemfJIA7XFfVEg">
-            <body>An instance of Service deployment.</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtnP4jAvEemfJIA7XFfVEg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OtnP4zAvEemfJIA7XFfVEg" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
@@ -1606,9 +1593,6 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_6O-v8C9nEemMV6PO6VJAGw" base_Element="_vyTaID0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_7SdmMC9nEemMV6PO6VJAGw" base_Element="_5tq3ED0OEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_8WRMkC9nEemMV6PO6VJAGw" base_Element="_Zze64JDrEei9Vqs7Ti8Wxg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_OtnP4TAvEemfJIA7XFfVEg" base_StructuralFeature="_OtnP4DAvEemfJIA7XFfVEg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_OtnP5TAvEemfJIA7XFfVEg" base_StructuralFeature="_OtnP5DAvEemfJIA7XFfVEg"/>
-  <OpenModel_Profile:Preliminary xmi:id="_nIwwIDAvEemfJIA7XFfVEg" base_Element="_OtbCoDAvEemfJIA7XFfVEg"/>
   <OpenModel_Profile:Preliminary xmi:id="_TdYtgDA2EemfJIA7XFfVEg" base_Element="_mDZZ8D0QEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_UsGjYDA2EemfJIA7XFfVEg" base_Element="_w3sqAD0QEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="__b-_QDA2EemfJIA7XFfVEg" base_Element="_AuX84D0TEeiWMf5FLWfdLA"/>
@@ -1625,4 +1609,58 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-s0pdDJ2Eem5adcA1c6ckw" base_StructuralFeature="_-s0pczJ2Eem5adcA1c6ckw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-s0peDJ2Eem5adcA1c6ckw" base_StructuralFeature="_-s0pdzJ2Eem5adcA1c6ckw"/>
   <ActionLanguage:TextualRepresentation xmi:id="_ztgeYEYNEem7INgoaq_j-g" base_Comment="_ztURIEYNEem7INgoaq_j-g" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:Preliminary xmi:id="_kJpQ0Fn2EemSNe5QiI5UBQ" base_Element="_Jvy-QD0MEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_mLw5kFn2EemSNe5QiI5UBQ" base_Element="_HFfXUD0QEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_nkoJ8Fn2EemSNe5QiI5UBQ" base_Element="_7SrB0D0VEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_orOloFn2EemSNe5QiI5UBQ" base_Element="_AAwUkKuCEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_qMp8IFn2EemSNe5QiI5UBQ" base_Element="_XCul8KuDEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_rP13cFn2EemSNe5QiI5UBQ" base_Element="_YBdfEKuDEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_xV1lUFn2EemSNe5QiI5UBQ" base_Element="_6lxVwCC1Eemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_0W6JoFn2EemSNe5QiI5UBQ" base_Element="_yX44MB9eEemLMI6HKP6Lbw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_aoMTQFn3EemSNe5QiI5UBQ" base_Element="_xMGpgM4oEeinDdlk3ffduQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_loG9cFn3EemSNe5QiI5UBQ" base_Element="_o4dRYKuDEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_nqcooFn3EemSNe5QiI5UBQ" base_Element="_pmW5MKuDEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_sl-HcFn3EemSNe5QiI5UBQ" base_Element="_L-PS4KuFEeiRK6iIVq4LZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_u5BvMFn3EemSNe5QiI5UBQ" base_Element="_9m-qsCC6Eemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_3-DaAFn3EemSNe5QiI5UBQ" base_Element="_hxFFYCC7Eemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_85rmgFn3EemSNe5QiI5UBQ" base_Element="_-s0pcDJ2Eem5adcA1c6ckw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_-6YS8Fn3EemSNe5QiI5UBQ" base_Element="_5Ip2QDJ2Eem5adcA1c6ckw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_CILrsFn4EemSNe5QiI5UBQ" base_Element="_uulWADJ0EembsLjrwaSXHQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_D_rY0Fn4EemSNe5QiI5UBQ" base_Element="_qdIu8DJ0EembsLjrwaSXHQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_kLJngFoIEemSNe5QiI5UBQ" base_Element="_mrJV8In9EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_oMbEkFoIEemSNe5QiI5UBQ" base_Element="_Q-9g4In-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_pobvkFoIEemSNe5QiI5UBQ" base_Element="_W04LYIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_q2wj4FoIEemSNe5QiI5UBQ" base_Element="_XqlEUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_swbbQFoIEemSNe5QiI5UBQ" base_Element="_YPjZoIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_uKKOUFoIEemSNe5QiI5UBQ" base_Element="_YvjIUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_veVL8FoIEemSNe5QiI5UBQ" base_Element="_uatGcI6OEeiLSKWGMeE9mQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_w1_icFoIEemSNe5QiI5UBQ" base_Element="_ZM2IUIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_yb6-cFoIEemSNe5QiI5UBQ" base_Element="_bNd8QIn-EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_0Qaa4FoIEemSNe5QiI5UBQ" base_Element="_dOQ54In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_1ey5kFoIEemSNe5QiI5UBQ" base_Element="_eNHu0In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_2neY4FoIEemSNe5QiI5UBQ" base_Element="_eyBysIn_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_35uq8FoIEemSNe5QiI5UBQ" base_Element="_fTdEwIn_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_5PEGMFoIEemSNe5QiI5UBQ" base_Element="_fvaA8In_EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_HIBaEFoJEemSNe5QiI5UBQ" base_Element="_wng4cIn9EeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_J7Rk0FoJEemSNe5QiI5UBQ" base_Element="_UWL1gMDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_LwwfwFoJEemSNe5QiI5UBQ" base_Element="_HFmo4MDiEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_NXgbIFoJEemSNe5QiI5UBQ" base_Element="_DwZV4LwnEeifWa7EkiXrHA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_OYZQYFoJEemSNe5QiI5UBQ" base_Element="_pWPaEMA-Eei02ItngDf4ZA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_PngH0FoJEemSNe5QiI5UBQ" base_Element="_3a0cEI6OEeiLSKWGMeE9mQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_d9Kl0FoJEemSNe5QiI5UBQ" base_Element="_MnBKUMGjEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_fzhDcFoJEemSNe5QiI5UBQ" base_Element="_hUzLgMGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_iR9b0FoJEemSNe5QiI5UBQ" base_Element="_tFrMkIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_jkXe4FoJEemSNe5QiI5UBQ" base_Element="_ttCHgIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_k8hkoFoJEemSNe5QiI5UBQ" base_Element="_uN6nAIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_mK1K0FoJEemSNe5QiI5UBQ" base_Element="_up_fAIoBEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_w4oxUFoJEemSNe5QiI5UBQ" base_Element="__mP8gMG_EeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_yaTYYFoJEemSNe5QiI5UBQ" base_Element="_R9Rn4MGkEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_2gKagFoJEemSNe5QiI5UBQ" base_Element="_1_pvIMGSEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_54ZhoFoJEemSNe5QiI5UBQ" base_Element="_gEq14MDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_7H4zkFoJEemSNe5QiI5UBQ" base_Element="_j0sK4MDfEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_C5qt0FoKEemSNe5QiI5UBQ" base_Element="_rUEhgIoAEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_FatuQFoKEemSNe5QiI5UBQ" base_Element="_LBuJkIoCEeiOe-BKGdv_Yg"/>
+  <OpenModel_Profile:Preliminary xmi:id="_G-c8cFoLEemSNe5QiI5UBQ" base_Element="_6z5EwMGTEeiS695oPTRE1Q"/>
+  <OpenModel_Profile:Preliminary xmi:id="_MyglwFoLEemSNe5QiI5UBQ" base_Element="_OGFpEMDiEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Q5paQFoLEemSNe5QiI5UBQ" base_Element="_Lvny4MDgEeiebIKjAGZWdA"/>
 </xmi:XMI>
