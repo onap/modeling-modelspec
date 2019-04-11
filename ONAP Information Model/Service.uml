@@ -235,7 +235,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hU0ZocGkEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedComment xmi:type="uml:Comment" xmi:id="_7KUVAMHFEeirPIyAdej0kg" annotatedElement="_hUzLgMGkEeiS695oPTRE1Q">
-          <body>Enables specifying any kind of relastionships between ServiceOrderItems</body>
+          <body>Enables specifying any kind of relationships between ServiceOrderItems</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__mP8gMG_EeiS695oPTRE1Q" name="type">
           <ownedComment xmi:type="uml:Comment" xmi:id="_QqfcUMNPEeik36qdAhNdCw" annotatedElement="__mP8gMG_EeiS695oPTRE1Q">
@@ -258,7 +258,7 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MnE0sMGjEeiS695oPTRE1Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedComment xmi:type="uml:Comment" xmi:id="_SeyhEMHGEeirPIyAdej0kg" annotatedElement="_MnBKUMGjEeiS695oPTRE1Q">
-          <body>An assocation between two ServiceOrders.</body>
+          <body>An association between two ServiceOrders.</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_R9Rn4MGkEeiS695oPTRE1Q" name="type">
           <ownedComment xmi:type="uml:Comment" xmi:id="_tEYKYMNMEeik36qdAhNdCw" annotatedElement="_R9Rn4MGkEeiS695oPTRE1Q">
@@ -317,15 +317,6 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DjpJwOgNEeiNE-az-riPDQ" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_LtMDwOgNEeiNE-az-riPDQ" name="SDHasAttachments" memberEnd="_LtMDw-gNEeiNE-az-riPDQ _LtMDx-gNEeiNE-az-riPDQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LtMDwegNEeiNE-az-riPDQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LtMDwugNEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_LtMDx-gNEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_LtMDwOgNEeiNE-az-riPDQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dP1bIOgNEeiNE-az-riPDQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dQI9IOgNEeiNE-az-riPDQ" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_l1QY0OgNEeiNE-az-riPDQ" name="SDHasReferenceonReourceDescriptor" memberEnd="_l1QY0-gNEeiNE-az-riPDQ _l1issOgNEeiNE-az-riPDQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l1QY0egNEeiNE-az-riPDQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l1QY0ugNEeiNE-az-riPDQ" key="nature" value="UML_Nature"/>
@@ -342,15 +333,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_3c92Z-gNEeiNE-az-riPDQ" name="internalservicedescriptor" type="_W1wF4OgIEeiNE-az-riPDQ" association="_3c92YOgNEeiNE-az-riPDQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FHN_4OgOEeiNE-az-riPDQ" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FHg60OgOEeiNE-az-riPDQ" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_xe7WsOunEeiSZPIvixpf_Q" name="OnboardNSDasAttachement" visibility="package" memberEnd="_xfORoeunEeiSZPIvixpf_Q _xf94gOunEeiSZPIvixpf_Q">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xfFHsOunEeiSZPIvixpf_Q" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xfORoOunEeiSZPIvixpf_Q" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xf94gOunEeiSZPIvixpf_Q" name="onboardnsdescriptor" type="_zSX3gOgIEeiNE-az-riPDQ" association="_xe7WsOunEeiSZPIvixpf_Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JQVWYOuoEeiSZPIvixpf_Q"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JQfHYOuoEeiSZPIvixpf_Q" value="*"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_hhVcIOuoEeiSZPIvixpf_Q" name="wrapedasNestedService" memberEnd="_hhVcI-uoEeiSZPIvixpf_Q _hhVcJ-uoEeiSZPIvixpf_Q">
@@ -947,10 +929,19 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_pdNhcFuREemhIbrwQ6FkuQ" annotatedElement="_UWL1gMDfEeiebIKjAGZWdA">
+          <body>A quality or distinctive feature that defines an entity, including the name of this feature (attribute), and the type of the actual value.</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gEq14MDfEeiebIKjAGZWdA" name="name">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_v4hKQFuMEemhIbrwQ6FkuQ" annotatedElement="_gEq14MDfEeiebIKjAGZWdA">
+            <body>Name of dynamic characteristic (attribute).</body>
+          </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_j0sK4MDfEeiebIKjAGZWdA" name="valueType">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0B1JAFuMEemhIbrwQ6FkuQ" annotatedElement="_j0sK4MDfEeiebIKjAGZWdA">
+            <body>Type of the dynamic characteristic value.</body>
+          </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
@@ -1038,10 +1029,6 @@ If it is set to True, management and orchestration functions are responsible for
         <ownedAttribute xmi:type="uml:Property" xmi:id="_za16M-gMEeiNE-az-riPDQ" name="customizedtype" type="_7Y7u8OgIEeiNE-az-riPDQ" aggregation="shared" association="_za16MOgMEeiNE-az-riPDQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_za_rMOgMEeiNE-az-riPDQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_za_rMegMEeiNE-az-riPDQ" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_LtMDw-gNEeiNE-az-riPDQ" name="attachments" type="_GNGcIOgJEeiNE-az-riPDQ" association="_LtMDwOgNEeiNE-az-riPDQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LtMDxegNEeiNE-az-riPDQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LtMDxugNEeiNE-az-riPDQ" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_l1QY0-gNEeiNE-az-riPDQ" name="resourcedescriptor" association="_l1QY0OgNEeiNE-az-riPDQ">
           <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
@@ -1132,10 +1119,6 @@ If it is set to True, management and orchestration functions are responsible for
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_zSX3gOgIEeiNE-az-riPDQ" name="OnboardNSDescriptor">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xfORoeunEeiSZPIvixpf_Q" name="attachments" type="_GNGcIOgJEeiNE-az-riPDQ" aggregation="shared" association="_xe7WsOunEeiSZPIvixpf_Q">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xfhzoOunEeiSZPIvixpf_Q"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xfq9kOunEeiSZPIvixpf_Q" value="*"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_E9fK4OvZEeiEwrkYFEP6YA" name="nsdIdentifier">
           <ownedComment xmi:type="uml:Comment" xmi:id="_E9fK4evZEeiEwrkYFEP6YA" annotatedElement="_E9fK4OvZEeiEwrkYFEP6YA">
             <body>Identifier of this NSD class. It globally uniquely identifies an instance of the NSD</body>
@@ -1200,7 +1183,6 @@ NOTE 2: 	There may be multiple data sources (each identified as monitoredInfo) p
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_5Tkk8OgIEeiNE-az-riPDQ" name="GlobalType"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_7Y7u8OgIEeiNE-az-riPDQ" name="CustomizedType"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GNGcIOgJEeiNE-az-riPDQ" name="Attachments" visibility="public"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uOXPwPL4EeiazPylpq3fUA" name="sliceProfile?"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_1WWbsDzFEeiWMf5FLWfdLA" name="NetworkServiceInstance">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1WWbsTzFEeiWMf5FLWfdLA" annotatedElement="_1WWbsDzFEeiWMf5FLWfdLA">
@@ -1514,19 +1496,14 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_zSX3gegIEeiNE-az-riPDQ" base_Class="_zSX3gOgIEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_5Tkk8egIEeiNE-az-riPDQ" base_Class="_5Tkk8OgIEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_7Y7u8egIEeiNE-az-riPDQ" base_Class="_7Y7u8OgIEeiNE-az-riPDQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_GNGcIegJEeiNE-az-riPDQ" base_Class="_GNGcIOgJEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NGtQ5OgMEeiNE-az-riPDQ" base_StructuralFeature="_NGtQ4-gMEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_NHAL0egMEeiNE-az-riPDQ" base_StructuralFeature="_NHAL0OgMEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_za16NOgMEeiNE-az-riPDQ" base_StructuralFeature="_za16M-gMEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_za_rM-gMEeiNE-az-riPDQ" base_StructuralFeature="_za_rMugMEeiNE-az-riPDQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_LtMDxOgNEeiNE-az-riPDQ" base_StructuralFeature="_LtMDw-gNEeiNE-az-riPDQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_LtMDyOgNEeiNE-az-riPDQ" base_StructuralFeature="_LtMDx-gNEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_l1QY1OgNEeiNE-az-riPDQ" base_StructuralFeature="_l1QY0-gNEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_l1issegNEeiNE-az-riPDQ" base_StructuralFeature="_l1issOgNEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3c92ZOgNEeiNE-az-riPDQ" base_StructuralFeature="_3c92Y-gNEeiNE-az-riPDQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3c92aOgNEeiNE-az-riPDQ" base_StructuralFeature="_3c92Z-gNEeiNE-az-riPDQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_xfORouunEeiSZPIvixpf_Q" base_StructuralFeature="_xfORoeunEeiSZPIvixpf_Q"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_xf94geunEeiSZPIvixpf_Q" base_StructuralFeature="_xf94gOunEeiSZPIvixpf_Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hhVcJOuoEeiSZPIvixpf_Q" base_StructuralFeature="_hhVcI-uoEeiSZPIvixpf_Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_hhfNIOuoEeiSZPIvixpf_Q" base_StructuralFeature="_hhVcJ-uoEeiSZPIvixpf_Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E9fK4uvZEeiEwrkYFEP6YA" base_StructuralFeature="_E9fK4OvZEeiEwrkYFEP6YA" isInvariant="true"/>
@@ -1663,4 +1640,5 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_G-c8cFoLEemSNe5QiI5UBQ" base_Element="_6z5EwMGTEeiS695oPTRE1Q"/>
   <OpenModel_Profile:Preliminary xmi:id="_MyglwFoLEemSNe5QiI5UBQ" base_Element="_OGFpEMDiEeiebIKjAGZWdA"/>
   <OpenModel_Profile:Preliminary xmi:id="_Q5paQFoLEemSNe5QiI5UBQ" base_Element="_Lvny4MDgEeiebIKjAGZWdA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_xyntQFrNEem07dac9irJSQ" base_Element="_IdqxoI9WEeiT7tMsBl6xjA"/>
 </xmi:XMI>
