@@ -375,7 +375,7 @@
         </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_hxLzECC7Eemw1L3J4dNy4w" name="_servicecompositedescriptor" type="_7SrB0D0VEeiWMf5FLWfdLA" association="_hxFFYCC7Eemw1L3J4dNy4w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_6lxVwCC1Eemw1L3J4dNy4w" name="ServiceDescCompositeComprisedOfServiceDescriptor" memberEnd="_6lzyACC1Eemw1L3J4dNy4w _6l54oCC1Eemw1L3J4dNy4w">
+      <packagedElement xmi:type="uml:Association" xmi:id="_6lxVwCC1Eemw1L3J4dNy4w" name="ServiceCompositeDescriptorComprisedOfServiceDescriptor" memberEnd="_6lzyACC1Eemw1L3J4dNy4w _6l54oCC1Eemw1L3J4dNy4w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6lzK8CC1Eemw1L3J4dNy4w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6lzK8SC1Eemw1L3J4dNy4w" key="nature" value="UML_Nature"/>
         </eAnnotations>
@@ -453,6 +453,37 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_qdIu9zJ0EembsLjrwaSXHQ" name="_service compositedescriptor" type="_7SrB0D0VEeiWMf5FLWfdLA" association="_qdIu8DJ0EembsLjrwaSXHQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OBiJoDJ3Eem5adcA1c6ckw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OBr6oDJ3Eem5adcA1c6ckw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XBqI0F0VEemiOP02o5T8tA" name="ServiceProfileReferencesServiceDescriptor" memberEnd="_XBqI010VEemiOP02o5T8tA _XBqI110VEemiOP02o5T8tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XBqI0V0VEemiOP02o5T8tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XBqI0l0VEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XBqI110VEemiOP02o5T8tA" name="class9" type="_EwCLkF0VEemiOP02o5T8tA" association="_XBqI0F0VEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkhF0F0aEemiOP02o5T8tA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ekq20F0aEemiOP02o5T8tA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QdpXUF0XEemiOP02o5T8tA" name="ServiceCompositeDescriptorHasFilter" memberEnd="_QdpXU10XEemiOP02o5T8tA _QdpXV10XEemiOP02o5T8tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QdpXUV0XEemiOP02o5T8tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QdpXUl0XEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QdpXV10XEemiOP02o5T8tA" name="servicecompositedescriptor" type="_7SrB0D0VEeiWMf5FLWfdLA" association="_QdpXUF0XEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W-sNAF0YEemiOP02o5T8tA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W-_H8F0YEemiOP02o5T8tA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_J_zUsF0YEemiOP02o5T8tA" name="FilterCompositeComprisedOfFilter" memberEnd="_J_9Fsl0YEemiOP02o5T8tA _J_9Ftl0YEemiOP02o5T8tA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J_9FsF0YEemiOP02o5T8tA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J_9FsV0YEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Ftl0YEemiOP02o5T8tA" name="filter" type="_AkO5gF0VEemiOP02o5T8tA" aggregation="shared" association="_J_zUsF0YEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmAa0F0YEemiOP02o5T8tA" value="2"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmJkwF0YEemiOP02o5T8tA" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Fsl0YEemiOP02o5T8tA" name="filtercomposite" type="_A_9MMF0VEemiOP02o5T8tA" association="_J_zUsF0YEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J_9FtF0YEemiOP02o5T8tA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J_9FtV0YEemiOP02o5T8tA" value="*"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>
@@ -691,6 +722,10 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qdIu9TJ0EembsLjrwaSXHQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qdIu9jJ0EembsLjrwaSXHQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QdpXU10XEemiOP02o5T8tA" name="filter" type="_AkO5gF0VEemiOP02o5T8tA" association="_QdpXUF0XEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QdpXVV0XEemiOP02o5T8tA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QdpXVl0XEemiOP02o5T8tA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mrJV8In9EeiOe-BKGdv_Yg" name="ServiceOrder">
@@ -1250,6 +1285,25 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnGZkUS4EeiVGPeZpaYNtQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AkO5gF0VEemiOP02o5T8tA" name="Filter"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="FilterComposite">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BZSSMF0VEemiOP02o5T8tA" name="FilterAtomic">
+        <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProfile">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XBqI010VEemiOP02o5T8tA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_XBqI0F0VEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBqI1l0VEemiOP02o5T8tA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FEKBcF0VEemiOP02o5T8tA" name="SliceProfile">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_YYZtwF0fEemVzafoXlq_Gg" annotatedElement="_FEKBcF0VEemiOP02o5T8tA">
+          <body> </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_H61BsF0XEemiOP02o5T8tA" general="_EwCLkF0VEemiOP02o5T8tA"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoxzzEEeiWMf5FLWfdLA" name="VirtualLinkToLevelMapping">
@@ -1326,6 +1380,12 @@ If null, then represents to the end of time&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_L4ZFIPL4EeiazPylpq3fUA" name="nsdId"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_PXXtcPL4EeiazPylpq3fUA" name="productName"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Qcc9IF0aEemiOP02o5T8tA" name="ServiceConfigurableProperties"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_QsPsoF0aEemiOP02o5T8tA" name="ServiceLifecycleManagementScript"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProfile"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gFg8sF0aEemiOP02o5T8tA" name="ServiceLcmEvent"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gaPPgF0aEemiOP02o5T8tA" name="CompositeOperator"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_grhz0F0aEemiOP02o5T8tA" name="Operator"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BdJm0DksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -1576,7 +1636,6 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_O3QacDA3EemfJIA7XFfVEg" base_Element="_KWqFwD0TEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_P_t3UDA3EemfJIA7XFfVEg" base_Element="_-faVgD0TEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_RTRJ4DA3EemfJIA7XFfVEg" base_Element="_GtqJUD0UEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Experimental xmi:id="_TpSmEDA3EemfJIA7XFfVEg" base_Element="_1Rt9wPL4EeiazPylpq3fUA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qdIu9DJ0EembsLjrwaSXHQ" base_StructuralFeature="_qdIu8zJ0EembsLjrwaSXHQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qdIu-DJ0EembsLjrwaSXHQ" base_StructuralFeature="_qdIu9zJ0EembsLjrwaSXHQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uuuf8zJ0EembsLjrwaSXHQ" base_StructuralFeature="_uuuf8jJ0EembsLjrwaSXHQ"/>
@@ -1641,4 +1700,16 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_MyglwFoLEemSNe5QiI5UBQ" base_Element="_OGFpEMDiEeiebIKjAGZWdA"/>
   <OpenModel_Profile:Preliminary xmi:id="_Q5paQFoLEemSNe5QiI5UBQ" base_Element="_Lvny4MDgEeiebIKjAGZWdA"/>
   <OpenModel_Profile:Preliminary xmi:id="_xyntQFrNEem07dac9irJSQ" base_Element="_IdqxoI9WEeiT7tMsBl6xjA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_1OLh4F0BEemiOP02o5T8tA" base_Element="_1Rt9wPL4EeiazPylpq3fUA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_AkO5gV0VEemiOP02o5T8tA" base_Class="_AkO5gF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_A_9MMV0VEemiOP02o5T8tA" base_Class="_A_9MMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_BZSSMV0VEemiOP02o5T8tA" base_Class="_BZSSMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_EwCLkV0VEemiOP02o5T8tA" base_Class="_EwCLkF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_FEKBcV0VEemiOP02o5T8tA" base_Class="_FEKBcF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI1F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI010VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI2F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI110VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QdpXVF0XEemiOP02o5T8tA" base_StructuralFeature="_QdpXU10XEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QdpXWF0XEemiOP02o5T8tA" base_StructuralFeature="_QdpXV10XEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Fs10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Fsl0YEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Ft10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Ftl0YEemiOP02o5T8tA"/>
 </xmi:XMI>
