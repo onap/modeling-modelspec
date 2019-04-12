@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
   <uml:Package xmi:id="_R1nxUMfyEeiEtuRgTYzSUQ" name="License" URI="">
     <packagedElement xmi:type="uml:Package" xmi:id="_U1T1kMfyEeiEtuRgTYzSUQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_oJ-UAColEemnoK-fhDe5lw">
@@ -8,13 +8,13 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_8nq1UConEemnoK-fhDe5lw">
         <body>VLM is really just a Party&#xD;
 &#xD;
-'Simplified' attributes for this Vendor are VendorName, and Description</body>
+'Simplified' attributes for this Vendor are VendorName, and Description, which can be gotten from the Pary model</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_TLsjcCpKEemnoK-fhDe5lw">
         <body>There are a bunch of attributes feature group attributes in SAm Definitions - maybe not in SDC??</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_IuXygCpWEemnoK-fhDe5lw">
-        <body>Only EntitlementPoolDesc Currently being used are Name and MRN.   Everything else is optional.</body>
+        <body>Only EntitlementPoolDesc attributes currently being used are Name and MRN.   Other fields are present but not supported in downstream systems.</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_vaCLACpWEemnoK-fhDe5lw">
         <body>Only attributes presently used are name, metric type and metric value.</body>
@@ -22,6 +22,31 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_S7n00C7kEem7DJry5UTesQ">
         <body>What do we do with keyFunction,LicenseKeyType, etc?</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_45tV0Fr7Eem07dac9irJSQ">
+        <body>StartDate and ExpiryDate attributes are covered by validFor.  Note that these fields are presently not used.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9HxmgFxgEemycfDPZTAung">
+        <body>Description and Status is not presently required, but from a modeling view, it should be.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_s3egcFxjEemycfDPZTAung">
+        <body>Only name and type are required.  &#xD;
+MRN should also be provided, but is not required.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HNcuoFxkEemycfDPZTAung">
+        <body>ASDC has a pool (group) desc, not license or entitlement desc because they are not in SDC.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ShGyMFx6Eem7IpeYDuIU6A" name="VendorHasEntitlmentPoolDesc" memberEnd="_ShHZQlx6Eem7IpeYDuIU6A _ShKckFx6Eem7IpeYDuIU6A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ShHZQFx6Eem7IpeYDuIU6A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ShHZQVx6Eem7IpeYDuIU6A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ShHZQlx6Eem7IpeYDuIU6A" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_ShGyMFx6Eem7IpeYDuIU6A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZiOrkFx6Eem7IpeYDuIU6A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZiWAUFx6Eem7IpeYDuIU6A" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ShKckFx6Eem7IpeYDuIU6A" name="vendor" association="_ShGyMFx6Eem7IpeYDuIU6A">
+          <type xmi:type="uml:Class" href="Party.uml#_eDT94DbaEemP3p_OV1tL7g"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Whm_UMfyEeiEtuRgTYzSUQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_Sj1eAN3yEei-jeeHUjfpLA" name="LicenseKeyDescMadeAvailableAs" memberEnd="_Sj2FEt3yEei-jeeHUjfpLA _Sj3TMN3yEei-jeeHUjfpLA">
@@ -242,6 +267,9 @@ Controllers will request license keys from ALTS using the UUID of the group, as 
 A license key group is not specific to a feature group.  A license key group may be related to multiple feature groups of a software item or even to multiple software items.&#xD;
 </body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_lLdlYFsCEem07dac9irJSQ">
+          <general xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_sNzeod3uEei-jeeHUjfpLA" name="_spPooLlimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="_sNy3kN3uEei-jeeHUjfpLA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_qFWGIAR2Eemo7ZzqT33fqQ" annotatedElement="_sNzeod3uEei-jeeHUjfpLA">
             <body>Pool limits applied by the service provider</body>
@@ -271,30 +299,24 @@ A license key group is not specific to a feature group.  A license key group may
           <ownedComment xmi:type="uml:Comment" xmi:id="_Z6QQMAR5Eemo7ZzqT33fqQ" annotatedElement="_H5MwUAOOEemCCMXOyOLwIw">
             <body>Units can be either absolute or a percentage (%).</body>
           </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fWgfsFxsEemycfDPZTAung"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fWmmUFxsEemycfDPZTAung" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IX2bMAOOEemCCMXOyOLwIw" name="thresholdValue">
           <ownedComment xmi:type="uml:Comment" xmi:id="_k8kuIAR5Eemo7ZzqT33fqQ" annotatedElement="_IX2bMAOOEemCCMXOyOLwIw">
             <body>Specified threshold value for the license key pool.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_J26aMAOOEemCCMXOyOLwIw" name="startDate">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_vla8IAR5Eemo7ZzqT33fqQ" annotatedElement="_J26aMAOOEemCCMXOyOLwIw">
-            <body>Start date.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_LNfyoAOOEemCCMXOyOLwIw" name="expiryDate">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_xKrCsAR5Eemo7ZzqT33fqQ" annotatedElement="_LNfyoAOOEemCCMXOyOLwIw">
-            <body>Expiry date.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hP_J0FxsEemycfDPZTAung"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQECUFxsEemycfDPZTAung" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_LybEoAOOEemCCMXOyOLwIw" name="keyPurchaseIncrements">
           <ownedComment xmi:type="uml:Comment" xmi:id="_f7yNcAR8Eemo7ZzqT33fqQ" annotatedElement="_LybEoAOOEemCCMXOyOLwIw">
             <body>Specifies how the key must be purchased.   If in blocks of 1000, the increment would be 1000.</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_itis8FxsEemycfDPZTAung"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_itm-YFxsEemycfDPZTAung" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_OFmoMAOOEemCCMXOyOLwIw" name="manufactureReferenceNumber">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1gI8MAR7Eemo7ZzqT33fqQ" annotatedElement="_OFmoMAOOEemCCMXOyOLwIw">
@@ -303,6 +325,9 @@ A license key group is not specific to a feature group.  A license key group may
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X9Q7ECu1EemHS6guZRbYAw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X9gLoCu1EemHS6guZRbYAw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DVQbcFxsEemycfDPZTAung" name="invariantId">
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mEllAMfyEeiEtuRgTYzSUQ" name="VendorLicenseModel (VLM) - Delete">
@@ -455,6 +480,21 @@ An entitlement pool is not specific to a feature group.  An entitlement pool may
 &#xD;
 </body>
         </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_oSggwFsAEem07dac9irJSQ" annotatedElement="_GlxBwP1oEeisxOMTY1eUug">
+          <body>Note: The only fields being used in this class are Name and MRN (manufactureReferenceNumber.  The rest are optional.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_wsecYFsAEem07dac9irJSQ" annotatedElement="_GlxBwP1oEeisxOMTY1eUug">
+          <body>Note: StateDate and ExpiryDate are covered by the inherited validFor attribute.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2ZuTEFsAEem07dac9irJSQ" annotatedElement="_GlxBwP1oEeisxOMTY1eUug">
+          <body>Note: description is required according to the inherited attribute, but it presently is optional.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_teEzIFxzEemycfDPZTAung">
+          <body>Note: description is required according to the inherited attribute, but it presently is optional.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_jVeVIFr3Eem07dac9irJSQ">
+          <general xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__Lo9Ev1oEeisxOMTY1eUug" name="_spPoolLimit" type="_T5-uYN3uEei-jeeHUjfpLA" aggregation="composite" association="__LoWAP1oEeisxOMTY1eUug">
           <ownedComment xmi:type="uml:Comment" xmi:id="_MfC4AARoEemo7ZzqT33fqQ" annotatedElement="__Lo9Ev1oEeisxOMTY1eUug">
             <body>Pool limits applied by the service provider</body>
@@ -497,6 +537,11 @@ An entitlement pool is not specific to a feature group.  An entitlement pool may
 when 90% of the pool is in-use, trigger an additional purchase of inventory.&#xD;
 </body>
           </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_e7zhsFxhEemycfDPZTAung">
+            <body>A description of a threshold that will be assessed for some business purpose (e.g. 20% of entitlement pool remains available).  (The threshold of interest to DCAE or Capacity Planning, etc.)  This may be an absolute value or a percentage. For example:&#xD;
+when 90% of the pool is in-use, trigger an additional purchase of inventory.&#xD;
+</body>
+          </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h77kkP4LEeiao-2FtYZWRA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h7_2AP4LEeiao-2FtYZWRA" value="1"/>
@@ -516,21 +561,11 @@ when 90% of the pool is in-use, trigger an additional purchase of inventory.&#xD
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNkQMAMIEemoQ5ZgWCUg_g"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNmscAMIEemoQ5ZgWCUg_g" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Ju2tEP19EeisxOMTY1eUug" name="entitlementPoolStartDate">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_9LdHgAPKEemCCMXOyOLwIw" annotatedElement="_Ju2tEP19EeisxOMTY1eUug">
-            <body>Start date</body>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6ERWYFr5Eem07dac9irJSQ" name="invariantId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_XvZigFr6Eem07dac9irJSQ" annotatedElement="_6ERWYFr5Eem07dac9irJSQ">
+            <body>Identifier that stays the same irrespective of version.</body>
           </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNc7cAMIEemoQ5ZgWCUg_g"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNgl0AMIEemoQ5ZgWCUg_g" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_YepH4P8VEeiZ-fXSiUXhdA" name="entitlementPoolExpiryDate">
-          <ownedComment xmi:type="uml:Comment" xmi:id="__weB8APKEemCCMXOyOLwIw" annotatedElement="_YepH4P8VEeiZ-fXSiUXhdA">
-            <body>Expiry date</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNUYkAMIEemoQ5ZgWCUg_g"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNZREAMIEemoQ5ZgWCUg_g" value="1"/>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_NkuX8P1oEeisxOMTY1eUug" name="EntitlementPoolInstance">
@@ -687,5 +722,13 @@ Not applicable when license type is Perpetual.&#xD;
   <OpenModel_Profile:Future xmi:id="_DUll8EXXEem3_P23YPx5GQ" base_Element="_IjiJcP19EeisxOMTY1eUug"/>
   <OpenModel_Profile:Future xmi:id="_GlKl4EXXEem3_P23YPx5GQ" base_Element="_I9Ob0P19EeisxOMTY1eUug"/>
   <OpenModel_Profile:Future xmi:id="_LDRv8EXXEem3_P23YPx5GQ" base_Element="_JWKgQP19EeisxOMTY1eUug"/>
-  <OpenModel_Profile:Future xmi:id="_M-0PkEXXEem3_P23YPx5GQ" base_Element="_Ju2tEP19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6ER9cFr5Eem07dac9irJSQ" base_StructuralFeature="_6ERWYFr5Eem07dac9irJSQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_iRyjMFr6Eem07dac9irJSQ" base_Element="_BLpV4P19EeisxOMTY1eUug"/>
+  <OpenModel_Profile:Experimental xmi:id="_WqVF8Fr8Eem07dac9irJSQ" base_Element="_6ERWYFr5Eem07dac9irJSQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_e8UfEFxhEemycfDPZTAung" base_Comment="_e7zhsFxhEemycfDPZTAung" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DVQbcVxsEemycfDPZTAung" base_StructuralFeature="_DVQbcFxsEemycfDPZTAung"/>
+  <OpenModel_Profile:Future xmi:id="_lXaSMFxsEemycfDPZTAung" base_Element="_H5MwUAOOEemCCMXOyOLwIw"/>
+  <OpenModel_Profile:Future xmi:id="_ouF6IFxsEemycfDPZTAung" base_Element="_IX2bMAOOEemCCMXOyOLwIw"/>
+  <OpenModel_Profile:Future xmi:id="_qeA_oFxsEemycfDPZTAung" base_Element="_LybEoAOOEemCCMXOyOLwIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ShKckVx6Eem7IpeYDuIU6A" base_StructuralFeature="_ShKckFx6Eem7IpeYDuIU6A"/>
 </xmi:XMI>
