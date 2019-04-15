@@ -1643,6 +1643,9 @@ Permitted Values:&#xD;
           <ownedComment xmi:type="uml:Comment" xmi:id="_NLQgEDFSEemw1_Ys6rcLWw" annotatedElement="_v04t4DFPEemw1_Ys6rcLWw">
             <body>A template which describes an OperationalEntity in terms of deployment and operational behavior requirements.</body>
           </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AFeokFxzEemycfDPZTAung">
+            <body>Note: The only fields being used in this class are Name and MRN (manufactureReferenceNumber.  The rest are optional.</body>
+          </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_QjAw8DFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hg0WkPgQEeiEqKXVVPCm1Q" annotatedElement="_Td26cOLNEeiKy5JVrA0UGA">
@@ -4145,9 +4148,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sH2ocEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_JWKgQP19EeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sH654EHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_Ju2tEP19EeisxOMTY1eUug"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sFw9wEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_pR9XYv2REeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -4160,9 +4160,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_sIHHIEHXEemqbK2aT-9uCA">
     <base_Class xmi:type="uml:Class" href="License.uml#_bCM3oP2SEeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sH8vEEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_YepH4P8VEeiZ-fXSiUXhdA"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sHElUEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_W-tJsP8WEeiZ-fXSiUXhdA"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -4205,7 +4202,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sIdscEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_cy77cP_BEeiQG4ZZm0HgYw"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:Experimental xmi:id="_CQXvwAMDEemoQ5ZgWCUg_g" base_Element="_oyf9MOwXEei7-e9MrPJW7Q"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ECPWAAMDEemoQ5ZgWCUg_g" base_StructuralFeature="_ECOu8AMDEemoQ5ZgWCUg_g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_EpMoUQMDEemoQ5ZgWCUg_g" base_StructuralFeature="_EpMoUAMDEemoQ5ZgWCUg_g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sGfWgEHXEemqbK2aT-9uCA">
@@ -4216,12 +4212,6 @@ Permitted Values:&#xD;
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sGjn8EHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_IX2bMAOOEemCCMXOyOLwIw"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sGmEMEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_J26aMAOOEemCCMXOyOLwIw"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sGqVoEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_LNfyoAOOEemCCMXOyOLwIw"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sGsx4EHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_LybEoAOOEemCCMXOyOLwIw"/>
@@ -4909,4 +4899,13 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_f6Gw4VcaEemLJovD_F1O1A" base_StructuralFeature="_f6Gw4FcaEemLJovD_F1O1A"/>
   <OpenModel_Profile:Experimental xmi:id="_rFCYQFcaEemLJovD_F1O1A" base_Element="_URSToFcaEemLJovD_F1O1A"/>
   <OpenModel_Profile:Experimental xmi:id="_sCVG8FcaEemLJovD_F1O1A" base_Element="_f6Gw4FcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Preliminary xmi:id="_WCfLAFrJEem07dac9irJSQ" base_Element="_7MZssOwXEei7-e9MrPJW7Q"/>
+  <OpenModel_Profile:Experimental xmi:id="_Y0_H0FrJEem07dac9irJSQ" base_Element="_utCzUDX1EemvTc8tEY2xig"/>
+  <OpenModel_Profile:Preliminary xmi:id="_pvzDIFrJEem07dac9irJSQ" base_Element="_QjAw8DFQEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_sB-hIFrJEem07dac9irJSQ" base_Element="_RDwtkDFQEemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_Y_0CUFrKEem07dac9irJSQ" base_Element="_UVWO4CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_wh7o0FrKEem07dac9irJSQ" base_Element="_ZWh3ADE6Eemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_gM_IwFrMEem07dac9irJSQ" base_Element="_kO0hMBp7EemOGejS9lsDjA"/>
+  <OpenModel_Profile:Experimental xmi:id="_iGIbsFrMEem07dac9irJSQ" base_Element="_dxmUIDE6Eemw1_Ys6rcLWw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_6398cF0jEemRdaQWqjNOmA" base_Element="_oyf9MOwXEei7-e9MrPJW7Q"/>
 </xmi:XMI>
