@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
   <uml:Package xmi:id="_oZz14DOHEei5Af8DcjrhIQ" name="Party">
-    <packagedElement xmi:type="uml:Association" xmi:id="_ky0acDboEemP3p_OV1tL7g" name="PartyNameDefinedViaLanuage" memberEnd="_ky0aczboEemP3p_OV1tL7g _ky1BgDboEemP3p_OV1tL7g">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ky0acTboEemP3p_OV1tL7g" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ky0acjboEemP3p_OV1tL7g" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ky0aczboEemP3p_OV1tL7g" name="language" type="_7wiv4DbnEemP3p_OV1tL7g" association="_ky0acDboEemP3p_OV1tL7g"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ky1BgDboEemP3p_OV1tL7g" name="partyname" type="_5MnakDbnEemP3p_OV1tL7g" association="_ky0acDboEemP3p_OV1tL7g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ok9Z4DbpEemP3p_OV1tL7g"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_olMDYDbpEemP3p_OV1tL7g" value="*"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_pl6coDOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_qTvDYC7nEem7DJry5UTesQ" name="CompositeOrganizationComposedOf" memberEnd="_qTw4kC7nEem7DJry5UTesQ _qTxfoC7nEem7DJry5UTesQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qTwRgC7nEem7DJry5UTesQ" source="org.eclipse.papyrus">
@@ -99,50 +89,6 @@
 The individual could be a customer, an employee or any other person that the organization needs to store information about. An Individual is a type of Party.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_3Dw1wC7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_TY57oF0kEemRdaQWqjNOmA" name="gender">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_AE77IF0lEemRdaQWqjNOmA" annotatedElement="_TY57oF0kEemRdaQWqjNOmA">
-            <body>A socially constructed role that implies behaviours, activities, and attributes.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_T8E6IF0kEemRdaQWqjNOmA" name="placeOfBirth">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_JJQbUF0lEemRdaQWqjNOmA" annotatedElement="_T8E6IF0kEemRdaQWqjNOmA">
-            <body>City, town name etc.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_U3GX8F0kEemRdaQWqjNOmA" name="nationality">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_i2B7gF0lEemRdaQWqjNOmA" annotatedElement="_U3GX8F0kEemRdaQWqjNOmA">
-            <body>Country or ethnic group</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_V2IMAF0kEemRdaQWqjNOmA" name="maritalStatus">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_oR35IF0lEemRdaQWqjNOmA" annotatedElement="_V2IMAF0kEemRdaQWqjNOmA">
-            <body>Married, never married, divorced, widowed</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_WTkV8F0kEemRdaQWqjNOmA" name="skills">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_sb4bcF0lEemRdaQWqjNOmA" annotatedElement="_WTkV8F0kEemRdaQWqjNOmA">
-            <body>Note:&#xD;
-Probably only used for employees, but is really role independent&#xD;
-This should be modeled as a separate entity but is shown as an attribute for brevity</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_XNr00F0kEemRdaQWqjNOmA" name="disabilities">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_veuhYF0lEemRdaQWqjNOmA" annotatedElement="_XNr00F0kEemRdaQWqjNOmA">
-            <body>Notes: Used for legal requirements (special billing, special products, special contact media, such as Braille). This should be modeled as a separate entity but is shown as an attribute for brevity.</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZRXj0F0kEemRdaQWqjNOmA" name="aliveDuring">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_xJezAF0lEemRdaQWqjNOmA" annotatedElement="_ZRXj0F0kEemRdaQWqjNOmA">
-            <body>Birth date and death date</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_oyf9MOwXEei7-e9MrPJW7Q"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_shyr0C7mEem7DJry5UTesQ" name="Organization">
         <ownedComment xmi:type="uml:Comment" xmi:id="_JrcQcF0nEemRdaQWqjNOmA" annotatedElement="_shyr0C7mEem7DJry5UTesQ">
@@ -150,28 +96,6 @@ This should be modeled as a separate entity but is shown as an attribute for bre
 An Organization might be composite or atomic.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_33D68C7mEem7DJry5UTesQ" general="_pLrroC7mEem7DJry5UTesQ"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_arR9EF0kEemRdaQWqjNOmA" name="isLegalEntity">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_SDoDYF0nEemRdaQWqjNOmA" annotatedElement="_arR9EF0kEemRdaQWqjNOmA">
-            <body>Permitted Values:&#xD;
-TRUE or FALSE</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_cDtIkF0kEemRdaQWqjNOmA" name="legalPeriod">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_XCkCkF0nEemRdaQWqjNOmA" annotatedElement="_cDtIkF0kEemRdaQWqjNOmA">
-            <body>Incorporation date to disincorporation date.</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_oyf9MOwXEei7-e9MrPJW7Q"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_clPvYF0kEemRdaQWqjNOmA" name="type">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_dq62oF0nEemRdaQWqjNOmA" annotatedElement="_clPvYF0kEemRdaQWqjNOmA">
-            <body>The type of organization&#xD;
-&#xD;
-Notes:&#xD;
-Club, Society, …</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_yB-98C7mEem7DJry5UTesQ" name="OrganizationDecompositionComponent">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Ya_twF0qEemRdaQWqjNOmA" annotatedElement="_yB-98C7mEem7DJry5UTesQ">
@@ -250,11 +174,6 @@ Club, Society, …</body>
           <body>A word, term, or phrase by which a party (individual or organization) is known and distinguished from other parties.A name is an informal way of identifying an object [Fowler].PartyName is an abstract concept that should be used in places where the business refers to an organization name, organization unit name or individual name</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_7wiv4DbnEemP3p_OV1tL7g" name="Language">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_NR74MF02EemRdaQWqjNOmA" annotatedElement="_7wiv4DbnEemP3p_OV1tL7g">
-          <body>Represents a spoken and/or written language.</body>
-        </ownedComment>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_99w1YDbnEemP3p_OV1tL7g" name="IndividualName">
         <ownedComment xmi:type="uml:Comment" xmi:id="_fdbNsF01EemRdaQWqjNOmA" annotatedElement="_99w1YDbnEemP3p_OV1tL7g">
           <body>A word, term, or phrase by which an individual is known and distinguished from other individuals.A name is an informal way of identifying an object [Fowler]This entity allows for international naming variations. An IndividualName is a type of PartyName.</body>
@@ -320,18 +239,13 @@ Club, Society, …</body>
   <OpenModel_Profile:Reference xmi:id="_fWY54DbbEemP3p_OV1tL7g" base_Element="_eDT94DbaEemP3p_OV1tL7g" reference="From TMF SID"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_3lu8UTbnEemP3p_OV1tL7g" base_Class="_3lu8UDbnEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_5MnakTbnEemP3p_OV1tL7g" base_Class="_5MnakDbnEemP3p_OV1tL7g"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_7wiv4TbnEemP3p_OV1tL7g" base_Class="_7wiv4DbnEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_99w1YTbnEemP3p_OV1tL7g" base_Class="_99w1YDbnEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_X8NUYzboEemP3p_OV1tL7g" base_StructuralFeature="_X8NUYjboEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_X8OigTboEemP3p_OV1tL7g" base_StructuralFeature="_X8OigDboEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_i16o4zboEemP3p_OV1tL7g" base_StructuralFeature="_i16o4jboEemP3p_OV1tL7g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_i17P8TboEemP3p_OV1tL7g" base_StructuralFeature="_i17P8DboEemP3p_OV1tL7g"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ky0adDboEemP3p_OV1tL7g" base_StructuralFeature="_ky0aczboEemP3p_OV1tL7g"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ky1BgTboEemP3p_OV1tL7g" base_StructuralFeature="_ky1BgDboEemP3p_OV1tL7g"/>
   <OpenModel_Profile:Experimental xmi:id="_3r4VsDbpEemP3p_OV1tL7g" base_Element="_5MnakDbnEemP3p_OV1tL7g"/>
   <OpenModel_Profile:Reference xmi:id="_3sh18DbpEemP3p_OV1tL7g" base_Element="_5MnakDbnEemP3p_OV1tL7g" reference="From TMF SID"/>
-  <OpenModel_Profile:Experimental xmi:id="_5GzbkDbpEemP3p_OV1tL7g" base_Element="_7wiv4DbnEemP3p_OV1tL7g"/>
-  <OpenModel_Profile:Reference xmi:id="_5Hdi4DbpEemP3p_OV1tL7g" base_Element="_7wiv4DbnEemP3p_OV1tL7g" reference="From TMF SID"/>
   <OpenModel_Profile:Experimental xmi:id="_7xv-4DbpEemP3p_OV1tL7g" base_Element="_3lu8UDbnEemP3p_OV1tL7g"/>
   <OpenModel_Profile:Reference xmi:id="_7yZfIDbpEemP3p_OV1tL7g" base_Element="_3lu8UDbnEemP3p_OV1tL7g" reference="From TMF SID"/>
   <OpenModel_Profile:Experimental xmi:id="_FC1IsDbqEemP3p_OV1tL7g" base_Element="_99w1YDbnEemP3p_OV1tL7g"/>
@@ -348,16 +262,6 @@ Club, Society, …</body>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_iVqrUF0jEemRdaQWqjNOmA" base_StructuralFeature="_iVoPEF0jEemRdaQWqjNOmA"/>
   <OpenModel_Profile:Experimental xmi:id="_DZAJYF0kEemRdaQWqjNOmA" base_Element="_iVoPEF0jEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_TY6isF0kEemRdaQWqjNOmA" base_StructuralFeature="_TY57oF0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_T8FhMF0kEemRdaQWqjNOmA" base_StructuralFeature="_T8E6IF0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_U3GX8V0kEemRdaQWqjNOmA" base_StructuralFeature="_U3GX8F0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_V2IMAV0kEemRdaQWqjNOmA" base_StructuralFeature="_V2IMAF0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_WTkV8V0kEemRdaQWqjNOmA" base_StructuralFeature="_WTkV8F0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_XNr00V0kEemRdaQWqjNOmA" base_StructuralFeature="_XNr00F0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZRXj0V0kEemRdaQWqjNOmA" base_StructuralFeature="_ZRXj0F0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_arR9EV0kEemRdaQWqjNOmA" base_StructuralFeature="_arR9EF0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_cDtIkV0kEemRdaQWqjNOmA" base_StructuralFeature="_cDtIkF0kEemRdaQWqjNOmA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_clQWcF0kEemRdaQWqjNOmA" base_StructuralFeature="_clPvYF0kEemRdaQWqjNOmA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kp2QQV0qEemRdaQWqjNOmA" base_StructuralFeature="_kp2QQF0qEemRdaQWqjNOmA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mSfdgV00EemRdaQWqjNOmA" base_StructuralFeature="_mSfdgF00EemRdaQWqjNOmA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xONkMV00EemRdaQWqjNOmA" base_StructuralFeature="_xONkMF00EemRdaQWqjNOmA"/>
