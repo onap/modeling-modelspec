@@ -47,6 +47,7 @@ MRN should also be provided, but is not required.</body>
           <type xmi:type="uml:Class" href="Party.uml#_eDT94DbaEemP3p_OV1tL7g"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Gsz04GCEEem1ZKk2djb7zg" name="vendorPackages"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Whm_UMfyEeiEtuRgTYzSUQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_Sj1eAN3yEei-jeeHUjfpLA" name="LicenseKeyDescMadeAvailableAs" memberEnd="_Sj2FEt3yEei-jeeHUjfpLA _Sj3TMN3yEei-jeeHUjfpLA">
@@ -400,7 +401,74 @@ Not applicable when license type is Perpetual.&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance">
+        <generalization xmi:type="uml:Generalization" xmi:id="_G1nMkGB5Eem1ZKk2djb7zg">
+          <general xmi:type="uml:Class" href="Common.uml#_1POjoOwXEei7-e9MrPJW7Q"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_J3qoUGB5Eem1ZKk2djb7zg" name="softwareAssetTag">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LQ7hUGB5Eem1ZKk2djb7zg" name="softwarePackageName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NPYLAGB5Eem1ZKk2djb7zg" name="softwarePackageVersion">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Oi0v4GB5Eem1ZKk2djb7zg" name="hostName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Raij4GB5Eem1ZKk2djb7zg" name="osAndVersion">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TJO6UGB5Eem1ZKk2djb7zg" name="trackingLicense">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UksywGB5Eem1ZKk2djb7zg" name="licenseKey">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WqKqcGB5Eem1ZKk2djb7zg" name="numCpus">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YUgFUGB5Eem1ZKk2djb7zg" name="numCores">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Zu-fQGB5Eem1ZKk2djb7zg" name="vpmoNumber">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bPqO4GB5Eem1ZKk2djb7zg" name="smmUserId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Clea0GB-Eem1ZKk2djb7zg" name="used">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qWCJYGB_Eem1ZKk2djb7zg" name="updateDate">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xoxXMGB_Eem1ZKk2djb7zg" name="pepUpdate">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yvoRkGB_Eem1ZKk2djb7zg" name="phoneHomeDate">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qnrdkGCAEem1ZKk2djb7zg" name="resourceUuid">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sIAn4GCAEem1ZKk2djb7zg" name="purchasingSystemSource">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tpH1UGCAEem1ZKk2djb7zg" name="assignmentStatus">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MeY5UGCBEem1ZKk2djb7zg" name="assignmentDate">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wn-WoGCBEem1ZKk2djb7zg" name="vnfId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qhfOoGCDEem1ZKk2djb7zg" name="licenseNumber">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_B5kVkN3xEei-jeeHUjfpLA" name="LicenseKeyPoolInstance"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_T5-uYN3uEei-jeeHUjfpLA" name="PoolLimit">
         <ownedComment xmi:type="uml:Comment" xmi:id="_OA0IkARvEemo7ZzqT33fqQ" annotatedElement="_T5-uYN3uEei-jeeHUjfpLA">
@@ -731,4 +799,26 @@ Not applicable when license type is Perpetual.&#xD;
   <OpenModel_Profile:Future xmi:id="_ouF6IFxsEemycfDPZTAung" base_Element="_IX2bMAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:Future xmi:id="_qeA_oFxsEemycfDPZTAung" base_Element="_LybEoAOOEemCCMXOyOLwIw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ShKckVx6Eem7IpeYDuIU6A" base_StructuralFeature="_ShKckFx6Eem7IpeYDuIU6A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J3qoUWB5Eem1ZKk2djb7zg" base_StructuralFeature="_J3qoUGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_LQ8IYGB5Eem1ZKk2djb7zg" base_StructuralFeature="_LQ7hUGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_NPYLAWB5Eem1ZKk2djb7zg" base_StructuralFeature="_NPYLAGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Oi0v4WB5Eem1ZKk2djb7zg" base_StructuralFeature="_Oi0v4GB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Raij4WB5Eem1ZKk2djb7zg" base_StructuralFeature="_Raij4GB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_TJO6UWB5Eem1ZKk2djb7zg" base_StructuralFeature="_TJO6UGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UktZ0GB5Eem1ZKk2djb7zg" base_StructuralFeature="_UksywGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WqLRgGB5Eem1ZKk2djb7zg" base_StructuralFeature="_WqKqcGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YUgFUWB5Eem1ZKk2djb7zg" base_StructuralFeature="_YUgFUGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Zu-fQWB5Eem1ZKk2djb7zg" base_StructuralFeature="_Zu-fQGB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bPqO4WB5Eem1ZKk2djb7zg" base_StructuralFeature="_bPqO4GB5Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ClfB4GB-Eem1ZKk2djb7zg" base_StructuralFeature="_Clea0GB-Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qWCwcGB_Eem1ZKk2djb7zg" base_StructuralFeature="_qWCJYGB_Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xoxXMWB_Eem1ZKk2djb7zg" base_StructuralFeature="_xoxXMGB_Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yvoRkWB_Eem1ZKk2djb7zg" base_StructuralFeature="_yvoRkGB_Eem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qnrdkWCAEem1ZKk2djb7zg" base_StructuralFeature="_qnrdkGCAEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIAn4WCAEem1ZKk2djb7zg" base_StructuralFeature="_sIAn4GCAEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_tpH1UWCAEem1ZKk2djb7zg" base_StructuralFeature="_tpH1UGCAEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_MeY5UWCBEem1ZKk2djb7zg" base_StructuralFeature="_MeY5UGCBEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wn-9sGCBEem1ZKk2djb7zg" base_StructuralFeature="_wn-WoGCBEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qhfOoWCDEem1ZKk2djb7zg" base_StructuralFeature="_qhfOoGCDEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Gsz04WCEEem1ZKk2djb7zg" base_Class="_Gsz04GCEEem1ZKk2djb7zg"/>
 </xmi:XMI>
