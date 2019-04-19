@@ -1682,7 +1682,7 @@ Permitted Values:&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_c8u5EBnKEemlxOdMFpUVvQ" name="Business Interaction">
       <packagedElement xmi:type="uml:Package" xmi:id="_iFqhwBnKEemlxOdMFpUVvQ" name="Associations">
-        <packagedElement xmi:type="uml:Association" xmi:id="_YFG2ABp-EemOGejS9lsDjA" name="BuisinessInteractionComprisedOf" memberEnd="_YFHdEhp-EemOGejS9lsDjA _YFM8oBp-EemOGejS9lsDjA">
+        <packagedElement xmi:type="uml:Association" xmi:id="_YFG2ABp-EemOGejS9lsDjA" name="BIComprisedOfBIItems" memberEnd="_YFHdEhp-EemOGejS9lsDjA _YFM8oBp-EemOGejS9lsDjA">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YFHdEBp-EemOGejS9lsDjA" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YFHdERp-EemOGejS9lsDjA" key="nature" value="UML_Nature"/>
           </eAnnotations>
@@ -1721,6 +1721,58 @@ Permitted Values:&#xD;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1FEQIBp8EemOGejS9lsDjA" value="1"/>
           </ownedEnd>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_1lDGoGEbEemButgjVWb0qQ" name="BIReferences" memberEnd="_1lMQkGEbEemButgjVWb0qQ _1lOFwGEbEemButgjVWb0qQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1lKbYGEbEemButgjVWb0qQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1lLCcGEbEemButgjVWb0qQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_r_VUIGEcEemButgjVWb0qQ" annotatedElement="_1lDGoGEbEemButgjVWb0qQ">
+            <body>Associates a business interction that is referenced by a business interction</body>
+          </ownedComment>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1lMQkGEbEemButgjVWb0qQ" name="businessinteractionrelationship" type="_eV_i4GEXEemButgjVWb0qQ" association="_1lDGoGEbEemButgjVWb0qQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1lOFwGEbEemButgjVWb0qQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_1lDGoGEbEemButgjVWb0qQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H8MdEGEcEemButgjVWb0qQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H8WOEGEcEemButgjVWb0qQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_3p2P8GEbEemButgjVWb0qQ" name="BIReferencedBy" memberEnd="_3p23AmEbEemButgjVWb0qQ _3p4FIGEbEemButgjVWb0qQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3p23AGEbEemButgjVWb0qQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3p23AWEbEemButgjVWb0qQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0uxwgGEcEemButgjVWb0qQ" annotatedElement="_3p2P8GEbEemButgjVWb0qQ">
+            <body>Associates a business interaction that references </body>
+          </ownedComment>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3p23AmEbEemButgjVWb0qQ" name="businessinteractionrelationship" type="_eV_i4GEXEemButgjVWb0qQ" association="_3p2P8GEbEemButgjVWb0qQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_3p4FIGEbEemButgjVWb0qQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_3p2P8GEbEemButgjVWb0qQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U9kBoGEcEemButgjVWb0qQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U9xdAGEcEemButgjVWb0qQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_E_wTkGE8EemQKt2NqrzEJw" name="BIIItemRefernces" memberEnd="_E_4PYGE8EemQKt2NqrzEJw _E_75wGE8EemQKt2NqrzEJw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E_3BQGE8EemQKt2NqrzEJw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E_3oUGE8EemQKt2NqrzEJw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_E_4PYGE8EemQKt2NqrzEJw" name="businessinteractionitem" type="_NNQYIBp9EemOGejS9lsDjA" association="_E_wTkGE8EemQKt2NqrzEJw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PNv8IGE9EemQKt2NqrzEJw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_POJkwGE9EemQKt2NqrzEJw" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_E_75wGE8EemQKt2NqrzEJw" name=" businessinteractionitemrelationship" type="_S3D3EGE7EemButgjVWb0qQ" association="_E_wTkGE8EemQKt2NqrzEJw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KrGQUGE9EemQKt2NqrzEJw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KrKhwGE9EemQKt2NqrzEJw" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_G3regGE8EemQKt2NqrzEJw" name="BIItemReferencedBy" memberEnd="_G3sFkmE8EemQKt2NqrzEJw _G3tTsGE8EemQKt2NqrzEJw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G3sFkGE8EemQKt2NqrzEJw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G3sFkWE8EemQKt2NqrzEJw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_G3sFkmE8EemQKt2NqrzEJw" name=" businessinteractionitemrelationship" type="_S3D3EGE7EemButgjVWb0qQ" association="_G3regGE8EemQKt2NqrzEJw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SUoNgGE9EemQKt2NqrzEJw" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SUr34GE9EemQKt2NqrzEJw" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_G3tTsGE8EemQKt2NqrzEJw" name="businessinteractionitem" type="_NNQYIBp9EemOGejS9lsDjA" association="_G3regGE8EemQKt2NqrzEJw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wmg5cGE9EemQKt2NqrzEJw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WmxYIGE9EemQKt2NqrzEJw" value="*"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_kM4s8BnKEemlxOdMFpUVvQ" name="Diagrams">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1p5QIFe0EemOS57QqWJZ3A">
@@ -1751,7 +1803,7 @@ Permitted Values:&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="__F4vsBnKEemlxOdMFpUVvQ" name="BusinessInteraction" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_IIT0YBp5EemOGejS9lsDjA" annotatedElement="__F4vsBnKEemlxOdMFpUVvQ">
-            <body>A BusinessInteraction is an arrangement, contract, communication or joint activity between one or more PartyRoles, ResourceRoles, or CustomerAccounts. A BusinessInteraction may consist of one or more BusinessInteractionItems. A BusinessInteractionItem may refer to a Product, Service, Resource, or one of their specifications. A BusinessInteraction is further defined by one or more Places. One BusinessInteraction may reference another BusinessInteraction and one BusinessInteractionItem may reference another BusinessInteractionItem on the same or different BusinessInteraction. There are five types of BusinessInteractions: Requests, Responses, Notifications, Agreements, and Instructions.</body>
+            <body>A BusinessInteraction is an arrangement, contract, communication or joint activity between one or more PartyRoles, ResourceRoles, or CustomerAccounts. A BusinessInteraction may consist of one or more BusinessInteractionItems. A BusinessInteractionItem may refer to a Product, Service, Resource, or one of their specifications. A BusinessInteraction is further defined by one or more Places. One BusinessInteraction may reference another BusinessInteraction and one BusinessInteractionItem may reference another BusinessInteractionItem on the same or different BusinessInteraction. Types of BusinessInteractions include : Requests, Responses, Notifications, and Agreements.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_utCzUDX1EemvTc8tEY2xig" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_n-rCoBpxEemOGejS9lsDjA" name="StartDate" type="_KwZPMP8VEeiZ-fXSiUXhdA">
@@ -1822,32 +1874,34 @@ Permitted Values:&#xD;
         <packagedElement xmi:type="uml:Class" xmi:id="_hRjYoEaKEemmD4xckllxww" name="PolicyEvent">
           <generalization xmi:type="uml:Generalization" xmi:id="_jm4RQEaKEemmD4xckllxww" general="_8fYhoDqyEemOl5OHBoqS_w"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:AssociationClass" xmi:id="_ocmjwBnMEemlxOdMFpUVvQ" name="BusinesInteractionRelationship" memberEnd="_ocqOIBnMEemlxOdMFpUVvQ _octRcBnMEemlxOdMFpUVvQ">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ocpAABnMEemlxOdMFpUVvQ" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ocpnEBnMEemlxOdMFpUVvQ" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedComment xmi:type="uml:Comment" xmi:id="__0smkFcMEemLJovD_F1O1A" annotatedElement="_ocmjwBnMEemlxOdMFpUVvQ">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eV_i4GEXEemButgjVWb0qQ" name="BusinessInteractionRelationship">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yK1CgGEbEemButgjVWb0qQ" annotatedElement="_eV_i4GEXEemButgjVWb0qQ">
             <body>An association between two Interactions. For example, a Notification sent to customers affected by a problem contained on a Trouble Report; a response to a request, an agreement and the interactions that led up to the agreement.</body>
           </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Lk238BpyEemOGejS9lsDjA" name="type">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_LseF0FcNEemLJovD_F1O1A" annotatedElement="_Lk238BpyEemOGejS9lsDjA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BKA7cGEYEemButgjVWb0qQ" name="type">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PZsGMGEYEemButgjVWb0qQ" annotatedElement="_BKA7cGEYEemButgjVWb0qQ">
               <body>A categorization of the relationship, such as bulk, parent/child, and so forth.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OtrDABpyEemOGejS9lsDjA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_CdRYEFcdEemLJovD_F1O1A" annotatedElement="_OtrDABpyEemOGejS9lsDjA">
-              <body>Time period for which the business interaction is valid.</body>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CdZO4GEYEemButgjVWb0qQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_RvhVIGEYEemButgjVWb0qQ" annotatedElement="_CdZO4GEYEemButgjVWb0qQ">
+              <body>Time period for which the relationship is valid</body>
             </ownedComment>
           </ownedAttribute>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_ocqOIBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UWvekFceEemLJovD_F1O1A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UW8S4FceEemLJovD_F1O1A" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_octRcBnMEemlxOdMFpUVvQ" name="businessinteraction" type="__F4vsBnKEemlxOdMFpUVvQ" association="_ocmjwBnMEemlxOdMFpUVvQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wt140FceEemLJovD_F1O1A"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuuCkFceEemLJovD_F1O1A" value="*"/>
-          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_S3D3EGE7EemButgjVWb0qQ" name=" BusinessInteractionItemRelationship">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_RCr58GE8EemQKt2NqrzEJw" name="type">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_g5gosGE8EemQKt2NqrzEJw" annotatedElement="_RCr58GE8EemQKt2NqrzEJw">
+              <body>The type of relationship such as contains, relies on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VmVEQGE8EemQKt2NqrzEJw" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_r4_1EGE8EemQKt2NqrzEJw" annotatedElement="_VmVEQGE8EemQKt2NqrzEJw">
+              <body>Time period for which the relationship is valid</body>
+            </ownedComment>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_s8dsMBnKEemlxOdMFpUVvQ" name="TypeDefinitions"/>
@@ -4362,15 +4416,9 @@ Permitted Values:&#xD;
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="__F5WwBnKEemlxOdMFpUVvQ" base_Class="__F4vsBnKEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_z6bucBnLEemlxOdMFpUVvQ" base_Class="_z6bHYBnLEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_ocnK0BnMEemlxOdMFpUVvQ" base_Class="_ocmjwBnMEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_ocq1MBnMEemlxOdMFpUVvQ" base_StructuralFeature="_ocqOIBnMEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_octRcRnMEemlxOdMFpUVvQ" base_StructuralFeature="_octRcBnMEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n-rpsBpxEemOGejS9lsDjA" base_StructuralFeature="_n-rCoBpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_phcc8BpxEemOGejS9lsDjA" base_StructuralFeature="_phb14BpxEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Lk238RpyEemOGejS9lsDjA" base_StructuralFeature="_Lk238BpyEemOGejS9lsDjA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_OtrDARpyEemOGejS9lsDjA" base_StructuralFeature="_OtrDABpyEemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_we6I4BpyEemOGejS9lsDjA" base_Element="__F4vsBnKEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_xsCDUBpyEemOGejS9lsDjA" base_Element="_ocmjwBnMEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:Experimental xmi:id="_zKQU0BpyEemOGejS9lsDjA" base_Element="_z6bHYBnLEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tRSSIBp5EemOGejS9lsDjA" base_StructuralFeature="_tRRrEBp5EemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_gBaFkRp7EemOGejS9lsDjA" base_Class="_gBaFkBp7EemOGejS9lsDjA"/>
@@ -4888,9 +4936,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_lWNH0FcHEemLJovD_F1O1A" base_Element="_n-rCoBpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_mht4sFcHEemLJovD_F1O1A" base_Element="_phb14BpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_ngpmIFcHEemLJovD_F1O1A" base_Element="_tRRrEBp5EemOGejS9lsDjA"/>
-  <OpenModel_Profile:Experimental xmi:id="_uyW5MFcHEemLJovD_F1O1A" base_Element="_Lk238BpyEemOGejS9lsDjA"/>
-  <OpenModel_Profile:Experimental xmi:id="_v1MPMFcHEemLJovD_F1O1A" base_Element="_OtrDABpyEemOGejS9lsDjA"/>
-  <OpenModel_Profile:Reference xmi:id="_CesHoFcNEemLJovD_F1O1A" base_Element="_ocmjwBnMEemlxOdMFpUVvQ" reference="From TMF SID"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XUm3gFcWEemLJovD_F1O1A" base_StructuralFeature="_XUmQcFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Z1QPUVcWEemLJovD_F1O1A" base_StructuralFeature="_Z1QPUFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:Experimental xmi:id="_BrI_QFcXEemLJovD_F1O1A" base_Element="_XUmQcFcWEemLJovD_F1O1A"/>
@@ -4908,4 +4953,29 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_gM_IwFrMEem07dac9irJSQ" base_Element="_kO0hMBp7EemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_iGIbsFrMEem07dac9irJSQ" base_Element="_dxmUIDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Preliminary xmi:id="_6398cF0jEemRdaQWqjNOmA" base_Element="_oyf9MOwXEei7-e9MrPJW7Q"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_eWB_IGEXEemButgjVWb0qQ" base_Class="_eV_i4GEXEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_BKBigGEYEemButgjVWb0qQ" base_StructuralFeature="_BKA7cGEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_CdZO4WEYEemButgjVWb0qQ" base_StructuralFeature="_CdZO4GEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_Xy5z4GEYEemButgjVWb0qQ" base_Element="_eV_i4GEXEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_Zq_W4GEYEemButgjVWb0qQ" base_Element="_BKA7cGEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_bLjxwGEYEemButgjVWb0qQ" base_Element="_CdZO4GEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1lMQkWEbEemButgjVWb0qQ" base_StructuralFeature="_1lMQkGEbEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1lOFwWEbEemButgjVWb0qQ" base_StructuralFeature="_1lOFwGEbEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3p3eEGEbEemButgjVWb0qQ" base_StructuralFeature="_3p23AmEbEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3p4FIWEbEemButgjVWb0qQ" base_StructuralFeature="_3p4FIGEbEemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_S3D3EWE7EemButgjVWb0qQ" base_Class="_S3D3EGE7EemButgjVWb0qQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_CCf4QGE8EemQKt2NqrzEJw" base_Element="_S3D3EGE7EemButgjVWb0qQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E_4PYWE8EemQKt2NqrzEJw" base_StructuralFeature="_E_4PYGE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E_75wWE8EemQKt2NqrzEJw" base_StructuralFeature="_E_75wGE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_G3ssoGE8EemQKt2NqrzEJw" base_StructuralFeature="_G3sFkmE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_G3t6wGE8EemQKt2NqrzEJw" base_StructuralFeature="_G3tTsGE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_RCshAGE8EemQKt2NqrzEJw" base_StructuralFeature="_RCr58GE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VmVrUGE8EemQKt2NqrzEJw" base_StructuralFeature="_VmVEQGE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:Experimental xmi:id="_bceYQGE8EemQKt2NqrzEJw" base_Element="_RCr58GE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:Experimental xmi:id="_chXjwGE8EemQKt2NqrzEJw" base_Element="_VmVEQGE8EemQKt2NqrzEJw"/>
+  <OpenModel_Profile:Reference xmi:id="_9FkqMGIKEemaRqBs_iqjpw" base_Element="_NNQYIBp9EemOGejS9lsDjA" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_C4uUkGILEemaRqBs_iqjpw" base_Element="_toYcIBp8EemOGejS9lsDjA" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_GIkUsGILEemaRqBs_iqjpw" base_Element="_UlJoMBp8EemOGejS9lsDjA" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_J4HIkGILEemaRqBs_iqjpw" base_Element="_S3D3EGE7EemButgjVWb0qQ" reference="From TMF SID"/>
+  <OpenModel_Profile:Reference xmi:id="_UAfGwGILEemaRqBs_iqjpw" base_Element="_eV_i4GEXEemButgjVWb0qQ" reference="From TMF SID"/>
 </xmi:XMI>
