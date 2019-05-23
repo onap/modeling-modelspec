@@ -129,6 +129,9 @@ Certain actions will take place if the condition clause is TRUE, others if the c
         <body>A PolicyEvent is an occurrence of an important event, and can be used to trigger the evaluation of a PolicyCondition or PolicyCondition clause in a PolicyRule. </body>
       </ownedComment>
       <generalization xmi:type="uml:Generalization" xmi:id="_u6kmAO2IEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_gdo60H1xEemcG-PZNzdV9w">
+        <general xmi:type="uml:Class" href="Common.uml#_8fYhoDqyEemOl5OHBoqS_w"/>
+      </generalization>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_x5sNEO2JEei7-e9MrPJW7Q" name="eventOrigin">
         <ownedComment xmi:type="uml:Comment" xmi:id="_wn9X0BBZEemHjtkpPBz29Q" annotatedElement="_x5sNEO2JEei7-e9MrPJW7Q">
           <body>eventOrigin provides information on the entity that generates the event (DCAE, Vnf, monitors).</body>
