@@ -35,6 +35,15 @@ MRN should also be provided, but is not required.</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_HNcuoFxkEemycfDPZTAung">
         <body>ASDC has a pool (group) desc, not license or entitlement desc because they are not in SDC.</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_TRxa0H2PEemcG-PZNzdV9w">
+        <body>Michelle to verify if NumofCpus, COres, and VPMO apply</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_AyFhgH2REemcG-PZNzdV9w">
+        <body>Instances (pools, entitlmenets, and keys) are in ALTS - outside of ONAP</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_MafIAH2REemcG-PZNzdV9w">
+        <body>A&amp;AI does know about the asset tag as an attribute of the Vnf Instance</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Association" xmi:id="_ShGyMFx6Eem7IpeYDuIU6A" name="VendorHasEntitlmentPoolDesc" memberEnd="_ShHZQlx6Eem7IpeYDuIU6A _ShKckFx6Eem7IpeYDuIU6A">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ShHZQFx6Eem7IpeYDuIU6A" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ShHZQVx6Eem7IpeYDuIU6A" key="nature" value="UML_Nature"/>
@@ -48,6 +57,37 @@ MRN should also be provided, but is not required.</body>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Gsz04GCEEem1ZKk2djb7zg" name="vendorPackages"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lXfcUH2KEemcG-PZNzdV9w" name="EntitlementDescMadeAvailableAsEntitlementInstance" memberEnd="_lXjGsH2KEemcG-PZNzdV9w _lXk74H2KEemcG-PZNzdV9w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lXh4kH2KEemcG-PZNzdV9w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXifoH2KEemcG-PZNzdV9w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lXjGsH2KEemcG-PZNzdV9w" name="entitlementinstance" type="_QG4ysP1oEeisxOMTY1eUug" aggregation="composite" association="_lXfcUH2KEemcG-PZNzdV9w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x7nEMH2KEemcG-PZNzdV9w"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x7rVoH2KEemcG-PZNzdV9w" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lXk74H2KEemcG-PZNzdV9w" name="entitlementpooldesc" type="_GlxBwP1oEeisxOMTY1eUug" association="_lXfcUH2KEemcG-PZNzdV9w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HzPe0H2LEemcG-PZNzdV9w" name="LicOrEntInstance">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q2iEQH2LEemcG-PZNzdV9w" name="AssetTag">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XHBK4H2LEemcG-PZNzdV9w" name="SoftwarePackageVersion">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_a-l5YH2LEemcG-PZNzdV9w" name="Host">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ffkxQH2LEemcG-PZNzdV9w" name="NumOfCpu">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jKF7MH2LEemcG-PZNzdV9w" name="NumOfCores">
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_p3EKoDm0EeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_nwllMH2LEemcG-PZNzdV9w" name="VPMONum"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rQXewH2LEemcG-PZNzdV9w" name="Used">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Whm_UMfyEeiEtuRgTYzSUQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_Sj1eAN3yEei-jeeHUjfpLA" name="LicenseKeyDescMadeAvailableAs" memberEnd="_Sj2FEt3yEei-jeeHUjfpLA _Sj3TMN3yEei-jeeHUjfpLA">
@@ -352,7 +392,7 @@ VLM is used to track instaantiations (&quot;entitlements&quot;) of the vendor pr
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EFk28N3tEei-jeeHUjfpLA" name="EntitlementDesc (PurchaseUseRights-PUR)">
+      <packagedElement xmi:type="uml:Class" xmi:id="_EFk28N3tEei-jeeHUjfpLA" name="Delete - EntitlementDesc (PurchaseUseRights-PUR)">
         <ownedComment xmi:type="uml:Comment" xmi:id="_62doQP73EeiZ-fXSiUXhdA" annotatedElement="_EFk28N3tEei-jeeHUjfpLA">
           <body>Specifies the use rights for the software as described by the license. The use rights may be quantified by various metrics: # users, # software instances,  # units.  Customer RTU is within the customer subscription.   Entitlement is related to how the service provider  purchased the software from the supplier, 1 RTU may equate to 5 instances of the software.   &#xD;
 &#xD;
@@ -821,4 +861,14 @@ Not applicable when license type is Perpetual.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_wn-9sGCBEem1ZKk2djb7zg" base_StructuralFeature="_wn-WoGCBEem1ZKk2djb7zg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qhfOoWCDEem1ZKk2djb7zg" base_StructuralFeature="_qhfOoGCDEem1ZKk2djb7zg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_Gsz04WCEEem1ZKk2djb7zg" base_Class="_Gsz04GCEEem1ZKk2djb7zg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lXjGsX2KEemcG-PZNzdV9w" base_StructuralFeature="_lXjGsH2KEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lXk74X2KEemcG-PZNzdV9w" base_StructuralFeature="_lXk74H2KEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_HzPe0X2LEemcG-PZNzdV9w" base_Class="_HzPe0H2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Q2irUH2LEemcG-PZNzdV9w" base_StructuralFeature="_Q2iEQH2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XHBK4X2LEemcG-PZNzdV9w" base_StructuralFeature="_XHBK4H2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_a-mgcH2LEemcG-PZNzdV9w" base_StructuralFeature="_a-l5YH2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ffkxQX2LEemcG-PZNzdV9w" base_StructuralFeature="_ffkxQH2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_jKF7MX2LEemcG-PZNzdV9w" base_StructuralFeature="_jKF7MH2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nwllMX2LEemcG-PZNzdV9w" base_StructuralFeature="_nwllMH2LEemcG-PZNzdV9w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_rQXewX2LEemcG-PZNzdV9w" base_StructuralFeature="_rQXewH2LEemcG-PZNzdV9w"/>
 </xmi:XMI>
