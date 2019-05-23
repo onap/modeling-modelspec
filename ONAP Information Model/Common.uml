@@ -1770,12 +1770,14 @@ Permitted Values:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_kM4s8BnKEemlxOdMFpUVvQ" name="Diagrams">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1p5QIFe0EemOS57QqWJZ3A">
-          <body>PolicyEvent is an example presently.</body>
+          <body>PolicyEvent is part of another effort, and is NOT agreed to at this time.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="__IXVsFe0EemOS57QqWJZ3A">
-          <body>LicenseAgreement is part of another contribution.  Relationship only is for consideration in this contribution.</body>
+          <body>LicenseAgreement is part of another contribution and is NOT agreed to at this time.</body>
         </ownedComment>
-        <packagedElement xmi:type="uml:Class" xmi:id="_KzEfgHWUEemzhLcDJtHhzg" name="ServiceOrder"/>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JXPfoH10EemcG-PZNzdV9w">
+          <body>ServiceOrder and VesEvent are part of other contributions, and have already been accepted.</body>
+        </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_mU1Q4BnKEemlxOdMFpUVvQ" name="ObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_z6bHYBnLEemlxOdMFpUVvQ" name="Agreement">
@@ -1865,9 +1867,6 @@ Permitted Values:&#xD;
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_aERBkEdFEemTDOF2GVSrTg" general="__F4vsBnKEemlxOdMFpUVvQ"/>
           <nestedClassifier xmi:type="uml:DataType" xmi:id="_4VzdIDqyEemOl5OHBoqS_w" name="DataType1"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_hRjYoEaKEemmD4xckllxww" name="PolicyEvent">
-          <generalization xmi:type="uml:Generalization" xmi:id="_jm4RQEaKEemmD4xckllxww" general="_8fYhoDqyEemOl5OHBoqS_w"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_eV_i4GEXEemButgjVWb0qQ" name="BusinessInteractionRelationship">
           <ownedComment xmi:type="uml:Comment" xmi:id="_yK1CgGEbEemButgjVWb0qQ" annotatedElement="_eV_i4GEXEemButgjVWb0qQ">
@@ -4684,7 +4683,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_O-o3gEUBEemWRYeHGX88Yw" base_Element="_BUajMEUBEemWRYeHGX88Yw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_jJ_0gDxkEemSdYSKacDoqQ" base_Class="_jJ_NcDxkEemSdYSKacDoqQ"/>
   <OpenModel_Profile:Experimental xmi:id="_oiRO0DxmEemL36iV0V0qOA" base_Element="_jJ_NcDxkEemSdYSKacDoqQ"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_hRkmwEaKEemmD4xckllxww" base_Class="_hRjYoEaKEemmD4xckllxww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UPVKkFVTEemo4a1c6QCrGw" base_StructuralFeature="_UPUjgFVTEemo4a1c6QCrGw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UPaqIFVTEemo4a1c6QCrGw" base_StructuralFeature="_UPaDEFVTEemo4a1c6QCrGw"/>
   <OpenModel_Profile:Preliminary xmi:id="_6xrb4FZMEempS4TbYDJLLQ" base_Element="_eCjlEOLJEeiKy5JVrA0UGA"/>
@@ -4698,7 +4696,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_sXgb4FZNEempS4TbYDJLLQ" base_Element="_E4CakDYREemvTc8tEY2xig"/>
   <OpenModel_Profile:Preliminary xmi:id="_wzCzEFZNEempS4TbYDJLLQ" base_Element="_Td26cOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:Preliminary xmi:id="_zIfAcFZNEempS4TbYDJLLQ" base_Element="_T6QikOLNEeiKy5JVrA0UGA"/>
-  <OpenModel_Profile:Example xmi:id="_Iiv1cFcFEemLJovD_F1O1A" base_Element="_hRjYoEaKEemmD4xckllxww"/>
   <OpenModel_Profile:Experimental xmi:id="_lWNH0FcHEemLJovD_F1O1A" base_Element="_n-rCoBpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_mht4sFcHEemLJovD_F1O1A" base_Element="_phb14BpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_ngpmIFcHEemLJovD_F1O1A" base_Element="_tRRrEBp5EemOGejS9lsDjA"/>
@@ -4804,7 +4801,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_THKD48ixEeiKReoLXDYvSw">
     <base_StructuralFeature xmi:type="uml:Property" href="Ves.uml#_THKD4sixEeiKReoLXDYvSw"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelClass xmi:id="_KzQFsHWUEemzhLcDJtHhzg" base_Class="_KzEfgHWUEemzhLcDJtHhzg"/>
   <OpenModel_Profile:Preliminary xmi:id="_US4S4HaGEemQatxXK-x5hg" base_Element="_zxlckB8-EemJTaeYhZuDRA"/>
   <OpenModel_Profile:Preliminary xmi:id="_XoYPEHaGEemQatxXK-x5hg" base_Element="_PJJAYB87EemJTaeYhZuDRA"/>
   <OpenModel_Profile:Preliminary xmi:id="_abHccHaGEemQatxXK-x5hg" base_Element="_PuRtwB87EemJTaeYhZuDRA"/>
