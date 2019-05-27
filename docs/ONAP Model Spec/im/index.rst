@@ -16,3 +16,4 @@ ONAP Information Model Specifications
    NSD
    Service
    NSD1
+   PNFD

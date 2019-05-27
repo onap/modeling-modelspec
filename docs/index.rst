@@ -2,17 +2,17 @@
 
 Model Specifications
 ====================
-ONAP 3rd release defines the resource IM based on ETSI specifications
-ONAP 3rd release defines the resource onboarding DM based on ETSI specifications
-ONAP 3rd release doesn't define the internal DM
+ONAP is expected to be a general model driven platform to support design, deployment and management of various services, across traditional access, transport and core network domains. ONAP has leveraged the experience of community members, standard organizations and other open source projects to produce models which enable the model driven approach and improve the interoperability of ONAP.
+
+The models documented in the Dublin release are listed below:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    ONAP Model Spec/index   
 
 
-Release Notes
+The changes can be found in the Release Notes:
 
 .. toctree::
    :maxdepth: 1
