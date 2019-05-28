@@ -1,4 +1,4 @@
-.. Copyright 2018 (China Mobile)
+.. Copyright 2019 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
@@ -220,7 +220,7 @@ Applied stereotypes:
 |                          |                            |             |                   |                |
 |                          |                            |             | PassedByReference |                |
 +--------------------------+----------------------------+-------------+-------------------+----------------+
-| \_pnfdId                 | Pnfd                       | 0..\*       | Experimental      | References     |
+| \_pnfdId                 | Pnfd                       | 0..\*       | Preliminary       | References     |
 |                          |                            |             |                   | the PNFD of    |
 |                          |                            |             |                   | a              |
 |                          |                            |             | OpenModelAttribute| constituent    |
@@ -387,7 +387,7 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
--  Experimental
+-  Preliminary
 
 
 
@@ -684,4 +684,4 @@ Contains Enumeration Literals:
 
 -  LEVEL_3:
 
-.. |image0| image:: NSD1.PNG
+.. |image0| image:: NSDR4.PNG
