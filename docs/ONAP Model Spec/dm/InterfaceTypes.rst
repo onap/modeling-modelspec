@@ -1,20 +1,35 @@
-.. Copyright 2018 (China Mobile)
+.. Copyright 2019 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
 Interface Types
 ===============
 
-| **tosca.interfaces.nfv.vnf.lifecycle.Nfv**
-|   derived_from: tosca.interfaces.Root 
+| **tosca.interfaces.nfv.Vnflcm**
+|   derived_from: tosca.interfaces.Root
+|   description: This interface encompasses a set of TOSCA operations corresponding to the VNF LCM operations defined in ETSI GS NFV-IFA 007 as well as to preamble and postamble procedures to the execution of the VNF LCM operations.  
 |   instantiate:
 |     description: Invoked upon receipt of an Instantiate VNF request
+|     # inputs:
+|     #   additional_parameters: 
+|     #     type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #     required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters 
 |   instantiate_start:
 |     description: Invoked before instantiate
 |   instantiate_end:
 |     description: Invoked after instantiate
 |   terminate:
 |     description: Invoked upon receipt Terminate VNF request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   terminate_start:
 |     description: Invoked before terminate
 |   terminate_end:
@@ -27,39 +42,79 @@ Interface Types
 |     description: Invoked after modify_information
 |   change_flavour:
 |     description: Invoked upon receipt of a Change VNF Flavour request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   change_flavour_start:
 |     description: Invoked before change_flavour
 |   change_flavour_end:
 |     description: Invoked after change_flavour
 |   change_external_connectivity:
 |     description: Invoked upon receipt of a Change External VNF Connectivity request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   change_external_connectivity_start:
 |     description: Invoked before change_external_connectivity
 |   change_external_connectivity_end:
 |     description: Invoked after change_external_connectivity
 |   operate:
 |     description: Invoked upon receipt of an Operate VNF request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   operate_start:
 |     description: Invoked before operate
 |   operate_end:
 |     description: Invoked after operate
 |   heal:
 |     description: Invoked upon receipt of a Heal VNF request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   heal_start:
 |     description: Invoked before heal
 |   heal_end:
-|   description: Invoked after heal
+|     description: Invoked after heal
 |   scale:
 |     description: Invoked upon receipt of a Scale VNF request
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
 |   scale_start:
 |     description: Invoked before scale
 |   scale_end:
 |     description: Invoked after scale  
 |   scale_to_level:
 |     description: Invoked upon receipt of a Scale VNF to Level request
-| scale_to_level_start:
+|     #  inputs:
+|     #     additional_parameters: 
+|     #       type: tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|     #       required: false
+|     #   derived types are expected to introduce additional_parameters with
+|     #   its type derived from
+|     #   tosca.datatypes.nfv.VnfOperationAdditionalParameters
+|   scale_to_level_start:
 |     description: Invoked before scale_to_level
 |   scale_to_level_end:
 |     description: Invoked after scale_to_level
-| #  indicator_changed:
-| #    description: On receiving a VNF indicator value change notification

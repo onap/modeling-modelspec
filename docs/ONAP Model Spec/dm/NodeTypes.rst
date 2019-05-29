@@ -1,4 +1,4 @@
-.. Copyright 2018 (China Mobile)
+.. Copyright 2019 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
@@ -6,258 +6,345 @@ Node Types
 ==========
 
 | **tosca.nodes.nfv.Vdu.Compute:**
-|   derived_from: tosca.nodes.Root
-|   properties:
-|     #id:
-|       # node name
-|     name:       # align with the IM, please refer to https://wiki.onap.org/display/DW/Design+Time+Model+Clean+Version#DesignTimeModelCleanVersion-Class:VDU/VDUDesc
-|       type: string
-|       required: true
+|     derived_from: tosca.nodes.Root
+|     description:  Describes the virtual compute part of a VDU which is a construct   supporting the description of the deployment and operational behavior of a VNFC 
+|     properties:
+|       name: 
+|         type: string
+|         description: Human readable name of the VDU
+|         required: true
 |     description:
 |       type: string
+|       description: Human readable description of the VDU 
 |       required: true
 |     boot_order:
-|       type: map # explicit index (boot index) not necessary, contrary to IFA011. In the IM, it shoul be a array of KeyValuePair/NameValuePair
+|       type: list # explicit index (boot index) not necessary, contrary to IFA011. 
+|       description: References a node template name from which a valid boot device is created 
+|       required: false|
 |       entry_schema:
 |         type: string
-|       required: false 
 |     nfvi_constraints:  
-|       type: map # Align with IM, it shoul be a array of KeyValuePair/NameValuePair
+|       type: list
+|       description: Describes constraints on the NFVI for the VNFC instance(s) created from this VDU 
 |       entry_schema:
 |         type: string
 |       required: false
-|     configurable_properties: 
-|        type: map   #In the IM, the multipilicity of VnfcConfigurableProperties is 1, not a map.
-|        entry_schema:
-|           type: tosca.datatypes.nfv.VnfcConfigurableProperties
-|        required: true 
+|     monitoring_parameters:
+|         type: list
+|         description: Describes monitoring parameters applicable to a VNFC instantiated from this VDU
+|         required: false
+|         entry_schema:
+|           type: tosca.datatypes.nfv.VnfcMonitoringParameter
+|     #configurable_properties: 
+|        #type: tosca.datatypes.nfv.VnfcConfigurableProperties
+|        #required: false
+|        # derived types are expected to introduce
+|        # configurable_properties with its type derived from 
+|        # tosca.datatypes.nfv.VnfcConfigurableProperties
 |     vdu_profile:          
 |        type: tosca.datatypes.nfv.VduProfile
+|        description: Defines additional instantiation data for the VDU.Compute node 
 |        required: true
-|     inject_files: # Used for vCPE usecase Aligned with ONAP R2 IM. not defined in IFA011 v2.4.1 and SOL001 v0.6.0.
-|        type: tosca.datatypes.nfv.injectFile
-|        required: false  #Aligned with ONAP R2 IM. it should be false.
-|     meta_data: #metadata attached to the VM or container
-|        type: map
-|        entry_schema:
-|          type: string
-|        required: false
-|     user_data: #cloudinit userdata script support
+|     sw_image_data:
+|         type: tosca.datatypes.nfv.SwImageData
+|         description: Defines information related to a SwImage artifact used by this Vdu.Compute node
+|         required: false # property is required when the node template has an associated artifact of type tosca.artifacts.nfv.SwImage and not required otherwise
+|     boot_data: 
 |       type: string
+|       description: Contains a string or a URL to a file contained in the VNF package used to customize a virtualised compute resource at boot time. The bootData may contain variable parts that are replaced by deployment specific values before being sent to the VIM. 
 |       required: false
-|   #attributes: NOT DEFINED IN ONAP IM and SOL001
-|     #private_address:
-|     #  status: deprecated
-|     #public_address:
-|     #  status: deprecated
-|     #networks:
-|     #  status: deprecated
-|     #ports:
-|     #  status: deprecated
+|     #inject_files: #Introduced from Beijing release, used for vCPE usecase, outside the scope of SOL001 v2.5.1
+|       #  type: tosca.datatypes.nfv.injectFile
+|       # required: false  #Aligned with ONAP R2 IM. it should be false.
+|     #meta_data: #Introduced from Beijing release, used for metadata attached to the VM or container, outside the scope of SOL001 v2.5.1
+|       # type: map 
+|       # entry_schema:
+|         # type: string 
+|       # required: false 
 |   capabilities:
 |     virtual_compute: 
 |       type: tosca.capabilities.nfv.VirtualCompute
+|       occurrences: [ 1, 1 ]
 |     virtual_binding: 
 |       type: tosca.capabilities.nfv.VirtualBindable
 |       occurrences: [1, UNBOUND]
-|     monitoring_parameter:     
-|       type: tosca.capabilities.nfv.Metric # this is not a very clear data structure enough to be coded, suggest to be annotated.
-|       occurrences: [0,UNBOUND]
 |   requirements:
 |     - virtual_storage:
 |         capability: tosca.capabilities.nfv.VirtualStorage
 |         relationship: tosca.relationships.nfv.Vdu.AttachedTo
-|         node: tosca.nodes.nfv.VDU.VirtualStorage
 |         occurences: [ 0, UNBOUNDED ]
-|   artifacts:    
-|     - sw_image:
-|         file:    
-|         type: tosca.artifacts.nfv.SwImage
 | 
 | 
-| **tosca.nodes.nfv.Vdu.VirtualStorage:** 
-|   derived_from: tosca.nodes.Root
-|   properties:
-|     #id:
-|       # node name
-|     type_of_storage:
-|       type: string
-|       constraints:
-|           - valid_values: [volume, object, root, block]
-|       required: true 
-|     size_of_storage:
-|       type: scalar-unit.size
-|       required: true
-|     vdu_storage_requirements: 
-|       type: map
-|       required: false
-|     rdma_enabled:
-|       type: boolean
-|       required: false
-|   capabilities:
-|     virtual_storage:
-|       type: tosca.capabilities.nfv.VirtualStorage
-|   artifacts:  
-|     - sw_image:
-|         file:       
-|         type: tosca.artifacts.Deployment.Image
-| #interfaces: # not needed for virtualstroage. it doesn't support cloudinit.
-| #	cloudinit:
-| #       type:tosca.interfaces.nfv.vdu.cloudinit
-| 
-| 
-| **tosca.nodes.nfv.Cp:**
-|   derived_from: tosca.nodes.Root 
+| **tosca.nodes.nfv.Vdu.VirtualBlockStorage:** 
+|     derived_from: tosca.nodes.Root
+|     description: This node type describes the specifications of requirements related to virtual block storage resources
 |     properties:
-|     layer_protocol:
-|       type:list
-|       entry_schema:
+|       virtual_block_storage_data:
+|         type: tosca.datatypes.nfv.VirtualBlockStorageData
+|         description: Describes the block storage characteristics.
+|         required: true
+|       sw_image_data:
+|         type: tosca.datatypes.nfv.SwImageData
+|         description: Defines information related to a SwImage artifact used by this Vdu.Compute node.
+|         required: false # property is required when the node template has an associated artifact of type tosca.artifacts.nfv.SwImage and not required otherwise 
+|     capabilities:
+|       virtual_storage:
+|         type: tosca.capabilities.nfv.VirtualStorage
+|         description: Defines the capabilities of virtual_storage.
+| 
+| 
+| **tosca.nodes.nfv.Vdu.VirtualObjectStorage:**
+|     derived_from: tosca.nodes.Root
+|     description: This node type describes the specifications of requirements related to virtual object storage resources
+|     properties:
+|       virtual_object_storage_data:
+|         type: tosca.datatypes.nfv.VirtualObjectStorageData
+|         description: Describes the object  storage characteristics.
+|         required: true
+|     capabilities:
+|       virtual_storage:
+|         type: tosca.capabilities.nfv.VirtualStorage
+|         description: Defines the capabilities of virtual_storage.
+|
+|
+| **tosca.nodes.nfv.Vdu.VirtualFileStorage:** 
+|     derived_from: tosca.nodes.Root
+|     description: This node type describes the specifications of requirements related to virtual file storage resources
+|     properties:
+|       virtual_file_storage_data:
+|         type: tosca.datatypes.nfv.VirtualFileStorageData
+|         description: Describes the file  storage characteristics.
+|         required: true
+|     capabilities:
+|       virtual_storage:
+|         type: tosca.capabilities.nfv.VirtualStorage
+|         description: Defines the capabilities of virtual_storage.
+|     requirements:
+|       - virtual_link:
+|           capability: tosca.capabilities.nfv.VirtualLinkable
+|           relationship: tosca.relationships.nfv.VirtualLinksTo
+|           #description: Describes the requirements for linking to virtual link
+|
+|
+| **tosca.nodes.nfv.Cp:**
+|     derived_from: tosca.nodes.Root 
+|     description:  Provides information regarding the purpose of the connection point 
+|     properties:
+|       layer_protocol:
+|         type:list
+|         description: Identifies which protocol the connection point uses for connectivity purposes 
+|         entry_schema:
+|           constraints:
+|            - valid_values: [ethernet, mpls, odu2, ipv4, ipv6, pseudo_wire ]
+|         required:true
+|       role: #Name in ETSI NFV IFA011 v0.7.3 cpRole
+|         type:string
+|         description: Identifies the role of the port in the context of the traffic flow patterns in the VNF or parent NS 
 |         constraints:
-|           - valid_values: [ethernet, mpls, odu2, ipv4, ipv6, pseudo_wire ]
-|       required:true
-|     role: #Name in ETSI NFV IFA011 v0.7.3 cpRole
-|       type:string
-|       constraints:
-|         - valid_values: [ root, leaf ]
-|       required:false
-|     description:
-|       type: string
-|       required: false
-|     protocol_data:
-|       type: list
-|       entry_schema:
-|         type: tosca.datatypes.nfv.CpProtocolData
-|       required:true
-|     trunk_mode:
-|       type: boolean
-|       required: true
-|     allowed_address_data: # Aligned with ONAP R2 Im.not defined in IFA011 v2.4.1 and SOL001 v0.6.0.                        
-|       type: tosca.datatypes.nfv.AddressData   # In the IM, it is a array, but here it is not a array. TBD.
-|       required: false
+|           - valid_values: [ root, leaf ]
+|         required:false
+|       description:
+|         type: string
+|         description: Provides human-readable information on the purpose of the connection point 
+|         required: false
+|       protocol:
+|         type: list
+|         description: Provides information on the addresses to be assigned to the connection point(s) instantiated from this Connection Point Descriptor 
+|         entry_schema:
+|           type: tosca.datatypes.nfv.CpProtocolData
+|         required:false
+|       trunk_mode:
+|         type: boolean
+|         description: Provides information about whether the CP instantiated from this Cp is in Trunk mode (802.1Q or other), When operating in "trunk mode", the Cp is capable of carrying traffic for several VLANs. Absence of this property implies that trunkMode is not configured for the Cp i.e. It is equivalent to boolean value "false". 
+|         required: false
+|       #allowed_address_data: # Introduced from Beijing release, align with resource IM, outside the scope of SOL001 v2.5.1                        
+|         type: tosca.datatypes.nfv.AddressData   # In the IM, it is a array, but here it is not a array. TBD.
+|         required: false
 | 
 | 
 | **tosca.nodes.nfv.VduCp:**
-|   derived_from: tosca.nodes.nfv.Cp
-|   properties:
-|     bitrate_requirement:
-|       type: integer
-|       required:false
-|     vnic_name: #  Aligned with ONAP R2 Im.not defined in IFA011 v2.4.1 and SOL001 v0.6.0. 
-|       type: string
-|       required:false
-|     vnic_order: # Aligned with ONAP R2 Im. not defined in IFA011 v2.4.1 and SOL001 v0.6.0. 
-|       type: integer
-|       required:false
-|     vnic_type: # Aligned with ONAP R2 Im. not defined in IFA011 v2.4.1 and SOL001 v0.6.0
-|       type: string
-| 	  constraints:
-|           - valid_values: [normal, macvtap, direct, baremetal, direct-physical, virtio-forwarder]
-|       required:false
-|     virtual_network_interface_requirements: 
-|       type: list
-|       entry_schema:
-|         type: VirtualNetworkInterfaceRequirements
-|       required:false
-|    # order:      #there is no this attribute in IM.
-|    #   type: integer
-|    #   required: false
-|    #   constraints:
-|    #     - greater_or_equal: 0
+|     derived_from: tosca.nodes.nfv.Cp
+|     description: describes network connectivity between a VNFC instance based on this VDU and an internal VL 
+|     properties:
+|       bitrate_requirement:
+|         type: integer  # in bits per second
+|         description: Bitrate requirement in bit per second on this connection point 
+|         required:false
+|         constraints:
+|           - greater_or_equal: 0
+|       virtual_network_interface_requirements: 
+|         type: list
+|         description: Specifies requirements on a virtual network interface realising the CPs instantiated from this CPD  
+|         entry_schema:
+|           type: tosca.datatypes.nfv.VirtualNetworkInterfaceRequirements
+|         required:false
+|       order:      
+|         type: integer
+|         description: The order of the NIC on the compute instance (e.g.eth2)
+|         required: false
+|         constraints:
+|           - greater_or_equal: 0
+|       vnic_type:
+|         type: string
+|         description: Describes the type of the virtual network interface realizing the CPs instantiated from this CPD
+|         required: false
+|         constraints:
+|           - valid_values: [ normal, virtio, direct-physical ] 
+|       #vnic_name: # Introduced from Beijing release, aligned with ONAP resource IM, outside the scope of SOL001 v2.5.1
+|       #  type: string
+|       #  required:false    
+|       requirements:
+|           - virtual_link:
+|             capability: tosca.capabilities.nfv.VirtualLinkable
+|             relationship: tosca.relationships.nfv.VirtualLinksTo
+|           - virtual_binding:
+|             capability: tosca.capabilities.nfv.VirtualBindable
+|             relationship: tosca.relationships.nfv.VirtualBindsTo
+|             node: tosca.nodes.nfv.Vdu.Compute
+| 
+|
+| **tosca.nodes.nfv.VnfExtCp:
+|     derived_from: tosca.nodes.nfv.Cp
+|     description: Describes a logical external connection point, exposed by the VNF enabling connection with an external Virtual Link
+|     properties:
+|       virtual_network_interface_requirements:
+|         type: list
+|         description: The actual virtual NIC requirements that is been assigned when instantiating the connection point
+|         required: false
+|         entry_schema:
+|           type: tosca.datatypes.nfv.VirtualNetworkInterfaceRequirements
 |     requirements:
-|         - virtual_link:
+|       - external_virtual_link:
 |           capability: tosca.capabilities.nfv.VirtualLinkable
 |           relationship: tosca.relationships.nfv.VirtualLinksTo
-|           node: tosca.nodes.nfv.VnfVirtualLink    
-|         - virtual_binding:
-|           capability: tosca.capabilities.nfv.VirtualBindable
-|           relationship: tosca.relationships.nfv.VirtualBindsTo
-|           node: tosca.nodes.nfv.Vdu.Compute
-| 
+|       - internal_virtual_link: #name in ETSI NFV IFA011 v0.7.3: intVirtualLinkDesc
+|           capability: tosca.capabilities.nfv.VirtualLinkable
+|           relationship: tosca.relationships.nfv.VirtualLinksTo
 | 
 | **tosca.nodes.nfv.VnfVirtualLink:**
-|   derived_from: tosca.nodes.Root
-|   properties:
-|     connectivity_type:
-|       type: tosca.datatypes.nfv.ConnectivityType
-|       required: true
-|     description:
-|       type: string
-|       required: false
-|     test_access:
-|       type: list
-|       entry_schema:
+|     derived_from: tosca.nodes.Root
+|     description: Describes the information about an internal VNF VL 
+|     properties:
+|       connectivity_type:
+|         type: tosca.datatypes.nfv.ConnectivityType
+|         description: Specifies the protocol exposed by the VL and the flow pattern supported by the VL 
+|         required: true
+|       description:
 |         type: string
-|       required: false
-|     vl_profile:
-|       type: tosca.datatypes.nfv.VlProfile
-|       required: true
-|   capabilities:
-|     monitoring_parameter:   # this is not a very clear data structure enough to be coded, suggest to be annotated.
-|       type: tosca.capabilities.nfv.Metric
-|       occurrences: [0,UNBOUND]
-|     virtual_linkable:
-|       type: tosca.capabilities.nfv.VirtualLinkable
+|         description: Provides human-readable information on the purpose of the VL 
+|         required: false
+|       test_access:
+|         type: list
+|         description: Test access facilities available on the VL 
+|         entry_schema:
+|           type: string
+|         required: false
+|       vl_profile:
+|         type: tosca.datatypes.nfv.VlProfile
+|         description: Defines additional data for the VL 
+|         required: true
+|       monitoring_parameters:
+|         type: list
+|         description: Describes monitoring parameters applicable to the VL
+|         required: false
+|         entry_schema:
+|           type: tosca.datatypes.nfv.VirtualLinkMonitoringParameter
+|     capabilities:
+|       virtual_linkable:
+|         type: tosca.capabilities.nfv.VirtualLinkable
 | 
 | 
 | **tosca.nodes.nfv.VNF:**
-|   derived_from: tosca.nodes.Root
-|   properties: 
-|     descriptor_id: # instead of vnfd_id
-|       type: string # GUID
-|       required: true
-|     descriptor_version: # instead of vnfd_version
-|       type: string
-|       required: true
-|     provider: # instead of vnf_provider
-|       type: string
-|       required: true
-|     product_name: # instead of vnf_product_name
-|       type: string
-|       required: true
-|     software_version: # instead of vnf_software_version
-|       type: string
-|       required: true
-|     product_info_name: # instead of vnf_product_info_name
-|       type: string
-|       required: false
-|     product_info_description: # instead of vnf_product_info_description
-|       type: string
-|       required: false
-|     vnfm_info:
-|       type: list
-|       entry_schema:
+|     derived_from: tosca.nodes.Root
+|     description: The generic abstract type from which all VNF specific abstract node types shall be derived to form, together with other node types, the TOSCA service template(s) representing the VNFD
+|     properties: 
+|       descriptor_id: # instead of vnfd_id
+|         type: string # GUID
+|         description: Globally unique identifier of the VNFD
+|         required: true
+|       descriptor_version: # instead of vnfd_version
 |         type: string
-|       required: true
-|     localization_languages:
-|       type: list
-|       entry_schema:
+|         description: Identifies the version of the VNFD
+|         required: true
+|       provider: # instead of vnf_provider
 |         type: string
-|       required: false
-|     default_localization_language:
-|       type: string
-|       required: false
-|     configurable_properties:
-|       type: tosca.datatypes.nfv.VnfConfigurableProperties
-|       required: false
-|     modifiable_attributes:
-|       type: tosca.datatypes.nfv.VnfInfoModifiableAttributes
-|       required: false  # true in IFA011, but all of members are false. Align with the IM, it is false
-|     flavour_id:
-|       type: string
-|       required: true  
-|     flavour_description:
-|       type: string
-|       required: true  
-|   capabilities:
-|     # monitoring_parameter:
-|       # modelled as ad hoc capabilities in the VNF node template
-|   requirements:
-|     - virtual_link:
-|         capability: tosca.capabilities.nfv.VirtualLinkable
-|         relationship: tosca.relationships.nfv.VirtualLinksTo
-|         node: tosca.nodes.nfv.VnfVirtualLink
-|         occurrences: [ 0, UNBOUNDED ]
-|   interfaces:
-|     Nfv:
-|       type: tosca.interfaces.nfv.vnf.lifecycle.Nfv
+|         description: Provider of the VNF and of the VNFD
+|         required: true
+|       product_name: # instead of vnf_product_name
+|         type: string
+|         description: Human readable name for the VNF Product
+|         required: true
+|       software_version: # instead of vnf_software_version
+|         type: string
+|         description: Software version of the VNF
+|         required: true
+|       product_info_name: # instead of vnf_product_info_name
+|         type: string
+|         description: Human readable name for the VNF Product 
+|         required: false
+|       product_info_description: # instead of vnf_product_info_description
+|         type: string
+|         description: Human readable description of the VNF Product
+|         required: false
+|       vnfm_info:
+|         type: list
+|         description: Identifies VNFM(s) compatible with the VNF
+|         entry_schema:
+|           type: string
+|         required: true
+|       localization_languages:
+|         type: list
+|         description: Information about localization languages of the VNF
+|         entry_schema:
+|           type: string#IETF RFC 5646 string
+|         required: false
+|       default_localization_language:
+|         type: string #IETF RFC 5646 string
+|         description: Default localization language that is instantiated if no information about selected localization language is available 
+|         required: false
+|       #configurable_properties:
+|         #type: tosca.datatypes.nfv.VnfConfigurableProperties
+|         #description: Describes the configurable properties of the VNF
+|         #required: false
+|         # derived types are expected to introduce configurable_properties 
+|         # with its type derived from
+|         # tosca.datatypes.nfv.VnfConfigurableProperties 
+|       #modifiable_attributes:
+|         #type: tosca.datatypes.nfv.VnfInfoModifiableAttributes
+|         #description: Describes the modifiable attributes of the VNF|       
+|         #required: false  
+|         # derived types are expected to introduce modifiable_attributes
+|         # with its type derived from
+|         # tosca.datatypes.nfv.VnfInfoModifiableAttributes
+|       lcm_operations_configuration:
+|         type: tosca.datatypes.nfv.VnfLcmOperationsConfiguration
+|         description: Describes the configuration parameters for the VNF LCM operations
+|         required: false
+|       monitoring_parameters:
+|         type: list
+|         entry_schema:
+|           type: tosca.datatypes.nfv.VnfMonitoringParameter
+|         description: Describes monitoring parameters applicable to the VNF.
+|         required: false  
+|       flavour_id:
+|         type: string
+|         description: Identifier of the Deployment Flavour within the VNFD
+|         required: true  
+|       flavour_description:
+|         type: string
+|         description: Human readable description of the DF
+|         required: true
+|       #vnf_profile:
+|         #  type: tosca.datatypes.nfv.VnfProfile
+|         #  description: Describes a profile for instantiating VNFs of a particular NS DF according to a specific VNFD and VNF DF
+|         #  required: false   
+|     requirements:
+|       - virtual_link:
+|           capability: tosca.capabilities.nfv.VirtualLinkable
+|           relationship: tosca.relationships.nfv.VirtualLinksTo
+|           occurrences: [ 0, 1 ]
+|   # Additional requirements shall be defined in the VNF specific node type (deriving from tosca.nodes.nfv.VNF) corresponding to NS virtual links that need to connect to VnfExtCps 
+|     interfaces:
+|       Vnflcm:
+|         type: tosca.interfaces.nfv.Vnflcm
 | 
