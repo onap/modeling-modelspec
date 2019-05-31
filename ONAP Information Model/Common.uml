@@ -797,6 +797,56 @@ NOTE: 	These attributes are used to control scaling boundaries.</body>
             <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
           </generalization>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AkO5gF0VEemiOP02o5T8tA" name="SelectionCriteria">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gog5YILoEemyVus8T4NvCQ" annotatedElement="_AkO5gF0VEemiOP02o5T8tA">
+            <body>SelectionCriteria finds descriptors and instances according to specific properties of those entities.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_h8AhkILoEemyVus8T4NvCQ" name="Id" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NPd54IMQEemIU81rY2FFFw" annotatedElement="_h8AhkILoEemyVus8T4NvCQ">
+              <body>Unique indentifier of this SelectionCriteria.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="SelectionCriteriaComposite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JOTcQILpEemyVus8T4NvCQ" annotatedElement="_A_9MMF0VEemiOP02o5T8tA">
+            <body>A SelectionCriteria that is an aggregation of multi9ple filters.   Agregation can e for example AND or OR logical operations.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lo6SIILdEemyVus8T4NvCQ" name="compositeOperator" type="_rMIDEILdEemyVus8T4NvCQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LtI2MILpEemyVus8T4NvCQ" annotatedElement="_lo6SIILdEemyVus8T4NvCQ">
+              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_09MBkILqEemyVus8T4NvCQ">
+              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BZSSMF0VEemiOP02o5T8tA" name="SelectionCriteriaAtomic">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_r78RQILvEemyVus8T4NvCQ" annotatedElement="_BZSSMF0VEemiOP02o5T8tA">
+            <body>A simple (atomic) selection criteria that holds a specific attribute comparision expression.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pcSX8ILvEemyVus8T4NvCQ" annotatedElement="_U92FMILsEemyVus8T4NvCQ">
+              <body>Name of compared parameter or attribute.&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VorK4ILsEemyVus8T4NvCQ" name="operator" type="_1kyswILtEemyVus8T4NvCQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3DfNcILvEemyVus8T4NvCQ" annotatedElement="_VorK4ILsEemyVus8T4NvCQ">
+              <body>Comparison operator, e.g. equal, less than, greater or etc.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W1j0wILsEemyVus8T4NvCQ" name="value">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7-STgILvEemyVus8T4NvCQ" annotatedElement="_W1j0wILsEemyVus8T4NvCQ">
+              <body>Compared value (can be a name of a parameter in referenced class).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_vV0jwES0EeiVGPeZpaYNtQ" name="VirtualLinkHasLinkPort" memberEnd="_vV1x4kS0EeiVGPeZpaYNtQ _vWZykES0EeiVGPeZpaYNtQ">
@@ -1403,6 +1453,28 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_rMIDEILdEemyVus8T4NvCQ" name="CompositeOperator">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zobhAILdEemyVus8T4NvCQ" name="AND"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1lXHwILdEemyVus8T4NvCQ" name="OR"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2r4q8ILdEemyVus8T4NvCQ" name="XOR"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_1kyswILtEemyVus8T4NvCQ" name="Operator">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_65Yy4ILtEemyVus8T4NvCQ" name="MORETHAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8E0EMILtEemyVus8T4NvCQ" name="LESSTHAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8_vbYILtEemyVus8T4NvCQ" name="EQUAL"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_e6hnYIMFEemyVus8T4NvCQ" name=" ConfigurableProperties">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_sg3r0IMGEemyVus8T4NvCQ" annotatedElement="_e6hnYIMFEemyVus8T4NvCQ">
+            <body>Dynamic, configurable properites of some entity.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1pWIsIMFEemyVus8T4NvCQ" name="properties" type="_vxJ9ADafEei23_xWdimG9w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_w5USwIMGEemyVus8T4NvCQ" annotatedElement="_1pWIsIMFEemyVus8T4NvCQ">
+              <body>The specific configurable properties of some entity.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7YMh4IMFEemyVus8T4NvCQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7YVEwIMFEemyVus8T4NvCQ" value="*"/>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -4238,8 +4310,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_z6bucBnLEemlxOdMFpUVvQ" base_Class="_z6bHYBnLEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n-rpsBpxEemOGejS9lsDjA" base_StructuralFeature="_n-rCoBpxEemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_phcc8BpxEemOGejS9lsDjA" base_StructuralFeature="_phb14BpxEemOGejS9lsDjA"/>
-  <OpenModel_Profile:Experimental xmi:id="_we6I4BpyEemOGejS9lsDjA" base_Element="__F4vsBnKEemlxOdMFpUVvQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_zKQU0BpyEemOGejS9lsDjA" base_Element="_z6bHYBnLEemlxOdMFpUVvQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_tRSSIBp5EemOGejS9lsDjA" base_StructuralFeature="_tRRrEBp5EemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_gBaFkRp7EemOGejS9lsDjA" base_Class="_gBaFkBp7EemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_kO29cRp7EemOGejS9lsDjA" base_StructuralFeature="_kO29cBp7EemOGejS9lsDjA"/>
@@ -4646,12 +4716,9 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_2HUzYDqyEemOl5OHBoqS_w" base_Class="_2HUMUDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_4vw1QTqyEemOl5OHBoqS_w" base_Class="_4vw1QDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_8fZIsDqyEemOl5OHBoqS_w" base_Class="_8fYhoDqyEemOl5OHBoqS_w"/>
-  <OpenModel_Profile:Experimental xmi:id="_KH6-cDq0EemOl5OHBoqS_w" base_Element="_4vw1QDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:Reference xmi:id="_KIu2wDq0EemOl5OHBoqS_w" base_Element="_4vw1QDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
-  <OpenModel_Profile:Experimental xmi:id="_MWfHwDq0EemOl5OHBoqS_w" base_Element="_2HUMUDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:Reference xmi:id="_MXZtwDq0EemOl5OHBoqS_w" base_Element="_2HUMUDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
   <OpenModel_Profile:Reference xmi:id="_QFODUDq0EemOl5OHBoqS_w" base_Element="_z6bHYBnLEemlxOdMFpUVvQ" reference="From TMF SID"/>
-  <OpenModel_Profile:Experimental xmi:id="_SepY0Dq0EemOl5OHBoqS_w" base_Element="_8fYhoDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:Reference xmi:id="_SfdRIDq0EemOl5OHBoqS_w" base_Element="_8fYhoDqyEemOl5OHBoqS_w" reference="From the TMF SID"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_e2_dUTxbEemSHu2qGsweWg" base_Class="_e2_dUDxbEemSHu2qGsweWg"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_iaJbADxbEemSHu2qGsweWg" base_Class="_iaIz8DxbEemSHu2qGsweWg"/>
@@ -4696,19 +4763,13 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_sXgb4FZNEempS4TbYDJLLQ" base_Element="_E4CakDYREemvTc8tEY2xig"/>
   <OpenModel_Profile:Preliminary xmi:id="_wzCzEFZNEempS4TbYDJLLQ" base_Element="_Td26cOLNEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:Preliminary xmi:id="_zIfAcFZNEempS4TbYDJLLQ" base_Element="_T6QikOLNEeiKy5JVrA0UGA"/>
-  <OpenModel_Profile:Experimental xmi:id="_lWNH0FcHEemLJovD_F1O1A" base_Element="_n-rCoBpxEemOGejS9lsDjA"/>
-  <OpenModel_Profile:Experimental xmi:id="_mht4sFcHEemLJovD_F1O1A" base_Element="_phb14BpxEemOGejS9lsDjA"/>
-  <OpenModel_Profile:Experimental xmi:id="_ngpmIFcHEemLJovD_F1O1A" base_Element="_tRRrEBp5EemOGejS9lsDjA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XUm3gFcWEemLJovD_F1O1A" base_StructuralFeature="_XUmQcFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Z1QPUVcWEemLJovD_F1O1A" base_StructuralFeature="_Z1QPUFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:Experimental xmi:id="_BrI_QFcXEemLJovD_F1O1A" base_Element="_XUmQcFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:Experimental xmi:id="_DXRw8FcXEemLJovD_F1O1A" base_Element="_Z1QPUFcWEemLJovD_F1O1A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_URSToVcaEemLJovD_F1O1A" base_StructuralFeature="_URSToFcaEemLJovD_F1O1A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_f6Gw4VcaEemLJovD_F1O1A" base_StructuralFeature="_f6Gw4FcaEemLJovD_F1O1A"/>
-  <OpenModel_Profile:Experimental xmi:id="_rFCYQFcaEemLJovD_F1O1A" base_Element="_URSToFcaEemLJovD_F1O1A"/>
-  <OpenModel_Profile:Experimental xmi:id="_sCVG8FcaEemLJovD_F1O1A" base_Element="_f6Gw4FcaEemLJovD_F1O1A"/>
   <OpenModel_Profile:Preliminary xmi:id="_WCfLAFrJEem07dac9irJSQ" base_Element="_7MZssOwXEei7-e9MrPJW7Q"/>
-  <OpenModel_Profile:Experimental xmi:id="_Y0_H0FrJEem07dac9irJSQ" base_Element="_utCzUDX1EemvTc8tEY2xig"/>
   <OpenModel_Profile:Preliminary xmi:id="_pvzDIFrJEem07dac9irJSQ" base_Element="_QjAw8DFQEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Preliminary xmi:id="_sB-hIFrJEem07dac9irJSQ" base_Element="_RDwtkDFQEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Experimental xmi:id="_Y_0CUFrKEem07dac9irJSQ" base_Element="_UVWO4CYzEemRA_CB-n5OfQ"/>
@@ -4719,9 +4780,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_eWB_IGEXEemButgjVWb0qQ" base_Class="_eV_i4GEXEemButgjVWb0qQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_BKBigGEYEemButgjVWb0qQ" base_StructuralFeature="_BKA7cGEYEemButgjVWb0qQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_CdZO4WEYEemButgjVWb0qQ" base_StructuralFeature="_CdZO4GEYEemButgjVWb0qQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_Xy5z4GEYEemButgjVWb0qQ" base_Element="_eV_i4GEXEemButgjVWb0qQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_Zq_W4GEYEemButgjVWb0qQ" base_Element="_BKA7cGEYEemButgjVWb0qQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_bLjxwGEYEemButgjVWb0qQ" base_Element="_CdZO4GEYEemButgjVWb0qQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1lMQkWEbEemButgjVWb0qQ" base_StructuralFeature="_1lMQkGEbEemButgjVWb0qQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1lOFwWEbEemButgjVWb0qQ" base_StructuralFeature="_1lOFwGEbEemButgjVWb0qQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3p3eEGEbEemButgjVWb0qQ" base_StructuralFeature="_3p23AmEbEemButgjVWb0qQ"/>
@@ -4820,4 +4878,29 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_OYM80HaJEemQatxXK-x5hg" base_Element="_I79lEB8-EemJTaeYhZuDRA"/>
   <OpenModel_Profile:Preliminary xmi:id="_SOM-AHaJEemQatxXK-x5hg" base_Element="_TTf2EB89EemJTaeYhZuDRA"/>
   <OpenModel_Profile:Preliminary xmi:id="_a31GQHaJEemQatxXK-x5hg" base_Element="_6TxekB87EemJTaeYhZuDRA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_AbCe4IGAEemr-LDp1evzdw" base_Element="__F4vsBnKEemlxOdMFpUVvQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_DZ6DwIGAEemr-LDp1evzdw" base_Element="_n-rCoBpxEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_GrV_UIGAEemr-LDp1evzdw" base_Element="_phb14BpxEemOGejS9lsDjA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_I4HY4IGAEemr-LDp1evzdw" base_Element="_tRRrEBp5EemOGejS9lsDjA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_MjLVYIGAEemr-LDp1evzdw" base_Element="_eV_i4GEXEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_QAqI4IGAEemr-LDp1evzdw" base_Element="_BKA7cGEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_SO5iEIGAEemr-LDp1evzdw" base_Element="_CdZO4GEYEemButgjVWb0qQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_UwCpIIGAEemr-LDp1evzdw" base_Element="_z6bHYBnLEemlxOdMFpUVvQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_XlS_AIGAEemr-LDp1evzdw" base_Element="_URSToFcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Zt8GgIGAEemr-LDp1evzdw" base_Element="_f6Gw4FcaEemLJovD_F1O1A"/>
+  <OpenModel_Profile:Preliminary xmi:id="_cIePQIGAEemr-LDp1evzdw" base_Element="_4vw1QDqyEemOl5OHBoqS_w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_e7MOgIGAEemr-LDp1evzdw" base_Element="_2HUMUDqyEemOl5OHBoqS_w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_hp5QcIGAEemr-LDp1evzdw" base_Element="_8fYhoDqyEemOl5OHBoqS_w"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Bz2aAIGCEemr-LDp1evzdw" base_Element="_utCzUDX1EemvTc8tEY2xig"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_AkO5gV0VEemiOP02o5T8tA" base_Class="_AkO5gF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Experimental xmi:id="_8GRFcILcEemyVus8T4NvCQ" base_Element="_AkO5gF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_A_9MMV0VEemiOP02o5T8tA" base_Class="_A_9MMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Experimental xmi:id="_0kL0EILcEemyVus8T4NvCQ" base_Element="_A_9MMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_BZSSMV0VEemiOP02o5T8tA" base_Class="_BZSSMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Experimental xmi:id="_1kpykILcEemyVus8T4NvCQ" base_Element="_BZSSMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Experimental xmi:id="_5XA0cILdEemyVus8T4NvCQ" base_Element="_rMIDEILdEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_AFDmgILuEemyVus8T4NvCQ" base_Element="_1kyswILtEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_ipP74IMFEemyVus8T4NvCQ" base_Element="_e6hnYIMFEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1pWvwIMFEemyVus8T4NvCQ" base_StructuralFeature="_1pWIsIMFEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Experimental xmi:id="__5dtoIMFEemyVus8T4NvCQ" base_Element="_1pWIsIMFEemyVus8T4NvCQ"/>
 </xmi:XMI>
