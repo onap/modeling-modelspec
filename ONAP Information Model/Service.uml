@@ -464,24 +464,17 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ekq20F0aEemiOP02o5T8tA" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_QdpXUF0XEemiOP02o5T8tA" name="ServiceCompositeDescriptorHasFilter" memberEnd="_QdpXU10XEemiOP02o5T8tA _QdpXV10XEemiOP02o5T8tA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QdpXUV0XEemiOP02o5T8tA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QdpXUl0XEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_QdpXV10XEemiOP02o5T8tA" name="servicecompositedescriptor" type="_7SrB0D0VEeiWMf5FLWfdLA" association="_QdpXUF0XEemiOP02o5T8tA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W-sNAF0YEemiOP02o5T8tA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W-_H8F0YEemiOP02o5T8tA" value="*"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_J_zUsF0YEemiOP02o5T8tA" name="FilterCompositeComprisedOfFilter" memberEnd="_J_9Fsl0YEemiOP02o5T8tA _J_9Ftl0YEemiOP02o5T8tA">
+      <packagedElement xmi:type="uml:Association" xmi:id="_J_zUsF0YEemiOP02o5T8tA" name="SelectionCriteriaCompositeComprisedOfSelectionCriteria" memberEnd="_J_9Fsl0YEemiOP02o5T8tA _J_9Ftl0YEemiOP02o5T8tA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J_9FsF0YEemiOP02o5T8tA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J_9FsV0YEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Ftl0YEemiOP02o5T8tA" name="filter" type="_AkO5gF0VEemiOP02o5T8tA" aggregation="shared" association="_J_zUsF0YEemiOP02o5T8tA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Ftl0YEemiOP02o5T8tA" name="filter" aggregation="shared" association="_J_zUsF0YEemiOP02o5T8tA">
+          <type xmi:type="uml:Class" href="Common.uml#_AkO5gF0VEemiOP02o5T8tA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmAa0F0YEemiOP02o5T8tA" value="2"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmJkwF0YEemiOP02o5T8tA" value="*"/>
         </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Fsl0YEemiOP02o5T8tA" name="filtercomposite" type="_A_9MMF0VEemiOP02o5T8tA" association="_J_zUsF0YEemiOP02o5T8tA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Fsl0YEemiOP02o5T8tA" name="filtercomposite" association="_J_zUsF0YEemiOP02o5T8tA">
+          <type xmi:type="uml:Class" href="Common.uml#_A_9MMF0VEemiOP02o5T8tA"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J_9FtF0YEemiOP02o5T8tA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J_9FtV0YEemiOP02o5T8tA" value="*"/>
         </ownedEnd>
@@ -510,6 +503,21 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_ehLI8CC9Eemw1L3J4dNy4w">
         <body>Do we need this diagram?</body>
       </ownedComment>
+      <packagedElement xmi:type="uml:Association" xmi:id="_kmmEQIMDEemyVus8T4NvCQ" name="DesignEntityHasSelectionCriteria" memberEnd="_kmpHkIMDEemyVus8T4NvCQ _kmpuoIMDEemyVus8T4NvCQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kmn5cIMDEemyVus8T4NvCQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kmn5cYMDEemyVus8T4NvCQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_kmpHkIMDEemyVus8T4NvCQ" name="designentity" association="_kmmEQIMDEemyVus8T4NvCQ">
+          <type xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7KP3YIMDEemyVus8T4NvCQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Kl1oIMDEemyVus8T4NvCQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_kmpuoIMDEemyVus8T4NvCQ" name="selectioncriteria" association="_kmmEQIMDEemyVus8T4NvCQ">
+          <type xmi:type="uml:Class" href="Common.uml#_AkO5gF0VEemiOP02o5T8tA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8VoFYIMDEemyVus8T4NvCQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WC8IIMDEemyVus8T4NvCQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces">
       <packagedElement xmi:type="uml:Package" xmi:id="_-6ecYEYpEem7INgoaq_j-g" name="Interfaces"/>
@@ -579,6 +587,9 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
         <ownedComment xmi:type="uml:Comment" xmi:id="_R35GwD0MEeiWMf5FLWfdLA" annotatedElement="_Jvy-QD0MEeiWMf5FLWfdLA">
           <body>ServiceDescriptor is used to model the design time representation of a service. </body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_JFlw4IMEEemyVus8T4NvCQ">
+          <general xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_biWkcD0NEeiWMf5FLWfdLA" name="serviceInvariantId" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_nieHYD0NEeiWMf5FLWfdLA" annotatedElement="_biWkcD0NEeiWMf5FLWfdLA">
             <body> Constant identifier of the service model.</body>
@@ -643,11 +654,23 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZzkacJDrEei9Vqs7Ti8Wxg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zzm2sJDrEei9Vqs7Ti8Wxg" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_E2FYoIMGEemyVus8T4NvCQ" name="configurableProperties">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_f4O54IMSEemIU81rY2FFFw" annotatedElement="_E2FYoIMGEemyVus8T4NvCQ">
+            <body>Describes the configurable properties of the service.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_e6hnYIMFEemyVus8T4NvCQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YP8JQIMGEemyVus8T4NvCQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQF6QIMGEemyVus8T4NvCQ" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_cnoqID0QEeiWMf5FLWfdLA" annotatedElement="_HFfXUD0QEeiWMf5FLWfdLA">
           <body>ServiceInstance is used to model the run time representation of a service. </body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_xnyJAIMLEemyVus8T4NvCQ">
+          <general xmi:type="uml:Class" href="Common.uml#_0Zik0DFPEemw1_Ys6rcLWw"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mDZZ8D0QEeiWMf5FLWfdLA" name="serviceInstanceId" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_uP_n8D0QEeiWMf5FLWfdLA" annotatedElement="_mDZZ8D0QEeiWMf5FLWfdLA">
             <body>Uniquely identifies this instance of a service.</body>
@@ -722,10 +745,6 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           <type xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qdIu9TJ0EembsLjrwaSXHQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qdIu9jJ0EembsLjrwaSXHQ" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_QdpXU10XEemiOP02o5T8tA" name="filter" type="_AkO5gF0VEemiOP02o5T8tA" association="_QdpXUF0XEemiOP02o5T8tA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QdpXVV0XEemiOP02o5T8tA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QdpXVl0XEemiOP02o5T8tA" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_mrJV8In9EeiOe-BKGdv_Yg" name="ServiceOrder">
@@ -1285,13 +1304,6 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnGZkUS4EeiVGPeZpaYNtQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_AkO5gF0VEemiOP02o5T8tA" name="Filter"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="FilterComposite">
-        <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_BZSSMF0VEemiOP02o5T8tA" name="FilterAtomic">
-        <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProfile">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XBqI010VEemiOP02o5T8tA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_XBqI0F0VEemiOP02o5T8tA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA"/>
@@ -1701,15 +1713,42 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_Q5paQFoLEemSNe5QiI5UBQ" base_Element="_Lvny4MDgEeiebIKjAGZWdA"/>
   <OpenModel_Profile:Preliminary xmi:id="_xyntQFrNEem07dac9irJSQ" base_Element="_IdqxoI9WEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:Preliminary xmi:id="_1OLh4F0BEemiOP02o5T8tA" base_Element="_1Rt9wPL4EeiazPylpq3fUA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_AkO5gV0VEemiOP02o5T8tA" base_Class="_AkO5gF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_A_9MMV0VEemiOP02o5T8tA" base_Class="_A_9MMF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_BZSSMV0VEemiOP02o5T8tA" base_Class="_BZSSMF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_EwCLkV0VEemiOP02o5T8tA" base_Class="_EwCLkF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_FEKBcV0VEemiOP02o5T8tA" base_Class="_FEKBcF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI1F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI010VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI2F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI110VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_QdpXVF0XEemiOP02o5T8tA" base_StructuralFeature="_QdpXU10XEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_QdpXWF0XEemiOP02o5T8tA" base_StructuralFeature="_QdpXV10XEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Fs10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Fsl0YEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Ft10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Ftl0YEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lpEDIILdEemyVus8T4NvCQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_lo6SIILdEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_h8AhkYLoEemyVus8T4NvCQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_h8AhkILoEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Experimental xmi:id="_smVWQILoEemyVus8T4NvCQ">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_h8AhkILoEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:Experimental>
+  <ActionLanguage:TextualRepresentation xmi:id="_093-EILqEemyVus8T4NvCQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty">
+    <base_Comment xmi:type="uml:Comment" href="Common.uml#_09MBkILqEemyVus8T4NvCQ"/>
+  </ActionLanguage:TextualRepresentation>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_U92FMYLsEemyVus8T4NvCQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_U92FMILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VorK4YLsEemyVus8T4NvCQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_VorK4ILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_W1j0wYLsEemyVus8T4NvCQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_W1j0wILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Experimental xmi:id="_GGe9cILuEemyVus8T4NvCQ">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_U92FMILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:Experimental>
+  <OpenModel_Profile:Experimental xmi:id="_G_vgsILuEemyVus8T4NvCQ">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_VorK4ILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:Experimental>
+  <OpenModel_Profile:Experimental xmi:id="_H_r6wILuEemyVus8T4NvCQ">
+    <base_Element xmi:type="uml:Property" href="Common.uml#_W1j0wILsEemyVus8T4NvCQ"/>
+  </OpenModel_Profile:Experimental>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E2F_sIMGEemyVus8T4NvCQ" base_StructuralFeature="_E2FYoIMGEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_QCAegIMGEemyVus8T4NvCQ" base_Element="_E2FYoIMGEemyVus8T4NvCQ"/>
 </xmi:XMI>
