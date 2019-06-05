@@ -518,6 +518,20 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WC8IIMDEemyVus8T4NvCQ" value="*"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_pyyJ0Id4Eemz_I38RrvOQg" name="ServiceLcmEvent">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0Yd4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0od4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ04d4Eemz_I38RrvOQg" name="EVENT_START_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1Id4Eemz_I38RrvOQg" name="EVENT_END_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1Yd4Eemz_I38RrvOQg" name="EVENT_START_TERMINATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1od4Eemz_I38RrvOQg" name="EVENT_END_TERMINATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ14d4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2Id4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2Yd4Eemz_I38RrvOQg" name="EnumerationLiteral9"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2od4Eemz_I38RrvOQg" name="EnumerationLiteral10"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ24d4Eemz_I38RrvOQg" name="EnumerationLiteral11"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ3Id4Eemz_I38RrvOQg" name="EnumerationLiteral12"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces">
       <packagedElement xmi:type="uml:Package" xmi:id="_-6ecYEYpEem7INgoaq_j-g" name="Interfaces"/>
@@ -663,6 +677,20 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YP8JQIMGEemyVus8T4NvCQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQF6QIMGEemyVus8T4NvCQ" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sekREIdsEem5i7slCUMe6w" name="isShared">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WZSfMIdwEem5i7slCUMe6w" annotatedElement="_sekREIdsEem5i7slCUMe6w">
+            <body>Describe whether this service descriptor is shared or not in the service design. </body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_e7RHUIdwEem5i7slCUMe6w" name="lifecycleManagementScript" type="_QsPsoF0aEemiOP02o5T8tA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_wRl58IdwEem5i7slCUMe6w" annotatedElement="_e7RHUIdwEem5i7slCUMe6w">
+            <body>Includes a list of events and corresponding management scripts performed for the&#xD;
+Service.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fBfcYId2Eemz_I38RrvOQg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHVlsId2Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_cnoqID0QEeiWMf5FLWfdLA" annotatedElement="_HFfXUD0QEeiWMf5FLWfdLA">
@@ -716,6 +744,18 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
             <body>Describe NS instance staus: instantiating(creating the Networek Service instance), active(the existed Network Service instance is under using), terminating(the existed Network Service instance stops using) or etc(healing and other possible status). </body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OmeeoId6Eemz_I38RrvOQg" name="instanceSharingNumber">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6hlXgId6EemlroDdeOKzBQ" annotatedElement="_OmeeoId6Eemz_I38RrvOQg">
+            <body>Record the using number by multiple services. This attribute can be used when an service instance is prepared to be deleted, the detected number will help to find how many ongoing services is reusing this instance. If number is more than 1, it shows this is reusing by other service, otherwise it can be deleted directly. </body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFOEkId6Eemz_I38RrvOQg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFULMId6Eemz_I38RrvOQg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_O6BswId6Eemz_I38RrvOQg" name="instanceProfile" type="_Q7cmQF0aEemiOP02o5T8tA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RIQpcId7EemlroDdeOKzBQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RKvVsId7EemlroDdeOKzBQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7SrB0D0VEeiWMf5FLWfdLA" name="ServiceCompositeDescriptor">
@@ -980,6 +1020,9 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
           <type xmi:type="uml:Class" href="Resource.uml#_hZfC0DEkEemRSoIWRX3jNw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-s0pdTJ2Eem5adcA1c6ckw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-s0pdjJ2Eem5adcA1c6ckw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UD9eMId-EemlroDdeOKzBQ" name="availableInstanceNumber">
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
@@ -1310,12 +1353,6 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBqI1l0VEemiOP02o5T8tA" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_FEKBcF0VEemiOP02o5T8tA" name="SliceProfile">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_YYZtwF0fEemVzafoXlq_Gg" annotatedElement="_FEKBcF0VEemiOP02o5T8tA">
-          <body> </body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_H61BsF0XEemiOP02o5T8tA" general="_EwCLkF0VEemiOP02o5T8tA"/>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoxzzEEeiWMf5FLWfdLA" name="VirtualLinkToLevelMapping">
@@ -1392,12 +1429,72 @@ If null, then represents to the end of time&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_L4ZFIPL4EeiazPylpq3fUA" name="nsdId"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_PXXtcPL4EeiazPylpq3fUA" name="productName"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_Qcc9IF0aEemiOP02o5T8tA" name="ServiceConfigurableProperties"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_QsPsoF0aEemiOP02o5T8tA" name="ServiceLifecycleManagementScript"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProfile"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gFg8sF0aEemiOP02o5T8tA" name="ServiceLcmEvent"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gaPPgF0aEemiOP02o5T8tA" name="CompositeOperator"/>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_grhz0F0aEemiOP02o5T8tA" name="Operator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_QsPsoF0aEemiOP02o5T8tA" name="ServiceLifecycleManagementScript">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_hM4AwId0Eemz_I38RrvOQg" annotatedElement="_QsPsoF0aEemiOP02o5T8tA">
+          <body>The LifeCycleManagementScript information element specifies a script for the service.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DW2osIdzEemz_I38RrvOQg" name="event" type="_gFg8sF0aEemiOP02o5T8tA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_vQxHYId2Eemz_I38RrvOQg" annotatedElement="_DW2osIdzEemz_I38RrvOQg">
+            <body>Describes Service lifecycle event(s) or an external stimulus detected on an orchestrator &#xD;
+reference point.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_656UwId2Eemz_I38RrvOQg">
+            <body>Describes Service lifecycle event(s) or an external stimulus detected on an orchestrator &#xD;
+reference point.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_imXt0Id1Eemz_I38RrvOQg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqwekId1Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VmInIId0Eemz_I38RrvOQg" name="lcmTransitionEvent">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yPuL0Id2Eemz_I38RrvOQg" annotatedElement="_VmInIId0Eemz_I38RrvOQg">
+            <body>Describes the transition Service lifecycle event(s) that cannot be mapped to any of the enumerated values defined for the event attribute.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zH1VAId1Eemz_I38RrvOQg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zIT2IId1Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XaAYgId0Eemz_I38RrvOQg" name="script">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0xiBQId2Eemz_I38RrvOQg" annotatedElement="_XaAYgId0Eemz_I38RrvOQg">
+            <body>Includes a Service LCM script (e.g. written in a DSL) triggered to react to one of the events listed in the event attribute.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_aBy6IId0Eemz_I38RrvOQg" name="scriptDsl">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3XZQQId2Eemz_I38RrvOQg" annotatedElement="_aBy6IId0Eemz_I38RrvOQg">
+            <body>Defines the domain specific language (i.e. the type) of script that is provided. Types of scripts could include bash, python, etc.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_neWwcId1Eemz_I38RrvOQg" name="scriptInput">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_5nIeQId2Eemz_I38RrvOQg" annotatedElement="_neWwcId1Eemz_I38RrvOQg">
+            <body>Array of KVP requirements with the key as the parameter name and the value as the parameter that need to be passed as an input to the script. Note: The scriptInput values are passed to the scripts in addition to the parameters received in the operation invocation request or indicator value change.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__sTiMId1Eemz_I38RrvOQg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__sr8sId1Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProfile">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Kq0r8Id7EemlroDdeOKzBQ" name="instanceProperties">
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hf2i8Id7EemlroDdeOKzBQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3GlUId7EemlroDdeOKzBQ" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_gFg8sF0aEemiOP02o5T8tA" name="ServiceLcmEvent">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Dk8AoId2Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EEH3AId2Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EiQkgId2Eemz_I38RrvOQg" name="EVENT_START_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Fq3yYId2Eemz_I38RrvOQg" name="EVENT_END_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GUKnAId2Eemz_I38RrvOQg" name="EVENT_START_TERMINATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_H1LGwId2Eemz_I38RrvOQg" name="EVENT_END_TERMINATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cZl7IId4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cymRAId4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dLlYwId4Eemz_I38RrvOQg" name="EVENT_START_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dlPO4Id4Eemz_I38RrvOQg" name="EVENT_END_CONFIGURATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_i4w-AId4Eemz_I38RrvOQg" name="EVENT_START_TERMINATION"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jRV2EId4Eemz_I38RrvOQg" name="EVENT_END_TERMINATION"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BdJm0DksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -1714,7 +1811,6 @@ If null, then represents to the end of time&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_xyntQFrNEem07dac9irJSQ" base_Element="_IdqxoI9WEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:Preliminary xmi:id="_1OLh4F0BEemiOP02o5T8tA" base_Element="_1Rt9wPL4EeiazPylpq3fUA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_EwCLkV0VEemiOP02o5T8tA" base_Class="_EwCLkF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_FEKBcV0VEemiOP02o5T8tA" base_Class="_FEKBcF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI1F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI010VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI2F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI110VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Fs10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Fsl0YEemiOP02o5T8tA"/>
@@ -1751,4 +1847,21 @@ If null, then represents to the end of time&#xD;
   </OpenModel_Profile:Experimental>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E2F_sIMGEemyVus8T4NvCQ" base_StructuralFeature="_E2FYoIMGEemyVus8T4NvCQ"/>
   <OpenModel_Profile:Experimental xmi:id="_QCAegIMGEemyVus8T4NvCQ" base_Element="_E2FYoIMGEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_seqXsIdsEem5i7slCUMe6w" base_StructuralFeature="_sekREIdsEem5i7slCUMe6w"/>
+  <OpenModel_Profile:Experimental xmi:id="_-Gmz4IduEem5i7slCUMe6w" base_Element="_sekREIdsEem5i7slCUMe6w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_e7RHUYdwEem5i7slCUMe6w" base_StructuralFeature="_e7RHUIdwEem5i7slCUMe6w"/>
+  <OpenModel_Profile:Experimental xmi:id="_ikROUIdwEem5i7slCUMe6w" base_Element="_e7RHUIdwEem5i7slCUMe6w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DW2osYdzEemz_I38RrvOQg" base_StructuralFeature="_DW2osIdzEemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VmInIYd0Eemz_I38RrvOQg" base_StructuralFeature="_VmInIId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XaAYgYd0Eemz_I38RrvOQg" base_StructuralFeature="_XaAYgId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aBy6IYd0Eemz_I38RrvOQg" base_StructuralFeature="_aBy6IId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_onexIId0Eemz_I38RrvOQg" base_Element="_QsPsoF0aEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_neWwcYd1Eemz_I38RrvOQg" base_StructuralFeature="_neWwcId1Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_LJq9YId2Eemz_I38RrvOQg" base_Element="_gFg8sF0aEemiOP02o5T8tA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_66AbYId2Eemz_I38RrvOQg" base_Comment="_656UwId2Eemz_I38RrvOQg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:Experimental xmi:id="_py4Qeod4Eemz_I38RrvOQg" base_Element="_pyyJ0Id4Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OmeeoYd6Eemz_I38RrvOQg" base_StructuralFeature="_OmeeoId6Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_O6BswYd6Eemz_I38RrvOQg" base_StructuralFeature="_O6BswId6Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Kq6ykId7EemlroDdeOKzBQ" base_StructuralFeature="_Kq0r8Id7EemlroDdeOKzBQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UEDk0Id-EemlroDdeOKzBQ" base_StructuralFeature="_UD9eMId-EemlroDdeOKzBQ"/>
 </xmi:XMI>
