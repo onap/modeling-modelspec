@@ -464,21 +464,6 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ekq20F0aEemiOP02o5T8tA" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_J_zUsF0YEemiOP02o5T8tA" name="SelectionCriteriaCompositeComprisedOfSelectionCriteria" memberEnd="_J_9Fsl0YEemiOP02o5T8tA _J_9Ftl0YEemiOP02o5T8tA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J_9FsF0YEemiOP02o5T8tA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J_9FsV0YEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Ftl0YEemiOP02o5T8tA" name="filter" aggregation="shared" association="_J_zUsF0YEemiOP02o5T8tA">
-          <type xmi:type="uml:Class" href="Common.uml#_AkO5gF0VEemiOP02o5T8tA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cmAa0F0YEemiOP02o5T8tA" value="2"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cmJkwF0YEemiOP02o5T8tA" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_J_9Fsl0YEemiOP02o5T8tA" name="filtercomposite" association="_J_zUsF0YEemiOP02o5T8tA">
-          <type xmi:type="uml:Class" href="Common.uml#_A_9MMF0VEemiOP02o5T8tA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J_9FtF0YEemiOP02o5T8tA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J_9FtV0YEemiOP02o5T8tA" value="*"/>
-        </ownedEnd>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
@@ -503,21 +488,6 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_ehLI8CC9Eemw1L3J4dNy4w">
         <body>Do we need this diagram?</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Association" xmi:id="_kmmEQIMDEemyVus8T4NvCQ" name="DesignEntityHasSelectionCriteria" memberEnd="_kmpHkIMDEemyVus8T4NvCQ _kmpuoIMDEemyVus8T4NvCQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kmn5cIMDEemyVus8T4NvCQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kmn5cYMDEemyVus8T4NvCQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_kmpHkIMDEemyVus8T4NvCQ" name="designentity" association="_kmmEQIMDEemyVus8T4NvCQ">
-          <type xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7KP3YIMDEemyVus8T4NvCQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Kl1oIMDEemyVus8T4NvCQ" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_kmpuoIMDEemyVus8T4NvCQ" name="selectioncriteria" association="_kmmEQIMDEemyVus8T4NvCQ">
-          <type xmi:type="uml:Class" href="Common.uml#_AkO5gF0VEemiOP02o5T8tA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8VoFYIMDEemyVus8T4NvCQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WC8IIMDEemyVus8T4NvCQ" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_pyyJ0Id4Eemz_I38RrvOQg" name="ServiceLcmEvent">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0Yd4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0od4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
@@ -673,7 +643,7 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
             <body>Describes the configurable properties of the service.&#xD;
 </body>
           </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_e6hnYIMFEemyVus8T4NvCQ"/>
+          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YP8JQIMGEemyVus8T4NvCQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQF6QIMGEemyVus8T4NvCQ" value="1"/>
         </ownedAttribute>
@@ -1813,8 +1783,6 @@ reference point.</body>
   <OpenModel_Profile:OpenModelClass xmi:id="_EwCLkV0VEemiOP02o5T8tA" base_Class="_EwCLkF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI1F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI010VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI2F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI110VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Fs10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Fsl0YEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_J_9Ft10YEemiOP02o5T8tA" base_StructuralFeature="_J_9Ftl0YEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lpEDIILdEemyVus8T4NvCQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_lo6SIILdEemyVus8T4NvCQ"/>
   </OpenModel_Profile:OpenModelAttribute>
