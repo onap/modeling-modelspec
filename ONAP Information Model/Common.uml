@@ -797,56 +797,6 @@ NOTE: 	These attributes are used to control scaling boundaries.</body>
             <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
           </generalization>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_AkO5gF0VEemiOP02o5T8tA" name="SelectionCriteria">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_gog5YILoEemyVus8T4NvCQ" annotatedElement="_AkO5gF0VEemiOP02o5T8tA">
-            <body>SelectionCriteria finds descriptors and instances according to specific properties of those entities.</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_h8AhkILoEemyVus8T4NvCQ" name="Id" type="_AuYtcDkBEeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_NPd54IMQEemIU81rY2FFFw" annotatedElement="_h8AhkILoEemyVus8T4NvCQ">
-              <body>Unique indentifier of this SelectionCriteria.&#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="SelectionCriteriaComposite">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_JOTcQILpEemyVus8T4NvCQ" annotatedElement="_A_9MMF0VEemiOP02o5T8tA">
-            <body>A SelectionCriteria that is an aggregation of multi9ple filters.   Agregation can e for example AND or OR logical operations.</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_lo6SIILdEemyVus8T4NvCQ" name="compositeOperator" type="_rMIDEILdEemyVus8T4NvCQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_LtI2MILpEemyVus8T4NvCQ" annotatedElement="_lo6SIILdEemyVus8T4NvCQ">
-              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_09MBkILqEemyVus8T4NvCQ">
-              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
-            </ownedComment>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_BZSSMF0VEemiOP02o5T8tA" name="SelectionCriteriaAtomic">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_r78RQILvEemyVus8T4NvCQ" annotatedElement="_BZSSMF0VEemiOP02o5T8tA">
-            <body>A simple (atomic) selection criteria that holds a specific attribute comparision expression.</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_pcSX8ILvEemyVus8T4NvCQ" annotatedElement="_U92FMILsEemyVus8T4NvCQ">
-              <body>Name of compared parameter or attribute.&#xD;
-</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VorK4ILsEemyVus8T4NvCQ" name="operator" type="_1kyswILtEemyVus8T4NvCQ">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_3DfNcILvEemyVus8T4NvCQ" annotatedElement="_VorK4ILsEemyVus8T4NvCQ">
-              <body>Comparison operator, e.g. equal, less than, greater or etc.&#xD;
-</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_W1j0wILsEemyVus8T4NvCQ" name="value">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_7-STgILvEemyVus8T4NvCQ" annotatedElement="_W1j0wILsEemyVus8T4NvCQ">
-              <body>Compared value (can be a name of a parameter in referenced class).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QVhWcDOHEei5Af8DcjrhIQ" name="Associations">
         <packagedElement xmi:type="uml:Association" xmi:id="_vV0jwES0EeiVGPeZpaYNtQ" name="VirtualLinkHasLinkPort" memberEnd="_vV1x4kS0EeiVGPeZpaYNtQ _vWZykES0EeiVGPeZpaYNtQ">
@@ -1454,28 +1404,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TXtQgJddEei-sOl6ywWHlg" name="MAC"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVFewJddEei-sOl6ywWHlg" name="IP"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_rMIDEILdEemyVus8T4NvCQ" name="CompositeOperator">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zobhAILdEemyVus8T4NvCQ" name="AND"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1lXHwILdEemyVus8T4NvCQ" name="OR"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2r4q8ILdEemyVus8T4NvCQ" name="XOR"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_1kyswILtEemyVus8T4NvCQ" name="Operator">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_65Yy4ILtEemyVus8T4NvCQ" name="MORETHAN"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8E0EMILtEemyVus8T4NvCQ" name="LESSTHAN"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8_vbYILtEemyVus8T4NvCQ" name="EQUAL"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:DataType" xmi:id="_e6hnYIMFEemyVus8T4NvCQ" name=" ConfigurableProperties">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_sg3r0IMGEemyVus8T4NvCQ" annotatedElement="_e6hnYIMFEemyVus8T4NvCQ">
-            <body>Dynamic, configurable properites of some entity.</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_1pWIsIMFEemyVus8T4NvCQ" name="properties" type="_vxJ9ADafEei23_xWdimG9w">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_w5USwIMGEemyVus8T4NvCQ" annotatedElement="_1pWIsIMFEemyVus8T4NvCQ">
-              <body>The specific configurable properties of some entity.</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7YMh4IMFEemyVus8T4NvCQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7YVEwIMFEemyVus8T4NvCQ" value="*"/>
-          </ownedAttribute>
-        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_BprD8OLJEeiKy5JVrA0UGA" name="Root">
@@ -1517,6 +1445,32 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           <ownedEnd xmi:type="uml:Property" xmi:id="_dxowYDE6Eemw1_Ys6rcLWw" name="managementdomain" type="_SDiKgDE6Eemw1_Ys6rcLWw" association="_dxmUIDE6Eemw1_Ys6rcLWw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRXEwDE8Eemw1_Ys6rcLWw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRaIEDE8Eemw1_Ys6rcLWw" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_PrdukIncEemVXsYTZj8frQ" name="DesignEntityHasSelectionCriteria" memberEnd="_PriAAIncEemVXsYTZj8frQ _PrjOIIncEemVXsYTZj8frQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Prgx4IncEemVXsYTZj8frQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PrhY8IncEemVXsYTZj8frQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_PriAAIncEemVXsYTZj8frQ" name="designentity" type="_v04t4DFPEemw1_Ys6rcLWw" association="_PrdukIncEemVXsYTZj8frQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_edxFQIncEemVXsYTZj8frQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eeF1YIncEemVXsYTZj8frQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_PrjOIIncEemVXsYTZj8frQ" name="selectioncriteria" type="_AkO5gF0VEemiOP02o5T8tA" association="_PrdukIncEemVXsYTZj8frQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkkVQIncEemVXsYTZj8frQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkyXsIncEemVXsYTZj8frQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_uTRv8IndEemVXsYTZj8frQ" name="SelectionCriteriaCompositeComprosedOfSelectionCriteria" memberEnd="_uTS-EondEemVXsYTZj8frQ _uTTlIIndEemVXsYTZj8frQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTS-EIndEemVXsYTZj8frQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uTS-EYndEemVXsYTZj8frQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_uTS-EondEemVXsYTZj8frQ" name="selectioncriteria" type="_AkO5gF0VEemiOP02o5T8tA" aggregation="shared" association="_uTRv8IndEemVXsYTZj8frQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3EZAQIndEemVXsYTZj8frQ" value="2"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3EoQ0IndEemVXsYTZj8frQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_uTTlIIndEemVXsYTZj8frQ" name="selectioncriteriacomposite" type="_A_9MMF0VEemiOP02o5T8tA" association="_uTRv8IndEemVXsYTZj8frQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZcMEIndEemVXsYTZj8frQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZpncIndEemVXsYTZj8frQ" value="*"/>
           </ownedEnd>
         </packagedElement>
       </packagedElement>
@@ -1743,8 +1697,81 @@ Permitted Values:&#xD;
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_RDwtkDFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AkO5gF0VEemiOP02o5T8tA" name="SelectionCriteria">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gog5YILoEemyVus8T4NvCQ" annotatedElement="_AkO5gF0VEemiOP02o5T8tA">
+            <body>SelectionCriteria finds descriptors and instances according to specific properties of those entities.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_h8AhkILoEemyVus8T4NvCQ" name="SelectionCriteriaId" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NPd54IMQEemIU81rY2FFFw" annotatedElement="_h8AhkILoEemyVus8T4NvCQ">
+              <body>Unique indentifier of this SelectionCriteria.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="SelectionCriteriaComposite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JOTcQILpEemyVus8T4NvCQ" annotatedElement="_A_9MMF0VEemiOP02o5T8tA">
+            <body>A SelectionCriteria that is an aggregation of multiple selection criterias.   Agregation can e for example AND or OR logical operations.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lo6SIILdEemyVus8T4NvCQ" name="compositeOperator" type="_rMIDEILdEemyVus8T4NvCQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LtI2MILpEemyVus8T4NvCQ" annotatedElement="_lo6SIILdEemyVus8T4NvCQ">
+              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_09MBkILqEemyVus8T4NvCQ">
+              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BZSSMF0VEemiOP02o5T8tA" name="SelectionCriteriaAtomic">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_r78RQILvEemyVus8T4NvCQ" annotatedElement="_BZSSMF0VEemiOP02o5T8tA">
+            <body>A simple (atomic) selection criteria that holds a specific attribute comparision expression.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_pcSX8ILvEemyVus8T4NvCQ" annotatedElement="_U92FMILsEemyVus8T4NvCQ">
+              <body>Name of compared parameter or attribute.&#xD;
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VorK4ILsEemyVus8T4NvCQ" name="operator" type="_1kyswILtEemyVus8T4NvCQ">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_3DfNcILvEemyVus8T4NvCQ" annotatedElement="_VorK4ILsEemyVus8T4NvCQ">
+              <body>Comparison operator, e.g. equal, less than, greater or etc.&#xD;
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_W1j0wILsEemyVus8T4NvCQ" name="value">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7-STgILvEemyVus8T4NvCQ" annotatedElement="_W1j0wILsEemyVus8T4NvCQ">
+              <body>Compared value (can be a name of a parameter in referenced class).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_rMIDEILdEemyVus8T4NvCQ" name="CompositeOperator">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zobhAILdEemyVus8T4NvCQ" name="AND"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1lXHwILdEemyVus8T4NvCQ" name="OR"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2r4q8ILdEemyVus8T4NvCQ" name="XOR"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_1kyswILtEemyVus8T4NvCQ" name="Operator">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_65Yy4ILtEemyVus8T4NvCQ" name="MORETHAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8E0EMILtEemyVus8T4NvCQ" name="LESSTHAN"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8_vbYILtEemyVus8T4NvCQ" name="EQUAL"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_e6hnYIMFEemyVus8T4NvCQ" name=" ConfigurableProperties">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_sg3r0IMGEemyVus8T4NvCQ" annotatedElement="_e6hnYIMFEemyVus8T4NvCQ">
+            <body>Dynamic, configurable properites of some entity.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1pWIsIMFEemyVus8T4NvCQ" name="properties" type="_vxJ9ADafEei23_xWdimG9w">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_w5USwIMGEemyVus8T4NvCQ" annotatedElement="_1pWIsIMFEemyVus8T4NvCQ">
+              <body>The specific configurable properties of some entity.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7YMh4IMFEemyVus8T4NvCQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7YVEwIMFEemyVus8T4NvCQ" value="*"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_c8u5EBnKEemlxOdMFpUVvQ" name="Business Interaction">
       <packagedElement xmi:type="uml:Package" xmi:id="_iFqhwBnKEemlxOdMFpUVvQ" name="Associations">
@@ -4903,4 +4930,9 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_ipP74IMFEemyVus8T4NvCQ" base_Element="_e6hnYIMFEemyVus8T4NvCQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1pWvwIMFEemyVus8T4NvCQ" base_StructuralFeature="_1pWIsIMFEemyVus8T4NvCQ"/>
   <OpenModel_Profile:Experimental xmi:id="__5dtoIMFEemyVus8T4NvCQ" base_Element="_1pWIsIMFEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_1DtM0InbEemVXsYTZj8frQ" base_Element="_lo6SIILdEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PriAAYncEemVXsYTZj8frQ" base_StructuralFeature="_PriAAIncEemVXsYTZj8frQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PrjOIYncEemVXsYTZj8frQ" base_StructuralFeature="_PrjOIIncEemVXsYTZj8frQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uTS-E4ndEemVXsYTZj8frQ" base_StructuralFeature="_uTS-EondEemVXsYTZj8frQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_uTUMMIndEemVXsYTZj8frQ" base_StructuralFeature="_uTTlIIndEemVXsYTZj8frQ"/>
 </xmi:XMI>
