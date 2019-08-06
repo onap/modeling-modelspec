@@ -488,20 +488,12 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_ehLI8CC9Eemw1L3J4dNy4w">
         <body>Do we need this diagram?</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_pyyJ0Id4Eemz_I38RrvOQg" name="ServiceLcmEvent">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0Yd4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ0od4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ04d4Eemz_I38RrvOQg" name="EVENT_START_CONFIGURATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1Id4Eemz_I38RrvOQg" name="EVENT_END_CONFIGURATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1Yd4Eemz_I38RrvOQg" name="EVENT_START_TERMINATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ1od4Eemz_I38RrvOQg" name="EVENT_END_TERMINATION"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ14d4Eemz_I38RrvOQg" name="EVENT_START_DEPLOYMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2Id4Eemz_I38RrvOQg" name="EVENT_END_DEPLOYMENT"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2Yd4Eemz_I38RrvOQg" name="EnumerationLiteral9"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ2od4Eemz_I38RrvOQg" name="EnumerationLiteral10"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ24d4Eemz_I38RrvOQg" name="EnumerationLiteral11"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pyyJ3Id4Eemz_I38RrvOQg" name="EnumerationLiteral12"/>
-      </packagedElement>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_nzFWMLg8Eem9SoGzhP7GLQ">
+        <body>Option 1</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_r0yRELg8Eem9SoGzhP7GLQ">
+        <body>Option 2</body>
+      </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces">
       <packagedElement xmi:type="uml:Package" xmi:id="_-6ecYEYpEem7INgoaq_j-g" name="Interfaces"/>
@@ -643,6 +635,10 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
             <body>Describes the configurable properties of the service.&#xD;
 </body>
           </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_EUn-wKFtEemY46Vmc0cZBg">
+            <body>Describes the configurable properties of the service.&#xD;
+</body>
+          </ownedComment>
           <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YP8JQIMGEemyVus8T4NvCQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQF6QIMGEemyVus8T4NvCQ" value="1"/>
@@ -660,6 +656,11 @@ Service.</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fBfcYId2Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHVlsId2Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pjNvMKhmEem1A8dEHCW-Ig" name="maxAvailableNumber">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMYbkKhmEem1A8dEHCW-Ig"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMko0KhmEem1A8dEHCW-Ig" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
@@ -717,13 +718,19 @@ Service.</body>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_OmeeoId6Eemz_I38RrvOQg" name="instanceSharingNumber">
           <ownedComment xmi:type="uml:Comment" xmi:id="_6hlXgId6EemlroDdeOKzBQ" annotatedElement="_OmeeoId6Eemz_I38RrvOQg">
-            <body>Record the using number by multiple services. This attribute can be used when an service instance is prepared to be deleted, the detected number will help to find how many ongoing services is reusing this instance. If number is more than 1, it shows this is reusing by other service, otherwise it can be deleted directly. </body>
+            <body>Record the using number by multiple services. The beginning number is 1 when instanciation, and will increase one number each time this instance is shared by orther services. This attribute can be used when an service instance is prepared to be deleted, the detected number will help to find how many ongoing services is reusing this instance. If number is more than 1, it shows this is reusing by other service, otherwise it can be deleted directly. &#xD;
+&#xD;
+</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFOEkId6Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFULMId6Eemz_I38RrvOQg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_O6BswId6Eemz_I38RrvOQg" name="instanceProfile" type="_Q7cmQF0aEemiOP02o5T8tA">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_O6BswId6Eemz_I38RrvOQg" name="instanceProperties" type="_Q7cmQF0aEemiOP02o5T8tA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OJECULgsEem9SoGzhP7GLQ" annotatedElement="_O6BswId6Eemz_I38RrvOQg">
+            <body>A set of attributes that hold the service specific information. For example, network slice profile will hold network slice specific parameters, which are not relevant for other services.&#xD;
+</body>
+          </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RIQpcId7EemlroDdeOKzBQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RKvVsId7EemlroDdeOKzBQ" value="1"/>
         </ownedAttribute>
@@ -1317,11 +1324,270 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnGZkUS4EeiVGPeZpaYNtQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProfile">
+      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cHzv0LdVEemG6epU56F5-w" annotatedElement="_EwCLkF0VEemiOP02o5T8tA">
+          <body>A set of properties that hold the service specific information, which are strongly related to this service with the function realization. For example, when instanciating a network slice service, serviceProperties will hold network slice specific parameters, which are not relevant for other services.</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XBqI010VEemiOP02o5T8tA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_XBqI0F0VEemiOP02o5T8tA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA"/>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_prqe4LgwEem9SoGzhP7GLQ" annotatedElement="_XBqI010VEemiOP02o5T8tA">
+            <body>Describe the relationship between a servvice and serviceProfile. One service can corresponding multiple specific service properties; one serviceProperties can be used for multiple ServiceDescriptor  </body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBqI1l0VEemiOP02o5T8tA" value="*"/>
         </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tJhnkLdZEemG6epU56F5-w" name="BBSProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fQgAMLgzEem9SoGzhP7GLQ" annotatedElement="_tJhnkLdZEemG6epU56F5-w">
+          <body>A set of BBS case specific properties information, which are needed for BBS service with the function realization. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_JLxKULdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rS7SULdZEemG6epU56F5-w" name="NetworkSlicingProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_aHk-kLgzEem9SoGzhP7GLQ" annotatedElement="_rS7SULdZEemG6epU56F5-w">
+          <body>A set of Slicing case specific properties information, which are needed for network slicing service with the function realization. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_IiC34LdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qL1j0LgcEem9SoGzhP7GLQ" name="propertiesId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qL1j0bgcEem9SoGzhP7GLQ" annotatedElement="_qL1j0LgcEem9SoGzhP7GLQ">
+            <body>A unique identifier of property of network slice related requirement should be supported by the network slice instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YGOMLgcEem9SoGzhP7GLQ" name="perfReq" type="_-BN-YLgSEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGOMbgcEem9SoGzhP7GLQ" annotatedElement="_4YGOMLgcEem9SoGzhP7GLQ">
+            <body>This parameter specifies the requirements to the NSI in terms of the scenarios defined in the TS 22.261 [28], such as Experienced data rate, Area traffic capacity (density) information of UE density.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGOMrgcEem9SoGzhP7GLQ" annotatedElement="_4YGOMLgcEem9SoGzhP7GLQ">
+            <body>It is a structure containing the following elements:&#xD;
+-	list of perfRequirements&#xD;
+Depending on the sST value, the list of perfRequirements will be&#xD;
+-	list of eMBBPerfReq&#xD;
+or&#xD;
+-	list of uRLLCPerfReq&#xD;
+or&#xD;
+-	list of mIoTPerfReq&#xD;
+NOTE: the list of mIoTPerfReq is not addressed in the present document.&#xD;
+</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YGOM7gcEem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YGONLgcEem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YGONrgcEem9SoGzhP7GLQ" name="sNSSAIList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGON7gcEem9SoGzhP7GLQ" annotatedElement="_4YGONrgcEem9SoGzhP7GLQ">
+            <body>This parameter specifies the S-NSSAI list to be supported by the new NSI to be created or the existing NSI to be re-used.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YGOObgcEem9SoGzhP7GLQ" name="resourceSharingLevel" type="_MDy5kLgZEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGOOrgcEem9SoGzhP7GLQ" annotatedElement="_4YGOObgcEem9SoGzhP7GLQ">
+            <body>An attribute specifies whether the resources to be allocated to the network slice instance may be shared with another network slice instance(s).&#xD;
+AllowedValues: shared, non-shared.&#xD;
+</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YGOPLgcEem9SoGzhP7GLQ" name="maxNumberofUEs">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGOPbgcEem9SoGzhP7GLQ" annotatedElement="_4YGOPLgcEem9SoGzhP7GLQ">
+            <body>An attribute specifies the maximum number of UEs may simultaneously access the network slice instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YGOPrgcEem9SoGzhP7GLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YGOP7gcEem9SoGzhP7GLQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YGOQbgcEem9SoGzhP7GLQ" name="sST">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YGOQrgcEem9SoGzhP7GLQ" annotatedElement="_4YGOQbgcEem9SoGzhP7GLQ">
+            <body>This parameter specifies the slice/service type for a ServiceProfile.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QxdlwLgdEem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QxjsYLgdEem9SoGzhP7GLQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YMU0bgcEem9SoGzhP7GLQ" name="latency">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YMU0rgcEem9SoGzhP7GLQ" annotatedElement="_4YMU0bgcEem9SoGzhP7GLQ">
+            <body>An attribute specifies the packet transmission latency (millisecond) through the RAN, CN, and TN part of 5G network and is used to evaluate utilization performance of the end-to-end network slice instance.  See clause 6.3.1 of 28.554.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YMU1LgcEem9SoGzhP7GLQ" name="pLMNIdList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YMU1bgcEem9SoGzhP7GLQ" annotatedElement="_4YMU1LgcEem9SoGzhP7GLQ">
+            <body>List of unique identities for PLMN.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V7yZ8Lg7Eem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V74gkLg7Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YMU17gcEem9SoGzhP7GLQ" name="uEMobilityLevel" type="_sNGAALgTEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YMU2LgcEem9SoGzhP7GLQ" annotatedElement="_4YMU17gcEem9SoGzhP7GLQ">
+            <body>An attribute specifies the mobility level of UE accessing the network slice instance. See 6.2.1 of TS 22.261.&#xD;
+AllowedValues: stationary, nomadic, restricted mobility, fully mobility.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YMU2rgcEem9SoGzhP7GLQ" name="coverageAreaTAList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YMU27gcEem9SoGzhP7GLQ" annotatedElement="_4YMU2rgcEem9SoGzhP7GLQ">
+            <body>An attribute specifies a list of TrackingAreas where the NSI can be selected.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r7faMLg1Eem9SoGzhP7GLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r7lg0Lg1Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YMU3bgcEem9SoGzhP7GLQ" name="availability">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4YMU3rgcEem9SoGzhP7GLQ" annotatedElement="_4YMU3bgcEem9SoGzhP7GLQ">
+            <body>This parameter specifies the availability requirement for an network slice instance, expressed as a percentage. </body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YMU37gcEem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YMU4LgcEem9SoGzhP7GLQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sR5G4LdXEemG6epU56F5-w" name="GST">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ScQE8LdfEemG6epU56F5-w" annotatedElement="_sR5G4LdXEemG6epU56F5-w">
+          <body>The set of GSMA defined GST properties for network slicing service fuction realization.&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_fJW4cLdZEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4dD4sLdWEemG6epU56F5-w" name="3GPPSliceProfile">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Jpl8gLdfEemG6epU56F5-w" annotatedElement="_4dD4sLdWEemG6epU56F5-w">
+          <body>The set of 3GPP defined SliceProfile for network slicing subnet service fuction realization.&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_-4ENQLdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VFsicLgaEem9SoGzhP7GLQ" name="sliceProfileId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_rc_LMLgzEem9SoGzhP7GLQ" annotatedElement="_VFsicLgaEem9SoGzhP7GLQ">
+            <body>A unique identifier of the property of network slice subnet related requirement should be supported by the network slice subnet instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZdKxoLgdEem9SoGzhP7GLQ" name="nSSSNSSAIList"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZxMg4LgdEem9SoGzhP7GLQ" name="nSSPLMNIdList">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9pO_kLg7Eem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9pbM0Lg7Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_aJCZILgdEem9SoGzhP7GLQ" name="nSSPerfReq" type="_-BN-YLgSEem9SoGzhP7GLQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cRUjMLg8Eem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cRgwcLg8Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_afETgLgdEem9SoGzhP7GLQ" name="nSSMaxNumberofUEs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_awtdILgdEem9SoGzhP7GLQ" name="nSSCoverageAreaTALis">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wTTH8Lg1Eem9SoGzhP7GLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wTZOkLg1Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bCWmwLgdEem9SoGzhP7GLQ" name="nSSLatency">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bWNW4LgdEem9SoGzhP7GLQ" name="nSSUEMobilityLevel" type="_sNGAALgTEem9SoGzhP7GLQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cpT9gLgdEem9SoGzhP7GLQ" name="nSSResourceSharingLevel" type="_MDy5kLgZEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_bsU5YLg0Eem9SoGzhP7GLQ" annotatedElement="_cpT9gLgdEem9SoGzhP7GLQ">
+            <body>An attribute specifies whether the resources to be allocated to the network slice subnet instance may be shared with another network slice subnet instance(s).&#xD;
+AllowedValues: shared, non-shared.&#xD;
+</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4CcZQLdWEemG6epU56F5-w" name="3GPPServiceProfile">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4rzlsLdeEemG6epU56F5-w" annotatedElement="_4CcZQLdWEemG6epU56F5-w">
+          <body>The set of 3GPP defined ServiceProfile for network slicing service function realization.&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_7pFv0LdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GgGmkLdgEemG6epU56F5-w" name="serviceProfileId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__6w4ALdkEemG6epU56F5-w" annotatedElement="_GgGmkLdgEemG6epU56F5-w">
+            <body>A unique identifier of property of network slice related requirement should be supported by the network slice instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_G3tOQLdgEemG6epU56F5-w" name="nSSNSSAIList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_65TbMLdiEemG6epU56F5-w" annotatedElement="_G3tOQLdgEemG6epU56F5-w">
+            <body>This parameter specifies the S-NSSAI list to be supported by the new NSI to be created or the existing NSI to be re-used.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HQqg0LdgEemG6epU56F5-w" name="nSPLMNIdList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_blHCsLdmEemG6epU56F5-w" annotatedElement="_HQqg0LdgEemG6epU56F5-w">
+            <body>List of unique identities for PLMN.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZiE8Lg7Eem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZiE8bg7Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Hmp-8LdgEemG6epU56F5-w" name="nSPerfReq" type="_-BN-YLgSEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Fn6oELdlEemG6epU56F5-w" annotatedElement="_Hmp-8LdgEemG6epU56F5-w">
+            <body>This parameter specifies the requirements to the NSI in terms of the scenarios defined in the TS 22.261 [28], such as Experienced data rate, Area traffic capacity (density) information of UE density.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6PbHwLgSEem9SoGzhP7GLQ" annotatedElement="_Hmp-8LdgEemG6epU56F5-w">
+            <body>It is a structure containing the following elements:&#xD;
+-	list of perfRequirements&#xD;
+Depending on the sST value, the list of perfRequirements will be&#xD;
+-	list of eMBBPerfReq&#xD;
+or&#xD;
+-	list of uRLLCPerfReq&#xD;
+or&#xD;
+-	list of mIoTPerfReq&#xD;
+NOTE: the list of mIoTPerfReq is not addressed in the present document.&#xD;
+</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_leSW8LgZEem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_leYdkLgZEem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_H8iIULdgEemG6epU56F5-w" name="nSMaxNumberofUEs">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_LVpm8LdlEemG6epU56F5-w" annotatedElement="_H8iIULdgEemG6epU56F5-w">
+            <body>An attribute specifies the maximum number of UEs may simultaneously access the network slice instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rH0yULgZEem9SoGzhP7GLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rH98QLgZEem9SoGzhP7GLQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IS-5cLdgEemG6epU56F5-w" name="nSCoverageAreaTAList">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nJJR4Lf7Eem9SoGzhP7GLQ" annotatedElement="_IS-5cLdgEemG6epU56F5-w">
+            <body>An attribute specifies a list of TrackingAreas where the NSI can be selected.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIQMsLg1Eem9SoGzhP7GLQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uIcZ8Lg1Eem9SoGzhP7GLQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Iq2m4LdgEemG6epU56F5-w" name="nSLatency">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Q8O08LdlEemG6epU56F5-w" annotatedElement="_Iq2m4LdgEemG6epU56F5-w">
+            <body>An attribute specifies the packet transmission latency (millisecond) through the RAN, CN, and TN part of 5G network and is used to evaluate utilization performance of the end-to-end network slice instance.  See clause 6.3.1 of 28.554.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_I8bfELdgEemG6epU56F5-w" name="nSUEMobilityLevel" type="_sNGAALgTEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TJrj8LdlEemG6epU56F5-w" annotatedElement="_I8bfELdgEemG6epU56F5-w">
+            <body>An attribute specifies the mobility level of UE accessing the network slice instance. See 6.2.1 of TS 22.261.&#xD;
+AllowedValues: stationary, nomadic, restricted mobility, fully mobility.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JNJboLdgEemG6epU56F5-w" name="nSResourceSharingLevel" type="_MDy5kLgZEem9SoGzhP7GLQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__TsxYLf7Eem9SoGzhP7GLQ" annotatedElement="_JNJboLdgEemG6epU56F5-w">
+            <body>An attribute specifies whether the resources to be allocated to the network slice instance may be shared with another network slice instance(s).&#xD;
+AllowedValues: shared, non-shared.&#xD;
+</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mCRM0LdgEemG6epU56F5-w" name="sST">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y5OgsLdlEemG6epU56F5-w" annotatedElement="_mCRM0LdgEemG6epU56F5-w">
+            <body>This parameter specifies the slice/service type for a ServiceProfile.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mZZTYLdgEemG6epU56F5-w" name="availability">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_er4twLdjEemG6epU56F5-w" annotatedElement="_mZZTYLdgEemG6epU56F5-w">
+            <body>This parameter specifies the availability requirement for an network slice instance, expressed as a percentage. </body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWQKkLgZEem9SoGzhP7GLQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWWRMLgZEem9SoGzhP7GLQ" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3s_tsLdWEemG6epU56F5-w" name="CcvpnProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_J3ENQLdeEemG6epU56F5-w" annotatedElement="_3s_tsLdWEemG6epU56F5-w">
+          <body>A set of CCVPN case specific properties information, which are needed for CCVPN service with the function realization. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_99KrQLdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WNfqILcsEemG6epU56F5-w" name="CcvpnProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_AEjfcLdgEemG6epU56F5-w" annotatedElement="_WNfqILcsEemG6epU56F5-w">
+          <body>A set of CCVPN case specific properties information, which are needed for CCVPN service with the function realization. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_J1utULdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -1444,7 +1710,10 @@ reference point.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__sr8sId1Eemz_I38RrvOQg" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProfile">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProperties">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_UXQC4LgsEem9SoGzhP7GLQ" annotatedElement="_Q7cmQF0aEemiOP02o5T8tA">
+          <body>Record a set of property information this service instance holds, for example latency of this instance.</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Kq0r8Id7EemlroDdeOKzBQ" name="instanceProperties">
           <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hf2i8Id7EemlroDdeOKzBQ"/>
@@ -1464,6 +1733,17 @@ reference point.</body>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dlPO4Id4Eemz_I38RrvOQg" name="EVENT_END_CONFIGURATION"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_i4w-AId4Eemz_I38RrvOQg" name="EVENT_START_TERMINATION"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jRV2EId4Eemz_I38RrvOQg" name="EVENT_END_TERMINATION"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_-BN-YLgSEem9SoGzhP7GLQ" name="PerfReq"/>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_sNGAALgTEem9SoGzhP7GLQ" name="UEMobilityLevel">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_y_qgALgTEem9SoGzhP7GLQ" name="STATIONARY"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zTLR4LgTEem9SoGzhP7GLQ" name="NOMADIC"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zoVpkLgTEem9SoGzhP7GLQ" name="RESTRICTED MOBILITY"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4agl0LgYEem9SoGzhP7GLQ" name="FULLY MOBILITY"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MDy5kLgZEem9SoGzhP7GLQ" name="ResourceSharingLevel">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OwvA8LgZEem9SoGzhP7GLQ" name="SHARED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PHpFELgZEem9SoGzhP7GLQ" name="NON-SHARED"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
@@ -1813,11 +2093,11 @@ reference point.</body>
   <OpenModel_Profile:Experimental xmi:id="_H_r6wILuEemyVus8T4NvCQ">
     <base_Element xmi:type="uml:Property" href="Common.uml#_W1j0wILsEemyVus8T4NvCQ"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_E2F_sIMGEemyVus8T4NvCQ" base_StructuralFeature="_E2FYoIMGEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_E2F_sIMGEemyVus8T4NvCQ" base_StructuralFeature="_E2FYoIMGEemyVus8T4NvCQ" support="OPTIONAL"/>
   <OpenModel_Profile:Experimental xmi:id="_QCAegIMGEemyVus8T4NvCQ" base_Element="_E2FYoIMGEemyVus8T4NvCQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_seqXsIdsEem5i7slCUMe6w" base_StructuralFeature="_sekREIdsEem5i7slCUMe6w"/>
   <OpenModel_Profile:Experimental xmi:id="_-Gmz4IduEem5i7slCUMe6w" base_Element="_sekREIdsEem5i7slCUMe6w"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_e7RHUYdwEem5i7slCUMe6w" base_StructuralFeature="_e7RHUIdwEem5i7slCUMe6w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_e7RHUYdwEem5i7slCUMe6w" base_StructuralFeature="_e7RHUIdwEem5i7slCUMe6w" support="OPTIONAL"/>
   <OpenModel_Profile:Experimental xmi:id="_ikROUIdwEem5i7slCUMe6w" base_Element="_e7RHUIdwEem5i7slCUMe6w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_DW2osYdzEemz_I38RrvOQg" base_StructuralFeature="_DW2osIdzEemz_I38RrvOQg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VmInIYd0Eemz_I38RrvOQg" base_StructuralFeature="_VmInIId0Eemz_I38RrvOQg"/>
@@ -1827,9 +2107,65 @@ reference point.</body>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_neWwcYd1Eemz_I38RrvOQg" base_StructuralFeature="_neWwcId1Eemz_I38RrvOQg"/>
   <OpenModel_Profile:Experimental xmi:id="_LJq9YId2Eemz_I38RrvOQg" base_Element="_gFg8sF0aEemiOP02o5T8tA"/>
   <ActionLanguage:TextualRepresentation xmi:id="_66AbYId2Eemz_I38RrvOQg" base_Comment="_656UwId2Eemz_I38RrvOQg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <OpenModel_Profile:Experimental xmi:id="_py4Qeod4Eemz_I38RrvOQg" base_Element="_pyyJ0Id4Eemz_I38RrvOQg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OmeeoYd6Eemz_I38RrvOQg" base_StructuralFeature="_OmeeoId6Eemz_I38RrvOQg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_O6BswYd6Eemz_I38RrvOQg" base_StructuralFeature="_O6BswId6Eemz_I38RrvOQg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Kq6ykId7EemlroDdeOKzBQ" base_StructuralFeature="_Kq0r8Id7EemlroDdeOKzBQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UEDk0Id-EemlroDdeOKzBQ" base_StructuralFeature="_UD9eMId-EemlroDdeOKzBQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_EUv6kKFtEemY46Vmc0cZBg" base_Comment="_EUn-wKFtEemY46Vmc0cZBg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pjT10KhmEem1A8dEHCW-Ig" base_StructuralFeature="_pjNvMKhmEem1A8dEHCW-Ig"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_WNgRMLcsEemG6epU56F5-w" base_Class="_WNfqILcsEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_tKMdULdWEemG6epU56F5-w" base_Element="_EwCLkF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_3s_tsbdWEemG6epU56F5-w" base_Class="_3s_tsLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_4CcZQbdWEemG6epU56F5-w" base_Class="_4CcZQLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_4dD4sbdWEemG6epU56F5-w" base_Class="_4dD4sLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_JLfk4LdXEemG6epU56F5-w" base_Element="_4dD4sLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_J_M5wLdXEemG6epU56F5-w" base_Element="_4CcZQLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_KwOuELdXEemG6epU56F5-w" base_Element="_3s_tsLdWEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_sR5G4bdXEemG6epU56F5-w" base_Class="_sR5G4LdXEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_rS75YLdZEemG6epU56F5-w" base_Class="_rS7SULdZEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_tJhnkbdZEemG6epU56F5-w" base_Class="_tJhnkLdZEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GgHNoLdgEemG6epU56F5-w" base_StructuralFeature="_GgGmkLdgEemG6epU56F5-w" isInvariant="true"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_G3tOQbdgEemG6epU56F5-w" base_StructuralFeature="_G3tOQLdgEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HQqg0bdgEemG6epU56F5-w" base_StructuralFeature="_HQqg0LdgEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HmqmALdgEemG6epU56F5-w" base_StructuralFeature="_Hmp-8LdgEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_H8iIUbdgEemG6epU56F5-w" base_StructuralFeature="_H8iIULdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IS_ggLdgEemG6epU56F5-w" base_StructuralFeature="_IS-5cLdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Iq2m4bdgEemG6epU56F5-w" base_StructuralFeature="_Iq2m4LdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_I8cGILdgEemG6epU56F5-w" base_StructuralFeature="_I8bfELdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JNJbobdgEemG6epU56F5-w" base_StructuralFeature="_JNJboLdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mCRM0bdgEemG6epU56F5-w" base_StructuralFeature="_mCRM0LdgEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mZZTYbdgEemG6epU56F5-w" base_StructuralFeature="_mZZTYLdgEemG6epU56F5-w" support="OPTIONAL"/>
+  <OpenModel_Profile:Experimental xmi:id="_r84xILdgEemG6epU56F5-w" base_Element="_pjNvMKhmEem1A8dEHCW-Ig"/>
+  <OpenModel_Profile:Experimental xmi:id="_w1oowLdgEemG6epU56F5-w" base_Element="_OmeeoId6Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_xsHk0LdgEemG6epU56F5-w" base_Element="_O6BswId6Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_zFKbYLdgEemG6epU56F5-w" base_Element="_Q7cmQF0aEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Experimental xmi:id="_3LafELdgEemG6epU56F5-w" base_Element="_sR5G4LdXEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VFsicbgaEem9SoGzhP7GLQ" base_StructuralFeature="_VFsicLgaEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_qL1j0rgcEem9SoGzhP7GLQ" base_StructuralFeature="_qL1j0LgcEem9SoGzhP7GLQ" isInvariant="true"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YGONbgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YGOMLgcEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YGOOLgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YGONrgcEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YGOO7gcEem9SoGzhP7GLQ" base_StructuralFeature="_4YGOObgcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YGOQLgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YGOPLgcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU0LgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YGOQbgcEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU07gcEem9SoGzhP7GLQ" base_StructuralFeature="_4YMU0bgcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU1rgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YMU1LgcEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU2bgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YMU17gcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU3LgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YMU2rgcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4YMU4bgcEem9SoGzhP7GLQ" base_StructuralFeature="_4YMU3bgcEem9SoGzhP7GLQ" support="OPTIONAL"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZdKxobgdEem9SoGzhP7GLQ" base_StructuralFeature="_ZdKxoLgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZxMg4bgdEem9SoGzhP7GLQ" base_StructuralFeature="_ZxMg4LgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aJCZIbgdEem9SoGzhP7GLQ" base_StructuralFeature="_aJCZILgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_afETgbgdEem9SoGzhP7GLQ" base_StructuralFeature="_afETgLgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_awtdIbgdEem9SoGzhP7GLQ" base_StructuralFeature="_awtdILgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bCWmwbgdEem9SoGzhP7GLQ" base_StructuralFeature="_bCWmwLgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bWNW4bgdEem9SoGzhP7GLQ" base_StructuralFeature="_bWNW4LgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cpT9gbgdEem9SoGzhP7GLQ" base_StructuralFeature="_cpT9gLgdEem9SoGzhP7GLQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_BDJjsLgmEem9SoGzhP7GLQ" base_Element="_DW2osIdzEemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_B5pG0LgmEem9SoGzhP7GLQ" base_Element="_VmInIId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_C1Js0LgmEem9SoGzhP7GLQ" base_Element="_XaAYgId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_DuZB8LgmEem9SoGzhP7GLQ" base_Element="_aBy6IId0Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_E3LO8LgmEem9SoGzhP7GLQ" base_Element="_neWwcId1Eemz_I38RrvOQg"/>
+  <OpenModel_Profile:Experimental xmi:id="_6zFdYLgxEem9SoGzhP7GLQ" base_Element="_WNfqILcsEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="__Af5ALgxEem9SoGzhP7GLQ" base_Element="_tJhnkLdZEemG6epU56F5-w"/>
+  <OpenModel_Profile:Experimental xmi:id="_B5gtgLgyEem9SoGzhP7GLQ" base_Element="_rS7SULdZEemG6epU56F5-w"/>
 </xmi:XMI>
