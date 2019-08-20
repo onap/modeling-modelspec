@@ -635,10 +635,6 @@ NOTE:  NFV Management and Orchestration functions shall instantiate VNFs from th
             <body>Describes the configurable properties of the service.&#xD;
 </body>
           </ownedComment>
-          <ownedComment xmi:type="uml:Comment" xmi:id="_EUn-wKFtEemY46Vmc0cZBg">
-            <body>Describes the configurable properties of the service.&#xD;
-</body>
-          </ownedComment>
           <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YP8JQIMGEemyVus8T4NvCQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQF6QIMGEemyVus8T4NvCQ" value="1"/>
@@ -1324,13 +1320,13 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnGZkUS4EeiVGPeZpaYNtQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProperties">
+      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProperties" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_cHzv0LdVEemG6epU56F5-w" annotatedElement="_EwCLkF0VEemiOP02o5T8tA">
-          <body>A set of properties that hold the service specific information, which are strongly related to this service with the function realization. For example, when instanciating a network slice service, serviceProperties will hold network slice specific parameters, which are not relevant for other services.</body>
+          <body>  A set of properties that hold the service specific information, which are strongly related to this service with the function realization. Those attributes usually work together and present as a group during service instantiation, and can come from a SDO or a specific use case requirements. For example, when instanciating a network slice service, serviceProperties will hold network slice specific parameters, which are not relevant for other services.</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XBqI010VEemiOP02o5T8tA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_XBqI0F0VEemiOP02o5T8tA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_prqe4LgwEem9SoGzhP7GLQ" annotatedElement="_XBqI010VEemiOP02o5T8tA">
-            <body>Describe the relationship between a servvice and serviceProfile. One service can corresponding multiple specific service properties; one serviceProperties can be used for multiple ServiceDescriptor  </body>
+            <body>Describe the relationship between a servvice and serviceProfile. One service can support multiple specific service properties; one serviceProperties can be used for multiple ServiceDescriptor  </body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBqI1l0VEemiOP02o5T8tA" value="*"/>
@@ -2111,7 +2107,6 @@ reference point.</body>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_O6BswYd6Eemz_I38RrvOQg" base_StructuralFeature="_O6BswId6Eemz_I38RrvOQg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Kq6ykId7EemlroDdeOKzBQ" base_StructuralFeature="_Kq0r8Id7EemlroDdeOKzBQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_UEDk0Id-EemlroDdeOKzBQ" base_StructuralFeature="_UD9eMId-EemlroDdeOKzBQ"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_EUv6kKFtEemY46Vmc0cZBg" base_Comment="_EUn-wKFtEemY46Vmc0cZBg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pjT10KhmEem1A8dEHCW-Ig" base_StructuralFeature="_pjNvMKhmEem1A8dEHCW-Ig"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_WNgRMLcsEemG6epU56F5-w" base_Class="_WNfqILcsEemG6epU56F5-w"/>
   <OpenModel_Profile:Experimental xmi:id="_tKMdULdWEemG6epU56F5-w" base_Element="_EwCLkF0VEemiOP02o5T8tA"/>
