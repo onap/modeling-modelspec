@@ -11,11 +11,20 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_ujjIsJssEeiPBvbfaqSLYg">
           <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
         </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oqdaIMKwEemUeulSIk5Pkg" name="isSharable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7tUFIMNiEemImq9HquDN-w" annotatedElement="_oqdaIMKwEemUeulSIk5Pkg">
+            <body>Indicates whether the NetworkFunction can be shared (only applies to Pnfs or Vnfs).</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_VtzSoESyEeiVGPeZpaYNtQ" name="NetworkFunction" isAbstract="true">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VtzSoESyEeiVGPeZpaYNtQ" name="NetworkFunctionInstance" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_VtzSoUSyEeiVGPeZpaYNtQ" annotatedElement="_VtzSoESyEeiVGPeZpaYNtQ">
           <body>A functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour. NOTE: In practical terms, a Network Function is today often a network node or physical appliance</body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_Sy-KsL-VEemqDYUsJ60dmQ">
+          <general xmi:type="uml:Class" href="Resource.uml#_hZfC0DEkEemRSoIWRX3jNw"/>
+        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_LlLZoEUHEemWRYeHGX88Yw" name="id" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_SqMUgEUHEemWRYeHGX88Yw" annotatedElement="_LlLZoEUHEemWRYeHGX88Yw">
             <body>Identifier of the network function</body>
@@ -138,13 +147,12 @@ This tells the consumer where to send the subscription request.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_S99voEUIEemWRYeHGX88Yw" base_Element="_ZqGs8EUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:Experimental xmi:id="_UfyHsEUIEemWRYeHGX88Yw" base_Element="_srFqkEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:Experimental xmi:id="_XveW0EUIEemWRYeHGX88Yw" base_Element="_6o6QUEUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_8Q7XUE_ZEemeaek-m0jmOA">
-    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_8Q6wQE_ZEemeaek-m0jmOA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_42d3Ub-SEemqDYUsJ60dmQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_42d3UL-SEemqDYUsJ60dmQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0Cbns0_gEemeaek-m0jmOA">
-    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_0Cbnsk_gEemeaek-m0jmOA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nWocAb-VEemqDYUsJ60dmQ">
+    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_nWocAL-VEemqDYUsJ60dmQ"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0Cc10U_gEemeaek-m0jmOA">
-    <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_0Cc10E_gEemeaek-m0jmOA"/>
-  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oqeBMMKwEemUeulSIk5Pkg" base_StructuralFeature="_oqdaIMKwEemUeulSIk5Pkg"/>
+  <OpenModel_Profile:Experimental xmi:id="_2OSQoMNiEemImq9HquDN-w" base_Element="_oqdaIMKwEemUeulSIk5Pkg"/>
 </xmi:XMI>
