@@ -1570,6 +1570,9 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         <ownedComment xmi:type="uml:Comment" xmi:id="_SDwvIMTWEemrXPg1xDDmKg">
           <body>Note:  This concept has some basis on the TMF SID Characteristic Pattern.</body>
         </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Gkh7YMprEemxyP_sJGfnPA">
+          <body>Assumption made that all values will be of the same type and units of measure for a given Parameter.</body>
+        </ownedComment>
         <packagedElement xmi:type="uml:Class" xmi:id="_eR_ykPJcEeibsZxxyZUKdQ" name="VnfcDescriptor"/>
         <packagedElement xmi:type="uml:Class" xmi:id="__6rFMPMTEeiKa_-nH9J3Lg" name="ServiceDescriptor">
           <generalization xmi:type="uml:Generalization" xmi:id="_mVqk8DFQEemw1_Ys6rcLWw" general="_v04t4DFPEemw1_Ys6rcLWw"/>
@@ -1643,7 +1646,28 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <ownedComment xmi:type="uml:Comment" xmi:id="_FD6zkMThEemrXPg1xDDmKg" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
               <body>The value of the given ParameterSpecValue.</body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jVdpwMpjEemxyP_sJGfnPA" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
+              <body>A discrete value that the Parameter can take on.</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6P1TwMpjEemxyP_sJGfnPA" name="valueFrom">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LI3GYMpkEemxyP_sJGfnPA" annotatedElement="_6P1TwMpjEemxyP_sJGfnPA">
+              <body>The low range value that a characteristic can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9_8vYMpjEemxyP_sJGfnPA" name="valueTo">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NFVaIMpkEemxyP_sJGfnPA" annotatedElement="_9_8vYMpjEemxyP_sJGfnPA">
+              <body>The upper range value that a characteristic can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aTHl4MprEemxyP_sJGfnPA" name="rangeStep">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xdDV4MprEemxyP_sJGfnPA" annotatedElement="_aTHl4MprEemxyP_sJGfnPA">
+              <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_kxWgYJ2qEemXg71wwI_kPA" name="ParameterValue">
@@ -1694,6 +1718,12 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3ciCIMBREem3GPFSfqjGLQ" name="valueType">
             <ownedComment xmi:type="uml:Comment" xmi:id="_X6QL8MTXEemrXPg1xDDmKg" annotatedElement="_3ciCIMBREem3GPFSfqjGLQ">
               <body>The type of this parameter (integer, string, ...).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mbLdgMpjEemxyP_sJGfnPA" name="unitOfMeasure">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zBYJAMpjEemxyP_sJGfnPA" annotatedElement="_mbLdgMpjEemxyP_sJGfnPA">
+              <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. In general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -3410,9 +3440,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_rugTwMdWEeiNaKPf3x1gTw">
     <base_Class xmi:type="uml:Class" href="Ves.uml#_rufssMdWEeiNaKPf3x1gTw"/>
   </OpenModel_Profile:OpenModelClass>
-  <OpenModel_Profile:OpenModelClass xmi:id="_sG93oEHXEemqbK2aT-9uCA">
-    <base_Class xmi:type="uml:Class" href="License.uml#_mEllAMfyEeiEtuRgTYzSUQ"/>
-  </OpenModel_Profile:OpenModelClass>
   <OpenModel_Profile:OpenModelClass xmi:id="_sGIxMEHXEemqbK2aT-9uCA">
     <base_Class xmi:type="uml:Class" href="License.uml#_oURIoMfyEeiEtuRgTYzSUQ"/>
   </OpenModel_Profile:OpenModelClass>
@@ -4030,12 +4057,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sEgZgEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_Sj3TMN3yEei-jeeHUjfpLA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sE8eYEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_Hu8iot3zEei-jeeHUjfpLA"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sFAIwEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_Hu9wwN3zEei-jeeHUjfpLA"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_yyN_EeEpEeidEfhiAaiFzQ" base_Class="_yyN_EOEpEeidEfhiAaiFzQ"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_eCkzMOLJEeiKy5JVrA0UGA" base_Class="_eCjlEOLJEeiKy5JVrA0UGA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_vi4oQeLJEeiKy5JVrA0UGA" base_StructuralFeature="_vi4oQOLJEeiKy5JVrA0UGA"/>
@@ -4198,12 +4219,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sFYjQEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_J2JigP1qEeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sFoa4EHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_MT7zkf1qEeisxOMTY1eUug"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sFvIkEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_MT_d8P1qEeisxOMTY1eUug"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sHxv8EHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_BLpV4P19EeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -4215,9 +4230,6 @@ Permitted Values:&#xD;
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sH1aUEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_I9Ob0P19EeisxOMTY1eUug"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sH2ocEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_JWKgQP19EeisxOMTY1eUug"/>
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_sIAZcEHXEemqbK2aT-9uCA">
     <base_Class xmi:type="uml:Class" href="License.uml#_Omfk4P2SEeisxOMTY1eUug"/>
@@ -4319,9 +4331,6 @@ Permitted Values:&#xD;
   </OpenModel_Profile:Experimental>
   <OpenModel_Profile:Experimental xmi:id="_sHbxsEHXEemqbK2aT-9uCA">
     <base_Element xmi:type="uml:Class" href="License.uml#_T5-uYN3uEei-jeeHUjfpLA"/>
-  </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:Experimental xmi:id="_sG_s0EHXEemqbK2aT-9uCA">
-    <base_Element xmi:type="uml:Class" href="License.uml#_mEllAMfyEeiEtuRgTYzSUQ"/>
   </OpenModel_Profile:Experimental>
   <OpenModel_Profile:Experimental xmi:id="_sIBnkEHXEemqbK2aT-9uCA">
     <base_Element xmi:type="uml:Class" href="License.uml#_Omfk4P2SEeisxOMTY1eUug"/>
@@ -4755,9 +4764,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_RKUPkCifEemvDu1mw_PV_Q">
     <base_Element xmi:type="uml:Class" href="Policy.uml#_6tin4CibEemvDu1mw_PV_Q"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sHBiAEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_KYdhIConEemnoK-fhDe5lw"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sIDcwEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_FeFtUCoxEemnoK-fhDe5lw"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -5056,4 +5062,13 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_WW_gcMBYEem3GPFSfqjGLQ" base_Element="_FVSXIMBREem3GPFSfqjGLQ"/>
   <OpenModel_Profile:Experimental xmi:id="_Xsq58MBYEem3GPFSfqjGLQ" base_Element="_3ciCIMBREem3GPFSfqjGLQ"/>
   <OpenModel_Profile:Experimental xmi:id="_1zN2wMBYEem3GPFSfqjGLQ" base_Element="_Fpm2sL6jEem4xcGs3yJOww"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mbMEkMpjEemxyP_sJGfnPA" base_StructuralFeature="_mbLdgMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6P160MpjEemxyP_sJGfnPA" base_StructuralFeature="_6P1TwMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_9_9WcMpjEemxyP_sJGfnPA" base_StructuralFeature="_9_8vYMpjEemxyP_sJGfnPA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_e20M0MpmEemxyP_sJGfnPA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:Experimental xmi:id="_1hIBkMpmEemxyP_sJGfnPA" base_Element="_mbLdgMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_3HF50MpmEemxyP_sJGfnPA" base_Element="_6P1TwMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_4qhbcMpmEemxyP_sJGfnPA" base_Element="_9_8vYMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_aTIM8MprEemxyP_sJGfnPA" base_StructuralFeature="_aTHl4MprEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_4Poc8MprEemxyP_sJGfnPA" base_Element="_aTHl4MprEemxyP_sJGfnPA"/>
 </xmi:XMI>
