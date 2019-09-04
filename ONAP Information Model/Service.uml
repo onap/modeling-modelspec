@@ -455,15 +455,6 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OBr6oDJ3Eem5adcA1c6ckw" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_XBqI0F0VEemiOP02o5T8tA" name="ServiceProfileReferencesServiceDescriptor" memberEnd="_XBqI010VEemiOP02o5T8tA _XBqI110VEemiOP02o5T8tA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XBqI0V0VEemiOP02o5T8tA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XBqI0l0VEemiOP02o5T8tA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_XBqI110VEemiOP02o5T8tA" name="class9" type="_EwCLkF0VEemiOP02o5T8tA" association="_XBqI0F0VEemiOP02o5T8tA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkhF0F0aEemiOP02o5T8tA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ekq20F0aEemiOP02o5T8tA" value="*"/>
-        </ownedEnd>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
@@ -657,11 +648,6 @@ Service.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fBfcYId2Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHVlsId2Eemz_I38RrvOQg" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pjNvMKhmEem1A8dEHCW-Ig" name="maxAvailableNumber">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMYbkKhmEem1A8dEHCW-Ig"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMko0KhmEem1A8dEHCW-Ig" value="1"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_cnoqID0QEeiWMf5FLWfdLA" annotatedElement="_HFfXUD0QEeiWMf5FLWfdLA">
@@ -718,21 +704,15 @@ Service.</body>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_OmeeoId6Eemz_I38RrvOQg" name="instanceSharingNumber">
           <ownedComment xmi:type="uml:Comment" xmi:id="_6hlXgId6EemlroDdeOKzBQ" annotatedElement="_OmeeoId6Eemz_I38RrvOQg">
-            <body>Record the using number by multiple services. The beginning number is 1 when instanciation, and will increase one number each time this instance is shared by orther services. This attribute can be used when an service instance is prepared to be deleted, the detected number will help to find how many ongoing services is reusing this instance. If number is more than 1, it shows this is reusing by other service, otherwise it can be deleted directly. &#xD;
+            <body>Record the number of services that are using this service instance.&#xD;
+Note: This attribute can be used when a service instance is prepared to be deleted, the detected number will help to find how many services are using this instance. If number is greater than 1, it shows this instance is used by other service(s), otherwise it can be deleted.&#xD;
+ &#xD;
 &#xD;
 </body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eFOEkId6Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eFULMId6Eemz_I38RrvOQg" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_O6BswId6Eemz_I38RrvOQg" name="instanceProperties" type="_Q7cmQF0aEemiOP02o5T8tA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_OJECULgsEem9SoGzhP7GLQ" annotatedElement="_O6BswId6Eemz_I38RrvOQg">
-            <body>A set of attributes that hold the service specific information. For example, network slice profile will hold network slice specific parameters, which are not relevant for other services.&#xD;
-</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RIQpcId7EemlroDdeOKzBQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RKvVsId7EemlroDdeOKzBQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7SrB0D0VEeiWMf5FLWfdLA" name="ServiceCompositeDescriptor">
@@ -997,9 +977,6 @@ Service.</body>
           <type xmi:type="uml:Class" href="Resource.uml#_hZfC0DEkEemRSoIWRX3jNw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-s0pdTJ2Eem5adcA1c6ckw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-s0pdjJ2Eem5adcA1c6ckw" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_UD9eMId-EemlroDdeOKzBQ" name="availableInstanceNumber">
-          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UWL1gMDfEeiebIKjAGZWdA" name="ServiceCharacteristic">
@@ -1324,29 +1301,15 @@ NOTE: Cardinality of zero is only valid for a non-instantiated NS.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnGZkUS4EeiVGPeZpaYNtQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EwCLkF0VEemiOP02o5T8tA" name="ServiceProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_cHzv0LdVEemG6epU56F5-w" annotatedElement="_EwCLkF0VEemiOP02o5T8tA">
-          <body>A set of properties that hold the service specific information, which are strongly related to this service with the function realization. For example, when instanciating a network slice service, serviceProperties will hold network slice specific parameters, which are not relevant for other services.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_XBqI010VEemiOP02o5T8tA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_XBqI0F0VEemiOP02o5T8tA">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_prqe4LgwEem9SoGzhP7GLQ" annotatedElement="_XBqI010VEemiOP02o5T8tA">
-            <body>Describe the relationship between a servvice and serviceProfile. One service can corresponding multiple specific service properties; one serviceProperties can be used for multiple ServiceDescriptor  </body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XBqI1V0VEemiOP02o5T8tA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBqI1l0VEemiOP02o5T8tA" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_tJhnkLdZEemG6epU56F5-w" name="BBSProperties">
         <ownedComment xmi:type="uml:Comment" xmi:id="_fQgAMLgzEem9SoGzhP7GLQ" annotatedElement="_tJhnkLdZEemG6epU56F5-w">
           <body>A set of BBS case specific properties information, which are needed for BBS service with the function realization. </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_JLxKULdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_rS7SULdZEemG6epU56F5-w" name="NetworkSlicingProperties">
         <ownedComment xmi:type="uml:Comment" xmi:id="_aHk-kLgzEem9SoGzhP7GLQ" annotatedElement="_rS7SULdZEemG6epU56F5-w">
           <body>A set of Slicing case specific properties information, which are needed for network slicing service with the function realization. </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_IiC34LdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_qL1j0LgcEem9SoGzhP7GLQ" name="propertiesId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_qL1j0bgcEem9SoGzhP7GLQ" annotatedElement="_qL1j0LgcEem9SoGzhP7GLQ">
             <body>A unique identifier of property of network slice related requirement should be supported by the network slice instance.</body>
@@ -1441,14 +1404,12 @@ AllowedValues: stationary, nomadic, restricted mobility, fully mobility.</body>
           <body>The set of GSMA defined GST properties for network slicing service fuction realization.&#xD;
 </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_fJW4cLdZEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_4dD4sLdWEemG6epU56F5-w" name="3GPPSliceProfile">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Jpl8gLdfEemG6epU56F5-w" annotatedElement="_4dD4sLdWEemG6epU56F5-w">
           <body>The set of 3GPP defined SliceProfile for network slicing subnet service fuction realization.&#xD;
 </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_-4ENQLdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_VFsicLgaEem9SoGzhP7GLQ" name="sliceProfileId">
           <ownedComment xmi:type="uml:Comment" xmi:id="_rc_LMLgzEem9SoGzhP7GLQ" annotatedElement="_VFsicLgaEem9SoGzhP7GLQ">
             <body>A unique identifier of the property of network slice subnet related requirement should be supported by the network slice subnet instance.</body>
@@ -1489,7 +1450,6 @@ AllowedValues: shared, non-shared.&#xD;
           <body>The set of 3GPP defined ServiceProfile for network slicing service function realization.&#xD;
 </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_7pFv0LdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_GgGmkLdgEemG6epU56F5-w" name="serviceProfileId">
           <ownedComment xmi:type="uml:Comment" xmi:id="__6w4ALdkEemG6epU56F5-w" annotatedElement="_GgGmkLdgEemG6epU56F5-w">
             <body>A unique identifier of property of network slice related requirement should be supported by the network slice instance.</body>
@@ -1581,13 +1541,11 @@ AllowedValues: shared, non-shared.&#xD;
         <ownedComment xmi:type="uml:Comment" xmi:id="_J3ENQLdeEemG6epU56F5-w" annotatedElement="_3s_tsLdWEemG6epU56F5-w">
           <body>A set of CCVPN case specific properties information, which are needed for CCVPN service with the function realization. </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_99KrQLdWEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_WNfqILcsEemG6epU56F5-w" name="CcvpnProperties">
         <ownedComment xmi:type="uml:Comment" xmi:id="_AEjfcLdgEemG6epU56F5-w" annotatedElement="_WNfqILcsEemG6epU56F5-w">
           <body>A set of CCVPN case specific properties information, which are needed for CCVPN service with the function realization. </body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_J1utULdaEemG6epU56F5-w" general="_EwCLkF0VEemiOP02o5T8tA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -1708,16 +1666,6 @@ reference point.</body>
           <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__sTiMId1Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__sr8sId1Eemz_I38RrvOQg" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_Q7cmQF0aEemiOP02o5T8tA" name="ServiceInstanceProperties">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_UXQC4LgsEem9SoGzhP7GLQ" annotatedElement="_Q7cmQF0aEemiOP02o5T8tA">
-          <body>Record a set of property information this service instance holds, for example latency of this instance.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Kq0r8Id7EemlroDdeOKzBQ" name="instanceProperties">
-          <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hf2i8Id7EemlroDdeOKzBQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3GlUId7EemlroDdeOKzBQ" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_gFg8sF0aEemiOP02o5T8tA" name="ServiceLcmEvent">
@@ -2060,9 +2008,6 @@ reference point.</body>
   <OpenModel_Profile:Preliminary xmi:id="_Q5paQFoLEemSNe5QiI5UBQ" base_Element="_Lvny4MDgEeiebIKjAGZWdA"/>
   <OpenModel_Profile:Preliminary xmi:id="_xyntQFrNEem07dac9irJSQ" base_Element="_IdqxoI9WEeiT7tMsBl6xjA"/>
   <OpenModel_Profile:Preliminary xmi:id="_1OLh4F0BEemiOP02o5T8tA" base_Element="_1Rt9wPL4EeiazPylpq3fUA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_EwCLkV0VEemiOP02o5T8tA" base_Class="_EwCLkF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI1F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI010VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_XBqI2F0VEemiOP02o5T8tA" base_StructuralFeature="_XBqI110VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_lpEDIILdEemyVus8T4NvCQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Common.uml#_lo6SIILdEemyVus8T4NvCQ"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -2108,13 +2053,8 @@ reference point.</body>
   <OpenModel_Profile:Experimental xmi:id="_LJq9YId2Eemz_I38RrvOQg" base_Element="_gFg8sF0aEemiOP02o5T8tA"/>
   <ActionLanguage:TextualRepresentation xmi:id="_66AbYId2Eemz_I38RrvOQg" base_Comment="_656UwId2Eemz_I38RrvOQg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OmeeoYd6Eemz_I38RrvOQg" base_StructuralFeature="_OmeeoId6Eemz_I38RrvOQg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_O6BswYd6Eemz_I38RrvOQg" base_StructuralFeature="_O6BswId6Eemz_I38RrvOQg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_Kq6ykId7EemlroDdeOKzBQ" base_StructuralFeature="_Kq0r8Id7EemlroDdeOKzBQ"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UEDk0Id-EemlroDdeOKzBQ" base_StructuralFeature="_UD9eMId-EemlroDdeOKzBQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_EUv6kKFtEemY46Vmc0cZBg" base_Comment="_EUn-wKFtEemY46Vmc0cZBg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_pjT10KhmEem1A8dEHCW-Ig" base_StructuralFeature="_pjNvMKhmEem1A8dEHCW-Ig"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_WNgRMLcsEemG6epU56F5-w" base_Class="_WNfqILcsEemG6epU56F5-w"/>
-  <OpenModel_Profile:Experimental xmi:id="_tKMdULdWEemG6epU56F5-w" base_Element="_EwCLkF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_3s_tsbdWEemG6epU56F5-w" base_Class="_3s_tsLdWEemG6epU56F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_4CcZQbdWEemG6epU56F5-w" base_Class="_4CcZQLdWEemG6epU56F5-w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_4dD4sbdWEemG6epU56F5-w" base_Class="_4dD4sLdWEemG6epU56F5-w"/>
@@ -2135,10 +2075,7 @@ reference point.</body>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_JNJbobdgEemG6epU56F5-w" base_StructuralFeature="_JNJboLdgEemG6epU56F5-w" support="OPTIONAL"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mCRM0bdgEemG6epU56F5-w" base_StructuralFeature="_mCRM0LdgEemG6epU56F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mZZTYbdgEemG6epU56F5-w" base_StructuralFeature="_mZZTYLdgEemG6epU56F5-w" support="OPTIONAL"/>
-  <OpenModel_Profile:Experimental xmi:id="_r84xILdgEemG6epU56F5-w" base_Element="_pjNvMKhmEem1A8dEHCW-Ig"/>
   <OpenModel_Profile:Experimental xmi:id="_w1oowLdgEemG6epU56F5-w" base_Element="_OmeeoId6Eemz_I38RrvOQg"/>
-  <OpenModel_Profile:Experimental xmi:id="_xsHk0LdgEemG6epU56F5-w" base_Element="_O6BswId6Eemz_I38RrvOQg"/>
-  <OpenModel_Profile:Experimental xmi:id="_zFKbYLdgEemG6epU56F5-w" base_Element="_Q7cmQF0aEemiOP02o5T8tA"/>
   <OpenModel_Profile:Experimental xmi:id="_3LafELdgEemG6epU56F5-w" base_Element="_sR5G4LdXEemG6epU56F5-w"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VFsicbgaEem9SoGzhP7GLQ" base_StructuralFeature="_VFsicLgaEem9SoGzhP7GLQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_qL1j0rgcEem9SoGzhP7GLQ" base_StructuralFeature="_qL1j0LgcEem9SoGzhP7GLQ" isInvariant="true"/>
