@@ -184,6 +184,11 @@ e.g. Tue, 21 Jun 2016 14:05:20 GMT</body>
           <body>the latest unix time aka epoch time associated with the event from any component--as microseconds elapsed since 1 Jan 1970 not including leap seconds</body>
         </ownedComment>
       </packagedElement>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_T7JtYM6AEemcqf4p4jcudw" name="File">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_XRSiwM6AEemcqf4p4jcudw" annotatedElement="_T7JtYM6AEemcqf4p4jcudw">
+          <body>A primitive Type</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_1t6IcN3ZEei-jeeHUjfpLA" name="Network">
       <packagedElement xmi:type="uml:Package" xmi:id="_Sgc88DOHEei5Af8DcjrhIQ" name="Diagrams">
@@ -1616,118 +1621,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         <packagedElement xmi:type="uml:Class" xmi:id="_MbJhgDYjEemz0q_yvHDIRA" name="NS">
           <generalization xmi:type="uml:Generalization" xmi:id="_Pjz7kDYjEemz0q_yvHDIRA" general="_Xht84CY2EemRA_CB-n5OfQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_fcsFcJ2BEemXg71wwI_kPA" name="ParameterGroup">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_zH0l8MTWEemrXPg1xDDmKg" annotatedElement="_fcsFcJ2BEemXg71wwI_kPA">
-            <body>A group of parameters that somehow relate or work together.</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oy4YwJ2BEemXg71wwI_kPA" name="parameterGroupName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_2XkfcMTWEemrXPg1xDDmKg" annotatedElement="_oy4YwJ2BEemXg71wwI_kPA">
-              <body>Name of ParameterGroup</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_xfVLgJ2BEemXg71wwI_kPA" name="parameterGroupDescription">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_4-Rb8MTWEemrXPg1xDDmKg" annotatedElement="_xfVLgJ2BEemXg71wwI_kPA">
-              <body>Description of ParameterGroup.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_2MynEJ2rEemXg71wwI_kPA" name="parameterGroupId" type="_AuYtcDkBEeiWMf5FLWfdLA">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_7NMKkMTWEemrXPg1xDDmKg" annotatedElement="_2MynEJ2rEemXg71wwI_kPA">
-              <body>ID of ParameterGroup.</body>
-            </ownedComment>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_J6iP8J2fEemXg71wwI_kPA" name="ParameterSpecValue">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_gg_CIMTgEemrXPg1xDDmKg" annotatedElement="_J6iP8J2fEemXg71wwI_kPA">
-            <body>A valid value of parameter (design time).</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_q2DKEL6hEem4xcGs3yJOww" name="value">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_FD6zkMThEemrXPg1xDDmKg" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
-              <body>The value of the given ParameterSpecValue.</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_jVdpwMpjEemxyP_sJGfnPA" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
-              <body>A discrete value that the Parameter can take on.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6P1TwMpjEemxyP_sJGfnPA" name="valueFrom">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_LI3GYMpkEemxyP_sJGfnPA" annotatedElement="_6P1TwMpjEemxyP_sJGfnPA">
-              <body>The low range value that a characteristic can take on.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_9_8vYMpjEemxyP_sJGfnPA" name="valueTo">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_NFVaIMpkEemxyP_sJGfnPA" annotatedElement="_9_8vYMpjEemxyP_sJGfnPA">
-              <body>The upper range value that a characteristic can take on.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aTHl4MprEemxyP_sJGfnPA" name="rangeStep">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_xdDV4MprEemxyP_sJGfnPA" annotatedElement="_aTHl4MprEemxyP_sJGfnPA">
-              <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_kxWgYJ2qEemXg71wwI_kPA" name="ParameterValue">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_SNl_kMThEemrXPg1xDDmKg" annotatedElement="_kxWgYJ2qEemXg71wwI_kPA">
-            <body>The actual value of Parameter (runtime).</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_vrqHwL6ZEem4xcGs3yJOww" name="parameter" type="_Zqsc4L6XEem4xcGs3yJOww" association="_vro5oL6ZEem4xcGs3yJOww">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_AAMMQMTnEemrXPg1xDDmKg" annotatedElement="_vrqHwL6ZEem4xcGs3yJOww">
-              <body>Runtime ParameterValue is associated with exactly one Parameter.    Parameter can have some number of runtime ParameterValues.</body>
-            </ownedComment>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fpm2sL6jEem4xcGs3yJOww" name="value">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_UUYF4MThEemrXPg1xDDmKg" annotatedElement="_Fpm2sL6jEem4xcGs3yJOww">
-              <body>The actual value of Parameter (runtime).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Zqsc4L6XEem4xcGs3yJOww" name="Parameter">
-          <ownedComment xmi:type="uml:Comment" xmi:id="__dtkkMTWEemrXPg1xDDmKg" annotatedElement="_Zqsc4L6XEem4xcGs3yJOww">
-            <body>Some parameter that is part of a ParameterGroup.    If parameter can only hold certain values, those values are specified via ParameterSpecValue (design time).   The actual value is specified via ParameterValue (runtime).</body>
-          </ownedComment>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_NiuwEL6YEem4xcGs3yJOww" name="parameterName">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_DmVm0MTXEemrXPg1xDDmKg" annotatedElement="_NiuwEL6YEem4xcGs3yJOww">
-              <body>Name of parameter. </body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_P-fn4L6YEem4xcGs3yJOww" name="IsInput">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_IKa2AMTXEemrXPg1xDDmKg" annotatedElement="_P-fn4L6YEem4xcGs3yJOww">
-              <body>Boolean that specifices if this parameter is an input parameter.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_vrpgsr6ZEem4xcGs3yJOww" name="paramvalue" type="_kxWgYJ2qEemXg71wwI_kPA" aggregation="composite" association="_vro5oL6ZEem4xcGs3yJOww">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_WWzB4MTnEemrXPg1xDDmKg" annotatedElement="_vrpgsr6ZEem4xcGs3yJOww">
-              <body>Parameter can have some number of runtime ParameterValues.   Each ParameterValue is also associated with some OperationalEntity (VnfInstance, ServiceInstance, ...).</body>
-            </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DefKUL6gEem4xcGs3yJOww"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekp4L6gEem4xcGs3yJOww" value="*"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_FVSXIMBREem3GPFSfqjGLQ" name="isModifiable">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_O8XD4MTXEemrXPg1xDDmKg" annotatedElement="_FVSXIMBREem3GPFSfqjGLQ">
-              <body>Bolean that specifices if the value can be modified or changed during the life of this parameter.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_3ciCIMBREem3GPFSfqjGLQ" name="valueType">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_X6QL8MTXEemrXPg1xDDmKg" annotatedElement="_3ciCIMBREem3GPFSfqjGLQ">
-              <body>The type of this parameter (integer, string, ...).</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_mbLdgMpjEemxyP_sJGfnPA" name="unitOfMeasure">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_zBYJAMpjEemxyP_sJGfnPA" annotatedElement="_mbLdgMpjEemxyP_sJGfnPA">
-              <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. In general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
-            </ownedComment>
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity" isAbstract="true">
@@ -1879,7 +1772,7 @@ Permitted Values:&#xD;
             <body>A simple (atomic) selection criteria that holds a specific attribute comparision expression.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricName">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricNamea">
             <ownedComment xmi:type="uml:Comment" xmi:id="_pcSX8ILvEemyVus8T4NvCQ" annotatedElement="_U92FMILsEemyVus8T4NvCQ">
               <body>Name of compared parameter or attribute.&#xD;
 </body>
@@ -1898,15 +1791,148 @@ Permitted Values:&#xD;
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XJrHgM8zEemfevCNCQbkKw" name="valueType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_0TYr0M83EemfevCNCQbkKw" annotatedElement="_XJrHgM8zEemfevCNCQbkKw">
+              <body>The type of the value property (String, Integer, Real, ...).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fcsFcJ2BEemXg71wwI_kPA" name="ParameterGroup">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_zH0l8MTWEemrXPg1xDDmKg" annotatedElement="_fcsFcJ2BEemXg71wwI_kPA">
+            <body>A group of parameters that somehow relate or work together.</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oy4YwJ2BEemXg71wwI_kPA" name="parameterGroupName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2XkfcMTWEemrXPg1xDDmKg" annotatedElement="_oy4YwJ2BEemXg71wwI_kPA">
+              <body>Name of ParameterGroup</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xfVLgJ2BEemXg71wwI_kPA" name="parameterGroupDescription">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_4-Rb8MTWEemrXPg1xDDmKg" annotatedElement="_xfVLgJ2BEemXg71wwI_kPA">
+              <body>Description of ParameterGroup.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2MynEJ2rEemXg71wwI_kPA" name="parameterGroupId" type="_AuYtcDkBEeiWMf5FLWfdLA">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7NMKkMTWEemrXPg1xDDmKg" annotatedElement="_2MynEJ2rEemXg71wwI_kPA">
+              <body>ID of ParameterGroup.</body>
+            </ownedComment>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_J6iP8J2fEemXg71wwI_kPA" name="ParameterSpecValue">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gg_CIMTgEemrXPg1xDDmKg" annotatedElement="_J6iP8J2fEemXg71wwI_kPA">
+            <body>A valid value of parameter (design time).</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_q2DKEL6hEem4xcGs3yJOww" name="value">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FD6zkMThEemrXPg1xDDmKg" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
+              <body>The value of the given ParameterSpecValue.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_jVdpwMpjEemxyP_sJGfnPA" annotatedElement="_q2DKEL6hEem4xcGs3yJOww">
+              <body>A discrete value that the Parameter can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6P1TwMpjEemxyP_sJGfnPA" name="valueFrom">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LI3GYMpkEemxyP_sJGfnPA" annotatedElement="_6P1TwMpjEemxyP_sJGfnPA">
+              <body>The low range value that a characteristic can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9_8vYMpjEemxyP_sJGfnPA" name="valueTo">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NFVaIMpkEemxyP_sJGfnPA" annotatedElement="_9_8vYMpjEemxyP_sJGfnPA">
+              <body>The upper range value that a characteristic can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aTHl4MprEemxyP_sJGfnPA" name="rangeStep">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xdDV4MprEemxyP_sJGfnPA" annotatedElement="_aTHl4MprEemxyP_sJGfnPA">
+              <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ogkJoM5pEemcqf4p4jcudw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ogq3UM5pEemcqf4p4jcudw" value="1"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_nY2ToM5pEemcqf4p4jcudw" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Zqsc4L6XEem4xcGs3yJOww" name="Parameter">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__dtkkMTWEemrXPg1xDDmKg" annotatedElement="_Zqsc4L6XEem4xcGs3yJOww">
+            <body>Some parameter that is part of a ParameterGroup.    If parameter can only hold certain values, those values are specified via ParameterSpecValue (design time).   The actual value is specified via ParameterValue (runtime).</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NiuwEL6YEem4xcGs3yJOww" name="parameterName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DmVm0MTXEemrXPg1xDDmKg" annotatedElement="_NiuwEL6YEem4xcGs3yJOww">
+              <body>Name of parameter. </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_P-fn4L6YEem4xcGs3yJOww" name="IsInput">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_IKa2AMTXEemrXPg1xDDmKg" annotatedElement="_P-fn4L6YEem4xcGs3yJOww">
+              <body>Boolean that specifices if this parameter is an input parameter.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vrpgsr6ZEem4xcGs3yJOww" name="paramvalue" type="_kxWgYJ2qEemXg71wwI_kPA" aggregation="composite" association="_vro5oL6ZEem4xcGs3yJOww">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_WWzB4MTnEemrXPg1xDDmKg" annotatedElement="_vrpgsr6ZEem4xcGs3yJOww">
+              <body>Parameter can have some number of runtime ParameterValues.   Each ParameterValue is also associated with some OperationalEntity (VnfInstance, ServiceInstance, ...).</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DefKUL6gEem4xcGs3yJOww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekp4L6gEem4xcGs3yJOww" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FVSXIMBREem3GPFSfqjGLQ" name="isModifiable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_O8XD4MTXEemrXPg1xDDmKg" annotatedElement="_FVSXIMBREem3GPFSfqjGLQ">
+              <body>Bolean that specifices if the value can be modified or changed during the life of this parameter.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3ciCIMBREem3GPFSfqjGLQ" name="valueType">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_X6QL8MTXEemrXPg1xDDmKg" annotatedElement="_3ciCIMBREem3GPFSfqjGLQ">
+              <body>The type of this parameter (integer, string, ...).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_mbLdgMpjEemxyP_sJGfnPA" name="unitOfMeasure">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zBYJAMpjEemxyP_sJGfnPA" annotatedElement="_mbLdgMpjEemxyP_sJGfnPA">
+              <body>A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. In general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yI8V8M5lEemcqf4p4jcudw" name="description">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_icMB0M5oEemcqf4p4jcudw" annotatedElement="_yI8V8M5lEemcqf4p4jcudw">
+              <body>Description of the parameter.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kxWgYJ2qEemXg71wwI_kPA" name="ParameterValue">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_SNl_kMThEemrXPg1xDDmKg" annotatedElement="_kxWgYJ2qEemXg71wwI_kPA">
+            <body>The actual value of Parameter (runtime).</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vrqHwL6ZEem4xcGs3yJOww" name="parameter" type="_Zqsc4L6XEem4xcGs3yJOww" association="_vro5oL6ZEem4xcGs3yJOww">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_AAMMQMTnEemrXPg1xDDmKg" annotatedElement="_vrqHwL6ZEem4xcGs3yJOww">
+              <body>Runtime ParameterValue is associated with exactly one Parameter.    Parameter can have some number of runtime ParameterValues.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fpm2sL6jEem4xcGs3yJOww" name="value">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_UUYF4MThEemrXPg1xDDmKg" annotatedElement="_Fpm2sL6jEem4xcGs3yJOww">
+              <body>The actual value of Parameter (runtime).</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons">
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_rMIDEILdEemyVus8T4NvCQ" name="CompositeOperator">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gZViwM84EemfevCNCQbkKw" annotatedElement="_rMIDEILdEemyVus8T4NvCQ">
+            <body>The operator being applied to to some group of selectoin critiera.</body>
+          </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zobhAILdEemyVus8T4NvCQ" name="AND"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1lXHwILdEemyVus8T4NvCQ" name="OR"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2r4q8ILdEemyVus8T4NvCQ" name="XOR"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_1kyswILtEemyVus8T4NvCQ" name="Operator">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_oHIU4M84EemfevCNCQbkKw" annotatedElement="_1kyswILtEemyVus8T4NvCQ">
+            <body>The operator being applied to some atomic selection critera.</body>
+          </ownedComment>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_65Yy4ILtEemyVus8T4NvCQ" name="MORETHAN"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8E0EMILtEemyVus8T4NvCQ" name="LESSTHAN"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8_vbYILtEemyVus8T4NvCQ" name="EQUAL"/>
@@ -5065,10 +5091,14 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mbMEkMpjEemxyP_sJGfnPA" base_StructuralFeature="_mbLdgMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6P160MpjEemxyP_sJGfnPA" base_StructuralFeature="_6P1TwMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9_9WcMpjEemxyP_sJGfnPA" base_StructuralFeature="_9_8vYMpjEemxyP_sJGfnPA"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_e20M0MpmEemxyP_sJGfnPA" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
   <OpenModel_Profile:Experimental xmi:id="_1hIBkMpmEemxyP_sJGfnPA" base_Element="_mbLdgMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:Experimental xmi:id="_3HF50MpmEemxyP_sJGfnPA" base_Element="_6P1TwMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:Experimental xmi:id="_4qhbcMpmEemxyP_sJGfnPA" base_Element="_9_8vYMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aTIM8MprEemxyP_sJGfnPA" base_StructuralFeature="_aTHl4MprEemxyP_sJGfnPA"/>
   <OpenModel_Profile:Experimental xmi:id="_4Poc8MprEemxyP_sJGfnPA" base_Element="_aTHl4MprEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yJAAUM5lEemcqf4p4jcudw" base_StructuralFeature="_yI8V8M5lEemcqf4p4jcudw"/>
+  <OpenModel_Profile:Experimental xmi:id="_A2JxQM5mEemcqf4p4jcudw" base_Element="_yI8V8M5lEemcqf4p4jcudw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XJtjwM8zEemfevCNCQbkKw" base_StructuralFeature="_XJrHgM8zEemfevCNCQbkKw"/>
+  <OpenModel_Profile:Experimental xmi:id="_yV7dcM8zEemfevCNCQbkKw" base_Element="_T7JtYM6AEemcqf4p4jcudw"/>
+  <OpenModel_Profile:Experimental xmi:id="_dHjlwM80EemfevCNCQbkKw" base_Element="_XJrHgM8zEemfevCNCQbkKw"/>
 </xmi:XMI>
