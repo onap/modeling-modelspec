@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
   <uml:Package xmi:id="_Z4LYcDOHEei5Af8DcjrhIQ" name="Service" visibility="public">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_0LRkwNuEEemxYdwuL1LyJA">
+      <body>NSST &#xD;
+(Network Slice Subnet Template)</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXMl4DOHEei5Af8DcjrhIQ" name="Associations">
       <packagedElement xmi:type="uml:Association" xmi:id="_Ihl9ID25Eeiu6I5JfRTxxQ" name="DependenciesHasPrimaryProfileReference" memberEnd="_IhnyUT25Eeiu6I5JfRTxxQ _Ihq1oD25Eeiu6I5JfRTxxQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IhnLQD25Eeiu6I5JfRTxxQ" source="org.eclipse.papyrus">
@@ -455,6 +459,18 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OBr6oDJ3Eem5adcA1c6ckw" value="*"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pmLVwNq9Eem0xcTSrumUPA" name="ServiceDescriptorFurtherDefinedByCustomizedKPIGroup" memberEnd="_pmOZENq9Eem0xcTSrumUPA _pmvWcNq9Eem0xcTSrumUPA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pmNK8Nq9Eem0xcTSrumUPA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pmNyANq9Eem0xcTSrumUPA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_pmvWcNq9Eem0xcTSrumUPA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_pmLVwNq9Eem0xcTSrumUPA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__R_sgNq-Eem0xcTSrumUPA" name="CustomizedKPIGroupHasMetrics" memberEnd="__SBhsNq-Eem0xcTSrumUPA __SDW4Nq-Eem0xcTSrumUPA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__SA6oNq-Eem0xcTSrumUPA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__SA6odq-Eem0xcTSrumUPA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__SDW4Nq-Eem0xcTSrumUPA" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="__R_sgNq-Eem0xcTSrumUPA"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
@@ -484,6 +500,11 @@
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_r0yRELg8Eem9SoGzhP7GLQ">
         <body>Option 2</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UMN5ENuCEemxYdwuL1LyJA">
+        <body>&#xD;
+NST &#xD;
+(Network Slice Template)</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8TOHEei5Af8DcjrhIQ" name="Interfaces">
@@ -634,6 +655,10 @@ Service.</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fBfcYId2Eemz_I38RrvOQg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fHVlsId2Eemz_I38RrvOQg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pmOZENq9Eem0xcTSrumUPA" name="class8" type="_obdPENq9Eem0xcTSrumUPA" association="_pmLVwNq9Eem0xcTSrumUPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pmh7ENq9Eem0xcTSrumUPA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pmoowNq9Eem0xcTSrumUPA" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_HFfXUD0QEeiWMf5FLWfdLA" name="ServiceInstance" isAbstract="true">
@@ -1534,6 +1559,32 @@ AllowedValues: shared, non-shared.&#xD;
           <body>A set of CCVPN case specific properties information, which are needed for CCVPN service with the function realization. </body>
         </ownedComment>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_obdPENq9Eem0xcTSrumUPA" name="CustomizedKPIGroup">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qdoiMNq9Eem0xcTSrumUPA">
+          <general xmi:type="uml:Class" href="Common.uml#_fcsFcJ2BEemXg71wwI_kPA"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eHIDENq-Eem0xcTSrumUPA" name="id">
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eca9oNq-Eem0xcTSrumUPA" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__SBhsNq-Eem0xcTSrumUPA" name="class10" type="_tC_lcNq-Eem0xcTSrumUPA" association="__R_sgNq-Eem0xcTSrumUPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__SCv0Nq-Eem0xcTSrumUPA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__SCv0dq-Eem0xcTSrumUPA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tC_lcNq-Eem0xcTSrumUPA" name="Metrics">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zXw5sNq_Eem0xcTSrumUPA" name="KPIName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0Lv7YNq_Eem0xcTSrumUPA" name="interval" type="_yVlRsNrEEem0xcTSrumUPA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0h2HMNq_Eem0xcTSrumUPA" name="nfKPI" type="_yzcSYNrEEem0xcTSrumUPA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_02HuENq_Eem0xcTSrumUPA" name="logicFormula " type="_6aj0wNrEEem0xcTSrumUPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H9-9gNrFEem0xcTSrumUPA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H-JVkNrFEem0xcTSrumUPA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoxzzEEeiWMf5FLWfdLA" name="VirtualLinkToLevelMapping">
@@ -1679,6 +1730,29 @@ reference point.</body>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_MDy5kLgZEem9SoGzhP7GLQ" name="ResourceSharingLevel">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_OwvA8LgZEem9SoGzhP7GLQ" name="SHARED"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_PHpFELgZEem9SoGzhP7GLQ" name="NON-SHARED"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_yVlRsNrEEem0xcTSrumUPA" name="TimeInterval">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PFsnENrFEem0xcTSrumUPA" name="unit">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PZUGoNrFEem0xcTSrumUPA" name="value">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_yzcSYNrEEem0xcTSrumUPA" name="NfKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mPfNINrFEem0xcTSrumUPA" name="id">
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_miDj0NrFEem0xcTSrumUPA" name="nfNmae">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_m28OsNrFEem0xcTSrumUPA" name="KPI">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_6aj0wNrEEem0xcTSrumUPA" name="LogicFormula">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9JF3kNrEEem0xcTSrumUPA" name="ADD"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9c49UNrEEem0xcTSrumUPA" name="SUM"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
@@ -2089,4 +2163,21 @@ reference point.</body>
   <OpenModel_Profile:Experimental xmi:id="_6zFdYLgxEem9SoGzhP7GLQ" base_Element="_WNfqILcsEemG6epU56F5-w"/>
   <OpenModel_Profile:Experimental xmi:id="__Af5ALgxEem9SoGzhP7GLQ" base_Element="_tJhnkLdZEemG6epU56F5-w"/>
   <OpenModel_Profile:Experimental xmi:id="_B5gtgLgyEem9SoGzhP7GLQ" base_Element="_rS7SULdZEemG6epU56F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_obfEQNq9Eem0xcTSrumUPA" base_Class="_obdPENq9Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pmPAINq9Eem0xcTSrumUPA" base_StructuralFeature="_pmOZENq9Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pmvWcdq9Eem0xcTSrumUPA" base_StructuralFeature="_pmvWcNq9Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_eHJRMNq-Eem0xcTSrumUPA" base_StructuralFeature="_eHIDENq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ecbksNq-Eem0xcTSrumUPA" base_StructuralFeature="_eca9oNq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_tC_lcdq-Eem0xcTSrumUPA" base_Class="_tC_lcNq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__SBhsdq-Eem0xcTSrumUPA" base_StructuralFeature="__SBhsNq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__SDW4dq-Eem0xcTSrumUPA" base_StructuralFeature="__SDW4Nq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zXxgwNq_Eem0xcTSrumUPA" base_StructuralFeature="_zXw5sNq_Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0Lv7Ydq_Eem0xcTSrumUPA" base_StructuralFeature="_0Lv7YNq_Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0h2HMdq_Eem0xcTSrumUPA" base_StructuralFeature="_0h2HMNq_Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_02IVINq_Eem0xcTSrumUPA" base_StructuralFeature="_02HuENq_Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PFsnEdrFEem0xcTSrumUPA" base_StructuralFeature="_PFsnENrFEem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PZUtsNrFEem0xcTSrumUPA" base_StructuralFeature="_PZUGoNrFEem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_mPfNIdrFEem0xcTSrumUPA" base_StructuralFeature="_mPfNINrFEem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_miDj0drFEem0xcTSrumUPA" base_StructuralFeature="_miDj0NrFEem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_m281wNrFEem0xcTSrumUPA" base_StructuralFeature="_m28OsNrFEem0xcTSrumUPA"/>
 </xmi:XMI>
