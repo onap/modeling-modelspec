@@ -1,4 +1,4 @@
-.. Copyright 2018 (China Mobile)
+.. Copyright 2019 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 .. onap-documentation documentation master file, created by
@@ -6,7 +6,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Release Notes
+Modeling Release Notes
 ==============================================
 
 .. toctree::
