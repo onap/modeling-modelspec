@@ -1621,6 +1621,10 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         <packagedElement xmi:type="uml:Class" xmi:id="_MbJhgDYjEemz0q_yvHDIRA" name="NS">
           <generalization xmi:type="uml:Generalization" xmi:id="_Pjz7kDYjEemz0q_yvHDIRA" general="_Xht84CY2EemRA_CB-n5OfQ"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UMqAkNsXEemHzqRGrCYopQ" name="SParameterGroup"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dJL2sNsXEemHzqRGrCYopQ" name="DiscreteParmGroup">
+          <generalization xmi:type="uml:Generalization" xmi:id="_izIhwNsXEemHzqRGrCYopQ" general="_UMqAkNsXEemHzqRGrCYopQ"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
         <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity" isAbstract="true">
@@ -1802,6 +1806,7 @@ Permitted Values:&#xD;
           <ownedComment xmi:type="uml:Comment" xmi:id="_zH0l8MTWEemrXPg1xDDmKg" annotatedElement="_fcsFcJ2BEemXg71wwI_kPA">
             <body>A group of parameters that somehow relate or work together.</body>
           </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_lLuw0NsXEemHzqRGrCYopQ" general="_UMqAkNsXEemHzqRGrCYopQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oy4YwJ2BEemXg71wwI_kPA" name="parameterGroupName">
             <ownedComment xmi:type="uml:Comment" xmi:id="_2XkfcMTWEemrXPg1xDDmKg" annotatedElement="_oy4YwJ2BEemXg71wwI_kPA">
               <body>Name of ParameterGroup</body>
@@ -4333,9 +4338,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sGDRoEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_LMho4AVoEemrBZmpgd_POA"/>
   </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sGGU8EHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_p41lMAVoEemrBZmpgd_POA"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_VDruARBaEemHjtkpPBz29Q">
     <base_StructuralFeature xmi:type="uml:Property" href="Policy.uml#_VDruABBaEemHjtkpPBz29Q"/>
   </OpenModel_Profile:OpenModelAttribute>
@@ -5052,4 +5054,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XJtjwM8zEemfevCNCQbkKw" base_StructuralFeature="_XJrHgM8zEemfevCNCQbkKw"/>
   <OpenModel_Profile:Experimental xmi:id="_yV7dcM8zEemfevCNCQbkKw" base_Element="_T7JtYM6AEemcqf4p4jcudw"/>
   <OpenModel_Profile:Experimental xmi:id="_dHjlwM80EemfevCNCQbkKw" base_Element="_XJrHgM8zEemfevCNCQbkKw"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_UMqnoNsXEemHzqRGrCYopQ" base_Class="_UMqAkNsXEemHzqRGrCYopQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_dJMdwNsXEemHzqRGrCYopQ" base_Class="_dJL2sNsXEemHzqRGrCYopQ"/>
 </xmi:XMI>
