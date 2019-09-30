@@ -465,7 +465,7 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_pmvWcNq9Eem0xcTSrumUPA" name="servicedescriptor" type="_Jvy-QD0MEeiWMf5FLWfdLA" association="_pmLVwNq9Eem0xcTSrumUPA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="__R_sgNq-Eem0xcTSrumUPA" name="CustomizedKPIGroupHasMetrics" memberEnd="__SBhsNq-Eem0xcTSrumUPA __SDW4Nq-Eem0xcTSrumUPA">
+      <packagedElement xmi:type="uml:Association" xmi:id="__R_sgNq-Eem0xcTSrumUPA" name="CustomizedKPIGroupHasAccessibilityKPI" memberEnd="__SBhsNq-Eem0xcTSrumUPA __SDW4Nq-Eem0xcTSrumUPA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__SA6oNq-Eem0xcTSrumUPA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__SA6odq-Eem0xcTSrumUPA" key="nature" value="UML_Nature"/>
         </eAnnotations>
@@ -670,6 +670,9 @@ Service.</body>
         </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mDZZ8D0QEeiWMf5FLWfdLA" name="serviceInstanceId" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_uP_n8D0QEeiWMf5FLWfdLA" annotatedElement="_mDZZ8D0QEeiWMf5FLWfdLA">
+            <body>Uniquely identifies this instance of a service.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_O7hUgOMiEem-B8BPGv0MMQ">
             <body>Uniquely identifies this instance of a service.</body>
           </ownedComment>
           <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
@@ -1560,30 +1563,31 @@ AllowedValues: shared, non-shared.&#xD;
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_obdPENq9Eem0xcTSrumUPA" name="CustomizedKPIGroup">
-        <generalization xmi:type="uml:Generalization" xmi:id="_qdoiMNq9Eem0xcTSrumUPA">
-          <general xmi:type="uml:Class" href="Common.uml#_fcsFcJ2BEemXg71wwI_kPA"/>
-        </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eHIDENq-Eem0xcTSrumUPA" name="id">
           <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eca9oNq-Eem0xcTSrumUPA" name="description">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="__SBhsNq-Eem0xcTSrumUPA" name="class10" type="_tC_lcNq-Eem0xcTSrumUPA" association="__R_sgNq-Eem0xcTSrumUPA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__SCv0Nq-Eem0xcTSrumUPA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__SCv0dq-Eem0xcTSrumUPA" value="*"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__SBhsNq-Eem0xcTSrumUPA" name="class10" type="_jZ0M0OAxEemahsJzCafKGQ" aggregation="composite" association="__R_sgNq-Eem0xcTSrumUPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__SCv0Nq-Eem0xcTSrumUPA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__SCv0dq-Eem0xcTSrumUPA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_orrY8OA6EemahsJzCafKGQ" name="class10" type="_jC46kOAxEemahsJzCafKGQ" association="_oroVoOA6EemahsJzCafKGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_orsnEOA6EemahsJzCafKGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ortOIOA6EemahsJzCafKGQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zUYdAOA6EemahsJzCafKGQ" name="class9" type="_irOBcOAxEemahsJzCafKGQ" association="_zUWAwOA6EemahsJzCafKGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zUZrIOA6EemahsJzCafKGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUZrIeA6EemahsJzCafKGQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_tC_lcNq-Eem0xcTSrumUPA" name="Metrics">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_zXw5sNq_Eem0xcTSrumUPA" name="KPIName">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zXw5sNq_Eem0xcTSrumUPA" name="KpiName">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_0Lv7YNq_Eem0xcTSrumUPA" name="interval" type="_yVlRsNrEEem0xcTSrumUPA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_0h2HMNq_Eem0xcTSrumUPA" name="nfKPI" type="_yzcSYNrEEem0xcTSrumUPA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_02HuENq_Eem0xcTSrumUPA" name="logicFormula " type="_6aj0wNrEEem0xcTSrumUPA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H9-9gNrFEem0xcTSrumUPA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H-JVkNrFEem0xcTSrumUPA" value="1"/>
-        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -1750,10 +1754,46 @@ reference point.</body>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_6aj0wNrEEem0xcTSrumUPA" name="LogicFormula">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9JF3kNrEEem0xcTSrumUPA" name="ADD"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9c49UNrEEem0xcTSrumUPA" name="SUM"/>
-      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_irOBcOAxEemahsJzCafKGQ" name="FlowUsageKPI">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_39-MYOA8EemahsJzCafKGQ" name="KpiName" type="_WqmcUOA-EemahsJzCafKGQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4Q_2EOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4gaLEOA8EemahsJzCafKGQ" name="Property3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jC46kOAxEemahsJzCafKGQ" name="ThroughputKPI">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2gZbIOA8EemahsJzCafKGQ" name="KpiName" type="_XREmcOA-EemahsJzCafKGQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2z_FgOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3N1I4OA8EemahsJzCafKGQ" name="Property3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jZ0M0OAxEemahsJzCafKGQ" name="AccessibilityKPI">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CXSGYOA5EemahsJzCafKGQ" name="KpiName" type="_UD1nsOA5EemahsJzCafKGQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OajgOA5EemahsJzCafKGQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OjtcOA5EemahsJzCafKGQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DaHcYOA5EemahsJzCafKGQ" name="interval" type="_yVlRsNrEEem0xcTSrumUPA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DtrRkOA5EemahsJzCafKGQ" name="nfKPI" type="_yzcSYNrEEem0xcTSrumUPA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UD1nsOA5EemahsJzCafKGQ" name="AccessibilityKPIName">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lTfxoOA5EemahsJzCafKGQ" name="RegisteredAMFSubNbrMean"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oroVoOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasThroughputKPI" memberEnd="_orrY8OA6EemahsJzCafKGQ _ortOIeA6EemahsJzCafKGQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_orqK0OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_orqK0eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ortOIeA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_oroVoOA6EemahsJzCafKGQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zUWAwOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasFlowUsageKPI" memberEnd="_zUYdAOA6EemahsJzCafKGQ _zUZrIuA6EemahsJzCafKGQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zUX18OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zUX18eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zUZrIuA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_zUWAwOA6EemahsJzCafKGQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_WqmcUOA-EemahsJzCafKGQ" name="FlowUsageKPIName">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L7-L4OA9EemahsJzCafKGQ" name="FlowSum"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XREmcOA-EemahsJzCafKGQ" name="ThroughputKPI">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LOfa0OA9EemahsJzCafKGQ" name="GTPInDataOctN3UPF"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LjZT0OA9EemahsJzCafKGQ" name="GTPOutDataOctN3UPF"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BdJm0DksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -2174,10 +2214,30 @@ reference point.</body>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zXxgwNq_Eem0xcTSrumUPA" base_StructuralFeature="_zXw5sNq_Eem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0Lv7Ydq_Eem0xcTSrumUPA" base_StructuralFeature="_0Lv7YNq_Eem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_0h2HMdq_Eem0xcTSrumUPA" base_StructuralFeature="_0h2HMNq_Eem0xcTSrumUPA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_02IVINq_Eem0xcTSrumUPA" base_StructuralFeature="_02HuENq_Eem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PFsnEdrFEem0xcTSrumUPA" base_StructuralFeature="_PFsnENrFEem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PZUtsNrFEem0xcTSrumUPA" base_StructuralFeature="_PZUGoNrFEem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mPfNIdrFEem0xcTSrumUPA" base_StructuralFeature="_mPfNINrFEem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_miDj0drFEem0xcTSrumUPA" base_StructuralFeature="_miDj0NrFEem0xcTSrumUPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_m281wNrFEem0xcTSrumUPA" base_StructuralFeature="_m28OsNrFEem0xcTSrumUPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_TUknkOAxEemahsJzCafKGQ" base_Element="_obdPENq9Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_USyjUOAxEemahsJzCafKGQ" base_Element="_tC_lcNq-Eem0xcTSrumUPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_VpfQgOAxEemahsJzCafKGQ" base_Element="_yzcSYNrEEem0xcTSrumUPA"/>
+  <OpenModel_Profile:Experimental xmi:id="_WaM7wOAxEemahsJzCafKGQ" base_Element="_yVlRsNrEEem0xcTSrumUPA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_irP2oOAxEemahsJzCafKGQ" base_Class="_irOBcOAxEemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jC5hoOAxEemahsJzCafKGQ" base_Class="_jC46kOAxEemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_jZ0M0eAxEemahsJzCafKGQ" base_Class="_jZ0M0OAxEemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_CXStcOA5EemahsJzCafKGQ" base_StructuralFeature="_CXSGYOA5EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DaIDcOA5EemahsJzCafKGQ" base_StructuralFeature="_DaHcYOA5EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DtrRkeA5EemahsJzCafKGQ" base_StructuralFeature="_DtrRkOA5EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_orsAAOA6EemahsJzCafKGQ" base_StructuralFeature="_orrY8OA6EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ortOIuA6EemahsJzCafKGQ" base_StructuralFeature="_ortOIeA6EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zUYdAeA6EemahsJzCafKGQ" base_StructuralFeature="_zUYdAOA6EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zUaSMOA6EemahsJzCafKGQ" base_StructuralFeature="_zUZrIuA6EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_2gaCMOA8EemahsJzCafKGQ" base_StructuralFeature="_2gZbIOA8EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_2z_skOA8EemahsJzCafKGQ" base_StructuralFeature="_2z_FgOA8EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3N1I4eA8EemahsJzCafKGQ" base_StructuralFeature="_3N1I4OA8EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_39-MYeA8EemahsJzCafKGQ" base_StructuralFeature="_39-MYOA8EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4Q_2EeA8EemahsJzCafKGQ" base_StructuralFeature="_4Q_2EOA8EemahsJzCafKGQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4gaLEeA8EemahsJzCafKGQ" base_StructuralFeature="_4gaLEOA8EemahsJzCafKGQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_O7v-AOMiEem-B8BPGv0MMQ" base_Comment="_O7hUgOMiEem-B8BPGv0MMQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
 </xmi:XMI>
