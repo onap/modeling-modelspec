@@ -1478,7 +1478,7 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkyXsIncEemVXsYTZj8frQ" value="*"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_uTRv8IndEemVXsYTZj8frQ" name="SelectionCriteriaCompositeComprosedOfSelectionCriteria" memberEnd="_uTS-EondEemVXsYTZj8frQ _uTTlIIndEemVXsYTZj8frQ">
+        <packagedElement xmi:type="uml:Association" xmi:id="_uTRv8IndEemVXsYTZj8frQ" name="SelectionCriteriaCompositeComprisedOfSelectionCriteria" memberEnd="_uTS-EondEemVXsYTZj8frQ _uTTlIIndEemVXsYTZj8frQ">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uTS-EIndEemVXsYTZj8frQ" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uTS-EYndEemVXsYTZj8frQ" key="nature" value="UML_Nature"/>
           </eAnnotations>
@@ -1766,10 +1766,7 @@ Permitted Values:&#xD;
           <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lo6SIILdEemyVus8T4NvCQ" name="compositeOperator" type="_rMIDEILdEemyVus8T4NvCQ">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LtI2MILpEemyVus8T4NvCQ" annotatedElement="_lo6SIILdEemyVus8T4NvCQ">
-              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_09MBkILqEemyVus8T4NvCQ">
-              <body>Logical operation for filters composition,  e.g. logical AND or OR.</body>
+              <body>Logical operation for filters composition,  e.g. logical AND, OR, XOR.</body>
             </ownedComment>
           </ownedAttribute>
         </packagedElement>
@@ -1778,8 +1775,12 @@ Permitted Values:&#xD;
             <body>A simple (atomic) selection criteria that holds a specific attribute comparision expression.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_6LSTEF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricNamea">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U92FMILsEemyVus8T4NvCQ" name="metricName">
             <ownedComment xmi:type="uml:Comment" xmi:id="_pcSX8ILvEemyVus8T4NvCQ" annotatedElement="_U92FMILsEemyVus8T4NvCQ">
+              <body>Name of compared parameter or attribute.&#xD;
+</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_tS31cOU7Eem4RuIQi6fMsw">
               <body>Name of compared parameter or attribute.&#xD;
 </body>
             </ownedComment>
@@ -4981,17 +4982,11 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_hp5QcIGAEemr-LDp1evzdw" base_Element="_8fYhoDqyEemOl5OHBoqS_w"/>
   <OpenModel_Profile:Preliminary xmi:id="_Bz2aAIGCEemr-LDp1evzdw" base_Element="_utCzUDX1EemvTc8tEY2xig"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_AkO5gV0VEemiOP02o5T8tA" base_Class="_AkO5gF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:Experimental xmi:id="_8GRFcILcEemyVus8T4NvCQ" base_Element="_AkO5gF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_A_9MMV0VEemiOP02o5T8tA" base_Class="_A_9MMF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:Experimental xmi:id="_0kL0EILcEemyVus8T4NvCQ" base_Element="_A_9MMF0VEemiOP02o5T8tA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_BZSSMV0VEemiOP02o5T8tA" base_Class="_BZSSMF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:Experimental xmi:id="_1kpykILcEemyVus8T4NvCQ" base_Element="_BZSSMF0VEemiOP02o5T8tA"/>
-  <OpenModel_Profile:Experimental xmi:id="_5XA0cILdEemyVus8T4NvCQ" base_Element="_rMIDEILdEemyVus8T4NvCQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_AFDmgILuEemyVus8T4NvCQ" base_Element="_1kyswILtEemyVus8T4NvCQ"/>
   <OpenModel_Profile:Experimental xmi:id="_ipP74IMFEemyVus8T4NvCQ" base_Element="_e6hnYIMFEemyVus8T4NvCQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_1pWvwIMFEemyVus8T4NvCQ" base_StructuralFeature="_1pWIsIMFEemyVus8T4NvCQ"/>
   <OpenModel_Profile:Experimental xmi:id="__5dtoIMFEemyVus8T4NvCQ" base_Element="_1pWIsIMFEemyVus8T4NvCQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_1DtM0InbEemVXsYTZj8frQ" base_Element="_lo6SIILdEemyVus8T4NvCQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PriAAYncEemVXsYTZj8frQ" base_StructuralFeature="_PriAAIncEemVXsYTZj8frQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_PrjOIYncEemVXsYTZj8frQ" base_StructuralFeature="_PrjOIIncEemVXsYTZj8frQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_uTS-E4ndEemVXsYTZj8frQ" base_StructuralFeature="_uTS-EondEemVXsYTZj8frQ"/>
@@ -5008,10 +5003,7 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_oy4_0J2BEemXg71wwI_kPA" base_StructuralFeature="_oy4YwJ2BEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_xfVLgZ2BEemXg71wwI_kPA" base_StructuralFeature="_xfVLgJ2BEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_J6i3AJ2fEemXg71wwI_kPA" base_Class="_J6iP8J2fEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_apuKEJ2fEemXg71wwI_kPA" base_Element="_fcsFcJ2BEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_bwXCAJ2fEemXg71wwI_kPA" base_Element="_J6iP8J2fEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_kxXHcJ2qEemXg71wwI_kPA" base_Class="_kxWgYJ2qEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_Gt7TkJ2rEemXg71wwI_kPA" base_Element="_kxWgYJ2qEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_2MzOIJ2rEemXg71wwI_kPA" base_StructuralFeature="_2MynEJ2rEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zknOc52sEemXg71wwI_kPA" base_StructuralFeature="_zknOcp2sEemXg71wwI_kPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zkq40J2sEemXg71wwI_kPA" base_StructuralFeature="_zkqRwJ2sEemXg71wwI_kPA"/>
@@ -5030,29 +5022,52 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OYFKEb6gEem4xcGs3yJOww" base_StructuralFeature="_OYFKEL6gEem4xcGs3yJOww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_q2DKEb6hEem4xcGs3yJOww" base_StructuralFeature="_q2DKEL6hEem4xcGs3yJOww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_Fpm2sb6jEem4xcGs3yJOww" base_StructuralFeature="_Fpm2sL6jEem4xcGs3yJOww"/>
-  <OpenModel_Profile:Experimental xmi:id="_GvhRsL6qEem4xcGs3yJOww" base_Element="_Zqsc4L6XEem4xcGs3yJOww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FVS-MMBREem3GPFSfqjGLQ" base_StructuralFeature="_FVSXIMBREem3GPFSfqjGLQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_3ciCIcBREem3GPFSfqjGLQ" base_StructuralFeature="_3ciCIMBREem3GPFSfqjGLQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_Jimn8MBYEem3GPFSfqjGLQ" base_Element="_oy4YwJ2BEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_K74IAMBYEem3GPFSfqjGLQ" base_Element="_xfVLgJ2BEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_MIpdIMBYEem3GPFSfqjGLQ" base_Element="_2MynEJ2rEemXg71wwI_kPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_RKzvcMBYEem3GPFSfqjGLQ" base_Element="_q2DKEL6hEem4xcGs3yJOww"/>
-  <OpenModel_Profile:Experimental xmi:id="_T5KzIMBYEem3GPFSfqjGLQ" base_Element="_NiuwEL6YEem4xcGs3yJOww"/>
-  <OpenModel_Profile:Experimental xmi:id="_VG9b8MBYEem3GPFSfqjGLQ" base_Element="_P-fn4L6YEem4xcGs3yJOww"/>
-  <OpenModel_Profile:Experimental xmi:id="_WW_gcMBYEem3GPFSfqjGLQ" base_Element="_FVSXIMBREem3GPFSfqjGLQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_Xsq58MBYEem3GPFSfqjGLQ" base_Element="_3ciCIMBREem3GPFSfqjGLQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_1zN2wMBYEem3GPFSfqjGLQ" base_Element="_Fpm2sL6jEem4xcGs3yJOww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_mbMEkMpjEemxyP_sJGfnPA" base_StructuralFeature="_mbLdgMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6P160MpjEemxyP_sJGfnPA" base_StructuralFeature="_6P1TwMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9_9WcMpjEemxyP_sJGfnPA" base_StructuralFeature="_9_8vYMpjEemxyP_sJGfnPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_1hIBkMpmEemxyP_sJGfnPA" base_Element="_mbLdgMpjEemxyP_sJGfnPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_3HF50MpmEemxyP_sJGfnPA" base_Element="_6P1TwMpjEemxyP_sJGfnPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_4qhbcMpmEemxyP_sJGfnPA" base_Element="_9_8vYMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aTIM8MprEemxyP_sJGfnPA" base_StructuralFeature="_aTHl4MprEemxyP_sJGfnPA"/>
   <OpenModel_Profile:Experimental xmi:id="_4Poc8MprEemxyP_sJGfnPA" base_Element="_aTHl4MprEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yJAAUM5lEemcqf4p4jcudw" base_StructuralFeature="_yI8V8M5lEemcqf4p4jcudw"/>
-  <OpenModel_Profile:Experimental xmi:id="_A2JxQM5mEemcqf4p4jcudw" base_Element="_yI8V8M5lEemcqf4p4jcudw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XJtjwM8zEemfevCNCQbkKw" base_StructuralFeature="_XJrHgM8zEemfevCNCQbkKw"/>
   <OpenModel_Profile:Experimental xmi:id="_yV7dcM8zEemfevCNCQbkKw" base_Element="_T7JtYM6AEemcqf4p4jcudw"/>
-  <OpenModel_Profile:Experimental xmi:id="_dHjlwM80EemfevCNCQbkKw" base_Element="_XJrHgM8zEemfevCNCQbkKw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_dYBiUOU7Eem4RuIQi6fMsw" base_Element="_AkO5gF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_e7jxoOU7Eem4RuIQi6fMsw" base_Element="_h8AhkILoEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_hxhSIOU7Eem4RuIQi6fMsw" base_Element="_A_9MMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_i-whUOU7Eem4RuIQi6fMsw" base_Element="_lo6SIILdEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_sWS4cOU7Eem4RuIQi6fMsw" base_Element="_U92FMILsEemyVus8T4NvCQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_tS-jIOU7Eem4RuIQi6fMsw" base_Comment="_tS31cOU7Eem4RuIQi6fMsw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:Preliminary xmi:id="_w2ZmkOU7Eem4RuIQi6fMsw" base_Element="_VorK4ILsEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_yADWQOU7Eem4RuIQi6fMsw" base_Element="_W1j0wILsEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_zHL9cOU7Eem4RuIQi6fMsw" base_Element="_XJrHgM8zEemfevCNCQbkKw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_0vQugOU7Eem4RuIQi6fMsw" base_Element="_BZSSMF0VEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_6X81UOU7Eem4RuIQi6fMsw" base_Element="_uTRv8IndEemVXsYTZj8frQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_-eEWIOU7Eem4RuIQi6fMsw" base_Element="_PrdukIncEemVXsYTZj8frQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_B_-9sOU8Eem4RuIQi6fMsw" base_Element="_qQWgYF0XEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_EWlBoOU8Eem4RuIQi6fMsw" base_Element="_6LSTEF0XEemiOP02o5T8tA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_YupG8OU8Eem4RuIQi6fMsw" base_Element="_fcsFcJ2BEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_bZxQcOU8Eem4RuIQi6fMsw" base_Element="_oy4YwJ2BEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_dy65IOU8Eem4RuIQi6fMsw" base_Element="_xfVLgJ2BEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_gTCFcOU8Eem4RuIQi6fMsw" base_Element="_2MynEJ2rEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ykLhkOU8Eem4RuIQi6fMsw" base_Element="_zkmnYJ2sEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_2dwbMOU8Eem4RuIQi6fMsw" base_Element="_WwqCwL6ZEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_8RyPUOU8Eem4RuIQi6fMsw" base_Element="_Zqsc4L6XEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_-ZsXAOU8Eem4RuIQi6fMsw" base_Element="_NiuwEL6YEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Ag7wUOU9Eem4RuIQi6fMsw" base_Element="_yI8V8M5lEemcqf4p4jcudw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Cdx3gOU9Eem4RuIQi6fMsw" base_Element="_P-fn4L6YEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_EgPegOU9Eem4RuIQi6fMsw" base_Element="_FVSXIMBREem3GPFSfqjGLQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_HiDCoOU9Eem4RuIQi6fMsw" base_Element="_3ciCIMBREem3GPFSfqjGLQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_J0zIYOU9Eem4RuIQi6fMsw" base_Element="_mbLdgMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_PnxMkOU9Eem4RuIQi6fMsw" base_Element="_ucwrsL6ZEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_R1u48OU9Eem4RuIQi6fMsw" base_Element="_J6iP8J2fEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_g3ExMOU9Eem4RuIQi6fMsw" base_Element="_q2DKEL6hEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_i-nFcOU9Eem4RuIQi6fMsw" base_Element="_6P1TwMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_k_VAAOU9Eem4RuIQi6fMsw" base_Element="_9_8vYMpjEemxyP_sJGfnPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Zz5M4OU-Eem4RuIQi6fMsw" base_Element="_OYD78L6gEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_d643cOU-Eem4RuIQi6fMsw" base_Element="_kxWgYJ2qEemXg71wwI_kPA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_gJk8kOU-Eem4RuIQi6fMsw" base_Element="_Fpm2sL6jEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_id_PMOU-Eem4RuIQi6fMsw" base_Element="_biUdMKMJEemYd6Tamcc5WQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_upD9kOVBEem4RuIQi6fMsw" base_Element="_rMIDEILdEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_wOwJAOVBEem4RuIQi6fMsw" base_Element="_1kyswILtEemyVus8T4NvCQ"/>
 </xmi:XMI>
