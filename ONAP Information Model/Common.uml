@@ -1761,7 +1761,7 @@ Permitted Values:&#xD;
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_A_9MMF0VEemiOP02o5T8tA" name="SelectionCriteriaComposite">
           <ownedComment xmi:type="uml:Comment" xmi:id="_JOTcQILpEemyVus8T4NvCQ" annotatedElement="_A_9MMF0VEemiOP02o5T8tA">
-            <body>A SelectionCriteria that is an aggregation of multiple selection criterias.   Agregation can e for example AND or OR logical operations.</body>
+            <body>A SelectionCriteria that is an aggregation of multiple selection criterias.   Agregation can be for example AND, OR, or XOR logical operations.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_qQWgYF0XEemiOP02o5T8tA" general="_AkO5gF0VEemiOP02o5T8tA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_lo6SIILdEemyVus8T4NvCQ" name="compositeOperator" type="_rMIDEILdEemyVus8T4NvCQ">
@@ -1860,6 +1860,9 @@ Permitted Values:&#xD;
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_aTHl4MprEemxyP_sJGfnPA" name="rangeStep">
             <ownedComment xmi:type="uml:Comment" xmi:id="_xdDV4MprEemxyP_sJGfnPA" annotatedElement="_aTHl4MprEemxyP_sJGfnPA">
+              <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_xvYYYOqeEemQocZcEjFuLQ">
               <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -5028,7 +5031,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6P160MpjEemxyP_sJGfnPA" base_StructuralFeature="_6P1TwMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_9_9WcMpjEemxyP_sJGfnPA" base_StructuralFeature="_9_8vYMpjEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_aTIM8MprEemxyP_sJGfnPA" base_StructuralFeature="_aTHl4MprEemxyP_sJGfnPA"/>
-  <OpenModel_Profile:Experimental xmi:id="_4Poc8MprEemxyP_sJGfnPA" base_Element="_aTHl4MprEemxyP_sJGfnPA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_yJAAUM5lEemcqf4p4jcudw" base_StructuralFeature="_yI8V8M5lEemcqf4p4jcudw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_XJtjwM8zEemfevCNCQbkKw" base_StructuralFeature="_XJrHgM8zEemfevCNCQbkKw"/>
   <OpenModel_Profile:Experimental xmi:id="_yV7dcM8zEemfevCNCQbkKw" base_Element="_T7JtYM6AEemcqf4p4jcudw"/>
@@ -5070,4 +5072,7 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_id_PMOU-Eem4RuIQi6fMsw" base_Element="_biUdMKMJEemYd6Tamcc5WQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_upD9kOVBEem4RuIQi6fMsw" base_Element="_rMIDEILdEemyVus8T4NvCQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_wOwJAOVBEem4RuIQi6fMsw" base_Element="_1kyswILtEemyVus8T4NvCQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_msAxkOqeEemQocZcEjFuLQ" base_Element="_vro5oL6ZEem4xcGs3yJOww"/>
+  <OpenModel_Profile:Preliminary xmi:id="_wlpJIOqeEemQocZcEjFuLQ" base_Element="_aTHl4MprEemxyP_sJGfnPA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_xviwcOqeEemQocZcEjFuLQ" base_Comment="_xvYYYOqeEemQocZcEjFuLQ" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
 </xmi:XMI>
