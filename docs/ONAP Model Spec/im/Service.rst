@@ -2,6 +2,9 @@
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
+Service Model
+~~~~~~~~~~~~~
+
 .. contents::
    :depth: 3
 ..
@@ -127,8 +130,6 @@ Applied stereotypes:
 |             |             |             | -  support:       |                 |
 |             |             |             |       MANDATORY   |                 |
 +-------------+-------------+-------------+-------------------+-----------------+
-
-.. _attachment-1:
 
 Attachment
 ----------
@@ -5426,7 +5427,7 @@ VNF involved in a given NS level and the required number of instances.
 Enumerations
 ============
 
- Action
+Action
 -------
 
 Contains Enumeration Literals:
@@ -5439,7 +5440,7 @@ Contains Enumeration Literals:
 
 -  NO_CHANGE:
 
- OrderPriority
+OrderPriority
 --------------
 
 A way that can be used by order requester to prioritize orders in
@@ -5459,9 +5460,7 @@ Contains Enumeration Literals:
 
 -  4:
 
-.. _orderstate-1:
-
- OrderState
+OrderState
 -----------
 
 Contains Enumeration Literals:
@@ -5483,15 +5482,3 @@ Contains Enumeration Literals:
 -  PARTIAL:
 
 -  REJECTED:
-
-Primitives
-==========
-
-Interfaces
-==========
-
-Signals
-=======
-
-Operations
-==========

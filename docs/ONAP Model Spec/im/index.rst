@@ -12,7 +12,8 @@ ONAP Information Model Specifications
 .. toctree::
    :titlesonly:
 
+   Root
    VnfdAndVnfInstance
    NSD
    Service
-   NSD1
+   BusinessInteraction

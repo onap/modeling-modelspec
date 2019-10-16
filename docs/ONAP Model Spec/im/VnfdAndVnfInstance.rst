@@ -1,31 +1,19 @@
-ONAP Vnf Sub Model
+.. Copyright 2019
+.. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
+.. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
-1. .. rubric:: Diagrams
-      :name: diagrams
+ONAP Vnfd and VnfInstance Model
+===============================
 
-   1. .. rubric:: ONAP Vnfd - Topology View
-         :name: onap-vnfd---topology-view
+.. contents::
+   :depth: 3
+..
 
-   2. .. rubric:: ONAP Vnfd View
-         :name: onap-vnfd-view
+Class Definition
+----------------
 
-   3. .. rubric:: VNF Datatypes
-         :name: vnf-datatypes
-
-   4. .. rubric:: VNF Instance
-         :name: vnf-instance
-
-   5. .. rubric:: Vnf Deployment Flavor
-         :name: vnf-deployment-flavor
-
-   6. .. rubric:: Vnf Element Group
-         :name: vnf-element-group
-
-2. .. rubric:: Classes
-      :name: classes
-
-   7. .. rubric:: BaseConfigGroup
-         :name: baseconfiggroup
+BaseConfigGroup
+~~~~~~~~~~~~~~~
 
 Every Vnf contains a BaseConfigGroup. BaseConfigGroup may set Access
 Control Lists (ACL's) and establish security groups and server groups.
@@ -44,8 +32,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   8. .. rubric:: DeploymentGroup
-         :name: deploymentgroup
+DeploymentGroup
+~~~~~~~~~~~~~~~
 
 DeploymentGroup provides the minimum viable VDU and associated VNFC
 configuration for a useable VNF. I can have a small, medium, large
@@ -61,8 +49,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   9. .. rubric:: HomingGroup
-         :name: hominggroup
+HomingGroup
+~~~~~~~~~~~
 
 Homing selects what cloud selection strategy will be used. HomingGroup
 is used to determine where VNF's within a given group are placed with
@@ -105,7 +93,7 @@ Applied stereotypes:
        - Resources are co-located in the same cloud-region.
        Diversity
 	   - Resources are geo-diverse (cannot be co-located).
-
+	   
    * - vnfdMembers
      - invalid
      - 1
@@ -457,8 +445,8 @@ Applied stereotypes:
      - References to VnfVirtualLinkDesc that are part of this group.
 
 	 
-13. .. rubric:: ScalingAspect
-       :name: scalingaspect
+ScalingAspect
+~~~~~~~~~~~~~
 
 The ScalingAspect class describes the details of an aspect used for
 horizontal scaling.
@@ -471,8 +459,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   14. .. rubric:: ScalingGroup
-          :name: scalinggroup
+ScalingGroup
+~~~~~~~~~~~~
 
 A ScalingGroup determines which VNFC's (VDU's) are scaled together based
 on demand.
@@ -487,8 +475,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   15. .. rubric:: SwImageDesc
-          :name: swimagedesc
+SwImageDesc
+~~~~~~~~~~~
 
 The SwImageDesc information element describes requested additional
 capability for a particular VDU. Such a capability may be for
@@ -2210,8 +2198,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   29. .. rubric:: VnfExtCpd
-          :name: vnfextcpd
+VnfExtCpd
+~~~~~~~~~
 
 Applied stereotypes:
 
@@ -2344,8 +2332,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   32. .. rubric:: Vnfc
-          :name: vnfc
+Vnfc
+~~~~
 
 An internal component of a VNF providing a VNF Provider a defined
 sub-set of that VNF's functionality, with the main characteristic that a
@@ -2591,8 +2579,8 @@ Applied stereotypes:
 
 -  support: MANDATORY
 
-   34. .. rubric:: Vnfd
-          :name: vnfd
+Vnfd
+~~~~
 
 A Vnfd, or VNF Descriptor, is template which describes a VNF in terms of
 deployment and operational behaviour requirements. It also contains
@@ -3000,11 +2988,11 @@ Applied stereotypes:
      - References to VnfVirtualLinkDesc that are part of this group.
 
 
-3. .. rubric:: Data Types
-      :name: data-types
+Data Type definition
+--------------------
 
-   36. .. rubric:: LifecycleManagementScript
-          :name: lifecyclemanagementscript
+LifecycleManagementScript
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
@@ -3743,11 +3731,11 @@ VNFM.
      - It provides VNFC configurable properties that can be modified using the ModifyVnfInfo operation.
 
 
-4. .. rubric:: Enumerations
-      :name: enumerations
+Enumeration definition
+----------------------
 
-   49. .. rubric:: AddressType
-          :name: addresstype
+AddressType
+~~~~~~~~~~~
 
 Type of address
 
@@ -3757,8 +3745,8 @@ Contains Enumeration Literals:
 
 -  IP:
 
-   50. .. rubric:: ClosedLoopStatus
-          :name: closedloopstatus
+ClosedLoopStatus
+~~~~~~~~~~~~~~~~
 
 Contains Enumeration Literals:
 
@@ -3766,8 +3754,8 @@ Contains Enumeration Literals:
 
 -  DISABLED:
 
-   51. .. rubric:: CollectionPeriod
-          :name: collectionperiod
+CollectionPeriod
+~~~~~~~~~~~~~~~~
 
 Specifies the periodicity at which the producer will collect performance
 information.
@@ -3783,8 +3771,8 @@ Contains Enumeration Literals:
 
 -  isolation:
 
-   53. .. rubric:: LcmEvent
-          :name: lcmevent
+LcmEvent
+~~~~~~~~
 
 Describes VNF lifecycle event(s) or an external stimulus detected on a
 VNFM reference point.
@@ -3827,8 +3815,8 @@ Contains Enumeration Literals:
 
 -  EVENT_END_VNFINFO_MODIFICATION:
 
-   54. .. rubric:: OperationalStatus
-          :name: operationalstatus
+OperationalStatus
+~~~~~~~~~~~~~~~~~
 
 Indicator for whether the resource is considered operational. Valid
 values are in-service-path and out-of-service-path.
@@ -3839,8 +3827,8 @@ Contains Enumeration Literals:
 
 -  OUT-OF-SERVICE-PATH:
 
-   55. .. rubric:: OrchestrationStatus
-          :name: orchestrationstatus
+OrchestrationStatus
+~~~~~~~~~~~~~~~~~~~
 
 Contains Enumeration Literals:
 
@@ -3852,8 +3840,8 @@ Contains Enumeration Literals:
 
 -  ACTIVE:
 
-   56. .. rubric:: PinningPolicy
-          :name: pinningpolicy
+PinningPolicy
+~~~~~~~~~~~~~
 
 Defines the CPU pinning policy.
 
@@ -3863,8 +3851,8 @@ Contains Enumeration Literals:
 
 -  DYNAMIC:
 
-   57. .. rubric:: PlacementStrategy
-          :name: placementstrategy
+PlacementStrategy
+~~~~~~~~~~~~~~~~~
 
 Contains Enumeration Literals:
 
@@ -3874,8 +3862,8 @@ Contains Enumeration Literals:
 
 -  EXCLUSIVITY:
 
-   58. .. rubric:: ProvStatus
-          :name: provstatus
+ProvStatus
+~~~~~~~~~~
 
 Provisioning status, used as a trigger for operational monitoring of
 this resource by service assurance systems.
@@ -3888,8 +3876,8 @@ Contains Enumeration Literals:
 
 -  CAPPED:
 
-   59. .. rubric:: VnfSource
-          :name: vnfsource
+VnfSource
+~~~~~~~~~
 
 Describes the source of the indicator.
 
@@ -3901,8 +3889,8 @@ Contains Enumeration Literals:
 
 -  BOTH:
 
-   60. .. rubric:: VnicType
-          :name: vnictype
+VnicType
+~~~~~~~~
 
 Describes the type of VNIC to which a CP attaches.
 
@@ -3919,17 +3907,3 @@ Contains Enumeration Literals:
 -  DIRECT_PHYSICAL:
 
 -  VIRTIO_FORWARDER:
-
-   5. .. rubric:: Primitives
-         :name: primitives
-
-   6. .. rubric:: Interfaces
-         :name: interfaces
-
-7. .. rubric:: Signals
-      :name: signals
-
-8. .. rubric:: Operations
-      :name: operations
-
-
