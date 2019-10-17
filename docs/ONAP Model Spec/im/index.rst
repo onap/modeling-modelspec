@@ -17,3 +17,4 @@ ONAP Information Model Specifications
    NSD
    Service
    BusinessInteraction
+   VES index
