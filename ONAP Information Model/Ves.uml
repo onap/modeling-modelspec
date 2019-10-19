@@ -3900,7 +3900,7 @@ Field	Type	Required?	Description&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rroF8CV8Eem2wfSvtxnwBQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rroF8SV8Eem2wfSvtxnwBQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pycOYiWKEem2wfSvtxnwBQ" name="_measvalues" type="_AgoUACV_Eem2wfSvtxnwBQ" aggregation="composite" association="_pybAQCWKEem2wfSvtxnwBQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pycOYiWKEem2wfSvtxnwBQ" name="_measValuesList" type="_AgoUACV_Eem2wfSvtxnwBQ" aggregation="composite" association="_pybAQCWKEem2wfSvtxnwBQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_6r-XUCWKEem2wfSvtxnwBQ" annotatedElement="_pycOYiWKEem2wfSvtxnwBQ">
             <body>Array of measValues</body>
           </ownedComment>
@@ -4820,6 +4820,9 @@ Debug	          7	    debug-level messages&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_0b2vMPJoEeibsZxxyZUKdQ">
         <body>Treated associatedAlertList as a String with multiplicity of *</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_24ms4PGtEemGVs4BUFMrVg">
+        <body>measValues to measVlauesList</body>
+      </ownedComment>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pJKCADksEemjyLkBMGZA1g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pJKCATksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -5379,7 +5382,6 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_6Gh0wGghEem1cLRh0iOg7w" base_Element="_Oh1XMCV6Eem2wfSvtxnwBQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_7IKQ4GghEem1cLRh0iOg7w" base_Element="_pUVeciV8Eem2wfSvtxnwBQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_8SwbwGghEem1cLRh0iOg7w" base_Element="_rrne4yV8Eem2wfSvtxnwBQ"/>
-  <OpenModel_Profile:Preliminary xmi:id="_9gh2cGghEem1cLRh0iOg7w" base_Element="_pycOYiWKEem2wfSvtxnwBQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_L9KCoGgjEem1cLRh0iOg7w" base_Element="_Mgq4ECV3Eem2wfSvtxnwBQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_PN2XUGgjEem1cLRh0iOg7w" base_Element="_M6UuMCV3Eem2wfSvtxnwBQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_Q0MDAGgjEem1cLRh0iOg7w" base_Element="_YBJU0CV7Eem2wfSvtxnwBQ"/>
@@ -5416,4 +5418,5 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_agtN0GgyEem1cLRh0iOg7w" base_Element="_xzKYUJaXEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:Preliminary xmi:id="_t98poGgyEem1cLRh0iOg7w" base_Element="_NyescJQzEei6kI-JPNdeuw"/>
   <OpenModel_Profile:Preliminary xmi:id="_vr4yIGgyEem1cLRh0iOg7w" base_Element="_OcpDwJQzEei6kI-JPNdeuw"/>
+  <OpenModel_Profile:Experimental xmi:id="_hf97YPGtEemGVs4BUFMrVg" base_Element="_pycOYiWKEem2wfSvtxnwBQ"/>
 </xmi:XMI>
