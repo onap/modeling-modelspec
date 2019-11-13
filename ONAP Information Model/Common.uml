@@ -1545,8 +1545,44 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DTVbkMBTEem3GPFSfqjGLQ" value="*"/>
           </ownedEnd>
         </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_nO6VQO66EemJwbfAie9rjQ" name="ParameterProfileRealizedByParameterGroup" memberEnd="_nO9YkO66EemJwbfAie9rjQ _nO9_oO66EemJwbfAie9rjQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nO8KcO66EemJwbfAie9rjQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nO8Kce66EemJwbfAie9rjQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_nO9YkO66EemJwbfAie9rjQ" name="parametergroup" type="_fcsFcJ2BEemXg71wwI_kPA" association="_nO6VQO66EemJwbfAie9rjQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MEJusO9rEemJwbfAie9rjQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MEPOQO9rEemJwbfAie9rjQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_nO9_oO66EemJwbfAie9rjQ" name="parameterprofile" type="_Be5FoO66EemJwbfAie9rjQ" association="_nO6VQO66EemJwbfAie9rjQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NAc-4O9rEemJwbfAie9rjQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NAmv4O9rEemJwbfAie9rjQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_knRPwP8wEemzCqmfAD3BYQ" name="ParmSpecValueIntantiatedAsDynamicParmValue" visibility="protected" memberEnd="_knX9cP8wEemzCqmfAD3BYQ _knZyoP8wEemzCqmfAD3BYQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_knWvUP8wEemzCqmfAD3BYQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_knXWYP8wEemzCqmfAD3BYQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_knZyoP8wEemzCqmfAD3BYQ" name="parmspecvalueii" type="_IkxEcO9wEemJwbfAie9rjQ" association="_knRPwP8wEemzCqmfAD3BYQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F5IysAGaEeqfUa4k9Hxb5w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F5QugAGaEeqfUa4k9Hxb5w" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_knX9cP8wEemzCqmfAD3BYQ" name="_parametervalue" type="_kxWgYJ2qEemXg71wwI_kPA" association="_knRPwP8wEemzCqmfAD3BYQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bdd_AP8xEemzCqmfAD3BYQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bd8gIP8xEemzCqmfAD3BYQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_guoCkO9_EemJwbfAie9rjQ" name="ParameterEnumeratedBy SpecValue" memberEnd="_guopou9_EemJwbfAie9rjQ _gup3wO9_EemJwbfAie9rjQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_guopoO9_EemJwbfAie9rjQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_guopoe9_EemJwbfAie9rjQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_guopou9_EemJwbfAie9rjQ" name="parameter" type="_Zqsc4L6XEem4xcGs3yJOww" association="_guoCkO9_EemJwbfAie9rjQ"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_gup3wO9_EemJwbfAie9rjQ" name="parmspecvalueii" type="_IkxEcO9wEemJwbfAie9rjQ" aggregation="composite" association="_guoCkO9_EemJwbfAie9rjQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vSxBcO9_EemJwbfAie9rjQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vTCuQO9_EemJwbfAie9rjQ" value="*"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_HtkgEOLJEeiKy5JVrA0UGA" name="Diagrams" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HtkgEOLJEeiKy5JVrA0UGA" name="Diagrams" visibility="private" URI="">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2v3KwOwpEei7-e9MrPJW7Q">
           <body>Perhaps all these attributes can be moved up to OnboardingNfDescriptor</body>
         </ownedComment>
@@ -1586,6 +1622,9 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_V-ORQPASEembhOFQbDnUWw">
           <body>Colored classes are examples in the context of tis proposal.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GT7lYP82EemLiZgytLM-sA">
+          <body>Classes and attributes in gold are proposed enhancements</body>
         </ownedComment>
         <packagedElement xmi:type="uml:Class" xmi:id="_eR_ykPJcEeibsZxxyZUKdQ" name="VnfcDescriptor"/>
         <packagedElement xmi:type="uml:Class" xmi:id="__6rFMPMTEeiKa_-nH9J3Lg" name="ServiceDescriptor">
@@ -1631,19 +1670,6 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
           <generalization xmi:type="uml:Generalization" xmi:id="_Pjz7kDYjEemz0q_yvHDIRA" general="_Xht84CY2EemRA_CB-n5OfQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_Be5FoO66EemJwbfAie9rjQ" name="ParameterProfile" isAbstract="true"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_nO6VQO66EemJwbfAie9rjQ" name="ParameterProfileRealizedByParameterGroup" memberEnd="_nO9YkO66EemJwbfAie9rjQ _nO9_oO66EemJwbfAie9rjQ">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nO8KcO66EemJwbfAie9rjQ" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nO8Kce66EemJwbfAie9rjQ" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_nO9YkO66EemJwbfAie9rjQ" name="parametergroup" type="_fcsFcJ2BEemXg71wwI_kPA" association="_nO6VQO66EemJwbfAie9rjQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MEJusO9rEemJwbfAie9rjQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MEPOQO9rEemJwbfAie9rjQ" value="*"/>
-          </ownedEnd>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_nO9_oO66EemJwbfAie9rjQ" name="parameterprofile" type="_Be5FoO66EemJwbfAie9rjQ" association="_nO6VQO66EemJwbfAie9rjQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NAc-4O9rEemJwbfAie9rjQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NAmv4O9rEemJwbfAie9rjQ" value="*"/>
-          </ownedEnd>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_GEv7kO9sEemJwbfAie9rjQ" name="3GPPServiceProfile" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_bMr-oO9sEemJwbfAie9rjQ" general="_Be5FoO66EemJwbfAie9rjQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sjrNcPANEembhOFQbDnUWw" name="Property2"/>
@@ -1653,40 +1679,17 @@ It is the asbstract parent of the NsQos and VnfQos datatypes, as the NsQoS (QoS 
         <packagedElement xmi:type="uml:Class" xmi:id="_NggigO9sEemJwbfAie9rjQ" name="MEFeAccessServiceProfile" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_b_vzQO9sEemJwbfAie9rjQ" general="_Be5FoO66EemJwbfAie9rjQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_IkxEcO9wEemJwbfAie9rjQ" name="ParmSpecValueII"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_8Z4mgO9wEemJwbfAie9rjQ" name="RangeValueSpec">
-          <generalization xmi:type="uml:Generalization" xmi:id="_vZ4k0O95EemJwbfAie9rjQ" general="_IkxEcO9wEemJwbfAie9rjQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_aUSZMO97EemJwbfAie9rjQ" name="valueFrom">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_bq3KkO97EemJwbfAie9rjQ" name="valueTo">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_cuaSQO97EemJwbfAie9rjQ" name="rangeStep">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="__9cz4O9wEemJwbfAie9rjQ" name="DescreteValueSpec">
-          <generalization xmi:type="uml:Generalization" xmi:id="_xs3UEO95EemJwbfAie9rjQ" general="_IkxEcO9wEemJwbfAie9rjQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_kC1FoO98EemJwbfAie9rjQ" name="value">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_guoCkO9_EemJwbfAie9rjQ" name="ParameterEnumeratedBy SpecValue" memberEnd="_guopou9_EemJwbfAie9rjQ _gup3wO9_EemJwbfAie9rjQ">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_guopoO9_EemJwbfAie9rjQ" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_guopoe9_EemJwbfAie9rjQ" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_guopou9_EemJwbfAie9rjQ" name="parameter" type="_Zqsc4L6XEem4xcGs3yJOww" association="_guoCkO9_EemJwbfAie9rjQ"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_gup3wO9_EemJwbfAie9rjQ" name="parmspecvalueii" type="_IkxEcO9wEemJwbfAie9rjQ" aggregation="composite" association="_guoCkO9_EemJwbfAie9rjQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vSxBcO9_EemJwbfAie9rjQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vTCuQO9_EemJwbfAie9rjQ" value="*"/>
-          </ownedEnd>
-        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_81_lYPANEembhOFQbDnUWw" name="SomeOtherProfile" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_MOFJsPAOEembhOFQbDnUWw" general="_Be5FoO66EemJwbfAie9rjQ"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_JjPoQOLJEeiKy5JVrA0UGA" name="RootObjectClasses">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_cj3xwAYaEeqIfvPxKp_Ydg" name="Constraint39" constrainedElement="_aUSZMO97EemJwbfAie9rjQ _bq3KkO97EemJwbfAie9rjQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ck2CIAYaEeqIfvPxKp_Ydg" name="constraintSpec">
+            <language></language>
+            <body>valueFrom&lt;valueTo</body>
+          </specification>
+        </ownedRule>
         <packagedElement xmi:type="uml:Class" xmi:id="_eCjlEOLJEeiKy5JVrA0UGA" name="RootEntity" isAbstract="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Nx3i4PgUEeiEqKXVVPCm1Q" annotatedElement="_eCjlEOLJEeiKy5JVrA0UGA">
             <body>This is the top of the ONAP class hierarchy. The purpose of the RootEntity is to define a set of attributes that are common to all entities that derive from it. These properties enable us to name, describe, and identify all objects in the environment.</body>
@@ -1994,6 +1997,65 @@ Permitted Values:&#xD;
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8Z4mgO9wEemJwbfAie9rjQ" name="RangeValueSpec">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_2UaOcAF2EeqfUa4k9Hxb5w">
+            <body>RangeValueSpec is generally expected to be of valueType integer or </body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JXW68AF3EeqfUa4k9Hxb5w" annotatedElement="_8Z4mgO9wEemJwbfAie9rjQ">
+            <body>RangeValueSpec generally should have a valueType of either integer or real.   valueFrom, valueTo, and rangeStep should all be of the same valuetype for some Parameter.</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_CCXhoAYdEeqIfvPxKp_Ydg" annotatedElement="_8Z4mgO9wEemJwbfAie9rjQ">
+            <body>valueTo should be greater than valueFrom</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GlQeAAYdEeqIfvPxKp_Ydg" annotatedElement="_8Z4mgO9wEemJwbfAie9rjQ">
+            <body>rangeStep should be greater than zero.</body>
+          </ownedComment>
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_M7hR8AYcEeqIfvPxKp_Ydg" name="Constraint40" constrainedElement="_cuaSQO97EemJwbfAie9rjQ">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_M7igEAYcEeqIfvPxKp_Ydg" name="constraintSpec">
+              <language></language>
+              <body>rangeStep>0</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:type="uml:Generalization" xmi:id="_vZ4k0O95EemJwbfAie9rjQ" general="_IkxEcO9wEemJwbfAie9rjQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_aUSZMO97EemJwbfAie9rjQ" name="valueFrom">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_N-PiUAF-EeqfUa4k9Hxb5w" annotatedElement="_aUSZMO97EemJwbfAie9rjQ">
+              <body>The low range value that a Parameter can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bq3KkO97EemJwbfAie9rjQ" name="valueTo">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_QaKLIAF-EeqfUa4k9Hxb5w" annotatedElement="_bq3KkO97EemJwbfAie9rjQ">
+              <body>The upper range value that a characteristic can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cuaSQO97EemJwbfAie9rjQ" name="rangeStep">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_W7P5kAF-EeqfUa4k9Hxb5w" annotatedElement="_cuaSQO97EemJwbfAie9rjQ">
+              <body>The specification that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,...100. This complements the valueFrom and  valueTo attributes.  </body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yip9oAGCEeqfUa4k9Hxb5w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yi6cUAGCEeqfUa4k9Hxb5w" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_q3OjAAGCEeqfUa4k9Hxb5w" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__9cz4O9wEemJwbfAie9rjQ" name="DiscreteValueSpec">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GAG8MAGAEeqfUa4k9Hxb5w" annotatedElement="__9cz4O9wEemJwbfAie9rjQ">
+            <body>DiscreteValueSpec represents a specific valid value that a given Parameter can take on. </body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_xs3UEO95EemJwbfAie9rjQ" general="_IkxEcO9wEemJwbfAie9rjQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kC1FoO98EemJwbfAie9rjQ" name="value">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_MyQBkAGEEeqfUa4k9Hxb5w" annotatedElement="_kC1FoO98EemJwbfAie9rjQ">
+              <body>A discrete value that the Parameter can take on.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_IkxEcO9wEemJwbfAie9rjQ" name="ParmSpecValueII">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_LUZgUAGAEeqfUa4k9Hxb5w" annotatedElement="_IkxEcO9wEemJwbfAie9rjQ">
+            <body>A valid value of parameter (design time).   Values can be either a range (RangeValueSpec) or discrete (DiscreteValueSpec).</body>
+          </ownedComment>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MHVVoOLJEeiKy5JVrA0UGA" name="RootTypeDefinitons">
@@ -5161,4 +5223,8 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_x_NCAPANEembhOFQbDnUWw" base_StructuralFeature="_x_Ma8PANEembhOFQbDnUWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_81_lYfANEembhOFQbDnUWw" base_Class="_81_lYPANEembhOFQbDnUWw"/>
   <OpenModel_Profile:Example xmi:id="_VbxoUPAOEembhOFQbDnUWw" base_Element="_81_lYPANEembhOFQbDnUWw"/>
+  <OpenModel_Profile:Experimental xmi:id="_9ypqMP8cEemzCqmfAD3BYQ" base_Element="_guoCkO9_EemJwbfAie9rjQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_knYkgP8wEemzCqmfAD3BYQ" base_StructuralFeature="_knX9cP8wEemzCqmfAD3BYQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_knZyof8wEemzCqmfAD3BYQ" base_StructuralFeature="_knZyoP8wEemzCqmfAD3BYQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_Rq4PgP82EemLiZgytLM-sA" base_Element="_knRPwP8wEemzCqmfAD3BYQ"/>
 </xmi:XMI>
