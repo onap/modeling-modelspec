@@ -1861,6 +1861,18 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xhjYwBidEemVYPRf16WzdQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xhvmABidEemVYPRf16WzdQ" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_65atkAe_EeqgQMsQBX3k5g" name="_licensekeyinstance">
+          <type xmi:type="uml:Class" href="License.uml#_D_LXMN3xEei-jeeHUjfpLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7SBa0Ae_EeqgQMsQBX3k5g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7SCB4Ae_EeqgQMsQBX3k5g" value="1"/>
+          <association xmi:type="uml:Association" href="License.uml#_65WcIAe_EeqgQMsQBX3k5g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IKU4EAfCEeqAlrMuwBoC7Q" name="_entitlementinstance">
+          <type xmi:type="uml:Class" href="License.uml#_QG4ysP1oEeisxOMTY1eUug"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IKWtQAfCEeqAlrMuwBoC7Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKWtQQfCEeqAlrMuwBoC7Q" value="1"/>
+          <association xmi:type="uml:Association" href="License.uml#_IKP_kAfCEeqAlrMuwBoC7Q"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_B2hDUF-GEeiaLPXj8My4aQ" name="VnfcCp">
         <generalization xmi:type="uml:Generalization" xmi:id="_NomTQH7gEeifJIHxnlj6Cg">
@@ -3789,4 +3801,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_pP0cocqVEemxyP_sJGfnPA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_pP0coMqVEemxyP_sJGfnPA"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_65bUoAe_EeqgQMsQBX3k5g" base_StructuralFeature="_65atkAe_EeqgQMsQBX3k5g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IKVfIAfCEeqAlrMuwBoC7Q" base_StructuralFeature="_IKU4EAfCEeqAlrMuwBoC7Q"/>
 </xmi:XMI>
