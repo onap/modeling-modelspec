@@ -194,18 +194,6 @@ MRN should also be provided, but is not required.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x7rVoH2KEemcG-PZNzdV9w" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_pPxZUMqVEemxyP_sJGfnPA" name="VnfHasLicenseKey">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pPzOgMqVEemxyP_sJGfnPA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pPz1kMqVEemxyP_sJGfnPA" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <memberEnd xmi:type="uml:Property" href="Vnf.uml#_pP0coMqVEemxyP_sJGfnPA"/>
-        <memberEnd xmi:type="uml:Property" href="#_qBZqkMqVEemxyP_sJGfnPA"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_qBZqkMqVEemxyP_sJGfnPA" name="vnfinstance" association="_pPxZUMqVEemxyP_sJGfnPA">
-          <type xmi:type="uml:Class" href="Vnf.uml#_jH_PgF3PEeiwL5tPgFMcjQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DUYxwMqWEemxyP_sJGfnPA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DUjw4MqWEemxyP_sJGfnPA" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_nBoaANo8Eem3eo_-dvCqmw" name="VnfHasFeatureGroup" memberEnd="_nBsEYNo8Eem3eo_-dvCqmw _nBugoNo8Eem3eo_-dvCqmw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nBq2QNo8Eem3eo_-dvCqmw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nBrdUNo8Eem3eo_-dvCqmw" key="nature" value="UML_Nature"/>
@@ -223,16 +211,28 @@ MRN should also be provided, but is not required.</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vZVr0No8Eem3eo_-dvCqmw" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_hnZscNi8EemjOs8QMvIqgQ" name="VnfHasEntitlement">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hncIsNi8EemjOs8QMvIqgQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hncvwNi8EemjOs8QMvIqgQ" key="nature" value="UML_Nature"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_65WcIAe_EeqgQMsQBX3k5g" name="VnfHasLicenseKey">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_65aGgAe_EeqgQMsQBX3k5g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_65aGgQe_EeqgQMsQBX3k5g" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <memberEnd xmi:type="uml:Property" href="Vnf.uml#_hndW0Ni8EemjOs8QMvIqgQ"/>
-        <memberEnd xmi:type="uml:Property" href="#_hnd94ti8EemjOs8QMvIqgQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_hnd94ti8EemjOs8QMvIqgQ" name="vnfinstance" association="_hnZscNi8EemjOs8QMvIqgQ">
+        <memberEnd xmi:type="uml:Property" href="Vnf.uml#_65atkAe_EeqgQMsQBX3k5g"/>
+        <memberEnd xmi:type="uml:Property" href="#_7SCB4Qe_EeqgQMsQBX3k5g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7SCB4Qe_EeqgQMsQBX3k5g" name="vnfinstance" association="_65WcIAe_EeqgQMsQBX3k5g">
           <type xmi:type="uml:Class" href="Vnf.uml#_jH_PgF3PEeiwL5tPgFMcjQ"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MXQ9INlgEemjOs8QMvIqgQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MXj4ENlgEemjOs8QMvIqgQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y8SiIAfDEeqBDox5Kf6yTA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y8ZP0AfDEeqBDox5Kf6yTA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IKP_kAfCEeqAlrMuwBoC7Q" name="VnfHasEntitlementInstance">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IKTp8AfCEeqAlrMuwBoC7Q" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IKURAAfCEeqAlrMuwBoC7Q" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <memberEnd xmi:type="uml:Property" href="Vnf.uml#_IKU4EAfCEeqAlrMuwBoC7Q"/>
+        <memberEnd xmi:type="uml:Property" href="#_IKXUUAfCEeqAlrMuwBoC7Q"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IKXUUAfCEeqAlrMuwBoC7Q" name="vnfinstance" association="_IKP_kAfCEeqAlrMuwBoC7Q">
+          <type xmi:type="uml:Class" href="Vnf.uml#_jH_PgF3PEeiwL5tPgFMcjQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___fIIAfCEeqBDox5Kf6yTA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___oSEAfCEeqBDox5Kf6yTA" value="*"/>
         </ownedEnd>
       </packagedElement>
     </packagedElement>
@@ -240,8 +240,8 @@ MRN should also be provided, but is not required.</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_4ZDVsMgEEeiEtuRgTYzSUQ" name="LicenceKeyPool">
         <ownedComment xmi:type="uml:Comment" xmi:id="_yESAsAR4Eemo7ZzqT33fqQ" annotatedElement="_4ZDVsMgEEeiEtuRgTYzSUQ">
           <body>A License Key Group is created for each type of License Key that is required for the software.   Each License Key Group is assigned a Name and Description for modeling purposes and is uniquely identified by a UUID. In addition, a list of characteristics of the License Key Group are defined.&#xD;
-The license key group model provides a description to systems like ALTS for the license keys that are provided by a vendor.  ALTS will create a “group” and Purchasing systems (GPS and HP Asset Center) will send the inventory of license keys/files to be held by ALTS in the appropriate group.&#xD;
-Controllers will request license keys from ALTS using the UUID of the group, as directed by the ASDC models for the software (i.e. VFs).&#xD;
+The license key group model provides a description to systems such as Asset Inventory for the license keys that are provided by a vendor.  The Asset Inventory system will create a “group” and purchasing systems  will send the inventory of license keys/files to be held by Asset Inventory in the appropriate group.&#xD;
+Controllers will request license keys from Asset Inventory using the UUID of the group, as directed by the ASDC models for the software (i.e. VFs).&#xD;
 A license key group is not specific to a feature group.  A license key group may be related to multiple feature groups of a software item or even to multiple software items.&#xD;
 </body>
         </ownedComment>
@@ -329,6 +329,9 @@ A license key group is not specific to a feature group.  A license key group may
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_D_LXMN3xEei-jeeHUjfpLA" name="LicenseKeyInstance">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LcCA0AvdEeqBxdGdKtNnYA" annotatedElement="_D_LXMN3xEei-jeeHUjfpLA">
+          <body>Represents an instance of a license key</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_0jATINoiEem3eo_-dvCqmw">
           <general xmi:type="uml:Class" href="Common.uml#_0Zik0DFPEemw1_Ys6rcLWw"/>
         </generalization>
@@ -423,7 +426,7 @@ Limits can be applied by the vendor or the service provider.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_QG4ysP1oEeisxOMTY1eUug" name="EntitlementInstance">
         <ownedComment xmi:type="uml:Comment" xmi:id="_BAUicP74EeiZ-fXSiUXhdA" annotatedElement="_QG4ysP1oEeisxOMTY1eUug">
-          <body>Represents an instance of a EntitlementDesc.&#xD;
+          <body>Represents an instance of a Entitlement&#xD;
 &#xD;
 Specifies the use rights for the software as described by the license. </body>
         </ownedComment>
@@ -466,9 +469,6 @@ An EntitlementPool is not specific to a Feature Group. An Entitlement Pool may b
 Purchased entitlements are inventoried in the Entitlement Pools.&#xD;
 &#xD;
 Multiple pools for the same type of entitlement may be created based on the constraints.&#xD;
-&#xD;
-&#xD;
-&#xD;
 &#xD;
 An Entitlement Pool is created for each type of Entitlement that is required for the software products.   Each Entitlement Pool is assigned a Name and Description for modeling purposes and is uniquely identified by a UUID. In addition, a list of characteristics of the Entitlement Pool are defined.&#xD;
 &#xD;
@@ -802,7 +802,6 @@ Not applicable when license type is Perpetual.&#xD;
   <OpenModel_Profile:OpenModelClass xmi:id="_Yh3fkMA3Eem3GPFSfqjGLQ" base_Class="_Yh24gMA3Eem3GPFSfqjGLQ"/>
   <OpenModel_Profile:Experimental xmi:id="_8r4SUMBFEem3GPFSfqjGLQ" base_Element="_ccRu8P_BEeiQG4ZZm0HgYw"/>
   <OpenModel_Profile:Experimental xmi:id="_-okBcMBFEem3GPFSfqjGLQ" base_Element="_cy77cP_BEeiQG4ZZm0HgYw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_qBZqkcqVEemxyP_sJGfnPA" base_StructuralFeature="_qBZqkMqVEemxyP_sJGfnPA"/>
   <OpenModel_Profile:Experimental xmi:id="_F1xyUM55Eemcqf4p4jcudw" base_Element="_r8plULLmEem-C4S9EyeNSA"/>
   <OpenModel_Profile:Experimental xmi:id="_HaXKgM55Eemcqf4p4jcudw" base_Element="_J3qoUGB5Eem1ZKk2djb7zg"/>
   <OpenModel_Profile:Experimental xmi:id="_IobgIM55Eemcqf4p4jcudw" base_Element="_UksywGB5Eem1ZKk2djb7zg"/>
@@ -835,7 +834,29 @@ Not applicable when license type is Perpetual.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_sXUM4NS4EemxF5TqBFPL8g" base_Element="_48Z50M9BEemfevCNCQbkKw"/>
   <OpenModel_Profile:Experimental xmi:id="_ugQ2YNS4EemxF5TqBFPL8g" base_Element="_62irQM9BEemfevCNCQbkKw"/>
   <OpenModel_Profile:Future xmi:id="_DDF6wNiqEemjOs8QMvIqgQ" base_Element="_xXnn4M5_Eemcqf4p4jcudw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_hnek8Ni8EemjOs8QMvIqgQ" base_StructuralFeature="_hnd94ti8EemjOs8QMvIqgQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_nBugodo8Eem3eo_-dvCqmw" base_StructuralFeature="_nBugoNo8Eem3eo_-dvCqmw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ULqBUdvjEemCBr4viJ41_A" base_StructuralFeature="_ULqBUNvjEemCBr4viJ41_A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_7SCB4ge_EeqgQMsQBX3k5g" base_StructuralFeature="_7SCB4Qe_EeqgQMsQBX3k5g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_IKXUUQfCEeqAlrMuwBoC7Q" base_StructuralFeature="_IKXUUAfCEeqAlrMuwBoC7Q"/>
+  <OpenModel_Profile:Reference xmi:id="_T9vSAAoCEeqBDox5Kf6yTA" base_Element="_4ZDVsMgEEeiEtuRgTYzSUQ" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_a0u_AAoCEeqBDox5Kf6yTA" base_Element="_D_LXMN3xEei-jeeHUjfpLA" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_EmJeEArgEeqW-467Rt61hA" base_Element="_T5-uYN3uEei-jeeHUjfpLA" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_JAVxcArgEeqW-467Rt61hA" base_Element="_GlxBwP1oEeisxOMTY1eUug" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_L28yMArgEeqW-467Rt61hA" base_Element="_QG4ysP1oEeisxOMTY1eUug" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_lhrD8ArgEeqW-467Rt61hA" base_Element="_Omfk4P2SEeisxOMTY1eUug" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Reference xmi:id="_osOUYArgEeqW-467Rt61hA" base_Element="_bCM3oP2SEeisxOMTY1eUug" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_KOwlAArjEeqW-467Rt61hA" base_Element="_FbFaQP4LEeiao-2FtYZWRA"/>
+  <OpenModel_Profile:Reference xmi:id="_KPOfEArjEeqW-467Rt61hA" base_Element="_FbFaQP4LEeiao-2FtYZWRA" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_NJM84ArjEeqW-467Rt61hA" base_Element="_sckiwP_BEeiQG4ZZm0HgYw"/>
+  <OpenModel_Profile:Reference xmi:id="_NJpo0ArjEeqW-467Rt61hA" base_Element="_sckiwP_BEeiQG4ZZm0HgYw" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_PkpEkArjEeqW-467Rt61hA" base_Element="_DKi_YAMLEemoQ5ZgWCUg_g"/>
+  <OpenModel_Profile:Reference xmi:id="_PlDUQArjEeqW-467Rt61hA" base_Element="_DKi_YAMLEemoQ5ZgWCUg_g" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_SsWcYArjEeqW-467Rt61hA" base_Element="_F8MvAAMIEemoQ5ZgWCUg_g"/>
+  <OpenModel_Profile:Reference xmi:id="_SswFAArjEeqW-467Rt61hA" base_Element="_F8MvAAMIEemoQ5ZgWCUg_g" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_VHELUArjEeqW-467Rt61hA" base_Element="_4CYPgAO3EemCCMXOyOLwIw"/>
+  <OpenModel_Profile:Reference xmi:id="_VHb-wArjEeqW-467Rt61hA" base_Element="_4CYPgAO3EemCCMXOyOLwIw" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_XVyssArjEeqW-467Rt61hA" base_Element="_UsE8IARuEemo7ZzqT33fqQ"/>
+  <OpenModel_Profile:Reference xmi:id="_XWNjcArjEeqW-467Rt61hA" base_Element="_UsE8IARuEemo7ZzqT33fqQ" reference="As Built in ASDC; Not related to any release usecase."/>
+  <OpenModel_Profile:Experimental xmi:id="_ZqM_UArjEeqW-467Rt61hA" base_Element="_oaES0A64EemnO9QINOJnHg"/>
+  <OpenModel_Profile:Reference xmi:id="_ZqsHgArjEeqW-467Rt61hA" base_Element="_oaES0A64EemnO9QINOJnHg" reference="As Built in ASDC; Not related to any release usecase."/>
 </xmi:XMI>
