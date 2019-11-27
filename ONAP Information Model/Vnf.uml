@@ -336,18 +336,6 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ue5s0H7eEei4v5WRHqfM1Q" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_0kHRwLxOEeiMnLuHd6ALAg" name="ServiceProvidesAllottedLink" memberEnd="_0kN_cLxOEeiMnLuHd6ALAg _0kRp0LxOEeiMnLuHd6ALAg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0kMxULxOEeiMnLuHd6ALAg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0kMxUbxOEeiMnLuHd6ALAg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_0kN_cLxOEeiMnLuHd6ALAg" name="servicedescatomic" association="_0kHRwLxOEeiMnLuHd6ALAg">
-          <type xmi:type="uml:Class" href="Service.uml#_iQkugJpYEeidy9iGT_F5-w"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_0kRp0LxOEeiMnLuHd6ALAg" name="allottedlink" type="_mcXjILIKEeid-vjMcczUWA" association="_0kHRwLxOEeiMnLuHd6ALAg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3_nELxPEeiMnLuHd6ALAg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C4UXMLxPEeiMnLuHd6ALAg" value="*"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_DqruAD24Eeiu6I5JfRTxxQ" name="VnfProfileReferencesVnfDf" memberEnd="_DquKQD24Eeiu6I5JfRTxxQ _Dqv_cT24Eeiu6I5JfRTxxQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DqtjMD24Eeiu6I5JfRTxxQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DqtjMT24Eeiu6I5JfRTxxQ" key="nature" value="UML_Nature"/>
@@ -589,10 +577,9 @@ This will probably need to move to common</body>
 The Uses relationship is covered by the service instance expressing the sharable infrasturcture capability which has a relationship to the sharable resource. The ANF instance also has a relationship to the same sharable resource.</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="__gtZIMKwEemUeulSIk5Pkg">
-        <body>Anfs cannot run on top of Anfs.   An anf can run on a sharable Vnf or Pnf.</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_p4IzgMOHEem4c4ITFWIsLQ">
-        <body>Resource Not yet 'Rooted&quot;</body>
+        <body>- Pnfs cannot run on a Vnf or Anf&#xD;
+&#xD;
+- Pnfs cannot run on Pnfs, etc.</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MTOHEei5Af8DcjrhIQ" name="Interfaces"/>
@@ -2307,18 +2294,6 @@ This could include the number of CPU cores on this logical node, a memory config
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qCumgCsDEemS0_wZSU3sbA" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_mcXjILIKEeid-vjMcczUWA" name="AllottedLink">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_hNCywLeVEeiq7vtzCAMDQQ" annotatedElement="_mcXjILIKEeid-vjMcczUWA">
-          <body>An AllottedLink is a link provided (or allotted) by some service instance.   The Allottedlink may be incorporated into the topology of some consuming service like other links. &#xD;
-</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_lFpyYLILEeid-vjMcczUWA">
-          <general xmi:type="uml:Class" href="Common.uml#_AC2eIDQUEeixv_sLOod4lQ"/>
-        </generalization>
-        <generalization xmi:type="uml:Generalization" xmi:id="_rT3eoDxkEemSdYSKacDoqQ">
-          <general xmi:type="uml:Class" href="Common.uml#_jJ_NcDxkEemSdYSKacDoqQ"/>
-        </generalization>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_pQg3kET7EemWRYeHGX88Yw" name="SecurityGroupRule">
         <ownedComment xmi:type="uml:Comment" xmi:id="_uU5XcET7EemWRYeHGX88Yw" annotatedElement="_pQg3kET7EemWRYeHGX88Yw">
           <body>Security group rule specifies the matching criteria for the ingress and/or egress traffic to/from the visited connection points. If an ingress traffic is accepted, the corresponding egress response shall be allowed, regardless of the security group rules on the egress direction. If an egress traffic is allowed, the corresponding ingress response shall be accepted, regardless of the security group rules on the ingress direction. The design of security group rule follows a permissive model where all security group rules applied to a CP are dealt with in an &quot;OR&quot; logic fashion, i.e. the traffic is allowed if it matches any security group rule applied to this CP.</body>
@@ -3486,8 +3461,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_0gpnIJwaEeiPD5fN_oRNAg" base_Element="_inPiUH7eEei4v5WRHqfM1Q"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_p_Z_8KVwEeikF6xsfT18UA" base_Class="_fMPCUES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:Experimental xmi:id="_B0g3AKY5Eeily5uFlujj3Q" base_Element="_xVaLUJs3EeiPBvbfaqSLYg"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_mcYKMLIKEeid-vjMcczUWA" base_Class="_mcXjILIKEeid-vjMcczUWA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0kN_cbxOEeiMnLuHd6ALAg" base_StructuralFeature="_0kN_cLxOEeiMnLuHd6ALAg"/>
   <OpenModel_Profile:Experimental xmi:id="_TSB-AL23EeigqpWKF5WysQ" base_Element="_xSnkYF3eEeiwL5tPgFMcjQ"/>
   <OpenModel_Profile:Experimental xmi:id="_aT_k4L23EeigqpWKF5WysQ" base_Element="_HY63sF3gEeiwL5tPgFMcjQ"/>
   <OpenModel_Profile:Experimental xmi:id="_305_gL_wEeisMMIUeH4UGw" base_Element="_D0XjIF3xEeiwL5tPgFMcjQ"/>
@@ -3568,7 +3541,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_evt_0KbuEeixw5Ke5QD1pQ" base_StructuralFeature="_51TjIEJ_EeiwbqJBYHKltg"/>
   <OpenModel_Profile:Future xmi:id="_DhzH0KewEeixw5Ke5QD1pQ" base_Element="_45XE4DzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Future xmi:id="_caI6YKewEeixw5Ke5QD1pQ" base_Element="_1WdwcDzFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_0kRp0bxOEeiMnLuHd6ALAg" base_StructuralFeature="_0kRp0LxOEeiMnLuHd6ALAg"/>
   <OpenModel_Profile:Reference xmi:id="_X0ARgCotEemZ-7haRVvogQ" base_Element="_aaEZADOREeiHat9KcP8uWA" reference="IFA011 v2.5.1"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-KSlACovEemZ-7haRVvogQ" base_StructuralFeature="_-KR98CovEemZ-7haRVvogQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_-KZSsCovEemZ-7haRVvogQ" base_StructuralFeature="_-KYroCovEemZ-7haRVvogQ"/>
@@ -3706,7 +3678,6 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   <OpenModel_Profile:Future xmi:id="_YUTmADOgEemzC6274d_Yog" base_Element="_ZhRloBlYEem_VM0Ij2_uSw"/>
   <OpenModel_Profile:Future xmi:id="_lJ4xUDOgEemzC6274d_Yog" base_Element="_O0DAID5dEeijbdkIlrq2uQ"/>
   <OpenModel_Profile:Future xmi:id="_n-0XEDOgEemzC6274d_Yog" base_Element="_o4b5oD5eEeijbdkIlrq2uQ"/>
-  <OpenModel_Profile:Experimental xmi:id="_8KbUwDOgEemzC6274d_Yog" base_Element="_mcXjILIKEeid-vjMcczUWA"/>
   <OpenModel_Profile:Future xmi:id="_OOwc4DOhEemzC6274d_Yog" base_Element="_zm95IvwtEeijjKJn7OxwuQ"/>
   <OpenModel_Profile:Future xmi:id="_ajZeUDOhEemzC6274d_Yog" base_Element="_QPdCQHPTEeiuFfjlON-CuQ"/>
   <OpenModel_Profile:Future xmi:id="_gDozwDOhEemzC6274d_Yog" base_Element="_TkXIkHPTEeiuFfjlON-CuQ"/>
