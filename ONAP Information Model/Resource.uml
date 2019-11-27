@@ -5,15 +5,22 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_lK-iYDOHEei5Af8DcjrhIQ" name="Diagrams"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_lK-iYTOHEei5Af8DcjrhIQ" name="Interfaces"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_lK_JcDOHEei5Af8DcjrhIQ" name="ObjectClasses">
-      <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc (ResourceSpecification)">
+      <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc">
         <ownedComment xmi:type="uml:Comment" xmi:id="_psrJgMGxEeiS695oPTRE1Q" annotatedElement="_DAQisJpXEeidy9iGT_F5-w">
           <body>ResourceDesc represents physical and non-physical (virtual) components which are owned / managed by the business or provided by a Supplier and are used (directly or indirectly) to construct services.&#xD;
 &#xD;
 In this context, a resource is something that goes into a resource catalog from which services are composed.&#xD;
   </body>
         </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_DdJuQBCJEeqONNoHH0FhYQ">
+          <general xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+        </generalization>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_hZfC0DEkEemRSoIWRX3jNw" name="ResourceInstance"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hZfC0DEkEemRSoIWRX3jNw" name="ResourceInstance">
+        <generalization xmi:type="uml:Generalization" xmi:id="_92FGIBCKEeqONNoHH0FhYQ">
+          <general xmi:type="uml:Class" href="Common.uml#_0Zik0DFPEemw1_Ys6rcLWw"/>
+        </generalization>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_lK_JcTOHEei5Af8DcjrhIQ" name="TypeDefinitions"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nRfaQKe3Eeixw5Ke5QD1pQ">
