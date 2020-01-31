@@ -508,7 +508,7 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <ownedEnd xmi:type="uml:Property" xmi:id="_42Zl4L-SEemqDYUsJ60dmQ" name="networkfunctiondesc" association="_42UGUL-SEemqDYUsJ60dmQ">
           <type xmi:type="uml:Class" href="Nf.uml#_O385oJssEeiPBvbfaqSLYg"/>
         </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_42d3UL-SEemqDYUsJ60dmQ" name="anfd" type="_xVaLUJs3EeiPBvbfaqSLYg" association="_42UGUL-SEemqDYUsJ60dmQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_42d3UL-SEemqDYUsJ60dmQ" name="anfd" type="_xVaLUJs3EeiPBvbfaqSLYg" aggregation="composite" association="_42UGUL-SEemqDYUsJ60dmQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YN1i0L-TEemqDYUsJ60dmQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YOecAL-TEemqDYUsJ60dmQ" value="*"/>
         </ownedEnd>
@@ -520,7 +520,7 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <ownedEnd xmi:type="uml:Property" xmi:id="_nWnN4b-VEemqDYUsJ60dmQ" name="networkfunction" association="_nWl_wL-VEemqDYUsJ60dmQ">
           <type xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
         </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_nWocAL-VEemqDYUsJ60dmQ" name="anfinstance" type="_jCjpYE_kEemeaek-m0jmOA" association="_nWl_wL-VEemqDYUsJ60dmQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_nWocAL-VEemqDYUsJ60dmQ" name="anfinstance" type="_jCjpYE_kEemeaek-m0jmOA" aggregation="composite" association="_nWl_wL-VEemqDYUsJ60dmQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9w1YML-VEemqDYUsJ60dmQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xLWcL-VEemqDYUsJ60dmQ" value="*"/>
         </ownedEnd>
@@ -1992,7 +1992,7 @@ Diversity - Resources are geo-diverse ( cannot be co-located).&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xVaLUJs3EeiPBvbfaqSLYg" name="Anfd">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2qM6sKY4Eeily5uFlujj3Q" annotatedElement="_xVaLUJs3EeiPBvbfaqSLYg">
-          <body>An Anfd  (Allotted Network Function) is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions.  Note:  the allotted network function is no longer derived from some allotted resource parent.&#xD;
+          <body>An Anfd is the   (Allotted Network Function) is a template which describes an ANF in terms of deploymnet and operational behaviour requiremnets.  &#xD;
 </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_7DhPYJs3EeiPBvbfaqSLYg">
@@ -2360,11 +2360,83 @@ Note: IFA011 defines this as an enum, but as the list is not complete, made this
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_jCjpYE_kEemeaek-m0jmOA" name="AnfInstance">
         <ownedComment xmi:type="uml:Comment" xmi:id="_T6J8QMNmEemImq9HquDN-w" annotatedElement="_jCjpYE_kEemeaek-m0jmOA">
-          <body>Allotted Network Function Instance</body>
+          <body>An Allotted Network Function Instance is a network function provided (or allotted) by some service instance.   The allotted network function may be incorporated into the topology of some consuming service like other network functions. </body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_3O3xsE_kEemeaek-m0jmOA">
           <general xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
         </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Jl2CYD1NEeqiP64oaDnqZQ" name="selfLink">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qeIKMD1REeqiP64oaDnqZQ" annotatedElement="_Jl2CYD1NEeqiP64oaDnqZQ">
+            <body>Link back to more information in the controller</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PKJYcD1NEeqiP64oaDnqZQ" name="resourceVersion">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_1CvYcD1REeqiP64oaDnqZQ" annotatedElement="_PKJYcD1NEeqiP64oaDnqZQ">
+            <body>Concurrency value</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_PzepUD1NEeqiP64oaDnqZQ" name="orchestrationStatus">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3YiLID1REeqiP64oaDnqZQ" annotatedElement="_PzepUD1NEeqiP64oaDnqZQ">
+            <body>Orchestration status</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QcWAID1NEeqiP64oaDnqZQ" name="operationalStatus">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6ZFyED1REeqiP64oaDnqZQ" annotatedElement="_QcWAID1NEeqiP64oaDnqZQ">
+            <body>Indicator for whether the resource is considered operational</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_naRUcD1NEeqiP64oaDnqZQ" name="accessProviderId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0C5ksD1UEeqiP64oaDnqZQ" annotatedElement="_naRUcD1NEeqiP64oaDnqZQ">
+            <body>Store the id of the access provider of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_urrFgD1NEeqiP64oaDnqZQ" name="accessClientId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_2CSCgD1UEeqiP64oaDnqZQ" annotatedElement="_urrFgD1NEeqiP64oaDnqZQ">
+            <body>Store the id of the access client of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wBaJYD1NEeqiP64oaDnqZQ" name="accessTopologyId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4WKwsD1UEeqiP64oaDnqZQ" annotatedElement="_wBaJYD1NEeqiP64oaDnqZQ">
+            <body>Store the id of the access topology of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yZXfQD1NEeqiP64oaDnqZQ" name="accessNodeId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6vKBUD1UEeqiP64oaDnqZQ" annotatedElement="_yZXfQD1NEeqiP64oaDnqZQ">
+            <body>Store the id of the access node of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_B1oY8D1OEeqiP64oaDnqZQ" name="accessLtpId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9SaBMD1UEeqiP64oaDnqZQ" annotatedElement="_B1oY8D1OEeqiP64oaDnqZQ">
+            <body>Store the id of the access ltp of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EZy-0D1OEeqiP64oaDnqZQ" name="cvLan">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__JJgYD1UEeqiP64oaDnqZQ" annotatedElement="_EZy-0D1OEeqiP64oaDnqZQ">
+            <body>Store the cvlan of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GkVjwD1OEeqiP64oaDnqZQ" name="vpnName">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_B5KJ4D1VEeqiP64oaDnqZQ" annotatedElement="_GkVjwD1OEeqiP64oaDnqZQ">
+            <body>Store the vpn-name of this allotted-resource.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ItmWUD1OEeqiP64oaDnqZQ" name="tunnelxConnects">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_J8i1sD1OEeqiP64oaDnqZQ" name="relationshipList">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_zPN5MzOHEei5Af8DcjrhIQ" name="TypeDefinitions">
@@ -3774,4 +3846,30 @@ The attached VDUs shall connect to the same internal VLD.&#xD;
   </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_65bUoAe_EeqgQMsQBX3k5g" base_StructuralFeature="_65atkAe_EeqgQMsQBX3k5g"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_IKVfIAfCEeqAlrMuwBoC7Q" base_StructuralFeature="_IKU4EAfCEeqAlrMuwBoC7Q"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Jl2pcD1NEeqiP64oaDnqZQ" base_StructuralFeature="_Jl2CYD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PKJ_gD1NEeqiP64oaDnqZQ" base_StructuralFeature="_PKJYcD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_PzepUT1NEeqiP64oaDnqZQ" base_StructuralFeature="_PzepUD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QcWnMD1NEeqiP64oaDnqZQ" base_StructuralFeature="_QcWAID1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_naRUcT1NEeqiP64oaDnqZQ" base_StructuralFeature="_naRUcD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_urrskD1NEeqiP64oaDnqZQ" base_StructuralFeature="_urrFgD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wBaJYT1NEeqiP64oaDnqZQ" base_StructuralFeature="_wBaJYD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yZXfQT1NEeqiP64oaDnqZQ" base_StructuralFeature="_yZXfQD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_B1pAAD1OEeqiP64oaDnqZQ" base_StructuralFeature="_B1oY8D1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EZy-0T1OEeqiP64oaDnqZQ" base_StructuralFeature="_EZy-0D1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GkWK0D1OEeqiP64oaDnqZQ" base_StructuralFeature="_GkVjwD1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ItmWUT1OEeqiP64oaDnqZQ" base_StructuralFeature="_ItmWUD1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_J8jcwD1OEeqiP64oaDnqZQ" base_StructuralFeature="_J8i1sD1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_FE1mQD1WEeqiP64oaDnqZQ" base_Element="_PKJYcD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_G2fxID1WEeqiP64oaDnqZQ" base_Element="_PzepUD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_IRvnID1WEeqiP64oaDnqZQ" base_Element="_Jl2CYD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_JupqAD1WEeqiP64oaDnqZQ" base_Element="_QcWAID1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_LZDWUD1WEeqiP64oaDnqZQ" base_Element="_naRUcD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_OEdzsD1WEeqiP64oaDnqZQ" base_Element="_urrFgD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_PloEcD1WEeqiP64oaDnqZQ" base_Element="_wBaJYD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_Q210sD1WEeqiP64oaDnqZQ" base_Element="_yZXfQD1NEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_SL0qoD1WEeqiP64oaDnqZQ" base_Element="_B1oY8D1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_TfbnkD1WEeqiP64oaDnqZQ" base_Element="_EZy-0D1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_U0xp4D1WEeqiP64oaDnqZQ" base_Element="_GkVjwD1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_WN3jwD1WEeqiP64oaDnqZQ" base_Element="_ItmWUD1OEeqiP64oaDnqZQ"/>
+  <OpenModel_Profile:Experimental xmi:id="_XoXy4D1WEeqiP64oaDnqZQ" base_Element="_J8i1sD1OEeqiP64oaDnqZQ"/>
 </xmi:XMI>
