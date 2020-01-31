@@ -14,7 +14,10 @@ ONAP event messages are serialized as a unicode ASCII character string which may
         </generalization>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_DLbYsH7_EeifJIHxnlj6Cg" name="domain" type="_IInt8IngEeiOe-BKGdv_Yg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_mw2YMKY_Eeily5uFlujj3Q" annotatedElement="_DLbYsH7_EeifJIHxnlj6Cg">
-            <body>Event domain enumeration: ‘fault’, ‘heartbeat’, ‘measurement’, ‘mobileFlow’, ‘notification’, ‘other’, ‘pnfRegistration’, ‘sipSignaling’, ‘stateChange’, ‘syslog’, ‘thresholdCrossingAlert’, ‘voiceQuality’</body>
+            <body>Event domain enumeration: 'cmNotify',‘fault’, ‘heartbeat’, ‘measurement’, ‘mobileFlow’, ‘notification’, ‘other’, ‘pnfRegistration’, ‘sipSignaling’, ‘stateChange’, ‘syslog’, ‘thresholdCrossingAlert’, ‘voiceQuality’</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_eYNIQDcREeqSPpPgp0hIkw" annotatedElement="_DLbYsH7_EeifJIHxnlj6Cg">
+            <body>Update in definition only</body>
           </ownedComment>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_EU9zoH7_EeifJIHxnlj6Cg" name="eventType">
@@ -4823,6 +4826,156 @@ Debug	          7	    debug-level messages&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_24ms4PGtEemGVs4BUFMrVg">
         <body>measValues to measVlauesList</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_tj_9wDelEeqyzrMWM9wAxg">
+        <body>cmNotif as class or datatype.   Given the complexity, I opted for a class</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_JQ71gDe_EeqyzrMWM9wAxg">
+        <body>Not sure how to model correlatedNotifications.   Looking for ITUT doc referenced.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_2Ry1gDe_EeqyzrMWM9wAxg">
+        <body>event time - no type specified.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kU70IDcLEeqSPpPgp0hIkw" name="CmNotify">
+        <generalization xmi:type="uml:Generalization" xmi:id="_OPEJ8DefEeqyzrMWM9wAxg" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wedKsDcLEeqSPpPgp0hIkw" name="additionalInformation" type="_yPR44IEoEeieQ4zKGFzYtQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_E9A5kDcMEeqSPpPgp0hIkw" annotatedElement="_wedKsDcLEeqSPpPgp0hIkw">
+            <body>Additional information nf provider wants to convey.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_moqikDcREeqSPpPgp0hIkw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mo1hsDcREeqSPpPgp0hIkw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xQx_gDcLEeqSPpPgp0hIkw" name="cmNotifyFieldsVersion">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_KGavADeeEeqyzrMWM9wAxg" annotatedElement="_xQx_gDcLEeqSPpPgp0hIkw">
+            <body>Version of the cmNotify</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ySbCsDcLEeqSPpPgp0hIkw" name="correlatedNotifications" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-QnBADfREeqDdd4zEYH7PQ" annotatedElement="_ySbCsDcLEeqSPpPgp0hIkw">
+            <body>Notifications to which this notification is considered to be correlated </body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DdB40DehEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DdJNkDehEeqyzrMWM9wAxg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ywmMcDcLEeqSPpPgp0hIkw" name="eventTime">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_BqwMoDfSEeqDdd4zEYH7PQ" annotatedElement="_ywmMcDcLEeqSPpPgp0hIkw">
+            <body>Time of the cmNotify event.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_KwZPMP8VEeiZ-fXSiUXhdA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zOb_ADcLEeqSPpPgp0hIkw" name="notificationId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_jq9_8DehEeqyzrMWM9wAxg" annotatedElement="_zOb_ADcLEeqSPpPgp0hIkw">
+            <body>Unique Identifier for the source of this occurrence of the notification.  For 3GPP devices this is the notification identifier as defined by ITUT</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zsRxkDcLEeqSPpPgp0hIkw" name="sourceIndicator" type="_K_6mADeiEeqyzrMWM9wAxg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qZtv4DehEeqyzrMWM9wAxg" annotatedElement="_zsRxkDcLEeqSPpPgp0hIkw">
+            <body>Indicates the source of the operation that led to the generation of the notification. </body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_au1OkDelEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_au9xcDelEeqyzrMWM9wAxg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0hzrYDcLEeqSPpPgp0hIkw" name="systemDN">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Eu-yoDfSEeqDdd4zEYH7PQ" annotatedElement="_0hzrYDcLEeqSPpPgp0hIkw">
+            <body>DN of the management service provider</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_80rV4DfOEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_80w1cDfOEeqyzrMWM9wAxg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QbcWYDepEeqyzrMWM9wAxg" name="_cmnotif" type="_nQ-OkDenEeqyzrMWM9wAxg" aggregation="composite" association="_QbZTEDepEeqyzrMWM9wAxg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8zONEDe9EeqyzrMWM9wAxg" annotatedElement="_QbcWYDepEeqyzrMWM9wAxg">
+            <body>Array of cmNotif notificatons</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZhfU4DepEeqyzrMWM9wAxg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZhmpoDepEeqyzrMWM9wAxg" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_K_6mADeiEeqyzrMWM9wAxg" name="SourceIndicator">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mwH9kDeiEeqyzrMWM9wAxg" annotatedElement="_K_6mADeiEeqyzrMWM9wAxg">
+          <body>Indicates the source of the operation </body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TEHtADeiEeqyzrMWM9wAxg" name="RESOURCE_OPERATION">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TEHtATeiEeqyzrMWM9wAxg" annotatedElement="_TEHtADeiEeqyzrMWM9wAxg">
+            <body>internal operation of resource</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Zbh7ADeiEeqyzrMWM9wAxg" name="MANAGEMENT_OPERATOIN">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Zbh7ATeiEeqyzrMWM9wAxg" annotatedElement="_Zbh7ADeiEeqyzrMWM9wAxg">
+            <body>response to management operation</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_d01dkDeiEeqyzrMWM9wAxg" name="SON_OPERATOIN">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_d01dkTeiEeqyzrMWM9wAxg" annotatedElement="_d01dkDeiEeqyzrMWM9wAxg">
+            <body>result of SON</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ihO7QDeiEeqyzrMWM9wAxg" name="UNKNOWN">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ihO7QTeiEeqyzrMWM9wAxg" annotatedElement="_ihO7QDeiEeqyzrMWM9wAxg">
+            <body>can’t determine why </body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nQ-OkDenEeqyzrMWM9wAxg" name="cmNotif">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UwAYUDeoEeqyzrMWM9wAxg" name="notificationType">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MqtPsDepEeqyzrMWM9wAxg" annotatedElement="_UwAYUDeoEeqyzrMWM9wAxg">
+            <body>Type of notification.   This is an enum (managedObjectCreation, managedObjectDeletion, managedObjectAttributeValueChanged)</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBzOYDepEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sB7KMDepEeqyzrMWM9wAxg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VYJ9cDeoEeqyzrMWM9wAxg" name="dN">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_QUL7MDfSEeqDdd4zEYH7PQ" annotatedElement="_VYJ9cDeoEeqyzrMWM9wAxg">
+            <body>Managed Object Instance that is the subject of this notification.  In 3GPP devices this is the Distinguished Name (DN)  which is used to uniquely identify a MO within a name space as defined by ITU-T</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJTB8DepEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJYhgDepEeqyzrMWM9wAxg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WQX-4DeoEeqyzrMWM9wAxg" name="objectIdentiferType">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cRlhUDfSEeqDdd4zEYH7PQ" annotatedElement="_WQX-4DeoEeqyzrMWM9wAxg">
+            <body>Type of object identifier (Ynag, or ....)</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vEdHEDepEeqyzrMWM9wAxg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vEj0wDepEeqyzrMWM9wAxg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XA9HQDeoEeqyzrMWM9wAxg" name="attributeList" visibility="public" type="_-s9F8DepEeqyzrMWM9wAxg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fcG8kDfSEeqDdd4zEYH7PQ" annotatedElement="_XA9HQDeoEeqyzrMWM9wAxg">
+            <body>[R1]	Attribute Name and values (attributeName(string), newAttributeValue(any type), oldAttributeValue(any type)&#xD;
+[R2]	This is Mandatory for notifyMOIAttributeValueChange.  3GPP defines it as options for Creation and Deletion.  &#xD;
+&#xD;
+</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g34dMDe1EeqyzrMWM9wAxg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g3_K4De1EeqyzrMWM9wAxg" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QbZTEDepEeqyzrMWM9wAxg" name="CmNotifyHasCmNotif" memberEnd="_QbcWYDepEeqyzrMWM9wAxg _QbdkgDepEeqyzrMWM9wAxg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QbbIQDepEeqyzrMWM9wAxg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QbbIQTepEeqyzrMWM9wAxg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QbdkgDepEeqyzrMWM9wAxg" name="cmnotify" type="_kU70IDcLEeqSPpPgp0hIkw" association="_QbZTEDepEeqyzrMWM9wAxg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_-s9F8DepEeqyzrMWM9wAxg" name="AttributeList">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EPs80DeqEeqyzrMWM9wAxg" name="atributeName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_F_sTwDeqEeqyzrMWM9wAxg" name="newAttributeValue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SpXXwDevEeqyzrMWM9wAxg" name="NewAttributeType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FiDUgDe1EeqyzrMWM9wAxg" name="oldAttributeValue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OxRdIDe1EeqyzrMWM9wAxg" name="oldAttributeType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pJKCADksEemjyLkBMGZA1g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pJKCATksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -4916,7 +5069,6 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_cmJxMGXeEemHJ6LrktJncg" base_Element="__ENUcJaTEeiGg_moIHe9Sw"/>
   <OpenModel_Profile:Preliminary xmi:id="_hrdp4GX5EemfnOWtKdZfkA" base_Element="_EU9zoH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:Preliminary xmi:id="_kE9Q0GX5EemfnOWtKdZfkA" base_Element="_E-nNkH7_EeifJIHxnlj6Cg"/>
-  <OpenModel_Profile:Preliminary xmi:id="_fhtRcGXgEemHJ6LrktJncg" base_Element="_DLbYsH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:Preliminary xmi:id="_nu_5oGX5EemfnOWtKdZfkA" base_Element="_FVmKMH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:Preliminary xmi:id="_pWbKcGX5EemfnOWtKdZfkA" base_Element="_GtDsYH7_EeifJIHxnlj6Cg"/>
   <OpenModel_Profile:Preliminary xmi:id="_qjR_IGX5EemfnOWtKdZfkA" base_Element="_lbyX0KZBEeily5uFlujj3Q"/>
@@ -5419,4 +5571,29 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_t98poGgyEem1cLRh0iOg7w" base_Element="_NyescJQzEei6kI-JPNdeuw"/>
   <OpenModel_Profile:Preliminary xmi:id="_vr4yIGgyEem1cLRh0iOg7w" base_Element="_OcpDwJQzEei6kI-JPNdeuw"/>
   <OpenModel_Profile:Experimental xmi:id="_hf97YPGtEemGVs4BUFMrVg" base_Element="_pycOYiWKEem2wfSvtxnwBQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_kVDI4DcLEeqSPpPgp0hIkw" base_Class="_kU70IDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:Experimental xmi:id="_ogvtQDcLEeqSPpPgp0hIkw" base_Element="_kU70IDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wedKsTcLEeqSPpPgp0hIkw" base_StructuralFeature="_wedKsDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_xQx_gTcLEeqSPpPgp0hIkw" base_StructuralFeature="_xQx_gDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ySbpwDcLEeqSPpPgp0hIkw" base_StructuralFeature="_ySbCsDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ywmMcTcLEeqSPpPgp0hIkw" base_StructuralFeature="_ywmMcDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zOb_ATcLEeqSPpPgp0hIkw" base_StructuralFeature="_zOb_ADcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_zsRxkTcLEeqSPpPgp0hIkw" base_StructuralFeature="_zsRxkDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_0h0ScDcLEeqSPpPgp0hIkw" base_StructuralFeature="_0hzrYDcLEeqSPpPgp0hIkw"/>
+  <OpenModel_Profile:Experimental xmi:id="_bG6WoDcREeqSPpPgp0hIkw" base_Element="_DLbYsH7_EeifJIHxnlj6Cg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_nQ_csDenEeqyzrMWM9wAxg" base_Class="_nQ-OkDenEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:Experimental xmi:id="_Py4-EDeoEeqyzrMWM9wAxg" base_Element="_nQ-OkDenEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UwA_YDeoEeqyzrMWM9wAxg" base_StructuralFeature="_UwAYUDeoEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_VYKkgDeoEeqyzrMWM9wAxg" base_StructuralFeature="_VYJ9cDeoEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WQX-4TeoEeqyzrMWM9wAxg" base_StructuralFeature="_WQX-4DeoEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_XA9uUDeoEeqyzrMWM9wAxg" base_StructuralFeature="_XA9HQDeoEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QbcWYTepEeqyzrMWM9wAxg" base_StructuralFeature="_QbcWYDepEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QbdkgTepEeqyzrMWM9wAxg" base_StructuralFeature="_QbdkgDepEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:Experimental xmi:id="_DE4IcDeqEeqyzrMWM9wAxg" base_Element="_-s9F8DepEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_EPs80TeqEeqyzrMWM9wAxg" base_StructuralFeature="_EPs80DeqEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_F_sTwTeqEeqyzrMWM9wAxg" base_StructuralFeature="_F_sTwDeqEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_SpX-0DevEeqyzrMWM9wAxg" base_StructuralFeature="_SpXXwDevEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_FiDUgTe1EeqyzrMWM9wAxg" base_StructuralFeature="_FiDUgDe1EeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_OxRdITe1EeqyzrMWM9wAxg" base_StructuralFeature="_OxRdIDe1EeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:Experimental xmi:id="_SJdiIDfPEeqyzrMWM9wAxg" base_Element="_K_6mADeiEeqyzrMWM9wAxg"/>
 </xmi:XMI>
