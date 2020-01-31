@@ -2,11 +2,15 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
   <uml:Package xmi:id="_uk8Y8Bg1EembeqMx64UEWQ" name="Nf">
     <packagedElement xmi:type="uml:Package" xmi:id="_LUOA0Bg2EembeqMx64UEWQ" name="Associations"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_Ntu14Bg2EembeqMx64UEWQ" name="Diagrams"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ntu14Bg2EembeqMx64UEWQ" name="Diagrams">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_qVVz4D1MEeqiP64oaDnqZQ">
+        <body>Deleted some duplicate attributes that are inherited from RootEntity (id, description, etc)</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_QGOXQBg2EembeqMx64UEWQ" name="ObjectClasses">
       <packagedElement xmi:type="uml:Class" xmi:id="_O385oJssEeiPBvbfaqSLYg" name="NetworkFunctionDesc" isAbstract="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_vrMhMKY4Eeily5uFlujj3Q" annotatedElement="_O385oJssEeiPBvbfaqSLYg">
-          <body>A NetworkFunction is a functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour.</body>
+          <body>A NetworkFunctionDesc is the descriptor for some functional block within a network infrastructure that has well-defined external interfaces and well-defined functional behaviour.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_ujjIsJssEeiPBvbfaqSLYg">
           <general xmi:type="uml:Class" href="Resource.uml#_DAQisJpXEeidy9iGT_F5-w"/>
@@ -25,30 +29,11 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_Sy-KsL-VEemqDYUsJ60dmQ">
           <general xmi:type="uml:Class" href="Resource.uml#_hZfC0DEkEemRSoIWRX3jNw"/>
         </generalization>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_LlLZoEUHEemWRYeHGX88Yw" name="id" visibility="public">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_SqMUgEUHEemWRYeHGX88Yw" annotatedElement="_LlLZoEUHEemWRYeHGX88Yw">
-            <body>Identifier of the network function</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_UVcVYEUHEemWRYeHGX88Yw" name="name" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YWCdAEUHEemWRYeHGX88Yw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YWa3gEUHEemWRYeHGX88Yw" value="1"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZqGs8EUHEemWRYeHGX88Yw" name="type" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_iOehwEUHEemWRYeHGX88Yw" annotatedElement="_ZqGs8EUHEemWRYeHGX88Yw">
             <body>Description of the type of network function</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_srFqkEUHEemWRYeHGX88Yw" name="description" visibility="public">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_zvYMsEUHEemWRYeHGX88Yw" annotatedElement="_srFqkEUHEemWRYeHGX88Yw">
-            <body>Description of the network function</body>
-          </ownedComment>
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xL7YgEUHEemWRYeHGX88Yw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xMMeQEUHEemWRYeHGX88Yw" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6o6QUEUHEemWRYeHGX88Yw" name="role" visibility="public">
           <ownedComment xmi:type="uml:Comment" xmi:id="_AiB_0EUIEemWRYeHGX88Yw" annotatedElement="_6o6QUEUHEemWRYeHGX88Yw">
@@ -137,15 +122,9 @@ This tells the consumer where to send the subscription request.&#xD;
   <OpenModel_Profile:Experimental xmi:id="_hsh1IN0mEeiRzJu73dYz2w" base_Element="_KEN2IN0dEeiRzJu73dYz2w"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_O385opssEeiPBvbfaqSLYg" base_Class="_O385oJssEeiPBvbfaqSLYg"/>
   <OpenModel_Profile:Experimental xmi:id="_HV6qEKY5Eeily5uFlujj3Q" base_Element="_O385oJssEeiPBvbfaqSLYg"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_LlMnwEUHEemWRYeHGX88Yw" base_StructuralFeature="_LlLZoEUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_UVc8cEUHEemWRYeHGX88Yw" base_StructuralFeature="_UVcVYEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_ZqHUAEUHEemWRYeHGX88Yw" base_StructuralFeature="_ZqGs8EUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_srFqkUUHEemWRYeHGX88Yw" base_StructuralFeature="_srFqkEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_6o6QUUUHEemWRYeHGX88Yw" base_StructuralFeature="_6o6QUEUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:Experimental xmi:id="_P5G3gEUIEemWRYeHGX88Yw" base_Element="_LlLZoEUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:Experimental xmi:id="_Rqsw8EUIEemWRYeHGX88Yw" base_Element="_UVcVYEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:Experimental xmi:id="_S99voEUIEemWRYeHGX88Yw" base_Element="_ZqGs8EUHEemWRYeHGX88Yw"/>
-  <OpenModel_Profile:Experimental xmi:id="_UfyHsEUIEemWRYeHGX88Yw" base_Element="_srFqkEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:Experimental xmi:id="_XveW0EUIEemWRYeHGX88Yw" base_Element="_6o6QUEUHEemWRYeHGX88Yw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_42d3Ub-SEemqDYUsJ60dmQ">
     <base_StructuralFeature xmi:type="uml:Property" href="Vnf.uml#_42d3UL-SEemqDYUsJ60dmQ"/>
