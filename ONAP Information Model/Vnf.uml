@@ -505,6 +505,11 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_42YXwL-SEemqDYUsJ60dmQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_42Y-0L-SEemqDYUsJ60dmQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_o0w0wEbKEeq6lZJfEw6xcg" annotatedElement="_42UGUL-SEemqDYUsJ60dmQ">
+          <body>An Anfd (Allotted Network Function Descriptor) is designed to  run on top of some sharable NetworkFunction.   It si therefore related to the NfD at design time.&#xD;
+&#xD;
+The NetworkFunctionDesc can be designed to have some number (zero to many).   </body>
+        </ownedComment>
         <ownedEnd xmi:type="uml:Property" xmi:id="_42Zl4L-SEemqDYUsJ60dmQ" name="networkfunctiondesc" association="_42UGUL-SEemqDYUsJ60dmQ">
           <type xmi:type="uml:Class" href="Nf.uml#_O385oJssEeiPBvbfaqSLYg"/>
         </ownedEnd>
@@ -517,6 +522,9 @@ NOTE 2: virtualLinkProfile needs to be provided for all VLs that the CPs of the 
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWmm0L-VEemqDYUsJ60dmQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWnN4L-VEemqDYUsJ60dmQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9aSHQEbKEeq6lZJfEw6xcg" annotatedElement="_nWl_wL-VEemqDYUsJ60dmQ">
+          <body>An AnfInstance (Allotted Network Function Instance) runs on top of some sharable NetworkFunction.   The NetworkFunctionInstance can have some number (zero to many) of AnfInstances running on it.   </body>
+        </ownedComment>
         <ownedEnd xmi:type="uml:Property" xmi:id="_nWnN4b-VEemqDYUsJ60dmQ" name="networkfunction" association="_nWl_wL-VEemqDYUsJ60dmQ">
           <type xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
         </ownedEnd>
