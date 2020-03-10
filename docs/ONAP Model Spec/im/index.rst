@@ -1,4 +1,4 @@
-.. Copyright 2019 (China Mobile)
+.. Copyright 2020 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 .. onap-documentation documentation master file, created by
@@ -15,6 +15,10 @@ ONAP Information Model Specifications
    Root
    VnfdAndVnfInstance
    NSD
-   Service
    BusinessInteraction
    VES index
+   ServiceModel-Nested Service
+   ServiceModel-Service order
+   NSDR4
+   Nested Service final for Rst
+   ServiceOrderR4
