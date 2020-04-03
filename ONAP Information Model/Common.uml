@@ -612,6 +612,10 @@ For VNFs, those rules are applicable between the virtualization containers to be
               <body>Provider of the NF and of the NFD being onboarded.&#xD;
 </body>
             </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FLZGcF5hEeqckKgqHW-buw">
+              <body>Provider of the NF and of the NFD being onboarded.&#xD;
+</body>
+            </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3H0rYNxdEei0G_d67y10Rg" name="productInfoName">
@@ -630,7 +634,7 @@ For VNFs, those rules are applicable between the virtualization containers to be
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4SOpANxdEei0G_d67y10Rg" name="localizationLanguages">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4SOpANxdEei0G_d67y10Rg" name="localizationLanguages" visibility="public">
             <ownedComment xmi:type="uml:Comment" xmi:id="_484BINxgEei0G_d67y10Rg" annotatedElement="_4SOpANxdEei0G_d67y10Rg">
               <body>Information about localization languages of   the NF (includes e.g. strings in the NFD).&#xD;
 &#xD;
@@ -1652,10 +1656,12 @@ Permitted Values:&#xD;
             <body>Note: The only fields being used in this class are Name and MRN (manufactureReferenceNumber.  The rest are optional.</body>
           </ownedComment>
           <generalization xmi:type="uml:Generalization" xmi:id="_QjAw8DFQEemw1_Ys6rcLWw" general="_1POjoOwXEei7-e9MrPJW7Q"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Td26cOLNEeiKy5JVrA0UGA" name="validFor" visibility="public" type="_oyf9MOwXEei7-e9MrPJW7Q">
             <ownedComment xmi:type="uml:Comment" xmi:id="_hg0WkPgQEeiEqKXVVPCm1Q" annotatedElement="_Td26cOLNEeiKy5JVrA0UGA">
               <body>The period during which the design entity is valid.</body>
             </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X9F8wF8jEeqvreA8P35pRw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X9PGsF8jEeqvreA8P35pRw" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_T6QikOLNEeiKy5JVrA0UGA" name="status">
             <ownedComment xmi:type="uml:Comment" xmi:id="_DLjL0PgREeiEqKXVVPCm1Q" annotatedElement="_T6QikOLNEeiKy5JVrA0UGA">
@@ -2015,9 +2021,6 @@ Permitted Values:&#xD;
       <packagedElement xmi:type="uml:Package" xmi:id="_kM4s8BnKEemlxOdMFpUVvQ" name="Diagrams">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1p5QIFe0EemOS57QqWJZ3A">
           <body>PolicyEvent is part of another effort, and is NOT agreed to at this time.</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="__IXVsFe0EemOS57QqWJZ3A">
-          <body>LicenseAgreement is part of another contribution and is NOT agreed to at this time.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_JXPfoH10EemcG-PZNzdV9w">
           <body>ServiceOrder and VesEvent are part of other contributions, and have already been accepted.</body>
@@ -4682,15 +4685,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Experimental xmi:id="_RKUPkCifEemvDu1mw_PV_Q">
     <base_Element xmi:type="uml:Class" href="Policy.uml#_6tin4CibEemvDu1mw_PV_Q"/>
   </OpenModel_Profile:Experimental>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIDcwEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_FeFtUCoxEemnoK-fhDe5lw"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIEq4EHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_IkqcsCoxEemnoK-fhDe5lw"/>
-  </OpenModel_Profile:OpenModelAttribute>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIF5AEHXEemqbK2aT-9uCA">
-    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_RF49QCo5EemnoK-fhDe5lw"/>
-  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MVvycS4zEemS0_wZSU3sbA" base_StructuralFeature="_MVvycC4zEemS0_wZSU3sbA"/>
   <OpenModel_Profile:Experimental xmi:id="_eYHLsC4zEemS0_wZSU3sbA" base_Element="_MVvycC4zEemS0_wZSU3sbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_8TIQ4JUHEeiYXO5wr78TUw" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ"/>
@@ -5008,4 +5002,14 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_4M_pkEIVEeqvU-g6iMWwcw" base_Element="_IkxEcO9wEemJwbfAie9rjQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_8dDwkEIVEeqvU-g6iMWwcw" base_Element="_knRPwP8wEemzCqmfAD3BYQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_t727gEIWEeqvU-g6iMWwcw" base_Element="_guoCkO9_EemJwbfAie9rjQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_GBnj0F5hEeqckKgqHW-buw" base_Comment="_FLZGcF5hEeqckKgqHW-buw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIDcwEHXEemqbK2aT-9uCA">
+    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_FeFtUCoxEemnoK-fhDe5lw"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIEq4EHXEemqbK2aT-9uCA">
+    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_IkqcsCoxEemnoK-fhDe5lw"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sIF5AEHXEemqbK2aT-9uCA">
+    <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_RF49QCo5EemnoK-fhDe5lw"/>
+  </OpenModel_Profile:OpenModelAttribute>
 </xmi:XMI>
