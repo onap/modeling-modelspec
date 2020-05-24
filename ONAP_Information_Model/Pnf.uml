@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
+  <uml:Package xmi:id="_9FnNEBg1EembeqMx64UEWQ" name="Pnf">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Yq0OgBg2EembeqMx64UEWQ" name="Associations">
+      <packagedElement xmi:type="uml:Association" xmi:id="_AeHIIES6EeiVGPeZpaYNtQ" name="PnfExposesExtCp" memberEnd="_Aes-AUS6EeiVGPeZpaYNtQ _AfWeQES6EeiVGPeZpaYNtQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Aej0EES6EeiVGPeZpaYNtQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Aes-AES6EeiVGPeZpaYNtQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AfWeQES6EeiVGPeZpaYNtQ" name="_pnf" type="_6GSVkDzFEeiWMf5FLWfdLA" association="_AeHIIES6EeiVGPeZpaYNtQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_kf17sP4fEeirJOiRiTRpBw" name="PnfdHasPnfExtCpd" memberEnd="_kgLS4P4fEeirJOiRiTRpBw _kgUc0P4fEeirJOiRiTRpBw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kgHBcP4fEeirJOiRiTRpBw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kgHogP4fEeirJOiRiTRpBw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_kgUc0P4fEeirJOiRiTRpBw" name="_pnfd" type="_13TCEDzEEeiWMf5FLWfdLA" association="_kf17sP4fEeirJOiRiTRpBw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Yq2DsBg2EembeqMx64UEWQ" name="Diagrams"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Yq4f8Bg2EembeqMx64UEWQ" name="ObjectClasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_13TCEDzEEeiWMf5FLWfdLA" name="Pnfd">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_13TCETzEEeiWMf5FLWfdLA" annotatedElement="_13TCEDzEEeiWMf5FLWfdLA">
+          <body>The Pnfd class is a deployment template enabling on-boarding PNFs and referencing them from an NSD. It focuses on connectivity aspects only.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_lh0B0Ke2Eeixw5Ke5QD1pQ">
+          <general xmi:type="uml:Class" href="Nf.uml#_O385oJssEeiPBvbfaqSLYg"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCEjzEEeiWMf5FLWfdLA" name="pnfdId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_13TCEzzEEeiWMf5FLWfdLA" annotatedElement="_13TCEjzEEeiWMf5FLWfdLA">
+            <body>Identifier of this Pnfd class. It uniquely identifies the PNFD.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCFDzEEeiWMf5FLWfdLA" name="provider">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_13TCFTzEEeiWMf5FLWfdLA" annotatedElement="_13TCFDzEEeiWMf5FLWfdLA">
+            <body>Identifies the provider of the PNFD.&#xD;
+NOTE: 	The provider of the PNFD might be different from the provider of the PNF.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCFjzEEeiWMf5FLWfdLA" name="version">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_13TCFzzEEeiWMf5FLWfdLA" annotatedElement="_13TCFjzEEeiWMf5FLWfdLA">
+            <body>Identifies the version of the PNFD</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="Common.uml#_oXexoD2uEeiu6I5JfRTxxQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_13TCGDzEEeiWMf5FLWfdLA" name="security">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_13TCGTzEEeiWMf5FLWfdLA" annotatedElement="_13TCGDzEEeiWMf5FLWfdLA">
+            <body>Provides a signature to prevent tampering.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_P-qXMD2vEeiu6I5JfRTxxQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_13TCGjzEEeiWMf5FLWfdLA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_13TCGzzEEeiWMf5FLWfdLA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_x8ZI0Ow2EeiDiIttoROOIw" name="functionDescription" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-VZF0Ow2EeiDiIttoROOIw" annotatedElement="_x8ZI0Ow2EeiDiIttoROOIw">
+            <body>Describes the PNF function.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WDCm4Ow3EeiDiIttoROOIw" name="pnfdInvariantId" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fgMd0Ow3EeiDiIttoROOIw" annotatedElement="_WDCm4Ow3EeiDiIttoROOIw">
+            <body>Identifies a PNFD in a version independent manner. This attribute is invariant across versions of PNFD.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_le5Q4Ow3EeiDiIttoROOIw" name="name" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uAL8gOw3EeiDiIttoROOIw" annotatedElement="_le5Q4Ow3EeiDiIttoROOIw">
+            <body>Provides the human readable name of the PNFD.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kgLS4P4fEeirJOiRiTRpBw" name="_pnfExtCpd " type="_bd53ADzFEeiWMf5FLWfdLA" aggregation="composite" association="_kf17sP4fEeirJOiRiTRpBw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3bGPUP4gEeirJOiRiTRpBw" annotatedElement="_kgLS4P4fEeirJOiRiTRpBw">
+            <body>Specifies the characteristics of one or more connection points where to connect the PNF to a VL.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgSAkP4fEeirJOiRiTRpBw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgTOsP4fEeirJOiRiTRpBw" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bd53ADzFEeiWMf5FLWfdLA" name="PnfExtCpd ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bd53ATzFEeiWMf5FLWfdLA" annotatedElement="_bd53ADzFEeiWMf5FLWfdLA">
+          <body>A PnfExtCpd is a type of Cpd and describes the characteristics of an external interface, a.k.a external CP, where to connect the PNF to a VL. &#xD;
+ </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_QFTUsP4gEeirJOiRiTRpBw">
+          <general xmi:type="uml:Class" href="Common.uml#_rmDCkNxjEei0G_d67y10Rg"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6GSVkDzFEeiWMf5FLWfdLA" name="PnfInstance">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6GSVkTzFEeiWMf5FLWfdLA" annotatedElement="_6GSVkDzFEeiWMf5FLWfdLA">
+          <body>An implementation of a NF via a tightly coupled software and hardware system.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_8IrdIESyEeiVGPeZpaYNtQ">
+          <general xmi:type="uml:Class" href="Nf.uml#_VtzSoESyEeiVGPeZpaYNtQ"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Aes-AUS6EeiVGPeZpaYNtQ" name="_pnfExtCp" type="_6GUx0DzFEeiWMf5FLWfdLA" aggregation="composite" association="_AeHIIES6EeiVGPeZpaYNtQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_X-iFgES6EeiVGPeZpaYNtQ" annotatedElement="_Aes-AUS6EeiVGPeZpaYNtQ">
+            <body>External CP of the PNF.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AfVQIES6EeiVGPeZpaYNtQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AfV3MES6EeiVGPeZpaYNtQ" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6GUx0DzFEeiWMf5FLWfdLA" name="PnfExtCp">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6GUx0TzFEeiWMf5FLWfdLA" annotatedElement="_6GUx0DzFEeiWMf5FLWfdLA">
+          <body>External CP of the PNF.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_0tWP0ES5EeiVGPeZpaYNtQ">
+          <general xmi:type="uml:Class" href="Common.uml#_8naVoES0EeiVGPeZpaYNtQ"/>
+        </generalization>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6GUx0zzFEeiWMf5FLWfdLA" name="cpd">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6GUx1DzFEeiWMf5FLWfdLA" annotatedElement="_6GUx0zzFEeiWMf5FLWfdLA">
+            <body>Cpd used to deploy this PNF CP.</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GYYOwDzFEeiWMf5FLWfdLA" name="PnfProfile">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOwTzFEeiWMf5FLWfdLA" annotatedElement="_GYYOwDzFEeiWMf5FLWfdLA">
+          <body>The PnfProfile class describes additional data for a given PNF instance used in a DF.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GYYOwjzFEeiWMf5FLWfdLA" name="pnfProfileId">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOwzzFEeiWMf5FLWfdLA" annotatedElement="_GYYOwjzFEeiWMf5FLWfdLA">
+            <body>Identifier of this PnfProfile class. It uniquely identifies a PnfProfile.</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GYYOxDzFEeiWMf5FLWfdLA" name="pnfVirtualLinkConnectivity">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOxTzFEeiWMf5FLWfdLA" annotatedElement="_GYYOxDzFEeiWMf5FLWfdLA">
+            <body>Defines the connection information of the PNF, it contains connection relationship between a PNF connection point and a NS virtual Link.&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:DataType" href="Ns.uml#_kEZorTzEEeiWMf5FLWfdLA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GYYOxjzFEeiWMf5FLWfdLA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GYYOxzzFEeiWMf5FLWfdLA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Yq68MBg2EembeqMx64UEWQ" name="TypeDefinitions">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_tlyigBgIEembeqMx64UEWQ" name="SwVersion">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_0sEBoBgIEembeqMx64UEWQ" annotatedElement="_tlyigBgIEembeqMx64UEWQ">
+          <body>The software versions associated with the pnfd</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_36z1kBgIEembeqMx64UEWQ" name="active" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9foJABgIEembeqMx64UEWQ" annotatedElement="_36z1kBgIEembeqMx64UEWQ">
+            <body>The active software</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__fnq0BgIEembeqMx64UEWQ" name="passive" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OPnUYBgJEembeqMx64UEWQ" annotatedElement="__fnq0BgIEembeqMx64UEWQ">
+            <body>The passive software</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kqzw4BgJEembeqMx64UEWQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KrTgIBgJEembeqMx64UEWQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QhepUBgJEembeqMx64UEWQ" name="recovery" visibility="public">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZwGVABgJEembeqMx64UEWQ" annotatedElement="_QhepUBgJEembeqMx64UEWQ">
+            <body>The recovery software</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vuqf4BgJEembeqMx64UEWQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VvCTUBgJEembeqMx64UEWQ" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GqTPYBg2EembeqMx64UEWQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BZVd0DksEemjyLkBMGZA1g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZVd0TksEemjyLkBMGZA1g" key="Version" value="0.2.15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZVd0jksEemjyLkBMGZA1g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZVd0zksEemjyLkBMGZA1g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZVd1DksEemjyLkBMGZA1g" key="Date" value="2019-02-25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BZVd1TksEemjyLkBMGZA1g" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GqTPZxg2EembeqMx64UEWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GqT2cBg2EembeqMx64UEWQ" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GqVEkBg2EembeqMx64UEWQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GqVEkRg2EembeqMx64UEWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GqVEkhg2EembeqMx64UEWQ" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Package>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_x8Zv4Ow2EeiDiIttoROOIw" base_StructuralFeature="_x8ZI0Ow2EeiDiIttoROOIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WDCm4ew3EeiDiIttoROOIw" base_StructuralFeature="_WDCm4Ow3EeiDiIttoROOIw" isInvariant="true"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_le538Ow3EeiDiIttoROOIw" base_StructuralFeature="_le5Q4Ow3EeiDiIttoROOIw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_kgMhAP4fEeirJOiRiTRpBw" base_StructuralFeature="_kgLS4P4fEeirJOiRiTRpBw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_phXtUBRDEembeqMx64UEWQ" base_StructuralFeature="_kgUc0P4fEeirJOiRiTRpBw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_361DsBgIEembeqMx64UEWQ" base_StructuralFeature="_36z1kBgIEembeqMx64UEWQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__fpgABgIEembeqMx64UEWQ" base_StructuralFeature="__fnq0BgIEembeqMx64UEWQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_QhepURgJEembeqMx64UEWQ" base_StructuralFeature="_QhepUBgJEembeqMx64UEWQ"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_n0I0UKe3Eeixw5Ke5QD1pQ" base_Class="_13TCEDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0PiAKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCEjzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0UagKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCFDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0YE4Ke3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCFjzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_n0bIMKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCGDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_GYZc4DzFEeiWMf5FLWfdLA" base_Class="_GYYOwDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYduUDzFEeiWMf5FLWfdLA" base_StructuralFeature="_GYYOwjzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYeVYDzFEeiWMf5FLWfdLA" base_StructuralFeature="_GYYOxDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_bd6eEDzFEeiWMf5FLWfdLA" base_Class="_bd53ADzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_6GS8oDzFEeiWMf5FLWfdLA" base_Class="_6GSVkDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_6GUx1TzFEeiWMf5FLWfdLA" base_Class="_6GUx0DzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6GVY4DzFEeiWMf5FLWfdLA" base_StructuralFeature="_6GUx0zzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_AeuMIES6EeiVGPeZpaYNtQ" base_StructuralFeature="_Aes-AUS6EeiVGPeZpaYNtQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_AfWeQkS6EeiVGPeZpaYNtQ" base_StructuralFeature="_AfWeQES6EeiVGPeZpaYNtQ"/>
+  <OpenModel_Profile:Future xmi:id="_kt0AwKewEeixw5Ke5QD1pQ" base_Element="_6GSVkDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_mbit4KewEeixw5Ke5QD1pQ" base_Element="_6GUx0DzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_oXoAEKewEeixw5Ke5QD1pQ" base_Element="_GYYOwDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Future xmi:id="_LAMtkDkwEem1o-Nx2Ra5UA" base_Element="_tlyigBgIEembeqMx64UEWQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_wc7_oHMqEemudrQUWqSMNQ" base_Element="_13TCEDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_1SbH4HMqEemudrQUWqSMNQ" base_Element="_13TCEjzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_2rX30HMqEemudrQUWqSMNQ" base_Element="_13TCFDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_4DFRoHMqEemudrQUWqSMNQ" base_Element="_13TCFjzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_5HmCoHMqEemudrQUWqSMNQ" base_Element="_13TCGDzEEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Preliminary xmi:id="_6WTRcHMqEemudrQUWqSMNQ" base_Element="_x8ZI0Ow2EeiDiIttoROOIw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_7h2ekHMqEemudrQUWqSMNQ" base_Element="_WDCm4Ow3EeiDiIttoROOIw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_88R1MHMqEemudrQUWqSMNQ" base_Element="_le5Q4Ow3EeiDiIttoROOIw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_IzodsHMrEemudrQUWqSMNQ" base_Element="_bd53ADzFEeiWMf5FLWfdLA"/>
+</xmi:XMI>

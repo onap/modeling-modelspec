@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OpenModel_Profile="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OpenModel_Profile/_2Rm7cDkrEemjyLkBMGZA1g/27 OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g">
+  <uml:Package xmi:id="_jh99MDOHEei5Af8DcjrhIQ" name="Resource">
+    <packagedElement xmi:type="uml:Package" xmi:id="_lK97UDOHEei5Af8DcjrhIQ" name="Associations"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lK-iYDOHEei5Af8DcjrhIQ" name="Diagrams"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lK-iYTOHEei5Af8DcjrhIQ" name="Interfaces"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lK_JcDOHEei5Af8DcjrhIQ" name="ObjectClasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_DAQisJpXEeidy9iGT_F5-w" name="ResourceDesc">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_psrJgMGxEeiS695oPTRE1Q" annotatedElement="_DAQisJpXEeidy9iGT_F5-w">
+          <body>ResourceDesc represents physical and non-physical (virtual) components which are owned / managed by the business or provided by a Supplier and are used (directly or indirectly) to construct services.&#xD;
+&#xD;
+In this context, a resource is something that goes into a resource catalog from which services are composed.&#xD;
+  </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_DdJuQBCJEeqONNoHH0FhYQ">
+          <general xmi:type="uml:Class" href="Common.uml#_v04t4DFPEemw1_Ys6rcLWw"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_hZfC0DEkEemRSoIWRX3jNw" name="ResourceInstance">
+        <generalization xmi:type="uml:Generalization" xmi:id="_92FGIBCKEeqONNoHH0FhYQ">
+          <general xmi:type="uml:Class" href="Common.uml#_0Zik0DFPEemw1_Ys6rcLWw"/>
+        </generalization>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lK_JcTOHEei5Af8DcjrhIQ" name="TypeDefinitions"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nRfaQKe3Eeixw5Ke5QD1pQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BgGNIDksEemjyLkBMGZA1g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BgGNITksEemjyLkBMGZA1g" key="Version" value="0.2.15"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BgGNIjksEemjyLkBMGZA1g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BgGNIzksEemjyLkBMGZA1g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BgGNJDksEemjyLkBMGZA1g" key="Date" value="2019-02-25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BgGNJTksEemjyLkBMGZA1g" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nSCM0Ke3Eeixw5Ke5QD1pQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+    </profileApplication>
+  </uml:Package>
+  <OpenModel_Profile:OpenModelClass xmi:id="_DAQisZpXEeidy9iGT_F5-w" base_Class="_DAQisJpXEeidy9iGT_F5-w"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_hZfC0TEkEemRSoIWRX3jNw" base_Class="_hZfC0DEkEemRSoIWRX3jNw"/>
+  <OpenModel_Profile:Preliminary xmi:id="_8o6ZQNkwEemhQNrkGQNN2A" base_Element="_DAQisJpXEeidy9iGT_F5-w"/>
+  <OpenModel_Profile:Preliminary xmi:id="__k_I0NkwEemhQNrkGQNN2A" base_Element="_hZfC0DEkEemRSoIWRX3jNw"/>
+</xmi:XMI>

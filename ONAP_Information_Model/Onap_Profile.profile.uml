@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_a5YyYEMgEeisT-sjhttBCA" name="Onap_Profile" metaclassReference="_vJy7EEMhEeisT-sjhttBCA _SIgO8ENJEeizArvcUMcZaw _XLirAENJEeizArvcUMcZaw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8mslEEMhEeisT-sjhttBCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_O8WqIHu_EeiiR5bcbqvgpQ" name="Onap_Profile" nsURI="http:///schemas/Onap_Profile/_O8WDEHu_EeiiR5bcbqvgpQ/2" nsPrefix="Onap_Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O8YfUHu_EeiiR5bcbqvgpQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O8YfUXu_EeiiR5bcbqvgpQ" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O8YfUnu_EeiiR5bcbqvgpQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O8YfU3u_EeiiR5bcbqvgpQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O8YfVHu_EeiiR5bcbqvgpQ" key="Date" value="2018-06-29"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O8YfVXu_EeiiR5bcbqvgpQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_O8WqIXu_EeiiR5bcbqvgpQ" name="OnapModelLifecycle">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O8WqInu_EeiiR5bcbqvgpQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_lXkBcEMgEeisT-sjhttBCA"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_O8WqI3u_EeiiR5bcbqvgpQ" name="state" ordered="false" lowerBound="1" eType="_O8WqKXu_EeiiR5bcbqvgpQ" defaultValueLiteral="INPUT"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_O8WqJXu_EeiiR5bcbqvgpQ" name="base_Class" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_O8WqJ3u_EeiiR5bcbqvgpQ" name="base_Property" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_O8WqKXu_EeiiR5bcbqvgpQ" name="LifecycleState">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O8XRMHu_EeiiR5bcbqvgpQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7LoKsEMgEeisT-sjhttBCA"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_O8XRMXu_EeiiR5bcbqvgpQ" name="INPUT"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_O8XRMnu_EeiiR5bcbqvgpQ" name="DISCUSSION" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_O8XRM3u_EeiiR5bcbqvgpQ" name="CLEAN" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_O8XRNHu_EeiiR5bcbqvgpQ" name="APPROVED" value="3"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_gE-J0ENJEeizArvcUMcZaw" name="Onap_Profile" nsURI="http:///schemas/Onap_Profile/_gEeakENJEeizArvcUMcZaw/1" nsPrefix="Onap_Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gFKXEENJEeizArvcUMcZaw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFKXEUNJEeizArvcUMcZaw" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFKXEkNJEeizArvcUMcZaw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFKXE0NJEeizArvcUMcZaw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFKXFENJEeizArvcUMcZaw" key="Date" value="2018-04-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gFKXFUNJEeizArvcUMcZaw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_gE-J0UNJEeizArvcUMcZaw" name="OnapModelLifecycle">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gE-J0kNJEeizArvcUMcZaw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_lXkBcEMgEeisT-sjhttBCA"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_gE-J00NJEeizArvcUMcZaw" name="state" ordered="false" lowerBound="1" eType="_gE-J2UNJEeizArvcUMcZaw" defaultValueLiteral="INPUT"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gE-J1UNJEeizArvcUMcZaw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_gE-J10NJEeizArvcUMcZaw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_gE-J2UNJEeizArvcUMcZaw" name="LifecycleState">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gE-J2kNJEeizArvcUMcZaw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7LoKsEMgEeisT-sjhttBCA"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_gE-J20NJEeizArvcUMcZaw" name="INPUT"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_gE-J3ENJEeizArvcUMcZaw" name="DISCUSSION" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_gE-J3UNJEeizArvcUMcZaw" name="CLEAN" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_gE-J3kNJEeizArvcUMcZaw" name="APPROVED" value="3"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_8mslEUMhEeisT-sjhttBCA" name="Onap_Profile" nsURI="http:///schemas/Onap_Profile/_8lrRYEMhEeisT-sjhttBCA/0" nsPrefix="Onap_Profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8nOJgEMhEeisT-sjhttBCA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nOJgUMhEeisT-sjhttBCA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nOJgkMhEeisT-sjhttBCA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nOJg0MhEeisT-sjhttBCA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nOJhEMhEeisT-sjhttBCA" key="Date" value="2018-04-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8nOJhUMhEeisT-sjhttBCA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8mslEkMhEeisT-sjhttBCA" name="OnapModelLifecycle">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8mslE0MhEeisT-sjhttBCA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_lXkBcEMgEeisT-sjhttBCA"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8mslFEMhEeisT-sjhttBCA" name="state" ordered="false" lowerBound="1" eType="_8mslGEMhEeisT-sjhttBCA" defaultValueLiteral="INPUT"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8mslFkMhEeisT-sjhttBCA" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8mslGEMhEeisT-sjhttBCA" name="LifecycleState">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8mslGUMhEeisT-sjhttBCA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7LoKsEMgEeisT-sjhttBCA"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8mslGkMhEeisT-sjhttBCA" name="INPUT"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8mslG0MhEeisT-sjhttBCA" name="DISCUSSION" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8mslHEMhEeisT-sjhttBCA" name="CLEAN" value="2"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_8mslHUMhEeisT-sjhttBCA" name="APPROVED" value="3"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_e8n-UEMgEeisT-sjhttBCA" annotatedElement="_a5YyYEMgEeisT-sjhttBCA">
+    <body>This profile contains stereotypes applicable to ONAP</body>
+  </ownedComment>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_vJy7EEMhEeisT-sjhttBCA" alias="Element">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_SIgO8ENJEeizArvcUMcZaw" alias="Class">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_XLirAENJEeizArvcUMcZaw" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bRdUIEMgEeisT-sjhttBCA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bRd7MEMgEeisT-sjhttBCA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_lXkBcEMgEeisT-sjhttBCA" name="OnapModelLifecycle">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_5vhZEEMgEeisT-sjhttBCA" annotatedElement="_lXkBcEMgEeisT-sjhttBCA">
+      <body>This stereotype is used to determine the model element lifecycle state.</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dY7hgEMhEeisT-sjhttBCA" name="state" visibility="public" type="_7LoKsEMgEeisT-sjhttBCA">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_jz7PAEMhEeisT-sjhttBCA" annotatedElement="_dY7hgEMhEeisT-sjhttBCA">
+        <body>This is the current model development state of the element.</body>
+      </ownedComment>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_revloEMhEeisT-sjhttBCA" name="INPUT" type="_7LoKsEMgEeisT-sjhttBCA" instance="_EMLlMEMhEeisT-sjhttBCA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bok3AUNJEeizArvcUMcZaw" name="base_Class" association="_boILEENJEeizArvcUMcZaw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I8ARQHu_EeiiR5bcbqvgpQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I8VocHu_EeiiR5bcbqvgpQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ccwtAkNJEeizArvcUMcZaw" name="base_Property" association="_ccwtAENJEeizArvcUMcZaw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KfMiUHu_EeiiR5bcbqvgpQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kfby4Hu_EeiiR5bcbqvgpQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_7LoKsEMgEeisT-sjhttBCA" name="LifecycleState">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_CspFEEMhEeisT-sjhttBCA" annotatedElement="_7LoKsEMgEeisT-sjhttBCA">
+      <body>This represents the various development states of an ONAP model element</body>
+    </ownedComment>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EMLlMEMhEeisT-sjhttBCA" name="INPUT">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HwBfYEMhEeisT-sjhttBCA" annotatedElement="_EMLlMEMhEeisT-sjhttBCA">
+        <body>The model element is input for a discussion.</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_I5C88EMhEeisT-sjhttBCA" name="DISCUSSION">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_NnK48EMhEeisT-sjhttBCA" annotatedElement="_I5C88EMhEeisT-sjhttBCA">
+        <body>The model element is under discussion.</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Plb8cEMhEeisT-sjhttBCA" name="CLEAN">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UBQngEMhEeisT-sjhttBCA" annotatedElement="_Plb8cEMhEeisT-sjhttBCA">
+        <body>The model element has been agreed upon by a project team.</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VL09MEMhEeisT-sjhttBCA" name="APPROVED">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_asUxUEMhEeisT-sjhttBCA" annotatedElement="_VL09MEMhEeisT-sjhttBCA">
+        <body>The model element has been officially reviewed and approved by the modeling subcommittee.</body>
+      </ownedComment>
+    </ownedLiteral>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_boILEENJEeizArvcUMcZaw" name="E_OnapModelLifecycle_Class10" memberEnd="_bok3AENJEeizArvcUMcZaw _bok3AUNJEeizArvcUMcZaw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_bok3AENJEeizArvcUMcZaw" name="extension_OnapModelLifecycle" type="_lXkBcEMgEeisT-sjhttBCA" aggregation="composite" association="_boILEENJEeizArvcUMcZaw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eGJFoENJEeizArvcUMcZaw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eGJFoUNJEeizArvcUMcZaw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ccwtAENJEeizArvcUMcZaw" name="E_OnapModelLifecycle_Property11" memberEnd="_ccwtAUNJEeizArvcUMcZaw _ccwtAkNJEeizArvcUMcZaw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ccwtAUNJEeizArvcUMcZaw" name="extension_OnapModelLifecycle" type="_lXkBcEMgEeisT-sjhttBCA" aggregation="composite" association="_ccwtAENJEeizArvcUMcZaw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dH4toENJEeizArvcUMcZaw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dH4toUNJEeizArvcUMcZaw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Profile>

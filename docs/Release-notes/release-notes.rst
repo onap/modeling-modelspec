@@ -6,6 +6,41 @@
 Modeling Spec Release Notes
 ===========================
 
+Version: 6.0.0
+--------------
+
+:Release Date: 2020-05-24
+
+**New Features**
+
+Introduce the following new information models:
+
+- dynamic parameters
+- selection criteria
+- license management
+
+Enhance service information model for nested and shared service.
+
+**Bug Fixes**
+
+**Security Notes**
+
+MODELLING code has been formally scanned during build time using NexusIQ and no Critical vulnerability was found.
+
+Quick Links:
+ 	- `MODELLING project page <https://wiki.onap.org/display/DW/Modeling+Project>`_
+ 	
+ 	- `Passing Badge information for MODELLING <https://bestpractices.coreinfrastructure.org/en/projects/1774>`_
+ 	
+**Known Issues**
+   None
+
+**Upgrade Notes**
+   Update root hierarchy information model.
+
+**Other**
+   None
+
 Version: 5.0.0
 --------------
 
@@ -35,7 +70,7 @@ Quick Links:
    None
 
 **Other**
-
+   None
 
 Version: 4.0.0
 --------------
@@ -66,13 +101,12 @@ Quick Links:
    Update VNFD information and data model to align with ETSI NFV IFA011/SOL001 v2.5.1 specifications.
 
 **Other**
+   None
 
 Version: 3.1.1
 --------------
 
 :Release Date: 2018-11-07
-
-
 
 **New Features**
 
@@ -96,7 +130,4 @@ Quick Links:
    None
 
 **Other**
-
-===========
-
-End of Release Notes
+   None

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_710dYNMOEeig45NPS8-MSw" name="Policy">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_ahnBMBBYEemHjtkpPBz29Q" annotatedElement="_710dYNMOEeig45NPS8-MSw">
+    <body>Presently the scope of policy is imperitive (event, condition, action) only - not declaritive or intent.&#xD;
+&#xD;
+Approach will be pragmatic in nature, establishing a model that meets the Policy team's near term needs, and then evolve from that base.</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Package" xmi:id="_D-ZuENMPEeig45NPS8-MSw" name="Associations">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Hp5S8NMQEeig45NPS8-MSw" name="PolicyEventTriggersPolicyRule" memberEnd="_Hp8WQNMQEeig45NPS8-MSw _Hp89UNMQEeig45NPS8-MSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hp7IINMQEeig45NPS8-MSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hp7IIdMQEeig45NPS8-MSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Hp8WQNMQEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_Hp5S8NMQEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r6uAsNMQEeig45NPS8-MSw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r6zgQNMQEeig45NPS8-MSw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Hp89UNMQEeig45NPS8-MSw" name="policyevent" type="_otly0NMPEeig45NPS8-MSw" aggregation="shared" association="_Hp5S8NMQEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s0bP4NMQEeig45NPS8-MSw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s0fhUNMQEeig45NPS8-MSw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ix5wINMSEeig45NPS8-MSw" name="PolicyRuleInitiatesPolicyAction" memberEnd="_ix6XMtMSEeig45NPS8-MSw _ix6-QNMSEeig45NPS8-MSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ix6XMNMSEeig45NPS8-MSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ix6XMdMSEeig45NPS8-MSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ix6XMtMSEeig45NPS8-MSw" name="policyaction" type="_trl94NMPEeig45NPS8-MSw" aggregation="shared" association="_ix5wINMSEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8xO4kNMVEeig45NPS8-MSw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8xsyoNMVEeig45NPS8-MSw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ix6-QNMSEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_ix5wINMSEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Rkp8NMVEeig45NPS8-MSw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-R290NMVEeig45NPS8-MSw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-vAXYNMWEeig45NPS8-MSw" name="PolicyRuleTemplateSpecifiesPolicyRule" memberEnd="_-vBlgtMWEeig45NPS8-MSw _-vGeANMWEeig45NPS8-MSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-vBlgNMWEeig45NPS8-MSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-vBlgdMWEeig45NPS8-MSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-vBlgtMWEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" aggregation="shared" association="_-vAXYNMWEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FKFDoO0REei7-e9MrPJW7Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FKfTUO0REei7-e9MrPJW7Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-vGeANMWEeig45NPS8-MSw" name="policyruletemplate (policyrulespec)" type="_vYK0cNMPEeig45NPS8-MSw" association="_-vAXYNMWEeig45NPS8-MSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sGhOwNMVEeig45NPS8-MSw" name="PolicyGroupHasPolicyRule" memberEnd="_sGh10tMVEeig45NPS8-MSw _sGjD8NMVEeig45NPS8-MSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sGh10NMVEeig45NPS8-MSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sGh10dMVEeig45NPS8-MSw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sGh10tMVEeig45NPS8-MSw" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LQCEUNcPEeitAsFAkChUcg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LQMcYNcPEeitAsFAkChUcg" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sGjD8NMVEeig45NPS8-MSw" name="policygroup" type="_jUQ9sNMPEeig45NPS8-MSw" association="_sGhOwNMVEeig45NPS8-MSw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MCbKkNcPEeitAsFAkChUcg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MChRMNcPEeitAsFAkChUcg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yMQDgNceEeitAsFAkChUcg" name="CompositeActonHasAction" memberEnd="_yMSfwNceEeitAsFAkChUcg _yMTt4dceEeitAsFAkChUcg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yMR4sNceEeitAsFAkChUcg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yMR4sdceEeitAsFAkChUcg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yMTt4dceEeitAsFAkChUcg" name="policyactioncomposite" type="_u-NV0NcAEeitAsFAkChUcg" association="_yMQDgNceEeitAsFAkChUcg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6FlXQNceEeitAsFAkChUcg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6FqPwNceEeitAsFAkChUcg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_yMSfwNceEeitAsFAkChUcg" name="policyaction" type="_trl94NMPEeig45NPS8-MSw" aggregation="shared" association="_yMQDgNceEeitAsFAkChUcg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yMTG0dceEeitAsFAkChUcg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yMTt4NceEeitAsFAkChUcg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l4q3MO0FEei7-e9MrPJW7Q" name="PolicyRuleHasPolicyRule" memberEnd="_l4reQu0FEei7-e9MrPJW7Q _l4yzAO0FEei7-e9MrPJW7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l4reQO0FEei7-e9MrPJW7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l4reQe0FEei7-e9MrPJW7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_l4reQu0FEei7-e9MrPJW7Q" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_l4q3MO0FEei7-e9MrPJW7Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9bCAkPcREeioXqr69euSUg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9bWwsPcREeioXqr69euSUg" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_l4yzAO0FEei7-e9MrPJW7Q" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_l4q3MO0FEei7-e9MrPJW7Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9-UT0PcREeioXqr69euSUg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9-f6APcREeioXqr69euSUg" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Lo2VUOz6Eei7-e9MrPJW7Q" name="PolicyRuleHasCondition" memberEnd="_Lo3jcez6Eei7-e9MrPJW7Q _Lo5_sOz6Eei7-e9MrPJW7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Lo28YOz6Eei7-e9MrPJW7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lo3jcOz6Eei7-e9MrPJW7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Lo3jcez6Eei7-e9MrPJW7Q" name="policyrule" type="_eM1J0NMPEeig45NPS8-MSw" association="_Lo2VUOz6Eei7-e9MrPJW7Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c_mlwOz6Eei7-e9MrPJW7Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c_ssYOz6Eei7-e9MrPJW7Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Lo5_sOz6Eei7-e9MrPJW7Q" name="policycondition" type="_ZqOtwOzsEei7-e9MrPJW7Q" aggregation="shared" association="_Lo2VUOz6Eei7-e9MrPJW7Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l0FTIOz6Eei7-e9MrPJW7Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l0bRYOz6Eei7-e9MrPJW7Q" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VC8uMBBaEemHjtkpPBz29Q" name="CompositeEventHasEvents" memberEnd="_VDruABBaEemHjtkpPBz29Q _VDs8IRBaEemHjtkpPBz29Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VDqf4BBaEemHjtkpPBz29Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VDrG8BBaEemHjtkpPBz29Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VDs8IRBaEemHjtkpPBz29Q" name="policyeventcomposite" type="_VwTgwOzqEei7-e9MrPJW7Q" association="_VC8uMBBaEemHjtkpPBz29Q"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GYkqcNMPEeig45NPS8-MSw" name="ObjectClasses">
+    <packagedElement xmi:type="uml:Class" xmi:id="_trl94NMPEeig45NPS8-MSw" name="PolicyAction" isAbstract="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Mef6ANb4EeitAsFAkChUcg" annotatedElement="_trl94NMPEeig45NPS8-MSw">
+        <body>This is an abstract base class that represents how to form the action clause of a PolicyRule.&#xD;
+&#xD;
+Certain actions will take place if the condition clause is TRUE, others if the condition clause is FALSE.&#xD;
+&#xD;
+&#xD;
+</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_AcOXwOztEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yn_zEO0REei7-e9MrPJW7Q" name="keyValuePair">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_zvkxQBREEemnNtqNLTt4jg" annotatedElement="_yn_zEO0REei7-e9MrPJW7Q">
+          <body>Additional metadata pertinant to the action.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ztgpoO0REei7-e9MrPJW7Q" name="actionExecutionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Liq8gBUVEemJneI1RVMh_w" annotatedElement="_ztgpoO0REei7-e9MrPJW7Q">
+          <body>Defines the strategy to be used when executing the aggregated actions</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_otly0NMPEeig45NPS8-MSw" name="PolicyEvent">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HW0UANMSEeig45NPS8-MSw" annotatedElement="_otly0NMPEeig45NPS8-MSw">
+        <body>A PolicyEvent is an occurrence of an important event, and can be used to trigger the evaluation of a PolicyCondition or PolicyCondition clause in a PolicyRule. </body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_u6kmAO2IEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_gdo60H1xEemcG-PZNzdV9w">
+        <general xmi:type="uml:Class" href="Common.uml#_8fYhoDqyEemOl5OHBoqS_w"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_x5sNEO2JEei7-e9MrPJW7Q" name="eventOrigin">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_wn9X0BBZEemHjtkpPBz29Q" annotatedElement="_x5sNEO2JEei7-e9MrPJW7Q">
+          <body>eventOrigin provides information on the entity that generates the event (DCAE, Vnf, monitors).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yy6UEO2JEei7-e9MrPJW7Q" name="eventDomain">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GbFs8BBaEemHjtkpPBz29Q" annotatedElement="_yy6UEO2JEei7-e9MrPJW7Q">
+          <body>The environment or entity in which the event occurred (Eg - Vnf, switch, eNodeB, or data center).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Fl1FYBN6EemCyfN9HPKKTQ" name="Payload">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_5i5kIBQrEemYQtunsEp6VQ" annotatedElement="_Fl1FYBN6EemCyfN9HPKKTQ">
+          <body>The payload for the event.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZeD0EBN6EemCyfN9HPKKTQ" name="eventType">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_nMYd0BRBEemnNtqNLTt4jg" annotatedElement="_ZeD0EBN6EemCyfN9HPKKTQ">
+          <body>Classification that captures the symantics of that particular event categorization (enodeb, vnf)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jUQ9sNMPEeig45NPS8-MSw" name="PolicyGroup">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_nM_NMNhpEeiRnMGpBj3Tnw" annotatedElement="_jUQ9sNMPEeig45NPS8-MSw">
+        <body>This class is a generalized aggregation container. It enables PolicyRules and/or PolicyGroups to be aggregated in a single container. Note that loops, including the degenerate case of a PolicyGroup that contains itself, are not allowed when PolicyGroups contain other PolicyGroups.&#xD;
+</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_9Oa_AOzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_09izANhpEeiRnMGpBj3Tnw" name="isMandatoryEvaluation">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tl9sANhqEeiRnMGpBj3Tnw" annotatedElement="_09izANhpEeiRnMGpBj3Tnw">
+          <body>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be &quot;best effort&quot; and may be ignored. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1rrEUNhpEeiRnMGpBj3Tnw" name="usage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vei-QNhqEeiRnMGpBj3Tnw" annotatedElement="_1rrEUNhpEeiRnMGpBj3Tnw">
+          <body>This is a free-form string attribute that recommends how this policy object should be used. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7w7LUNhpEeiRnMGpBj3Tnw" name="keywords">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yF1woNhqEeiRnMGpBj3Tnw" annotatedElement="_7w7LUNhpEeiRnMGpBj3Tnw">
+          <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8nPIQNhpEeiRnMGpBj3Tnw" name="policyName">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1Ko-YNhqEeiRnMGpBj3Tnw" annotatedElement="_8nPIQNhpEeiRnMGpBj3Tnw">
+          <body>This is a generic naming attribute that can be used to identify different policy entities. This enables commonName to be used to enforce enterprise or service provider generic naming and this attribute to be used to fine tune the naming of policy entities. Thus, commonName is public in scope and policyName is private to policy. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU specs or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9eti0NhpEeiRnMGpBj3Tnw" name="name">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4iaLcNhqEeiRnMGpBj3Tnw" annotatedElement="_9eti0NhpEeiRnMGpBj3Tnw">
+          <body>Represents a user-friendly identifier of an object. It is a (possibly ambiguous) name by which the object is commonly known in some limited scope (such as an organization) and conforms to the naming conventions of the country or culture with which it is associated. It is NOT used as a naming attribute (i.e., to uniquely identify an instance of the object).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-qnVQNhpEeiRnMGpBj3Tnw" name="description">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6NkFsNhqEeiRnMGpBj3Tnw" annotatedElement="_-qnVQNhpEeiRnMGpBj3Tnw">
+          <body>This is a string, and defines a textual free-form description of the object. &#xD;
+ &#xD;
+Notes: &#xD;
+This attribute doesn’t exist in M.3100. The CIM has two attributes for this purpose, Caption (a short description) and Description.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__egQUNhpEeiRnMGpBj3Tnw" name="id">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8C_9UNhqEeiRnMGpBj3Tnw" annotatedElement="__egQUNhpEeiRnMGpBj3Tnw">
+          <body>Unambiguously distinguishes different object instances. It is the naming attribute of the object.</body>
+        </ownedComment>
+        <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eM1J0NMPEeig45NPS8-MSw" name="PolicyRule">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5PuYANb3EeitAsFAkChUcg" annotatedElement="_eM1J0NMPEeig45NPS8-MSw">
+        <body>This is a concrete base class for realizing the &quot;event-condition-passaction-failaction&quot; semantics that form a policy rule. The semantics of this rule are that the rule is evaluated when an event occurs. If the condition clause is satisfied, then the pass-action clause will be executed (otherwise, the fail-action clause will be executed). &#xD;
+ &#xD;
+PolicyRules may be nested within PolicyRules. This is often needed in networking (e.g., bandwidth allocation). </body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_-NBVQOzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0VWWQNbXEeitAsFAkChUcg" name="isCNF">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_NP1d4NbYEeitAsFAkChUcg" annotatedElement="_0VWWQNbXEeitAsFAkChUcg">
+          <body>This is a Boolean attribute that, if TRUE, defines the condition clause of this rule to be represented in Conjunctive Normal Form (e.g., an AND of ORs). If the value of this attribute is FALSE, then the condition clause will be represented in Disjunctive Normal Form (e.g., an OR of ANDs).&#xD;
+&#xD;
+This attribute controls the setting of how multiple condition clauses (as represented by multiple PolicyConditionComposite objects) are treated in the PolicyRule. As such, it is different from the attribute PolicyConditionComposite.IsCNF, which controls how multiple PolicyConditionAtomic objects are treated in a (single) PolicyConditionComposite object.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_pupCMBQgEemYQtunsEp6VQ">
+          <body></body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_16YaYNbXEeitAsFAkChUcg" name="isMandatoryEvaluation">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ebkxINbYEeitAsFAkChUcg" annotatedElement="_16YaYNbXEeitAsFAkChUcg">
+          <body>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be &quot;best effort&quot; and may be ignored. &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2xdMUNbXEeitAsFAkChUcg" name="usage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lkVjkNbYEeitAsFAkChUcg" annotatedElement="_2xdMUNbXEeitAsFAkChUcg">
+          <body>This is a free-form string attribute that recommends how this policy object should be used. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3P8fINbXEeitAsFAkChUcg" name="keywords">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_wHWPUNbYEeitAsFAkChUcg" annotatedElement="_3P8fINbXEeitAsFAkChUcg">
+          <body>This is a string attribute that defines a set of one or more keywords that a policy administrator may use to assist in characterizing or categorizing a policy object to facilitate search operations. The following keywords are pre-defined: &#xD;
+ &#xD;
+Permitted Values: &#xD;
+Unknown InstallPermissions &#xD;
+ ConfigChange InstallMethod &#xD;
+ Default Error &#xD;
+ Usage InternalError &#xD;
+ Security ExternalError &#xD;
+ Authentication Notification &#xD;
+ Authorization Publish &#xD;
+ Accounting Subscribe &#xD;
+ Auditing Publish-Subscribe &#xD;
+ Service Exception &#xD;
+ CustomerFacingService &#xD;
+ ResourceFacingService &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; the CIM defines a PolicyKeyword attribute, but its semantics are very different.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LJpvwBN5EemCyfN9HPKKTQ" name="Version">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_UBvx0BN5EemCyfN9HPKKTQ" annotatedElement="_LJpvwBN5EemCyfN9HPKKTQ">
+          <body>Version of the policy as defined by the developer.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vMP6YBQgEemYQtunsEp6VQ" name="hasSubRuless">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_AD0UcBQhEemYQtunsEp6VQ" annotatedElement="_vMP6YBQgEemYQtunsEp6VQ">
+          <body>his is a Boolean attribute that, if TRUE, defines the condition clause of this rule to be represented in Conjunctive Normal Form (e.g., an AND of ORs). If the value of this attribute is FALSE, then the condition clause will be represented in Disjunctive Normal Form (e.g., an OR of ANDs).&#xD;
+&#xD;
+This attribute controls the setting of how multiple condition clauses (as represented by multiple PolicyConditionComposite objects) are treated in the PolicyRule. As such, it is different from the attribute PolicyConditionComposite.IsCNF, which controls how multiple PolicyConditionAtomic objects are treated in a (single) PolicyConditionComposite object.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vYK0cNMPEeig45NPS8-MSw" name="PolicyRuleTemplate (PolicyRuleSpec)">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Bn-ikNbbEeitAsFAkChUcg" annotatedElement="_vYK0cNMPEeig45NPS8-MSw">
+        <body>This is a concrete base class that is used to define the invariant characteristics (attributes, methods, constraints and relationships) of a PolicyRule entity.</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_I-2pgNbbEeitAsFAkChUcg" name="executionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SQ4KUNbiEeitAsFAkChUcg" annotatedElement="_I-2pgNbbEeitAsFAkChUcg">
+          <body>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: Do Until Success&#xD;
+ 2: Do All&#xD;
+ 3: Do Until Failure&#xD;
+ 4: Do All Without Failure or Do Nothing&#xD;
+&#xD;
+&quot;Do Until Success&quot; means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).&#xD;
+&#xD;
+&quot;Do All&quot; means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.&#xD;
+&#xD;
+&quot;Do Until Failure&quot; means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.&#xD;
+&#xD;
+Finally, &quot;Do All Without Failure or Do Nothing&quot; means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JiNOMNbbEeitAsFAkChUcg" name="sequencedActions">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_uEI14NbiEeitAsFAkChUcg" annotatedElement="_JiNOMNbbEeitAsFAkChUcg">
+          <body>This is an enumerated integer defines how the ordering of the PolicyActions associated with this PolicyRule is to be interpreted. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs (the CIM defined a subset of these values as an attribute in the PolicyRule).</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_J-gIoNbbEeitAsFAkChUcg" name="policyActionSelectCriteria">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1N5RYNbjEeitAsFAkChUcg" annotatedElement="_J-gIoNbbEeitAsFAkChUcg">
+          <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyConditions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyConditions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KcJG4NbbEeitAsFAkChUcg" name="policyConditionSelectCriteria">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4cuk4NbjEeitAsFAkChUcg" annotatedElement="_KcJG4NbbEeitAsFAkChUcg">
+          <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LAB3ENbbEeitAsFAkChUcg" name="policyEventSelectCriteria">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_IBJ8ENbkEeitAsFAkChUcg" annotatedElement="_LAB3ENbbEeitAsFAkChUcg">
+          <body>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PdPCMNbbEeitAsFAkChUcg" name="decisionStrategy" type="_P59EUNbkEeitAsFAkChUcg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_MHFPoNbkEeitAsFAkChUcg" annotatedElement="_PdPCMNbbEeitAsFAkChUcg">
+          <body>This is an enumerated integer that specifies the particular decision strategy to be used in this PolicySet. &#xD;
+ &#xD;
+Permitted Values: &#xD;
+ &#xD;
+ 0: Unknown &#xD;
+ 1: MatchFirst &#xD;
+ 2: MatchAll &#xD;
+ &#xD;
+MatchFirst enforces the actions of the first rule that evaluates to TRUE; policy evaluation then STOPS, meaning that all subsequent rules are no longer evaluated. &#xD;
+ &#xD;
+MatchAll enforces the actions of all rules that evaluate to TRUE. This is equivalent to performing two passes through the rule set. The first pass gathers all PolicyRules that evaluate to true and places them in a group. The second pass then executes only those rules that evaluated to true. Execution of these rules is controlled through the Priority property (on the aggregation PolicySetComponent), which defines the order in which the PolicyRules execute. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_198NsBN9EemCyfN9HPKKTQ" name="EventTypes">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vq0SkBUZEemJneI1RVMh_w" annotatedElement="_198NsBN9EemCyfN9HPKKTQ">
+          <body>List of Event Types to be considered by this event.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8-8yUBN9EemCyfN9HPKKTQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_EHEBN9EemCyfN9HPKKTQ" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sqwFcNcAEeitAsFAkChUcg" name="PolicyActionAtomic">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DYsKENcOEeitAsFAkChUcg" annotatedElement="_sqwFcNcAEeitAsFAkChUcg">
+        <body>This is the base class for all simple PolicyActions. A simple PolicyAction consists of a single Boolean clause, which is used to perform a single action. This consists of a single occurrence of a PolicyStatement, which is of the form:&#xD;
+&#xD;
+ {SET | CLEAR} PolicyVariable to PolicyValue&#xD;
+&#xD;
+This is distinctly different from the PolicyActionVendor, which does not use a PolicyStatement.&#xD;
+&#xD;
+PolicyActionAtomic objects can also be used to form more complex action structures. A PolicyActionComposite object can be used to contain a group of PolicyActionAtomic objects - this grouping enables multiple PolicyActionAtomic objects to be executed as a group. Alternatively, a PolicyActionAtomic object can contain one or more PolicyActionAtomic objects (and also PolicyActionComposite groups if desired) to provide the semantics of a compound PolicyAction. In either case, the aggregation is done using the containedPolicyActions aggregation.&#xD;
+</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_mv7KINceEeitAsFAkChUcg" general="_trl94NMPEeig45NPS8-MSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ia0ucNhYEeiRnMGpBj3Tnw" name="actionSequenceNumber">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JQvJ8NhrEeiRnMGpBj3Tnw" annotatedElement="_ia0ucNhYEeiRnMGpBj3Tnw">
+          <body>This attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. This will allow a policy engine to reference externally supplied arguments to this object as it is executed. &#xD;
+ &#xD;
+Notes: Not present in the ITU specs; CIM 2.7 has a subset of these values.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Xwvf8O0VEei7-e9MrPJW7Q" name="subject">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_A9MJcBRCEemnNtqNLTt4jg" annotatedElement="_Xwvf8O0VEei7-e9MrPJW7Q">
+          <body>Tthe entity that is executing the policy.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YcE78O0VEei7-e9MrPJW7Q" name="target">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Dn9toBRCEemnNtqNLTt4jg" annotatedElement="_YcE78O0VEei7-e9MrPJW7Q">
+          <body>he set of entities that are affect-ed by the policy.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9G8SkBTvEemqt4esDOA9pw" name="hasExecutedd" type="_-wiKUNhZEeiRnMGpBj3Tnw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_CTJ4wBTwEemqt4esDOA9pw" annotatedElement="_9G8SkBTvEemqt4esDOA9pw">
+          <body>This is an enumerated integer that is set by a policy application to define the state of execution of this policyAction. &#xD;
+ &#xD;
+Permited Values: &#xD;
+ 0: not yet executed &#xD;
+ 1: executed with no errors &#xD;
+ 2: executed with errors but successfully rolled back &#xD;
+ 3: executed with errors and did not roll back &#xD;
+ 4: did not complete execution but successfully rolled back &#xD;
+ 5: did not complete execution and did not roll back &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs. &#xD;
+</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_u-NV0NcAEeitAsFAkChUcg" name="PolicyActionComposite">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_RyyMYNcfEeitAsFAkChUcg" annotatedElement="_u-NV0NcAEeitAsFAkChUcg">
+        <body>This attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. &#xD;
+For example if a composite is part of another composite policy structure. &#xD;
+ &#xD;
+Notes: default is “1”</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_nry8gNceEeitAsFAkChUcg" general="_trl94NMPEeig45NPS8-MSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_D7P00NcfEeitAsFAkChUcg" name="actionSequence">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SFpfUBUrEemJneI1RVMh_w" annotatedElement="_D7P00NcfEeitAsFAkChUcg">
+          <body>This attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. &#xD;
+For example if a composite is part of another composite policy structure.&#xD;
+&#xD;
+Notes: default is “1”</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EyQ8YNcfEeitAsFAkChUcg" name="hasSubPolicyActions">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_r84hwNcfEeitAsFAkChUcg" annotatedElement="_EyQ8YNcfEeitAsFAkChUcg">
+          <body>This is a Boolean attribute that, if TRUE, signifies that this PolicyAction has one or more sub-actions. Sub-actions are used to enforce a hierarchical nesting of actions, so that parent actions may control the evaluation and other semantics of sub-actions that they contain. &#xD;
+ &#xD;
+Notes: Not present in the ITU or CIM specs.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FpW8cNcfEeitAsFAkChUcg" name="actionsCNF">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eHrBYBUYEemJneI1RVMh_w" annotatedElement="_FpW8cNcfEeitAsFAkChUcg">
+          <body>Specifies if the action is in confunctive normal form.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0gWfAO0VEei7-e9MrPJW7Q" name="workflowExecutionStrategy" type="_9a1vkNbhEeitAsFAkChUcg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_BTEWABRGEemnNtqNLTt4jg" annotatedElement="_0gWfAO0VEei7-e9MrPJW7Q">
+          <body>Execution Strategy that applies to the entire workflow.</body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YkPoAOzqEei7-e9MrPJW7Q" name="PolicyEventAtomic">
+      <generalization xmi:type="uml:Generalization" xmi:id="_oss5UOzqEei7-e9MrPJW7Q" general="_otly0NMPEeig45NPS8-MSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VwTgwOzqEei7-e9MrPJW7Q" name="PolicyEventComposite">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nypE0OzqEei7-e9MrPJW7Q" general="_otly0NMPEeig45NPS8-MSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VDruABBaEemHjtkpPBz29Q" name="_policyevent" type="_otly0NMPEeig45NPS8-MSw" aggregation="composite" association="_VC8uMBBaEemHjtkpPBz29Q">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qMjIgBUYEemJneI1RVMh_w" annotatedElement="_VDruABBaEemHjtkpPBz29Q">
+          <body>Composite event has events</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VDsVEBBaEemHjtkpPBz29Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VDs8IBBaEemHjtkpPBz29Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bPkT4OzsEei7-e9MrPJW7Q" name="PolicyStatement">
+      <generalization xmi:type="uml:Generalization" xmi:id="__vra0OzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R8IiMO0DEei7-e9MrPJW7Q" name="PolicyRuleTemplateB (XACML)">
+      <generalization xmi:type="uml:Generalization" xmi:id="_lqV8wO0EEei7-e9MrPJW7Q" general="_vYK0cNMPEeig45NPS8-MSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O9AeoO0DEei7-e9MrPJW7Q" name="PolicyRuleTemplateA (Drools)">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kyVWsO0EEei7-e9MrPJW7Q" general="_vYK0cNMPEeig45NPS8-MSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZqOtwOzsEei7-e9MrPJW7Q" name="PolicyCondition">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Wd_MEA-aEemJKtuCXLlg4w" annotatedElement="_ZqOtwOzsEei7-e9MrPJW7Q">
+        <body>This is an abstract base class that represents how to form the condition clause of a PolicyRule. This class can be used to represent rule-specific or reusable policy conditions.&#xD;
+&#xD;
+Policy conditions are of the form:&#xD;
+&#xD;
+ {variable, operator, value}&#xD;
+&#xD;
+where the operator is usually the MATCH operator, but could be another type (e.g., compare) of operator. This gives the semantics of &quot;IF the condition is TRUE (or FALSE)&quot;.&#xD;
+&#xD;
+The subclasses of PolicyCondition, along with its recursive aggregation, enable simple and compound (e.g., nested) PolicyConditions to be supported by the same structure.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="_-6jJoOzsEei7-e9MrPJW7Q" general="_X0O1cOzsEei7-e9MrPJW7Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X0O1cOzsEei7-e9MrPJW7Q" name="Policy" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_XH75sOz4Eei7-e9MrPJW7Q">
+        <general xmi:type="uml:Class" href="Common.uml#_eCjlEOLJEeiKy5JVrA0UGA"/>
+      </generalization>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JwPw4NMPEeig45NPS8-MSw" name="TypeDefinitions">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_P59EUNbkEeitAsFAkChUcg" name="DecisionStrategy">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_EYaLYNbyEeitAsFAkChUcg" annotatedElement="_P59EUNbkEeitAsFAkChUcg">
+        <body>This is an enumerated integer that specifies the particular decision strategy to be used in this PolicySet. &#xD;
+ &#xD;
+Permitted Values: &#xD;
+ &#xD;
+ 0: Unknown &#xD;
+ 1: MatchFirst &#xD;
+ 2: MatchAll &#xD;
+ &#xD;
+MatchFirst enforces the actions of the first rule that evaluates to TRUE; policy evaluation then STOPS, meaning that all subsequent rules are no longer evaluated. &#xD;
+ &#xD;
+MatchAll enforces the actions of all rules that evaluate to TRUE. This is equivalent to performing two passes through the rule set. The first pass gathers all PolicyRules that evaluate to true and places them in a group. The second pass then executes only those rules that evaluated to true. Execution of these rules is controlled through the Priority property (on the aggregation PolicySetComponent), which defines the order in which the PolicyRules execute. </body>
+      </ownedComment>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TuyA0NbkEeitAsFAkChUcg" name="0"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VGA5gNbkEeitAsFAkChUcg" name="1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V2DPUNbkEeitAsFAkChUcg" name="2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9a1vkNbhEeitAsFAkChUcg" name="PolicyExecutionStrategy">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Q5h84NbiEeitAsFAkChUcg" annotatedElement="_9a1vkNbhEeitAsFAkChUcg">
+        <body>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:&#xD;
+&#xD;
+ 0: Unknown&#xD;
+ 1: Do Until Success&#xD;
+ 2: Do All&#xD;
+ 3: Do Until Failure&#xD;
+ 4: Do All Without Failure or Do Nothing&#xD;
+&#xD;
+&quot;Do Until Success&quot; means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).&#xD;
+&#xD;
+&quot;Do All&quot; means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.&#xD;
+&#xD;
+&quot;Do Until Failure&quot; means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.&#xD;
+&#xD;
+Finally, &quot;Do All Without Failure or Do Nothing&quot; means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</body>
+      </ownedComment>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DAPR0NbiEeitAsFAkChUcg" name="0"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FIf-0NbiEeitAsFAkChUcg" name="1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JqyeQNbiEeitAsFAkChUcg" name="2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Mbd2INbiEeitAsFAkChUcg" name="3"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NI480NbiEeitAsFAkChUcg" name="4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-wiKUNhZEeiRnMGpBj3Tnw" name="HasExecuted">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_IHxwQNiLEeiRnMGpBj3Tnw" annotatedElement="_-wiKUNhZEeiRnMGpBj3Tnw">
+        <body>This is an enumerated integer that is set by a policy application to define the state of execution of this policyAction. &#xD;
+ &#xD;
+Permited Values: &#xD;
+ 0: not yet executed &#xD;
+ 1: executed with no errors &#xD;
+ 2: executed with errors but successfully rolled back &#xD;
+ 3: executed with errors and did not roll back &#xD;
+ 4: did not complete execution but successfully rolled back &#xD;
+ 5: did not complete execution and did not roll back &#xD;
+ &#xD;
+Notes: &#xD;
+Not present in the ITU or CIM specs. &#xD;
+</body>
+      </ownedComment>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_By_OsNhaEeiRnMGpBj3Tnw" name="0"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CpbugNhaEeiRnMGpBj3Tnw" name="1"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DVT9ENhaEeiRnMGpBj3Tnw" name="2"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_E3XlsNhaEeiRnMGpBj3Tnw" name="3"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_NnYagNMPEeig45NPS8-MSw" name="Diagrams">
+    <ownedComment xmi:type="uml:Comment" xmi:id="__UYQQOK3EeiKy5JVrA0UGA">
+      <body>PolicyEvents can include a state chnage, a VES Event, or a configuration request.</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_PF2LoOK9EeiKy5JVrA0UGA">
+      <body>Model Based Strongly On the TMF SID</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_6KVDAO2IEei7-e9MrPJW7Q">
+      <body>Rooted PolicyEvent</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_VoabYBN-EemCyfN9HPKKTQ">
+      <body>Some rules may not be created from a template</body>
+    </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_A2FNIBRIEemnNtqNLTt4jg">
+      <body>&quot;Guard&quot; Policies  - serve as overarching conditions.</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6tin4CibEemvDu1mw_PV_Q" name="PolicyEvent2">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GS-Z8CicEemvDu1mw_PV_Q" name="requestId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_H7rdICicEemvDu1mw_PV_Q" name="closedLoopControlName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JRrmwCicEemvDu1mw_PV_Q" name="origin">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KFozQCicEemvDu1mw_PV_Q" name="nameSpace">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NutywCicEemvDu1mw_PV_Q" name="action">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PCB0wCicEemvDu1mw_PV_Q" name="timestamp">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_x4NwgCicEemvDu1mw_PV_Q" name="elementId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_41P0ECicEemvDu1mw_PV_Q" name="payload">
+        <type xmi:type="uml:DataType" href="Common.uml#_vxJ9ADafEei23_xWdimG9w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9saXUCicEemvDu1mw_PV_Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9seowCicEemvDu1mw_PV_Q" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GX2JwDktEemjyLkBMGZA1g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GX2JwTktEemjyLkBMGZA1g" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GX2JwjktEemjyLkBMGZA1g" key="Version" value="0.2.15"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GX2JwzktEemjyLkBMGZA1g" key="Comment" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GX2JxDktEemjyLkBMGZA1g" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GX2JxTktEemjyLkBMGZA1g" key="Date" value="2019-02-25"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GX2JxjktEemjyLkBMGZA1g" key="Author" value=""/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GX2JxzktEemjyLkBMGZA1g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="OpenModel_Profile.profile.uml#_2RzvwDkrEemjyLkBMGZA1g"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GX2w0DktEemjyLkBMGZA1g" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="OpenModel_Profile.profile.uml#_m1xqsHBgEd6FKu9XX1078A"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GX3-8DktEemjyLkBMGZA1g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GX4mADktEemjyLkBMGZA1g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GX4mATktEemjyLkBMGZA1g" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Package>

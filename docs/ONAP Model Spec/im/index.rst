@@ -12,13 +12,14 @@ ONAP Information Model Specifications
 .. toctree::
    :titlesonly:
 
-   Root
-   VnfdAndVnfInstance
-   NSD
-   BusinessInteraction
-   VES index
-   ServiceModel-Nested Service
-   ServiceModel-Service order
-   NSDR4
-   Nested Service final for Rst
-   ServiceOrderR4
+   Root/Root
+   VNF/VnfdAndVnfInstance
+   PNF/PNFD
+   NSD/NSD
+   Common/BusinessInteraction
+   VES/VES index
+   Service/ServiceModel-Nested Service
+   Service/ServiceModel-Service order
+   Common/DynamicParameters
+   Common/SelectionCriteria
+   License/LicenseModel

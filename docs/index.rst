@@ -18,4 +18,4 @@ The changes can be found in the Release Notes:
 .. toctree::
    :maxdepth: 1
    
-   Release-notes/index
+   Release-notes/release-notes
