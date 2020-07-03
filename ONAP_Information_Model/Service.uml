@@ -471,6 +471,18 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__SDW4Nq-Eem0xcTSrumUPA" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="__R_sgNq-Eem0xcTSrumUPA"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zUWAwOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasFlowUsageKPI" memberEnd="_zUYdAOA6EemahsJzCafKGQ _zUZrIuA6EemahsJzCafKGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zUX18OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zUX18eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zUZrIuA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_zUWAwOA6EemahsJzCafKGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oroVoOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasThroughputKPI" memberEnd="_orrY8OA6EemahsJzCafKGQ _ortOIeA6EemahsJzCafKGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_orqK0OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_orqK0eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ortOIeA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_oroVoOA6EemahsJzCafKGQ"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXNM8DOHEei5Af8DcjrhIQ" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_eIxScJAiEei1uKE-hf_HvQ">
@@ -1587,6 +1599,44 @@ AllowedValues: shared, non-shared.&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zUZrIeA6EemahsJzCafKGQ" value="1"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jZ0M0OAxEemahsJzCafKGQ" name="AccessibilityKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CXSGYOA5EemahsJzCafKGQ" name="kpiName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OajgOA5EemahsJzCafKGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OjtcOA5EemahsJzCafKGQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DaHcYOA5EemahsJzCafKGQ" name="interval" type="_yVlRsNrEEem0xcTSrumUPA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DtrRkOA5EemahsJzCafKGQ" name="nfKPI" type="_yzcSYNrEEem0xcTSrumUPA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ksEykOp8EemgRvD45n6cUQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ksWfYOp8EemgRvD45n6cUQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OPJTgOpxEemgRvD45n6cUQ" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_irOBcOAxEemahsJzCafKGQ" name="FlowUsageKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_39-MYOA8EemahsJzCafKGQ" name="kpiName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4Q_2EOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4gaLEOA8EemahsJzCafKGQ" name="nfKPI"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RL70wOpxEemgRvD45n6cUQ" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jC46kOAxEemahsJzCafKGQ" name="ThroughputKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2gZbIOA8EemahsJzCafKGQ" name="kpiName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2z_FgOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3N1I4OA8EemahsJzCafKGQ" name="nfKPI" type="_wS5PQOp9EemgRvD45n6cUQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ijg4sOp-EemgRvD45n6cUQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ijse4Op-EemgRvD45n6cUQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q0pWIOpxEemgRvD45n6cUQ" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_fXObEDOHEei5Af8DcjrhIQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_kEZoxzzEEeiWMf5FLWfdLA" name="VirtualLinkToLevelMapping">
@@ -1748,86 +1798,36 @@ reference point.</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_miDj0NrFEem0xcTSrumUPA" name="nfType" type="_YCrpIOp8EemgRvD45n6cUQ"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_m28OsNrFEem0xcTSrumUPA" name="KPI" type="_UD1nsOA5EemahsJzCafKGQ"/>
       </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_irOBcOAxEemahsJzCafKGQ" name="FlowUsageKPI">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_39-MYOA8EemahsJzCafKGQ" name="kpiName">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_4Q_2EOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_4gaLEOA8EemahsJzCafKGQ" name="nfKPI"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_RL70wOpxEemgRvD45n6cUQ" name="description">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jC46kOAxEemahsJzCafKGQ" name="ThroughputKPI">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_2gZbIOA8EemahsJzCafKGQ" name="kpiName">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_2z_FgOA8EemahsJzCafKGQ" name="internal" type="_yVlRsNrEEem0xcTSrumUPA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_3N1I4OA8EemahsJzCafKGQ" name="nfKPI" type="_wS5PQOp9EemgRvD45n6cUQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ijg4sOp-EemgRvD45n6cUQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ijse4Op-EemgRvD45n6cUQ" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Q0pWIOpxEemgRvD45n6cUQ" name="description">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_jZ0M0OAxEemahsJzCafKGQ" name="AccessibilityKPI">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CXSGYOA5EemahsJzCafKGQ" name="kpiName">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4OajgOA5EemahsJzCafKGQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4OjtcOA5EemahsJzCafKGQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_DaHcYOA5EemahsJzCafKGQ" name="interval" type="_yVlRsNrEEem0xcTSrumUPA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_DtrRkOA5EemahsJzCafKGQ" name="nfKPI" type="_yzcSYNrEEem0xcTSrumUPA">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ksEykOp8EemgRvD45n6cUQ" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ksWfYOp8EemgRvD45n6cUQ" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_OPJTgOpxEemgRvD45n6cUQ" name="description">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_UD1nsOA5EemahsJzCafKGQ" name="AccessibilityKPIs">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lTfxoOA5EemahsJzCafKGQ" name="RegisteredAMFSubNbrMean"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4HuT8OpxEemgRvD45n6cUQ" name="RegisteredSubUDMNbrMean"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_oroVoOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasThroughputKPI" memberEnd="_orrY8OA6EemahsJzCafKGQ _ortOIeA6EemahsJzCafKGQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_orqK0OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_orqK0eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ortOIeA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_oroVoOA6EemahsJzCafKGQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_zUWAwOA6EemahsJzCafKGQ" name="CustomizedKPIGroupHasFlowUsageKPI" memberEnd="_zUYdAOA6EemahsJzCafKGQ _zUZrIuA6EemahsJzCafKGQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zUX18OA6EemahsJzCafKGQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zUX18eA6EemahsJzCafKGQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_zUZrIuA6EemahsJzCafKGQ" name="customizedkpigroup" type="_obdPENq9Eem0xcTSrumUPA" association="_zUWAwOA6EemahsJzCafKGQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_WqmcUOA-EemahsJzCafKGQ" name="FlowUsageKPIs">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L7-L4OA9EemahsJzCafKGQ" name="FlowSum"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XREmcOA-EemahsJzCafKGQ" name="ThroughputKPIs">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LOfa0OA9EemahsJzCafKGQ" name="GTPInDataOctN3UPF"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LjZT0OA9EemahsJzCafKGQ" name="GTPOutDataOctN3UPF"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YCrpIOp8EemgRvD45n6cUQ" name="NfType">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZwOJAOp8EemgRvD45n6cUQ" name="AMF"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a-G4cOp8EemgRvD45n6cUQ" name="UDM"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rXGjUOqAEemgRvD45n6cUQ" name="UPF"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:DataType" xmi:id="_wS5PQOp9EemgRvD45n6cUQ" name="ThroughputNfKPI">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_-00AkOp9EemgRvD45n6cUQ" name="nfIdentifier">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__Il4MOp9EemgRvD45n6cUQ" name="nfType" type="_YCrpIOp8EemgRvD45n6cUQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__eRNQOp9EemgRvD45n6cUQ" name="KPI" type="_XREmcOA-EemahsJzCafKGQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:DataType" xmi:id="_w6aiQOp9EemgRvD45n6cUQ" name="FlowUsageNfKPI">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__3dwYOp9EemgRvD45n6cUQ" name="nfIdentifier">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_AO5Y8Op-EemgRvD45n6cUQ" name="nfType" type="_YCrpIOp8EemgRvD45n6cUQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_AliXUOp-EemgRvD45n6cUQ" name="KPI" type="_WqmcUOA-EemahsJzCafKGQ"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_w6aiQOp9EemgRvD45n6cUQ" name="FlowUsageNfKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__3dwYOp9EemgRvD45n6cUQ" name="nfIdentifier">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AO5Y8Op-EemgRvD45n6cUQ" name="nfType" type="_YCrpIOp8EemgRvD45n6cUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AliXUOp-EemgRvD45n6cUQ" name="KPI" type="_WqmcUOA-EemahsJzCafKGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_wS5PQOp9EemgRvD45n6cUQ" name="ThroughputNfKPI">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-00AkOp9EemgRvD45n6cUQ" name="nfIdentifier">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__Il4MOp9EemgRvD45n6cUQ" name="nfType" type="_YCrpIOp8EemgRvD45n6cUQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__eRNQOp9EemgRvD45n6cUQ" name="KPI" type="_XREmcOA-EemahsJzCafKGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_YCrpIOp8EemgRvD45n6cUQ" name="NfType">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZwOJAOp8EemgRvD45n6cUQ" name="AMF"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a-G4cOp8EemgRvD45n6cUQ" name="UDM"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rXGjUOqAEemgRvD45n6cUQ" name="UPF"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_XREmcOA-EemahsJzCafKGQ" name="ThroughputKPIs">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LOfa0OA9EemahsJzCafKGQ" name="GTPInDataOctN3UPF"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LjZT0OA9EemahsJzCafKGQ" name="GTPOutDataOctN3UPF"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_WqmcUOA-EemahsJzCafKGQ" name="FlowUsageKPIs">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L7-L4OA9EemahsJzCafKGQ" name="FlowSum"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_UD1nsOA5EemahsJzCafKGQ" name="AccessibilityKPIs">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lTfxoOA5EemahsJzCafKGQ" name="RegisteredAMFSubNbrMean"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4HuT8OpxEemgRvD45n6cUQ" name="RegisteredSubUDMNbrMean"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ouVZoKVwEeikF6xsfT18UA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BdJm0DksEemjyLkBMGZA1g" source="PapyrusVersion">
