@@ -526,7 +526,7 @@ For example a VNF with a tree flow pattern within the VNF will have legal cpRole
 Editor's note: the attribute &quot;layerProtocol&quot; still needs further discussion and not included in this table.&#xD;
 </body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DooXkDa9EeivvI-m1BaAbA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DooXkDa9EeivvI-m1BaAbA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DospADa9EeivvI-m1BaAbA" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pJTZEDa8EeivvI-m1BaAbA" name="trunkMode">
@@ -535,6 +535,7 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEsv8MbGEeqGwZoAtvAq1A"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_MVvycC4zEemS0_wZSU3sbA" name="layerProtocol" visibility="public" type="_tFQGcDnLEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_bLoooC4zEemS0_wZSU3sbA" annotatedElement="_MVvycC4zEemS0_wZSU3sbA">
@@ -1122,13 +1123,9 @@ Per VNF, the affinity/anti-affinity rules defined using this information element
           <ownedComment xmi:type="uml:Comment" xmi:id="_TC2ncB88EemJTaeYhZuDRA">
             <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
           </ownedComment>
-          <ownedComment xmi:type="uml:Comment" xmi:id="_MiWAcB8_EemJTaeYhZuDRA" annotatedElement="_zxlckB8-EemJTaeYhZuDRA">
-            <body>The L2ProtocolData information element describes the L2 protocol related data for a virtual link.</body>
-          </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_PJJAYB87EemJTaeYhZuDRA" name="name">
             <ownedComment xmi:type="uml:Comment" xmi:id="_cXsFUB87EemJTaeYhZuDRA" annotatedElement="_PJJAYB87EemJTaeYhZuDRA">
-              <body>Network name associated with this L2&#xD;
-protocol.</body>
+              <body>Network name associated with this L2 protocol.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YlMEEB87EemJTaeYhZuDRA"/>
@@ -1136,21 +1133,17 @@ protocol.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_PuRtwB87EemJTaeYhZuDRA" name="networkType" type="_6TxekB87EemJTaeYhZuDRA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_jdtFwB87EemJTaeYhZuDRA" annotatedElement="_PuRtwB87EemJTaeYhZuDRA">
-              <body>Specifies the network type for this L2&#xD;
-protocol. Possible values: FLAT, VLAN,&#xD;
-VXLAN, GRE.&#xD;
+              <body>Specifies the network type for this L2 protocol. Possible values: FLAT, VLAN, VXLAN, GRE.&#xD;
 &#xD;
-Note:  If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
-is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
-overridden at run-time.</body>
+Note:  If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value is provided at design time in the VNFD.
+If a default value is provided at design-time, this value may be overridden at run-time.</body>
             </ownedComment>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eu2J8B87EemJTaeYhZuDRA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eu-s0B87EemJTaeYhZuDRA" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Qe_ZAB87EemJTaeYhZuDRA" name="vlanTransparent">
             <ownedComment xmi:type="uml:Comment" xmi:id="_s1sv4B87EemJTaeYhZuDRA" annotatedElement="_Qe_ZAB87EemJTaeYhZuDRA">
-              <body>Specifies whether to support VLAN&#xD;
-transparency for this L2 protocol or not.</body>
+              <body>Specifies whether to support VLAN transparency for this L2 protocol or not.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nWswkB87EemJTaeYhZuDRA"/>
@@ -1158,8 +1151,7 @@ transparency for this L2 protocol or not.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ej13AB8_EemJTaeYhZuDRA" name="mtu">
             <ownedComment xmi:type="uml:Comment" xmi:id="_kENvUB8_EemJTaeYhZuDRA" annotatedElement="_ej13AB8_EemJTaeYhZuDRA">
-              <body>Specifies the maximum transmission unit&#xD;
-(MTU) value for this L2 protocol.</body>
+              <body>Specifies the maximum transmission unit (MTU) value for this L2 protocol.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jke4UCCdEemw1L3J4dNy4w"/>
@@ -1167,7 +1159,7 @@ transparency for this L2 protocol or not.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_EXheUCCjEemw1L3J4dNy4w" name="segmentationId">
             <ownedComment xmi:type="uml:Comment" xmi:id="_PkQcgCCjEemw1L3J4dNy4w" annotatedElement="_EXheUCCjEemw1L3J4dNy4w">
-              <body>Network segment ID.</body>
+              <body>If present, specifies a specific virtualised network segment, which depends on the network type. For e.g. VLAN ID for VLAN network type and tunnel ID for GRE/VXLAN network types.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__z33gCCjEemw1L3J4dNy4w"/>
@@ -1201,9 +1193,6 @@ transparency for this L2 protocol or not.</body>
         </packagedElement>
         <packagedElement xmi:type="uml:DataType" xmi:id="_4DfhMB8_EemJTaeYhZuDRA" name="L3ProtocolData">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Wbv14B88EemJTaeYhZuDRA">
-            <body>The L3ProtocolData information element describes the L3 protocol related data for a virtual link.</body>
-          </ownedComment>
-          <ownedComment xmi:type="uml:Comment" xmi:id="_RnrJQB9EEemJTaeYhZuDRA" annotatedElement="_4DfhMB8_EemJTaeYhZuDRA">
             <body>The L3ProtocolData information element describes the L3 protocol related data for a virtual link.</body>
           </ownedComment>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Z5XzUB88EemJTaeYhZuDRA" name="name">
@@ -1265,16 +1254,11 @@ overridden at run-time.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_aMwFgB9AEemJTaeYhZuDRA" name="dhcpEnabled">
             <ownedComment xmi:type="uml:Comment" xmi:id="_9SCNMB9AEemJTaeYhZuDRA" annotatedElement="_aMwFgB9AEemJTaeYhZuDRA">
-              <body>Indicates whether DHCP (Dynamic Host&#xD;
-Configuration Protocol) is enabled or&#xD;
-disabled for this L3 protocol.&#xD;
+              <body>Indicates whether DHCP (Dynamic Host Configuration Protocol) is enabled or disabled for this L3 protocol.&#xD;
 &#xD;
 NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
 is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
 overridden at run-time.</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_ZTHmICCxEemw1L3J4dNy4w" annotatedElement="_aMwFgB9AEemJTaeYhZuDRA">
-              <body>Indicating whether DHCP is enabled. Default is &quot;FALSE&quot; if not specified otherwise.</body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_zT4B9BEemJTaeYhZuDRA"/>
@@ -1282,14 +1266,11 @@ overridden at run-time.</body>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_a3GDAB9AEemJTaeYhZuDRA" name="ipv6AddressMode" type="_I79lEB8-EemJTaeYhZuDRA">
             <ownedComment xmi:type="uml:Comment" xmi:id="__YMBYB9AEemJTaeYhZuDRA" annotatedElement="_a3GDAB9AEemJTaeYhZuDRA">
-              <body>Specifies IPv6 address mode. Possible&#xD;
-values:&#xD;
+              <body>Specifies IPv6 address mode. Possible values:&#xD;
 • SLAAC.&#xD;
 • DHCPV6-STATEFUL.&#xD;
 • DHCPV6-STATELESS.&#xD;
-May be present when the value of the&#xD;
-ipVersion attribute is &quot;IPV6&quot; and shall be&#xD;
-absent otherwise.&#xD;
+May be present when the value of the ipVersion attribute is &quot;IPV6&quot; and shall be absent otherwise.&#xD;
 &#xD;
 NOTE : If this attribute is included in the VNFD, the attribute value shall be provided at run-time, unless a default value&#xD;
 is provided at design time in the VNFD. If a default value is provided at design-time, this value may be&#xD;
@@ -4467,8 +4448,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_glKaMJT1EeiYXO5wr78TUw" base_Element="_knSmcDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_hvUgMJT1EeiYXO5wr78TUw" base_Element="_lRLQ8Da8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_i388MJT1EeiYXO5wr78TUw" base_Element="_luvWsDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_kDQ4wJT1EeiYXO5wr78TUw" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_lmmTwJT1EeiYXO5wr78TUw" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_XkYfwJUBEeiYXO5wr78TUw" base_Element="_0AbUYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_YpUHgJUBEeiYXO5wr78TUw" base_Element="_6g1tYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_ZkJ_IJUBEeiYXO5wr78TUw" base_Element="_6g3ikDnBEeiWMf5FLWfdLA"/>
@@ -4688,21 +4667,20 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_MVvycS4zEemS0_wZSU3sbA" base_StructuralFeature="_MVvycC4zEemS0_wZSU3sbA"/>
   <OpenModel_Profile:Experimental xmi:id="_eYHLsC4zEemS0_wZSU3sbA" base_Element="_MVvycC4zEemS0_wZSU3sbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_8TIQ4JUHEeiYXO5wr78TUw" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ"/>
-  <OpenModel_Profile:Reference xmi:id="_2s5kQCvNEemS0_wZSU3sbA" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_WoDPEC47EemS0_wZSU3sbA" base_Element="_Tw79sD2pEeiu6I5JfRTxxQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_abu8EC47EemS0_wZSU3sbA" base_Element="_Tw5PIES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_eCHz8C47EemS0_wZSU3sbA" base_Element="_il0cAES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_hbI-MC47EemS0_wZSU3sbA" base_Element="_7pUNEDa7EeivvI-m1BaAbA" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Reference xmi:id="_lR_T8C47EemS0_wZSU3sbA" base_Element="_0AbUYDnBEeiWMf5FLWfdLA" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_2s5kQCvNEemS0_wZSU3sbA" base_Element="_B1G2UDd_EeiIfPeSAqyGdQ" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_WoDPEC47EemS0_wZSU3sbA" base_Element="_Tw79sD2pEeiu6I5JfRTxxQ" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_abu8EC47EemS0_wZSU3sbA" base_Element="_Tw5PIES0EeiVGPeZpaYNtQ" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_eCHz8C47EemS0_wZSU3sbA" base_Element="_il0cAES0EeiVGPeZpaYNtQ" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_hbI-MC47EemS0_wZSU3sbA" base_Element="_7pUNEDa7EeivvI-m1BaAbA" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_lR_T8C47EemS0_wZSU3sbA" base_Element="_0AbUYDnBEeiWMf5FLWfdLA" reference="IFA011 v2.7.1"/>
   <OpenModel_Profile:Preliminary xmi:id="_qqZjEC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg"/>
-  <OpenModel_Profile:Reference xmi:id="_qrVXMC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg" reference="IFA011 v2.5.1"/>
+  <OpenModel_Profile:Reference xmi:id="_qrVXMC47EemS0_wZSU3sbA" base_Element="_rmDCkNxjEei0G_d67y10Rg" reference="IFA011 v2.7.1"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_SDkmwDE6Eemw1_Ys6rcLWw" base_Class="_SDiKgDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxniQjE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxniQTE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dxowYTE6Eemw1_Ys6rcLWw" base_StructuralFeature="_dxowYDE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_v05U8DFPEemw1_Ys6rcLWw" base_Class="_v04t4DFPEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_0ZjL4DFPEemw1_Ys6rcLWw" base_Class="_0Zik0DFPEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:Reference xmi:id="_FLCc0DOlEemzC6274d_Yog" base_Element="_8naVoES0EeiVGPeZpaYNtQ" reference="IFA011 v2.5.1"/>
-  <OpenModel_Profile:Future xmi:id="_kz4S0DOlEemzC6274d_Yog" base_Element="_EXheUCCjEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Reference xmi:id="_FLCc0DOlEemzC6274d_Yog" base_Element="_8naVoES0EeiVGPeZpaYNtQ" reference="IFA011 v2.7.1"/>
   <OpenModel_Profile:Future xmi:id="_mPacsDOlEemzC6274d_Yog" base_Element="_FUxJsCCjEemw1L3J4dNy4w"/>
   <OpenModel_Profile:Future xmi:id="_oMWDcDOlEemzC6274d_Yog" base_Element="_GEsKwCCjEemw1L3J4dNy4w"/>
   <OpenModel_Profile:Preliminary xmi:id="__2gysDOlEemzC6274d_Yog" base_Element="_-b8GcDdPEeiIfPeSAqyGdQ"/>
@@ -5012,4 +4990,9 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sIF5AEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_RF49QCo5EemnoK-fhDe5lw"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Experimental xmi:id="_dA444OCrEeq4TaxvD15GLA" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Experimental xmi:id="_f_U_8OCrEeq4TaxvD15GLA" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Reference xmi:id="_LrvWAOkyEeqBDMHZYEWtvQ" base_Element="_zxlckB8-EemJTaeYhZuDRA" reference="IFA011 v2.7.1"/>
+  <OpenModel_Profile:Experimental xmi:id="_tK83wOkyEeqBDMHZYEWtvQ" base_Element="_EXheUCCjEemw1L3J4dNy4w"/>
+  <OpenModel_Profile:Reference xmi:id="_kxLIYOk9EeqBDMHZYEWtvQ" base_Element="_4DfhMB8_EemJTaeYhZuDRA" reference="IFA011 v2.7.1"/>
 </xmi:XMI>
