@@ -526,7 +526,7 @@ For example a VNF with a tree flow pattern within the VNF will have legal cpRole
 Editor's note: the attribute &quot;layerProtocol&quot; still needs further discussion and not included in this table.&#xD;
 </body>
             </ownedComment>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DooXkDa9EeivvI-m1BaAbA" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DooXkDa9EeivvI-m1BaAbA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DospADa9EeivvI-m1BaAbA" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pJTZEDa8EeivvI-m1BaAbA" name="trunkMode">
@@ -535,6 +535,7 @@ Editor's note: the attribute &quot;layerProtocol&quot; still needs further discu
 </body>
             </ownedComment>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEsv8MbGEeqGwZoAtvAq1A"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_MVvycC4zEemS0_wZSU3sbA" name="layerProtocol" visibility="public" type="_tFQGcDnLEeiWMf5FLWfdLA">
             <ownedComment xmi:type="uml:Comment" xmi:id="_bLoooC4zEemS0_wZSU3sbA" annotatedElement="_MVvycC4zEemS0_wZSU3sbA">
@@ -4467,8 +4468,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_glKaMJT1EeiYXO5wr78TUw" base_Element="_knSmcDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_hvUgMJT1EeiYXO5wr78TUw" base_Element="_lRLQ8Da8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_i388MJT1EeiYXO5wr78TUw" base_Element="_luvWsDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_kDQ4wJT1EeiYXO5wr78TUw" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
-  <OpenModel_Profile:Preliminary xmi:id="_lmmTwJT1EeiYXO5wr78TUw" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
   <OpenModel_Profile:Preliminary xmi:id="_XkYfwJUBEeiYXO5wr78TUw" base_Element="_0AbUYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_YpUHgJUBEeiYXO5wr78TUw" base_Element="_6g1tYDnBEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_ZkJ_IJUBEeiYXO5wr78TUw" base_Element="_6g3ikDnBEeiWMf5FLWfdLA"/>
@@ -5012,4 +5011,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_sIF5AEHXEemqbK2aT-9uCA">
     <base_StructuralFeature xmi:type="uml:Property" href="License.uml#_RF49QCo5EemnoK-fhDe5lw"/>
   </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:Experimental xmi:id="_dA444OCrEeq4TaxvD15GLA" base_Element="_oWHBkDa8EeivvI-m1BaAbA"/>
+  <OpenModel_Profile:Experimental xmi:id="_f_U_8OCrEeq4TaxvD15GLA" base_Element="_pJTZEDa8EeivvI-m1BaAbA"/>
 </xmi:XMI>
