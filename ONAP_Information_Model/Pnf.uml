@@ -114,26 +114,6 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
           </ownedComment>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GYYOwDzFEeiWMf5FLWfdLA" name="PnfProfile">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOwTzFEeiWMf5FLWfdLA" annotatedElement="_GYYOwDzFEeiWMf5FLWfdLA">
-          <body>The PnfProfile class describes additional data for a given PNF instance used in a DF.</body>
-        </ownedComment>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GYYOwjzFEeiWMf5FLWfdLA" name="pnfProfileId">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOwzzFEeiWMf5FLWfdLA" annotatedElement="_GYYOwjzFEeiWMf5FLWfdLA">
-            <body>Identifier of this PnfProfile class. It uniquely identifies a PnfProfile.</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Common.uml#_AuYtcDkBEeiWMf5FLWfdLA"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_GYYOxDzFEeiWMf5FLWfdLA" name="pnfVirtualLinkConnectivity">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_GYYOxTzFEeiWMf5FLWfdLA" annotatedElement="_GYYOxDzFEeiWMf5FLWfdLA">
-            <body>Defines the connection information of the PNF, it contains connection relationship between a PNF connection point and a NS virtual Link.&#xD;
-</body>
-          </ownedComment>
-          <type xmi:type="uml:DataType" href="Ns.uml#_kEZorTzEEeiWMf5FLWfdLA"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GYYOxjzFEeiWMf5FLWfdLA" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GYYOxzzFEeiWMf5FLWfdLA" value="*"/>
-        </ownedAttribute>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Yq68MBg2EembeqMx64UEWQ" name="TypeDefinitions">
       <packagedElement xmi:type="uml:DataType" xmi:id="_tlyigBgIEembeqMx64UEWQ" name="SwVersion">
@@ -199,9 +179,15 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0UagKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCFDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0YE4Ke3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCFjzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_n0bIMKe3Eeixw5Ke5QD1pQ" base_StructuralFeature="_13TCGDzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelClass xmi:id="_GYZc4DzFEeiWMf5FLWfdLA" base_Class="_GYYOwDzFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYduUDzFEeiWMf5FLWfdLA" base_StructuralFeature="_GYYOwjzFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYeVYDzFEeiWMf5FLWfdLA" base_StructuralFeature="_GYYOxDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_GYZc4DzFEeiWMf5FLWfdLA">
+    <base_Class xmi:type="uml:Class" href="Ns.uml#_GYYOwDzFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelClass>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYduUDzFEeiWMf5FLWfdLA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Ns.uml#_GYYOwjzFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelAttribute>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_GYeVYDzFEeiWMf5FLWfdLA">
+    <base_StructuralFeature xmi:type="uml:Property" href="Ns.uml#_GYYOxDzFEeiWMf5FLWfdLA"/>
+  </OpenModel_Profile:OpenModelAttribute>
   <OpenModel_Profile:OpenModelClass xmi:id="_bd6eEDzFEeiWMf5FLWfdLA" base_Class="_bd53ADzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_6GS8oDzFEeiWMf5FLWfdLA" base_Class="_6GSVkDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_6GUx1TzFEeiWMf5FLWfdLA" base_Class="_6GUx0DzFEeiWMf5FLWfdLA"/>
@@ -210,7 +196,6 @@ NOTE: 	The provider of the PNFD might be different from the provider of the PNF.
   <OpenModel_Profile:OpenModelAttribute xmi:id="_AfWeQkS6EeiVGPeZpaYNtQ" base_StructuralFeature="_AfWeQES6EeiVGPeZpaYNtQ"/>
   <OpenModel_Profile:Future xmi:id="_kt0AwKewEeixw5Ke5QD1pQ" base_Element="_6GSVkDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Future xmi:id="_mbit4KewEeixw5Ke5QD1pQ" base_Element="_6GUx0DzFEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Future xmi:id="_oXoAEKewEeixw5Ke5QD1pQ" base_Element="_GYYOwDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Future xmi:id="_LAMtkDkwEem1o-Nx2Ra5UA" base_Element="_tlyigBgIEembeqMx64UEWQ"/>
   <OpenModel_Profile:Preliminary xmi:id="_wc7_oHMqEemudrQUWqSMNQ" base_Element="_13TCEDzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Preliminary xmi:id="_1SbH4HMqEemudrQUWqSMNQ" base_Element="_13TCEjzEEeiWMf5FLWfdLA"/>
