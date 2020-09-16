@@ -385,6 +385,20 @@ NOTE: Every VNF, VL and nested NS whose descriptor is referenced by the NS DF sh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YgQisJmiEeiSm9XNElOsxQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YgtOoJmiEeiSm9XNElOsxQ" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sPSdIPhOEeqmQbGVBesp1w" name="priority">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9LkYEPhOEeqmQbGVBesp1w">
+            <body>Specifies the priority for the NS instance.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x8M8oPhOEeqmQbGVBesp1w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__TtwUPhOEeqmQbGVBesp1w" name="serviceAvailabilityLevel">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PRKEcPhPEeqmQbGVBesp1w">
+            <body>If present, specifies the service availability level for the NS instance created from this DF.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EyshgPhPEeqmQbGVBesp1w"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_45XE4DzEEeiWMf5FLWfdLA" name="VnfProfile">
         <ownedComment xmi:type="uml:Comment" xmi:id="_45XE4TzEEeiWMf5FLWfdLA" annotatedElement="_45XE4DzEEeiWMf5FLWfdLA">
@@ -456,6 +470,13 @@ NOTE: Each identifier references an affinity or anti-affinity group which expres
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_45XE_TzEEeiWMf5FLWfdLA" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_45XE_jzEEeiWMf5FLWfdLA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_nMjGkPhPEeqmQbGVBesp1w" name="serviceAvailabilityLevel">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_6lt6sPhPEeqmQbGVBesp1w">
+            <body>If present, specifies the service availability level for the VNF instance created from this profile.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tUFFgPhPEeqmQbGVBesp1w"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_GYYOwDzFEeiWMf5FLWfdLA" name="PnfProfile">
@@ -1089,13 +1110,14 @@ NOTE 2:	A minimum set of external stimulus includes: the receipt of request mess
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEZBpzzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEZBqDzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZBqTzEEeiWMf5FLWfdLA" name="serviceAvaibilityLevel" type="_xl3E0KY9Eeixw5Ke5QD1pQ">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kEZBqTzEEeiWMf5FLWfdLA" name="serviceAvaibilityLevel">
           <ownedComment xmi:type="uml:Comment" xmi:id="_kEZBqjzEEeiWMf5FLWfdLA" annotatedElement="_kEZBqTzEEeiWMf5FLWfdLA">
             <body>Specifies one of the three levels defined in ETSI GS NFV-REL 001:&#xD;
 •	Level 1&#xD;
 •	Level 2&#xD;
 •	Level 3</body>
           </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEZBqzzEEeiWMf5FLWfdLA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEZBrDzEEeiWMf5FLWfdLA" value="1"/>
         </ownedAttribute>
@@ -1286,18 +1308,6 @@ When only one value is provided, the ingress and egress traffic is associated to
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_xl3E0KY9Eeixw5Ke5QD1pQ" name="ServiceAvailabilityLevel">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_30piUKY9Eeixw5Ke5QD1pQ" annotatedElement="_xl3E0KY9Eeixw5Ke5QD1pQ">
-          <body>Specifies one of the three levels defined in ETSI GS NFV-REL 001:&#xD;
-• Level 1&#xD;
-• Level 2&#xD;
-• Level 3&#xD;
-</body>
-        </ownedComment>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6KjCsKY9Eeixw5Ke5QD1pQ" name="LEVEL_1"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9VdfgKY9Eeixw5Ke5QD1pQ" name="LEVEL_2"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AOydEKY-Eeixw5Ke5QD1pQ" name="LEVEL_3"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Epmi8Bg2EembeqMx64UEWQ">
@@ -1560,7 +1570,7 @@ When only one value is provided, the ingress and egress traffic is associated to
   <OpenModel_Profile:Experimental xmi:id="_kxM1sPHREeqoIpAKV26OqA" base_Element="_kEaPVjzEEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Reference xmi:id="_kxiM4PHREeqoIpAKV26OqA" base_Element="_kEaPVjzEEeiWMf5FLWfdLA" reference="IFA014 v2.7.1"/>
   <OpenModel_Profile:Experimental xmi:id="_XadooPHSEeqoIpAKV26OqA" base_Element="_kEZBoTzEEeiWMf5FLWfdLA"/>
-  <OpenModel_Profile:Reference xmi:id="_Xay_0PHSEeqoIpAKV26OqA" base_Element="_kEZBoTzEEeiWMf5FLWfdLA" reference="IFA014 v2.7.1"/>
+  <OpenModel_Profile:Reference xmi:id="_Xay_0PHSEeqoIpAKV26OqA" base_Element="_kEZBoTzEEeiWMf5FLWfdLA" reference="IFA014 v3.3.1"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_BAA_YfHTEeqoIpAKV26OqA" base_StructuralFeature="_BAA_YPHTEeqoIpAKV26OqA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E3pYQfHTEeqoIpAKV26OqA" base_StructuralFeature="_E3pYQPHTEeqoIpAKV26OqA"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_J9VfsfHTEeqoIpAKV26OqA" base_StructuralFeature="_J9VfsPHTEeqoIpAKV26OqA"/>
@@ -1572,4 +1582,14 @@ When only one value is provided, the ingress and egress traffic is associated to
   <OpenModel_Profile:Reference xmi:id="_Qv_QgPHZEeqoIpAKV26OqA" base_Element="_13WFYDzEEeiWMf5FLWfdLA" reference="IFA014 v2.7.1"/>
   <OpenModel_Profile:OpenModelClass xmi:id="_1Wb7QzzFEeiWMf5FLWfdLA" base_Class="_1Wb7QDzFEeiWMf5FLWfdLA"/>
   <OpenModel_Profile:Future xmi:id="_aRpj4KewEeixw5Ke5QD1pQ" base_Element="_1Wb7QDzFEeiWMf5FLWfdLA"/>
+  <OpenModel_Profile:Reference xmi:id="_yDPTYPg7EeqczaleenSRZA" base_Element="_13KfMDzEEeiWMf5FLWfdLA" reference="IFA011 v3.3.1"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sPWHgPhOEeqmQbGVBesp1w" base_StructuralFeature="_sPSdIPhOEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="__TtwUfhOEeqmQbGVBesp1w" base_StructuralFeature="__TtwUPhOEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:Experimental xmi:id="_GyAG0PhPEeqmQbGVBesp1w" base_Element="__TtwUPhOEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:Reference xmi:id="_GyQlgPhPEeqmQbGVBesp1w" base_Element="__TtwUPhOEeqmQbGVBesp1w" reference="IFA014 v3.3.1"/>
+  <OpenModel_Profile:Experimental xmi:id="_LV5IwPhPEeqmQbGVBesp1w" base_Element="_sPSdIPhOEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:Reference xmi:id="_LWKOgPhPEeqmQbGVBesp1w" base_Element="_sPSdIPhOEeqmQbGVBesp1w" reference="IFA014 v3.3.1"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_nMjGkfhPEeqmQbGVBesp1w" base_StructuralFeature="_nMjGkPhPEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:Experimental xmi:id="_u4xycPhPEeqmQbGVBesp1w" base_Element="_nMjGkPhPEeqmQbGVBesp1w"/>
+  <OpenModel_Profile:Reference xmi:id="_u5C4MPhPEeqmQbGVBesp1w" base_Element="_nMjGkPhPEeqmQbGVBesp1w" reference="IFA014 v3.3.1"/>
 </xmi:XMI>
