@@ -13,7 +13,7 @@ ONAP Information Model Specifications
    :titlesonly:
 
    Root/Root
-   VNF/VnfdAndVnfInstance
+   VNF/Vnfd
    PNF/PNFD
    NSD/NSD
    Common/BusinessInteraction
