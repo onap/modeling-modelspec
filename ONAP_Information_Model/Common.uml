@@ -2069,9 +2069,252 @@ Permitted Values:&#xD;
       <packagedElement xmi:type="uml:Package" xmi:id="_s8dsMBnKEemlxOdMFpUVvQ" name="TypeDefinitions"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_XbW1gDX1EemvTc8tEY2xig" name="Location">
-      <packagedElement xmi:type="uml:Class" xmi:id="_Q8qb0CYzEemRA_CB-n5OfQ" name="Place">
-        <generalization xmi:type="uml:Generalization" xmi:id="_UVWO4CYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_QfkasCY0EemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NsMfMFQMEeuOy_G_8Ln70g" name="Associations"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_PWTQkFQMEeuOy_G_8Ln70g" name="Diagrams">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GIy0oFQLEeuOy_G_8Ln70g">
+          <body>At least one of geoCoordinates and civicAddress must be set</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Q3WMkFQMEeuOy_G_8Ln70g" name="ObjectClasses">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Q8qb0CYzEemRA_CB-n5OfQ" name="Place">
+          <generalization xmi:type="uml:Generalization" xmi:id="_UVWO4CYzEemRA_CB-n5OfQ" general="_eCjlEOLJEeiKy5JVrA0UGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QfkasCY0EemRA_CB-n5OfQ" name="validFor" type="_oyf9MOwXEei7-e9MrPJW7Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6RJRMFQKEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6RQl8FQKEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WBqx0FQLEeuOy_G_8Ln70g" name="geoCoordinates" type="_NFIUoFQLEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zZF-0FQLEeuOy_G_8Ln70g" annotatedElement="_WBqx0FQLEeuOy_G_8Ln70g">
+              <body>Geographical coordinates</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fBsA0FQLEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fBvEIFQLEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_X7nWAFQLEeuOy_G_8Ln70g" name="civicAddress" type="_QJPl4FQLEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_07CSsFQLEeuOy_G_8Ln70g" annotatedElement="_X7nWAFQLEeuOy_G_8Ln70g">
+              <body>Civic address</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvJjwFQLEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvNOIFQLEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SPY9kFQMEeuOy_G_8Ln70g" name="TypeDefinitions">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_NFIUoFQLEeuOy_G_8Ln70g" name="GeoCoordinates">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lyyDsFQXEeuOy_G_8Ln70g" name="mapDatum" type="_HNLJIFQTEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_UkYBgFQYEeuOy_G_8Ln70g" annotatedElement="_lyyDsFQXEeuOy_G_8Ln70g">
+              <body>Map Datum used for the coordinates given in this option.</body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_reRm4FQXEeuOy_G_8Ln70g" name="latitude">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_j2LXoFQYEeuOy_G_8Ln70g" annotatedElement="_reRm4FQXEeuOy_G_8Ln70g">
+              <body>Latitude in binary geodetic form. A 34-bit fixed-point value consisting of 9 bits of integer and 25 bits of fraction.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_B5LGoFQYEeuOy_G_8Ln70g" name="latitudeUncertainty">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_qnTtMFQYEeuOy_G_8Ln70g" annotatedElement="_B5LGoFQYEeuOy_G_8Ln70g">
+              <body>When mapDatum = WGS84, this field represents latitude uncertainty. &#xD;
+Uncertainty = 2 ^ ( 21 - x )&#xD;
+x = 21 - ceil( log2( uncertainty ) )</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pUuD8FQYEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pUxHQFQYEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Dee3kFQYEeuOy_G_8Ln70g" name="longitude">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-07dEFQYEeuOy_G_8Ln70g" annotatedElement="_Dee3kFQYEeuOy_G_8Ln70g">
+              <body>Longitude in binary geodetic form. A 34-bit fixed-point value consisting of 9 bits of integer and 25 bits of fraction.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_F2AvoFQYEeuOy_G_8Ln70g" name="longitudeUncertainty">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_2gaTEFQhEeuOy_G_8Ln70g" annotatedElement="_F2AvoFQYEeuOy_G_8Ln70g">
+              <body>When mapDatum = WGS84, this field represents longitude uncertainty.&#xD;
+Uncertainty = 2 ^ ( 21 - x )&#xD;
+x = 21 - ceil( log2( uncertainty ) )</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zI3IcFQhEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zI9PEFQhEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_H0gcoFQYEeuOy_G_8Ln70g" name="altitude">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YbnNQFQiEeuOy_G_8Ln70g" annotatedElement="_H0gcoFQYEeuOy_G_8Ln70g">
+              <body>A 30-bit value defined by the Altitude Type field.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XinIsFQiEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XiqzEFQiEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JNx8sFQYEeuOy_G_8Ln70g" name="altitudeUncertainty">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_lV3dMFQiEeuOy_G_8Ln70g" annotatedElement="_JNx8sFQYEeuOy_G_8Ln70g">
+              <body>When mapDatum = WGS84, this field represents altitude uncertainty.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_klX0YFQiEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_klaQoFQiEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KuDcoFQYEeuOy_G_8Ln70g" name="altitudeUnit" type="_K1QqIFQTEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_v8vVQFQiEeuOy_G_8Ln70g" annotatedElement="_KuDcoFQYEeuOy_G_8Ln70g">
+              <body>Defines the unit for the altitude value.</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uhnbEFQiEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uhqeYFQiEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Me0PoFQYEeuOy_G_8Ln70g" name="altitudeResolution">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6WySQFQiEeuOy_G_8Ln70g" annotatedElement="_Me0PoFQYEeuOy_G_8Ln70g">
+              <body>Encodes the number of high-order altitude bits that should be considered valid.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4nDaAFQiEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4nF2QFQiEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_QJPl4FQLEeuOy_G_8Ln70g" name="CivicAddress">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5FsDUFQNEeuOy_G_8Ln70g" name="country">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Zc1UUFQPEeuOy_G_8Ln70g" annotatedElement="_5FsDUFQNEeuOy_G_8Ln70g">
+              <body>The name of the country</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_maZMYFQOEeuOy_G_8Ln70g" name="state">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_h0_5IFQPEeuOy_G_8Ln70g" annotatedElement="_maZMYFQOEeuOy_G_8Ln70g">
+              <body>The name of the state or province</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zrv4QFQPEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zrzioFQPEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oDNkUFQOEeuOy_G_8Ln70g" name="region">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_7dc6AFQPEeuOy_G_8Ln70g" annotatedElement="_oDNkUFQOEeuOy_G_8Ln70g">
+              <body>The name of the region</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5O1GUFQPEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5O3ikFQPEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sUuc0FQOEeuOy_G_8Ln70g" name="postalCode">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_NwqysFQQEeuOy_G_8Ln70g" annotatedElement="_sUuc0FQOEeuOy_G_8Ln70g">
+              <body>The postal code or zip code</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M4TAQFQQEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M4l7MFQQEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_u5Ny0FQOEeuOy_G_8Ln70g" name="city" type="_kim2QFQMEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bBUwcFQQEeuOy_G_8Ln70g" annotatedElement="_u5Ny0FQOEeuOy_G_8Ln70g">
+              <body>The name of the metropolitan area, city, township, borough, district, or ward. Allows further specific city sub-divisions to be specified, such as: division, borough, district, ward, chou, neighborhood, block, street group</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VReRsFQQEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VRgt8FQQEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wiMi0FQOEeuOy_G_8Ln70g" name="streetAddress">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_iMHjMFQQEeuOy_G_8Ln70g" annotatedElement="_wiMi0FQOEeuOy_G_8Ln70g">
+              <body>The street address</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g5oAkFQQEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g5rq8FQQEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yDevYFQOEeuOy_G_8Ln70g" name="lata">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__PcTAFQREeuOy_G_8Ln70g" annotatedElement="_yDevYFQOEeuOy_G_8Ln70g">
+              <body>Local access and transport area (LATA) represents a geographical area of the United States, used in U.S. telecommunications regulation.</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9PAsUFQREeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9PChgFQREeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ze3vUFQOEeuOy_G_8Ln70g" name="structureQualifiers" type="_vp7wAFQMEeuOy_G_8Ln70g">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_FqN-EFQSEeuOy_G_8Ln70g" annotatedElement="_ze3vUFQOEeuOy_G_8Ln70g">
+              <body>Additional pre-defined qualifier fields for a structure including: unit, floor, room, desk</body>
+            </ownedComment>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EaNHsFQSEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EaPj8FQSEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_kim2QFQMEeuOy_G_8Ln70g" name="CityQualifiers">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lI_coFQTEeuOy_G_8Ln70g" name="cityName">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_F0pagFQUEeuOy_G_8Ln70g" annotatedElement="_lI_coFQTEeuOy_G_8Ln70g">
+              <body>Name of City, Township, or Parish</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oLPFoFQTEeuOy_G_8Ln70g" name="cityDivision">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_PfjZkFQUEeuOy_G_8Ln70g" annotatedElement="_oLPFoFQTEeuOy_G_8Ln70g">
+              <body>Name of city division, ex. Borough, District, Ward, Chou</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OfOlAFQUEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OfSPYFQUEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pyeJMFQTEeuOy_G_8Ln70g" name="cityNeighborhood">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_P-9AcFQWEeuOy_G_8Ln70g" annotatedElement="_pyeJMFQTEeuOy_G_8Ln70g">
+              <body>Name of neighborhood, ex. Block, Street group</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PZrwMFQWEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PZ-EEFQWEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_vp7wAFQMEeuOy_G_8Ln70g" name="StructureQualifiers">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1l3rgFQjEeuOy_G_8Ln70g" name="unit">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KrQw4FQkEeuOy_G_8Ln70g" annotatedElement="_1l3rgFQjEeuOy_G_8Ln70g">
+              <body>Unit (apartment, suite)</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JYObsFQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JYVwcFQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4HnPgFQjEeuOy_G_8Ln70g" name="floor">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_TbIEAFQkEeuOy_G_8Ln70g" annotatedElement="_4HnPgFQjEeuOy_G_8Ln70g">
+              <body>Floor</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SULDAFQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SUOtYFQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6W5KgFQjEeuOy_G_8Ln70g" name="room">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_b2npoFQkEeuOy_G_8Ln70g" annotatedElement="_6W5KgFQjEeuOy_G_8Ln70g">
+              <body>Room</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ah9j0FQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aiB1QFQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8St-AFQjEeuOy_G_8Ln70g" name="desk">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_mCBtsFQkEeuOy_G_8Ln70g" annotatedElement="_8St-AFQjEeuOy_G_8Ln70g">
+              <body>Seat, desk, cubicle, workstation</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j1KNgFQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j1N34FQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9yUIgFQjEeuOy_G_8Ln70g" name="placementInfo">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_vqYIAFQkEeuOy_G_8Ln70g" annotatedElement="_9yUIgFQjEeuOy_G_8Ln70g">
+              <body>Additional placement information, ex. shelf, rack</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uPMjcFQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uPQ04FQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Bb7TgFQkEeuOy_G_8Ln70g" name="poBox">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-S53oFQkEeuOy_G_8Ln70g" annotatedElement="_Bb7TgFQkEeuOy_G_8Ln70g">
+              <body>Post office box number</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9H-VkFQkEeuOy_G_8Ln70g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IDOEFQkEeuOy_G_8Ln70g" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_HNLJIFQTEeuOy_G_8Ln70g" name="MapDatum">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_W7cToFQlEeuOy_G_8Ln70g" name="WGS84"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZHbqEFQlEeuOy_G_8Ln70g" name="NAD83 + NAVD88"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a6QSkFQlEeuOy_G_8Ln70g" name="NAD83 + MLLW"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_K1QqIFQTEeuOy_G_8Ln70g" name="AltitudeUnit">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NGKQkFQlEeuOy_G_8Ln70g" name="METER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QEqCAFQlEeuOy_G_8Ln70g" name="FLOOR"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SSkrEFQlEeuOy_G_8Ln70g" name="FOOT"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_KA1GwDxbEemSHu2qGsweWg" name="Configuration">
@@ -4657,7 +4900,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_RayLofuIEeiYVshOvl6_ww" base_StructuralFeature="_RayLoPuIEeiYVshOvl6_ww"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gUB30fuIEeiYVshOvl6_ww" base_StructuralFeature="_gUB30PuIEeiYVshOvl6_ww"/>
   <OpenModel_Profile:Experimental xmi:id="_XoSTsDX0EemvTc8tEY2xig" base_Element="_SDiKgDE6Eemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:Experimental xmi:id="_eDQ9oDX1EemvTc8tEY2xig" base_Element="_Q8qb0CYzEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_eodhIDYQEemvTc8tEY2xig" base_StructuralFeature="_eoc6EDYQEemvTc8tEY2xig"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_E4DBoDYREemvTc8tEY2xig" base_StructuralFeature="_E4CakDYREemvTc8tEY2xig"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_dShWATYdEemvTc8tEY2xig" base_StructuralFeature="_dShWADYdEemvTc8tEY2xig"/>
@@ -4721,7 +4963,6 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Preliminary xmi:id="_WCfLAFrJEem07dac9irJSQ" base_Element="_7MZssOwXEei7-e9MrPJW7Q"/>
   <OpenModel_Profile:Preliminary xmi:id="_pvzDIFrJEem07dac9irJSQ" base_Element="_QjAw8DFQEemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Preliminary xmi:id="_sB-hIFrJEem07dac9irJSQ" base_Element="_RDwtkDFQEemw1_Ys6rcLWw"/>
-  <OpenModel_Profile:Experimental xmi:id="_Y_0CUFrKEem07dac9irJSQ" base_Element="_UVWO4CYzEemRA_CB-n5OfQ"/>
   <OpenModel_Profile:Experimental xmi:id="_wh7o0FrKEem07dac9irJSQ" base_Element="_ZWh3ADE6Eemw1_Ys6rcLWw"/>
   <OpenModel_Profile:Experimental xmi:id="_gM_IwFrMEem07dac9irJSQ" base_Element="_kO0hMBp7EemOGejS9lsDjA"/>
   <OpenModel_Profile:Experimental xmi:id="_iGIbsFrMEem07dac9irJSQ" base_Element="_dxmUIDE6Eemw1_Ys6rcLWw"/>
@@ -4953,4 +5194,92 @@ Permitted Values:&#xD;
   <OpenModel_Profile:Reference xmi:id="_op280O6xEeqoIpAKV26OqA" reference="IFA014v2.7.1">
     <base_Element xmi:type="uml:Class" href="Ns.uml#_45bWUDzEEeiWMf5FLWfdLA"/>
   </OpenModel_Profile:Reference>
+  <OpenModel_Profile:Preliminary xmi:id="_nuhDgFQKEeuOy_G_8Ln70g" base_Element="_Q8qb0CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_pNAawFQKEeuOy_G_8Ln70g" base_Element="_UVWO4CYzEemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_WBrY4FQLEeuOy_G_8Ln70g" base_StructuralFeature="_WBqx0FQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_X7nWAVQLEeuOy_G_8Ln70g" base_StructuralFeature="_X7nWAFQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_a8no4FQLEeuOy_G_8Ln70g" base_Element="_WBqx0FQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_d1ONsFQLEeuOy_G_8Ln70g" base_Element="_X7nWAFQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Experimental xmi:id="_ne3ogFQLEeuOy_G_8Ln70g" base_Element="_QfkasCY0EemRA_CB-n5OfQ"/>
+  <OpenModel_Profile:Preliminary xmi:id="_qI_scFQLEeuOy_G_8Ln70g" base_Element="_NFIUoFQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_rRK1cFQLEeuOy_G_8Ln70g" base_Element="_QJPl4FQLEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_4AY6EFQLEeuOy_G_8Ln70g" base_Element="_WBqx0FQLEeuOy_G_8Ln70g" reference="RFC6225"/>
+  <OpenModel_Profile:Reference xmi:id="_7LK0AFQLEeuOy_G_8Ln70g" base_Element="_X7nWAFQLEeuOy_G_8Ln70g" reference="RFC4776"/>
+  <OpenModel_Profile:Preliminary xmi:id="_sOXBAFQMEeuOy_G_8Ln70g" base_Element="_kim2QFQMEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ykWSsFQMEeuOy_G_8Ln70g" base_Element="_vp7wAFQMEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_5FsqYFQNEeuOy_G_8Ln70g" base_StructuralFeature="_5FsDUFQNEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_maZMYVQOEeuOy_G_8Ln70g" base_StructuralFeature="_maZMYFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oDNkUVQOEeuOy_G_8Ln70g" base_StructuralFeature="_oDNkUFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_sUuc0VQOEeuOy_G_8Ln70g" base_StructuralFeature="_sUuc0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_u5Ny0VQOEeuOy_G_8Ln70g" base_StructuralFeature="_u5Ny0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_wiMi0VQOEeuOy_G_8Ln70g" base_StructuralFeature="_wiMi0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_yDevYVQOEeuOy_G_8Ln70g" base_StructuralFeature="_yDevYFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ze3vUVQOEeuOy_G_8Ln70g" base_StructuralFeature="_ze3vUFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_lDLFUFQPEeuOy_G_8Ln70g" base_Element="_maZMYFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_lJrV8FQPEeuOy_G_8Ln70g" base_Element="_maZMYFQOEeuOy_G_8Ln70g" reference="RFC4776 CAtype=1"/>
+  <OpenModel_Profile:Preliminary xmi:id="_v61ycFQPEeuOy_G_8Ln70g" base_Element="_5FsDUFQNEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_wBqMIFQPEeuOy_G_8Ln70g" base_Element="_5FsDUFQNEeuOy_G_8Ln70g" reference="ETSI SOL001 tosca.datatypes.nfv.LocationInfo.country_code"/>
+  <OpenModel_Profile:Preliminary xmi:id="_-ZVcUFQPEeuOy_G_8Ln70g" base_Element="_oDNkUFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_-fxbgFQPEeuOy_G_8Ln70g" base_Element="_oDNkUFQOEeuOy_G_8Ln70g" reference="RFC4776 CAtype=2"/>
+  <OpenModel_Profile:Preliminary xmi:id="_Q7oS0FQQEeuOy_G_8Ln70g" base_Element="_sUuc0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_RDFlsFQQEeuOy_G_8Ln70g" base_Element="_sUuc0FQOEeuOy_G_8Ln70g" reference="RFC4776 CAtype=24"/>
+  <OpenModel_Profile:Preliminary xmi:id="_dPdb8FQQEeuOy_G_8Ln70g" base_Element="_u5Ny0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_kGjPkFQQEeuOy_G_8Ln70g" base_Element="_wiMi0FQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_kNVNAFQQEeuOy_G_8Ln70g" base_Element="_wiMi0FQOEeuOy_G_8Ln70g" reference="RFC4776 CAtype=16-23, 25, 34-39"/>
+  <OpenModel_Profile:Preliminary xmi:id="_At1joFQSEeuOy_G_8Ln70g" base_Element="_yDevYFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_H5vJoFQSEeuOy_G_8Ln70g" base_Element="_ze3vUFQOEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lI_coVQTEeuOy_G_8Ln70g" base_StructuralFeature="_lI_coFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_oLPFoVQTEeuOy_G_8Ln70g" base_StructuralFeature="_oLPFoFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_pyeJMVQTEeuOy_G_8Ln70g" base_StructuralFeature="_pyeJMFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_JO564FQUEeuOy_G_8Ln70g" base_Element="_lI_coFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_JViuYFQUEeuOy_G_8Ln70g" base_Element="_lI_coFQTEeuOy_G_8Ln70g" reference="RFC4776 CAtype=3, 30"/>
+  <OpenModel_Profile:Preliminary xmi:id="_R9LSkFQUEeuOy_G_8Ln70g" base_Element="_oLPFoFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_SEHoEFQUEeuOy_G_8Ln70g" base_Element="_oLPFoFQTEeuOy_G_8Ln70g" reference="RFC4776 CAtype=4"/>
+  <OpenModel_Profile:Preliminary xmi:id="_SFLtIFQWEeuOy_G_8Ln70g" base_Element="_pyeJMFQTEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_SL1uwFQWEeuOy_G_8Ln70g" base_Element="_pyeJMFQTEeuOy_G_8Ln70g" reference="RFC4776 CAtype=5, 6"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_lyyDsVQXEeuOy_G_8Ln70g" base_StructuralFeature="_lyyDsFQXEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_reRm4VQXEeuOy_G_8Ln70g" base_StructuralFeature="_reRm4FQXEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_B5LGoVQYEeuOy_G_8Ln70g" base_StructuralFeature="_B5LGoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_DefeoFQYEeuOy_G_8Ln70g" base_StructuralFeature="_Dee3kFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_F2AvoVQYEeuOy_G_8Ln70g" base_StructuralFeature="_F2AvoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_H0gcoVQYEeuOy_G_8Ln70g" base_StructuralFeature="_H0gcoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_JNx8sVQYEeuOy_G_8Ln70g" base_StructuralFeature="_JNx8sFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_KuDcoVQYEeuOy_G_8Ln70g" base_StructuralFeature="_KuDcoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Me0PoVQYEeuOy_G_8Ln70g" base_StructuralFeature="_Me0PoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_W0uTgFQYEeuOy_G_8Ln70g" base_Element="_lyyDsFQXEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_W7KSsFQYEeuOy_G_8Ln70g" base_Element="_lyyDsFQXEeuOy_G_8Ln70g" reference="RFC6225 Datum"/>
+  <OpenModel_Profile:Preliminary xmi:id="_l_iQ0FQYEeuOy_G_8Ln70g" base_Element="_reRm4FQXEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_mF2UMFQYEeuOy_G_8Ln70g" base_Element="_reRm4FQXEeuOy_G_8Ln70g" reference="RFC6225 Latitude"/>
+  <OpenModel_Profile:Preliminary xmi:id="_4iWEsFQYEeuOy_G_8Ln70g" base_Element="_B5LGoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_4o5YoFQYEeuOy_G_8Ln70g" base_Element="_B5LGoFQYEeuOy_G_8Ln70g" reference="RFC6225 LatUnc"/>
+  <OpenModel_Profile:Preliminary xmi:id="__68C4FQYEeuOy_G_8Ln70g" base_Element="_Dee3kFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_ABxDoFQZEeuOy_G_8Ln70g" base_Element="_Dee3kFQYEeuOy_G_8Ln70g" reference="RFC6225 Longitude"/>
+  <OpenModel_Profile:Preliminary xmi:id="_4OlsIFQhEeuOy_G_8Ln70g" base_Element="_F2AvoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_4V_UoFQhEeuOy_G_8Ln70g" base_Element="_F2AvoFQYEeuOy_G_8Ln70g" reference="RFC6225 LongUnc"/>
+  <OpenModel_Profile:Preliminary xmi:id="_aKKZwFQiEeuOy_G_8Ln70g" base_Element="_H0gcoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_aQ4s0FQiEeuOy_G_8Ln70g" base_Element="_H0gcoFQYEeuOy_G_8Ln70g" reference="RFC6225 Altitude"/>
+  <OpenModel_Profile:Preliminary xmi:id="_mjo34FQiEeuOy_G_8Ln70g" base_Element="_JNx8sFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_mqUusFQiEeuOy_G_8Ln70g" base_Element="_JNx8sFQYEeuOy_G_8Ln70g" reference="RFC6225 AltUnc"/>
+  <OpenModel_Profile:Preliminary xmi:id="_xQFzgFQiEeuOy_G_8Ln70g" base_Element="_KuDcoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_xWqVkFQiEeuOy_G_8Ln70g" base_Element="_KuDcoFQYEeuOy_G_8Ln70g" reference="RFC6225 AType"/>
+  <OpenModel_Profile:Preliminary xmi:id="_7wrdYFQiEeuOy_G_8Ln70g" base_Element="_Me0PoFQYEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_73da0FQiEeuOy_G_8Ln70g" base_Element="_Me0PoFQYEeuOy_G_8Ln70g" reference="RFC6225 AltRes"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_1l4SkFQjEeuOy_G_8Ln70g" base_StructuralFeature="_1l3rgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_4HnPgVQjEeuOy_G_8Ln70g" base_StructuralFeature="_4HnPgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_6W5KgVQjEeuOy_G_8Ln70g" base_StructuralFeature="_6W5KgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_8St-AVQjEeuOy_G_8Ln70g" base_StructuralFeature="_8St-AFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_9yUIgVQjEeuOy_G_8Ln70g" base_StructuralFeature="_9yUIgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Bb7TgVQkEeuOy_G_8Ln70g" base_StructuralFeature="_Bb7TgFQkEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Preliminary xmi:id="_L16mIFQkEeuOy_G_8Ln70g" base_Element="_1l3rgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_L8oSIFQkEeuOy_G_8Ln70g" base_Element="_1l3rgFQjEeuOy_G_8Ln70g" reference="RFC4776 CAtype=26"/>
+  <OpenModel_Profile:Preliminary xmi:id="_UtS2gFQkEeuOy_G_8Ln70g" base_Element="_4HnPgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_U0gRwFQkEeuOy_G_8Ln70g" base_Element="_4HnPgFQjEeuOy_G_8Ln70g" reference="RFC4776 CAtype=27"/>
+  <OpenModel_Profile:Preliminary xmi:id="_dfkkcFQkEeuOy_G_8Ln70g" base_Element="_6W5KgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_dmY-IFQkEeuOy_G_8Ln70g" base_Element="_6W5KgFQjEeuOy_G_8Ln70g" reference="RFC4776 CAtype=28"/>
+  <OpenModel_Profile:Preliminary xmi:id="_ntMPAFQkEeuOy_G_8Ln70g" base_Element="_8St-AFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_nz57AFQkEeuOy_G_8Ln70g" base_Element="_8St-AFQjEeuOy_G_8Ln70g" reference="RFC4776 CAtype=33"/>
+  <OpenModel_Profile:Preliminary xmi:id="_wtejwFQkEeuOy_G_8Ln70g" base_Element="_9yUIgFQjEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="_w0o7sFQkEeuOy_G_8Ln70g" base_Element="_9yUIgFQjEeuOy_G_8Ln70g" reference="RFC4776 CAtype=29, 32"/>
+  <OpenModel_Profile:Preliminary xmi:id="__d98kFQkEeuOy_G_8Ln70g" base_Element="_Bb7TgFQkEeuOy_G_8Ln70g"/>
+  <OpenModel_Profile:Reference xmi:id="__lgH8FQkEeuOy_G_8Ln70g" base_Element="_Bb7TgFQkEeuOy_G_8Ln70g" reference="RFC4776 CAtype=31"/>
 </xmi:XMI>
