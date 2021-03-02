@@ -4250,6 +4250,8 @@ Field	Type	Required?	Description&#xD;
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_y5OGEInhEeiOe-BKGdv_Yg" name="SYSLOG"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_3Eo9oInhEeiOe-BKGdv_Yg" name="THRESHOLDCROSSINGALERT"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4T_FoInhEeiOe-BKGdv_Yg" name="VOICEQUALITY"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_MlMPEFmXEeuibK0sFtI2JA" name="STNDDEFINED"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dO4lMFmXEeuibK0sFtI2JA" name="STNDDEFINED"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_tptTQKJWEeibfLkXoC-lBg" name="ThresholdCrossingAlertCounter">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_4wuD8KJWEeibfLkXoC-lBg" name="criticality" type="_JLLKUBW9Eem1a9CgBTwvhA">
@@ -4976,6 +4978,10 @@ Debug	          7	    debug-level messages&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Or3RkFmgEeuibK0sFtI2JA" name="StndDefined">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qnlgIFmhEeuibK0sFtI2JA" general="_PmIOkH7uEeifJIHxnlj6Cg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZjFdUFmhEeuibK0sFtI2JA" client="_Or3RkFmgEeuibK0sFtI2JA" supplier="_PmIOkH7uEeifJIHxnlj6Cg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pJKCADksEemjyLkBMGZA1g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pJKCATksEemjyLkBMGZA1g" source="PapyrusVersion">
@@ -5596,4 +5602,5 @@ Debug	          7	    debug-level messages&#xD;
   <OpenModel_Profile:OpenModelAttribute xmi:id="_FiDUgTe1EeqyzrMWM9wAxg" base_StructuralFeature="_FiDUgDe1EeqyzrMWM9wAxg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_OxRdITe1EeqyzrMWM9wAxg" base_StructuralFeature="_OxRdIDe1EeqyzrMWM9wAxg"/>
   <OpenModel_Profile:Experimental xmi:id="_SJdiIDfPEeqyzrMWM9wAxg" base_Element="_K_6mADeiEeqyzrMWM9wAxg"/>
+  <OpenModel_Profile:OpenModelClass xmi:id="_Or-mUFmgEeuibK0sFtI2JA" base_Class="_Or3RkFmgEeuibK0sFtI2JA"/>
 </xmi:XMI>
