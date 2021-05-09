@@ -1,4 +1,4 @@
-.. Copyright 2020 (China Mobile)
+.. Copyright 2021 (China Mobile)
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0
 .. INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
@@ -6,6 +6,39 @@
 
 Modeling Spec Release Notes
 ===========================
+
+Version: 8.0.0
+--------------
+
+:Release Date: 2021-4-12
+
+**New Features**
+
+Introduce the following new information models:
+
+- location model
+- VES model v7.2 update to include standard defined domain
+- VNFD model enhancement to support CNF
+
+**Bug Fixes**
+
+**Security Notes**
+
+Modeling code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+Quick Links:
+- `Modeling project page <https://wiki.onap.org/display/DW/Modeling+Project>`_
+- `Passing Badge information for Modeling <https://bestpractices.coreinfrastructure.org/en/projects/1774>`_
+
+**Known Issues**
+   None
+
+**Upgrade Notes**
+   Update VNFD information model to align with ETSI NFV spec v3.3.1 and v4.1.1. 
+
+**Other**
+   None
 
 Version: 7.0.0
 --------------
