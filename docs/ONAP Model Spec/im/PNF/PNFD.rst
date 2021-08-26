@@ -3,7 +3,11 @@
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
 PnfdModel 
-~~~~~~~~~
+=========
+
+.. contents::
+   :depth: 3
+..
 
 Classes
 -------

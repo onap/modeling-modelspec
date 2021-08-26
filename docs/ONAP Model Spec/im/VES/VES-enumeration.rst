@@ -1,4 +1,4 @@
-.. Copyright 2019
+.. Copyright 2021
 .. This file is licensed under the CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE
 .. Full license text at https://creativecommons.org/licenses/by/4.0/legalcode
 
@@ -9,443 +9,357 @@ VES Enumeration definition
    :depth: 3
 ..
 
-AlertAction enumeration
-^^^^^^^^^^^^^^^^^^^^^^^
+Enumerations
+------------
 
-**Qualified Name:** Ves::TypeDefinitions::AlertAction
-
-**Description:**
+AlertAction
+~~~~~~~~~~~
 
 Possible alertActions within thresholdCrossingAlertFields
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  SET:
 
-**Contains Enumeration Literals:**
+-  CONT:
 
--  SET
+-  CLEAR:
 
--  CONT
-
--  CLEAR
-
-AlertType enumeration
-^^^^^^^^^^^^^^^^^^^^^
-
-**Qualified Name:** Ves::TypeDefinitions::AlertType
-
-**Description:**
+AlertType
+~~~~~~~~~
 
 Possible values for ThresholdCrossingAlertFIelds alertType attribute.
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  CARD_ANOMALY:
 
-**Contains Enumeration Literals:**
+-  INTERFACE_ANOMALY:
 
--  CARD_ANOMALY
+-  ELEMENT_ANOMALY:
 
--  INTERFACE_ANOMALY
+-  SERVICE_ANOMALY:
 
--  ELEMENT_ANOMALY
-
--  SERVICE_ANOMALY
-
-Domain enumeration
-^^^^^^^^^^^^^^^^^^
-
-**Qualified Name:** Ves::TypeDefinitions::Domain
-
-**Description:**
+Domain
+~~~~~~
 
 domain - Event domain enumeration:
-
 'fault', 'heartbeat', 'measurementsForVfScaling', 'mobileFlow', 'other', 'sipSignaling', 'stateChange', 'syslog', 'thresholdCrossingAlert', 'voiceQuality'
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  FAULT:
 
-**Contains Enumeration Literals:**
+-  HEARTBEAT:
 
--  FAULT
+-  MEASUREMENT:
 
--  HEARTBEAT
+-  MOBILEFLOW:
 
--  MEASUREMENT
+-  NOTIFICATION:
 
--  MOBILEFLOW
+-  OTHER:
 
--  NOTIFICATION
+-  PERF3GPP:
 
--  OTHER
+-  PNFREGISTRATION:
 
--  PERF3GPP
+-  SIPSIGNALING:
 
--  PNFREGISTRATION
+-  STATECHANGE:
 
--  SIPSIGNALING
+-  SYSLOG:
 
--  STATECHANGE
+-  THRESHOLDCROSSINGALERT:
 
--  SYSLOG
+-  VOICEQUALITY:
 
--  THRESHOLDCROSSINGALERT
+-  STNDDEFINED:
 
--  VOICEQUALITY
+-  STNDDEFINED:
 
-EndpointDescription enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EndpointDescription
+~~~~~~~~~~~~~~~~~~~
 
-**Qualified Name:** Ves::TypeDefinitions::EndpointDescription
+Contains Enumeration Literals:
 
-**Applied Stereotypes:**
+-  CALLER:
 
--  Preliminary
+-  CALLEE:
 
-**Contains Enumeration Literals:**
-
--  CALLER
-
--  CALLEE
-
-EventSeverity enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Qualified Name:** Ves::TypeDefinitions::EventSeverity
-
-**Description:**
+EventSeverity
+~~~~~~~~~~~~~
 
 Event severity enumeration: 'CRITICAL', 'MAJOR', 'MINOR', 'WARNING', 'NORMAL'. NORMAL is used to represent clear.
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  CRITICAL:
 
-**Contains Enumeration Literals:**
+-  MAJOR:
 
--  CRITICAL
+-  MINOR:
 
--  MAJOR
+-  WARNING:
 
--  MINOR
+-  NORMAL:
 
--  WARNING
+NicAdminState
+~~~~~~~~~~~~~
 
--  NORMAL
+Contains Enumeration Literals:
 
-NicAdminState enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-  IN_SERVICE:
 
-**Qualified Name:** Ves::TypeDefinitions::NicAdminState
+-  OUT_OF_SERVICE:
 
-**Applied Stereotypes:**
+NicOpsState
+~~~~~~~~~~~
 
--  Preliminary
+Contains Enumeration Literals:
 
-**Contains Enumeration Literals:**
+-  IN_SERVICE:
 
--  IN_SERVICE
+-  OUT_OF_SERVICE:
 
--  OUT_OF_SERVICE
+SourceIndicator
+~~~~~~~~~~~~~~~
 
-NicOpsState enumeration
-^^^^^^^^^^^^^^^^^^^^^^^
+Indicates the source of the operation
 
-**Qualified Name:** Ves::TypeDefinitions::NicOpsState
+Contains Enumeration Literals:
 
-**Applied Stereotypes:**
+-  RESOURCE_OPERATION:
 
--  Preliminary
+   -  internal operation of resource
 
-**Contains Enumeration Literals:**
+-  MANAGEMENT_OPERATOIN:
 
--  IN_SERVICE
+   -  response to management operation
 
--  OUT_OF_SERVICE
+-  SON_OPERATOIN:
 
-SyslogFacility enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+   -  result of SON
 
-**Qualified Name:** Ves::TypeDefinitions::SyslogFacility
+-  UNKNOWN:
 
-**Description:**
+   -  can't determine why
+
+SyslogFacility
+~~~~~~~~~~~~~~
 
 Numeric code from 0 to 23 for facility:
-
 0 kernel messages
-
 1 user-level messages
-
 2 mail system
-
 3 system daemons
-
 4 security/authorization messages
-
 5 messages generated internally by syslogd
-
 6 line printer subsystem
-
 7 network news subsystem
-
 8 UUCP subsystem
-
 9 clock daemon
-
 10 security/authorization messages
-
 11 FTP daemon
-
 12 NTP subsystem
-
 13 log audit
-
 14 log alert
-
 15 clock daemon (note 2)
-
 16 local use 0 (local0)
-
 17 local use 1 (local1)
-
 18 local use 2 (local2)
-
 19 local use 3 (local3)
-
 20 local use 4 (local4)
-
 21 local use 5 (local5)
-
 22 local use 6 (local6)
-
 23 local use 7 (local7)
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
-
-**Contains Enumeration Literals:**
-
--  0
+-  0:
 
    -  kernel messages
 
--  1
+-  1:
 
    -  user-level messages
 
--  2
+-  2:
 
    -  mail system
 
--  3
+-  3:
 
    -  system daemons
 
--  4
+-  4:
 
    -  security/authorization messages
 
--  5
+-  5:
 
    -  messages generated internally by syslogd
 
--  6
+-  6:
 
    -  line printer subsystem
 
--  7
+-  7:
 
    -  network news subsystem
 
--  8
+-  8:
 
    -  UUCP subsystem
 
--  9
+-  9:
 
    -  clock daemon
 
--  10
+-  10:
 
    -  security/authorization messages
 
--  11
+-  11:
 
    -  FTP daemon
 
--  12
+-  12:
 
    -  NTP subsystem
 
--  13
+-  13:
 
    -  log audit
 
--  14
+-  14:
 
    -  log alert
 
--  15
+-  15:
 
    -  clock daemon
 
--  16
+-  16:
 
    -  local use 0 (local0)
 
--  17
+-  17:
 
    -  local use 1 (local1)
 
--  18
+-  18:
 
    -  local use 2 (local2)
 
--  19
+-  19:
 
    -  local use 3 (local3)
 
--  20
+-  20:
 
    -  local use 4 (local4)
 
--  21
+-  21:
 
    -  local use 5 (local5)
 
--  22
+-  22:
 
    -  local use 6 (local6)
 
--  23
+-  23:
 
    -  local use 7 (local7 )
 
-SyslogSev enumeration
-^^^^^^^^^^^^^^^^^^^^^
-
-**Qualified Name:** Ves::TypeDefinitions::SyslogSev
-
-**Description:**
+SyslogSev
+~~~~~~~~~
 
 Level-of-severity text enumeration defined below:
-
 Text Sev Description
-
 Emergency 0 system is unusable
-
 Alert 1 action must be taken immediately
-
 Critical 2 critical conditions
-
 Error 3 error conditions
-
 Warning 4 warning conditions
-
 Notice 5 normal but significant condition
-
 Info 6 Informational messages
-
 Debug 7 debug-level messages
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
-
-**Contains Enumeration Literals:**
-
--  EMERGENCY
-
-   -  0
+-  EMERGENCY:
 
    -  system is unusable
 
--  ALERT
+   -  0
 
-   -  action must be taken immediately
+-  ALERT:
 
    -  1
 
--  CRITICAL
+   -  action must be taken immediately
 
-   -  2
+-  CRITICAL:
 
    -  critical conditions
 
--  ERROR
+   -  2
 
-   -  error conditions
+-  ERROR:
 
    -  3
 
--  WARNING
+   -  error conditions
+
+-  WARNING:
 
    -  4
 
    -  warning conditions
 
--  NOTICE
-
-   -  5
+-  NOTICE:
 
    -  normal but significant condition
 
--  INFO
+   -  5
 
-   -  6
+-  INFO:
 
    -  Informational messages
 
--  DEBUG
+   -  6
 
-   -  7
+-  DEBUG:
 
    -  debug-level messages
 
-TCACriticality enumeration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+   -  7
 
-**Qualified Name:** Ves::TypeDefinitions::TCACriticality
-
-**Description:**
+TCACriticality
+~~~~~~~~~~~~~~
 
 Threshold Crossing Alert counter criticality - possible values of CRIT and MAJ.
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  CRIT:
 
-**Contains Enumeration Literals:**
+-  MAJ:
 
--  CRIT
-
--  MAJ
-
-VfStatus enumeration
-^^^^^^^^^^^^^^^^^^^^
-
-**Qualified Name:** Ves::TypeDefinitions::VfStatus
-
-**Description:**
+VfStatus
+~~~~~~~~
 
 Virtual function status enumeration: 'Active', 'Idle', 'Preparing to terminate', 'Ready to terminate', 'Requesting Termination'
 
-**Applied Stereotypes:**
+Contains Enumeration Literals:
 
--  Preliminary
+-  ACTIVE:
 
-**Contains Enumeration Literals:**
+-  IDLE:
 
--  ACTIVE
+-  PREPARING_TO_TERMINATE:
 
--  IDLE
+-  READY_TO_TERMINATE:
 
--  PREPARING_TO_TERMINATE
-
--  READY_TO_TERMINATE
-
--  REQUESTING_TERMINATION
+-  REQUESTING_TERMINATION:

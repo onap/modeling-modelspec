@@ -23,3 +23,4 @@ ONAP Information Model Specifications
    Common/DynamicParameters
    Common/SelectionCriteria
    License/LicenseModel
+   Location/Location
