@@ -7,6 +7,37 @@
 Modeling Spec Release Notes
 ===========================
 
+Version: 9.0.0
+--------------
+
+:Release Date: 2021-11-5
+
+**New Features**
+
+Introduce the following new information model and data model:
+
+- simplified k8s resource model
+
+**Bug Fixes**
+
+**Security Notes**
+
+Modeling code has been formally scanned during build time using NexusIQ and no
+Critical vulnerability was found.
+
+Quick Links:
+- `Modeling project page <https://wiki.onap.org/display/DW/Modeling+Project>`_
+- `Passing Badge information for Modeling <https://bestpractices.coreinfrastructure.org/en/projects/1774>`_
+
+**Known Issues**
+   None
+
+**Upgrade Notes**
+   None 
+
+**Other**
+   None
+
 Version: 8.0.0
 --------------
 
