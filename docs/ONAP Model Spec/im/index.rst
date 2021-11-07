@@ -24,3 +24,4 @@ ONAP Information Model Specifications
    Common/SelectionCriteria
    License/LicenseModel
    Location/Location
+   Runtime/K8sResource
