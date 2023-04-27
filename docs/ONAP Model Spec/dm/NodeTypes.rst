@@ -10,7 +10,7 @@ Node Types
 |   properties:
 |     #id:
 |       # node name
-|     name:       # align with the IM, please refer to https://wiki.onap.org/display/DW/Design+Time+Model+Clean+Version#DesignTimeModelCleanVersion-Class:VDU/VDUDesc
+|     name:       # align with the IM, please refer to https://wiki.onap.org/display/DW/Design+Time+Model+Clean+Version#DesignTimeModelCleanVersion-Class:Vdu
 |       type: string
 |       required: true
 |     description:
