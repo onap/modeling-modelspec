@@ -392,4 +392,4 @@ Contains Enumeration Literals:
 
 -  REJECTED:
 
-.. |image0| image:: ServiceOrderR4.png
+.. |image0| image:: ServiceOrder.png
