@@ -21,7 +21,6 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.blockdiag',
     'sphinxcontrib.seqdiag',
-    'sphinxcontrib.swaggerdoc',
     'sphinxcontrib.plantuml'
 ]
 
@@ -36,7 +35,7 @@ intersphinx_mapping = {}
 doc_url = 'https://docs.onap.org/projects'
 master_doc = 'index'
 
-exclude_patterns = ['.tox']
+exclude_patterns = ['.tox', '.venv']
 
 spelling_word_list_filename='spelling_wordlist.txt'
 spelling_lang = "en_GB"
@@ -51,6 +50,12 @@ html_last_updated_fmt = '%d-%b-%y %H:%M'
 def setup(app):
     app.add_css_file("css/ribbon.css")
 
+# Atlassian Confluence Cloud renders anchors via JavaScript, which Sphinx's
+# linkcheck cannot validate. We must ignore these URLs entirely since
+# linkcheck_anchors_ignore_for_url requires Sphinx >= 4.5.0 and the
+# OpenStack Yoga constraints pin Sphinx to 4.4.0.
 linkcheck_ignore = [
-  r'http://localhost:\d+/'
+  r'http://localhost:\d+/',
+  r'https://wiki\.onap\.org/.*#.*',
+  r'https://lf-onap\.atlassian\.net/.*#.*',
 ]
