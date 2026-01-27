@@ -21,7 +21,6 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinxcontrib.blockdiag',
     'sphinxcontrib.seqdiag',
-    'sphinxcontrib.swaggerdoc',
     'sphinxcontrib.plantuml'
 ]
 
@@ -36,7 +35,7 @@ intersphinx_mapping = {}
 doc_url = 'https://docs.onap.org/projects'
 master_doc = 'index'
 
-exclude_patterns = ['.tox']
+exclude_patterns = ['.tox', '.venv']
 
 spelling_word_list_filename='spelling_wordlist.txt'
 spelling_lang = "en_GB"
@@ -53,4 +52,12 @@ def setup(app):
 
 linkcheck_ignore = [
   r'http://localhost:\d+/'
+]
+
+# Atlassian Confluence Cloud renders anchors via JavaScript, which Sphinx's
+# linkcheck cannot validate. Skip anchor checks for wiki.onap.org URLs
+# (which redirect to lf-onap.atlassian.net) and direct Atlassian Cloud URLs.
+linkcheck_anchors_ignore_for_url = [
+  r'https://wiki\.onap\.org/.*',
+  r'https://lf-onap\.atlassian\.net/.*',
 ]
